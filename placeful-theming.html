@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <title>Placeful Theming</title>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="./theme/css/main.css" type="text/css" />
+        
+        <link href="http://blog.aclark.net/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Alex Clark Atom Feed" />
+        
+        
+
+        <!--[if IE]>
+                <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+        <!--[if lte IE 7]>
+                <link rel="stylesheet" type="text/css" media="all" href="./css/ie.css"/>
+                <script src="./js/IE8.js" type="text/javascript"></script><![endif]-->
+
+        <!--[if lt IE 7]>
+                <link rel="stylesheet" type="text/css" media="all" href="./css/ie6.css"/><![endif]-->
+
+</head>
+
+<body id="index" class="home">
+
+        <header id="banner" class="body">
+                <h1><a href=".">Alex Clark </a></h1>
+                <nav><ul>
+                
+                
+                
+                
+                
+                    <li ><a href="./category/mozilla-plone-python.html">Mozilla, Plone, Python</a></li>
+                
+                    <li ><a href="./category/music.html">Music</a></li>
+                
+                    <li class="active"><a href="./category/plone.html">Plone</a></li>
+                
+                    <li ><a href="./category/plone-python.html">Plone, Python</a></li>
+                
+                    <li ><a href="./category/python.html">Python</a></li>
+                
+                </ul></nav>
+        </header><!-- /#banner -->
+        
+<section id="content" class="body">
+  <article>
+    <header>
+      <h1 class="entry-title">
+        <a href="placeful-theming.html" rel="bookmark"
+           title="Permalink to Placeful Theming">Placeful Theming</a></h1>
+      
+    </header>
+
+    <div class="entry-content">
+      <footer class="post-info">
+        <abbr class="published" title="2008-06-02T07:02:00">
+                Mon 02 June 2008
+        </abbr>
+
+        
+        <address class="vcard author">
+                By <a class="url fn" href="./author/aclark.html">aclark</a>
+        </address>
+        
+<p>In <a href="./category/plone.html">Plone</a>. </p>
+
+
+
+</footer><!-- /.post-info -->
+      <p>I had to do a bit of placeful theming lately and I thought I would share
+the techniques I used (thanks davisagli, jonbaldievieso, vedawms). Let's
+say you have a Plone 3 site, and for some location /foo/bar/baz, you
+want 'baz' and everything below it to look different. I made this change
+through the web because I was in a hurry, but the same can be done in
+filesystem code.</p>
+<p>The steps are:</p>
+<div class="section" id="override-getsectionfromurl-navigate-to-portal-skins-plone-scripts-getsectionfromurl-and-customize">
+<h2>1. Override getSectionFromURL (navigate to portal_skins/plone_scripts/getSectionFromURL and customize)</h2>
+<p>Normally, this bit of code returns the section id for whatever section
+you are in. So if your site has three top level folders A, B, C,
+getSectionURL returns section-A when you are inside of A, section-B when
+you are inside of B, and so on. However, when you are inside of a
+sub-section, e.g. /A/news-items-folder, it *still* returns the section
+id, in this case section-A. The override makes getSectionURL return the
+sub-section, e.g. /A/news-items-folder, or /foo/bar/baz.</p>
+<pre class="literal-block">
+# Courtesy of jonb at onenw.org# getSectionFromURLcontentPath = context.portal_url.getRelativeContentPath(context)if not contentPath:    return Noneelse:    s = ''    sectionId = ''    for pathItem in contentPath:        sectionId += pathItem + '-'        s += 'section-' + sectionId[:-1] + ' '    return s[:-1]
+</pre>
+</div>
+<div class="section" id="override-plone-logo-navigate-to-portal-view-customizations-zope-interface-interface-plone-logo-and-customize">
+<h2>2. Override plone.logo (navigate to /portal_view_customizations/zope.interface.interface-plone.logo and customize)</h2>
+<p>For some reason (good or not, I don't know) Plone includes an image tag
+in the html code it uses to generate the Plone logo. This means that it
+will always output something like:</p>
+<pre class="literal-block">
+img src=&quot;logo.jpg&quot;
+</pre>
+<p>which is a problem if you want to placefully replace the logo because
+there is no easy way to do it (perhaps you could use some trick to
+return a different image file with the same file name).</p>
+</p><p><p>Plone ships with:</p>
+<pre class="literal-block">
+&lt;a metal:define-macro=&quot;portal_logo&quot;   id=&quot;portal-logo&quot;   accesskey=&quot;1&quot;   tal:attributes=&quot;href view/navigation_root_url&quot;   i18n:domain=&quot;plone&quot;&gt;    &lt;img src=&quot;logo.jpg&quot; alt=&quot;&quot;         tal:replace=&quot;structure view/logo_tag&quot; /&gt;&lt;/a&gt;
+</pre>
+<p>Replace that with:</p>
+<pre class="literal-block">
+&lt;div metal:define-macro=&quot;portal_logo&quot; id=&quot;portal-logo&quot;&gt;    &lt;a accesskey=&quot;1&quot;       tal:attributes=&quot;href view/navigation_root_url&quot;       i18n:domain=&quot;plone&quot;&gt;&lt;/a&gt;&lt;/div&gt;
+</pre>
+</div>
+<div class="section" id="add-css-navigate-to-portal-skins-plone-styles-plonecustom-css-and-customize">
+<h2>3. Add CSS (Navigate to /portal_skins/plone_styles/ploneCustom.css and customize)</h2>
+<p>Next, add in some CSS to make use of the previous two changes:</p>
+<pre class="literal-block">
+body.section-foo-bar-baz {    background-image: url(gradient.png);}.section-foo-bar-baz #portal-globalnav li a {    border: 0px;    background: #0066CC;    color: white;    font-size: 110%;    font-face: bold;}.section-foo-bar-baz #portal-globalnav {    background: #0066CC;    padding: 0.25em;}.section-foo-bar-baz #portal-breadcrumbs,.section-foo-bar-baz #portal-personaltools {    background: white;}.section-foo-bar-baz #portal-top {     background: white;}.section-foo-bar-baz #portal-logo {     margin: 1em;    background-image: url(ama_logo.gif);    background-repeat: no-repeat;}.section-foo-bar-baz #visual-portal-wrapper {     background: white;    margin: auto;    width: 883px;    position: relative;}.section-foo-bar-baz body {     background-image: url(gradient.png);    background-repeat: repeat;}#portal-logo {     margin: 1em;    background-image: url(logo.jpg);    background-repeat: no-repeat;}#portal-logo a {     display: block;    width: 650px;    height: 80px;}
+</pre>
+<p>I hope this helps someone get started with placeful theming.</p>
+</p></div>
+
+    </div><!-- /.entry-content -->
+    
+
+  </article>
+</section>
+
+        <section id="extras" class="body">
+        
+        
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+
+
+
+</body>
+</html>
