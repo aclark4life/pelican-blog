@@ -41,8 +41,6 @@
                 
                     <li ><a href="./category/python.html">Python</a></li>
                 
-                    <li ><a href="./category/misc.html">misc</a></li>
-                
                 </ul></nav>
         </header><!-- /#banner -->
                 
@@ -53,48 +51,8 @@
         
             <aside id="featured" class="body">
                 <article>
-                    <h1 class="entry-title"><a href="./foo.html">Foo</a></h1> 
+                    <h1 class="entry-title"><a href="./bootstrapping-a-buildout-16-release.html">Bootstrapping a Buildout 1.6 release</a></h1> 
                     <footer class="post-info">
-        <abbr class="published" title="2012-09-20T19:22:28">
-                Thu 20 September 2012
-        </abbr>
-
-        
-        <address class="vcard author">
-                By <a class="url fn" href="./author/aclarkaclarknet.html">aclark@aclark.net</a>
-        </address>
-        
-<p>In <a href="./category/misc.html">misc</a>. </p>
-
-
-
-</footer><!-- /.post-info --><p>bar</p>
-
-                </article>
-                
-            </aside><!-- /#featured -->
-            
-                <section id="content" class="body">
-                    <h1>Other articles</h1>
-                    <hr />
-                    <ol id="posts-list" class="hfeed">
-            
-        
-        
-        
-            
-
-        
-         
-            
-            <li><article class="hentry">    
-                <header>
-                    <h1><a href="./bootstrapping-a-buildout-16-release.html" rel="bookmark"
-                           title="Permalink to Bootstrapping a Buildout 1.6 release">Bootstrapping a Buildout 1.6 release</a></h1>
-                </header>
-                
-                <div class="entry-content">
-                <footer class="post-info">
         <abbr class="published" title="2012-08-13T21:10:00">
                 Mon 13 August 2012
         </abbr>
@@ -108,8 +66,7 @@
 
 
 
-</footer><!-- /.post-info -->
-                <p>A lot of work has been done on Buildout lately, most notably:</p>
+</footer><!-- /.post-info --><p>A lot of work has been done on Buildout lately, most notably:</p>
 <ul class="simple">
 <li>Jim Fulton is <a class="reference external" href="https://github.com/buildout/buildout/commits/master">working on Buildout 2</a>.</li>
 <li>Ross Patterson has greatly <a class="reference external" href="http://rpatterson.net/blog/buildout-performance-improvements">improved Buildout performance</a>.</li>
@@ -117,11 +74,30 @@
 approach to Ross's performance improvements.</li>
 <li>I have offered to do a release.</li>
 </ul>
-<p>And ...</p>
-                <a class="readmore" href="./bootstrapping-a-buildout-16-release.html">read more</a>
+<p>And there are a <a class="reference external" href="http://mail.python.org/pipermail/distutils-sig/2012-July/018779.html">handful of other changes</a> in <a class="reference external" href="http://zope3.pov.lt/trac/browser/zc.buildout/trunk/CHANGES.txt?rev=127507#L4">trunk on svn.zope.org</a>,
+of which my favorite is:</p>
+<blockquote>
+The buildout init command now accepts distribution requirements and
+paths to set up a custom interpreter part that has the distributions
+or parts in the path. For example:: $ python bootstrap.py init
+BeautifulSoup</blockquote>
+<p>So with that, I am <strong>planning to do a zc.buildout 1.6 release within 24
+hours</strong> or so of now. Please add a comment or weigh in on
+<a class="reference external" href="http://mail.python.org/mailman/listinfo/distutils-sig">distutils-sig</a> if you object. We have run the tests on Windows, and
+discovered only pre-existing failures. We are also preparing to do
+&quot;Buildout 2 prophylactic releases&quot; (i.e. releases that make 1.x continue
+to work when 2.x is released) in the 1.6.x series.</p>
+</p>
+                </article>
                 
-                </div><!-- /.entry-content -->
-            </article></li>
+            </aside><!-- /#featured -->
+            
+                <section id="content" class="body">
+                    <h1>Other articles</h1>
+                    <hr />
+                    <ol id="posts-list" class="hfeed">
+            
+        
         
         
             
@@ -437,6 +413,48 @@ overview of the beta release features.</p>
 </ul>
 <p>[caption id ...</p></div>
                 <a class="readmore" href="./pythonpackagescom-beta-launch.html">read more</a>
+                
+                </div><!-- /.entry-content -->
+            </article></li>
+        
+        
+            
+
+        
+         
+            
+            <li><article class="hentry">    
+                <header>
+                    <h1><a href="./zope2-bootstrap.html" rel="bookmark"
+                           title="Permalink to Zope2 Bootstrap">Zope2 Bootstrap</a></h1>
+                </header>
+                
+                <div class="entry-content">
+                <footer class="post-info">
+        <abbr class="published" title="2012-06-12T10:27:00">
+                Tue 12 June 2012
+        </abbr>
+
+        
+        <address class="vcard author">
+                By <a class="url fn" href="./author/aclarkaclarknet.html">aclark@aclark.net</a>
+        </address>
+        
+<p>In <a href="./category/plone-python.html">Plone, Python</a>. </p>
+
+
+
+</footer><!-- /.post-info -->
+                <p><em>Bootstrap all the things, including Zope2.</em></p>
+<p><a class="reference external" href="http://pypi.python.org/pypi/zope2_bootstrap">zope2_bootstrap</a> is a new Python package that <a class="reference external" href="http://pypi.python.org/pypi/collective.monkeypatcher">monkey patches</a> Zope2
+in order to:</p>
+<ul class="simple">
+<li>Replace <a class="reference external" href="http://zope3.pov.lt/trac/browser/Zope/trunk/src/App/dtml/manage_page_style.css.dtml">manage_page_styles.css.dtml</a> styles with <a class="reference external" href="http://twitter.github.com/bootstrap/base-css.html">Twitter
+Bootstrap</a> styles.</li>
+<li>Adds CSS classes to <a class="reference external" href="http://zope3.pov.lt/trac/browser/Zope/trunk/src/OFS/dtml/main.dtml">main</a> and/or <a class="reference external" href="http://zope3.pov.lt/trac/browser/Products.ExternalEditor/trunk/Products/ExternalEditor/manage_main.dtml">manage_main</a> tables.</li>
+<li>Inserts a Plone logo (if Plone is installed) above
+<a class="reference external" href="http://zope3.pov.lt/trac/browser/Products.ExternalEditor/trunk/Products/ExternalEditor/manage_tabs.dtml">manage_tabs.dtml</a> tabs (h ...</li></ul>
+                <a class="readmore" href="./zope2-bootstrap.html">read more</a>
                 
                 </div><!-- /.entry-content -->
             </article></li>
