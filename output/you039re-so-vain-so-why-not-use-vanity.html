@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <title>You&#039;re so vain, so why not use Vanity?</title>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="./theme/css/main.css" type="text/css" />
+        
+        <link href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Alex Clark Atom Feed" />
+        
+        
+
+        <!--[if IE]>
+                <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+        <!--[if lte IE 7]>
+                <link rel="stylesheet" type="text/css" media="all" href="./css/ie.css"/>
+                <script src="./js/IE8.js" type="text/javascript"></script><![endif]-->
+
+        <!--[if lt IE 7]>
+                <link rel="stylesheet" type="text/css" media="all" href="./css/ie6.css"/><![endif]-->
+
+</head>
+
+<body id="index" class="home">
+
+        <header id="banner" class="body">
+                <h1><a href=".">Alex Clark </a></h1>
+                <nav><ul>
+                
+                
+                
+                
+                
+                    <li ><a href="./category/mozilla-plone-python.html">Mozilla, Plone, Python</a></li>
+                
+                    <li ><a href="./category/music.html">Music</a></li>
+                
+                    <li ><a href="./category/plone.html">Plone</a></li>
+                
+                    <li class="active"><a href="./category/plone-python.html">Plone, Python</a></li>
+                
+                    <li ><a href="./category/python.html">Python</a></li>
+                
+                </ul></nav>
+        </header><!-- /#banner -->
+        
+<section id="content" class="body">
+  <article>
+    <header>
+      <h1 class="entry-title">
+        <a href="you039re-so-vain-so-why-not-use-vanity.html" rel="bookmark"
+           title="Permalink to You&#039;re so vain, so why not use Vanity?">You&amp;#039;re so vain, so why not use Vanity?</a></h1>
+      
+    </header>
+
+    <div class="entry-content">
+      <footer class="post-info">
+        <abbr class="published" title="2011-06-16T12:01:00">
+                Thu 16 June 2011
+        </abbr>
+
+        
+        <address class="vcard author">
+                By <a class="url fn" href="./author/aclarkaclarknet.html">aclark@aclark.net</a>
+        </address>
+        
+<p>In <a href="./category/plone-python.html">Plone, Python</a>. </p>
+
+
+
+</footer><!-- /.post-info -->
+      <p>A few months ago I created a package called <strong>Vanity</strong>[0] that
+provides easy access to package download statistics from <strong>PyPI</strong>. You
+can find the source code here: <a class="reference external" href="https://github.com/aclark4life/vanity">https://github.com/aclark4life/vanity</a>.</p>
+<p>I love this tool, and I use it all the time to gauge the value of a
+package. Of course, downloads are only one criteria you can use to judge
+the value of a package, and arguably not even a very good one.
+<strong>Vanity</strong> itself is a good example of this phenomenon. I find it
+incredibly useful, but in it's history it has only been downloaded <em>130</em>
+times.</p>
+<p>Other packages I have created with much less value have been downloaded
+more times, e.g. <strong>plonetheme.aclark_twitter</strong> which has been
+downloaded&nbsp; <em>674</em> times. But that package has also been around much
+longer. So obviously another useful metric would be the <em>time period</em>
+during which the downloads occurred.</p>
+<p><p>Anyway, here is how it works:</p>
+<pre class="literal-block">
+$ easy_install vanity
+</pre>
+<p>Then:</p>
+<pre class="literal-block">
+$ vanity &lt;package&gt;
+</pre>
+<p>For example:</p>
+<pre class="literal-block">
+$ vanity vanity
+Package `vanity` has been downloaded 130 times!
+</pre>
+<p>Or:</p>
+<pre class="literal-block">
+$ vanity plonetheme.aclark_twitter
+Package `plonetheme.aclark_twitter` has been downloaded 674 times!
+</pre>
+<p>Some of my other favorites:</p>
+<pre class="literal-block">
+$ vanity Django[1]
+Package `Django` has been downloaded 302111 times!
+</pre>
+<pre class="literal-block">
+$ vanity zope.component
+Package `zope.component` has been downloaded 210541 times!
+</pre>
+<pre class="literal-block">
+$ vanity pyramid
+Package `pyramid` has been downloaded 26067 times!
+</pre>
+<p>Another thing to consider is if hitting <strong>PyPI</strong> each time is really
+necessary. I'm told there is <strong>PyPI</strong> data living somewhere else, and in
+future versions I would like to make vanity use that data by default.</p>
+</p><p>So, this post is simply to announce <strong>Vanity</strong> to a wider audience in
+the event that some folks may find it useful. Otherwise, I will be happy
+to continue to watch <strong>Vanity</strong> downloads crawl ever so slowly towards
+200. :-)</p>
+<div class="section" id="notes">
+<h2>Notes</h2>
+<p>[0] By standing on the shoulders of some Plone giants, <a class="reference external" href="http://davisagli.com/">David Glick,</a>
+in particular.</p>
+</p><p>[1] There is a <a class="reference external" href="https://github.com/aclark4life/vanity/issues/1">known issue</a> with regard to making Vanity case
+insensitive.</p>
+</div>
+
+    </div><!-- /.entry-content -->
+    
+
+  </article>
+</section>
+
+        <section id="extras" class="body">
+        
+                <div class="blogroll">
+                        <h2>blogroll</h2>
+                        <ul>
+                        
+                            <li><a href="http://docs.notmyidea.org/alexis/pelican/">Pelican</a></li>
+                        
+                            <li><a href="http://python.org">Python.org</a></li>
+                        
+                            <li><a href="http://jinja.pocoo.org">Jinja2</a></li>
+                        
+                            <li><a href="#">You can modify those links in your config file</a></li>
+                        
+                        </ul>
+                </div><!-- /.blogroll -->
+        
+        
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+                            <li><a href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">atom feed</a></li>
+                            
+
+                        
+                            <li><a href="#">You can add links in your config file</a></li>
+                        
+                            <li><a href="#">Another social link</a></li>
+                        
+                        </ul>
+                </div><!-- /.social -->
+        
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+
+
+
+</body>
+</html>

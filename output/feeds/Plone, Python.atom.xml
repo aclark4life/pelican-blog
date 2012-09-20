@@ -1,0 +1,1474 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Alex Clark</title><link href="/" rel="alternate"></link><link href="/feeds/Plone,%20Python.atom.xml" rel="self"></link><id>/</id><updated>2012-08-13T21:10:00+02:00</updated><entry><title>Bootstrapping a Buildout 1.6 release</title><link href="/bootstrapping-a-buildout-16-release.html" rel="alternate"></link><updated>2012-08-13T21:10:00+02:00</updated><author><name>aclark@aclark.net</name></author><id>tag:,2012-08-13:bootstrapping-a-buildout-16-release.html</id><summary type="html">&lt;p&gt;A lot of work has been done on Buildout lately, most notably:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;Jim Fulton is &lt;a class="reference external" href="https://github.com/buildout/buildout/commits/master"&gt;working on Buildout 2&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Ross Patterson has greatly &lt;a class="reference external" href="http://rpatterson.net/blog/buildout-performance-improvements"&gt;improved Buildout performance&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Domen Kožar has &lt;a class="reference external" href="http://zope3.pov.lt/trac/changeset/127507"&gt;provided a patch&lt;/a&gt; that takes a conservative
+approach to Ross's performance improvements.&lt;/li&gt;
+&lt;li&gt;I have offered to do a release.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;And there are a &lt;a class="reference external" href="http://mail.python.org/pipermail/distutils-sig/2012-July/018779.html"&gt;handful of other changes&lt;/a&gt; in &lt;a class="reference external" href="http://zope3.pov.lt/trac/browser/zc.buildout/trunk/CHANGES.txt?rev=127507#L4"&gt;trunk on svn.zope.org&lt;/a&gt;,
+of which my favorite is:&lt;/p&gt;
+&lt;blockquote&gt;
+The buildout init command now accepts distribution requirements and
+paths to set up a custom interpreter part that has the distributions
+or parts in the path. For example:: $ python bootstrap.py init
+BeautifulSoup&lt;/blockquote&gt;
+&lt;p&gt;So with that, I am &lt;strong&gt;planning to do a zc.buildout 1.6 release within 24
+hours&lt;/strong&gt; or so of now. Please add a comment or weigh in on
+&lt;a class="reference external" href="http://mail.python.org/mailman/listinfo/distutils-sig"&gt;distutils-sig&lt;/a&gt; if you object. We have run the tests on Windows, and
+discovered only pre-existing failures. We are also preparing to do
+&amp;quot;Buildout 2 prophylactic releases&amp;quot; (i.e. releases that make 1.x continue
+to work when 2.x is released) in the 1.6.x series.&lt;/p&gt;
+&lt;/p&gt;</summary></entry><entry><title>pythonpackages.com: Using PyPI&amp;#039;s OAuth1 support to register and upload packages</title><link href="/pythonpackagescom-using-pypi039s-oauth1-support-to-register-and-upload-packages.html" rel="alternate"></link><updated>2012-08-07T05:16:00+02:00</updated><author><name>aclark@aclark.net</name></author><id>tag:,2012-08-07:pythonpackagescom-using-pypi039s-oauth1-support-to-register-and-upload-packages.html</id><summary type="html">&lt;p&gt;&lt;strong&gt;*TL;DR&lt;/strong&gt; PyPI has OAuth1 support; pythonpackages.com uses it to send
+your GitHub repos to PyPI.* Thanks in very large part to &lt;a class="reference external" href="https://twitter.com/r1chardj0n3s"&gt;Richard
+Jones&lt;/a&gt;, the Python Package Index now has support for registering and
+uploading packages via OAuth1. And using his &lt;a class="reference external" href="https://gist.github.com/0d46c48b230e61e18479"&gt;sample code&lt;/a&gt; I was able
+to take advantage of it on pythonpackages.com. The result is a fairly
+&lt;strong&gt;elegant approach to releasing packages&lt;/strong&gt; sans dirty hacks (I had been
+asking users for their username and password, then storing them in an
+encrypted session cookies so I could send them to PyPI.) Here's how it
+works now.&lt;/p&gt;
+&lt;div class="section" id="sign-in-with-github"&gt;
+&lt;h2&gt;Sign In With GitHub&lt;/h2&gt;
+&lt;p&gt;GitHub provides an easy way to let folks sign in to pythonpackages.com
+with their APIv3. I was able to code the OAuth dance using only the
+requests library (HT Kenneth Reitz). This was working as of late 2011.
+&lt;a href="#id1"&gt;&lt;span class="problematic" id="id2"&gt;`|image0|`_&lt;/span&gt;&lt;/a&gt; &lt;a href="#id3"&gt;&lt;span class="problematic" id="id4"&gt;`|image1|`_&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="select-a-package"&gt;
+&lt;h2&gt;Select a package&lt;/h2&gt;
+&lt;p&gt;Once you are signed in, you can select a package. Selected packages can
+perform various actions, one of which is &lt;strong&gt;Tag and Release&lt;/strong&gt;.
+&lt;a href="#id5"&gt;&lt;span class="problematic" id="id6"&gt;`|image2|`_&lt;/span&gt;&lt;/a&gt; As soon as you select Tag and Release, you are required to
+authenticate with PyPI.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="strikeout-enter-your-pypi-credentials"&gt;
+&lt;h2&gt;[STRIKEOUT:Enter your PyPI credentials]&lt;/h2&gt;
+&lt;p&gt;In order to get the beta out the door, a dirty hack was added to allow
+users to enter their PyPI credentials. Credentials were saved in an
+encrypted session cookie, then written out to .pypirc before calling
+`python setup.py upload`. Really terrible. This was shipped in early
+July 2012 and is thankfully no longer necessary (though it is &lt;a class="reference external" href="http://docs.pythonpackages.com/en/latest/security.html#github-credentials"&gt;still
+necessary to push the initial commit to GitHub.&lt;/a&gt;)&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="authorize-pythonpackages-com"&gt;
+&lt;h2&gt;Authorize pythonpackages.com&lt;/h2&gt;
+&lt;p&gt;Now authorization can happen elegantly via OAuth1. First, sign in to
+PyPI. Then authorize pythonpackages.com to act on your behalf. Lastly,
+profit (register and upload your package). &lt;a href="#id7"&gt;&lt;span class="problematic" id="id8"&gt;`|image3|`_&lt;/span&gt;&lt;/a&gt; &lt;a href="#id9"&gt;&lt;span class="problematic" id="id10"&gt;`|image4|`_&lt;/span&gt;&lt;/a&gt;
+&lt;a href="#id11"&gt;&lt;span class="problematic" id="id12"&gt;`|image5|`_&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="register-and-upload-your-package"&gt;
+&lt;h2&gt;Register and upload your package&lt;/h2&gt;
+&lt;p&gt;At this point you are free to tag and release. &lt;a href="#id13"&gt;&lt;span class="problematic" id="id14"&gt;`|image6|`_&lt;/span&gt;&lt;/a&gt; &lt;a href="#id15"&gt;&lt;span class="problematic" id="id16"&gt;`|image7|`_&lt;/span&gt;&lt;/a&gt;
+I am really excited about this. I began fantasizing about it almost a
+year ago and after several false starts (pypissh, openid, avoidance) it
+is now a reality. If you have a minute, please &lt;a class="reference external" href="https://pythonpackages.com/signup"&gt;give it a try&lt;/a&gt;.&lt;/p&gt;
+&lt;/p&gt;&lt;/div&gt;
+&lt;div class="system-messages section"&gt;
+&lt;h2&gt;Docutils System Messages&lt;/h2&gt;
+&lt;div class="system-message" id="id1"&gt;
+&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/pythonpackages-com-using-pypis-oauth1-support-to-register-and-upload-packages.rst&lt;/tt&gt;, line 19); &lt;em&gt;&lt;a href="#id2"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+Unknown target name: &amp;quot;|image0|&amp;quot;.&lt;/div&gt;
+&lt;div class="system-message" id="id3"&gt;
+&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/pythonpackages-com-using-pypis-oauth1-support-to-register-and-upload-packages.rst&lt;/tt&gt;, line 19); &lt;em&gt;&lt;a href="#id4"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+Unknown target name: &amp;quot;|image1|&amp;quot;.&lt;/div&gt;
+&lt;div class="system-message" id="id5"&gt;
+&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/pythonpackages-com-using-pypis-oauth1-support-to-register-and-upload-packages.rst&lt;/tt&gt;, line 27); &lt;em&gt;&lt;a href="#id6"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+Unknown target name: &amp;quot;|image2|&amp;quot;.&lt;/div&gt;
+&lt;div class="system-message" id="id7"&gt;
+&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/pythonpackages-com-using-pypis-oauth1-support-to-register-and-upload-packages.rst&lt;/tt&gt;, line 45); &lt;em&gt;&lt;a href="#id8"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+Unknown target name: &amp;quot;|image3|&amp;quot;.&lt;/div&gt;
+&lt;div class="system-message" id="id9"&gt;
+&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/pythonpackages-com-using-pypis-oauth1-support-to-register-and-upload-packages.rst&lt;/tt&gt;, line 45); &lt;em&gt;&lt;a href="#id10"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+Unknown target name: &amp;quot;|image4|&amp;quot;.&lt;/div&gt;
+&lt;div class="system-message" id="id11"&gt;
+&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/pythonpackages-com-using-pypis-oauth1-support-to-register-and-upload-packages.rst&lt;/tt&gt;, line 45); &lt;em&gt;&lt;a href="#id12"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+Unknown target name: &amp;quot;|image5|&amp;quot;.&lt;/div&gt;
+&lt;div class="system-message" id="id13"&gt;
+&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/pythonpackages-com-using-pypis-oauth1-support-to-register-and-upload-packages.rst&lt;/tt&gt;, line 53); &lt;em&gt;&lt;a href="#id14"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+Unknown target name: &amp;quot;|image6|&amp;quot;.&lt;/div&gt;
+&lt;div class="system-message" id="id15"&gt;
+&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/pythonpackages-com-using-pypis-oauth1-support-to-register-and-upload-packages.rst&lt;/tt&gt;, line 53); &lt;em&gt;&lt;a href="#id16"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+Unknown target name: &amp;quot;|image7|&amp;quot;.&lt;/div&gt;
+&lt;/div&gt;
+</summary></entry><entry><title>Pillow moved to python-imaging organization</title><link href="/pillow-moved-to-python-imaging-organization.html" rel="alternate"></link><updated>2012-07-25T02:19:00+02:00</updated><author><name>aclark@aclark.net</name></author><id>tag:,2012-07-25:pillow-moved-to-python-imaging-organization.html</id><summary type="html">&lt;p&gt;&lt;p&gt;On 7/30/2010 Pillow, the &amp;quot;friendly&amp;quot; PIL fork, was released. Since then,
+there have been a number of releases:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+$ vanity Pillow
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; Pillow-1.0.tar.gz&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 2010-07-31&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 800
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; Pillow-1.1.tar.gz&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 2010-08-01&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 652
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; Pillow-1.2.tar.gz&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 2010-08-02&amp;nbsp;&amp;nbsp;&amp;nbsp; 1,987
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; Pillow-1.3.zip&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 2010-11-28&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 589
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; Pillow-1.4.zip&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 2010-11-28&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 587
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; Pillow-1.5.zip&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 2010-11-28&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 876
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; Pillow-1.6.zip&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 2010-12-01&amp;nbsp;&amp;nbsp;&amp;nbsp; 6,706
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; Pillow-1.7.0.zip&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 2011-05-28&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 678
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; Pillow-1.7.1.zip&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 2011-05-31&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 663
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; Pillow-1.7.2.zip&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 2011-06-02&amp;nbsp;&amp;nbsp;&amp;nbsp; 3,460
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; Pillow-1.7.3.zip&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 2011-07-21&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 569
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; Pillow-1.7.4.zip&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 2011-07-21&amp;nbsp;&amp;nbsp;&amp;nbsp; 4,156
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; Pillow-1.7.5.zip&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 2011-09-07&amp;nbsp;&amp;nbsp; 17,429
+Pillow-1.7.5-py2.7-win32.egg&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 2011-09-08&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 917
+Pillow-1.7.5-py2.6-win32.egg&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 2011-09-08&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 918
+Pillow-1.7.5-py2.5-win32.egg&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 2011-09-08&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 516
+Pillow-1.7.5-py2.4-win32.egg&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 2011-09-08&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 477
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; Pillow-1.7.6.zip&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 2012-01-21&amp;nbsp;&amp;nbsp;&amp;nbsp; 7,401
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; Pillow-1.7.6.tar.gz&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 2012-01-21&amp;nbsp;&amp;nbsp; 10,540
+Pillow-1.7.6-py2.7-win32.egg&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 2012-01-21&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 632
+Pillow-1.7.6-py2.6-win32.egg&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 2012-01-21&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 439
+Pillow-1.7.6-py2.5-win32.egg&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 2012-01-21&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 332
+Pillow-1.7.6-py2.4-win32.egg&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 2012-01-21&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 336
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; Pillow-1.7.7.zip&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 2012-04-05&amp;nbsp;&amp;nbsp; 28,704
+Pillow-1.7.7-py2.7-win32.egg&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 2012-04-09&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 716
+Pillow-1.7.7-py2.6-win32.egg&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 2012-04-09&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 354
+Pillow-1.7.7-py2.5-win32.egg&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 2012-04-09&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 198
+Pillow-1.7.7-py2.4-win32.egg&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 2012-04-09&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 201
+----------------------------------------------------
+Pillow has been downloaded 91,833 times!
+&lt;/pre&gt;
+&lt;p&gt;Originally, I thought if the fork went nowhere, at least the Plone
+community could maintain it for its own needs. However since then, a
+number of folks outside the Plone community have taken an interest, so
+I've decided to move the repository from the &lt;a class="reference external" href="http://github.com/collective"&gt;Plone collective&lt;/a&gt; to a
+new organization called &lt;a class="reference external" href="http://github.com/python-imaging"&gt;python-imaging&lt;/a&gt;. With this change, I hope to
+gather folks to help develop a Python 3-compat release before PyCon
+2013. (There are various PIL forks with Python 3-compat already in
+existence, as well as the official PIL 1.2-dev tarball available from
+bitbucket, which has some Python 3-compat if I understand correctly.)
+The new home for Pillow is:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://github.com/python-imaging/Pillow"&gt;https://github.com/python-imaging/Pillow&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/p&gt;</summary></entry><entry><title>The Plones Templer</title><link href="/the-plones-templer.html" rel="alternate"></link><updated>2012-07-12T20:48:00+02:00</updated><author><name>aclark@aclark.net</name></author><id>tag:,2012-07-12:the-plones-templer.html</id><summary type="html">&lt;p&gt;(c.f. Knights Templar) I think we have a situation that could use the
+help of the Plone and Python communities at large. It goes something
+like this:&lt;/p&gt;
+&lt;ol class="arabic simple"&gt;
+&lt;li&gt;About 6 years ago, &lt;a class="reference external" href="http://danielnouri.org/blog/devel/zope/quickstart-with-pastescript.html"&gt;Daniel Nouri started the ZopeSkel project&lt;/a&gt; to
+provide a Zope project template to &lt;a class="reference external" href="http://pypi.python.org/pypi/PasteScript/1.7.5"&gt;PasteScript&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Sometime between then and now, the Plone community latched on to the
+ZopeSkel project to include templates for its projects.&lt;/li&gt;
+&lt;li&gt;About 3 years ago, as part of the ZopeSkel project, &lt;a class="reference external" href="http://www.coactivate.org/projects/zopeskel-bbq-sprint/project-home"&gt;some folks at
+the BBQ&lt;/a&gt; sprint built a more user friendly UI on top of PasteScript.
+And some refactoring of the project was planned or occurred, during
+which time the entire project was renamed to &amp;quot;Templer&amp;quot;.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;At present, if you install the latest ZopeSkel (3.0b3) you get:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+$ bin/paster create --list-templates
+Available templates:
+&amp;nbsp; archetype:&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; A Plone project that uses Archetypes content types
+&amp;nbsp; basic_buildout:&amp;nbsp;&amp;nbsp;&amp;nbsp; A basic buildout skeleton
+&amp;nbsp; basic_namespace:&amp;nbsp;&amp;nbsp; A basic Python project with a namespace package
+&amp;nbsp; basic_package:&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; A basic setuptools-enabled package
+&amp;nbsp; nested_namespace:&amp;nbsp; A basic Python project with a nested namespace (2 dots in name)
+&amp;nbsp; paste_deploy:&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; A web application deployed through paste.deploy
+&amp;nbsp; plone_basic:&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; A package for Plone add-ons
+&amp;nbsp; plone_nested:&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; A package for Plone add-ons with a nested namespace
+&amp;nbsp; recipe:&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; A recipe project for zc.buildout
+&amp;nbsp; zope2_basic:&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; A Zope project
+&amp;nbsp; zope2_nested:&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; A nested-namespace Zope package
+&lt;/pre&gt;
+&lt;p&gt;Looks nice, but some templates are missing. If you install the previous
+stable version (2.21.2), you get this:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+$ bin/paster create --list-templates
+Available templates:
+&amp;nbsp; archetype:&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; A Plone project that uses Archetypes content types
+&amp;nbsp; basic_namespace:&amp;nbsp;&amp;nbsp;&amp;nbsp; A basic Python project with a namespace package
+&amp;nbsp; basic_package:&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; A basic setuptools-enabled package
+&amp;nbsp; basic_zope:&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; A Zope project
+&amp;nbsp; kss_plugin:&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; A project for a KSS plugin
+&amp;nbsp; nested_namespace:&amp;nbsp;&amp;nbsp; A basic Python project with a nested namespace (2 dots in name)
+&amp;nbsp; paste_deploy:&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; A web application deployed through paste.deploy
+&amp;nbsp; plone:&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; A project for Plone add-ons
+&amp;nbsp; plone2.5_buildout:&amp;nbsp; A buildout for Plone 2.5 projects
+&amp;nbsp; plone2.5_theme:&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; A theme for Plone 2.5
+&amp;nbsp; plone2_theme:&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; A theme for Plone 2.1
+&amp;nbsp; plone3_buildout:&amp;nbsp;&amp;nbsp;&amp;nbsp; A buildout for Plone 3 installation
+&amp;nbsp; plone3_portlet:&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; A Plone 3 portlet
+&amp;nbsp; plone3_theme:&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; A theme for Plone 3
+&amp;nbsp; plone4_buildout:&amp;nbsp;&amp;nbsp;&amp;nbsp; A buildout for Plone 4 developer installation
+&amp;nbsp; plone_app:&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; A project for Plone add-ons with a nested namespace (2 dots in name)
+&amp;nbsp; plone_hosting:&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; Plone hosting: buildout with ZEO and Plone versions below 3.2
+&amp;nbsp; plone_pas:&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; A project for a Plone PAS plugin
+&amp;nbsp; recipe:&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; A recipe project for zc.buildout
+&amp;nbsp; silva_buildout:&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; A buildout for Silva projects
+&lt;/pre&gt;
+&lt;p&gt;Looks a lot better. Additionally, with the previous release (2.21.2) you
+can install zopeskel.dexterity, and &amp;quot;dexterity&amp;quot; will show up in the list
+of available templates (but not so with 3.0b3). So what's left to finish
+the move from ZopeSkel to Templer? I'm told by Chris Ewing (the current
+project lead) that it's mostly a matter of missing imports in various
+Python packages that provide templates to PasteScript. Let's. Finish.
+This. This frustrates me because Paster is a nice system (that provides
+pluggable commands, and code gen from templates). And ZopeSkel was a
+nice system (that provided additional templates and a friendly UI). And
+Templer will be a great system, but it's not there yet. So we need to
+help Chris et. al. get it there ASAP. In addition to the code
+refactoring, they have produced some &lt;a class="reference external" href="http://templer-manual.readthedocs.org/en/latest/index.html"&gt;nice documentation available on
+readthedocs.org&lt;/a&gt;. If you are interested in helping, please gather
+around the #plone on irc.freenode.net to discuss options (I am aclark on
+IRC).&lt;/p&gt;
+&lt;/p&gt;</summary></entry><entry><title>Zope2 Bootstrap</title><link href="/zope2-bootstrap.html" rel="alternate"></link><updated>2012-06-12T10:27:00+02:00</updated><author><name>aclark@aclark.net</name></author><id>tag:,2012-06-12:zope2-bootstrap.html</id><summary type="html">&lt;p&gt;&lt;em&gt;Bootstrap all the things, including Zope2.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external" href="http://pypi.python.org/pypi/zope2_bootstrap"&gt;zope2_bootstrap&lt;/a&gt; is a new Python package that &lt;a class="reference external" href="http://pypi.python.org/pypi/collective.monkeypatcher"&gt;monkey patches&lt;/a&gt; Zope2
+in order to:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;Replace &lt;a class="reference external" href="http://zope3.pov.lt/trac/browser/Zope/trunk/src/App/dtml/manage_page_style.css.dtml"&gt;manage_page_styles.css.dtml&lt;/a&gt; styles with &lt;a class="reference external" href="http://twitter.github.com/bootstrap/base-css.html"&gt;Twitter
+Bootstrap&lt;/a&gt; styles.&lt;/li&gt;
+&lt;li&gt;Adds CSS classes to &lt;a class="reference external" href="http://zope3.pov.lt/trac/browser/Zope/trunk/src/OFS/dtml/main.dtml"&gt;main&lt;/a&gt; and/or &lt;a class="reference external" href="http://zope3.pov.lt/trac/browser/Products.ExternalEditor/trunk/Products/ExternalEditor/manage_main.dtml"&gt;manage_main&lt;/a&gt; tables.&lt;/li&gt;
+&lt;li&gt;Inserts a Plone logo (if Plone is installed) above
+&lt;a class="reference external" href="http://zope3.pov.lt/trac/browser/Products.ExternalEditor/trunk/Products/ExternalEditor/manage_tabs.dtml"&gt;manage_tabs.dtml&lt;/a&gt; tabs (h/t:
+&lt;a class="reference external" href="https://github.com/plone/Products.CMFPlone/blob/master/Products/CMFPlone/patches/addzmiplonesite.py"&gt;https://github.com/plone/Products.CMFPlone/blob/master/Products/CMFPlone/patches/addzmiplonesite.py&lt;/a&gt;).&lt;/li&gt;
+&lt;li&gt;Inserts a ZMI warning (if Plone is installed) below
+&lt;a class="reference external" href="http://zope3.pov.lt/trac/browser/Products.ExternalEditor/trunk/Products/ExternalEditor/manage_tabs.dtml"&gt;manage_tabs.dtml&lt;/a&gt; tabs.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href="#id2"&gt;&lt;span class="problematic" id="id3"&gt;`|image0|`_&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/p&gt;&lt;p&gt;&lt;a href="#id4"&gt;&lt;span class="problematic" id="id5"&gt;`|image1|`_&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;In the next version, I'll try to import &lt;a class="reference external" href="http://twitter.github.com/bootstrap/javascript.html"&gt;Twitter Bootstrap JavaScript&lt;/a&gt;
+for even more goodness. Enjoy, and give feedback in the comments, or
+&lt;a class="reference external" href="https://github.com/aclark4life/zope2_bootstrap/issues"&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;div class="system-messages section"&gt;
+&lt;h2&gt;Docutils System Messages&lt;/h2&gt;
+&lt;div class="system-message" id="id2"&gt;
+&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/zope2-bootstrap.rst&lt;/tt&gt;, line 20); &lt;em&gt;&lt;a href="#id3"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+Unknown target name: &amp;quot;|image0|&amp;quot;.&lt;/div&gt;
+&lt;div class="system-message" id="id4"&gt;
+&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/zope2-bootstrap.rst&lt;/tt&gt;, line 26); &lt;em&gt;&lt;a href="#id5"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+Unknown target name: &amp;quot;|image1|&amp;quot;.&lt;/div&gt;
+&lt;/div&gt;
+</summary></entry><entry><title>A simple printer of nested lists</title><link href="/a-simple-printer-of-nested-lists.html" rel="alternate"></link><updated>2012-05-23T22:58:00+02:00</updated><author><name>aclark@aclark.net</name></author><id>tag:,2012-05-23:a-simple-printer-of-nested-lists.html</id><summary type="html">&lt;p&gt;&lt;em&gt;A rant&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Do you ever get the urge to kill? How many of us cringe whenever we see
+these words? Lately I've been spending a lot of time developing
+&lt;a class="reference external" href="http://pythonpackages.com"&gt;pythonpackages.com&lt;/a&gt;, (now running on heroku!) during which time I see
+a lot of these kinds of packages being released:&lt;/p&gt;
+&lt;p&gt;&lt;a href="#id1"&gt;&lt;span class="problematic" id="id2"&gt;`|image0|`_&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;I kid about the killing part, but seriously: &lt;strong&gt;this is a problem&lt;/strong&gt;.
+Fortunately for us, our PyPI overloads see fit to occasionally remove
+these packages, and for this I am grateful. I love seeing this:&lt;/p&gt;
+&lt;p&gt;&lt;a href="#id3"&gt;&lt;span class="problematic" id="id4"&gt;`|image1|`_&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;I mean it makes me &lt;em&gt;dance-around-the-room&lt;/em&gt; happy! Ahem. But are they
+really all gone? Close enough. A quick &lt;a class="reference external" href="https://crate.io/?q=a+simple+printer+of+nested+lists"&gt;crate.io search&lt;/a&gt; now shows only
+2 packages instead of 4 pages of results:&lt;/p&gt;
+&lt;p&gt;&lt;a href="#id5"&gt;&lt;span class="problematic" id="id6"&gt;`|image2|`_&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Hallelujah! But is this the best we can do? I know that some
+well-meaning person wrote a book containing the example that is leading
+some poor, misguided souls to spam PyPI (if only the author listed the
+test site instead: &lt;a class="reference external" href="http://testpypi.python.org/pypi"&gt;http://testpypi.python.org/pypi&lt;/a&gt;). And I have to
+assume that this was just some terrible mistake. But do we all have to
+live with this mistake?&lt;/p&gt;
+&lt;p&gt;I'm asking because I honestly don't know the answer. I remember when I
+started pythonpackages.com, the &lt;a class="reference external" href="http://pythonpackages.com/package/deliverance"&gt;Deliverance&lt;/a&gt; documentation was being
+updated something like every 5 minutes (kidding again, but it was
+frequent enough to be annoying). After grousing about it in public, it
+stopped happening!&lt;/p&gt;
+&lt;p&gt;I wonder if some good natured grousing about our friends (read: enemies)
+the &lt;em&gt;simple printers of nested lists&lt;/em&gt; will do the same?&lt;/p&gt;
+&lt;div class="system-messages section"&gt;
+&lt;h2&gt;Docutils System Messages&lt;/h2&gt;
+&lt;div class="system-message" id="id1"&gt;
+&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/a-simple-printer-of-nested-lists.rst&lt;/tt&gt;, line 13); &lt;em&gt;&lt;a href="#id2"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+Unknown target name: &amp;quot;|image0|&amp;quot;.&lt;/div&gt;
+&lt;div class="system-message" id="id3"&gt;
+&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/a-simple-printer-of-nested-lists.rst&lt;/tt&gt;, line 19); &lt;em&gt;&lt;a href="#id4"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+Unknown target name: &amp;quot;|image1|&amp;quot;.&lt;/div&gt;
+&lt;div class="system-message" id="id5"&gt;
+&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/a-simple-printer-of-nested-lists.rst&lt;/tt&gt;, line 25); &lt;em&gt;&lt;a href="#id6"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+Unknown target name: &amp;quot;|image2|&amp;quot;.&lt;/div&gt;
+&lt;/div&gt;
+</summary></entry><entry><title>test-plone tmp</title><link href="/test-plone-tmp.html" rel="alternate"></link><updated>2012-04-04T14:14:00+02:00</updated><author><name>aclark@aclark.net</name></author><id>tag:,2012-04-04:test-plone-tmp.html</id><summary type="html">&lt;p&gt;Since Day 1 with Plone circa 2004, I've always taken pride in and
+greatly enjoyed refining my development environment. It's been stable
+for a while now (&amp;gt; 1 year or so) so I thought I'd share.&lt;/p&gt;
+&lt;div class="section" id="operating-system"&gt;
+&lt;h2&gt;Operating system&lt;/h2&gt;
+&lt;p&gt;Mac OS X Latest (Lion, at the time of this writing)&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="terminal"&gt;
+&lt;h2&gt;Terminal&lt;/h2&gt;
+&lt;p&gt;Mac OS X Terminal&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="editor"&gt;
+&lt;h2&gt;Editor&lt;/h2&gt;
+&lt;p&gt;Vim&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="python"&gt;
+&lt;h2&gt;Python&lt;/h2&gt;
+&lt;p&gt;Yes. All versions, via the collective Python buildout:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://github.com/collective/buildout.python"&gt;https://github.com/collective/buildout.python&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="section" id="plone"&gt;
+&lt;h2&gt;Plone&lt;/h2&gt;
+&lt;p&gt;Yes. All versions, via pythonpackages.com:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://docs.pythonpackages.com/en/latest/advanced.html"&gt;http://docs.pythonpackages.com/en/latest/advanced.html&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="section" id="additional-tools"&gt;
+&lt;h2&gt;Additional tools&lt;/h2&gt;
+&lt;p&gt;A &lt;a class="reference external" href="https://github.com/aclark4life/binfiles/blob/master/test-plone"&gt;shell script to run virtualenv, buildout, etc&lt;/a&gt;:&lt;/p&gt;
+&lt;/p&gt;&lt;p&gt;[bash] #!/bin/sh if ! [ -n &amp;quot;$1&amp;quot; ] then echo &amp;quot;Usage:nn$0 &amp;lt;dir&amp;gt;n&amp;quot; exit 1
+fi if ! [ -d $1 ] then mkdir $1 fi cd $1 virtualenv-2.7 . bin/pip
+install zc.buildout bin/buildout init cat &amp;lt;&amp;lt; EOF &amp;gt; buildout.cfg
+[buildout] extends =
+http://build.pythonpackages.com/buildout/plone/4.2.x-dev EOF
+bin/buildout bin/plone start sleep 4 echo &amp;quot;Adding Plone site...&amp;quot; curl -d
+form.submitted:boolean=&amp;quot;True&amp;quot;
+http://admin:admin&amp;#64;localhost:8080/&amp;#64;&amp;#64;plone-addsite?site_id=Plone
+bin/plone stop bin/plone fg [/bash]&lt;/p&gt;
+&lt;p&gt;A &lt;a class="reference external" href="https://github.com/aclark4life/binfiles/blob/master/tmp"&gt;Python script to create temporary directories&lt;/a&gt;:&lt;/p&gt;
+&lt;p&gt;[python] #!/usr/bin/env python&lt;/p&gt;
+&lt;p&gt;import os import tempfile print os.path.abspath(tempfile.mkdtemp())
+[/python]&lt;/p&gt;
+&lt;p&gt;&lt;p&gt;A default buildout config file:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+[buildout]
+eggs-directory = /Users/aclark/Developer/eggs-directory
+download-cache = /Users/aclark/Developer/download-cache
+extends-cache = /Users/aclark/Developer/extends-cache
+&lt;/pre&gt;
+&lt;/p&gt;&lt;/div&gt;
+&lt;div class="section" id="workflow"&gt;
+&lt;h2&gt;Workflow&lt;/h2&gt;
+&lt;p&gt;My typical workflow looks like this:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;Hang in #plone on irc.freenode.net and wait for questions&lt;/li&gt;
+&lt;li&gt;Hear question and get inspired to run Plone&lt;/li&gt;
+&lt;li&gt;Run: &lt;strong&gt;$ test-plone `tmp`&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a class="reference external" href="https://gist.github.com/2304317"&gt;~ 1 minute later&lt;/a&gt; I'm browsing &lt;strong&gt;http://localhost:8080/Plone&lt;/strong&gt; and can
+install add-ons, check ZMI settings, etc.&lt;/p&gt;
+&lt;/p&gt;&lt;p&gt;&lt;a href="#id1"&gt;&lt;span class="problematic" id="id2"&gt;`|image0|`_&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Enjoy.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="system-messages section"&gt;
+&lt;h2&gt;Docutils System Messages&lt;/h2&gt;
+&lt;div class="system-message" id="id1"&gt;
+&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/test-plone-tmp.rst&lt;/tt&gt;, line 98); &lt;em&gt;&lt;a href="#id2"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+Unknown target name: &amp;quot;|image0|&amp;quot;.&lt;/div&gt;
+&lt;/div&gt;
+</summary></entry><entry><title>New vanity release</title><link href="/new-vanity-release.html" rel="alternate"></link><updated>2012-01-30T09:52:00+01:00</updated><author><name>aclark@aclark.net</name></author><id>tag:,2012-01-30:new-vanity-release.html</id><summary type="html">&lt;p&gt;With all the Python &lt;a class="reference external" href="http://crate.io/"&gt;stats&lt;/a&gt; &lt;a class="reference external" href="http://python3wos.appspot.com/"&gt;goodness&lt;/a&gt; going on recently, I got
+inspired to make a new &lt;a class="reference external" href="http://pythonpackages.com/info/vanity"&gt;vanity&lt;/a&gt; release. This release features the
+ability to display per package download statistics via the `-v` or
+`--verbose` command line argument.&lt;/p&gt;
+&lt;p&gt;Here are some of my favorite results.&lt;/p&gt;
+&lt;div class="section" id="vanity"&gt;
+&lt;h2&gt;Vanity&lt;/h2&gt;
+&lt;pre class="literal-block"&gt;
+$ vanity vanity -v
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; vanity-1.0.zip&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 2011-04-14&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 352
+&amp;nbsp;&amp;nbsp; vanity-1.1.0.zip&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 2011-10-26&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 139
+&amp;nbsp;&amp;nbsp; vanity-1.1.1.zip&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 2011-10-28&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 114
+&amp;nbsp;&amp;nbsp; vanity-1.1.2.zip&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 2011-10-28&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 145
+vanity-1.2.0.tar.gz&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 2012-01-30&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 0
+-------------------------------------------
+Package `vanity` has been downloaded 750 times!
+&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div class="section" id="django"&gt;
+&lt;h2&gt;Django&lt;/h2&gt;
+&lt;pre class="literal-block"&gt;
+$ vanity django -v
+Django-1.1.3.tar.gz&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 2010-12-23&amp;nbsp;&amp;nbsp;&amp;nbsp; 2,618
+Django-1.1.4.tar.gz&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 2011-02-09&amp;nbsp;&amp;nbsp;&amp;nbsp; 4,476
+&amp;nbsp; Django-1.2.tar.gz&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 2010-05-17&amp;nbsp;&amp;nbsp; 15,876
+Django-1.2.1.tar.gz&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 2010-05-24&amp;nbsp;&amp;nbsp; 65,120
+Django-1.2.2.tar.gz&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 2010-09-09&amp;nbsp;&amp;nbsp;&amp;nbsp; 2,467
+Django-1.2.3.tar.gz&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 2010-09-11&amp;nbsp;&amp;nbsp; 73,984
+Django-1.2.4.tar.gz&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 2010-12-23&amp;nbsp;&amp;nbsp; 49,904
+Django-1.2.5.tar.gz&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 2011-02-09&amp;nbsp;&amp;nbsp; 63,977
+Django-1.2.6.tar.gz&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 2011-09-10&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 427
+Django-1.2.7.tar.gz&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 2011-09-11&amp;nbsp;&amp;nbsp;&amp;nbsp; 6,825
+&amp;nbsp; Django-1.3.tar.gz&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 2011-03-23&amp;nbsp; 238,504
+Django-1.3.1.tar.gz&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 2011-09-10&amp;nbsp; 176,054
+-------------------------------------------
+Package `Django` has been downloaded 700,232 times!
+&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div class="section" id="plone"&gt;
+&lt;h2&gt;Plone&lt;/h2&gt;
+&lt;pre class="literal-block"&gt;
+$ vanity plone -v
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; Plone-3.2.zip&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 2008-12-31&amp;nbsp;&amp;nbsp;&amp;nbsp; 1,690
+&amp;nbsp;&amp;nbsp; Plone-3.2.1.zip&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 2009-02-04&amp;nbsp;&amp;nbsp;&amp;nbsp; 2,466
+&amp;nbsp;&amp;nbsp; Plone-3.2.2.zip&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 2009-03-03&amp;nbsp;&amp;nbsp;&amp;nbsp; 4,893
+&amp;nbsp;&amp;nbsp; Plone-3.2.3.zip&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 2009-06-20&amp;nbsp;&amp;nbsp;&amp;nbsp; 2,731
+&amp;nbsp;&amp;nbsp; Plone-3.2a1.zip&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 2008-10-10&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 976
+&amp;nbsp; Plone-3.2rc1.zip&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 2008-12-15&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 758
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; Plone-3.3.zip&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 2009-08-19&amp;nbsp;&amp;nbsp;&amp;nbsp; 4,611
+&amp;nbsp;&amp;nbsp; Plone-3.3.1.zip&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 2009-09-09&amp;nbsp;&amp;nbsp;&amp;nbsp; 4,148
+Plone-3.3.2.tar.gz&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 2009-11-03&amp;nbsp;&amp;nbsp;&amp;nbsp; 3,043
+&amp;nbsp;&amp;nbsp; Plone-3.3.3.zip&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 2009-12-08&amp;nbsp;&amp;nbsp;&amp;nbsp; 1,733
+&amp;nbsp;&amp;nbsp; Plone-3.3.4.zip&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 2010-01-14&amp;nbsp;&amp;nbsp;&amp;nbsp; 4,906
+&amp;nbsp;&amp;nbsp; Plone-3.3.5.zip&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 2010-03-03&amp;nbsp;&amp;nbsp; 12,131
+Plone-3.3.6.tar.gz&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 2011-07-19&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 787
+&amp;nbsp;&amp;nbsp; Plone-3.3b1.zip&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 2009-03-12&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 940
+&amp;nbsp; Plone-3.3rc1.zip&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 2009-03-30&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 743
+&amp;nbsp; Plone-3.3rc2.zip&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 2009-04-05&amp;nbsp;&amp;nbsp;&amp;nbsp; 1,822
+&amp;nbsp; Plone-3.3rc3.zip&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 2009-05-23&amp;nbsp;&amp;nbsp;&amp;nbsp; 2,036
+&amp;nbsp; Plone-3.3rc4.zip&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 2009-07-07&amp;nbsp;&amp;nbsp;&amp;nbsp; 2,163
+&amp;nbsp; Plone-3.3rc5.zip&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 2009-08-01&amp;nbsp;&amp;nbsp;&amp;nbsp; 1,211
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; Plone-4.0.zip&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 2010-08-30&amp;nbsp;&amp;nbsp;&amp;nbsp; 3,659
+&amp;nbsp;&amp;nbsp; Plone-4.0.1.zip&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 2010-10-04&amp;nbsp;&amp;nbsp;&amp;nbsp; 4,224
+&amp;nbsp;&amp;nbsp; Plone-4.0.2.zip&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 2010-11-22&amp;nbsp;&amp;nbsp;&amp;nbsp; 4,022
+&amp;nbsp;&amp;nbsp; Plone-4.0.3.zip&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 2011-01-21&amp;nbsp;&amp;nbsp;&amp;nbsp; 3,339
+&amp;nbsp;&amp;nbsp; Plone-4.0.4.zip&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 2011-03-01&amp;nbsp;&amp;nbsp;&amp;nbsp; 2,711
+&amp;nbsp;&amp;nbsp; Plone-4.0.5.zip&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 2011-04-09&amp;nbsp;&amp;nbsp;&amp;nbsp; 3,152
+&amp;nbsp;&amp;nbsp; Plone-4.0.6.zip&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 2011-05-22&amp;nbsp;&amp;nbsp;&amp;nbsp; 1,469
+&amp;nbsp;&amp;nbsp; Plone-4.0.7.zip&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 2011-06-06&amp;nbsp;&amp;nbsp;&amp;nbsp; 2,192
+&amp;nbsp;&amp;nbsp; Plone-4.0.8.zip&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 2011-07-17&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 509
+&amp;nbsp;&amp;nbsp; Plone-4.0.9.zip&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 2011-07-29&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 958
+&amp;nbsp; Plone-4.0.10.zip&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 2011-10-12&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 495
+&amp;nbsp;&amp;nbsp; Plone-4.0a1.zip&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 2009-11-19&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 946
+&amp;nbsp;&amp;nbsp; Plone-4.0a2.zip&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 2009-12-04&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 921
+&amp;nbsp;&amp;nbsp; Plone-4.0a3.zip&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 2009-12-21&amp;nbsp;&amp;nbsp;&amp;nbsp; 1,272
+&amp;nbsp;&amp;nbsp; Plone-4.0a4.zip&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 2010-02-01&amp;nbsp;&amp;nbsp;&amp;nbsp; 1,121
+&amp;nbsp;&amp;nbsp; Plone-4.0a5.zip&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 2010-02-19&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 850
+&amp;nbsp;&amp;nbsp; Plone-4.0b1.zip&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 2010-03-09&amp;nbsp;&amp;nbsp;&amp;nbsp; 1,308
+&amp;nbsp;&amp;nbsp; Plone-4.0b2.zip&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 2010-04-10&amp;nbsp;&amp;nbsp;&amp;nbsp; 1,028
+&amp;nbsp;&amp;nbsp; Plone-4.0b3.zip&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 2010-05-04&amp;nbsp;&amp;nbsp;&amp;nbsp; 1,722
+&amp;nbsp;&amp;nbsp; Plone-4.0b4.zip&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 2010-06-13&amp;nbsp;&amp;nbsp;&amp;nbsp; 1,642
+Plone-4.0b5.tar.gz&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 2010-07-08&amp;nbsp;&amp;nbsp;&amp;nbsp; 1,995
+&amp;nbsp; Plone-4.0rc1.zip&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 2010-08-06&amp;nbsp;&amp;nbsp;&amp;nbsp; 1,598
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; Plone-4.1.zip&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 2011-07-17&amp;nbsp;&amp;nbsp;&amp;nbsp; 4,479
+Plone-4.1.1.tar.gz&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 2011-09-21&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 429
+Plone-4.1.2.tar.gz&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 2011-10-08&amp;nbsp;&amp;nbsp;&amp;nbsp; 2,187
+Plone-4.1.3.tar.gz&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 2011-11-29&amp;nbsp;&amp;nbsp;&amp;nbsp; 1,883
+&amp;nbsp;&amp;nbsp; Plone-4.1a1.zip&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 2011-01-21&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 699
+&amp;nbsp;&amp;nbsp; Plone-4.1a2.zip&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 2011-02-11&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 451
+&amp;nbsp;&amp;nbsp; Plone-4.1a3.zip&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 2011-02-15&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 680
+&amp;nbsp;&amp;nbsp; Plone-4.1b1.zip&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 2011-03-08&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 958
+&amp;nbsp;&amp;nbsp; Plone-4.1b2.zip&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 2011-04-09&amp;nbsp;&amp;nbsp;&amp;nbsp; 1,040
+&amp;nbsp; Plone-4.1rc2.zip&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 2011-05-22&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 797
+&amp;nbsp; Plone-4.1rc3.zip&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 2011-06-06&amp;nbsp;&amp;nbsp;&amp;nbsp; 1,329
+&amp;nbsp;&amp;nbsp; Plone-4.2a1.zip&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 2011-08-10&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 521
+&amp;nbsp;&amp;nbsp; Plone-4.2a2.zip&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 2011-09-16&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 884
+Plone-4.2b1.tar.gz&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 2011-12-06&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 619
+------------------------------------------
+Package `Plone` has been downloaded 111,877 times!
+&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div class="section" id="pyramid"&gt;
+&lt;h2&gt;Pyramid&lt;/h2&gt;
+&lt;pre class="literal-block"&gt;
+$ vanity pyramid -v
+&amp;nbsp;&amp;nbsp; pyramid-1.0.tar.gz&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 2011-01-31&amp;nbsp;&amp;nbsp; 24,055
+&amp;nbsp;pyramid-1.0.1.tar.gz&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 2011-08-13&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 460
+&amp;nbsp;pyramid-1.0.2.tar.gz&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 2011-12-15&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 185
+&amp;nbsp;pyramid-1.0a1.tar.gz&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 2010-11-05&amp;nbsp;&amp;nbsp;&amp;nbsp; 1,128
+&amp;nbsp;pyramid-1.0a2.tar.gz&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 2010-11-09&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 952
+&amp;nbsp;pyramid-1.0a3.tar.gz&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 2010-11-16&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 803
+&amp;nbsp;pyramid-1.0a4.tar.gz&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 2010-11-21&amp;nbsp;&amp;nbsp;&amp;nbsp; 1,732
+&amp;nbsp;pyramid-1.0a5.tar.gz&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 2010-12-15&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 639
+&amp;nbsp;pyramid-1.0a6.tar.gz&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 2010-12-16&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 834
+&amp;nbsp;pyramid-1.0a7.tar.gz&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 2010-12-20&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 912
+&amp;nbsp;pyramid-1.0a8.tar.gz&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 2010-12-27&amp;nbsp;&amp;nbsp;&amp;nbsp; 1,233
+&amp;nbsp;pyramid-1.0a9.tar.gz&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 2011-01-08&amp;nbsp;&amp;nbsp;&amp;nbsp; 1,313
+pyramid-1.0a10.tar.gz&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 2011-01-18&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 960
+&amp;nbsp;pyramid-1.0b1.tar.gz&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 2011-01-22&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 871
+&amp;nbsp;pyramid-1.0b2.tar.gz&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 2011-01-25&amp;nbsp;&amp;nbsp;&amp;nbsp; 1,003
+&amp;nbsp;pyramid-1.0b3.tar.gz&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 2011-01-28&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 816
+&amp;nbsp;&amp;nbsp; pyramid-1.1.tar.gz&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 2011-07-22&amp;nbsp;&amp;nbsp;&amp;nbsp; 5,674
+&amp;nbsp;pyramid-1.1.1.tar.gz&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 2011-08-13&amp;nbsp;&amp;nbsp;&amp;nbsp; 1,057
+&amp;nbsp;pyramid-1.1.2.tar.gz&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 2011-08-17&amp;nbsp;&amp;nbsp;&amp;nbsp; 1,560
+&amp;nbsp;pyramid-1.1.3.tar.gz&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 2011-12-15&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 160
+&amp;nbsp;pyramid-1.1a1.tar.gz&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 2011-06-20&amp;nbsp;&amp;nbsp;&amp;nbsp; 1,146
+&amp;nbsp;pyramid-1.1a2.tar.gz&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 2011-06-23&amp;nbsp;&amp;nbsp;&amp;nbsp; 1,003
+&amp;nbsp;pyramid-1.1a3.tar.gz&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 2011-06-26&amp;nbsp;&amp;nbsp;&amp;nbsp; 1,252
+&amp;nbsp;pyramid-1.1a4.tar.gz&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 2011-07-01&amp;nbsp;&amp;nbsp;&amp;nbsp; 1,517
+&amp;nbsp;pyramid-1.1b1.tar.gz&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 2011-07-10&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 981
+&amp;nbsp;pyramid-1.1b2.tar.gz&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 2011-07-13&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 844
+&amp;nbsp;pyramid-1.1b3.tar.gz&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 2011-07-15&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 742
+&amp;nbsp;pyramid-1.1b4.tar.gz&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 2011-07-18&amp;nbsp;&amp;nbsp;&amp;nbsp; 1,094
+&amp;nbsp;&amp;nbsp; pyramid-1.2.tar.gz&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 2011-09-13&amp;nbsp;&amp;nbsp;&amp;nbsp; 6,450
+&amp;nbsp;pyramid-1.2.1.tar.gz&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 2011-09-28&amp;nbsp;&amp;nbsp; 10,357
+&amp;nbsp;pyramid-1.2.2.tar.gz&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 2011-11-20&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 322
+&amp;nbsp;pyramid-1.2.3.tar.gz&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 2011-11-21&amp;nbsp;&amp;nbsp;&amp;nbsp; 3,078
+&amp;nbsp;pyramid-1.2.4.tar.gz&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 2011-12-06&amp;nbsp;&amp;nbsp;&amp;nbsp; 1,193
+&amp;nbsp;pyramid-1.2.5.tar.gz&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 2011-12-15&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 555
+&amp;nbsp;pyramid-1.2.6.tar.gz&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 2012-01-05&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 514
+&amp;nbsp;pyramid-1.2.7.tar.gz&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 2012-01-20&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 472
+&amp;nbsp;pyramid-1.2a1.tar.gz&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 2011-08-24&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 907
+&amp;nbsp;pyramid-1.2a2.tar.gz&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 2011-08-27&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 696
+&amp;nbsp;pyramid-1.2a3.tar.gz&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 2011-08-29&amp;nbsp;&amp;nbsp;&amp;nbsp; 3,268
+&amp;nbsp;pyramid-1.2a4.tar.gz&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 2011-09-02&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 593
+&amp;nbsp;pyramid-1.2a5.tar.gz&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 2011-09-04&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 840
+&amp;nbsp;pyramid-1.2a6.tar.gz&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 2011-09-07&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 602
+&amp;nbsp;pyramid-1.2b1.tar.gz&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 2011-09-08&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 493
+&amp;nbsp;pyramid-1.2b2.tar.gz&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 2011-09-08&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 700
+&amp;nbsp;pyramid-1.2b3.tar.gz&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 2011-09-11&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 674
+&amp;nbsp;pyramid-1.3a1.tar.gz&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 2011-12-09&amp;nbsp;&amp;nbsp;&amp;nbsp; 1,264
+&amp;nbsp;pyramid-1.3a2.tar.gz&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 2011-12-14&amp;nbsp;&amp;nbsp;&amp;nbsp; 1,641
+&amp;nbsp;pyramid-1.3a3.tar.gz&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 2011-12-21&amp;nbsp;&amp;nbsp;&amp;nbsp; 2,716
+&amp;nbsp;pyramid-1.3a4.tar.gz&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 2012-01-05&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 675
+&amp;nbsp;pyramid-1.3a5.tar.gz&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 2012-01-09&amp;nbsp;&amp;nbsp;&amp;nbsp; 2,369
+&amp;nbsp;pyramid-1.3a6.tar.gz&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 2012-01-20&amp;nbsp;&amp;nbsp;&amp;nbsp; 1,917
+---------------------------------------------
+Package `pyramid` has been downloaded 97,222 times!
+&lt;/pre&gt;
+&lt;p&gt;Enjoy the new release.&lt;/p&gt;
+&lt;/p&gt;&lt;/div&gt;
+</summary></entry><entry><title>Hello Plone theming</title><link href="/hello-plone-theming.html" rel="alternate"></link><updated>2012-01-25T00:15:00+01:00</updated><author><name>aclark@aclark.net</name></author><id>tag:,2012-01-25:hello-plone-theming.html</id><summary type="html">&lt;p&gt;In this post, we introduce a new tutorial aimed at bridging the gap
+between the &lt;strong&gt;incredibly easy to use and enormously powerful Diazo
+theming engine for Plone&lt;/strong&gt;, and bootstrapping your first new theme. You
+do not need to have any Python skills whatsoever to perform these tasks.
+New Plone themes are:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;HTML/CSS/JavaScript/images (Sound familiar? You don't need to know
+any Plone to understand this part.)&lt;/li&gt;
+&lt;li&gt;A set of rules that map your HTML/CSS/JavaScript/images to Plone
+content. (This part is Diazo-specific; and while Diazo is not part of
+Plone, integration is provided by a Python package called
+plone.app.theming.)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The Diazo rules can get complex, but it's very easy to get your first
+rule done and working and then off you go. You may find this &lt;a class="reference external" href="http://readthedocs.org/docs/pythonpackages-docs/en/latest/features/examples/ex8-diazo.html"&gt;new
+tutorial on pythonpackages.com&lt;/a&gt;. Enjoy, and get busy theming Plone.&lt;/p&gt;
+&lt;/p&gt;</summary></entry><entry><title>Plone: First class Python citizen</title><link href="/plone-first-class-python-citizen.html" rel="alternate"></link><updated>2011-10-24T09:09:00+02:00</updated><author><name>aclark@aclark.net</name></author><id>tag:,2011-10-24:plone-first-class-python-citizen.html</id><summary type="html">&lt;p&gt;&lt;em&gt;The Plone community and software fit nicely within the larger Python
+ecosystem. Here's why.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;For almost as long as I have been involved in the &lt;a class="reference external" href="http://plone.org"&gt;Plone&lt;/a&gt; project, I've
+been interested in Plone's role in the Python ecosystem. Today as I look
+across the current landscape, I'm proud to announce a new milestone the
+Plone community can take pride in. But the change didn't happen
+overnight, so first let's take a quick look back.&lt;/p&gt;
+&lt;div class="section" id="pypi-support-in-psc"&gt;
+&lt;h2&gt;PyPI support in PSC&lt;/h2&gt;
+&lt;p&gt;Circa 2008, Tarek Ziadé and others finished the PyPI integration branch
+of PloneSoftwareCenter started by Sidnei Da Silva 2 years before.&lt;/p&gt;
+&lt;/p&gt;&lt;p&gt;&lt;a href="#id1"&gt;&lt;span class="problematic" id="id2"&gt;`|image0|`_&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;This was a big step towards the &amp;quot;Pythonification&amp;quot; of Plone, mainly
+because Plone packages could now be published on plone.org in the same
+way Python packages are published to the Python Package Index: via
+&amp;quot;python setup.py upload&amp;quot;. In fact if you are publishing Plone packages,
+it is recommended that you release to &lt;em&gt;both&lt;/em&gt; PyPI and plone.org
+simultaneously. This ensures your package is visible to the most number
+of potential users. And you can use &lt;a class="reference external" href="http://pypi.python.org/pypi/jarn.mkrelease"&gt;mkrelease&lt;/a&gt; to automate the
+process.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="collective-docs-at-rtd"&gt;
+&lt;h2&gt;Collective docs at RTD&lt;/h2&gt;
+&lt;p&gt;Just when you thought things couldn't get more exciting in Python land,
+along came &lt;a class="reference external" href="http://readthedocs.org/"&gt;readthedocs.org&lt;/a&gt; (a Django Dash production, IIRC). And to
+&lt;a class="reference external" href="https://github.com/collective/collective.developermanual/commit/4dc34d113b1a62064c83f3c431acc7d8deb42f1a"&gt;join the fun in July 2011&lt;/a&gt;, I moved Mikko Ohtamaa's awesome &lt;strong&gt;Plone
+Community Managed Developer Manual&lt;/strong&gt; to the &lt;a class="reference external" href="http://github.com/collective"&gt;Github collective&lt;/a&gt; and
+configured the RTD &lt;a class="reference external" href="https://github.com/blog/41-service-integration"&gt;service hook&lt;/a&gt;.&lt;/p&gt;
+&lt;/p&gt;&lt;p&gt;&lt;a href="#id3"&gt;&lt;span class="problematic" id="id4"&gt;`|image1|`_&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;This means that whenever anyone commits a change to the developer
+manual, within a few minutes a new Sphinx build &lt;a class="reference external" href="http://collective-docs.readthedocs.org/en/latest/index.html"&gt;gets published&lt;/a&gt;. It
+was so easy to set this up, I wish I had done it sooner.&lt;/p&gt;
+&lt;p&gt;So you can that see over the years, we have been working ourselves into
+a frenzy of Python goodness! And last week, it got even better.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="introducing-plone-packages"&gt;
+&lt;h2&gt;Introducing: Plone packages!&lt;/h2&gt;
+&lt;p&gt;Thanks to the good folks at &lt;a class="reference external" href="http://www.cartwheelweb.com/"&gt;Cartwheel Web&lt;/a&gt;, makers of the fine &lt;a class="reference external" href="http://opencomparison.org/"&gt;Open
+Comparison&lt;/a&gt; service, Plone now has its very own &lt;a class="reference external" href="http://plone.opencomparison.org"&gt;grid comparison
+website&lt;/a&gt;! (&lt;a class="reference external" href="http://djangopackages.com"&gt;Djangopackages.com&lt;/a&gt; was first, followed by
+&lt;a class="reference external" href="http://pyramid.opencomparison.org"&gt;pyramid.opencomparison.org&lt;/a&gt;.)&lt;/p&gt;
+&lt;/p&gt;&lt;p&gt;&lt;a href="#id5"&gt;&lt;span class="problematic" id="id6"&gt;`|image2|`_&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;p&gt;This is a site where folks can add packages hosted elsewhere (e.g. svn,
+github, pypi), vote on them, and add grid comparisons to compare
+similarly-featured add-ons, frameworks, and other related software.
+Grids are the killer feature of this site, and personally I've been
+waiting to use them to answer questions like:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Q: What's the best blogging add-on for Plone?&lt;/strong&gt;&lt;/p&gt;
+&lt;/p&gt;&lt;p&gt;&lt;p&gt;&lt;strong&gt;A: http://plone.opencomparison.org/grids/g/weblogs/&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;The content is entirely user driven (TTW only) so please head over to
+&lt;a class="reference external" href="http://plone.opencomparison.org"&gt;plone.opencomparison.org&lt;/a&gt;, login with your github ID, and start adding
+packages! And while you are at it, please report any issues you find
+here: &lt;a class="reference external" href="https://github.com/opencomparison/opencomparison/issues"&gt;https://github.com/opencomparison/opencomparison/issues&lt;/a&gt;.
+Lastly, let's all tweet a big thanks to &lt;a class="reference external" href="https://twitter.com/#!/pydanny"&gt;&amp;#64;pydanny&lt;/a&gt;and &lt;a class="reference external" href="https://twitter.com/#!/audreyr"&gt;&amp;#64;audreyr&lt;/a&gt; for
+their hard work and generosity!&lt;/p&gt;
+&lt;/p&gt;&lt;/div&gt;
+&lt;div class="system-messages section"&gt;
+&lt;h2&gt;Docutils System Messages&lt;/h2&gt;
+&lt;div class="system-message" id="id1"&gt;
+&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/plone-first-class-python-citizen.rst&lt;/tt&gt;, line 25); &lt;em&gt;&lt;a href="#id2"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+Unknown target name: &amp;quot;|image0|&amp;quot;.&lt;/div&gt;
+&lt;div class="system-message" id="id3"&gt;
+&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/plone-first-class-python-citizen.rst&lt;/tt&gt;, line 49); &lt;em&gt;&lt;a href="#id4"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+Unknown target name: &amp;quot;|image1|&amp;quot;.&lt;/div&gt;
+&lt;div class="system-message" id="id5"&gt;
+&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/plone-first-class-python-citizen.rst&lt;/tt&gt;, line 70); &lt;em&gt;&lt;a href="#id6"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+Unknown target name: &amp;quot;|image2|&amp;quot;.&lt;/div&gt;
+&lt;/div&gt;
+</summary></entry><entry><title>Pillow: one year later</title><link href="/pillow-one-year-later.html" rel="alternate"></link><updated>2011-10-14T13:11:00+02:00</updated><author><name>aclark@aclark.net</name></author><id>tag:,2011-10-14:pillow-one-year-later.html</id><summary type="html">&lt;p&gt;&lt;em&gt;For anyone unfamiliar with Pillow, it is the &amp;quot;friendly PIL fork&amp;quot;: a
+fork of PIL that aims to remain a good citizen in the PIL community
+through its actions.&lt;/em&gt;&lt;/p&gt;
+&lt;div class="section" id="warm-and-fluffy-history"&gt;
+&lt;h2&gt;Warm and fluffy history&lt;/h2&gt;
+&lt;p&gt;&lt;a href="#id1"&gt;&lt;span class="problematic" id="id2"&gt;`|image0|\ Pillow`_&lt;/span&gt;&lt;/a&gt; 1.0 was released on 2010-07-31, a little over a year
+later came Pillow 1.7.5 which features:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;Many packaging fixes (mostly to support dependency libraries)&lt;/li&gt;
+&lt;li&gt;Windows binaries&lt;/li&gt;
+&lt;li&gt;Over 13K downloads&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Pillow is used in Plone's &lt;a class="reference external" href="http://launchpad.net/plone/4.1/4.1.2/+download/Plone-4.1.2-UnifiedInstaller.tgz"&gt;UnifiedInstaller&lt;/a&gt;, and I know &lt;a class="reference external" href="https://github.com/collective/Pillow/commit/8a282c9ea4382045822ca4fc15e586ebd2f7ace7"&gt;folks from
+the Django community&lt;/a&gt;are using it.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="future-creature-comforts"&gt;
+&lt;h2&gt;Future creature comforts&lt;/h2&gt;
+&lt;p&gt;All in all, a mild success. So what's next? &lt;strong&gt;More of the same&lt;/strong&gt;. To
+&lt;a class="reference external" href="http://stackoverflow.com/questions/2485295/the-problem-with-installing-pil-using-virtualenv-or-buildout/7770547#7770547"&gt;quote myself from a recent Stack Overflow answer&lt;/a&gt;:&lt;/p&gt;
+&lt;blockquote&gt;
+If PIL ever does exactly what Pillow does, then the fork will die.
+Until that happens, we have Pillow.&lt;/blockquote&gt;
+&lt;/div&gt;
+&lt;div class="section" id="bottom-line-accommodations"&gt;
+&lt;h2&gt;Bottom line accommodations&lt;/h2&gt;
+&lt;p&gt;This may never happen of course, which is part of the reason for the
+fork. You can't force someone to maintain software for you. But in the
+open source world you can grab the bull by the horns (take the lead) and
+try to make things better. Even better: if your project and community
+are healthy and functioning properly, your success or failure will be
+determined by the folks in the community (as it should be). In this
+case, the Plone and Python communities have spoken clearly.&lt;/p&gt;
+&lt;/p&gt;&lt;/div&gt;
+&lt;div class="system-messages section"&gt;
+&lt;h2&gt;Docutils System Messages&lt;/h2&gt;
+&lt;div class="system-message" id="id1"&gt;
+&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/pillow-one-year-later.rst&lt;/tt&gt;, line 13); &lt;em&gt;&lt;a href="#id2"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+Unknown target name: &amp;quot;|image0|pillow&amp;quot;.&lt;/div&gt;
+&lt;/div&gt;
+</summary></entry><entry><title>Mozilla and PyPI</title><link href="/mozilla-and-pypi.html" rel="alternate"></link><updated>2011-09-22T12:03:00+02:00</updated><author><name>aclark@aclark.net</name></author><id>tag:,2011-09-22:mozilla-and-pypi.html</id><summary type="html">&lt;p&gt;The &lt;a class="reference external" href="http://blog.aclark.net/in-defense-of-pypi"&gt;last time I wrote about PyPI&lt;/a&gt; some folks mistook the subject to be
+&lt;a class="reference external" href="http://pypy.org/"&gt;PyPy&lt;/a&gt;, so let me be clear: this article is about the &lt;a class="reference external" href="http://pypi.python.org/pypi"&gt;Python Packaging
+Index&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;I recently began doing some volunteer work for Mozilla[1], working on a
+&lt;a class="reference external" href="https://github.com/aclark4life/kitsune-vagrant"&gt;virtual machine setup&lt;/a&gt; to make kitsune development easier (kitsune is
+the code name for the Django site that powers &lt;a class="reference external" href="http://support.mozilla.com"&gt;support.mozilla.com&lt;/a&gt;).&lt;/p&gt;
+&lt;div class="section" id="git-submodules"&gt;
+&lt;h2&gt;Git submodules&lt;/h2&gt;
+&lt;p&gt;In doing so, I came across an interesting command from their
+&lt;a class="reference external" href="https://github.com/jsocol/kitsune/blob/master/docs/installation.rst"&gt;installation docs&lt;/a&gt;:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+$ git submodule update --init --recursive
+&lt;/pre&gt;
+&lt;p&gt;I can recall some vague rumblings about git submodules prior to this
+incident, but nothing I'd call &amp;quot;familiarity&amp;quot;. So, I shrugged it off and
+went about the business of creating the VM (and resisting the urge to
+use &lt;a class="reference external" href="http://pypi.python.org/pypi/zc.buildout/1.5.2"&gt;zc.buildout&lt;/a&gt; to do it):&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;On day 1, I created a &lt;a class="reference external" href="http://virtualbox.org"&gt;VirtualBox&lt;/a&gt; VM using the latest Ubuntu Server
+and was able to assemble and run the application by following the
+instructions.&lt;/li&gt;
+&lt;li&gt;On day 2, I began to &lt;a class="reference external" href="http://vagrantup.com"&gt;&amp;quot;vagrantize&amp;quot;&lt;/a&gt; the process. Here I ran into a
+bit of trouble with the git-submodule command[2]. This led me to seek
+alternative methods to install the various Python packages it was
+trying to install (when stuck on a problem I often like to pursue the
+alternatives immediately, so I have them if I need them.)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="section" id="zamboni"&gt;
+&lt;h2&gt;Zamboni&lt;/h2&gt;
+&lt;p&gt;Then, in the Mozilla IRC channel #sumodev (&lt;strong&gt;su&lt;/strong&gt;pport &lt;strong&gt;mo&lt;/strong&gt;zilla)
+some nice Mozillian (willkg) pointed me to this gem:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://mozweb.readthedocs.org/en/latest/packaging.html"&gt;http://mozweb.readthedocs.org/en/latest/packaging.html&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href="#id2"&gt;&lt;span class="problematic" id="id3"&gt;`|http://www.flickr.com/photos/jadensmommy24/239370733/|`_&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/p&gt;&lt;p&gt;Which in turn led me to the following two links:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://jbalogh.github.com/zamboni/topics/packages/"&gt;http://jbalogh.github.com/zamboni/topics/packages/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://playdoh.readthedocs.org/en/latest/packages.html#packages"&gt;http://playdoh.readthedocs.org/en/latest/packages.html#packages&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Again, faint rumblings… this time about zamboni (not THAT Zamboni). I
+know I've heard of it, but I wouldn't call myself familiar with it. So,
+I innocently read the following:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;strong&gt;Python projects can incur a number of dependencies. ``pip`` can be
+handy, but we’ve had better luck with distributing a ``vendor``
+library.&lt;/strong&gt;&lt;/blockquote&gt;
+&lt;p&gt;At which point I immediately thought to myself:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;strong&gt;Yeah… I hear that.&lt;/strong&gt;&lt;/blockquote&gt;
+&lt;p&gt;Followed a few seconds later by&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;strong&gt;Wait… what?!?&lt;/strong&gt;&lt;/blockquote&gt;
+&lt;/div&gt;
+&lt;div class="section" id="playdoh"&gt;
+&lt;h2&gt;Playdoh&lt;/h2&gt;
+&lt;p&gt;Some time/research later[3], I (re)discovered that zamboni is the
+codename for &lt;a class="reference external" href="https://addons.mozilla.org"&gt;addons.mozilla.org&lt;/a&gt;[4]. And &lt;a class="reference external" href="http://playdoh.readthedocs.org/"&gt;Playdoh&lt;/a&gt; is the code name
+for Mozilla's base Django project setup. If you aren't familiar with
+Playdoh, please do give it a whirl[5].&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="pypi"&gt;
+&lt;h2&gt;PyPI&lt;/h2&gt;
+&lt;p&gt;While all of this is very, very interesting to me, I am primarily a
+&amp;quot;systems and processes&amp;quot; guy; and what ultimately stuck with me after two
+days of Mozilla-ing is the following blurb from the Playdoh packaging
+documentation:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;strong&gt;The ``/vendor`` library is supposed to contain all packages and
+repositories. It enables the project to be deployed as one package
+onto many machines, without relying on PyPI-based installations on
+each target machine.&lt;/strong&gt;&lt;/blockquote&gt;
+&lt;p&gt;&amp;quot;Nooooooooooooooo&amp;quot;, I am now saying to myself over and over. &amp;quot;Without
+relying on PyPI-based installations on each target machine.&amp;quot; Another
+&amp;quot;noooooooooooooooo!&amp;quot; :-) I certainly don't fault Mozilla for taking this
+approach, but it makes me sad that large organizations like Mozilla are
+passing over PyPI in favor of alternative methods of distributing Python
+software.&lt;/p&gt;
+&lt;/p&gt;&lt;p&gt;Let us all now hang our heads, for a moment of pause and reflection.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;[a minute passes]&lt;/em&gt;&lt;/p&gt;
+&lt;/p&gt;&lt;/div&gt;
+&lt;div class="section" id="the-future"&gt;
+&lt;h2&gt;The future&lt;/h2&gt;
+&lt;p&gt;I can't speak for anyone else, but I would certainly like to see this
+change in the future. I would LOVE to see PyPI become a place that
+Mozilla felt confident it could use to deploy Python software. And this
+is something I'd love to work on &lt;em&gt;for&lt;/em&gt; Mozilla, if given the
+opportunity[6].&lt;/p&gt;
+&lt;div class="section" id="great-for-python-great-for-mozilla"&gt;
+&lt;h3&gt;Great for Python == great for Mozilla?&lt;/h3&gt;
+&lt;p&gt;It's obvious what's in it for Python, but what's in for Mozilla?&lt;/p&gt;
+&lt;/p&gt;&lt;p&gt;Simple.&lt;/p&gt;
+&lt;p&gt;I happen to share Mozilla's vision for an open web and open source in
+general. And it's great to see them embracing &amp;amp; using Python for their
+web projects! Without a doubt,&amp;nbsp; they are interested in giving back to
+the Python community (e.g. via Playdoh and the Django community, in this
+case.) So I suspect they'd be open to helping the Python community fix a
+long standing issue: the stability and reliability of the Python Package
+Index. It would certainly benefit them in the long run to simplify their
+build process to the point where git-submodule was no longer needed[7].&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="notes"&gt;
+&lt;h2&gt;Notes&lt;/h2&gt;
+&lt;p&gt;[1] I am actively courting Mozilla in hopes of landing a gig by the end
+of the year. So all you Mozillians who know me personally, please put in
+a good word! And all you Mozillians I have not met yet: nice to meet
+you! :-)&lt;/p&gt;
+&lt;/p&gt;&lt;p&gt;[2] The problem turned out to be git-submodule failing to run because
+things like: grep and sed were missing from the PATH. Easily fixed by
+modifying the puppet configuration, but not easily discovered because
+git-submodule itself returned zero! Some guy on #puppet was very helpful
+in getting me to print out debug info.&lt;/p&gt;
+&lt;p&gt;&lt;p&gt;[3] More help from friendly Mozillians in #webdev:&lt;/p&gt;
+&lt;blockquote&gt;
+11:13 &amp;lt; groovecoder&amp;gt; aclark: yeah, zamboni is amo 11:13 &amp;lt; kumar&amp;gt;
+playdoh was extracted from zamboni and other apps 11:13 &amp;lt; kumar&amp;gt; but
+zamboni itself does not eat the playdoh dog food, actually 11:15 &amp;lt;
+kumar&amp;gt; aclark also, in case you're not steeped in our initialisms,
+amo is addons.mozilla.org&lt;/blockquote&gt;
+&lt;p&gt;[4] There is a great presentation about it here:
+&lt;a class="reference external" href="http://www.slideshare.net/andymckay/anatomy-of-a-large-django-site-7590098"&gt;http://www.slideshare.net/andymckay/anatomy-of-a-large-django-site-7590098&lt;/a&gt;.)&lt;/p&gt;
+&lt;/p&gt;&lt;p&gt;&lt;p&gt;[5] More from kumar (emphasis is my own):&lt;/p&gt;
+&lt;blockquote&gt;
+11:25 &amp;lt; kumar&amp;gt; &lt;strong&gt;Playdoh is starting to stabilize&lt;/strong&gt; so it would be
+&lt;strong&gt;good to see some use of it outside Mozilla&lt;/strong&gt;; this would probably
+help us catch Mozilla-specific things that need extraction&lt;/blockquote&gt;
+&lt;p&gt;[6] LARGE HINT ;-)&lt;/p&gt;
+&lt;/p&gt;&lt;p&gt;[7] Again, not that there is anything wrong with what Mozilla is doing
+here. As a systems guy, I just happen to gravitate toward simplifying
+processes by eliminating steps.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="system-messages section"&gt;
+&lt;h2&gt;Docutils System Messages&lt;/h2&gt;
+&lt;div class="system-message" id="id2"&gt;
+&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/mozilla-and-pypi.rst&lt;/tt&gt;, line 46); &lt;em&gt;&lt;a href="#id3"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+Unknown target name: &amp;quot;|http://www.flickr.com/photos/jadensmommy24/239370733/|&amp;quot;.&lt;/div&gt;
+&lt;/div&gt;
+</summary></entry><entry><title>Hello mod_wsgi</title><link href="/hello-mod_wsgi.html" rel="alternate"></link><updated>2011-08-28T20:43:00+02:00</updated><author><name>aclark@aclark.net</name></author><id>tag:,2011-08-28:hello-mod_wsgi.html</id><summary type="html">&lt;p&gt;It seems I've inadvertently started another series of blog entry:&amp;nbsp; the
+&amp;quot;hello world&amp;quot; series, wherein I explain how to easily get started with
+&lt;a class="reference external" href="http://blog.aclark.net/2011/08/20/hello-plone/"&gt;various exciting Python technologies&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;This time, in order to familiarize myself with &lt;a class="reference external" href="http://code.google.com/p/modwsgi/"&gt;mod_wsgi&lt;/a&gt;, I've
+created a buildout to automate some of the processes explained in:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://code.google.com/p/modwsgi/wiki/QuickInstallationGuide"&gt;http://code.google.com/p/modwsgi/wiki/QuickInstallationGuide&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;(This series also helps me to subtly introduce the zc.buildout
+&amp;quot;extendables&amp;quot; I have been working on. More on those in a future post.)&lt;/p&gt;
+&lt;div class="section" id="the-extendables"&gt;
+&lt;h2&gt;The extendables&lt;/h2&gt;
+&lt;p&gt;The extendables make it easy to bootstrap a development environment with
+complex software requirements, via &lt;a class="reference external" href="http://pypi.python.org/pypi/zc.buildout/1.5.2"&gt;zc.buildout&lt;/a&gt;. In this case, I want
+to be able to type:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+$ test-apache test-dir
+&lt;/pre&gt;
+&lt;p&gt;And get a working, &lt;em&gt;disposable&lt;/em&gt; Apache instance minutes later. I also
+want that Apache to come with a mod_wsgi app installed and working.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="setup"&gt;
+&lt;h2&gt;Setup&lt;/h2&gt;
+&lt;p&gt;First we use the &lt;a class="reference external" href="http://x.aclark.net/apache/2.2.x/buildout.cfg"&gt;aforementioned extendable&lt;/a&gt;, like so:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+$ virtualenv test-dir
+$ cd test-dir
+$ bin/pip install zc.buildout
+$ bin/buildout init
+&lt;/pre&gt;
+&lt;p&gt;Edit the buildout.cfg to look like this:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+[buildout]
+extends = http://x.aclark.net/apache/2.2.x/buildout.cfg
+&lt;/pre&gt;
+&lt;p&gt;Run buildout:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+$ bin/buildout
+&lt;/pre&gt;
+&lt;p&gt;Assuming successful completion, you should be able to run Apache in the
+foreground via:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+$ bin/supervisord -e debug -n
+&lt;/pre&gt;
+&lt;p&gt;Now check &lt;a class="reference external" href="http://localhost:8080"&gt;http://localhost:8080&lt;/a&gt;, you should see:&lt;/p&gt;
+&lt;p&gt;&lt;a href="#id1"&gt;&lt;span class="problematic" id="id2"&gt;`|image0|`_&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;This works because the &lt;a class="reference external" href="https://github.com/ACLARKNET/build/blob/master/apache/2.2.x/buildout.cfg"&gt;&amp;quot;extendable&amp;quot; (buildout configuration file)&lt;/a&gt;
+contains:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;The &lt;a class="reference external" href="https://github.com/ACLARKNET/build/blob/master/apache/2.2.x/app.wsgi.in"&gt;little WSGI app&lt;/a&gt; from the QuickInstallationGuide, templatized
+via &lt;a class="reference external" href="http://pypi.python.org/pypi/collective.recipe.template/1.9"&gt;collective.recipe.template&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;A &lt;a class="reference external" href="https://github.com/ACLARKNET/build/blob/master/apache/2.2.x/httpd.conf.in"&gt;templatized httpd.conf file&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I like to automate the process even further with the &lt;a class="reference external" href="https://github.com/ACLARKNET/binfiles/blob/master/test-apache"&gt;following
+script&lt;/a&gt;:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+#!/bin/shmkdir $1
+virtualenv-2.6 $1
+cd $1
+bin/easy_install zc.buildout
+bin/buildout init
+cat &amp;lt;&amp;lt; EOF &amp;gt; buildout.cfg
+[buildout]
+extends = http://x.aclark.net/apache/2.2.x/buildout.cfg
+EOF
+bin/buildout
+bin/supervisord -e debug -n
+&lt;/pre&gt;
+&lt;p&gt;Thus closing the loop on this blog entry, and making the following
+possible:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+$ test-apache test-dir
+&lt;/pre&gt;
+&lt;p&gt;I've been using my &lt;a class="reference external" href="https://github.com/ACLARKNET/binfiles/blob/master/test-plone"&gt;test-plone&lt;/a&gt; script for years now, and I'm hoping
+that the test-apache script proves just as useful (especially as Plone
+moves closer to a WSGI-supporting stack via &lt;a class="reference external" href="http://pypi.python.org/pypi/Zope2/2.13.9"&gt;Zope 2.13&lt;/a&gt;).&lt;/p&gt;
+&lt;/p&gt;&lt;/div&gt;
+&lt;div class="system-messages section"&gt;
+&lt;h2&gt;Docutils System Messages&lt;/h2&gt;
+&lt;div class="system-message" id="id1"&gt;
+&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/hello-mod_wsgi.rst&lt;/tt&gt;, line 66); &lt;em&gt;&lt;a href="#id2"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+Unknown target name: &amp;quot;|image0|&amp;quot;.&lt;/div&gt;
+&lt;/div&gt;
+</summary></entry><entry><title>Hello Plone</title><link href="/hello-plone.html" rel="alternate"></link><updated>2011-08-20T20:27:00+02:00</updated><author><name>aclark@aclark.net</name></author><id>tag:,2011-08-20:hello-plone.html</id><summary type="html">&lt;p&gt;This is a &amp;quot;hello world&amp;quot; style tutorial/application for Plone, aimed
+squarely at Python developers. I have created a project on Github too,
+to hold the code:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://github.com/aclark4life/hello_plone"&gt;https://github.com/aclark4life/hello_plone&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="section" id="step-1-setup"&gt;
+&lt;h2&gt;Step 1 - Setup&lt;/h2&gt;
+&lt;p&gt;Everyone in the Python world loves virtualenv, so this step will be a
+familiar one. Inside the hello_plone repo, I first create a virtualenv:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+$ virtualenv .
+&lt;/pre&gt;
+&lt;p&gt;I then install some additional tools:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+$ bin/pip install zc.buildout
+&lt;/pre&gt;
+&lt;p&gt;As you see, Plone uses Buildout. One day it may not, but for now it
+does. Get over it. ;-) (Or better yet, help us figure out how to make
+Buildout optional in Plone. Many would welcome the improvement, and hail
+you as their conquering hero!) Until then:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+$ bin/buildout init
+&lt;/pre&gt;
+&lt;p&gt;Edit your buildout.cfg and put this in it:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+[buildout]
+extends = http://pythonpackages.com/buildout/plone/4.2.x-dev
+&lt;/pre&gt;
+&lt;p&gt;That's it. Now run buildout:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+$ bin/buildout
+&lt;/pre&gt;
+&lt;p&gt;It will take some time to download all the packages, but you only have
+to do this once. Afterward, you can configure a global packages
+directory and share that amongst all your development projects. See the
+&lt;a class="reference external" href="http://pypi.python.org/pypi/zc.buildout/1.5.2#user-defaults"&gt;zc.buildout 1.5.2 page on PyPI&lt;/a&gt; to find out more. When it finishes, do
+this:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+$ bin/plone fg
+&lt;/pre&gt;
+&lt;p&gt;Then open &lt;a class="reference external" href="http://localhost:8080"&gt;http://localhost:8080&lt;/a&gt; and you should see this: &lt;a href="#id1"&gt;&lt;span class="problematic" id="id2"&gt;`|image0|`_&lt;/span&gt;&lt;/a&gt;
+Click the button and follow the steps. You don't need to select any
+additional add-ons from the list. Afterward, you should get a Plone site
+here: &lt;a class="reference external" href="http://localhost:8080/Plone"&gt;http://localhost:8080/Plone&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="step-2-develop"&gt;
+&lt;h2&gt;Step 2 - Develop&lt;/h2&gt;
+&lt;p&gt;There are a ton of things you can do in Plone, but it is primarily a
+&amp;quot;content management system&amp;quot; meaning, &amp;quot;you put your website in it.&amp;quot;¹ And
+I don't mean your &amp;quot;crazy cool next gen web app&amp;quot; website. I mean your
+web. site. The one you use for you or your business or church or band or
+bridge club or whatever. Since this is a &amp;quot;hello world&amp;quot; demonstration, I
+am going to show you how to start writing Python code whose results will
+&amp;quot;show up on the screen&amp;quot; in short order. After that, I'll point you to
+some next steps. So, to develop we need a Python package. Create your
+own, or use zopeskel (paster wrapped in some &amp;quot;user friendliness&amp;quot;). Or
+use paster with the zopeskel templates installed.&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+$ bin/pip install zopeskel
+$ bin/zopeskel plone_basic my.app
+
+plone: A project for Plone add-ons
+
+…
+&lt;/pre&gt;
+&lt;p&gt;Now that we have a Python package, we want to &amp;quot;load it in Plone&amp;quot;. To do
+that, we need to add the package to our buildout. Fortunately, buildout
+has a mechanism for this particular use case built in. It's called a
+&amp;quot;develop egg&amp;quot;, and it is configured via the `develop` parameter
+available in the `buildout` section. Additionally, we need to &amp;quot;tell
+Plone&amp;quot; about our develop egg too. But this is done in the same way you
+tell Plone about any other package. You add it to the `eggs` parameter
+of the `plone.recipe.zope2instance` section. So now we have:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+[buildout]
+develop = ./my.app
+extends = http://build.pythonpackages.com/buildout/plone/4.2.x-dev
+
+[plone]
+eggs += my.app
+&lt;/pre&gt;
+&lt;p&gt;Now let's write some code. We are going to: &amp;quot;wire up a template to a
+view&amp;quot;, say &amp;quot;hello world!&amp;quot; then &amp;quot;call it a day&amp;quot;. This is accomplished via
+some &amp;quot;goo&amp;quot; maintained by the &lt;a class="reference external" href="http://docs.zope.org/zopetoolkit/"&gt;Zope Toolkit project&lt;/a&gt;:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+from Products.Five.browser.pagetemplatefile import
+    ViewPageTemplateFile
+from zope.publisher.browser import BrowserPage
+
+class Hello(BrowserPage):
+&amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;quot;&amp;quot;&amp;quot;
+&amp;nbsp;&amp;nbsp;&amp;nbsp; Wire up some goo
+&amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;quot;&amp;quot;&amp;quot;
+
+&amp;nbsp;&amp;nbsp;&amp;nbsp; template = ViewPageTemplateFile('hello.pt')
+
+&amp;nbsp;&amp;nbsp;&amp;nbsp; def __call__(self):
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; return self.template()
+&lt;/pre&gt;
+&lt;p&gt;And it can go in: &lt;strong&gt;*my.app/my/app/hello.py*.&lt;/strong&gt; Now, because Plone uses
+the &lt;a class="reference external" href="http://pypi.python.org/pypi/zope.component/3.10.0"&gt;Zope component architecture&lt;/a&gt;, we need to &amp;quot;wire up&amp;quot; the &amp;quot;component&amp;quot;
+we just created. This is done via the &lt;a class="reference external" href="http://pypi.python.org/pypi/zope.configuration/3.7.4"&gt;Zope Configuration Markup
+Language&lt;/a&gt;:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+&amp;lt;configure
+&amp;nbsp;&amp;nbsp;&amp;nbsp; xmlns:browser=&amp;quot;http://namespaces.zope.org/browser&amp;quot;&amp;gt;
+
+&amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;lt;browser:page
+
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; for=&amp;quot;*&amp;quot;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; name=&amp;quot;hello&amp;quot;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; permission=&amp;quot;zope2.View&amp;quot;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; /&amp;gt;
+
+&amp;lt;/configure&amp;gt;
+&lt;/pre&gt;
+&lt;p&gt;And it goes in: &lt;strong&gt;*my.app/my/app/configure.zcml*&lt;/strong&gt;. It &amp;quot;just works&amp;quot;
+because we include an &lt;a class="reference external" href="http://pypi.python.org/pypi/z3c.autoinclude/0.3.4"&gt;entry point in our setup.py&lt;/a&gt; to make it so
+(paster took care of that, in this case.) Lastly, create:
+&lt;strong&gt;*my.app/my/app/hello.pt.*&lt;/strong&gt; And put &amp;quot;Hello world!&amp;quot; in it. Stop and
+start Plone (i.e. CTRL-C, bin/plone fg) and then open:
+&lt;a class="reference external" href="http://localhost:8080/Plone/hello"&gt;http://localhost:8080/Plone/hello&lt;/a&gt;. You should see: &lt;a href="#id3"&gt;&lt;span class="problematic" id="id4"&gt;`|image1|`_&lt;/span&gt;&lt;/a&gt; Nice, but
+a little boring. At the very least, let us get our &amp;quot;hello world!&amp;quot; to
+show up &amp;quot;in Plone&amp;quot;. To do this, we simply invoke Plone's main_template
+and insert our text into the main content area. Add the following to
+&lt;strong&gt;*my.app/my/app/hello.pt.*&lt;/strong&gt;&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+&amp;lt;div metal:use-macro=&amp;quot;here/main_template/macros/master&amp;quot;&amp;gt;
+
+&amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;lt;div metal:fill-slot=&amp;quot;main&amp;quot;&amp;gt;
+
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;lt;h1&amp;gt;Hello world!&amp;lt;/h1&amp;gt;
+
+&amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;lt;/div&amp;gt;
+
+&amp;lt;/div&amp;gt;
+&lt;/pre&gt;
+&lt;p&gt;As you can see, we are using &lt;a class="reference external" href="http://docs.zope.org/zope2/zope2book/ZPT.html"&gt;Zope Page Templates&lt;/a&gt;. ZPTs must be valid
+XHTML, much to the &lt;a class="reference external" href="https://docs.djangoproject.com/en/dev/topics/templates/#templates"&gt;chagrin of Django's creators&lt;/a&gt;. But in addition to
+the main con: &amp;quot;making humans edit XML is sadistic!&amp;quot;) there are some pros
+too e.g. &amp;quot;Play nicely with editing tools.&amp;quot; In other words, get over it.
+;-) (Or better yet, add support for using alternative template languages
+in Plone. I have no idea what the technical feasibility is, but it might
+be worth some effort.) Now let's take a look: &lt;a href="#id5"&gt;&lt;span class="problematic" id="id6"&gt;`|image2|`_&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="step-3-fun-profit"&gt;
+&lt;h2&gt;Step 3 - Fun/profit!&lt;/h2&gt;
+&lt;p&gt;That's not so bad you say? (That is what I am hoping you will say!)
+Great. Some good next steps are:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;Theming with Diazo and &lt;a class="reference external" href="http://pypi.python.org/pypi/plone.app.theming/1.0b8"&gt;plone.app.theming&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Content types with Dexterity and &lt;a class="reference external" href="http://pypi.python.org/pypi/plone.app.dexterity/1.0.1"&gt;plone.app.dexterity&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Easy through-the-web form generation with &lt;a class="reference external" href="http://pypi.python.org/pypi/Products.PloneFormGen/1.7b5"&gt;PloneFormGen&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Also, check out the Plone &lt;a class="reference external" href="http://collective-docs.readthedocs.org"&gt;community managed developer documentation&lt;/a&gt;
+on readthedocs.org for more! ¹ c.f. SNL skit w/Rob Schnieder and/or Adam
+Sander too, apparently: &lt;a class="reference external" href="http://www.youtube.com/watch?v=muA5EBmpDhA"&gt;http://www.youtube.com/watch?v=muA5EBmpDhA&lt;/a&gt; I
+like the Rob Schnieder ones better :-)&lt;/p&gt;
+&lt;/p&gt;&lt;/div&gt;
+&lt;div class="system-messages section"&gt;
+&lt;h2&gt;Docutils System Messages&lt;/h2&gt;
+&lt;div class="system-message" id="id1"&gt;
+&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/hello-plone.rst&lt;/tt&gt;, line 60); &lt;em&gt;&lt;a href="#id2"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+Unknown target name: &amp;quot;|image0|&amp;quot;.&lt;/div&gt;
+&lt;div class="system-message" id="id3"&gt;
+&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/hello-plone.rst&lt;/tt&gt;, line 145); &lt;em&gt;&lt;a href="#id4"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+Unknown target name: &amp;quot;|image1|&amp;quot;.&lt;/div&gt;
+&lt;div class="system-message" id="id5"&gt;
+&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/hello-plone.rst&lt;/tt&gt;, line 168); &lt;em&gt;&lt;a href="#id6"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+Unknown target name: &amp;quot;|image2|&amp;quot;.&lt;/div&gt;
+&lt;/div&gt;
+</summary></entry><entry><title>Plone secrets: Episode 2 - Collective Python buildout</title><link href="/plone-secrets-episode-2-collective-python-buildout.html" rel="alternate"></link><updated>2011-07-06T12:45:00+02:00</updated><author><name>aclark@aclark.net</name></author><id>tag:,2011-07-06:plone-secrets-episode-2-collective-python-buildout.html</id><summary type="html">&lt;p&gt;You know who uses the (Plone) Collective Python buildout? Me neither,
+because we don't have any good statistics on its use (that I know of).
+If it were a Python package, we could at least &lt;a class="reference external" href="http://blog.aclark.net/2011/06/16/youre-so-vain-so-why-not-use-vanity/"&gt;count the number of
+times it has been downloaded&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;You know who should use it? Everyone.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;[dramatic pause…]&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;OK maybe not everyone, but at least everyone that regularly develops
+with &lt;strong&gt;multiple versions of Python&lt;/strong&gt;. Here's why.&lt;/p&gt;
+&lt;div class="section" id="actively-maintained"&gt;
+&lt;h2&gt;Actively maintained&lt;/h2&gt;
+&lt;p&gt;Check out this &lt;a class="reference external" href="http://goo.gl/BJw33"&gt;log&lt;/a&gt;:&lt;/p&gt;
+&lt;p&gt;&lt;a href="#id1"&gt;&lt;span class="problematic" id="id2"&gt;`|image0|`_&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;It has been going strong for over 3 years.&lt;/p&gt;
+&lt;/p&gt;&lt;p&gt;If I recall correctly, it was born out of the frustration¹ of having to
+compile Python on Mac OS X Leopard. Python &lt;em&gt;never&lt;/em&gt; compiles correctly on
+new versions of OS X (which is a complete mystery to me given that Apple
+ships with Python, don't they think people will want to compile it?).&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="easy-to-install"&gt;
+&lt;h2&gt;Easy to install&lt;/h2&gt;
+&lt;p&gt;Got Subversion? Then you &lt;em&gt;can haz&lt;/em&gt; the Collective Python buildout². You
+will also need to bootstrap it with whatever Python version you happen
+to have laying around. I won't go into detail about this; but suffice it
+to say depending on your OS, one of the following or something like it
+should work:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+$ aptitude install python2.5
+&lt;/pre&gt;
+&lt;p&gt;Or:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+$ brew install python
+&lt;/pre&gt;
+&lt;p&gt;If you are on Windows, give up (unless you have a Microsoft C compiler).
+Sorry.&lt;/p&gt;
+&lt;/p&gt;&lt;p&gt;&lt;p&gt;Now, check out the code from the repository (if you are a member of the
+&lt;a class="reference external" href="http://dev.plone.org/collective"&gt;Collective&lt;/a&gt; and may potentially contribute something back, make sure
+you use https):&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+$ svn co http://svn.plone.org/svn/collective/buildout/python
+&lt;/pre&gt;
+&lt;p&gt;Next, bootstrap and run the buildout:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+$ cd python
+$ python bootstrap.py -d
+$ bin/buildout
+&lt;/pre&gt;
+&lt;p&gt;That's it. The buildout should go merrily on it's way compiling Python
+2.4 through 3.2. When it finishes, you can install it in /opt (or
+wherever you like) with the following command (you might need sudo):&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+$ bin/install-links
+&lt;/pre&gt;
+&lt;p&gt;Then you should see:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+$ /bin/ls -1 /opt/local/bin
+easy_install-2.4
+easy_install-2.5
+easy_install-2.6
+easy_install-2.7
+easy_install-3.2
+pip-2.4
+pip-2.5
+pip-2.6
+pip-2.7
+pip-3.2
+python2.4
+python2.5
+python2.6
+python2.7
+python3.2
+virtualenv-2.4
+virtualenv-2.5
+virtualenv-2.6
+virtualenv-2.7
+virtualenv-3.2
+&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div class="section" id="easy-to-configure"&gt;
+&lt;h2&gt;Easy to configure&lt;/h2&gt;
+&lt;p&gt;Now you can add &lt;strong&gt;/opt/local/bin&lt;/strong&gt; to your environment PATH variable.
+This will make it easy to choose a particular Python, PIP, or Virtualenv
+at your leisure.&lt;/p&gt;
+&lt;/p&gt;&lt;p&gt;Unfortunately, if you pip install something, it will end up in the
+checkout instead of &lt;em&gt;/opt/local/bin&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;p&gt;To get around this, I usually pick one Python for daily use, and add its
+bin directory to my environment PATH variable:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+$ echo $PATH | tr ':' 'n'
+/sbin
+/usr/sbin
+/usr/local/bin
+/opt/local/bin
+/Users/aclark/Developer/collective/python/python-2.7/bin
+/usr/bin
+/bin
+/sbin
+/usr/X11/bin
+&lt;/pre&gt;
+&lt;p&gt;After various pip installs, my 2.7 bin directory contains the usual
+tools of the trade:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+$ /bin/ls -1 /Users/aclark/Developer/collective/python/
+python-2.7/bin
+__dotcloud_git_ssh
+activate
+activate.csh
+activate.fish
+activate_this.py
+bfg2pyramid
+checkoutmanager
+cloudservers
+dotcloud
+easy_install
+easy_install-2.7
+eye
+flake8
+fsdump
+fsoids
+fsrefs
+fstail
+hg
+mako-render
+mkrelease
+paster
+pilconvert.py
+pildriver.py
+pilfile.py
+pilfont.py
+pilprint.py
+pip
+pip-2.7
+playerpiano
+pygmentize
+python
+python2.7
+recorderpiano
+repozo
+rfc2397
+rst2html.py
+rst2latex.py
+rst2man.py
+rst2newlatex.py
+rst2odt.py
+rst2odt_prepstyles.py
+rst2pseudoxml.py
+rst2s5.py
+rst2xml.py
+rstpep2html.py
+runzeo
+sphinx-autogen
+sphinx-build
+sphinx-quickstart
+vanity
+zconfig
+zconfig_schema2html
+zdaemon
+zeoctl
+zeopack
+zeopasswd
+&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div class="section" id="wrap-it-up-i-ll-take-it"&gt;
+&lt;h2&gt;Wrap it up, I'll take it&lt;/h2&gt;
+&lt;p&gt;That's it! There is not too much more to say, other than I hope you find
+this post useful and will consider using the &lt;a class="reference external" href="http://svn.plone.org/svn/collective/buildout/python"&gt;Collective Python
+buildout&lt;/a&gt;.&lt;/p&gt;
+&lt;/p&gt;&lt;p&gt;Of course, comments are always welcome.&lt;/p&gt;
+&lt;div class="section" id="notes"&gt;
+&lt;h3&gt;Notes&lt;/h3&gt;
+&lt;p&gt;¹ Experienced by its creator, &lt;a class="reference external" href="http://twitter.com/fschulze"&gt;fschulze&lt;/a&gt;.&lt;/p&gt;
+&lt;/p&gt;&lt;p&gt;² It will likely end up on &lt;a class="reference external" href="http://github.com/collective"&gt;Github&lt;/a&gt; at some point.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="system-messages section"&gt;
+&lt;h2&gt;Docutils System Messages&lt;/h2&gt;
+&lt;div class="system-message" id="id1"&gt;
+&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/plone-secrets-episode-2-collective-python-buildout.rst&lt;/tt&gt;, line 23); &lt;em&gt;&lt;a href="#id2"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+Unknown target name: &amp;quot;|image0|&amp;quot;.&lt;/div&gt;
+&lt;/div&gt;
+</summary></entry><entry><title>You&amp;#039;re so vain, so why not use Vanity?</title><link href="/you039re-so-vain-so-why-not-use-vanity.html" rel="alternate"></link><updated>2011-06-16T12:01:00+02:00</updated><author><name>aclark@aclark.net</name></author><id>tag:,2011-06-16:you039re-so-vain-so-why-not-use-vanity.html</id><summary type="html">&lt;p&gt;A few months ago I created a package called &lt;strong&gt;Vanity&lt;/strong&gt;[0] that
+provides easy access to package download statistics from &lt;strong&gt;PyPI&lt;/strong&gt;. You
+can find the source code here: &lt;a class="reference external" href="https://github.com/aclark4life/vanity"&gt;https://github.com/aclark4life/vanity&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;I love this tool, and I use it all the time to gauge the value of a
+package. Of course, downloads are only one criteria you can use to judge
+the value of a package, and arguably not even a very good one.
+&lt;strong&gt;Vanity&lt;/strong&gt; itself is a good example of this phenomenon. I find it
+incredibly useful, but in it's history it has only been downloaded &lt;em&gt;130&lt;/em&gt;
+times.&lt;/p&gt;
+&lt;p&gt;Other packages I have created with much less value have been downloaded
+more times, e.g. &lt;strong&gt;plonetheme.aclark_twitter&lt;/strong&gt; which has been
+downloaded&amp;nbsp; &lt;em&gt;674&lt;/em&gt; times. But that package has also been around much
+longer. So obviously another useful metric would be the &lt;em&gt;time period&lt;/em&gt;
+during which the downloads occurred.&lt;/p&gt;
+&lt;p&gt;&lt;p&gt;Anyway, here is how it works:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+$ easy_install vanity
+&lt;/pre&gt;
+&lt;p&gt;Then:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+$ vanity &amp;lt;package&amp;gt;
+&lt;/pre&gt;
+&lt;p&gt;For example:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+$ vanity vanity
+Package `vanity` has been downloaded 130 times!
+&lt;/pre&gt;
+&lt;p&gt;Or:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+$ vanity plonetheme.aclark_twitter
+Package `plonetheme.aclark_twitter` has been downloaded 674 times!
+&lt;/pre&gt;
+&lt;p&gt;Some of my other favorites:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+$ vanity Django[1]
+Package `Django` has been downloaded 302111 times!
+&lt;/pre&gt;
+&lt;pre class="literal-block"&gt;
+$ vanity zope.component
+Package `zope.component` has been downloaded 210541 times!
+&lt;/pre&gt;
+&lt;pre class="literal-block"&gt;
+$ vanity pyramid
+Package `pyramid` has been downloaded 26067 times!
+&lt;/pre&gt;
+&lt;p&gt;Another thing to consider is if hitting &lt;strong&gt;PyPI&lt;/strong&gt; each time is really
+necessary. I'm told there is &lt;strong&gt;PyPI&lt;/strong&gt; data living somewhere else, and in
+future versions I would like to make vanity use that data by default.&lt;/p&gt;
+&lt;/p&gt;&lt;p&gt;So, this post is simply to announce &lt;strong&gt;Vanity&lt;/strong&gt; to a wider audience in
+the event that some folks may find it useful. Otherwise, I will be happy
+to continue to watch &lt;strong&gt;Vanity&lt;/strong&gt; downloads crawl ever so slowly towards
+200. :-)&lt;/p&gt;
+&lt;div class="section" id="notes"&gt;
+&lt;h2&gt;Notes&lt;/h2&gt;
+&lt;p&gt;[0] By standing on the shoulders of some Plone giants, &lt;a class="reference external" href="http://davisagli.com/"&gt;David Glick,&lt;/a&gt;
+in particular.&lt;/p&gt;
+&lt;/p&gt;&lt;p&gt;[1] There is a &lt;a class="reference external" href="https://github.com/aclark4life/vanity/issues/1"&gt;known issue&lt;/a&gt; with regard to making Vanity case
+insensitive.&lt;/p&gt;
+&lt;/div&gt;
+</summary></entry><entry><title>Top 10 reasons &amp;quot;Plone 3.3. Site Admin&amp;quot; book is (still) for you</title><link href="/top-10-reasons-quotplone-33-site-adminquot-book-is-still-for-you.html" rel="alternate"></link><updated>2011-05-10T13:34:00+02:00</updated><author><name>aclark@aclark.net</name></author><id>tag:,2011-05-10:top-10-reasons-quotplone-33-site-adminquot-book-is-still-for-you.html</id><summary type="html">&lt;p&gt;About a year ago, I was frantically trying to finish &lt;a class="reference external" href="http://aclark.net/training"&gt;Plone 3.3 Site
+Administration&lt;/a&gt; in time to teach it at Plone Symposium East 2010 (at
+Penn State University) as well as publish it. I remember staying up all
+night to finish &amp;amp; submit the final drafts then driving 4 hours to Penn
+State, then teaching for 8 hours before I was finally able to crash (but
+not before consuming a large and delicious cheeseburger and a Yuengling
+from the &lt;a class="reference external" href="http://www.pshs.psu.edu/NittanyLionInn/nlhome.asp"&gt;Nittany Lion Inn&lt;/a&gt;room service, yum).&lt;/p&gt;
+&lt;p&gt;The class went well and everyone seemed happy with the results (and I am
+very grateful to PSU for the opportunity). I remember struggling to get
+some Windows users up to speed, so this year I've decided to &amp;quot;require&amp;quot;
+students to install Plone before the class (via the &lt;a class="reference external" href="http://plone.org/products/plone/releases/4.0.5"&gt;appropriate
+installer for their platform&lt;/a&gt;). Most &amp;quot;site admin-ing&amp;quot; we do will be &amp;quot;ad
+hoc&amp;quot; preferably on top of a stand-alone Python installation. But we can
+refer to the installer-based Plone as needed (and in fact the
+installer-based Plone is all some folks will ever need or want).&lt;/p&gt;
+&lt;div class="section" id="the-list"&gt;
+&lt;h2&gt;The list&lt;/h2&gt;
+&lt;p&gt;Anyway, this post is about this year's class taught from the same
+material but updated to account for any changes that have occurred since
+the book was first published. Most importantly, it addresses the release
+of Plone 4 in the context of the book title &amp;quot;Plone 3.3 Site
+Administration&amp;quot;.&lt;/p&gt;
+&lt;/p&gt;&lt;p&gt;So without further ado, why &amp;quot;Plone 3.3 Site Administration&amp;quot; is (still)
+for you:&lt;/p&gt;
+&lt;ol class="arabic simple"&gt;
+&lt;li&gt;&lt;strong&gt;The version reference in the title is (mostly) meaningless&lt;/strong&gt;.
+&lt;a class="reference external" href="http://www.packtpub.com/books/plone"&gt;PACKT&lt;/a&gt; insist on incorporating a software version number into the
+title of their books. I would have called it: &amp;quot;Plone Site
+Administration&amp;quot;, or &amp;quot;Buildout for Plone&amp;quot;.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;The book teaches valuable *techniques*, using Plone 3.3 as an
+example&lt;/strong&gt;. Most, if not all of the techniques still apply today (i.e.
+w/Plone 4.0.x and Plone 4.1.x). They will likely continue to apply as
+long as Plone continues to rely on &lt;a class="reference external" href="http://pypi.python.org/pypi/zc.buildout"&gt;zc.buildout&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Plone makes it relatively easy to upgrade&lt;/strong&gt; by providing &lt;a class="reference external" href="http://dist.plone.org/release/4.1b2/versions.cfg"&gt;version
+numbers&lt;/a&gt; for all of the packages it requires. In many cases an
+upgrade simply involves referring to a newer list of package
+versions. In the case of upgrading from Plone 3.3.x to Plone 4.0.x,
+the [zope2] section goes away because Zope2 became an egg. (Compare
+&lt;a class="reference external" href="http://dist.aclark.net/build/plone/3.3.x/buildout.cfg"&gt;this buildout&lt;/a&gt; with &lt;a class="reference external" href="http://dist.aclark.net/build/plone/4.0.x/buildout.cfg"&gt;this one&lt;/a&gt;.) Also Plone 4 buildouts should be
+bootstrapped with Python 2.6 instead of Python 2.4 (as was required
+by Plone 3).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Python tools &amp;quot;goodness&amp;quot;&lt;/strong&gt;. This book goes to great lengths to
+demonstrate how Plone fits &amp;quot;naturally&amp;quot; on top of the Python software
+stack. It also includes information about non-Plone-specific
+Python-related technologies like &lt;a class="reference external" href="http://packages.python.org/distribute/"&gt;Distribute&lt;/a&gt; and &lt;a class="reference external" href="http://pypi.python.org/pypi/pip"&gt;PIP&lt;/a&gt;. This (in
+theory) makes Plone more approachable to &amp;quot;regular&amp;quot; Python folk.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;The Python buildout&lt;/strong&gt;. One of the most useful things the Plone
+community has to offer the Python community at large is the &lt;a class="reference external" href="http://svn.plone.org/svn/collective/buildout/python/"&gt;Python
+buildout&lt;/a&gt;. If you do development that requires multiple versions of
+Python (e.g. Plone 3.3.x/4.0.x) you could do worse than to rely on
+this buildout to provide them (multiple versions) quickly and easily.
+The book dances around the subject, but the point is: use it.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Cross-platform&lt;/strong&gt;. This book goes to great lengths to demonstrate
+the Plone installation process on three popular operating systems:
+Mac OS X, Ubuntu Linux, and Windows. The point is to show off how
+similar the process is across platforms because Python does all the
+hard work, and of course to deal with the cases where it is not
+similar (e.g. it's &amp;quot;hard&amp;quot; to compile &lt;a class="reference external" href="http://python.org/download/windows/"&gt;Python on Windows&lt;/a&gt;).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Add-ons&lt;/strong&gt;! A lot of the value of Plone comes from the ability to
+customize it to fit your needs. If that customization has already
+been done by some other member of the community, even better. This is
+one of the core essences of the Plone community: everyone working
+hard to contribute to the available pool of add-ons, and then
+&lt;a class="reference external" href="http://plone.org/products"&gt;sharing the results&lt;/a&gt;. This book aims to make you better at
+evaluating the myriad of options you may be presented with when you
+need to &lt;a class="reference external" href="http://pypi.python.org/pypi"&gt;find and install an add-on&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Upgrades&lt;/strong&gt;! The final chapter of the book holds your hand and walks
+you through an upgrade from Plone 3.3.x to Plone 4.0.x. It doesn't
+contain anything you can't find at &lt;a class="reference external" href="http://plone.org/upgrade"&gt;http://plone.org/upgrade&lt;/a&gt; (in
+fact it contains much less information), but in the context of a book
+full of buildout configuration file examples, it should feel more
+like a natural step than an intimidating process.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Security&lt;/strong&gt;! The book covers how to deal with security patches,
+&lt;em&gt;not&lt;/em&gt; in the common case of when a hotfix is released as a Zope 2
+Product or Python egg, but in the &lt;a class="reference external" href="http://dist.aclark.net/build/plone/2.1.x/buildout.cfg"&gt;somewhat more obscure case&lt;/a&gt; where
+a newer (non-egg) Zope2 release replaces an older one (with a
+vulnerability). The modern equivalent would be a Plone release
+post-security-hotfix release. Such releases simply contain a newer
+KGS (listing package versions that contain the appropriate fixes).
+This &amp;quot;old school&amp;quot; example is included to give readers as broad a
+perspective as possible, so that they may better handle anything they
+may come across in the wild.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;All the boring stuff too&lt;/strong&gt;. This book also walks you through the
+remaining &amp;quot;hot&amp;quot; topics not covered yet in this list, all from a heavy
+zc.buildout configuration management perspective: site basics (e.g.
+customizing navigation), appearance (AKA theming, strictly &amp;quot;old
+style&amp;quot; sorry), administration (e.g. mail settings, ldap), deployment
+and maintenance (e.g. automating database backups and packing), and
+optimization (e.g. load balancing, supervisor, and &lt;a class="reference external" href="http://pypi.python.org/pypi/munin.plone"&gt;munin graphs&lt;/a&gt;!)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;That's it!&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="the-training"&gt;
+&lt;h2&gt;The training&lt;/h2&gt;
+&lt;p&gt;Sound even the &lt;em&gt;slightest&lt;/em&gt; bit interesting? And/or are these things you
+&lt;em&gt;need&lt;/em&gt; to know about Plone for your job? If so, then you or your
+employees will not want to miss my one day class next week at the &lt;a class="reference external" href="http://weblion.psu.edu/symposium"&gt;Plone
+Symposium East 2011&lt;/a&gt;. In case you (or your employees) are interested,
+you can sign up here (separate from the symposium):&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://aclark.net/training"&gt;http://aclark.net/training&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Hope to see you there.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="the-service"&gt;
+&lt;h2&gt;The service&lt;/h2&gt;
+&lt;div class="section" id="baas-buildout-as-a-service"&gt;
+&lt;h3&gt;BaaS (Buildout as a Service)&lt;/h3&gt;
+&lt;p&gt;(Yes, I am serious)&lt;/p&gt;
+&lt;/p&gt;&lt;p&gt;And finally for whatever it is worth, many of the lessons learned from
+writing the book from the author's perspective ended up here:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;dist.aclark.net/build/plone[1]&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;That is to say: buildouts are living and breathing things[2]; they are
+frequently changing in response to what is going on in the Python
+package ecosystem around them (even though their primary goal is to
+maintain stability and/or to only change when you want to change). When
+a change (like a security fix or configuration change) comes along, the
+author pushes changes out to the dist server than deploys the dist
+server changes to production.&lt;/p&gt;
+&lt;/p&gt;&lt;p&gt;[1] DISCLAIMER: Please DO NOT RELY ON this &amp;quot;BaaS example&amp;quot; for anything
+important, EVER. It's only here for educational purposes (for now at
+least).&lt;/p&gt;
+&lt;p&gt;[2] Yeah, I don't get out much :-)&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</summary></entry><entry><title>In Defense of PyPI</title><link href="/in-defense-of-pypi.html" rel="alternate"></link><updated>2011-01-31T09:19:00+01:00</updated><author><name>aclark@aclark.net</name></author><id>tag:,2011-01-31:in-defense-of-pypi.html</id><summary type="html">&lt;p&gt;Everyone on the &lt;em&gt;Python Planet&lt;/em&gt; is probably already familiar with Peter
+Fein's recent article &lt;a class="reference external" href="http://blog.wearpants.org/elitism-and-the-importance-of-pypi"&gt;about PyPI use (or lack thereof).&lt;/a&gt; But in case
+not, particularly striking was the number of folks who joined the &amp;quot;PyPI
+bashing&amp;quot; in the comments. In fact, it has inspired me to write this post
+&amp;quot;in defense of PyPI&amp;quot;. I would like to offer the Python community a
+summary of what I think are the general criticisms, along with my
+responses as a &amp;quot;sysadmin / developer type&amp;quot;.&lt;/p&gt;
+&lt;p&gt;First let me say this: I love PyPI! And I agree with Peter, if your
+package isn't on PyPI it&amp;nbsp; &amp;quot;doesn't exist&amp;quot;. I wouldn't put it quite like
+that; but I would say it's fairly important if you are publishing open
+source Python code, to consider uploading it to the Python Package
+Index.&lt;/p&gt;
+&lt;p&gt;Why?&lt;/p&gt;
+&lt;div class="section" id="because-everybody-wins"&gt;
+&lt;h2&gt;Because Everybody Wins&lt;/h2&gt;
+&lt;p&gt;Believe it or not, the general Python community is interested in seeing
+your code. Whether to use it for an example, or to avoid reinventing the
+wheel, or whatever the reason; we'd like a chance to see your code. But
+if you don't publish it to PyPI, we may never get that chance!&lt;/p&gt;
+&lt;/p&gt;&lt;p&gt;For better or worse, PyPI is the canonical place on Earth for Python
+packages. It's the CPAN of Python. I understand that not everyone is
+100% comfortable with this, but that doesn't make it any less true. If
+you accept that &amp;quot;open source is good&amp;quot;, and that &amp;quot;Python rules&amp;quot;, then you
+simply must take this next leap of faith: &amp;quot;PyPI is &lt;em&gt;the&lt;/em&gt; place for
+Python packages&amp;quot;.&lt;/p&gt;
+&lt;p&gt;[waves hand]&lt;/p&gt;
+&lt;p&gt;Moving on, why else should you consider uploading your packages to PyPI?&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="because-it-is-the-right-thing-to-do"&gt;
+&lt;h2&gt;Because It Is The &amp;quot;Right&amp;quot; Thing To Do&lt;/h2&gt;
+&lt;p&gt;Another thing that struck me is the number of folks who (appear to)
+confuse &amp;quot;version control&amp;quot; with &amp;quot;distribution&amp;quot;. If I'm not mistaken,
+Launchpad, Github, and Bitbucket are primarily designed for Bazaar, Git,
+and Mercurial hosting respectively. These sites can host your
+distribution tarballs, but they certainly weren't &lt;em&gt;designed and built&lt;/em&gt;
+to do so. Rather, they were designed and built to host your source code.&lt;/p&gt;
+&lt;/p&gt;&lt;p&gt;In some cases, a project may wish to host it's own &lt;a class="reference external" href="http://dist.plone.org/"&gt;distribution
+server&lt;/a&gt;. Whether it be for redundancy (although PyPI has begun to
+tackle this) or &amp;quot;branding&amp;quot; or other reasons, I would argue this is the
+preferred way of handling it: &lt;em&gt;in addition to uploading to PyPI, not in
+place of it&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;Why?&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="because-it-is-not-that-hard"&gt;
+&lt;h2&gt;Because It Is Not That Hard&lt;/h2&gt;
+&lt;p&gt;Ahem… we get it. The situation with easy_install is &amp;quot;less than ideal&amp;quot;.
+But this is something to be fixed, not avoided. If you are receiving too
+many support requests, may I suggest &lt;a class="reference external" href="http://blog.jazkarta.com/2010/05/15/installing-plone-without-buildout/#comment-162"&gt;simply telling people not to use
+easy_install&lt;/a&gt;. Or, if the problem is proper packaging, learn how to
+&lt;a class="reference external" href="http://groups.google.com/group/pylons-devel/msg/abfe9e7a43f62594"&gt;test your packages&lt;/a&gt; before uploading them. Due to the large number of
+screwed up releases I've made, I've come to rely on a&lt;a class="reference external" href="http://pypi.python.org/pypi/Products.PloneSoftwareCenter"&gt;local PyPI&lt;/a&gt; and
+a virtualenv to test installations. Others use &lt;a class="reference external" href="http://groups.google.com/group/pylons-devel/msg/696c69843eecd026"&gt;even simpler methods&lt;/a&gt;.
+And with tools like &lt;a class="reference external" href="http://pypi.python.org/pypi/jarn.mkrelease"&gt;mkrelease,&lt;/a&gt; it's easy to upload your package to
+multiple PyPI locations with just a single command (although
+leaping-tall-buildings-in-a single-bound is not yet supported.)&lt;/p&gt;
+&lt;/p&gt;&lt;p&gt;The point is, please consider helping the community fix the problem
+rather than simply avoiding it. There are folks &lt;a class="reference external" href="http://wiki.python.org/moin/Distutils/SprintParis"&gt;actively trying to
+improve the situation&lt;/a&gt; right now.&lt;/p&gt;
+&lt;p&gt;Let's see, what else?&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="because-it-does-not-have-to-be-perfect"&gt;
+&lt;h2&gt;Because It Does Not Have To Be Perfect&lt;/h2&gt;
+&lt;p&gt;Over the years I've seen various and sundry criticisms of the PyPI user
+interface. Fine. I have not looked into the current development process,
+but I assume the author/maintainers would be open to some constructive
+criticism and/or development assistance.&lt;/p&gt;
+&lt;/p&gt;&lt;p&gt;It doesn't have to be Github-sexy to be useful. If you would like to
+report a bug or feature request, do it &lt;a class="reference external" href="http://sourceforge.net/tracker/?group_id=66150"&gt;here&lt;/a&gt; (at least, I think that
+is the right place.)&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="conclusion"&gt;
+&lt;h2&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;I hope this convinces at least some folks to consider uploading their
+packages to PyPI. If it doesn't, please let me know why in the comments.&lt;/p&gt;
+&lt;/p&gt;&lt;p&gt;&lt;em&gt;Did you enjoy reading this article? If so, please consider `helping me
+help Plone`_.&lt;/em&gt;&lt;/p&gt;
+&lt;/div&gt;
+</summary></entry></feed>

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Alex Clark</title><link href="/" rel="alternate"></link><link href="/feeds/Python.atom.xml" rel="self"></link><id>/</id><updated>2012-08-13T13:15:00+02:00</updated><entry><title>pythonpackages.com: pyformance 0.2</title><link href="/pythonpackagescom-pyformance-02.html" rel="alternate"></link><updated>2012-08-13T13:15:00+02:00</updated><author><name>aclark@aclark.net</name></author><id>tag:,2012-08-13:pythonpackagescom-pyformance-02.html</id><summary type="html">&lt;p&gt;&lt;em&gt;pythonpackages.com helps Python programmers package and release their
+software with just a few clicks.&lt;/em&gt;&lt;/p&gt;
+&lt;div class="section" id="pyformance-0-2"&gt;
+&lt;h2&gt;pyformance 0.2&lt;/h2&gt;
+&lt;p&gt;pythonpackages.com recently processed it's first official release via
+the &lt;a class="reference external" href="http://blog.aclark.net/2012/08/10/pythonpackages-com-new-github-service-git-push-to-release/"&gt;new GitHub Service&lt;/a&gt;. &lt;a href="#id1"&gt;&lt;span class="problematic" id="id2"&gt;`|image0|`_&lt;/span&gt;&lt;/a&gt; As such, we are celebrating the
+release of &lt;a class="reference external" href="https://github.com/omergertel/pyformance"&gt;pyformance&lt;/a&gt; 0.2! According to the author &lt;a class="reference external" href="https://twitter.com/omergertel"&gt;Omer Gertel&lt;/a&gt;:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;It's a straight forward port of Coda Hale's fantastic metrics
+package (originally for java). I don't have all of it ported yet,
+and it's not tested as much as it should be, but it's a good start.&lt;/p&gt;
+&lt;div&gt;&lt;p&gt;(BTW, if you do blog about PyFormance, you may also want to mention
+this&amp;nbsp;&lt;a class="reference external" href="http://www.youtube.com/watch?v=czes-oa0yik"&gt;talk by Coda Hale&lt;/a&gt; about metrics. He explains some of the
+math behind the package. )&lt;/p&gt;
+&lt;/div&gt;&lt;/blockquote&gt;
+&lt;div&gt;&lt;/div&gt;&lt;div&gt;&lt;p&gt;Done! :-) Thanks Omer for using our service. Check out pyformance on
+GitHub:&lt;/p&gt;
+&lt;/div&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://github.com/omergertel/pyformance"&gt;https://github.com/omergertel/pyformance&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;&lt;div&gt;&lt;/div&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div class="system-messages section"&gt;
+&lt;h2&gt;Docutils System Messages&lt;/h2&gt;
+&lt;div class="system-message" id="id1"&gt;
+&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/pythonpackages-com-pyformance-0-2.rst&lt;/tt&gt;, line 12); &lt;em&gt;&lt;a href="#id2"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+Unknown target name: &amp;quot;|image0|&amp;quot;.&lt;/div&gt;
+&lt;/div&gt;
+</summary></entry><entry><title>pythonpackages.com: New GitHub Service &amp;quot;git push to release&amp;quot;</title><link href="/pythonpackagescom-new-github-service-quotgit-push-to-releasequot.html" rel="alternate"></link><updated>2012-08-10T05:50:00+02:00</updated><author><name>aclark@aclark.net</name></author><id>tag:,2012-08-10:pythonpackagescom-new-github-service-quotgit-push-to-releasequot.html</id><summary type="html">&lt;p&gt;&lt;em&gt;pythonpackages.com helps Python programmers package and release their
+software with just a few clicks.&lt;/em&gt;&lt;/p&gt;
+&lt;div class="section" id="pythonpackages-github-service"&gt;
+&lt;h2&gt;PythonPackages GitHub Service&lt;/h2&gt;
+&lt;p&gt;&lt;a href="#id1"&gt;&lt;span class="problematic" id="id2"&gt;`|image0|`_&lt;/span&gt;&lt;/a&gt; There is a new &lt;a class="reference external" href="https://github.com/github/github-services"&gt;GitHub Service&lt;/a&gt; available for
+pythonpackages.com that&amp;nbsp;allows you to release Python packages from
+GitHub to the Python Package Index, simply by pushing a commit message
+that begins with &amp;quot;Release&amp;quot; e.g.:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+$ git commit -a -m &amp;quot;Release 1.0&amp;quot;; git push
+&lt;/pre&gt;
+&lt;p&gt;(The release creates a tag with the appropriate version number,
+extracted from setup.py) To use the service, please follow the
+instructions below.&lt;/p&gt;
+&lt;div class="section" id="instructions"&gt;
+&lt;h3&gt;Instructions&lt;/h3&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;Sign up for the pythonpackages.com beta:
+&lt;a class="reference external" href="http://pythonpackages.com/signup"&gt;http://pythonpackages.com/signup&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Follow the &lt;a class="reference external" href="http://docs.pythonpackages.com/en/latest/introduction.html"&gt;Introduction&lt;/a&gt; instructions.&lt;/li&gt;
+&lt;li&gt;On the Python Package Index, authorize pythonpackages.com to act on
+your behalf, as explained
+here:&amp;nbsp;&lt;a class="reference external" href="http://blog.aclark.net/2012/08/07/pythonpackages-com-using-pypis-oauth1-support-to-register-and-upload-packages"&gt;http://blog.aclark.net/2012/08/07/pythonpackages-com-using-pypis-oauth1-support-to-register-and-upload-packages&lt;/a&gt;/
+(&lt;strong&gt;pythonpackages.com -&amp;gt; Dashboard -&amp;gt; Manage accounts -&amp;gt; PyPI -&amp;gt;
+Authorize&lt;/strong&gt;).&lt;/li&gt;
+&lt;li&gt;On GitHub, configure the PythonPackages service to be Active on any
+repository that contains a Python package you want to release (&lt;strong&gt;Repo
+-&amp;gt; Admin -&amp;gt; Service Hooks -&amp;gt; PythonPackages -&amp;gt; [*] Active&lt;/strong&gt;).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Now you can git push to release! If you have any trouble, please &lt;a class="reference external" href="https://bitbucket.org/pythonpackages/pythonpackages.com/issues/new"&gt;open a
+ticket&lt;/a&gt;. &lt;em&gt;These instructions will live permanently
+here:&amp;nbsp;`http://docs.pythonpackages.com/en/latest/github-service.html`_.&lt;/em&gt;&lt;/p&gt;
+&lt;/p&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="system-messages section"&gt;
+&lt;h2&gt;Docutils System Messages&lt;/h2&gt;
+&lt;div class="system-message" id="id1"&gt;
+&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/pythonpackages-com-new-github-service-git-push-to-release.rst&lt;/tt&gt;, line 12); &lt;em&gt;&lt;a href="#id2"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+Unknown target name: &amp;quot;|image0|&amp;quot;.&lt;/div&gt;
+&lt;/div&gt;
+</summary></entry><entry><title>Introducing pythonpackages.com</title><link href="/introducing-pythonpackagescom.html" rel="alternate"></link><updated>2011-11-29T02:24:00+01:00</updated><author><name>aclark@aclark.net</name></author><id>tag:,2011-11-29:introducing-pythonpackagescom.html</id><summary type="html">&lt;div class="section" id="the-website-for-python-egoists"&gt;
+&lt;h2&gt;The website for Python egoists™&lt;/h2&gt;
+&lt;p&gt;I have this overwhelming desire to know how many times my favorite
+Python packages have been downloaded. Don't you? If so, look no further
+than &lt;a class="reference external" href="http://pythonpackages.com"&gt;pythonpackages.com&lt;/a&gt;:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="image0-count-downloads"&gt;
+&lt;h2&gt;&lt;a href="#id1"&gt;&lt;span class="problematic" id="id2"&gt;`|image0|`_&lt;/span&gt;&lt;/a&gt;Count downloads&lt;/h2&gt;
+&lt;p&gt;Where you can enter a package like &lt;a class="reference external" href="http://pythonpackages.com/info/django"&gt;Django&lt;/a&gt; and find out:&lt;/p&gt;
+&lt;/p&gt;&lt;/div&gt;
+&lt;div class="section" id="image1-count-favorites"&gt;
+&lt;h2&gt;&lt;a href="#id3"&gt;&lt;span class="problematic" id="id4"&gt;`|image1|`_&lt;/span&gt;&lt;/a&gt;Count favorites&lt;/h2&gt;
+&lt;p&gt;Or click on &lt;strong&gt;Count favorites&lt;/strong&gt; to reveal how many times it has been
+favorited:&lt;/p&gt;
+&lt;p&gt;&lt;a href="#id5"&gt;&lt;span class="problematic" id="id6"&gt;`|image2|`_&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/p&gt;&lt;/div&gt;
+&lt;div class="section" id="find-trash"&gt;
+&lt;h2&gt;Find trash&lt;/h2&gt;
+&lt;p&gt;Or even poke some good natured fun at it, for its &lt;a class="reference external" href="http://pythonpackages.com/trash/django"&gt;failure to provide
+adequate package metadata&lt;/a&gt;:&lt;/p&gt;
+&lt;/p&gt;&lt;/div&gt;
+&lt;div class="section" id="image3"&gt;
+&lt;h2&gt;&lt;a class="reference internal" href="#image3"&gt;|image3|&lt;/a&gt;&lt;/h2&gt;
+&lt;/div&gt;
+&lt;div class="section" id="discuss-packages"&gt;
+&lt;h2&gt;Discuss packages&lt;/h2&gt;
+&lt;p&gt;You can even &lt;em&gt;discuss&lt;/em&gt;packages on &lt;a class="reference external" href="http://pythonpackages.com"&gt;pythonpackages.com&lt;/a&gt;:&lt;/p&gt;
+&lt;p&gt;&lt;a href="#id7"&gt;&lt;span class="problematic" id="id8"&gt;`|image4|`_&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/p&gt;&lt;/div&gt;
+&lt;div class="section" id="recent-activity"&gt;
+&lt;h2&gt;Recent activity&lt;/h2&gt;
+&lt;p&gt;But wait there is more! You can also browse the &lt;a class="reference external" href="http://pythonpackages.com/pypi"&gt;latest changelog
+activity&lt;/a&gt; from PyPi right on the site:&lt;/p&gt;
+&lt;p&gt;&lt;a href="#id9"&gt;&lt;span class="problematic" id="id10"&gt;`|image5|`_&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/p&gt;&lt;/div&gt;
+&lt;div class="section" id="package-info"&gt;
+&lt;h2&gt;Package info&lt;/h2&gt;
+&lt;p&gt;Lastly, if you get bored counting package downloads and favorites you
+can look at the &lt;em&gt;actual&lt;/em&gt; &lt;a class="reference external" href="http://pythonpackages.com/info/django"&gt;package metadata&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href="#id11"&gt;&lt;span class="problematic" id="id12"&gt;`|image6|`_&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/p&gt;&lt;/div&gt;
+&lt;div class="section" id="conclusion"&gt;
+&lt;h2&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;Sound interesting? Or utterly silly, perhaps? I think
+&lt;a class="reference external" href="http://pythonpackages.com"&gt;pythonpackages.com&lt;/a&gt; is the best of both. It started off as a front end
+to the command line utility &lt;a class="reference external" href="http://pythonpackages.com/info/vanity"&gt;vanity&lt;/a&gt;, but has taken on a life of it's
+own.&lt;/p&gt;
+&lt;/p&gt;&lt;p&gt;After a small run on Python reddit and Hacker News, I'm looking forward
+to seeing what Python Planet folks think. So please check out
+&lt;a class="reference external" href="http://pythonpackages.com"&gt;pythonpackages.com&lt;/a&gt; and let me know. You can leave comments about the
+site here:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://pythonpackages.com/about"&gt;http://pythonpackages.com/about&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Or open a new ticket here:&lt;/p&gt;
+&lt;/p&gt;&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://bitbucket.org/pythonpackages/pythonpackages.com/issues/new"&gt;https://bitbucket.org/pythonpackages/pythonpackages.com/issues/new&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/p&gt;&lt;/div&gt;
+&lt;div class="system-messages section"&gt;
+&lt;h2&gt;Docutils System Messages&lt;/h2&gt;
+&lt;div class="system-message" id="id1"&gt;
+&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/introducing-pythonpackages-com.rst&lt;/tt&gt;, line 14); &lt;em&gt;&lt;a href="#id2"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+Unknown target name: &amp;quot;|image0|&amp;quot;.&lt;/div&gt;
+&lt;div class="system-message" id="id3"&gt;
+&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/introducing-pythonpackages-com.rst&lt;/tt&gt;, line 23); &lt;em&gt;&lt;a href="#id4"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+Unknown target name: &amp;quot;|image1|&amp;quot;.&lt;/div&gt;
+&lt;div class="system-message" id="id5"&gt;
+&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/introducing-pythonpackages-com.rst&lt;/tt&gt;, line 28); &lt;em&gt;&lt;a href="#id6"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+Unknown target name: &amp;quot;|image2|&amp;quot;.&lt;/div&gt;
+&lt;div class="system-message" id="id7"&gt;
+&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/introducing-pythonpackages-com.rst&lt;/tt&gt;, line 52); &lt;em&gt;&lt;a href="#id8"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+Unknown target name: &amp;quot;|image4|&amp;quot;.&lt;/div&gt;
+&lt;div class="system-message" id="id9"&gt;
+&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/introducing-pythonpackages-com.rst&lt;/tt&gt;, line 64); &lt;em&gt;&lt;a href="#id10"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+Unknown target name: &amp;quot;|image5|&amp;quot;.&lt;/div&gt;
+&lt;div class="system-message" id="id11"&gt;
+&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/introducing-pythonpackages-com.rst&lt;/tt&gt;, line 76); &lt;em&gt;&lt;a href="#id12"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+Unknown target name: &amp;quot;|image6|&amp;quot;.&lt;/div&gt;
+&lt;/div&gt;
+</summary></entry></feed>
