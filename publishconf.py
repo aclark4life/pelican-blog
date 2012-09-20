@@ -15,6 +15,5 @@ DELETE_OUTPUT_DIRECTORY = True
 #RELATIVE_URLS = False
 
 DISQUS_SITENAME = "aclark-blog"
-#GOOGLE_ANALYTICS = ""
-
+GOOGLE_ANALYTICS = "UA-34988446-1"
 GITHUB_URL = "https://github.com/ACLARKNET/aclarknet.github.com"
