@@ -3,7 +3,7 @@ PELICANOPTS=
 
 BASEDIR=$(PWD)
 INPUTDIR=$(BASEDIR)/content
-OUTPUTDIR=$(BASEDIR)/output
+OUTPUTDIR=$(BASEDIR)
 CONFFILE=$(BASEDIR)/pelicanconf.py
 PUBLISHCONF=$(BASEDIR)/publishconf.py
 
@@ -43,7 +43,7 @@ $(OUTPUTDIR)/%.html:
 	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(CONFFILE) $(PELICANOPTS)
 
 clean:
-	find $(OUTPUTDIR) -mindepth 1 -delete
+	find $(OUTPUTDIR)/*.html -mindepth 1 -delete
 
 regenerate: clean
 	$(PELICAN) -r $(INPUTDIR) -o $(OUTPUTDIR) -s $(CONFFILE) $(PELICANOPTS)
