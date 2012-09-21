@@ -49,8 +49,123 @@
         
             <aside id="featured" class="body">
                 <article>
-                    <h1 class="entry-title"><a href=".././building-windows-installers-in-the-cloud.html">Building Windows Installers In The Cloud</a></h1> 
+                    <h1 class="entry-title"><a href=".././yes-this-blog-is-now-powered-by-pelican.html">Yes, this blog is now powered by Pelican</a></h1> 
                     <footer class="post-info">
+        <abbr class="published" title="2012-11-21T09:30:00">
+                Wed 21 November 2012
+        </abbr>
+
+        
+        <address class="vcard author">
+                By <a class="url fn" href=".././author/alex-clark.html">Alex Clark</a>
+        </address>
+        
+<p>In <a href=".././category/blog.html">Blog</a>. </p>
+<p>tags: <a href=".././tag/mozilla.html">Mozilla</a><a href=".././tag/plone.html">Plone</a><a href=".././tag/python.html">Python</a></p>
+
+
+</footer><!-- /.post-info --><p>As an open source &quot;Plone guy&quot;, I'm always prepared to defend and explain my choice not to use Plone for blogging. A couple years ago, I started using Wordpress in order to learn its feature set. I enjoyed my time with it, but after moving to wordpress.com for &quot;trouble free&quot; hosting, I found I couldn't control my category feeds the way I wanted; the honeymoon was over.</p>
+<p>This was a giant let down, because I was hoping to avoid putting any time in to my blogging infrastructure. For weeks I did nothing. I poked at various options: Pelican, Plone, Tumblr, others. Eventually, I found my way back to Pelican and now I'm happy again.</p>
+<img alt="http://blog.aclark.net/images/pelican.png" src="http://blog.aclark.net/images/pelican.png" />
+<p>Pelican is a static blog generator, as you may have heard. So <strong>one big advantage</strong> is:</p>
+<ul class="simple">
+<li>You can host it for free, or close to free on any number of free or cheap static website hosting services! (I'm using GitHub Pages)</li>
+</ul>
+<div class="section" id="other-advantages">
+<h2>Other advantages</h2>
+<ul class="simple">
+<li>It does feeds right (I need 3 &quot;full body&quot; feeds for: Mozilla, Plone, Python) <a class="footnote-reference" href="#id3" id="id1">[1]</a>.</li>
+<li>It's fun to configure (edit pelicanconf.py or publishconf.py).</li>
+<li>The &quot;cool kids&quot; use it: e.g. Tarek Ziadé, Kenneth Reitz, Daniel Greenfeld, many others.</li>
+<li>It grows with you: this is huge. You can start using it and feel comfortable right away, but there is always more to learn. This is how all software should be. Unfortunately, it's tough to get it right (I think this is formally called UX).</li>
+</ul>
+</div>
+<div class="section" id="some-disadvantages">
+<h2>Some disadvantages</h2>
+<ul class="simple">
+<li>Don't like typing in the terminal? Pelican is not for you.</li>
+<li>No &quot;nested&quot; entries e.g. 2012/09/21/entry.html. I don't know if there is a formal name for this feature, but I miss it (if for no other reason than &quot;cool URLS never change&quot; i.e. I've broken links with this move.)</li>
+<li>The pelican-import has some bugs, so I'm doing a lot of manual cleanup (I don't mind this though.)</li>
+<li>Tags are categories and categories are tags (or something). I had to convert all my categories to tags, and then turn on tag feeds and turn off category feeds. Category feeds are on by default and tag feeds are off by default. Also ATOM is on and RSS is off, if that is of interest to you. (Since this is really just configuration change and not a disadvantage per sé, it probably belongs more in the next section where I discuss my setup.)</li>
+</ul>
+<p>If you are curious about my setup, here are the details.</p>
+</div>
+<div class="section" id="setup">
+<h2>Setup</h2>
+<p>Getting started with Pelican was easy, basically:</p>
+<pre class="literal-block">
+$ virtualenv .
+$ bin/pip install pelican BeautifulSoup Markdown
+$ bin/pelican-quickstart
+</pre>
+<p>At this point, after I answer the quickstart questions I:</p>
+<pre class="literal-block">
+$ source bin/activate
+$ make html
+</pre>
+<p>Now the content is ready to host (which for me just involves a git push).</p>
+</div>
+<div class="section" id="tweaks">
+<h2>Tweaks</h2>
+<p>A few things were tricky.</p>
+<ul class="simple">
+<li>I wanted to host my articles at the top level of the repo for serving on GitHub Pages, so I modified the Makefile to make it so <a class="footnote-reference" href="#id4" id="id2">[2]</a>.</li>
+<li>Categories control what links are available in the header, so I disabled them all but one called &quot;Blog&quot;. Not ideal, but it works.</li>
+<li>The &quot;social&quot; links, and my disqus and analytics API keys were all a pleasure to configure.</li>
+</ul>
+</div>
+<div class="section" id="workflow">
+<h2>Workflow</h2>
+<p>Now I write articles in restructured text and publish like so:</p>
+<pre class="literal-block">
+$ make publish; git commit -a -m &quot;Publish&quot;; git push
+</pre>
+<p>All the details are here if you'd like to take a look:</p>
+<ul class="simple">
+<li><a class="reference external" href="https://github.com/ACLARKNET/aclarknet.github.com/commits/master">https://github.com/ACLARKNET/aclarknet.github.com/commits/master</a></li>
+</ul>
+<p>Comments from more knowledgable Pelican users welcome! Like this article? Tip me on Gittip!</p>
+<iframe style="border: 0; margin: 0; padding: 0;"
+    src="https://www.gittip.com/aclark4life/widget.html"
+    width="48pt" height="20pt"></iframe><table class="docutils footnote" frame="void" id="id3" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id1">[1]</a></td><td>This is actually my first &quot;test&quot; post with Pelican so I will get a chance to see how the feeds perform. But they looked good in testing.</td></tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="id4" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id2">[2]</a></td><td>I think I broke &quot;make html&quot;, actually. Primarily I just needed to make it not &quot;clean&quot; the entire repo.</td></tr>
+</tbody>
+</table>
+</div>
+<p>There are <a href=".././yes-this-blog-is-now-powered-by-pelican.html#disqus_thread">comments</a>.</p>
+                </article>
+                
+            </aside><!-- /#featured -->
+            
+                <section id="content" class="body">
+                    <h1>Other articles</h1>
+                    <hr />
+                    <ol id="posts-list" class="hfeed">
+            
+        
+        
+        
+            
+
+        
+         
+            
+            <li><article class="hentry">    
+                <header>
+                    <h1><a href=".././building-windows-installers-in-the-cloud.html" rel="bookmark"
+                           title="Permalink to Building Windows Installers In The Cloud">Building Windows Installers In The Cloud</a></h1>
+                </header>
+                
+                <div class="entry-content">
+                <footer class="post-info">
         <abbr class="published" title="2012-08-01T22:19:00">
                 Wed 01 August 2012
         </abbr>
@@ -64,112 +179,15 @@
 <p>tags: <a href=".././tag/mozilla.html">Mozilla</a><a href=".././tag/plone.html">Plone</a><a href=".././tag/python.html">Python</a></p>
 
 
-</footer><!-- /.post-info --><p>With pythonpackages.com, I want to solve real problems for people today.
+</footer><!-- /.post-info -->
+                <p>With pythonpackages.com, I want to solve real problems for people today.
 So here's a proof of concept for building Windows installers quickly and
 easily &quot;in the cloud&quot; (i.e. without a Windows machine local). This
-article is mostly about the back end, as the front end is <a class="reference external" href="http://docs.pythonpackages.com/en/latest/introduction.html">already
-documented</a>. <em>TL;DR: We're moving from proof-of-concept phase to
-useful-service phase. If you find the demo interesting and want to help
-build something great, please consider purchasing one of `our current
-plans`_.</em></p>
-<div class="section" id="step-1-to-the-clouds">
-<h2>Step 1: To The Clouds</h2>
-<p>For the purpose of the demo, I booted up a Windows server on Rackspace
-Cloud and started installing things. <a href="#id1"><span class="problematic" id="id2">`|image0|`_</span></a> On the short list of
-things to install was:</p>
-<ul class="simple">
-<li>Python 2.7 from python.org.</li>
-<li>GitHub for Windows from github.com (mainly for git.)</li>
-<li>pythonpackages.com from bitbucket.org (free private repos!)</li>
-<li>Microsoft compiler (free version, make sure to use the same one used
-to compile Python.)</li>
-<li>Redis for Windows (Hell froze over, you can find this in Microsoft's
-GitHub account: <a class="reference external" href="https://github.com/MSOpenTech/Redis">https://github.com/MSOpenTech/Redis</a>.)</li>
-<li>Vim.exe (which I copy to vi.exe because I hate typing vim.)</li>
-</ul>
-<p>Once I had all these things in place, I was able to:</p>
-<ul class="simple">
-<li>Install pythonpackages.com (pip install -r requirements.txt.)</li>
-<li>Compile and run Redis (Several projects bundled together in Visual
-Studio is apparently called a &quot;solution&quot;, how quaint!)</li>
-<li>Start the site.</li>
-<li>Start testing.</li>
-</ul>
-<p><a href="#id3"><span class="problematic" id="id4">`|image1|`_</span></a></p>
-</div>
-<div class="section" id="step-2-fix-all-the-bugs">
-<h2>Step 2: Fix all the bugs</h2>
-<p>This step involved a lot of cursing:</p>
-<ul class="simple">
-<li>Backslashes.</li>
-<li>Lack of vi key bindings.</li>
-<li>Other Windows-isms.</li>
-</ul>
-<p>But I also praised my <a class="reference external" href="http://cord.sourceforge.net/">CoRD Remote Desktop Client</a> because it worked
-awesome. Anyway, the bugs/issues I fixed (and didn't fix) were roughly:</p>
-<ul class="simple">
-<li>Create new application on GitHub and configured keys accordingly.</li>
-<li>Switch Stripe keys to testing.</li>
-<li>Fix Python paths and other trivial changes, so the application can
-run `python setup.py bdist_wininst`.</li>
-<li>JavaScript is completely broken for some reason I've yet to determine
-(haven't looked yet, but guessing Windows path related).</li>
-</ul>
-</div>
-<div class="section" id="step-3-profit">
-<h2>Step 3: Profit!</h2>
-<p>I have to admit: I was giddy when it started working, and I was able to
-create a Windows Installer for Pillow (Python Imaging Library fork).
-[caption id=&quot;attachment_5143&quot; align=&quot;aligncenter&quot;
-width=&quot;300&quot;]<a href="#id5"><span class="problematic" id="id6">`|image2|`_</span></a> (We know there are security implications here.
-We are currently addressing them as best as we can.)[/caption]
-<a href="#id7"><span class="problematic" id="id8">`|image3|`_</span></a> I was even happier when I ran the installer and it worked.
-<a href="#id9"><span class="problematic" id="id10">`|image4|`_</span></a> <a href="#id11"><span class="problematic" id="id12">`|image5|`_</span></a> That's it. Next I hope to <a class="reference external" href="http://pythonpackages.com/plans">get some customers</a>
-so I can keep the Windows box running, and make it available to the
-public.</p>
-</div>
-<div class="section" id="big-picture">
-<h2>Big Picture</h2>
-<p>In case you are interested, the <a class="reference external" href="http://docs.pythonpackages.com/en/latest/roadmap.html">roadmap for beta Q3 is here</a>. I will
-also mention that I recently used <a class="reference external" href="http://dia-installer.de/">Dia</a> (&lt;3) to create this
-info-graphic, in hopes of better communicating what I'm trying to build.
-Check it out! <a href="#id13"><span class="problematic" id="id14">`|image6|`_</span></a></p>
-</p></div>
-<div class="system-messages section">
-<h2>Docutils System Messages</h2>
-<div class="system-message" id="id1">
-<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">/Users/aclark/Developer/blog/content/building-windows-installers-in-the-cloud.rst</tt>, line 18); <em><a href="#id2">backlink</a></em></p>
-Unknown target name: &quot;|image0|&quot;.</div>
-<div class="system-message" id="id3">
-<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">/Users/aclark/Developer/blog/content/building-windows-installers-in-the-cloud.rst</tt>, line 39); <em><a href="#id4">backlink</a></em></p>
-Unknown target name: &quot;|image1|&quot;.</div>
-<div class="system-message" id="id5">
-<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">/Users/aclark/Developer/blog/content/building-windows-installers-in-the-cloud.rst</tt>, line 63); <em><a href="#id6">backlink</a></em></p>
-Unknown target name: &quot;|image2|&quot;.</div>
-<div class="system-message" id="id7">
-<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">/Users/aclark/Developer/blog/content/building-windows-installers-in-the-cloud.rst</tt>, line 63); <em><a href="#id8">backlink</a></em></p>
-Unknown target name: &quot;|image3|&quot;.</div>
-<div class="system-message" id="id9">
-<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">/Users/aclark/Developer/blog/content/building-windows-installers-in-the-cloud.rst</tt>, line 63); <em><a href="#id10">backlink</a></em></p>
-Unknown target name: &quot;|image4|&quot;.</div>
-<div class="system-message" id="id11">
-<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">/Users/aclark/Developer/blog/content/building-windows-installers-in-the-cloud.rst</tt>, line 63); <em><a href="#id12">backlink</a></em></p>
-Unknown target name: &quot;|image5|&quot;.</div>
-<div class="system-message" id="id13">
-<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">/Users/aclark/Developer/blog/content/building-windows-installers-in-the-cloud.rst</tt>, line 76); <em><a href="#id14">backlink</a></em></p>
-Unknown target name: &quot;|image6|&quot;.</div>
-</div>
-<p>There are <a href=".././building-windows-installers-in-the-cloud.html#disqus_thread">comments</a>.</p>
-                </article>
-                
-            </aside><!-- /#featured -->
-            
-                <section id="content" class="body">
-                    <h1>Other articles</h1>
-                    <hr />
-                    <ol id="posts-list" class="hfeed">
-            
-        
+article is mostly about the back end, as the front end is <a class="reference external" href="http://docs.pythonpackages.com/en/latest/introduction.html">already ...</a></p>
+                <a class="readmore" href=".././building-windows-installers-in-the-cloud.html">read more</a>
+                <p>There are <a href=".././building-windows-installers-in-the-cloud.html#disqus_thread">comments</a>.</p>
+                </div><!-- /.entry-content -->
+            </article></li>
         
         
             

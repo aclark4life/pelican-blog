@@ -1,5 +1,81 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Alex Clark</title><link href="http://blog.aclark.net/" rel="alternate"></link><link href="http://blog.aclark.net/feeds/all-en.atom.xml" rel="self"></link><id>http://blog.aclark.net/</id><updated>2012-08-13T21:10:00Z</updated><entry><title>Bootstrapping a Buildout 1.6 release</title><link href="http://blog.aclark.net/bootstrapping-a-buildout-16-release.html" rel="alternate"></link><updated>2012-08-13T21:10:00Z</updated><author><name>Alex Clark</name></author><id>tag:blog.aclark.net,2012-08-13:bootstrapping-a-buildout-16-release.html</id><summary type="html">&lt;p&gt;A lot of work has been done on Buildout lately, most notably:&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Alex Clark</title><link href="http://blog.aclark.net/" rel="alternate"></link><link href="http://blog.aclark.net/feeds/all-en.atom.xml" rel="self"></link><id>http://blog.aclark.net/</id><updated>2012-11-21T09:30:00Z</updated><entry><title>Yes, this blog is now powered by Pelican</title><link href="http://blog.aclark.net/yes-this-blog-is-now-powered-by-pelican.html" rel="alternate"></link><updated>2012-11-21T09:30:00Z</updated><author><name>Alex Clark</name></author><id>tag:blog.aclark.net,2012-11-21:yes-this-blog-is-now-powered-by-pelican.html</id><summary type="html">&lt;p&gt;As an open source &amp;quot;Plone guy&amp;quot;, I'm always prepared to defend and explain my choice not to use Plone for blogging. A couple years ago, I started using Wordpress in order to learn its feature set. I enjoyed my time with it, but after moving to wordpress.com for &amp;quot;trouble free&amp;quot; hosting, I found I couldn't control my category feeds the way I wanted; the honeymoon was over.&lt;/p&gt;
+&lt;p&gt;This was a giant let down, because I was hoping to avoid putting any time in to my blogging infrastructure. For weeks I did nothing. I poked at various options: Pelican, Plone, Tumblr, others. Eventually, I found my way back to Pelican and now I'm happy again.&lt;/p&gt;
+&lt;img alt="http://blog.aclark.net/images/pelican.png" src="http://blog.aclark.net/images/pelican.png" /&gt;
+&lt;p&gt;Pelican is a static blog generator, as you may have heard. So &lt;strong&gt;one big advantage&lt;/strong&gt; is:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;You can host it for free, or close to free on any number of free or cheap static website hosting services! (I'm using GitHub Pages)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="section" id="other-advantages"&gt;
+&lt;h2&gt;Other advantages&lt;/h2&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;It does feeds right (I need 3 &amp;quot;full body&amp;quot; feeds for: Mozilla, Plone, Python) &lt;a class="footnote-reference" href="#id3" id="id1"&gt;[1]&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;It's fun to configure (edit pelicanconf.py or publishconf.py).&lt;/li&gt;
+&lt;li&gt;The &amp;quot;cool kids&amp;quot; use it: e.g. Tarek Ziadé, Kenneth Reitz, Daniel Greenfeld, many others.&lt;/li&gt;
+&lt;li&gt;It grows with you: this is huge. You can start using it and feel comfortable right away, but there is always more to learn. This is how all software should be. Unfortunately, it's tough to get it right (I think this is formally called UX).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="section" id="some-disadvantages"&gt;
+&lt;h2&gt;Some disadvantages&lt;/h2&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;Don't like typing in the terminal? Pelican is not for you.&lt;/li&gt;
+&lt;li&gt;No &amp;quot;nested&amp;quot; entries e.g. 2012/09/21/entry.html. I don't know if there is a formal name for this feature, but I miss it (if for no other reason than &amp;quot;cool URLS never change&amp;quot; i.e. I've broken links with this move.)&lt;/li&gt;
+&lt;li&gt;The pelican-import has some bugs, so I'm doing a lot of manual cleanup (I don't mind this though.)&lt;/li&gt;
+&lt;li&gt;Tags are categories and categories are tags (or something). I had to convert all my categories to tags, and then turn on tag feeds and turn off category feeds. Category feeds are on by default and tag feeds are off by default. Also ATOM is on and RSS is off, if that is of interest to you. (Since this is really just configuration change and not a disadvantage per sé, it probably belongs more in the next section where I discuss my setup.)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If you are curious about my setup, here are the details.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="setup"&gt;
+&lt;h2&gt;Setup&lt;/h2&gt;
+&lt;p&gt;Getting started with Pelican was easy, basically:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+$ virtualenv .
+$ bin/pip install pelican BeautifulSoup Markdown
+$ bin/pelican-quickstart
+&lt;/pre&gt;
+&lt;p&gt;At this point, after I answer the quickstart questions I:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+$ source bin/activate
+$ make html
+&lt;/pre&gt;
+&lt;p&gt;Now the content is ready to host (which for me just involves a git push).&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="tweaks"&gt;
+&lt;h2&gt;Tweaks&lt;/h2&gt;
+&lt;p&gt;A few things were tricky.&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;I wanted to host my articles at the top level of the repo for serving on GitHub Pages, so I modified the Makefile to make it so &lt;a class="footnote-reference" href="#id4" id="id2"&gt;[2]&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Categories control what links are available in the header, so I disabled them all but one called &amp;quot;Blog&amp;quot;. Not ideal, but it works.&lt;/li&gt;
+&lt;li&gt;The &amp;quot;social&amp;quot; links, and my disqus and analytics API keys were all a pleasure to configure.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="section" id="workflow"&gt;
+&lt;h2&gt;Workflow&lt;/h2&gt;
+&lt;p&gt;Now I write articles in restructured text and publish like so:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+$ make publish; git commit -a -m &amp;quot;Publish&amp;quot;; git push
+&lt;/pre&gt;
+&lt;p&gt;All the details are here if you'd like to take a look:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://github.com/ACLARKNET/aclarknet.github.com/commits/master"&gt;https://github.com/ACLARKNET/aclarknet.github.com/commits/master&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Comments from more knowledgable Pelican users welcome! Like this article? Tip me on Gittip!&lt;/p&gt;
+&lt;iframe style="border: 0; margin: 0; padding: 0;"
+    src="https://www.gittip.com/aclark4life/widget.html"
+    width="48pt" height="20pt"&gt;&lt;/iframe&gt;&lt;table class="docutils footnote" frame="void" id="id3" rules="none"&gt;
+&lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
+&lt;tbody valign="top"&gt;
+&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#id1"&gt;[1]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;This is actually my first &amp;quot;test&amp;quot; post with Pelican so I will get a chance to see how the feeds perform. But they looked good in testing.&lt;/td&gt;&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;table class="docutils footnote" frame="void" id="id4" rules="none"&gt;
+&lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
+&lt;tbody valign="top"&gt;
+&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#id2"&gt;[2]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;I think I broke &amp;quot;make html&amp;quot;, actually. Primarily I just needed to make it not &amp;quot;clean&amp;quot; the entire repo.&lt;/td&gt;&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+</summary><category term="Mozilla"></category><category term="Plone"></category><category term="Python"></category></entry><entry><title>Bootstrapping a Buildout 1.6 release</title><link href="http://blog.aclark.net/bootstrapping-a-buildout-16-release.html" rel="alternate"></link><updated>2012-08-13T21:10:00Z</updated><author><name>Alex Clark</name></author><id>tag:blog.aclark.net,2012-08-13:bootstrapping-a-buildout-16-release.html</id><summary type="html">&lt;p&gt;A lot of work has been done on Buildout lately, most notably:&lt;/p&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;Jim Fulton is &lt;a class="reference external" href="https://github.com/buildout/buildout/commits/master"&gt;working on Buildout 2&lt;/a&gt;.&lt;/li&gt;
 &lt;li&gt;Ross Patterson has greatly &lt;a class="reference external" href="http://rpatterson.net/blog/buildout-performance-improvements"&gt;improved Buildout performance&lt;/a&gt;.&lt;/li&gt;

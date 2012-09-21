@@ -49,8 +49,123 @@
         
             <aside id="featured" class="body">
                 <article>
-                    <h1 class="entry-title"><a href=".././bootstrapping-a-buildout-16-release.html">Bootstrapping a Buildout 1.6 release</a></h1> 
+                    <h1 class="entry-title"><a href=".././yes-this-blog-is-now-powered-by-pelican.html">Yes, this blog is now powered by Pelican</a></h1> 
                     <footer class="post-info">
+        <abbr class="published" title="2012-11-21T09:30:00">
+                Wed 21 November 2012
+        </abbr>
+
+        
+        <address class="vcard author">
+                By <a class="url fn" href=".././author/alex-clark.html">Alex Clark</a>
+        </address>
+        
+<p>In <a href=".././category/blog.html">Blog</a>. </p>
+<p>tags: <a href=".././tag/mozilla.html">Mozilla</a><a href=".././tag/plone.html">Plone</a><a href=".././tag/python.html">Python</a></p>
+
+
+</footer><!-- /.post-info --><p>As an open source &quot;Plone guy&quot;, I'm always prepared to defend and explain my choice not to use Plone for blogging. A couple years ago, I started using Wordpress in order to learn its feature set. I enjoyed my time with it, but after moving to wordpress.com for &quot;trouble free&quot; hosting, I found I couldn't control my category feeds the way I wanted; the honeymoon was over.</p>
+<p>This was a giant let down, because I was hoping to avoid putting any time in to my blogging infrastructure. For weeks I did nothing. I poked at various options: Pelican, Plone, Tumblr, others. Eventually, I found my way back to Pelican and now I'm happy again.</p>
+<img alt="http://blog.aclark.net/images/pelican.png" src="http://blog.aclark.net/images/pelican.png" />
+<p>Pelican is a static blog generator, as you may have heard. So <strong>one big advantage</strong> is:</p>
+<ul class="simple">
+<li>You can host it for free, or close to free on any number of free or cheap static website hosting services! (I'm using GitHub Pages)</li>
+</ul>
+<div class="section" id="other-advantages">
+<h2>Other advantages</h2>
+<ul class="simple">
+<li>It does feeds right (I need 3 &quot;full body&quot; feeds for: Mozilla, Plone, Python) <a class="footnote-reference" href="#id3" id="id1">[1]</a>.</li>
+<li>It's fun to configure (edit pelicanconf.py or publishconf.py).</li>
+<li>The &quot;cool kids&quot; use it: e.g. Tarek Ziadé, Kenneth Reitz, Daniel Greenfeld, many others.</li>
+<li>It grows with you: this is huge. You can start using it and feel comfortable right away, but there is always more to learn. This is how all software should be. Unfortunately, it's tough to get it right (I think this is formally called UX).</li>
+</ul>
+</div>
+<div class="section" id="some-disadvantages">
+<h2>Some disadvantages</h2>
+<ul class="simple">
+<li>Don't like typing in the terminal? Pelican is not for you.</li>
+<li>No &quot;nested&quot; entries e.g. 2012/09/21/entry.html. I don't know if there is a formal name for this feature, but I miss it (if for no other reason than &quot;cool URLS never change&quot; i.e. I've broken links with this move.)</li>
+<li>The pelican-import has some bugs, so I'm doing a lot of manual cleanup (I don't mind this though.)</li>
+<li>Tags are categories and categories are tags (or something). I had to convert all my categories to tags, and then turn on tag feeds and turn off category feeds. Category feeds are on by default and tag feeds are off by default. Also ATOM is on and RSS is off, if that is of interest to you. (Since this is really just configuration change and not a disadvantage per sé, it probably belongs more in the next section where I discuss my setup.)</li>
+</ul>
+<p>If you are curious about my setup, here are the details.</p>
+</div>
+<div class="section" id="setup">
+<h2>Setup</h2>
+<p>Getting started with Pelican was easy, basically:</p>
+<pre class="literal-block">
+$ virtualenv .
+$ bin/pip install pelican BeautifulSoup Markdown
+$ bin/pelican-quickstart
+</pre>
+<p>At this point, after I answer the quickstart questions I:</p>
+<pre class="literal-block">
+$ source bin/activate
+$ make html
+</pre>
+<p>Now the content is ready to host (which for me just involves a git push).</p>
+</div>
+<div class="section" id="tweaks">
+<h2>Tweaks</h2>
+<p>A few things were tricky.</p>
+<ul class="simple">
+<li>I wanted to host my articles at the top level of the repo for serving on GitHub Pages, so I modified the Makefile to make it so <a class="footnote-reference" href="#id4" id="id2">[2]</a>.</li>
+<li>Categories control what links are available in the header, so I disabled them all but one called &quot;Blog&quot;. Not ideal, but it works.</li>
+<li>The &quot;social&quot; links, and my disqus and analytics API keys were all a pleasure to configure.</li>
+</ul>
+</div>
+<div class="section" id="workflow">
+<h2>Workflow</h2>
+<p>Now I write articles in restructured text and publish like so:</p>
+<pre class="literal-block">
+$ make publish; git commit -a -m &quot;Publish&quot;; git push
+</pre>
+<p>All the details are here if you'd like to take a look:</p>
+<ul class="simple">
+<li><a class="reference external" href="https://github.com/ACLARKNET/aclarknet.github.com/commits/master">https://github.com/ACLARKNET/aclarknet.github.com/commits/master</a></li>
+</ul>
+<p>Comments from more knowledgable Pelican users welcome! Like this article? Tip me on Gittip!</p>
+<iframe style="border: 0; margin: 0; padding: 0;"
+    src="https://www.gittip.com/aclark4life/widget.html"
+    width="48pt" height="20pt"></iframe><table class="docutils footnote" frame="void" id="id3" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id1">[1]</a></td><td>This is actually my first &quot;test&quot; post with Pelican so I will get a chance to see how the feeds perform. But they looked good in testing.</td></tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="id4" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id2">[2]</a></td><td>I think I broke &quot;make html&quot;, actually. Primarily I just needed to make it not &quot;clean&quot; the entire repo.</td></tr>
+</tbody>
+</table>
+</div>
+<p>There are <a href=".././yes-this-blog-is-now-powered-by-pelican.html#disqus_thread">comments</a>.</p>
+                </article>
+                
+            </aside><!-- /#featured -->
+            
+                <section id="content" class="body">
+                    <h1>Other articles</h1>
+                    <hr />
+                    <ol id="posts-list" class="hfeed">
+            
+        
+        
+        
+            
+
+        
+         
+            
+            <li><article class="hentry">    
+                <header>
+                    <h1><a href=".././bootstrapping-a-buildout-16-release.html" rel="bookmark"
+                           title="Permalink to Bootstrapping a Buildout 1.6 release">Bootstrapping a Buildout 1.6 release</a></h1>
+                </header>
+                
+                <div class="entry-content">
+                <footer class="post-info">
         <abbr class="published" title="2012-08-13T21:10:00">
                 Mon 13 August 2012
         </abbr>
@@ -64,7 +179,8 @@
 <p>tags: <a href=".././tag/plone.html">Plone</a><a href=".././tag/python.html">Python</a></p>
 
 
-</footer><!-- /.post-info --><p>A lot of work has been done on Buildout lately, most notably:</p>
+</footer><!-- /.post-info -->
+                <p>A lot of work has been done on Buildout lately, most notably:</p>
 <ul class="simple">
 <li>Jim Fulton is <a class="reference external" href="https://github.com/buildout/buildout/commits/master">working on Buildout 2</a>.</li>
 <li>Ross Patterson has greatly <a class="reference external" href="http://rpatterson.net/blog/buildout-performance-improvements">improved Buildout performance</a>.</li>
@@ -72,30 +188,11 @@
 approach to Ross's performance improvements.</li>
 <li>I have offered to do a release.</li>
 </ul>
-<p>And there are a <a class="reference external" href="http://mail.python.org/pipermail/distutils-sig/2012-July/018779.html">handful of other changes</a> in <a class="reference external" href="http://zope3.pov.lt/trac/browser/zc.buildout/trunk/CHANGES.txt?rev=127507#L4">trunk on svn.zope.org</a>,
-of which my favorite is:</p>
-<blockquote>
-The buildout init command now accepts distribution requirements and
-paths to set up a custom interpreter part that has the distributions
-or parts in the path. For example:: $ python bootstrap.py init
-BeautifulSoup</blockquote>
-<p>So with that, I am <strong>planning to do a zc.buildout 1.6 release within 24
-hours</strong> or so of now. Please add a comment or weigh in on
-<a class="reference external" href="http://mail.python.org/mailman/listinfo/distutils-sig">distutils-sig</a> if you object. We have run the tests on Windows, and
-discovered only pre-existing failures. We are also preparing to do
-&quot;Buildout 2 prophylactic releases&quot; (i.e. releases that make 1.x continue
-to work when 2.x is released) in the 1.6.x series.</p>
-</p><p>There are <a href=".././bootstrapping-a-buildout-16-release.html#disqus_thread">comments</a>.</p>
-                </article>
-                
-            </aside><!-- /#featured -->
-            
-                <section id="content" class="body">
-                    <h1>Other articles</h1>
-                    <hr />
-                    <ol id="posts-list" class="hfeed">
-            
-        
+<p>And ...</p>
+                <a class="readmore" href=".././bootstrapping-a-buildout-16-release.html">read more</a>
+                <p>There are <a href=".././bootstrapping-a-buildout-16-release.html#disqus_thread">comments</a>.</p>
+                </div><!-- /.entry-content -->
+            </article></li>
         
         
             
@@ -413,48 +510,6 @@ overview of the beta release features.</p>
 <p>[caption id ...</p></div>
                 <a class="readmore" href=".././pythonpackagescom-beta-launch.html">read more</a>
                 <p>There are <a href=".././pythonpackagescom-beta-launch.html#disqus_thread">comments</a>.</p>
-                </div><!-- /.entry-content -->
-            </article></li>
-        
-        
-            
-
-        
-         
-            
-            <li><article class="hentry">    
-                <header>
-                    <h1><a href=".././zope2-bootstrap.html" rel="bookmark"
-                           title="Permalink to Zope2 Bootstrap">Zope2 Bootstrap</a></h1>
-                </header>
-                
-                <div class="entry-content">
-                <footer class="post-info">
-        <abbr class="published" title="2012-06-12T10:27:00">
-                Tue 12 June 2012
-        </abbr>
-
-        
-        <address class="vcard author">
-                By <a class="url fn" href=".././author/alex-clark.html">Alex Clark</a>
-        </address>
-        
-<p>In <a href=".././category/blog.html">Blog</a>. </p>
-<p>tags: <a href=".././tag/plone.html">Plone</a><a href=".././tag/python.html">Python</a></p>
-
-
-</footer><!-- /.post-info -->
-                <p><em>Bootstrap all the things, including Zope2.</em></p>
-<p><a class="reference external" href="http://pypi.python.org/pypi/zope2_bootstrap">zope2_bootstrap</a> is a new Python package that <a class="reference external" href="http://pypi.python.org/pypi/collective.monkeypatcher">monkey patches</a> Zope2
-in order to:</p>
-<ul class="simple">
-<li>Replace <a class="reference external" href="http://zope3.pov.lt/trac/browser/Zope/trunk/src/App/dtml/manage_page_style.css.dtml">manage_page_styles.css.dtml</a> styles with <a class="reference external" href="http://twitter.github.com/bootstrap/base-css.html">Twitter
-Bootstrap</a> styles.</li>
-<li>Adds CSS classes to <a class="reference external" href="http://zope3.pov.lt/trac/browser/Zope/trunk/src/OFS/dtml/main.dtml">main</a> and/or <a class="reference external" href="http://zope3.pov.lt/trac/browser/Products.ExternalEditor/trunk/Products/ExternalEditor/manage_main.dtml">manage_main</a> tables.</li>
-<li>Inserts a Plone logo (if Plone is installed) above
-<a class="reference external" href="http://zope3.pov.lt/trac/browser/Products.ExternalEditor/trunk/Products/ExternalEditor/manage_tabs.dtml">manage_tabs.dtml</a> tabs (h ...</li></ul>
-                <a class="readmore" href=".././zope2-bootstrap.html">read more</a>
-                <p>There are <a href=".././zope2-bootstrap.html#disqus_thread">comments</a>.</p>
                 </div><!-- /.entry-content -->
             </article></li>
         
