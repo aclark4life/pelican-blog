@@ -3,7 +3,7 @@ Yes, this blog is now powered by Pelican
 :date: 2012-11-21 09:30
 :tags: Mozilla, Plone, Python
 
-As an open source "Plone guy", I'm always prepared to defend and explain my choice not to use Plone for blogging. A couple years ago, I started using Wordpress in order to learn its feature set. I enjoyed my time with it, but after moving to wordpress.com for "trouble free" hosting, I found I couldn't control my category feeds the way I wanted; the honeymoon was over.
+As an open source "Plone guy", I'm always prepared to defend and explain my choice to **not** use Plone for blogging. A couple years ago, I started using Wordpress in order to learn its feature set. I enjoyed my time with it, but after moving to wordpress.com for "trouble free" hosting, I found I couldn't control my category feeds the way I wanted; the honeymoon was over.
 
 This was a giant let down, because I was hoping to avoid putting any time in to my blogging infrastructure. For weeks I did nothing. I poked at various options: Pelican, Plone, Tumblr, others. Eventually, I found my way back to Pelican and now I'm happy again.
 
