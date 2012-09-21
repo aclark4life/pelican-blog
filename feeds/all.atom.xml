@@ -24,7 +24,7 @@ to work when 2.x is released) in the 1.6.x series.&lt;/p&gt;
 software with just a few clicks.&lt;/em&gt;&lt;/p&gt;
 &lt;div class="section" id="pyformance-0-2"&gt;
 &lt;h2&gt;pyformance 0.2&lt;/h2&gt;
-&lt;p&gt;pythonpackages.com recently processed it's first official release via the &lt;a class="reference external" href="http://blog.aclark.net/2012/08/10/pythonpackages-com-new-github-service-git-push-to-release/"&gt;new GitHub Service&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;pythonpackages.com recently processed it's first official release via the &lt;a class="reference external" href="http://blog.aclark.net/pythonpackagescom-new-github-service-quotgit-push-to-releasequot.html"&gt;new GitHub Service&lt;/a&gt;.&lt;/p&gt;
 &lt;img alt="http://aclark4life.files.wordpress.com/2012/08/screen-shot-2012-08-13-at-9-00-05-am.png?w=300" src="http://aclark4life.files.wordpress.com/2012/08/screen-shot-2012-08-13-at-9-00-05-am.png?w=300" /&gt;
 &lt;p&gt;As such, we are celebrating the release of &lt;a class="reference external" href="https://github.com/omergertel/pyformance"&gt;pyformance&lt;/a&gt; 0.2! According to the author &lt;a class="reference external" href="https://twitter.com/omergertel"&gt;Omer Gertel&lt;/a&gt;:&lt;/p&gt;
 &lt;pre class="literal-block"&gt;
@@ -36,8 +36,7 @@ and it's not tested as much as it should be, but it's a good start.
 this&amp;nbsp;\ `talk by Coda Hale`_ about metrics. He explains some of the
 math behind the package. )
 &lt;/pre&gt;
-&lt;p&gt;Done! :-) Thanks Omer for using our service. Check out pyformance on
-GitHub:&lt;/p&gt;
+&lt;p&gt;Done! :-) Thanks Omer for using our service. Check out pyformance on GitHub:&lt;/p&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;&lt;a class="reference external" href="https://github.com/omergertel/pyformance"&gt;https://github.com/omergertel/pyformance&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;

@@ -23,16 +23,12 @@ As such, we are celebrating the release of `pyformance`_ 0.2! According to the a
     this \ `talk by Coda Hale`_ about metrics. He explains some of the
     math behind the package. )
 
-Done! :-) Thanks Omer for using our service. Check out pyformance on
-GitHub:
+Done! :-) Thanks Omer for using our service. Check out pyformance on GitHub:
 
 -  `https://github.com/omergertel/pyformance`_
 
-.. _new GitHub Service: http://blog.aclark.net/2012/08/10/pythonpackages-com-new-github-service-git-push-to-release/
-.. _|image1|: http://aclark4life.files.wordpress.com/2012/08/screen-shot-2012-08-13-at-9-00-05-am.png
+.. _new GitHub Service: http://blog.aclark.net/pythonpackagescom-new-github-service-quotgit-push-to-releasequot.html
 .. _pyformance: https://github.com/omergertel/pyformance
 .. _Omer Gertel: https://twitter.com/omergertel
 .. _talk by Coda Hale: http://www.youtube.com/watch?v=czes-oa0yik
 .. _`https://github.com/omergertel/pyformance`: https://github.com/omergertel/pyformance
-
-.. |image1| image:: http://aclark4life.files.wordpress.com/2012/08/screen-shot-2012-08-13-at-9-00-05-am.png?w=300
