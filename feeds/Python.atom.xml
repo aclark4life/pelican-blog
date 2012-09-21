@@ -20,7 +20,74 @@ hours&lt;/strong&gt; or so of now. Please add a comment or weigh in on
 discovered only pre-existing failures. We are also preparing to do
 &amp;quot;Buildout 2 prophylactic releases&amp;quot; (i.e. releases that make 1.x continue
 to work when 2.x is released) in the 1.6.x series.&lt;/p&gt;
-&lt;/p&gt;</summary><category term="Plone"></category><category term="Python"></category></entry><entry><title>pythonpackages.com: Using PyPI&amp;#039;s OAuth1 support to register and upload packages</title><link href="http://blog.aclark.net/pythonpackagescom-using-pypi039s-oauth1-support-to-register-and-upload-packages.html" rel="alternate"></link><updated>2012-08-07T05:16:00Z</updated><author><name>aclark@aclark.net</name></author><id>tag:blog.aclark.net,2012-08-07:pythonpackagescom-using-pypi039s-oauth1-support-to-register-and-upload-packages.html</id><summary type="html">&lt;p&gt;&lt;strong&gt;*TL;DR&lt;/strong&gt; PyPI has OAuth1 support; pythonpackages.com uses it to send
+&lt;/p&gt;</summary><category term="Plone"></category><category term="Python"></category></entry><entry><title>pythonpackages.com: pyformance 0.2</title><link href="http://blog.aclark.net/pythonpackagescom-pyformance-02.html" rel="alternate"></link><updated>2012-08-13T13:15:00Z</updated><author><name>aclark@aclark.net</name></author><id>tag:blog.aclark.net,2012-08-13:pythonpackagescom-pyformance-02.html</id><summary type="html">&lt;p&gt;&lt;em&gt;pythonpackages.com helps Python programmers package and release their
+software with just a few clicks.&lt;/em&gt;&lt;/p&gt;
+&lt;div class="section" id="pyformance-0-2"&gt;
+&lt;h2&gt;pyformance 0.2&lt;/h2&gt;
+&lt;p&gt;pythonpackages.com recently processed it's first official release via
+the &lt;a class="reference external" href="http://blog.aclark.net/2012/08/10/pythonpackages-com-new-github-service-git-push-to-release/"&gt;new GitHub Service&lt;/a&gt;. &lt;a href="#id1"&gt;&lt;span class="problematic" id="id2"&gt;`|image0|`_&lt;/span&gt;&lt;/a&gt; As such, we are celebrating the
+release of &lt;a class="reference external" href="https://github.com/omergertel/pyformance"&gt;pyformance&lt;/a&gt; 0.2! According to the author &lt;a class="reference external" href="https://twitter.com/omergertel"&gt;Omer Gertel&lt;/a&gt;:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;It's a straight forward port of Coda Hale's fantastic metrics
+package (originally for java). I don't have all of it ported yet,
+and it's not tested as much as it should be, but it's a good start.&lt;/p&gt;
+&lt;div&gt;&lt;p&gt;(BTW, if you do blog about PyFormance, you may also want to mention
+this&amp;nbsp;&lt;a class="reference external" href="http://www.youtube.com/watch?v=czes-oa0yik"&gt;talk by Coda Hale&lt;/a&gt; about metrics. He explains some of the
+math behind the package. )&lt;/p&gt;
+&lt;/div&gt;&lt;/blockquote&gt;
+&lt;div&gt;&lt;/div&gt;&lt;div&gt;&lt;p&gt;Done! :-) Thanks Omer for using our service. Check out pyformance on
+GitHub:&lt;/p&gt;
+&lt;/div&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://github.com/omergertel/pyformance"&gt;https://github.com/omergertel/pyformance&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;&lt;div&gt;&lt;/div&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div class="system-messages section"&gt;
+&lt;h2&gt;Docutils System Messages&lt;/h2&gt;
+&lt;div class="system-message" id="id1"&gt;
+&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/pythonpackages-com-pyformance-0-2.rst&lt;/tt&gt;, line 12); &lt;em&gt;&lt;a href="#id2"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+Unknown target name: &amp;quot;|image0|&amp;quot;.&lt;/div&gt;
+&lt;/div&gt;
+</summary><category term="Python"></category></entry><entry><title>pythonpackages.com: New GitHub Service &amp;quot;git push to release&amp;quot;</title><link href="http://blog.aclark.net/pythonpackagescom-new-github-service-quotgit-push-to-releasequot.html" rel="alternate"></link><updated>2012-08-10T05:50:00Z</updated><author><name>aclark@aclark.net</name></author><id>tag:blog.aclark.net,2012-08-10:pythonpackagescom-new-github-service-quotgit-push-to-releasequot.html</id><summary type="html">&lt;p&gt;&lt;em&gt;pythonpackages.com helps Python programmers package and release their
+software with just a few clicks.&lt;/em&gt;&lt;/p&gt;
+&lt;div class="section" id="pythonpackages-github-service"&gt;
+&lt;h2&gt;PythonPackages GitHub Service&lt;/h2&gt;
+&lt;p&gt;&lt;a href="#id1"&gt;&lt;span class="problematic" id="id2"&gt;`|image0|`_&lt;/span&gt;&lt;/a&gt; There is a new &lt;a class="reference external" href="https://github.com/github/github-services"&gt;GitHub Service&lt;/a&gt; available for
+pythonpackages.com that&amp;nbsp;allows you to release Python packages from
+GitHub to the Python Package Index, simply by pushing a commit message
+that begins with &amp;quot;Release&amp;quot; e.g.:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+$ git commit -a -m &amp;quot;Release 1.0&amp;quot;; git push
+&lt;/pre&gt;
+&lt;p&gt;(The release creates a tag with the appropriate version number,
+extracted from setup.py) To use the service, please follow the
+instructions below.&lt;/p&gt;
+&lt;div class="section" id="instructions"&gt;
+&lt;h3&gt;Instructions&lt;/h3&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;Sign up for the pythonpackages.com beta:
+&lt;a class="reference external" href="http://pythonpackages.com/signup"&gt;http://pythonpackages.com/signup&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Follow the &lt;a class="reference external" href="http://docs.pythonpackages.com/en/latest/introduction.html"&gt;Introduction&lt;/a&gt; instructions.&lt;/li&gt;
+&lt;li&gt;On the Python Package Index, authorize pythonpackages.com to act on
+your behalf, as explained
+here:&amp;nbsp;&lt;a class="reference external" href="http://blog.aclark.net/2012/08/07/pythonpackages-com-using-pypis-oauth1-support-to-register-and-upload-packages"&gt;http://blog.aclark.net/2012/08/07/pythonpackages-com-using-pypis-oauth1-support-to-register-and-upload-packages&lt;/a&gt;/
+(&lt;strong&gt;pythonpackages.com -&amp;gt; Dashboard -&amp;gt; Manage accounts -&amp;gt; PyPI -&amp;gt;
+Authorize&lt;/strong&gt;).&lt;/li&gt;
+&lt;li&gt;On GitHub, configure the PythonPackages service to be Active on any
+repository that contains a Python package you want to release (&lt;strong&gt;Repo
+-&amp;gt; Admin -&amp;gt; Service Hooks -&amp;gt; PythonPackages -&amp;gt; [*] Active&lt;/strong&gt;).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Now you can git push to release! If you have any trouble, please &lt;a class="reference external" href="https://bitbucket.org/pythonpackages/pythonpackages.com/issues/new"&gt;open a
+ticket&lt;/a&gt;. &lt;em&gt;These instructions will live permanently
+here:&amp;nbsp;`http://docs.pythonpackages.com/en/latest/github-service.html`_.&lt;/em&gt;&lt;/p&gt;
+&lt;/p&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="system-messages section"&gt;
+&lt;h2&gt;Docutils System Messages&lt;/h2&gt;
+&lt;div class="system-message" id="id1"&gt;
+&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/pythonpackages-com-new-github-service-git-push-to-release.rst&lt;/tt&gt;, line 12); &lt;em&gt;&lt;a href="#id2"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+Unknown target name: &amp;quot;|image0|&amp;quot;.&lt;/div&gt;
+&lt;/div&gt;
+</summary><category term="Python"></category></entry><entry><title>pythonpackages.com: Using PyPI&amp;#039;s OAuth1 support to register and upload packages</title><link href="http://blog.aclark.net/pythonpackagescom-using-pypi039s-oauth1-support-to-register-and-upload-packages.html" rel="alternate"></link><updated>2012-08-07T05:16:00Z</updated><author><name>aclark@aclark.net</name></author><id>tag:blog.aclark.net,2012-08-07:pythonpackagescom-using-pypi039s-oauth1-support-to-register-and-upload-packages.html</id><summary type="html">&lt;p&gt;&lt;strong&gt;*TL;DR&lt;/strong&gt; PyPI has OAuth1 support; pythonpackages.com uses it to send
 your GitHub repos to PyPI.* Thanks in very large part to &lt;a class="reference external" href="https://twitter.com/r1chardj0n3s"&gt;Richard
 Jones&lt;/a&gt;, the Python Package Index now has support for registering and
 uploading packages via OAuth1. And using his &lt;a class="reference external" href="https://gist.github.com/0d46c48b230e61e18479"&gt;sample code&lt;/a&gt; I was able
@@ -69,28 +136,28 @@ is now a reality. If you have a minute, please &lt;a class="reference external" 
 &lt;div class="system-messages section"&gt;
 &lt;h2&gt;Docutils System Messages&lt;/h2&gt;
 &lt;div class="system-message" id="id1"&gt;
-&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/pythonpackages-com-using-pypis-oauth1-support-to-register-and-upload-packages.rst&lt;/tt&gt;, line 20); &lt;em&gt;&lt;a href="#id2"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/pythonpackages-com-using-pypis-oauth1-support-to-register-and-upload-packages.rst&lt;/tt&gt;, line 19); &lt;em&gt;&lt;a href="#id2"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 Unknown target name: &amp;quot;|image0|&amp;quot;.&lt;/div&gt;
 &lt;div class="system-message" id="id3"&gt;
-&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/pythonpackages-com-using-pypis-oauth1-support-to-register-and-upload-packages.rst&lt;/tt&gt;, line 20); &lt;em&gt;&lt;a href="#id4"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/pythonpackages-com-using-pypis-oauth1-support-to-register-and-upload-packages.rst&lt;/tt&gt;, line 19); &lt;em&gt;&lt;a href="#id4"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 Unknown target name: &amp;quot;|image1|&amp;quot;.&lt;/div&gt;
 &lt;div class="system-message" id="id5"&gt;
-&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/pythonpackages-com-using-pypis-oauth1-support-to-register-and-upload-packages.rst&lt;/tt&gt;, line 28); &lt;em&gt;&lt;a href="#id6"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/pythonpackages-com-using-pypis-oauth1-support-to-register-and-upload-packages.rst&lt;/tt&gt;, line 27); &lt;em&gt;&lt;a href="#id6"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 Unknown target name: &amp;quot;|image2|&amp;quot;.&lt;/div&gt;
 &lt;div class="system-message" id="id7"&gt;
-&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/pythonpackages-com-using-pypis-oauth1-support-to-register-and-upload-packages.rst&lt;/tt&gt;, line 46); &lt;em&gt;&lt;a href="#id8"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/pythonpackages-com-using-pypis-oauth1-support-to-register-and-upload-packages.rst&lt;/tt&gt;, line 45); &lt;em&gt;&lt;a href="#id8"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 Unknown target name: &amp;quot;|image3|&amp;quot;.&lt;/div&gt;
 &lt;div class="system-message" id="id9"&gt;
-&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/pythonpackages-com-using-pypis-oauth1-support-to-register-and-upload-packages.rst&lt;/tt&gt;, line 46); &lt;em&gt;&lt;a href="#id10"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/pythonpackages-com-using-pypis-oauth1-support-to-register-and-upload-packages.rst&lt;/tt&gt;, line 45); &lt;em&gt;&lt;a href="#id10"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 Unknown target name: &amp;quot;|image4|&amp;quot;.&lt;/div&gt;
 &lt;div class="system-message" id="id11"&gt;
-&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/pythonpackages-com-using-pypis-oauth1-support-to-register-and-upload-packages.rst&lt;/tt&gt;, line 46); &lt;em&gt;&lt;a href="#id12"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/pythonpackages-com-using-pypis-oauth1-support-to-register-and-upload-packages.rst&lt;/tt&gt;, line 45); &lt;em&gt;&lt;a href="#id12"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 Unknown target name: &amp;quot;|image5|&amp;quot;.&lt;/div&gt;
 &lt;div class="system-message" id="id13"&gt;
-&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/pythonpackages-com-using-pypis-oauth1-support-to-register-and-upload-packages.rst&lt;/tt&gt;, line 54); &lt;em&gt;&lt;a href="#id14"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/pythonpackages-com-using-pypis-oauth1-support-to-register-and-upload-packages.rst&lt;/tt&gt;, line 53); &lt;em&gt;&lt;a href="#id14"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 Unknown target name: &amp;quot;|image6|&amp;quot;.&lt;/div&gt;
 &lt;div class="system-message" id="id15"&gt;
-&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/pythonpackages-com-using-pypis-oauth1-support-to-register-and-upload-packages.rst&lt;/tt&gt;, line 54); &lt;em&gt;&lt;a href="#id16"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/pythonpackages-com-using-pypis-oauth1-support-to-register-and-upload-packages.rst&lt;/tt&gt;, line 53); &lt;em&gt;&lt;a href="#id16"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 Unknown target name: &amp;quot;|image7|&amp;quot;.&lt;/div&gt;
 &lt;/div&gt;
 </summary><category term="Plone"></category><category term="Python"></category></entry><entry><title>Building Windows Installers In The Cloud</title><link href="http://blog.aclark.net/building-windows-installers-in-the-cloud.html" rel="alternate"></link><updated>2012-08-01T22:19:00Z</updated><author><name>aclark@aclark.net</name></author><id>tag:blog.aclark.net,2012-08-01:building-windows-installers-in-the-cloud.html</id><summary type="html">&lt;p&gt;With pythonpackages.com, I want to solve real problems for people today.
@@ -167,25 +234,25 @@ Check it out! &lt;a href="#id13"&gt;&lt;span class="problematic" id="id14"&gt;`|
 &lt;div class="system-messages section"&gt;
 &lt;h2&gt;Docutils System Messages&lt;/h2&gt;
 &lt;div class="system-message" id="id1"&gt;
-&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/building-windows-installers-in-the-cloud.rst&lt;/tt&gt;, line 19); &lt;em&gt;&lt;a href="#id2"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/building-windows-installers-in-the-cloud.rst&lt;/tt&gt;, line 18); &lt;em&gt;&lt;a href="#id2"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 Unknown target name: &amp;quot;|image0|&amp;quot;.&lt;/div&gt;
 &lt;div class="system-message" id="id3"&gt;
-&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/building-windows-installers-in-the-cloud.rst&lt;/tt&gt;, line 40); &lt;em&gt;&lt;a href="#id4"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/building-windows-installers-in-the-cloud.rst&lt;/tt&gt;, line 39); &lt;em&gt;&lt;a href="#id4"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 Unknown target name: &amp;quot;|image1|&amp;quot;.&lt;/div&gt;
 &lt;div class="system-message" id="id5"&gt;
-&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/building-windows-installers-in-the-cloud.rst&lt;/tt&gt;, line 64); &lt;em&gt;&lt;a href="#id6"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/building-windows-installers-in-the-cloud.rst&lt;/tt&gt;, line 63); &lt;em&gt;&lt;a href="#id6"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 Unknown target name: &amp;quot;|image2|&amp;quot;.&lt;/div&gt;
 &lt;div class="system-message" id="id7"&gt;
-&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/building-windows-installers-in-the-cloud.rst&lt;/tt&gt;, line 64); &lt;em&gt;&lt;a href="#id8"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/building-windows-installers-in-the-cloud.rst&lt;/tt&gt;, line 63); &lt;em&gt;&lt;a href="#id8"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 Unknown target name: &amp;quot;|image3|&amp;quot;.&lt;/div&gt;
 &lt;div class="system-message" id="id9"&gt;
-&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/building-windows-installers-in-the-cloud.rst&lt;/tt&gt;, line 64); &lt;em&gt;&lt;a href="#id10"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/building-windows-installers-in-the-cloud.rst&lt;/tt&gt;, line 63); &lt;em&gt;&lt;a href="#id10"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 Unknown target name: &amp;quot;|image4|&amp;quot;.&lt;/div&gt;
 &lt;div class="system-message" id="id11"&gt;
-&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/building-windows-installers-in-the-cloud.rst&lt;/tt&gt;, line 64); &lt;em&gt;&lt;a href="#id12"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/building-windows-installers-in-the-cloud.rst&lt;/tt&gt;, line 63); &lt;em&gt;&lt;a href="#id12"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 Unknown target name: &amp;quot;|image5|&amp;quot;.&lt;/div&gt;
 &lt;div class="system-message" id="id13"&gt;
-&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/building-windows-installers-in-the-cloud.rst&lt;/tt&gt;, line 77); &lt;em&gt;&lt;a href="#id14"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/building-windows-installers-in-the-cloud.rst&lt;/tt&gt;, line 76); &lt;em&gt;&lt;a href="#id14"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 Unknown target name: &amp;quot;|image6|&amp;quot;.&lt;/div&gt;
 &lt;/div&gt;
 </summary><category term="Mozilla"></category><category term="Plone"></category><category term="Python"></category></entry><entry><title>Pillow moved to python-imaging organization</title><link href="http://blog.aclark.net/pillow-moved-to-python-imaging-organization.html" rel="alternate"></link><updated>2012-07-25T02:19:00Z</updated><author><name>aclark@aclark.net</name></author><id>tag:blog.aclark.net,2012-07-25:pillow-moved-to-python-imaging-organization.html</id><summary type="html">&lt;p&gt;&lt;p&gt;On 7/30/2010 Pillow, the &amp;quot;friendly&amp;quot; PIL fork, was released. Since then,
@@ -356,40 +423,40 @@ get access to GitHub organizations, whose repositories can then be
 &lt;div class="system-messages section"&gt;
 &lt;h2&gt;Docutils System Messages&lt;/h2&gt;
 &lt;div class="system-message" id="id1"&gt;
-&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/pythonpackages-com-beta-launch.rst&lt;/tt&gt;, line 19); &lt;em&gt;&lt;a href="#id2"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/pythonpackages-com-beta-launch.rst&lt;/tt&gt;, line 18); &lt;em&gt;&lt;a href="#id2"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 Unknown target name: &amp;quot;|image0|&amp;quot;.&lt;/div&gt;
 &lt;div class="system-message" id="id3"&gt;
-&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/pythonpackages-com-beta-launch.rst&lt;/tt&gt;, line 19); &lt;em&gt;&lt;a href="#id4"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/pythonpackages-com-beta-launch.rst&lt;/tt&gt;, line 18); &lt;em&gt;&lt;a href="#id4"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 Unknown target name: &amp;quot;|image1|&amp;quot;.&lt;/div&gt;
 &lt;div class="system-message" id="id5"&gt;
-&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/pythonpackages-com-beta-launch.rst&lt;/tt&gt;, line 31); &lt;em&gt;&lt;a href="#id6"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/pythonpackages-com-beta-launch.rst&lt;/tt&gt;, line 30); &lt;em&gt;&lt;a href="#id6"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 Unknown target name: &amp;quot;|image2|&amp;quot;.&lt;/div&gt;
 &lt;div class="system-message" id="id7"&gt;
-&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/pythonpackages-com-beta-launch.rst&lt;/tt&gt;, line 37); &lt;em&gt;&lt;a href="#id8"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/pythonpackages-com-beta-launch.rst&lt;/tt&gt;, line 36); &lt;em&gt;&lt;a href="#id8"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 Unknown target name: &amp;quot;|image3|&amp;quot;.&lt;/div&gt;
 &lt;div class="system-message" id="id9"&gt;
-&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/pythonpackages-com-beta-launch.rst&lt;/tt&gt;, line 37); &lt;em&gt;&lt;a href="#id10"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/pythonpackages-com-beta-launch.rst&lt;/tt&gt;, line 36); &lt;em&gt;&lt;a href="#id10"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 Unknown target name: &amp;quot;|image4|&amp;quot;.&lt;/div&gt;
 &lt;div class="system-message" id="id11"&gt;
-&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/pythonpackages-com-beta-launch.rst&lt;/tt&gt;, line 37); &lt;em&gt;&lt;a href="#id12"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/pythonpackages-com-beta-launch.rst&lt;/tt&gt;, line 36); &lt;em&gt;&lt;a href="#id12"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 Unknown target name: &amp;quot;|image5|&amp;quot;.&lt;/div&gt;
 &lt;div class="system-message" id="id13"&gt;
-&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/pythonpackages-com-beta-launch.rst&lt;/tt&gt;, line 47); &lt;em&gt;&lt;a href="#id14"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/pythonpackages-com-beta-launch.rst&lt;/tt&gt;, line 46); &lt;em&gt;&lt;a href="#id14"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 Unknown target name: &amp;quot;|image6|&amp;quot;.&lt;/div&gt;
 &lt;div class="system-message" id="id15"&gt;
-&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/pythonpackages-com-beta-launch.rst&lt;/tt&gt;, line 54); &lt;em&gt;&lt;a href="#id16"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/pythonpackages-com-beta-launch.rst&lt;/tt&gt;, line 53); &lt;em&gt;&lt;a href="#id16"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 Unknown target name: &amp;quot;|image7|&amp;quot;.&lt;/div&gt;
 &lt;div class="system-message" id="id17"&gt;
-&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/pythonpackages-com-beta-launch.rst&lt;/tt&gt;, line 54); &lt;em&gt;&lt;a href="#id18"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/pythonpackages-com-beta-launch.rst&lt;/tt&gt;, line 53); &lt;em&gt;&lt;a href="#id18"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 Unknown target name: &amp;quot;|image8|&amp;quot;.&lt;/div&gt;
 &lt;div class="system-message" id="id19"&gt;
-&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/pythonpackages-com-beta-launch.rst&lt;/tt&gt;, line 54); &lt;em&gt;&lt;a href="#id20"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/pythonpackages-com-beta-launch.rst&lt;/tt&gt;, line 53); &lt;em&gt;&lt;a href="#id20"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 Unknown target name: &amp;quot;|image9|&amp;quot;.&lt;/div&gt;
 &lt;div class="system-message" id="id21"&gt;
-&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/pythonpackages-com-beta-launch.rst&lt;/tt&gt;, line 54); &lt;em&gt;&lt;a href="#id22"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/pythonpackages-com-beta-launch.rst&lt;/tt&gt;, line 53); &lt;em&gt;&lt;a href="#id22"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 Unknown target name: &amp;quot;|image10|&amp;quot;.&lt;/div&gt;
 &lt;div class="system-message" id="id23"&gt;
-&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/pythonpackages-com-beta-launch.rst&lt;/tt&gt;, line 54); &lt;em&gt;&lt;a href="#id24"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/pythonpackages-com-beta-launch.rst&lt;/tt&gt;, line 53); &lt;em&gt;&lt;a href="#id24"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 Unknown target name: &amp;quot;|image11|&amp;quot;.&lt;/div&gt;
 &lt;/div&gt;
 </summary><category term="Mozilla"></category><category term="Plone"></category><category term="Python"></category></entry><entry><title>Zope2 Bootstrap</title><link href="http://blog.aclark.net/zope2-bootstrap.html" rel="alternate"></link><updated>2012-06-12T10:27:00Z</updated><author><name>aclark@aclark.net</name></author><id>tag:blog.aclark.net,2012-06-12:zope2-bootstrap.html</id><summary type="html">&lt;p&gt;&lt;em&gt;Bootstrap all the things, including Zope2.&lt;/em&gt;&lt;/p&gt;
@@ -413,10 +480,10 @@ for even more goodness. Enjoy, and give feedback in the comments, or
 &lt;div class="system-messages section"&gt;
 &lt;h2&gt;Docutils System Messages&lt;/h2&gt;
 &lt;div class="system-message" id="id2"&gt;
-&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/zope2-bootstrap.rst&lt;/tt&gt;, line 21); &lt;em&gt;&lt;a href="#id3"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/zope2-bootstrap.rst&lt;/tt&gt;, line 20); &lt;em&gt;&lt;a href="#id3"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 Unknown target name: &amp;quot;|image0|&amp;quot;.&lt;/div&gt;
 &lt;div class="system-message" id="id4"&gt;
-&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/zope2-bootstrap.rst&lt;/tt&gt;, line 27); &lt;em&gt;&lt;a href="#id5"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/zope2-bootstrap.rst&lt;/tt&gt;, line 26); &lt;em&gt;&lt;a href="#id5"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 Unknown target name: &amp;quot;|image1|&amp;quot;.&lt;/div&gt;
 &lt;/div&gt;
 </summary><category term="Plone"></category><category term="Python"></category></entry><entry><title>A simple printer of nested lists</title><link href="http://blog.aclark.net/a-simple-printer-of-nested-lists.html" rel="alternate"></link><updated>2012-05-23T22:58:00Z</updated><author><name>aclark@aclark.net</name></author><id>tag:blog.aclark.net,2012-05-23:a-simple-printer-of-nested-lists.html</id><summary type="html">&lt;p&gt;&lt;em&gt;A rant&lt;/em&gt;&lt;/p&gt;
@@ -449,13 +516,13 @@ the &lt;em&gt;simple printers of nested lists&lt;/em&gt; will do the same?&lt;/p
 &lt;div class="system-messages section"&gt;
 &lt;h2&gt;Docutils System Messages&lt;/h2&gt;
 &lt;div class="system-message" id="id1"&gt;
-&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/a-simple-printer-of-nested-lists.rst&lt;/tt&gt;, line 14); &lt;em&gt;&lt;a href="#id2"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/a-simple-printer-of-nested-lists.rst&lt;/tt&gt;, line 13); &lt;em&gt;&lt;a href="#id2"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 Unknown target name: &amp;quot;|image0|&amp;quot;.&lt;/div&gt;
 &lt;div class="system-message" id="id3"&gt;
-&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/a-simple-printer-of-nested-lists.rst&lt;/tt&gt;, line 20); &lt;em&gt;&lt;a href="#id4"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/a-simple-printer-of-nested-lists.rst&lt;/tt&gt;, line 19); &lt;em&gt;&lt;a href="#id4"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 Unknown target name: &amp;quot;|image1|&amp;quot;.&lt;/div&gt;
 &lt;div class="system-message" id="id5"&gt;
-&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/a-simple-printer-of-nested-lists.rst&lt;/tt&gt;, line 26); &lt;em&gt;&lt;a href="#id6"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/a-simple-printer-of-nested-lists.rst&lt;/tt&gt;, line 25); &lt;em&gt;&lt;a href="#id6"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 Unknown target name: &amp;quot;|image2|&amp;quot;.&lt;/div&gt;
 &lt;/div&gt;
 </summary><category term="Plone"></category><category term="Python"></category></entry><entry><title>Adam Yauch has passed</title><link href="http://blog.aclark.net/adam-yauch-has-passed.html" rel="alternate"></link><updated>2012-05-11T09:58:00Z</updated><author><name>aclark@aclark.net</name></author><id>tag:blog.aclark.net,2012-05-11:adam-yauch-has-passed.html</id><summary type="html">&lt;p&gt;&lt;em&gt;And why it matters to tech people, like me&lt;/em&gt;&lt;/p&gt;
@@ -528,7 +595,7 @@ Mike D who gave it to me.&lt;/p&gt;
 &lt;div class="system-messages section"&gt;
 &lt;h2&gt;Docutils System Messages&lt;/h2&gt;
 &lt;div class="system-message" id="id1"&gt;
-&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/adam-yauch-has-passed.rst&lt;/tt&gt;, line 60); &lt;em&gt;&lt;a href="#id2"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/adam-yauch-has-passed.rst&lt;/tt&gt;, line 59); &lt;em&gt;&lt;a href="#id2"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 Unknown target name: &amp;quot;|image0|&amp;quot;.&lt;/div&gt;
 &lt;/div&gt;
 </summary><category term="Mozilla"></category><category term="Plone"></category><category term="Python"></category></entry><entry><title>test-plone tmp</title><link href="http://blog.aclark.net/test-plone-tmp.html" rel="alternate"></link><updated>2012-04-04T14:14:00Z</updated><author><name>aclark@aclark.net</name></author><id>tag:blog.aclark.net,2012-04-04:test-plone-tmp.html</id><summary type="html">&lt;p&gt;Since Day 1 with Plone circa 2004, I've always taken pride in and
@@ -600,7 +667,7 @@ install add-ons, check ZMI settings, etc.&lt;/p&gt;
 &lt;div class="system-messages section"&gt;
 &lt;h2&gt;Docutils System Messages&lt;/h2&gt;
 &lt;div class="system-message" id="id1"&gt;
-&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/test-plone-tmp.rst&lt;/tt&gt;, line 99); &lt;em&gt;&lt;a href="#id2"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/test-plone-tmp.rst&lt;/tt&gt;, line 98); &lt;em&gt;&lt;a href="#id2"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 Unknown target name: &amp;quot;|image0|&amp;quot;.&lt;/div&gt;
 &lt;/div&gt;
 </summary><category term="Plone"></category><category term="Python"></category></entry><entry><title>New vanity release</title><link href="http://blog.aclark.net/new-vanity-release.html" rel="alternate"></link><updated>2012-01-30T09:52:00Z</updated><author><name>aclark@aclark.net</name></author><id>tag:blog.aclark.net,2012-01-30:new-vanity-release.html</id><summary type="html">&lt;p&gt;With all the Python &lt;a class="reference external" href="http://crate.io/"&gt;stats&lt;/a&gt; &lt;a class="reference external" href="http://python3wos.appspot.com/"&gt;goodness&lt;/a&gt; going on recently, I got
@@ -821,7 +888,87 @@ would write in 2012?&lt;/strong&gt;&lt;/p&gt;
 and launches it in first quarter of 2012; and I hope folks find it
 useful.&lt;/p&gt;
 &lt;/div&gt;
-</summary><category term="Mozilla"></category><category term="Plone"></category><category term="Python"></category></entry><entry><title>Plone: First class Python citizen</title><link href="http://blog.aclark.net/plone-first-class-python-citizen.html" rel="alternate"></link><updated>2011-10-24T09:09:00Z</updated><author><name>aclark@aclark.net</name></author><id>tag:blog.aclark.net,2011-10-24:plone-first-class-python-citizen.html</id><summary type="html">&lt;p&gt;&lt;em&gt;The Plone community and software fit nicely within the larger Python
+</summary><category term="Mozilla"></category><category term="Plone"></category><category term="Python"></category></entry><entry><title>Introducing pythonpackages.com</title><link href="http://blog.aclark.net/introducing-pythonpackagescom.html" rel="alternate"></link><updated>2011-11-29T02:24:00Z</updated><author><name>aclark@aclark.net</name></author><id>tag:blog.aclark.net,2011-11-29:introducing-pythonpackagescom.html</id><summary type="html">&lt;div class="section" id="the-website-for-python-egoists"&gt;
+&lt;h2&gt;The website for Python egoists™&lt;/h2&gt;
+&lt;p&gt;I have this overwhelming desire to know how many times my favorite
+Python packages have been downloaded. Don't you? If so, look no further
+than &lt;a class="reference external" href="http://pythonpackages.com"&gt;pythonpackages.com&lt;/a&gt;:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="image0-count-downloads"&gt;
+&lt;h2&gt;&lt;a href="#id1"&gt;&lt;span class="problematic" id="id2"&gt;`|image0|`_&lt;/span&gt;&lt;/a&gt;Count downloads&lt;/h2&gt;
+&lt;p&gt;Where you can enter a package like &lt;a class="reference external" href="http://pythonpackages.com/info/django"&gt;Django&lt;/a&gt; and find out:&lt;/p&gt;
+&lt;/p&gt;&lt;/div&gt;
+&lt;div class="section" id="image1-count-favorites"&gt;
+&lt;h2&gt;&lt;a href="#id3"&gt;&lt;span class="problematic" id="id4"&gt;`|image1|`_&lt;/span&gt;&lt;/a&gt;Count favorites&lt;/h2&gt;
+&lt;p&gt;Or click on &lt;strong&gt;Count favorites&lt;/strong&gt; to reveal how many times it has been
+favorited:&lt;/p&gt;
+&lt;p&gt;&lt;a href="#id5"&gt;&lt;span class="problematic" id="id6"&gt;`|image2|`_&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/p&gt;&lt;/div&gt;
+&lt;div class="section" id="find-trash"&gt;
+&lt;h2&gt;Find trash&lt;/h2&gt;
+&lt;p&gt;Or even poke some good natured fun at it, for its &lt;a class="reference external" href="http://pythonpackages.com/trash/django"&gt;failure to provide
+adequate package metadata&lt;/a&gt;:&lt;/p&gt;
+&lt;/p&gt;&lt;/div&gt;
+&lt;div class="section" id="image3"&gt;
+&lt;h2&gt;&lt;a class="reference internal" href="#image3"&gt;|image3|&lt;/a&gt;&lt;/h2&gt;
+&lt;/div&gt;
+&lt;div class="section" id="discuss-packages"&gt;
+&lt;h2&gt;Discuss packages&lt;/h2&gt;
+&lt;p&gt;You can even &lt;em&gt;discuss&lt;/em&gt;packages on &lt;a class="reference external" href="http://pythonpackages.com"&gt;pythonpackages.com&lt;/a&gt;:&lt;/p&gt;
+&lt;p&gt;&lt;a href="#id7"&gt;&lt;span class="problematic" id="id8"&gt;`|image4|`_&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/p&gt;&lt;/div&gt;
+&lt;div class="section" id="recent-activity"&gt;
+&lt;h2&gt;Recent activity&lt;/h2&gt;
+&lt;p&gt;But wait there is more! You can also browse the &lt;a class="reference external" href="http://pythonpackages.com/pypi"&gt;latest changelog
+activity&lt;/a&gt; from PyPi right on the site:&lt;/p&gt;
+&lt;p&gt;&lt;a href="#id9"&gt;&lt;span class="problematic" id="id10"&gt;`|image5|`_&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/p&gt;&lt;/div&gt;
+&lt;div class="section" id="package-info"&gt;
+&lt;h2&gt;Package info&lt;/h2&gt;
+&lt;p&gt;Lastly, if you get bored counting package downloads and favorites you
+can look at the &lt;em&gt;actual&lt;/em&gt; &lt;a class="reference external" href="http://pythonpackages.com/info/django"&gt;package metadata&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href="#id11"&gt;&lt;span class="problematic" id="id12"&gt;`|image6|`_&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/p&gt;&lt;/div&gt;
+&lt;div class="section" id="conclusion"&gt;
+&lt;h2&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;Sound interesting? Or utterly silly, perhaps? I think
+&lt;a class="reference external" href="http://pythonpackages.com"&gt;pythonpackages.com&lt;/a&gt; is the best of both. It started off as a front end
+to the command line utility &lt;a class="reference external" href="http://pythonpackages.com/info/vanity"&gt;vanity&lt;/a&gt;, but has taken on a life of it's
+own.&lt;/p&gt;
+&lt;/p&gt;&lt;p&gt;After a small run on Python reddit and Hacker News, I'm looking forward
+to seeing what Python Planet folks think. So please check out
+&lt;a class="reference external" href="http://pythonpackages.com"&gt;pythonpackages.com&lt;/a&gt; and let me know. You can leave comments about the
+site here:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://pythonpackages.com/about"&gt;http://pythonpackages.com/about&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Or open a new ticket here:&lt;/p&gt;
+&lt;/p&gt;&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://bitbucket.org/pythonpackages/pythonpackages.com/issues/new"&gt;https://bitbucket.org/pythonpackages/pythonpackages.com/issues/new&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/p&gt;&lt;/div&gt;
+&lt;div class="system-messages section"&gt;
+&lt;h2&gt;Docutils System Messages&lt;/h2&gt;
+&lt;div class="system-message" id="id1"&gt;
+&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/introducing-pythonpackages-com.rst&lt;/tt&gt;, line 14); &lt;em&gt;&lt;a href="#id2"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+Unknown target name: &amp;quot;|image0|&amp;quot;.&lt;/div&gt;
+&lt;div class="system-message" id="id3"&gt;
+&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/introducing-pythonpackages-com.rst&lt;/tt&gt;, line 23); &lt;em&gt;&lt;a href="#id4"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+Unknown target name: &amp;quot;|image1|&amp;quot;.&lt;/div&gt;
+&lt;div class="system-message" id="id5"&gt;
+&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/introducing-pythonpackages-com.rst&lt;/tt&gt;, line 28); &lt;em&gt;&lt;a href="#id6"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+Unknown target name: &amp;quot;|image2|&amp;quot;.&lt;/div&gt;
+&lt;div class="system-message" id="id7"&gt;
+&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/introducing-pythonpackages-com.rst&lt;/tt&gt;, line 52); &lt;em&gt;&lt;a href="#id8"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+Unknown target name: &amp;quot;|image4|&amp;quot;.&lt;/div&gt;
+&lt;div class="system-message" id="id9"&gt;
+&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/introducing-pythonpackages-com.rst&lt;/tt&gt;, line 64); &lt;em&gt;&lt;a href="#id10"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+Unknown target name: &amp;quot;|image5|&amp;quot;.&lt;/div&gt;
+&lt;div class="system-message" id="id11"&gt;
+&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/introducing-pythonpackages-com.rst&lt;/tt&gt;, line 76); &lt;em&gt;&lt;a href="#id12"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+Unknown target name: &amp;quot;|image6|&amp;quot;.&lt;/div&gt;
+&lt;/div&gt;
+</summary><category term="Python"></category></entry><entry><title>Plone: First class Python citizen</title><link href="http://blog.aclark.net/plone-first-class-python-citizen.html" rel="alternate"></link><updated>2011-10-24T09:09:00Z</updated><author><name>aclark@aclark.net</name></author><id>tag:blog.aclark.net,2011-10-24:plone-first-class-python-citizen.html</id><summary type="html">&lt;p&gt;&lt;em&gt;The Plone community and software fit nicely within the larger Python
 ecosystem. Here's why.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;For almost as long as I have been involved in the &lt;a class="reference external" href="http://plone.org"&gt;Plone&lt;/a&gt; project, I've
 been interested in Plone's role in the Python ecosystem. Today as I look
@@ -882,13 +1029,13 @@ their hard work and generosity!&lt;/p&gt;
 &lt;div class="system-messages section"&gt;
 &lt;h2&gt;Docutils System Messages&lt;/h2&gt;
 &lt;div class="system-message" id="id1"&gt;
-&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/plone-first-class-python-citizen.rst&lt;/tt&gt;, line 26); &lt;em&gt;&lt;a href="#id2"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/plone-first-class-python-citizen.rst&lt;/tt&gt;, line 25); &lt;em&gt;&lt;a href="#id2"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 Unknown target name: &amp;quot;|image0|&amp;quot;.&lt;/div&gt;
 &lt;div class="system-message" id="id3"&gt;
-&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/plone-first-class-python-citizen.rst&lt;/tt&gt;, line 50); &lt;em&gt;&lt;a href="#id4"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/plone-first-class-python-citizen.rst&lt;/tt&gt;, line 49); &lt;em&gt;&lt;a href="#id4"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 Unknown target name: &amp;quot;|image1|&amp;quot;.&lt;/div&gt;
 &lt;div class="system-message" id="id5"&gt;
-&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/plone-first-class-python-citizen.rst&lt;/tt&gt;, line 71); &lt;em&gt;&lt;a href="#id6"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/plone-first-class-python-citizen.rst&lt;/tt&gt;, line 70); &lt;em&gt;&lt;a href="#id6"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 Unknown target name: &amp;quot;|image2|&amp;quot;.&lt;/div&gt;
 &lt;/div&gt;
 </summary><category term="Plone"></category><category term="Python"></category></entry><entry><title>Pillow: one year later</title><link href="http://blog.aclark.net/pillow-one-year-later.html" rel="alternate"></link><updated>2011-10-14T13:11:00Z</updated><author><name>aclark@aclark.net</name></author><id>tag:blog.aclark.net,2011-10-14:pillow-one-year-later.html</id><summary type="html">&lt;p&gt;&lt;em&gt;For anyone unfamiliar with Pillow, it is the &amp;quot;friendly PIL fork&amp;quot;: a
@@ -927,7 +1074,7 @@ case, the Plone and Python communities have spoken clearly.&lt;/p&gt;
 &lt;div class="system-messages section"&gt;
 &lt;h2&gt;Docutils System Messages&lt;/h2&gt;
 &lt;div class="system-message" id="id1"&gt;
-&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/pillow-one-year-later.rst&lt;/tt&gt;, line 14); &lt;em&gt;&lt;a href="#id2"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/pillow-one-year-later.rst&lt;/tt&gt;, line 13); &lt;em&gt;&lt;a href="#id2"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 Unknown target name: &amp;quot;|image0|pillow&amp;quot;.&lt;/div&gt;
 &lt;/div&gt;
 </summary><category term="Plone"></category><category term="Python"></category></entry><entry><title>Vagrant, Puppet and Mozilla, oh my!</title><link href="http://blog.aclark.net/vagrant-puppet-and-mozilla-oh-my.html" rel="alternate"></link><updated>2011-10-03T17:25:00Z</updated><author><name>aclark@aclark.net</name></author><id>tag:blog.aclark.net,2011-10-03:vagrant-puppet-and-mozilla-oh-my.html</id><summary type="html">&lt;p&gt;&lt;em&gt;Warning: This post is only loosely Python related and not at all Plone
@@ -1061,7 +1208,7 @@ is a dream come true :-)).&lt;/p&gt;
 &lt;div class="system-messages section"&gt;
 &lt;h2&gt;Docutils System Messages&lt;/h2&gt;
 &lt;div class="system-message" id="id3"&gt;
-&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/vagrant-puppet-and-mozilla-oh-my.rst&lt;/tt&gt;, line 159); &lt;em&gt;&lt;a href="#id4"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/vagrant-puppet-and-mozilla-oh-my.rst&lt;/tt&gt;, line 158); &lt;em&gt;&lt;a href="#id4"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 Unknown target name: &amp;quot;|image0|&amp;quot;.&lt;/div&gt;
 &lt;/div&gt;
 </summary><category term="Mozilla"></category><category term="Plone"></category><category term="Python"></category></entry><entry><title>Mozilla and PyPI</title><link href="http://blog.aclark.net/mozilla-and-pypi.html" rel="alternate"></link><updated>2011-09-22T12:03:00Z</updated><author><name>aclark@aclark.net</name></author><id>tag:blog.aclark.net,2011-09-22:mozilla-and-pypi.html</id><summary type="html">&lt;p&gt;The &lt;a class="reference external" href="http://blog.aclark.net/in-defense-of-pypi"&gt;last time I wrote about PyPI&lt;/a&gt; some folks mistook the subject to be
@@ -1200,7 +1347,7 @@ processes by eliminating steps.&lt;/p&gt;
 &lt;div class="system-messages section"&gt;
 &lt;h2&gt;Docutils System Messages&lt;/h2&gt;
 &lt;div class="system-message" id="id2"&gt;
-&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/mozilla-and-pypi.rst&lt;/tt&gt;, line 47); &lt;em&gt;&lt;a href="#id3"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/mozilla-and-pypi.rst&lt;/tt&gt;, line 46); &lt;em&gt;&lt;a href="#id3"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 Unknown target name: &amp;quot;|http://www.flickr.com/photos/jadensmommy24/239370733/|&amp;quot;.&lt;/div&gt;
 &lt;/div&gt;
 </summary><category term="Plone"></category><category term="Python"></category></entry><entry><title>Hello mod_wsgi</title><link href="http://blog.aclark.net/hello-mod_wsgi.html" rel="alternate"></link><updated>2011-08-28T20:43:00Z</updated><author><name>aclark@aclark.net</name></author><id>tag:blog.aclark.net,2011-08-28:hello-mod_wsgi.html</id><summary type="html">&lt;p&gt;It seems I've inadvertently started another series of blog entry:&amp;nbsp; the
@@ -1283,7 +1430,7 @@ moves closer to a WSGI-supporting stack via &lt;a class="reference external" hre
 &lt;div class="system-messages section"&gt;
 &lt;h2&gt;Docutils System Messages&lt;/h2&gt;
 &lt;div class="system-message" id="id1"&gt;
-&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/hello-mod_wsgi.rst&lt;/tt&gt;, line 67); &lt;em&gt;&lt;a href="#id2"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/hello-mod_wsgi.rst&lt;/tt&gt;, line 66); &lt;em&gt;&lt;a href="#id2"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 Unknown target name: &amp;quot;|image0|&amp;quot;.&lt;/div&gt;
 &lt;/div&gt;
 </summary><category term="Plone"></category><category term="Python"></category></entry><entry><title>Hello Plone</title><link href="http://blog.aclark.net/hello-plone.html" rel="alternate"></link><updated>2011-08-20T20:27:00Z</updated><author><name>aclark@aclark.net</name></author><id>tag:blog.aclark.net,2011-08-20:hello-plone.html</id><summary type="html">&lt;p&gt;This is a &amp;quot;hello world&amp;quot; style tutorial/application for Plone, aimed
@@ -1449,13 +1596,13 @@ like the Rob Schnieder ones better :-)&lt;/p&gt;
 &lt;div class="system-messages section"&gt;
 &lt;h2&gt;Docutils System Messages&lt;/h2&gt;
 &lt;div class="system-message" id="id1"&gt;
-&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/hello-plone.rst&lt;/tt&gt;, line 61); &lt;em&gt;&lt;a href="#id2"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/hello-plone.rst&lt;/tt&gt;, line 60); &lt;em&gt;&lt;a href="#id2"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 Unknown target name: &amp;quot;|image0|&amp;quot;.&lt;/div&gt;
 &lt;div class="system-message" id="id3"&gt;
-&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/hello-plone.rst&lt;/tt&gt;, line 146); &lt;em&gt;&lt;a href="#id4"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/hello-plone.rst&lt;/tt&gt;, line 145); &lt;em&gt;&lt;a href="#id4"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 Unknown target name: &amp;quot;|image1|&amp;quot;.&lt;/div&gt;
 &lt;div class="system-message" id="id5"&gt;
-&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/hello-plone.rst&lt;/tt&gt;, line 169); &lt;em&gt;&lt;a href="#id6"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/hello-plone.rst&lt;/tt&gt;, line 168); &lt;em&gt;&lt;a href="#id6"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 Unknown target name: &amp;quot;|image2|&amp;quot;.&lt;/div&gt;
 &lt;/div&gt;
 </summary><category term="Plone"></category><category term="Python"></category></entry><entry><title>Plone secrets: Episode 2 - Collective Python buildout</title><link href="http://blog.aclark.net/plone-secrets-episode-2-collective-python-buildout.html" rel="alternate"></link><updated>2011-07-06T12:45:00Z</updated><author><name>aclark@aclark.net</name></author><id>tag:blog.aclark.net,2011-07-06:plone-secrets-episode-2-collective-python-buildout.html</id><summary type="html">&lt;p&gt;You know who uses the (Plone) Collective Python buildout? Me neither,
@@ -1634,7 +1781,7 @@ buildout&lt;/a&gt;.&lt;/p&gt;
 &lt;div class="system-messages section"&gt;
 &lt;h2&gt;Docutils System Messages&lt;/h2&gt;
 &lt;div class="system-message" id="id1"&gt;
-&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/plone-secrets-episode-2-collective-python-buildout.rst&lt;/tt&gt;, line 24); &lt;em&gt;&lt;a href="#id2"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/plone-secrets-episode-2-collective-python-buildout.rst&lt;/tt&gt;, line 23); &lt;em&gt;&lt;a href="#id2"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 Unknown target name: &amp;quot;|image0|&amp;quot;.&lt;/div&gt;
 &lt;/div&gt;
 </summary><category term="Plone"></category><category term="Python"></category></entry><entry><title>You&amp;#039;re so vain, so why not use Vanity?</title><link href="http://blog.aclark.net/you039re-so-vain-so-why-not-use-vanity.html" rel="alternate"></link><updated>2011-06-16T12:01:00Z</updated><author><name>aclark@aclark.net</name></author><id>tag:blog.aclark.net,2011-06-16:you039re-so-vain-so-why-not-use-vanity.html</id><summary type="html">&lt;p&gt;A few months ago I created a package called &lt;strong&gt;Vanity&lt;/strong&gt;[0] that
@@ -1900,4 +2047,57 @@ packages to PyPI. If it doesn't, please let me know why in the comments.&lt;/p&g
 &lt;/p&gt;&lt;p&gt;&lt;em&gt;Did you enjoy reading this article? If so, please consider `helping me
 help Plone`_.&lt;/em&gt;&lt;/p&gt;
 &lt;/div&gt;
-</summary><category term="Plone"></category><category term="Python"></category></entry></feed>
+</summary><category term="Plone"></category><category term="Python"></category></entry><entry><title>New year’s Python meme</title><link href="http://blog.aclark.net/new-years-python-meme.html" rel="alternate"></link><updated>2009-12-31T18:22:00Z</updated><author><name>aclark@aclark.net</name></author><id>tag:blog.aclark.net,2009-12-31:new-years-python-meme.html</id><summary type="html">&lt;div class="section" id="image0-whats-the-coolest-python-application-framework-or-library-you-have-discovered-in-2009"&gt;
+&lt;h2&gt;&lt;a href="#id1"&gt;&lt;span class="problematic" id="id2"&gt;`|image0|`_&lt;/span&gt;&lt;/a&gt;What’s the coolest Python application, framework or library you have discovered in 2009?&lt;/h2&gt;
+&lt;p&gt;That would be &lt;a class="reference external" href="http://zenoss.org"&gt;Zenoss&lt;/a&gt;. I'm very impressed with the application as well
+as the community, which is awesome. They remind me a lot of the Plone
+community; I think the two can learn a lot from each other.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="what-new-programming-technique-did-you-learn-in-2009"&gt;
+&lt;h2&gt;What new programming technique did you learn in 2009?&lt;/h2&gt;
+&lt;p&gt;Generally speaking, I'm happy with my progress as a Plone integrator,
+plowing through the tremendous Plone code stack, on my way to complete
+mastery. I may never get there, but I'm having fun trying. In other
+words, I know a lot more about how far the Zope2/CMF/Five rabbit hole
+goes. If I had to pick, I'd choose Grok in Plone, mostly as it relates
+to Dexterity:
+&lt;a class="reference external" href="http://plone.org/products/dexterity/documentation/manual/five.grok"&gt;http://plone.org/products/dexterity/documentation/manual/five.grok&lt;/a&gt;. I
+created &lt;a class="reference external" href="http://plone.org/products/collective-project"&gt;http://plone.org/products/collective-project&lt;/a&gt; as a result, or
+rather, I converted the package to use Dexterity types so I could learn
+Dexterity, in part ;-). At first I was angry at being &amp;quot;forced&amp;quot; to use
+Grok techniques in Plone, but then it grew on me.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="whats-the-name-of-the-open-source-project-you-contributed-the-most-in-2009-what-did-you-do"&gt;
+&lt;h2&gt;What’s the name of the open source project you contributed the most in 2009? What did you do?&lt;/h2&gt;
+&lt;p&gt;&lt;a class="reference external" href="http://plone.org"&gt;Plone&lt;/a&gt;.&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;I dug out from &lt;a class="reference external" href="http://plone.org/events/conferences/2008-washington-dc"&gt;Plone Conference 2008&lt;/a&gt;, which included publishing
+the &lt;a class="reference external" href="http://plone.org/events/conferences/2008-washington-dc/agenda"&gt;videos and slides&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;I helped move plone.org to &lt;a class="reference external" href="http://sixfeetup.com"&gt;Six Feet Up&lt;/a&gt;, and have been looking
+after &lt;a class="reference external" href="http://dev.plone.org/plone/browser/Products.PloneOrg/trunk"&gt;it&lt;/a&gt; as well as &lt;a class="reference external" href="http://plone.org/news/plone-domain-dns-changes"&gt;other infrastructure issues&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;I worked on a book called 'Plone Site Admin', which will most likely
+come out in early 2010 (via &lt;a class="reference external" href="http://packtpub.com"&gt;Packt&lt;/a&gt;). I hope the community will find
+it useful.&lt;/li&gt;
+&lt;li&gt;I contributed a &lt;a class="reference external" href="http://dev.plone.org/plone/ticket/9330"&gt;new feature&lt;/a&gt; to Plone 4.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="section" id="what-was-the-python-blog-or-website-you-read-the-most-in-2009"&gt;
+&lt;h2&gt;What was the Python blog or website you read the most in 2009?&lt;/h2&gt;
+&lt;p&gt;&lt;a class="reference external" href="http://planet.plone.org"&gt;Planet Plone&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="what-are-the-three-top-things-you-want-to-learn-in-2010"&gt;
+&lt;h2&gt;What are the three top things you want to learn in 2010?&lt;/h2&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://zenoss.org"&gt;Zenoss&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://wsgi.org/wsgi/"&gt;WSGI&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://dev.plone.org/plone/browser/buildouts/plone-coredev/branches/4.0"&gt;Plone 4 core development&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Happy (Python) New Year everyone!&lt;/p&gt;
+&lt;/p&gt;&lt;/div&gt;
+&lt;div class="system-messages section"&gt;
+&lt;h2&gt;Docutils System Messages&lt;/h2&gt;
+&lt;div class="system-message" id="id1"&gt;
+&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/new-years-python-meme.rst&lt;/tt&gt;, line 7); &lt;em&gt;&lt;a href="#id2"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+Unknown target name: &amp;quot;|image0|&amp;quot;.&lt;/div&gt;
+&lt;/div&gt;
+</summary><category term="Python"></category></entry></feed>
