@@ -22,3 +22,9 @@ SOCIAL = (('Twitter', 'http://twitter.com/aclark4life'),
           ('GitHub', 'http://github.com/aclark4life'),)
 
 DEFAULT_PAGINATION = 10
+
+# Generate feeds for tags instead of categories
+CATEGORY_FEED_ATOM = None
+CATEGORY_FEED_RSS = None
+TAG_FEED_ATOM = 'feeds/%s.atom.xml'
+TAG_FEED_RSS = None
