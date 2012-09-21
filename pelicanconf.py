@@ -25,7 +25,7 @@ SOCIAL = (
     ('ACLARK.NET, LLC', 'http://aclark.net'),
     ('GitHub', 'http://github.com/aclark4life'),
     ('Gittip', 'https://www.gittip.com/aclark4life'),
-    ('PythonPackages', 'http://pythonpackages.com'),
+    ('PythonPackages', 'https://pythonpackages.com/user/aclark4life'),
     ('Twitter', 'http://twitter.com/aclark4life'),
 )
 
