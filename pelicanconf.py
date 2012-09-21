@@ -5,7 +5,7 @@ AUTHOR = u"aclark@aclark.net"
 SITENAME = u"Alex Clark"
 SITEURL = 'http://blog.aclark.net'
 
-TIMEZONE = 'Europe/Paris'
+TIMEZONE = 'America/New York'
 
 DEFAULT_LANG = 'en'
 
