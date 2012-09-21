@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*- #
 
-AUTHOR = u"aclark@aclark.net"
+AUTHOR = u"Alex Clark"
 SITENAME = u"Alex Clark"
 SITEURL = 'http://blog.aclark.net'
 
