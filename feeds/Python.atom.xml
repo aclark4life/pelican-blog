@@ -1,5 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Alex Clark</title><link href="http://blog.aclark.net/" rel="alternate"></link><link href="http://blog.aclark.net/feeds/Python.atom.xml" rel="self"></link><id>http://blog.aclark.net/</id><updated>2012-08-13T13:15:00+02:00</updated><entry><title>pythonpackages.com: pyformance 0.2</title><link href="http://blog.aclark.net/pythonpackagescom-pyformance-02.html" rel="alternate"></link><updated>2012-08-13T13:15:00+02:00</updated><author><name>aclark@aclark.net</name></author><id>tag:blog.aclark.net,2012-08-13:pythonpackagescom-pyformance-02.html</id><summary type="html">&lt;p&gt;&lt;em&gt;pythonpackages.com helps Python programmers package and release their
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Alex Clark</title><link href="http://blog.aclark.net/" rel="alternate"></link><link href="http://blog.aclark.net/feeds/Python.atom.xml" rel="self"></link><id>http://blog.aclark.net/</id><updated>2012-08-13T21:10:00+02:00</updated><entry><title>Bootstrapping a Buildout 1.6 release</title><link href="http://blog.aclark.net/bootstrapping-a-buildout-16-release.html" rel="alternate"></link><updated>2012-08-13T21:10:00+02:00</updated><author><name>aclark@aclark.net</name></author><id>tag:blog.aclark.net,2012-08-13:bootstrapping-a-buildout-16-release.html</id><summary type="html">&lt;p&gt;A lot of work has been done on Buildout lately, most notably:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;Jim Fulton is &lt;a class="reference external" href="https://github.com/buildout/buildout/commits/master"&gt;working on Buildout 2&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Ross Patterson has greatly &lt;a class="reference external" href="http://rpatterson.net/blog/buildout-performance-improvements"&gt;improved Buildout performance&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Domen Kožar has &lt;a class="reference external" href="http://zope3.pov.lt/trac/changeset/127507"&gt;provided a patch&lt;/a&gt; that takes a conservative
+approach to Ross's performance improvements.&lt;/li&gt;
+&lt;li&gt;I have offered to do a release.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;And there are a &lt;a class="reference external" href="http://mail.python.org/pipermail/distutils-sig/2012-July/018779.html"&gt;handful of other changes&lt;/a&gt; in &lt;a class="reference external" href="http://zope3.pov.lt/trac/browser/zc.buildout/trunk/CHANGES.txt?rev=127507#L4"&gt;trunk on svn.zope.org&lt;/a&gt;,
+of which my favorite is:&lt;/p&gt;
+&lt;blockquote&gt;
+The buildout init command now accepts distribution requirements and
+paths to set up a custom interpreter part that has the distributions
+or parts in the path. For example:: $ python bootstrap.py init
+BeautifulSoup&lt;/blockquote&gt;
+&lt;p&gt;So with that, I am &lt;strong&gt;planning to do a zc.buildout 1.6 release within 24
+hours&lt;/strong&gt; or so of now. Please add a comment or weigh in on
+&lt;a class="reference external" href="http://mail.python.org/mailman/listinfo/distutils-sig"&gt;distutils-sig&lt;/a&gt; if you object. We have run the tests on Windows, and
+discovered only pre-existing failures. We are also preparing to do
+&amp;quot;Buildout 2 prophylactic releases&amp;quot; (i.e. releases that make 1.x continue
+to work when 2.x is released) in the 1.6.x series.&lt;/p&gt;
+&lt;/p&gt;</summary><category term="Plone"></category><category term="Python"></category></entry><entry><title>pythonpackages.com: pyformance 0.2</title><link href="http://blog.aclark.net/pythonpackagescom-pyformance-02.html" rel="alternate"></link><updated>2012-08-13T13:15:00+02:00</updated><author><name>aclark@aclark.net</name></author><id>tag:blog.aclark.net,2012-08-13:pythonpackagescom-pyformance-02.html</id><summary type="html">&lt;p&gt;&lt;em&gt;pythonpackages.com helps Python programmers package and release their
 software with just a few clicks.&lt;/em&gt;&lt;/p&gt;
 &lt;div class="section" id="pyformance-0-2"&gt;
 &lt;h2&gt;pyformance 0.2&lt;/h2&gt;

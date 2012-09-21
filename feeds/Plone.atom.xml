@@ -1,26 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Alex Clark</title><link href="http://blog.aclark.net/" rel="alternate"></link><link href="http://blog.aclark.net/feeds/Plone.atom.xml" rel="self"></link><id>http://blog.aclark.net/</id><updated>2012-08-13T21:10:00+02:00</updated><entry><title>Bootstrapping a Buildout 1.6 release</title><link href="http://blog.aclark.net/bootstrapping-a-buildout-16-release.html" rel="alternate"></link><updated>2012-08-13T21:10:00+02:00</updated><author><name>aclark@aclark.net</name></author><id>tag:blog.aclark.net,2012-08-13:bootstrapping-a-buildout-16-release.html</id><summary type="html">&lt;p&gt;A lot of work has been done on Buildout lately, most notably:&lt;/p&gt;
-&lt;ul class="simple"&gt;
-&lt;li&gt;Jim Fulton is &lt;a class="reference external" href="https://github.com/buildout/buildout/commits/master"&gt;working on Buildout 2&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;Ross Patterson has greatly &lt;a class="reference external" href="http://rpatterson.net/blog/buildout-performance-improvements"&gt;improved Buildout performance&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;Domen Kožar has &lt;a class="reference external" href="http://zope3.pov.lt/trac/changeset/127507"&gt;provided a patch&lt;/a&gt; that takes a conservative
-approach to Ross's performance improvements.&lt;/li&gt;
-&lt;li&gt;I have offered to do a release.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;And there are a &lt;a class="reference external" href="http://mail.python.org/pipermail/distutils-sig/2012-July/018779.html"&gt;handful of other changes&lt;/a&gt; in &lt;a class="reference external" href="http://zope3.pov.lt/trac/browser/zc.buildout/trunk/CHANGES.txt?rev=127507#L4"&gt;trunk on svn.zope.org&lt;/a&gt;,
-of which my favorite is:&lt;/p&gt;
-&lt;blockquote&gt;
-The buildout init command now accepts distribution requirements and
-paths to set up a custom interpreter part that has the distributions
-or parts in the path. For example:: $ python bootstrap.py init
-BeautifulSoup&lt;/blockquote&gt;
-&lt;p&gt;So with that, I am &lt;strong&gt;planning to do a zc.buildout 1.6 release within 24
-hours&lt;/strong&gt; or so of now. Please add a comment or weigh in on
-&lt;a class="reference external" href="http://mail.python.org/mailman/listinfo/distutils-sig"&gt;distutils-sig&lt;/a&gt; if you object. We have run the tests on Windows, and
-discovered only pre-existing failures. We are also preparing to do
-&amp;quot;Buildout 2 prophylactic releases&amp;quot; (i.e. releases that make 1.x continue
-to work when 2.x is released) in the 1.6.x series.&lt;/p&gt;
-&lt;/p&gt;</summary><category term="Plone"></category><category term="Python"></category></entry><entry><title>All My Python Packages Are Belong To GitHub</title><link href="http://blog.aclark.net/all-my-python-packages-are-belong-to-github.html" rel="alternate"></link><updated>2012-08-10T20:44:00+02:00</updated><author><name>aclark@aclark.net</name></author><id>tag:blog.aclark.net,2012-08-10:all-my-python-packages-are-belong-to-github.html</id><summary type="html">&lt;p&gt;&lt;em&gt;Including many Plone add-ons&lt;/em&gt; Hi. My name is Alex &amp;quot;please don't call
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Alex Clark</title><link href="http://blog.aclark.net/" rel="alternate"></link><link href="http://blog.aclark.net/feeds/Plone.atom.xml" rel="self"></link><id>http://blog.aclark.net/</id><updated>2012-08-10T20:44:00+02:00</updated><entry><title>All My Python Packages Are Belong To GitHub</title><link href="http://blog.aclark.net/all-my-python-packages-are-belong-to-github.html" rel="alternate"></link><updated>2012-08-10T20:44:00+02:00</updated><author><name>aclark@aclark.net</name></author><id>tag:blog.aclark.net,2012-08-10:all-my-python-packages-are-belong-to-github.html</id><summary type="html">&lt;p&gt;&lt;em&gt;Including many Plone add-ons&lt;/em&gt; Hi. My name is Alex &amp;quot;please don't call
 them products&amp;quot; Clark. But you may call me aclark or aclark4life. In the
 spirit of continuing the &lt;a class="reference external" href="http://plone.293351.n2.nabble.com/DVCS-options-for-Plone-Core-tt6295582.html"&gt;great git migration&lt;/a&gt;, and in order to &lt;a class="reference external" href="http://pythonpackages.com/signup"&gt;beta
 test pythonpackages.com&lt;/a&gt;, I've just moved the last of my Subversion

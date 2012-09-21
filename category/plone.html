@@ -57,68 +57,8 @@
         
             <aside id="featured" class="body">
                 <article>
-                    <h1 class="entry-title"><a href=".././bootstrapping-a-buildout-16-release.html">Bootstrapping a Buildout 1.6 release</a></h1> 
+                    <h1 class="entry-title"><a href=".././all-my-python-packages-are-belong-to-github.html">All My Python Packages Are Belong To GitHub</a></h1> 
                     <footer class="post-info">
-        <abbr class="published" title="2012-08-13T21:10:00">
-                Mon 13 August 2012
-        </abbr>
-
-        
-        <address class="vcard author">
-                By <a class="url fn" href=".././author/aclarkaclarknet.html">aclark@aclark.net</a>
-        </address>
-        
-<p>In <a href=".././category/plone.html">Plone</a>. </p>
-<p>tags: <a href=".././tag/plone.html">Plone</a><a href=".././tag/python.html">Python</a></p>
-
-
-</footer><!-- /.post-info --><p>A lot of work has been done on Buildout lately, most notably:</p>
-<ul class="simple">
-<li>Jim Fulton is <a class="reference external" href="https://github.com/buildout/buildout/commits/master">working on Buildout 2</a>.</li>
-<li>Ross Patterson has greatly <a class="reference external" href="http://rpatterson.net/blog/buildout-performance-improvements">improved Buildout performance</a>.</li>
-<li>Domen Kožar has <a class="reference external" href="http://zope3.pov.lt/trac/changeset/127507">provided a patch</a> that takes a conservative
-approach to Ross's performance improvements.</li>
-<li>I have offered to do a release.</li>
-</ul>
-<p>And there are a <a class="reference external" href="http://mail.python.org/pipermail/distutils-sig/2012-July/018779.html">handful of other changes</a> in <a class="reference external" href="http://zope3.pov.lt/trac/browser/zc.buildout/trunk/CHANGES.txt?rev=127507#L4">trunk on svn.zope.org</a>,
-of which my favorite is:</p>
-<blockquote>
-The buildout init command now accepts distribution requirements and
-paths to set up a custom interpreter part that has the distributions
-or parts in the path. For example:: $ python bootstrap.py init
-BeautifulSoup</blockquote>
-<p>So with that, I am <strong>planning to do a zc.buildout 1.6 release within 24
-hours</strong> or so of now. Please add a comment or weigh in on
-<a class="reference external" href="http://mail.python.org/mailman/listinfo/distutils-sig">distutils-sig</a> if you object. We have run the tests on Windows, and
-discovered only pre-existing failures. We are also preparing to do
-&quot;Buildout 2 prophylactic releases&quot; (i.e. releases that make 1.x continue
-to work when 2.x is released) in the 1.6.x series.</p>
-</p><p>There are <a href=".././bootstrapping-a-buildout-16-release.html#disqus_thread">comments</a>.</p>
-                </article>
-                
-            </aside><!-- /#featured -->
-            
-                <section id="content" class="body">
-                    <h1>Other articles</h1>
-                    <hr />
-                    <ol id="posts-list" class="hfeed">
-            
-        
-        
-        
-            
-
-        
-         
-            
-            <li><article class="hentry">    
-                <header>
-                    <h1><a href=".././all-my-python-packages-are-belong-to-github.html" rel="bookmark"
-                           title="Permalink to All My Python Packages Are Belong To GitHub">All My Python Packages Are Belong To GitHub</a></h1>
-                </header>
-                
-                <div class="entry-content">
-                <footer class="post-info">
         <abbr class="published" title="2012-08-10T20:44:00">
                 Fri 10 August 2012
         </abbr>
@@ -132,15 +72,35 @@ to work when 2.x is released) in the 1.6.x series.</p>
 
 
 
-</footer><!-- /.post-info -->
-                <p><em>Including many Plone add-ons</em> Hi. My name is Alex &quot;please don't call
+</footer><!-- /.post-info --><p><em>Including many Plone add-ons</em> Hi. My name is Alex &quot;please don't call
 them products&quot; Clark. But you may call me aclark or aclark4life. In the
 spirit of continuing the <a class="reference external" href="http://plone.293351.n2.nabble.com/DVCS-options-for-Plone-Core-tt6295582.html">great git migration</a>, and in order to <a class="reference external" href="http://pythonpackages.com/signup">beta
-test pythonpackages.com</a>, I've just moved the last of my Subversion ...</p>
-                <a class="readmore" href=".././all-my-python-packages-are-belong-to-github.html">read more</a>
-                <p>There are <a href=".././all-my-python-packages-are-belong-to-github.html#disqus_thread">comments</a>.</p>
-                </div><!-- /.entry-content -->
-            </article></li>
+test pythonpackages.com</a>, I've just moved the last of my Subversion
+repositories to GitHub. This means <a class="reference external" href="https://gist.github.com/3317288">any package I have Owner or
+Maintainer permission for on PyPI</a> now lives in one of 8 GitHub
+organizations, or my personal GitHub account on github.com. Great
+Success!</p>
+<div class="section" id="plone-devs-y-u-no-move-repos">
+<h2>PLONE DEVS: Y U NO MOVE REPOS?</h2>
+<p>The Plone AI team has tentatively scheduled the end-of-2012 as the time
+to flip <a class="reference external" href="http://svn.plone.org/svn/collective/">svn.plone.org/svn/collective</a> to read only (/plone and
+/archetypes are already read only). So if you are still using the old
+collective, please take a minute to start thinking about migrating. As
+always, I'm happy to provide assistance to anyone that needs it to move
+their code. (I'm in #plone on irc.freenode.net or you can email
+<a class="reference external" href="mailto:aclark&#64;aclark.net">aclark&#64;aclark.net</a>.)</p>
+</p></div>
+<p>There are <a href=".././all-my-python-packages-are-belong-to-github.html#disqus_thread">comments</a>.</p>
+                </article>
+                
+            </aside><!-- /#featured -->
+            
+                <section id="content" class="body">
+                    <h1>Other articles</h1>
+                    <hr />
+                    <ol id="posts-list" class="hfeed">
+            
+        
         
         
             
@@ -466,12 +426,52 @@ end of the year, including:</p>
             </article></li>
         
         
+            
+
+        
+         
+            
+            <li><article class="hentry">    
+                <header>
+                    <h1><a href=".././plone-secrets-episode-4-varnish-in-front.html" rel="bookmark"
+                           title="Permalink to Plone secrets: Episode 4 - Varnish in front">Plone secrets: Episode 4 - Varnish in front</a></h1>
+                </header>
+                
+                <div class="entry-content">
+                <footer class="post-info">
+        <abbr class="published" title="2011-11-09T12:50:00">
+                Wed 09 November 2011
+        </abbr>
+
+        
+        <address class="vcard author">
+                By <a class="url fn" href=".././author/aclarkaclarknet.html">aclark@aclark.net</a>
+        </address>
+        
+<p>In <a href=".././category/plone.html">Plone</a>. </p>
+
+
+
+</footer><!-- /.post-info -->
+                <p><em>This just in from the production department: use Varnish. (And please
+forgive the heavily meme-laden approach to describing these techniques
+:-).)</em></p>
+<div class="section" id="cache-all-the-hosts">
+<h2>Cache ALL the hosts</h2>
+<p><a href="#id1"><span class="problematic" id="id2">`|image0|`_</span></a>Our ability to use Varnish in production is no secret by
+now, or at least it shouldn't be. What is often less clear ...</p></div>
+                <a class="readmore" href=".././plone-secrets-episode-4-varnish-in-front.html">read more</a>
+                <p>There are <a href=".././plone-secrets-episode-4-varnish-in-front.html#disqus_thread">comments</a>.</p>
+                </div><!-- /.entry-content -->
+            </article></li>
+        
+        
             </ol><!-- /#posts-list -->
             
                 
 <p class="paginator">
     
-    Page 1 / 8
+    Page 1 / 7
     
         <a href=".././category/Plone2.html">&raquo;</a>
     
