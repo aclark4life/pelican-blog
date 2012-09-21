@@ -27,7 +27,10 @@ Done! :-) Thanks Omer for using our service. Check out pyformance on GitHub:
 
 -  `https://github.com/omergertel/pyformance`_
 
+And the `talk by Coda Hale`_.
+
 .. _new GitHub Service: http://blog.aclark.net/pythonpackagescom-new-github-service-quotgit-push-to-releasequot.html
 .. _pyformance: https://github.com/omergertel/pyformance
 .. _Omer Gertel: https://twitter.com/omergertel
+.. _`talk by Coda Hale`: http://www.youtube.com/watch?v=czes-oa0yik
 .. _`https://github.com/omergertel/pyformance`: https://github.com/omergertel/pyformance
