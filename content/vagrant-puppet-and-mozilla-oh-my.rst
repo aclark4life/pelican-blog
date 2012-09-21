@@ -1,7 +1,8 @@
 Vagrant, Puppet and Mozilla, oh my!
 ###################################
 :date: 2011-10-03 17:25
-:category: Mozilla, Plone, Python
+:tags: Mozilla, Plone, Python
+:category: Mozilla
 
 *Warning: This post is only loosely Python related and not at all Plone
 related, but I thought folks might enjoy hearing about Vagrant and

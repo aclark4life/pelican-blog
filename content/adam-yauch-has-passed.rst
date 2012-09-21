@@ -1,7 +1,8 @@
 Adam Yauch has passed
 #####################
 :date: 2012-05-11 09:58
-:category: Mozilla, Plone, Python
+:tags: Mozilla, Plone, Python
+:category: misc
 
 *And why it matters to tech people, like me*
 
