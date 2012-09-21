@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Alex Clark</title><link href="http://blog.aclark.net/" rel="alternate"></link><link href="http://blog.aclark.net/feeds/misc.atom.xml" rel="self"></link><id>http://blog.aclark.net/</id><updated>2012-09-20T19:22:28+02:00</updated><entry><title>Foo</title><link href="http://blog.aclark.net/foo.html" rel="alternate"></link><updated>2012-09-20T19:22:28+02:00</updated><author><name>aclark@aclark.net</name></author><id>tag:blog.aclark.net,2012-09-20:foo.html</id><summary type="html">&lt;p&gt;bar&lt;/p&gt;
+</summary></entry></feed>
