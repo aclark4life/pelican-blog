@@ -1,7 +1,7 @@
 Technorati Post Claim, Please Ignore.
 #####################################
 :date: 2007-10-10 19:47
-:category: Plone
+:tags: Plone
 
 `Technorati Profile`_
 

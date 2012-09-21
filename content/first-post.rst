@@ -1,7 +1,7 @@
 First Post
 ##########
 :date: 2007-10-17 08:55
-:category: Plone
+:tags: Plone
 
 .. raw:: html
 

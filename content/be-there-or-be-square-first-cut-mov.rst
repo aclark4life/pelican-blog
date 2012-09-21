@@ -1,7 +1,7 @@
 be there or be square (first cut).mov
 #####################################
 :date: 2010-01-01 15:04
-:category: Music
+:tags: Music
 
 [youtube http://www.youtube.com/watch?v=YAv9N0mri\_w&w=420&h=315] be
 there or be square ===================== © Alex Clark 2010 D i just want

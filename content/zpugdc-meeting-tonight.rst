@@ -1,7 +1,7 @@
 ZPUGDC Meeting Tonight
 ######################
 :date: 2008-12-02 07:22
-:category: Plone
+:tags: Plone
 
 `|image0|`_\ Reblog:
 

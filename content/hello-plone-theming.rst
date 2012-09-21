@@ -2,7 +2,6 @@ Hello Plone theming
 ###################
 :date: 2012-01-25 00:15
 :tags: Plone, Python
-:category: Plone
 
 In this post, we introduce a new tutorial aimed at bridging the gap
 between the **incredibly easy to use and enormously powerful Diazo

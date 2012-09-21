@@ -1,7 +1,7 @@
 Plone.org maintenance
 #####################
 :date: 2011-11-29 00:54
-:category: Plone
+:tags: Plone
 
 Plans
 -----

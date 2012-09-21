@@ -2,7 +2,6 @@ Top 10 reasons &quot;Plone 3.3. Site Admin&quot; book is (still) for you
 ########################################################################
 :date: 2011-05-10 13:34
 :tags: Plone, Python
-:category: Plone
 
 About a year ago, I was frantically trying to finish `Plone 3.3 Site
 Administration`_ in time to teach it at Plone Symposium East 2010 (at

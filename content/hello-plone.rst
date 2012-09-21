@@ -2,7 +2,6 @@ Hello Plone
 ###########
 :date: 2011-08-20 20:27
 :tags: Plone, Python
-:category: Plone
 
 This is a "hello world" style tutorial/application for Plone, aimed
 squarely at Python developers. I have created a project on Github too,

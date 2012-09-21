@@ -1,7 +1,7 @@
 Plone Conference 2008 (!) is a wrap
 ###################################
 :date: 2011-05-03 20:00
-:category: Plone
+:tags: Plone
 
 Embarrassingly, I have yet to finish my obligations to the life-changing
 `Plone Conference 2008`_ until NOW: approximately 2 years, 6 months, and

@@ -1,7 +1,7 @@
 pythonpackages.com: pyformance 0.2
 ##################################
 :date: 2012-08-13 13:15
-:category: Python
+:tags: Python
 
 *pythonpackages.com helps Python programmers package and release their
 software with just a few clicks.*

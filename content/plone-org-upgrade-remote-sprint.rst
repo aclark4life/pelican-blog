@@ -1,7 +1,7 @@
 Plone.org upgrade remote sprint!
 ################################
 :date: 2008-05-22 07:07
-:category: Plone
+:tags: Plone
 
 Join us this Saturday in irc://irc.freenode.net#PxC (channel reserved
 for discussion of PloneHelpCenter/PloneSoftwareCenter) at 4:00AM EDT to

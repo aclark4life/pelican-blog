@@ -1,7 +1,7 @@
 Spaces.. Spaces.. Spaces.. fix for Spaces.app in Mac OS X Leopard
 #################################################################
 :date: 2008-01-01 19:50
-:category: Plone
+:tags: Plone
 
 `|image0|`_\ Like many `Plone`_ developers, I primarily develop on Mac
 OS X. Also, like many Plone developers I salivate over, and immediately

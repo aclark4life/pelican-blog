@@ -1,7 +1,7 @@
 Toronto Plone Add-ons Sprint #1 Report
 ######################################
 :date: 2010-01-01 07:03
-:category: Plone
+:tags: Plone
 
 Last month, members of the `Toronto Plone user's group`_ helped with
 Plone.org maintenance. Here is the sprint "report out" from Jordan

@@ -1,7 +1,7 @@
 A report on plonetheme.*
 ########################
 :date: 2010-11-04 11:09
-:category: Plone
+:tags: Plone
 
 [caption id="attachment\_486" align="alignright" width="398"
 caption="Photo credit:

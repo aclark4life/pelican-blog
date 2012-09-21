@@ -1,7 +1,7 @@
 collective.transmogrifier without Plone?
 ########################################
 :date: 2011-04-15 20:31
-:category: Plone
+:tags: Plone
 
 Yes!
 

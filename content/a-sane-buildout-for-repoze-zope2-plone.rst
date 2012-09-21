@@ -1,7 +1,7 @@
 A sane buildout for repoze.zope2 + Plone?
 #########################################
 :date: 2009-06-18 22:09
-:category: Plone
+:tags: Plone
 
 (This is also a follow-up of sorts to `Martin Aspeli's excellent
 introduction to repoze and Plone from last year`_.)

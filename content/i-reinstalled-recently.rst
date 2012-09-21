@@ -1,7 +1,7 @@
 I reinstalled recently
 ######################
 :date: 2010-10-15 11:42
-:category: Plone
+:tags: Plone
 
 .. raw:: html
 

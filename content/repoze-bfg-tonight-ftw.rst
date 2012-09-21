@@ -1,7 +1,7 @@
 repoze.bfg tonight FTW!
 #######################
 :date: 2008-09-02 13:09
-:category: Plone
+:tags: Plone
 
 Tonight ex-Zope Corporation luminary **Chris McDonough** unveils his
 `BFG`_ (Big \*\*\*\*ing Gun) which:

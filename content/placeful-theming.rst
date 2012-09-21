@@ -1,7 +1,7 @@
 Placeful Theming
 ################
 :date: 2008-06-02 07:02
-:category: Plone
+:tags: Plone
 
 I had to do a bit of placeful theming lately and I thought I would share
 the techniques I used (thanks davisagli, jonbaldievieso, vedawms). Let's

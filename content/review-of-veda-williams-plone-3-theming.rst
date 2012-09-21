@@ -1,7 +1,7 @@
 Review of Veda Williams&#039; Plone 3 Theming
 #############################################
 :date: 2009-09-22 16:17
-:category: Plone
+:tags: Plone
 
 `|image0|`_\ First things first, I can't overstate enough how much I
 personally appreciate Veda's efforts to bring the

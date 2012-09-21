@@ -1,7 +1,7 @@
 Help esteele go to Baarn!
 #########################
 :date: 2009-01-23 12:38
-:category: Plone
+:tags: Plone
 
 A few years back, I was `invited to the Baarn UI Sprint 2007.`_ This was
 a huge turning point for me and Plone. Having just attended the `annual

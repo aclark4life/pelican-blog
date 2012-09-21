@@ -1,7 +1,7 @@
 Naked Plone Theme
 #################
 :date: 2008-11-19 10:30
-:category: Plone
+:tags: Plone
 
 `|image0|`_\ I've needed this for quite some time, but I'm just getting
 around to shipping it. In addition to making it easy to 'turn off' a lot

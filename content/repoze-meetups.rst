@@ -1,7 +1,7 @@
 Repoze &quot;meetups&quot;
 ##########################
 :date: 2007-10-28 19:17
-:category: Plone
+:tags: Plone
 
 .. raw:: html
 

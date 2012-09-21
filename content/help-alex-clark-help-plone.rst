@@ -1,7 +1,7 @@
 Help Alex Clark help Plone
 ##########################
 :date: 2011-01-21 11:00
-:category: Plone
+:tags: Plone
 
 It's been a few years since I last attended a Plone sprint. And that is
 by no means for lack of desire. I fantasize about spending a year

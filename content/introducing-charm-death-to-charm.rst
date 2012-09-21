@@ -1,7 +1,7 @@
 Introducing charm; death to charm!
 ##################################
 :date: 2011-03-29 17:20
-:category: Plone
+:tags: Plone
 
 [caption id="attachment\_2290" align="alignright" width="373"
 caption="First slide of my talk, from "back in the day"

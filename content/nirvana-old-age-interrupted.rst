@@ -1,7 +1,7 @@
 Nirvana Old Age Interrupted
 ###########################
 :date: 2009-02-07 21:26
-:category: Music
+:tags: Music
 
 [youtube http://www.youtube.com/watch?v=ec200NlbTA4&w=420&h=315] This is
 a cover of Nirvana's "Old Age" and is absolutely hilarious. Not because

@@ -2,7 +2,6 @@ pythonpackages.com: Using PyPI&#039;s OAuth1 support to register and upload pack
 ####################################################################################
 :date: 2012-08-07 05:16
 :tags: Plone, Python
-:category: Python
 
 ***TL;DR** PyPI has OAuth1 support; pythonpackages.com uses it to send
 your GitHub repos to PyPI.* Thanks in very large part to `Richard

@@ -1,7 +1,7 @@
 Hostout rules
 #############
 :date: 2011-01-26 15:17
-:category: Plone
+:tags: Plone
 
 *As in "dominates", not a "list of rules" :-)*
 

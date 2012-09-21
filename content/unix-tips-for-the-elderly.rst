@@ -1,7 +1,7 @@
 UNIX Tips for the Elderly
 #########################
 :date: 2008-03-06 09:31
-:category: Plone
+:tags: Plone
 
 `|image0|`_\ With apologies to the Plone community for the off-topic
 post, I'd like to mention this so I won't forget it again (and, in case

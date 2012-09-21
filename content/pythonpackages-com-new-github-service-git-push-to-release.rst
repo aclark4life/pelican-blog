@@ -1,7 +1,7 @@
 pythonpackages.com: New GitHub Service &quot;git push to release&quot;
 ######################################################################
 :date: 2012-08-10 05:50
-:category: Python
+:tags: Python
 
 *pythonpackages.com helps Python programmers package and release their
 software with just a few clicks.*

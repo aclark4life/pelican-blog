@@ -1,7 +1,7 @@
 RE: collective.recipe.supervisor: Thank you!
 ############################################
 :date: 2008-08-10 05:24
-:category: Plone
+:tags: Plone
 
 Since I `last wrote about supervisor`_ it's become even more easy and
 more fun to add it to your buildout with

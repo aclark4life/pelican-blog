@@ -1,7 +1,7 @@
 &quot;New&quot; Plone theming has arrived
 #########################################
 :date: 2011-05-27 17:00
-:category: Plone
+:tags: Plone
 
 **Edit2:**\ Enfold/Ploud.net looking for theme developers, see Alan
 Runyan's comment below.

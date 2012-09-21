@@ -1,7 +1,7 @@
 You should buy &quot;Plone 3 for Education&quot; right now
 ##########################################################
 :date: 2011-01-25 13:11
-:category: Plone
+:tags: Plone
 
 `|image0|`_\ *With what must be the fifth or sixth round of apologies to
 both Erik Rose and PACKT publishing for the delay (very sorry guys),

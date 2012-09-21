@@ -1,7 +1,7 @@
 Is this thing on?
 #################
 :date: 2007-10-17 09:48
-:category: Plone
+:tags: Plone
 
 `|image0|`_... because it is showing up on `planet`_! Sorry about the
 duplicates. I have recreated my blog using Just Plone ™ (and I didn't

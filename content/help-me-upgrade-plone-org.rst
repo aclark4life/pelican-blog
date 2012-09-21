@@ -1,7 +1,7 @@
 Help me upgrade plone.org
 #########################
 :date: 2008-04-18 18:01
-:category: Plone
+:tags: Plone
 
 You may be wondering why plone.org is not running the latest version of
 Plone. Well wonder no more! By the end of this month, it will be. I have

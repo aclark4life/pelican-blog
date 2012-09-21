@@ -2,7 +2,6 @@ Building Windows Installers In The Cloud
 ########################################
 :date: 2012-08-01 22:19
 :tags: Mozilla, Plone, Python
-:category: Python
 
 With pythonpackages.com, I want to solve real problems for people today.
 So here's a proof of concept for building Windows installers quickly and

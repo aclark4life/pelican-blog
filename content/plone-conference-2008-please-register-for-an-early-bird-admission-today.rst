@@ -1,7 +1,7 @@
 Plone Conference 2008: Please register for an early bird admission today.
 #########################################################################
 :date: 2008-07-01 08:09
-:category: Plone
+:tags: Plone
 
 `http://ploneconf2008.eventbrite.com/`_
 

@@ -1,7 +1,7 @@
 Take Back The Tap!
 ##################
 :date: 2008-03-17 13:47
-:category: Plone
+:tags: Plone
 
 `|image0|`_\ ACLARK.NET, LLC is proud to announce:
 `http://www.takebackthetap.org!`_

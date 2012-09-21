@@ -1,7 +1,7 @@
 Getting excited about Plone as eggs
 ###################################
 :date: 2008-12-15 12:17
-:category: Plone
+:tags: Plone
 
 .. raw:: html
 

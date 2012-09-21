@@ -1,7 +1,7 @@
 Introducing pythonpackages.com
 ##############################
 :date: 2011-11-29 02:24
-:category: Python
+:tags: Python
 
 The website for Python egoists™
 -------------------------------

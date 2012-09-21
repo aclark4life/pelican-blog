@@ -2,7 +2,6 @@ Zope2 Bootstrap
 ###############
 :date: 2012-06-12 10:27
 :tags: Plone, Python
-:category: Plone
 
 *Bootstrap all the things, including Zope2.*
 

@@ -23,6 +23,9 @@ SOCIAL = (('Twitter', 'http://twitter.com/aclark4life'),
 
 DEFAULT_PAGINATION = 10
 
+# Default category AKA header configuration
+DEFAULT_CATEGORY ('Blog')
+
 # Generate feeds for tags instead of categories
 CATEGORY_FEED_ATOM = None
 CATEGORY_FEED_RSS = None

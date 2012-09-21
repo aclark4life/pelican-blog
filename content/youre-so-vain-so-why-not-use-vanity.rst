@@ -2,7 +2,6 @@ You&#039;re so vain, so why not use Vanity?
 ###########################################
 :date: 2011-06-16 12:01
 :tags: Plone, Python
-:category: Python
 
 A few months ago I created a package called **Vanity**\ [0] that
 provides easy access to package download statistics from **PyPI**. You

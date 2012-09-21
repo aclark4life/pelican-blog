@@ -1,7 +1,7 @@
 I love the &#039;slrn&#039; news reader.
 ########################################
 :date: 2007-10-17 09:26
-:category: Plone
+:tags: Plone
 
 `|image0|`_\ I've been meaning to write this blog entry about ***slrn***
 ever since I started using it some time last year. Finally, here it is.

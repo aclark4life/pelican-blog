@@ -1,7 +1,7 @@
 No, really, you can (just) use Buildout to install Plone.
 #########################################################
 :date: 2010-01-07 12:39
-:category: Plone
+:tags: Plone
 
 This is a follow up to my `Getting Excited about Plone as Eggs`_ post,
 because I can't keep updating that one forever.

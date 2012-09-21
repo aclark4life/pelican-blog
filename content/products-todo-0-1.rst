@@ -1,7 +1,7 @@
 Products.todo 0.1
 #################
 :date: 2008-11-13 08:07
-:category: Plone
+:tags: Plone
 
 `|image0|`_\ I needed a project to jump start my return to Plone after
 spending months organizing `Plone Conference 2008`_, and I had the idea

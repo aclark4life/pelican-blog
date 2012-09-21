@@ -1,7 +1,7 @@
 ACLARK.NET seeks unique candidate for part time business consulting
 ###################################################################
 :date: 2011-06-14 15:40
-:category: Plone
+:tags: Plone
 
  
 

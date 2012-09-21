@@ -1,7 +1,7 @@
 NASA story slashdotted!
 #######################
 :date: 2008-04-12 06:43
-:category: Plone
+:tags: Plone
 
 Hi all,
 

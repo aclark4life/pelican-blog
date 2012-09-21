@@ -1,7 +1,7 @@
 Usergroup-a-palooza
 ###################
 :date: 2007-11-20 16:51
-:category: Plone
+:tags: Plone
 
 `|image0|`_\ Today at the behest of `Tres Seaver`_ and `ZUG-SIG`_ , I
 updated `http://www.zope.org/Resources/UserGroups`_. Most of the

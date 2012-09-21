@@ -1,7 +1,7 @@
 Spaces fixed!
 #############
 :date: 2008-03-06 09:31
-:category: Plone
+:tags: Plone
 
 For those of you using Spaces in Mac OS X, I'd like to follow up my
 `previous post`_ with some exciting news regarding Spaces in Mac OS X

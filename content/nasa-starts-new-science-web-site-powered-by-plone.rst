@@ -1,7 +1,7 @@
 NASA starts new science Web site, powered by Plone
 ##################################################
 :date: 2008-04-10 14:25
-:category: Plone
+:tags: Plone
 
 For those who haven't heard about it yet: last night's (5:30PM EDT)
 launch of \ `http://nasascience.nasa.gov`_ marks the launch of yet

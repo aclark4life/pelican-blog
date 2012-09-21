@@ -2,7 +2,6 @@ New vanity release
 ##################
 :date: 2012-01-30 09:52
 :tags: Plone, Python
-:category: Plone
 
 With all the Python `stats`_ `goodness`_ going on recently, I got
 inspired to make a new `vanity`_ release. This release features the

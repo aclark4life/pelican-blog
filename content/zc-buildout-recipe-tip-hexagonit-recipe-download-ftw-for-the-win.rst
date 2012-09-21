@@ -1,7 +1,7 @@
 zc.buildout recipe tip: hexagonit.recipe.download FTW! (For the win)
 ####################################################################
 :date: 2007-11-28 21:36
-:category: Plone
+:tags: Plone
 
 Sometimes an "old style" product is distributed as foo.tar.gz and
 extracts to foo/, but the product is actually called Bar! This can be a

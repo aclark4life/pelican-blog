@@ -1,7 +1,7 @@
 Help improve Plone&#039;s API documentation
 ###########################################
 :date: 2007-10-17 09:19
-:category: Plone
+:tags: Plone
 
 `|image0|`_\ I'm travelling from Washington, DC, USA to Mountain View,
 CA, USA June 26 - 29 to participate in the 2007 `Plone Doccomm Sprint`_.

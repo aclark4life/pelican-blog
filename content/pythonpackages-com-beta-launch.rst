@@ -2,7 +2,6 @@ pythonpackages.com beta launch
 ##############################
 :date: 2012-07-04 05:19
 :tags: Mozilla, Plone, Python
-:category: Python
 
 After 9 months of development, pythonpackages.com has
 grand-ceremoniously flipped the switch from alpha to beta. Here is an

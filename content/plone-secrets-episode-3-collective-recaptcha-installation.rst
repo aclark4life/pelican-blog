@@ -1,7 +1,7 @@
 Plone secrets: Episode 3 - Collective Recaptcha installation
 ############################################################
 :date: 2011-08-09 12:19
-:category: Plone
+:tags: Plone
 
 ***Another one from the: "wow, this approach is totally and completely
 non-obvious to beginners" department.***

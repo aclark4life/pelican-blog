@@ -1,7 +1,7 @@
 A LAMP buildout for Wordpress and other PHP apps
 ################################################
 :date: 2009-04-21 00:23
-:category: Plone
+:tags: Plone
 
 A Buildout for PHP?
 -------------------

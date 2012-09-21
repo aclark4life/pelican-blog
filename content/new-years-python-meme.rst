@@ -1,7 +1,7 @@
 New year’s Python meme
 ######################
 :date: 2009-12-31 18:22
-:category: Plone
+:tags: Python
 
 `|image0|`_\ What’s the coolest Python application, framework or library you have discovered in 2009?
 -----------------------------------------------------------------------------------------------------

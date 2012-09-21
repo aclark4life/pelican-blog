@@ -1,7 +1,7 @@
 Blood, sweat, tears… and a new Plone book!
 ##########################################
 :date: 2010-03-30 18:15
-:category: Plone
+:tags: Plone
 
 Well, no blood yet. But certainly sweat and tears! If `Plone Conference
 2006`_ was my inspiration for `Plone Conference 2008`_, then

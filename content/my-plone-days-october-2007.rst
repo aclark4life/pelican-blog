@@ -1,7 +1,7 @@
 My  Plone Days (October 2007)
 #############################
 :date: 2007-10-18 13:09
-:category: Plone
+:tags: Plone
 
 My focus will be `PloneSoftwareCenter (PSC)`_. That's right! You heard
 it here first. After a little prodding on IRC from Martin Aspeli, Steve

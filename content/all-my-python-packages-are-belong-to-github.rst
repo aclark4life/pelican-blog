@@ -1,7 +1,7 @@
 All My Python Packages Are Belong To GitHub
 ###########################################
 :date: 2012-08-10 20:44
-:category: Plone
+:tags: Plone
 
 *Including many Plone add-ons* Hi. My name is Alex "please don't call
 them products" Clark. But you may call me aclark or aclark4life. In the

@@ -1,7 +1,7 @@
 The Apache modules for XDV
 ##########################
 :date: 2010-07-12 08:25
-:category: Plone
+:tags: Plone
 
 `|http://beakersblog.files.wordpress.com/2010/02/consolidation.jpg|`_
 

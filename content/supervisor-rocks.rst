@@ -1,7 +1,7 @@
 Supervisor rocks!
 #################
 :date: 2008-05-15 07:41
-:category: Plone
+:tags: Plone
 
 `|image0|`_\ (This is essentially a reiteration of `Carlos' previous
 blog entry`_. :-))

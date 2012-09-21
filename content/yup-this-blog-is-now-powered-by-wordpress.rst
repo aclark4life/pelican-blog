@@ -1,7 +1,7 @@
 Yup, this blog is now powered by WordPress.
 ###########################################
 :date: 2010-01-06 22:18
-:category: Plone
+:tags: Plone
 
 **(Or, "How I learned to stop worrying and use the right tool for the
 job.")** My first blog entry was `well over two years ago`_. I've

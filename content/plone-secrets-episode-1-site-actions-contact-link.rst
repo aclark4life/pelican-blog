@@ -1,7 +1,7 @@
 Plone secrets: Episode 1 — Site actions contact link
 ####################################################
 :date: 2011-06-20 12:31
-:category: Plone
+:tags: Plone
 
 Today I am introducing a new category of blog entry called **Plone
 secrets**.

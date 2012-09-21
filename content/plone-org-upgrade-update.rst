@@ -1,7 +1,7 @@
 Plone.org upgrade update!
 #########################
 :date: 2008-05-01 11:53
-:category: Plone
+:tags: Plone
 
 Thanks again to everyone who contributed to my travel fund. I really
 appreciate it and being able to work closely with Tarek Ziadé and

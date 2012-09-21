@@ -2,7 +2,6 @@ A simple printer of nested lists
 ################################
 :date: 2012-05-23 22:58
 :tags: Plone, Python
-:category: Plone
 
 *A rant*
 
