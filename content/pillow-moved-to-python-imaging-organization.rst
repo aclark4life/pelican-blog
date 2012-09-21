@@ -1,7 +1,8 @@
 Pillow moved to python-imaging organization
 ###########################################
 :date: 2012-07-25 02:19
-:category: Plone, Python
+:tags: Plone, Python
+:category: Plone
 
 .. raw:: html
 

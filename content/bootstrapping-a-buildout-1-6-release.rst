@@ -1,7 +1,8 @@
 Bootstrapping a Buildout 1.6 release
 ####################################
 :date: 2012-08-13 21:10
-:category: Plone, Python
+:tags: Plone, Python
+:category: Plone
 
 A lot of work has been done on Buildout lately, most notably:
 

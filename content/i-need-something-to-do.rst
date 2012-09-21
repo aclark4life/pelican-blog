@@ -1,7 +1,8 @@
 I need something to do
 ######################
 :date: 2010-03-22 17:06
-:category: Plone
+:tags: Plone
+:category: Misc
 
 I would like to think I have done `my`_ `share`_ for Plone over the past
 few years. In return, I know that Plone has done its share for me. I

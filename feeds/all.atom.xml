@@ -20,7 +20,7 @@ hours&lt;/strong&gt; or so of now. Please add a comment or weigh in on
 discovered only pre-existing failures. We are also preparing to do
 &amp;quot;Buildout 2 prophylactic releases&amp;quot; (i.e. releases that make 1.x continue
 to work when 2.x is released) in the 1.6.x series.&lt;/p&gt;
-&lt;/p&gt;</summary></entry><entry><title>pythonpackages.com: pyformance 0.2</title><link href="http://blog.aclark.net/pythonpackagescom-pyformance-02.html" rel="alternate"></link><updated>2012-08-13T13:15:00+02:00</updated><author><name>aclark@aclark.net</name></author><id>tag:blog.aclark.net,2012-08-13:pythonpackagescom-pyformance-02.html</id><summary type="html">&lt;p&gt;&lt;em&gt;pythonpackages.com helps Python programmers package and release their
+&lt;/p&gt;</summary><category term="Plone"></category><category term="Python"></category></entry><entry><title>pythonpackages.com: pyformance 0.2</title><link href="http://blog.aclark.net/pythonpackagescom-pyformance-02.html" rel="alternate"></link><updated>2012-08-13T13:15:00+02:00</updated><author><name>aclark@aclark.net</name></author><id>tag:blog.aclark.net,2012-08-13:pythonpackagescom-pyformance-02.html</id><summary type="html">&lt;p&gt;&lt;em&gt;pythonpackages.com helps Python programmers package and release their
 software with just a few clicks.&lt;/em&gt;&lt;/p&gt;
 &lt;div class="section" id="pyformance-0-2"&gt;
 &lt;h2&gt;pyformance 0.2&lt;/h2&gt;
@@ -154,31 +154,31 @@ is now a reality. If you have a minute, please &lt;a class="reference external" 
 &lt;div class="system-messages section"&gt;
 &lt;h2&gt;Docutils System Messages&lt;/h2&gt;
 &lt;div class="system-message" id="id1"&gt;
-&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/pythonpackages-com-using-pypis-oauth1-support-to-register-and-upload-packages.rst&lt;/tt&gt;, line 19); &lt;em&gt;&lt;a href="#id2"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/pythonpackages-com-using-pypis-oauth1-support-to-register-and-upload-packages.rst&lt;/tt&gt;, line 20); &lt;em&gt;&lt;a href="#id2"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 Unknown target name: &amp;quot;|image0|&amp;quot;.&lt;/div&gt;
 &lt;div class="system-message" id="id3"&gt;
-&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/pythonpackages-com-using-pypis-oauth1-support-to-register-and-upload-packages.rst&lt;/tt&gt;, line 19); &lt;em&gt;&lt;a href="#id4"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/pythonpackages-com-using-pypis-oauth1-support-to-register-and-upload-packages.rst&lt;/tt&gt;, line 20); &lt;em&gt;&lt;a href="#id4"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 Unknown target name: &amp;quot;|image1|&amp;quot;.&lt;/div&gt;
 &lt;div class="system-message" id="id5"&gt;
-&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/pythonpackages-com-using-pypis-oauth1-support-to-register-and-upload-packages.rst&lt;/tt&gt;, line 27); &lt;em&gt;&lt;a href="#id6"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/pythonpackages-com-using-pypis-oauth1-support-to-register-and-upload-packages.rst&lt;/tt&gt;, line 28); &lt;em&gt;&lt;a href="#id6"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 Unknown target name: &amp;quot;|image2|&amp;quot;.&lt;/div&gt;
 &lt;div class="system-message" id="id7"&gt;
-&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/pythonpackages-com-using-pypis-oauth1-support-to-register-and-upload-packages.rst&lt;/tt&gt;, line 45); &lt;em&gt;&lt;a href="#id8"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/pythonpackages-com-using-pypis-oauth1-support-to-register-and-upload-packages.rst&lt;/tt&gt;, line 46); &lt;em&gt;&lt;a href="#id8"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 Unknown target name: &amp;quot;|image3|&amp;quot;.&lt;/div&gt;
 &lt;div class="system-message" id="id9"&gt;
-&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/pythonpackages-com-using-pypis-oauth1-support-to-register-and-upload-packages.rst&lt;/tt&gt;, line 45); &lt;em&gt;&lt;a href="#id10"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/pythonpackages-com-using-pypis-oauth1-support-to-register-and-upload-packages.rst&lt;/tt&gt;, line 46); &lt;em&gt;&lt;a href="#id10"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 Unknown target name: &amp;quot;|image4|&amp;quot;.&lt;/div&gt;
 &lt;div class="system-message" id="id11"&gt;
-&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/pythonpackages-com-using-pypis-oauth1-support-to-register-and-upload-packages.rst&lt;/tt&gt;, line 45); &lt;em&gt;&lt;a href="#id12"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/pythonpackages-com-using-pypis-oauth1-support-to-register-and-upload-packages.rst&lt;/tt&gt;, line 46); &lt;em&gt;&lt;a href="#id12"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 Unknown target name: &amp;quot;|image5|&amp;quot;.&lt;/div&gt;
 &lt;div class="system-message" id="id13"&gt;
-&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/pythonpackages-com-using-pypis-oauth1-support-to-register-and-upload-packages.rst&lt;/tt&gt;, line 53); &lt;em&gt;&lt;a href="#id14"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/pythonpackages-com-using-pypis-oauth1-support-to-register-and-upload-packages.rst&lt;/tt&gt;, line 54); &lt;em&gt;&lt;a href="#id14"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 Unknown target name: &amp;quot;|image6|&amp;quot;.&lt;/div&gt;
 &lt;div class="system-message" id="id15"&gt;
-&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/pythonpackages-com-using-pypis-oauth1-support-to-register-and-upload-packages.rst&lt;/tt&gt;, line 53); &lt;em&gt;&lt;a href="#id16"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/pythonpackages-com-using-pypis-oauth1-support-to-register-and-upload-packages.rst&lt;/tt&gt;, line 54); &lt;em&gt;&lt;a href="#id16"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 Unknown target name: &amp;quot;|image7|&amp;quot;.&lt;/div&gt;
 &lt;/div&gt;
-</summary></entry><entry><title>Building Windows Installers In The Cloud</title><link href="http://blog.aclark.net/building-windows-installers-in-the-cloud.html" rel="alternate"></link><updated>2012-08-01T22:19:00+02:00</updated><author><name>aclark@aclark.net</name></author><id>tag:blog.aclark.net,2012-08-01:building-windows-installers-in-the-cloud.html</id><summary type="html">&lt;p&gt;With pythonpackages.com, I want to solve real problems for people today.
+</summary><category term="Plone"></category><category term="Python"></category></entry><entry><title>Building Windows Installers In The Cloud</title><link href="http://blog.aclark.net/building-windows-installers-in-the-cloud.html" rel="alternate"></link><updated>2012-08-01T22:19:00+02:00</updated><author><name>aclark@aclark.net</name></author><id>tag:blog.aclark.net,2012-08-01:building-windows-installers-in-the-cloud.html</id><summary type="html">&lt;p&gt;With pythonpackages.com, I want to solve real problems for people today.
 So here's a proof of concept for building Windows installers quickly and
 easily &amp;quot;in the cloud&amp;quot; (i.e. without a Windows machine local). This
 article is mostly about the back end, as the front end is &lt;a class="reference external" href="http://docs.pythonpackages.com/en/latest/introduction.html"&gt;already
@@ -321,7 +321,7 @@ The new home for Pillow is:&lt;/p&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;&lt;a class="reference external" href="https://github.com/python-imaging/Pillow"&gt;https://github.com/python-imaging/Pillow&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/p&gt;</summary></entry><entry><title>The Plones Templer</title><link href="http://blog.aclark.net/the-plones-templer.html" rel="alternate"></link><updated>2012-07-12T20:48:00+02:00</updated><author><name>aclark@aclark.net</name></author><id>tag:blog.aclark.net,2012-07-12:the-plones-templer.html</id><summary type="html">&lt;p&gt;(c.f. Knights Templar) I think we have a situation that could use the
+&lt;/p&gt;</summary><category term="Plone"></category><category term="Python"></category></entry><entry><title>The Plones Templer</title><link href="http://blog.aclark.net/the-plones-templer.html" rel="alternate"></link><updated>2012-07-12T20:48:00+02:00</updated><author><name>aclark@aclark.net</name></author><id>tag:blog.aclark.net,2012-07-12:the-plones-templer.html</id><summary type="html">&lt;p&gt;(c.f. Knights Templar) I think we have a situation that could use the
 help of the Plone and Python communities at large. It goes something
 like this:&lt;/p&gt;
 &lt;ol class="arabic simple"&gt;
@@ -391,7 +391,7 @@ refactoring, they have produced some &lt;a class="reference external" href="http
 readthedocs.org&lt;/a&gt;. If you are interested in helping, please gather
 around the #plone on irc.freenode.net to discuss options (I am aclark on
 IRC).&lt;/p&gt;
-&lt;/p&gt;</summary></entry><entry><title>pythonpackages.com beta launch</title><link href="http://blog.aclark.net/pythonpackagescom-beta-launch.html" rel="alternate"></link><updated>2012-07-04T05:19:00+02:00</updated><author><name>aclark@aclark.net</name></author><id>tag:blog.aclark.net,2012-07-04:pythonpackagescom-beta-launch.html</id><summary type="html">&lt;p&gt;After 9 months of development, pythonpackages.com has
+&lt;/p&gt;</summary><category term="Plone"></category><category term="Python"></category></entry><entry><title>pythonpackages.com beta launch</title><link href="http://blog.aclark.net/pythonpackagescom-beta-launch.html" rel="alternate"></link><updated>2012-07-04T05:19:00+02:00</updated><author><name>aclark@aclark.net</name></author><id>tag:blog.aclark.net,2012-07-04:pythonpackagescom-beta-launch.html</id><summary type="html">&lt;p&gt;After 9 months of development, pythonpackages.com has
 grand-ceremoniously flipped the switch from alpha to beta. Here is an
 overview of the beta release features.&lt;/p&gt;
 &lt;div class="section" id="killer-github-integration"&gt;
@@ -498,13 +498,13 @@ for even more goodness. Enjoy, and give feedback in the comments, or
 &lt;div class="system-messages section"&gt;
 &lt;h2&gt;Docutils System Messages&lt;/h2&gt;
 &lt;div class="system-message" id="id2"&gt;
-&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/zope2-bootstrap.rst&lt;/tt&gt;, line 20); &lt;em&gt;&lt;a href="#id3"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/zope2-bootstrap.rst&lt;/tt&gt;, line 21); &lt;em&gt;&lt;a href="#id3"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 Unknown target name: &amp;quot;|image0|&amp;quot;.&lt;/div&gt;
 &lt;div class="system-message" id="id4"&gt;
-&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/zope2-bootstrap.rst&lt;/tt&gt;, line 26); &lt;em&gt;&lt;a href="#id5"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/zope2-bootstrap.rst&lt;/tt&gt;, line 27); &lt;em&gt;&lt;a href="#id5"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 Unknown target name: &amp;quot;|image1|&amp;quot;.&lt;/div&gt;
 &lt;/div&gt;
-</summary></entry><entry><title>A simple printer of nested lists</title><link href="http://blog.aclark.net/a-simple-printer-of-nested-lists.html" rel="alternate"></link><updated>2012-05-23T22:58:00+02:00</updated><author><name>aclark@aclark.net</name></author><id>tag:blog.aclark.net,2012-05-23:a-simple-printer-of-nested-lists.html</id><summary type="html">&lt;p&gt;&lt;em&gt;A rant&lt;/em&gt;&lt;/p&gt;
+</summary><category term="Plone"></category><category term="Python"></category></entry><entry><title>A simple printer of nested lists</title><link href="http://blog.aclark.net/a-simple-printer-of-nested-lists.html" rel="alternate"></link><updated>2012-05-23T22:58:00+02:00</updated><author><name>aclark@aclark.net</name></author><id>tag:blog.aclark.net,2012-05-23:a-simple-printer-of-nested-lists.html</id><summary type="html">&lt;p&gt;&lt;em&gt;A rant&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;Do you ever get the urge to kill? How many of us cringe whenever we see
 these words? Lately I've been spending a lot of time developing
 &lt;a class="reference external" href="http://pythonpackages.com"&gt;pythonpackages.com&lt;/a&gt;, (now running on heroku!) during which time I see
@@ -534,16 +534,16 @@ the &lt;em&gt;simple printers of nested lists&lt;/em&gt; will do the same?&lt;/p
 &lt;div class="system-messages section"&gt;
 &lt;h2&gt;Docutils System Messages&lt;/h2&gt;
 &lt;div class="system-message" id="id1"&gt;
-&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/a-simple-printer-of-nested-lists.rst&lt;/tt&gt;, line 13); &lt;em&gt;&lt;a href="#id2"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/a-simple-printer-of-nested-lists.rst&lt;/tt&gt;, line 14); &lt;em&gt;&lt;a href="#id2"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 Unknown target name: &amp;quot;|image0|&amp;quot;.&lt;/div&gt;
 &lt;div class="system-message" id="id3"&gt;
-&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/a-simple-printer-of-nested-lists.rst&lt;/tt&gt;, line 19); &lt;em&gt;&lt;a href="#id4"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/a-simple-printer-of-nested-lists.rst&lt;/tt&gt;, line 20); &lt;em&gt;&lt;a href="#id4"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 Unknown target name: &amp;quot;|image1|&amp;quot;.&lt;/div&gt;
 &lt;div class="system-message" id="id5"&gt;
-&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/a-simple-printer-of-nested-lists.rst&lt;/tt&gt;, line 25); &lt;em&gt;&lt;a href="#id6"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/a-simple-printer-of-nested-lists.rst&lt;/tt&gt;, line 26); &lt;em&gt;&lt;a href="#id6"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 Unknown target name: &amp;quot;|image2|&amp;quot;.&lt;/div&gt;
 &lt;/div&gt;
-</summary></entry><entry><title>Adam Yauch has passed</title><link href="http://blog.aclark.net/adam-yauch-has-passed.html" rel="alternate"></link><updated>2012-05-11T09:58:00+02:00</updated><author><name>aclark@aclark.net</name></author><id>tag:blog.aclark.net,2012-05-11:adam-yauch-has-passed.html</id><summary type="html">&lt;p&gt;&lt;em&gt;And why it matters to tech people, like me&lt;/em&gt;&lt;/p&gt;
+</summary><category term="Plone"></category><category term="Python"></category></entry><entry><title>Adam Yauch has passed</title><link href="http://blog.aclark.net/adam-yauch-has-passed.html" rel="alternate"></link><updated>2012-05-11T09:58:00+02:00</updated><author><name>aclark@aclark.net</name></author><id>tag:blog.aclark.net,2012-05-11:adam-yauch-has-passed.html</id><summary type="html">&lt;p&gt;&lt;em&gt;And why it matters to tech people, like me&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;(I hope my tech colleagues will indulge my thoughts on the recent
 passing of Beastie Boy Adam Yauch.)&lt;/p&gt;
 &lt;p&gt;TL;DR: I &amp;lt;3 the Beastie Boys and will miss Adam Yauch; and I suspect
@@ -685,10 +685,10 @@ install add-ons, check ZMI settings, etc.&lt;/p&gt;
 &lt;div class="system-messages section"&gt;
 &lt;h2&gt;Docutils System Messages&lt;/h2&gt;
 &lt;div class="system-message" id="id1"&gt;
-&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/test-plone-tmp.rst&lt;/tt&gt;, line 98); &lt;em&gt;&lt;a href="#id2"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/test-plone-tmp.rst&lt;/tt&gt;, line 99); &lt;em&gt;&lt;a href="#id2"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 Unknown target name: &amp;quot;|image0|&amp;quot;.&lt;/div&gt;
 &lt;/div&gt;
-</summary></entry><entry><title>New vanity release</title><link href="http://blog.aclark.net/new-vanity-release.html" rel="alternate"></link><updated>2012-01-30T09:52:00+01:00</updated><author><name>aclark@aclark.net</name></author><id>tag:blog.aclark.net,2012-01-30:new-vanity-release.html</id><summary type="html">&lt;p&gt;With all the Python &lt;a class="reference external" href="http://crate.io/"&gt;stats&lt;/a&gt; &lt;a class="reference external" href="http://python3wos.appspot.com/"&gt;goodness&lt;/a&gt; going on recently, I got
+</summary><category term="Plone"></category><category term="Python"></category></entry><entry><title>New vanity release</title><link href="http://blog.aclark.net/new-vanity-release.html" rel="alternate"></link><updated>2012-01-30T09:52:00+01:00</updated><author><name>aclark@aclark.net</name></author><id>tag:blog.aclark.net,2012-01-30:new-vanity-release.html</id><summary type="html">&lt;p&gt;With all the Python &lt;a class="reference external" href="http://crate.io/"&gt;stats&lt;/a&gt; &lt;a class="reference external" href="http://python3wos.appspot.com/"&gt;goodness&lt;/a&gt; going on recently, I got
 inspired to make a new &lt;a class="reference external" href="http://pythonpackages.com/info/vanity"&gt;vanity&lt;/a&gt; release. This release features the
 ability to display per package download statistics via the `-v` or
 `--verbose` command line argument.&lt;/p&gt;
@@ -849,7 +849,7 @@ Package `pyramid` has been downloaded 97,222 times!
 &lt;/pre&gt;
 &lt;p&gt;Enjoy the new release.&lt;/p&gt;
 &lt;/p&gt;&lt;/div&gt;
-</summary></entry><entry><title>Hello Plone theming</title><link href="http://blog.aclark.net/hello-plone-theming.html" rel="alternate"></link><updated>2012-01-25T00:15:00+01:00</updated><author><name>aclark@aclark.net</name></author><id>tag:blog.aclark.net,2012-01-25:hello-plone-theming.html</id><summary type="html">&lt;p&gt;In this post, we introduce a new tutorial aimed at bridging the gap
+</summary><category term="Plone"></category><category term="Python"></category></entry><entry><title>Hello Plone theming</title><link href="http://blog.aclark.net/hello-plone-theming.html" rel="alternate"></link><updated>2012-01-25T00:15:00+01:00</updated><author><name>aclark@aclark.net</name></author><id>tag:blog.aclark.net,2012-01-25:hello-plone-theming.html</id><summary type="html">&lt;p&gt;In this post, we introduce a new tutorial aimed at bridging the gap
 between the &lt;strong&gt;incredibly easy to use and enormously powerful Diazo
 theming engine for Plone&lt;/strong&gt;, and bootstrapping your first new theme. You
 do not need to have any Python skills whatsoever to perform these tasks.
@@ -865,7 +865,7 @@ plone.app.theming.)&lt;/li&gt;
 &lt;p&gt;The Diazo rules can get complex, but it's very easy to get your first
 rule done and working and then off you go. You may find this &lt;a class="reference external" href="http://readthedocs.org/docs/pythonpackages-docs/en/latest/features/examples/ex8-diazo.html"&gt;new
 tutorial on pythonpackages.com&lt;/a&gt;. Enjoy, and get busy theming Plone.&lt;/p&gt;
-&lt;/p&gt;</summary></entry><entry><title>New Year&amp;#039;s Python Meme 2012</title><link href="http://blog.aclark.net/new-year039s-python-meme-2012.html" rel="alternate"></link><updated>2011-12-21T13:11:00+01:00</updated><author><name>aclark@aclark.net</name></author><id>tag:blog.aclark.net,2011-12-21:new-year039s-python-meme-2012.html</id><summary type="html">&lt;p&gt;&lt;em&gt;My response to
+&lt;/p&gt;</summary><category term="Plone"></category><category term="Python"></category></entry><entry><title>New Year&amp;#039;s Python Meme 2012</title><link href="http://blog.aclark.net/new-year039s-python-meme-2012.html" rel="alternate"></link><updated>2011-12-21T13:11:00+01:00</updated><author><name>aclark@aclark.net</name></author><id>tag:blog.aclark.net,2011-12-21:new-year039s-python-meme-2012.html</id><summary type="html">&lt;p&gt;&lt;em&gt;My response to
 `http://tarekziade.wordpress.com/2011/12/20/new-years-python-meme-2/`_
 (with gratuitous links to `pythonpackages.com`_, my new project,
 sprinkled throughout).&lt;/em&gt;&lt;/p&gt;
@@ -1181,16 +1181,16 @@ their hard work and generosity!&lt;/p&gt;
 &lt;div class="system-messages section"&gt;
 &lt;h2&gt;Docutils System Messages&lt;/h2&gt;
 &lt;div class="system-message" id="id1"&gt;
-&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/plone-first-class-python-citizen.rst&lt;/tt&gt;, line 25); &lt;em&gt;&lt;a href="#id2"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/plone-first-class-python-citizen.rst&lt;/tt&gt;, line 26); &lt;em&gt;&lt;a href="#id2"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 Unknown target name: &amp;quot;|image0|&amp;quot;.&lt;/div&gt;
 &lt;div class="system-message" id="id3"&gt;
-&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/plone-first-class-python-citizen.rst&lt;/tt&gt;, line 49); &lt;em&gt;&lt;a href="#id4"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/plone-first-class-python-citizen.rst&lt;/tt&gt;, line 50); &lt;em&gt;&lt;a href="#id4"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 Unknown target name: &amp;quot;|image1|&amp;quot;.&lt;/div&gt;
 &lt;div class="system-message" id="id5"&gt;
-&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/plone-first-class-python-citizen.rst&lt;/tt&gt;, line 70); &lt;em&gt;&lt;a href="#id6"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/plone-first-class-python-citizen.rst&lt;/tt&gt;, line 71); &lt;em&gt;&lt;a href="#id6"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 Unknown target name: &amp;quot;|image2|&amp;quot;.&lt;/div&gt;
 &lt;/div&gt;
-</summary></entry><entry><title>Pillow: one year later</title><link href="http://blog.aclark.net/pillow-one-year-later.html" rel="alternate"></link><updated>2011-10-14T13:11:00+02:00</updated><author><name>aclark@aclark.net</name></author><id>tag:blog.aclark.net,2011-10-14:pillow-one-year-later.html</id><summary type="html">&lt;p&gt;&lt;em&gt;For anyone unfamiliar with Pillow, it is the &amp;quot;friendly PIL fork&amp;quot;: a
+</summary><category term="Plone"></category><category term="Python"></category></entry><entry><title>Pillow: one year later</title><link href="http://blog.aclark.net/pillow-one-year-later.html" rel="alternate"></link><updated>2011-10-14T13:11:00+02:00</updated><author><name>aclark@aclark.net</name></author><id>tag:blog.aclark.net,2011-10-14:pillow-one-year-later.html</id><summary type="html">&lt;p&gt;&lt;em&gt;For anyone unfamiliar with Pillow, it is the &amp;quot;friendly PIL fork&amp;quot;: a
 fork of PIL that aims to remain a good citizen in the PIL community
 through its actions.&lt;/em&gt;&lt;/p&gt;
 &lt;div class="section" id="warm-and-fluffy-history"&gt;
@@ -1226,10 +1226,10 @@ case, the Plone and Python communities have spoken clearly.&lt;/p&gt;
 &lt;div class="system-messages section"&gt;
 &lt;h2&gt;Docutils System Messages&lt;/h2&gt;
 &lt;div class="system-message" id="id1"&gt;
-&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/pillow-one-year-later.rst&lt;/tt&gt;, line 13); &lt;em&gt;&lt;a href="#id2"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/pillow-one-year-later.rst&lt;/tt&gt;, line 14); &lt;em&gt;&lt;a href="#id2"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 Unknown target name: &amp;quot;|image0|pillow&amp;quot;.&lt;/div&gt;
 &lt;/div&gt;
-</summary></entry><entry><title>Vagrant, Puppet and Mozilla, oh my!</title><link href="http://blog.aclark.net/vagrant-puppet-and-mozilla-oh-my.html" rel="alternate"></link><updated>2011-10-03T17:25:00+02:00</updated><author><name>aclark@aclark.net</name></author><id>tag:blog.aclark.net,2011-10-03:vagrant-puppet-and-mozilla-oh-my.html</id><summary type="html">&lt;p&gt;&lt;em&gt;Warning: This post is only loosely Python related and not at all Plone
+</summary><category term="Plone"></category><category term="Python"></category></entry><entry><title>Vagrant, Puppet and Mozilla, oh my!</title><link href="http://blog.aclark.net/vagrant-puppet-and-mozilla-oh-my.html" rel="alternate"></link><updated>2011-10-03T17:25:00+02:00</updated><author><name>aclark@aclark.net</name></author><id>tag:blog.aclark.net,2011-10-03:vagrant-puppet-and-mozilla-oh-my.html</id><summary type="html">&lt;p&gt;&lt;em&gt;Warning: This post is only loosely Python related and not at all Plone
 related, but I thought folks might enjoy hearing about Vagrant and
 Puppet because these tools may help you do your Plone and Python jobs
 better.&lt;/em&gt;&lt;/p&gt;
@@ -1499,10 +1499,10 @@ processes by eliminating steps.&lt;/p&gt;
 &lt;div class="system-messages section"&gt;
 &lt;h2&gt;Docutils System Messages&lt;/h2&gt;
 &lt;div class="system-message" id="id2"&gt;
-&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/mozilla-and-pypi.rst&lt;/tt&gt;, line 46); &lt;em&gt;&lt;a href="#id3"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/mozilla-and-pypi.rst&lt;/tt&gt;, line 47); &lt;em&gt;&lt;a href="#id3"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 Unknown target name: &amp;quot;|http://www.flickr.com/photos/jadensmommy24/239370733/|&amp;quot;.&lt;/div&gt;
 &lt;/div&gt;
-</summary></entry><entry><title>Hello mod_wsgi</title><link href="http://blog.aclark.net/hello-mod_wsgi.html" rel="alternate"></link><updated>2011-08-28T20:43:00+02:00</updated><author><name>aclark@aclark.net</name></author><id>tag:blog.aclark.net,2011-08-28:hello-mod_wsgi.html</id><summary type="html">&lt;p&gt;It seems I've inadvertently started another series of blog entry:&amp;nbsp; the
+</summary><category term="Plone"></category><category term="Python"></category></entry><entry><title>Hello mod_wsgi</title><link href="http://blog.aclark.net/hello-mod_wsgi.html" rel="alternate"></link><updated>2011-08-28T20:43:00+02:00</updated><author><name>aclark@aclark.net</name></author><id>tag:blog.aclark.net,2011-08-28:hello-mod_wsgi.html</id><summary type="html">&lt;p&gt;It seems I've inadvertently started another series of blog entry:&amp;nbsp; the
 &amp;quot;hello world&amp;quot; series, wherein I explain how to easily get started with
 &lt;a class="reference external" href="http://blog.aclark.net/2011/08/20/hello-plone/"&gt;various exciting Python technologies&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;This time, in order to familiarize myself with &lt;a class="reference external" href="http://code.google.com/p/modwsgi/"&gt;mod_wsgi&lt;/a&gt;, I've
@@ -1582,10 +1582,10 @@ moves closer to a WSGI-supporting stack via &lt;a class="reference external" hre
 &lt;div class="system-messages section"&gt;
 &lt;h2&gt;Docutils System Messages&lt;/h2&gt;
 &lt;div class="system-message" id="id1"&gt;
-&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/hello-mod_wsgi.rst&lt;/tt&gt;, line 66); &lt;em&gt;&lt;a href="#id2"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/hello-mod_wsgi.rst&lt;/tt&gt;, line 67); &lt;em&gt;&lt;a href="#id2"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 Unknown target name: &amp;quot;|image0|&amp;quot;.&lt;/div&gt;
 &lt;/div&gt;
-</summary></entry><entry><title>Hello Plone</title><link href="http://blog.aclark.net/hello-plone.html" rel="alternate"></link><updated>2011-08-20T20:27:00+02:00</updated><author><name>aclark@aclark.net</name></author><id>tag:blog.aclark.net,2011-08-20:hello-plone.html</id><summary type="html">&lt;p&gt;This is a &amp;quot;hello world&amp;quot; style tutorial/application for Plone, aimed
+</summary><category term="Plone"></category><category term="Python"></category></entry><entry><title>Hello Plone</title><link href="http://blog.aclark.net/hello-plone.html" rel="alternate"></link><updated>2011-08-20T20:27:00+02:00</updated><author><name>aclark@aclark.net</name></author><id>tag:blog.aclark.net,2011-08-20:hello-plone.html</id><summary type="html">&lt;p&gt;This is a &amp;quot;hello world&amp;quot; style tutorial/application for Plone, aimed
 squarely at Python developers. I have created a project on Github too,
 to hold the code:&lt;/p&gt;
 &lt;ul class="simple"&gt;
@@ -1748,16 +1748,16 @@ like the Rob Schnieder ones better :-)&lt;/p&gt;
 &lt;div class="system-messages section"&gt;
 &lt;h2&gt;Docutils System Messages&lt;/h2&gt;
 &lt;div class="system-message" id="id1"&gt;
-&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/hello-plone.rst&lt;/tt&gt;, line 60); &lt;em&gt;&lt;a href="#id2"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/hello-plone.rst&lt;/tt&gt;, line 61); &lt;em&gt;&lt;a href="#id2"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 Unknown target name: &amp;quot;|image0|&amp;quot;.&lt;/div&gt;
 &lt;div class="system-message" id="id3"&gt;
-&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/hello-plone.rst&lt;/tt&gt;, line 145); &lt;em&gt;&lt;a href="#id4"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/hello-plone.rst&lt;/tt&gt;, line 146); &lt;em&gt;&lt;a href="#id4"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 Unknown target name: &amp;quot;|image1|&amp;quot;.&lt;/div&gt;
 &lt;div class="system-message" id="id5"&gt;
-&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/hello-plone.rst&lt;/tt&gt;, line 168); &lt;em&gt;&lt;a href="#id6"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/hello-plone.rst&lt;/tt&gt;, line 169); &lt;em&gt;&lt;a href="#id6"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 Unknown target name: &amp;quot;|image2|&amp;quot;.&lt;/div&gt;
 &lt;/div&gt;
-</summary></entry><entry><title>Plone secrets: Episode 3 - Collective Recaptcha installation</title><link href="http://blog.aclark.net/plone-secrets-episode-3-collective-recaptcha-installation.html" rel="alternate"></link><updated>2011-08-09T12:19:00+02:00</updated><author><name>aclark@aclark.net</name></author><id>tag:blog.aclark.net,2011-08-09:plone-secrets-episode-3-collective-recaptcha-installation.html</id><summary type="html">&lt;p&gt;&lt;strong&gt;*Another one from the: &amp;quot;wow, this approach is totally and completely
+</summary><category term="Plone"></category><category term="Python"></category></entry><entry><title>Plone secrets: Episode 3 - Collective Recaptcha installation</title><link href="http://blog.aclark.net/plone-secrets-episode-3-collective-recaptcha-installation.html" rel="alternate"></link><updated>2011-08-09T12:19:00+02:00</updated><author><name>aclark@aclark.net</name></author><id>tag:blog.aclark.net,2011-08-09:plone-secrets-episode-3-collective-recaptcha-installation.html</id><summary type="html">&lt;p&gt;&lt;strong&gt;*Another one from the: &amp;quot;wow, this approach is totally and completely
 non-obvious to beginners&amp;quot; department.*&lt;/strong&gt;&lt;/p&gt;
 &lt;div class="section" id="my-kingdom-for-a-custom-contact-form-with-captcha"&gt;
 &lt;h2&gt;My kingdom for a (custom) contact form (with captcha)&lt;/h2&gt;
@@ -2238,10 +2238,10 @@ buildout&lt;/a&gt;.&lt;/p&gt;
 &lt;div class="system-messages section"&gt;
 &lt;h2&gt;Docutils System Messages&lt;/h2&gt;
 &lt;div class="system-message" id="id1"&gt;
-&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/plone-secrets-episode-2-collective-python-buildout.rst&lt;/tt&gt;, line 23); &lt;em&gt;&lt;a href="#id2"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/plone-secrets-episode-2-collective-python-buildout.rst&lt;/tt&gt;, line 24); &lt;em&gt;&lt;a href="#id2"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 Unknown target name: &amp;quot;|image0|&amp;quot;.&lt;/div&gt;
 &lt;/div&gt;
-</summary></entry><entry><title>Plone secrets: Episode 1 — Site actions contact link</title><link href="http://blog.aclark.net/plone-secrets-episode-1-site-actions-contact-link.html" rel="alternate"></link><updated>2011-06-20T12:31:00+02:00</updated><author><name>aclark@aclark.net</name></author><id>tag:blog.aclark.net,2011-06-20:plone-secrets-episode-1-site-actions-contact-link.html</id><summary type="html">&lt;p&gt;Today I am introducing a new category of blog entry called &lt;strong&gt;Plone
+</summary><category term="Plone"></category><category term="Python"></category></entry><entry><title>Plone secrets: Episode 1 — Site actions contact link</title><link href="http://blog.aclark.net/plone-secrets-episode-1-site-actions-contact-link.html" rel="alternate"></link><updated>2011-06-20T12:31:00+02:00</updated><author><name>aclark@aclark.net</name></author><id>tag:blog.aclark.net,2011-06-20:plone-secrets-episode-1-site-actions-contact-link.html</id><summary type="html">&lt;p&gt;Today I am introducing a new category of blog entry called &lt;strong&gt;Plone
 secrets&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;The goal is to describe a set of developer/integrator techniques that
 are extremely valuable, but completely non-obvious to newcomers.&lt;/p&gt;
@@ -2475,7 +2475,7 @@ in particular.&lt;/p&gt;
 &lt;/p&gt;&lt;p&gt;[1] There is a &lt;a class="reference external" href="https://github.com/aclark4life/vanity/issues/1"&gt;known issue&lt;/a&gt; with regard to making Vanity case
 insensitive.&lt;/p&gt;
 &lt;/div&gt;
-</summary></entry><entry><title>ACLARK.NET seeks unique candidate for part time business consulting</title><link href="http://blog.aclark.net/aclarknet-seeks-unique-candidate-for-part-time-business-consulting.html" rel="alternate"></link><updated>2011-06-14T15:40:00+02:00</updated><author><name>aclark@aclark.net</name></author><id>tag:blog.aclark.net,2011-06-14:aclarknet-seeks-unique-candidate-for-part-time-business-consulting.html</id><summary type="html">&lt;p&gt;We are looking for a unique and talented (but mostly non-technical)
+</summary><category term="Plone"></category><category term="Python"></category></entry><entry><title>ACLARK.NET seeks unique candidate for part time business consulting</title><link href="http://blog.aclark.net/aclarknet-seeks-unique-candidate-for-part-time-business-consulting.html" rel="alternate"></link><updated>2011-06-14T15:40:00+02:00</updated><author><name>aclark@aclark.net</name></author><id>tag:blog.aclark.net,2011-06-14:aclarknet-seeks-unique-candidate-for-part-time-business-consulting.html</id><summary type="html">&lt;p&gt;We are looking for a unique and talented (but mostly non-technical)
 individual that is passionate about Plone, and able to dedicate some
 small amount of time per month to generating new business for us[1].&lt;/p&gt;
 &lt;p&gt;Plone is up and coming (again)! And we want to (1.) capitalize on that
@@ -2760,7 +2760,7 @@ least).&lt;/p&gt;
 &lt;p&gt;[2] Yeah, I don't get out much :-)&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-</summary></entry><entry><title>Plone Conference 2008 (!) is a wrap</title><link href="http://blog.aclark.net/plone-conference-2008-is-a-wrap.html" rel="alternate"></link><updated>2011-05-03T20:00:00+02:00</updated><author><name>aclark@aclark.net</name></author><id>tag:blog.aclark.net,2011-05-03:plone-conference-2008-is-a-wrap.html</id><summary type="html">&lt;p&gt;Embarrassingly, I have yet to finish my obligations to the life-changing
+</summary><category term="Plone"></category><category term="Python"></category></entry><entry><title>Plone Conference 2008 (!) is a wrap</title><link href="http://blog.aclark.net/plone-conference-2008-is-a-wrap.html" rel="alternate"></link><updated>2011-05-03T20:00:00+02:00</updated><author><name>aclark@aclark.net</name></author><id>tag:blog.aclark.net,2011-05-03:plone-conference-2008-is-a-wrap.html</id><summary type="html">&lt;p&gt;Embarrassingly, I have yet to finish my obligations to the life-changing
 &lt;a class="reference external" href="http://plone.org/2008"&gt;Plone Conference 2008&lt;/a&gt; until NOW: approximately 2 years, 6 months, and
 23 days after the end of the post-conference sprint.&lt;/p&gt;
 &lt;div class="section" id="the-story"&gt;
@@ -3302,7 +3302,7 @@ packages to PyPI. If it doesn't, please let me know why in the comments.&lt;/p&g
 &lt;/p&gt;&lt;p&gt;&lt;em&gt;Did you enjoy reading this article? If so, please consider `helping me
 help Plone`_.&lt;/em&gt;&lt;/p&gt;
 &lt;/div&gt;
-</summary></entry><entry><title>Hostout rules</title><link href="http://blog.aclark.net/hostout-rules.html" rel="alternate"></link><updated>2011-01-26T15:17:00+01:00</updated><author><name>aclark@aclark.net</name></author><id>tag:blog.aclark.net,2011-01-26:hostout-rules.html</id><summary type="html">&lt;p&gt;&lt;em&gt;As in &amp;quot;dominates&amp;quot;, not a &amp;quot;list of rules&amp;quot; :-)&lt;/em&gt;&lt;/p&gt;
+</summary><category term="Plone"></category><category term="Python"></category></entry><entry><title>Hostout rules</title><link href="http://blog.aclark.net/hostout-rules.html" rel="alternate"></link><updated>2011-01-26T15:17:00+01:00</updated><author><name>aclark@aclark.net</name></author><id>tag:blog.aclark.net,2011-01-26:hostout-rules.html</id><summary type="html">&lt;p&gt;&lt;em&gt;As in &amp;quot;dominates&amp;quot;, not a &amp;quot;list of rules&amp;quot; :-)&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;I spent a long time avoiding &lt;a class="reference external" href="http://pypi.python.org/pypi/collective.hostout"&gt;collective.hostout&lt;/a&gt; for reasons I will
 call &amp;quot;technical stylistic differences&amp;quot; with the author Dylan Jay.&lt;/p&gt;
 &lt;p&gt;But then I grew up (and in cases of Plone growth like this, I usually
@@ -4670,23 +4670,23 @@ there is a good fit, I am confident we can make it work.&lt;/p&gt;
 &lt;a class="reference external" href="http://aclark.net/team/aclark/resume-pdf"&gt;http://aclark.net/team/aclark/resume-pdf&lt;/a&gt;.&lt;/p&gt;
 &lt;!-- |Image credit: --&gt;
 &lt;div class="system-message"&gt;
-&lt;p class="system-message-title"&gt;System Message: WARNING/2 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/i-need-something-to-do.rst&lt;/tt&gt;, line 171)&lt;/p&gt;
+&lt;p class="system-message-title"&gt;System Message: WARNING/2 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/i-need-something-to-do.rst&lt;/tt&gt;, line 172)&lt;/p&gt;
 malformed substitution definition.&lt;/div&gt;
 &lt;div class="system-message"&gt;
-&lt;p class="system-message-title"&gt;System Message: WARNING/2 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/i-need-something-to-do.rst&lt;/tt&gt;, line 172)&lt;/p&gt;
+&lt;p class="system-message-title"&gt;System Message: WARNING/2 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/i-need-something-to-do.rst&lt;/tt&gt;, line 173)&lt;/p&gt;
 Explicit markup ends without a blank line; unexpected unindent.&lt;/div&gt;
 &lt;p&gt;&lt;a class="reference external" href="http://screenmusings.org/ForrestGump/pages/fg_0885"&gt;http://screenmusings.org/ForrestGump/pages/fg_0885&lt;/a&gt;.htm| image:: &lt;a class="reference external" href="http://blog.aclark.net/wp-content/uploads/2010/03/fg_0885.jpg"&gt;http://blog.aclark.net/wp-content/uploads/2010/03/fg_0885.jpg&lt;/a&gt;
 .. &lt;a href="#id1"&gt;&lt;span class="problematic" id="id2"&gt;|image1|&lt;/span&gt;&lt;/a&gt; image:: &lt;a class="reference external" href="http://blog.aclark.net/wp-content/uploads/2010/03/fg_0885.jpg"&gt;http://blog.aclark.net/wp-content/uploads/2010/03/fg_0885.jpg&lt;/a&gt;&lt;/p&gt;
 &lt;div class="system-messages section"&gt;
 &lt;h2&gt;Docutils System Messages&lt;/h2&gt;
 &lt;div class="system-message" id="id1"&gt;
-&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/i-need-something-to-do.rst&lt;/tt&gt;, line 172); &lt;em&gt;&lt;a href="#id2"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/i-need-something-to-do.rst&lt;/tt&gt;, line 173); &lt;em&gt;&lt;a href="#id2"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 Undefined substitution referenced: &amp;quot;image1&amp;quot;.&lt;/div&gt;
 &lt;div class="system-message" id="id3"&gt;
-&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/i-need-something-to-do.rst&lt;/tt&gt;, line 13); &lt;em&gt;&lt;a href="#id4"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/i-need-something-to-do.rst&lt;/tt&gt;, line 14); &lt;em&gt;&lt;a href="#id4"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 Unknown target name: &amp;quot;|image credit: http://screenmusings.org/forrestgump/pages/fg_0885.htm|&amp;quot;.&lt;/div&gt;
 &lt;/div&gt;
-</summary></entry><entry><title>Using Buildout to deploy a Plone 2.1 site to the cloud</title><link href="http://blog.aclark.net/using-buildout-to-deploy-a-plone-21-site-to-the-cloud.html" rel="alternate"></link><updated>2010-03-15T21:03:00+01:00</updated><author><name>aclark@aclark.net</name></author><id>tag:blog.aclark.net,2010-03-15:using-buildout-to-deploy-a-plone-21-site-to-the-cloud.html</id><summary type="html">&lt;p&gt;Believe it or not, there are still Plone 2.1 sites in production. (And
+</summary><category term="Plone"></category></entry><entry><title>Using Buildout to deploy a Plone 2.1 site to the cloud</title><link href="http://blog.aclark.net/using-buildout-to-deploy-a-plone-21-site-to-the-cloud.html" rel="alternate"></link><updated>2010-03-15T21:03:00+01:00</updated><author><name>aclark@aclark.net</name></author><id>tag:blog.aclark.net,2010-03-15:using-buildout-to-deploy-a-plone-21-site-to-the-cloud.html</id><summary type="html">&lt;p&gt;Believe it or not, there are still Plone 2.1 sites in production. (And
 1.0 sites too, for that matter. Just look for the tell-tale '/help'
 sign, e.g. &lt;a class="reference external" href="http://www.zope.org/help"&gt;http://www.zope.org/help&lt;/a&gt;, if you suspect Plone 1).&lt;/p&gt;
 &lt;p&gt;I know, because I just &lt;a class="reference external" href="http://harryroseman.com"&gt;deployed one&lt;/a&gt; (a cool artist's site if you have

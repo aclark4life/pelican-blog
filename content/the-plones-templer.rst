@@ -1,7 +1,8 @@
 The Plones Templer
 ##################
 :date: 2012-07-12 20:48
-:category: Plone, Python
+:tags: Plone, Python
+:category: Plone
 
 (c.f. Knights Templar) I think we have a situation that could use the
 help of the Plone and Python communities at large. It goes something

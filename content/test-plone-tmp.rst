@@ -1,7 +1,8 @@
 test-plone `tmp`
 ################
 :date: 2012-04-04 14:14
-:category: Plone, Python
+:tags: Plone, Python
+:category: Plone
 
 Since Day 1 with Plone circa 2004, I've always taken pride in and
 greatly enjoyed refining my development environment. It's been stable

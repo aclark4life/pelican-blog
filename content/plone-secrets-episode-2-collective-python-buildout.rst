@@ -1,7 +1,8 @@
 Plone secrets: Episode 2 - Collective Python buildout
 #####################################################
 :date: 2011-07-06 12:45
-:category: Plone, Python
+:tags: Plone, Python
+:category: Plone
 
 You know who uses the (Plone) Collective Python buildout? Me neither,
 because we don't have any good statistics on its use (that I know of).

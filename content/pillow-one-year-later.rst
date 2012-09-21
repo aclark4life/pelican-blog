@@ -1,7 +1,8 @@
 Pillow: one year later
 ######################
 :date: 2011-10-14 13:11
-:category: Plone, Python
+:tags: Plone, Python
+:category: Plone
 
 *For anyone unfamiliar with Pillow, it is the "friendly PIL fork": a
 fork of PIL that aims to remain a good citizen in the PIL community

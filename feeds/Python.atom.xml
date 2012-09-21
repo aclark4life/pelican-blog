@@ -66,7 +66,80 @@ here:&amp;nbsp;`http://docs.pythonpackages.com/en/latest/github-service.html`_.&
 &lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/pythonpackages-com-new-github-service-git-push-to-release.rst&lt;/tt&gt;, line 12); &lt;em&gt;&lt;a href="#id2"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 Unknown target name: &amp;quot;|image0|&amp;quot;.&lt;/div&gt;
 &lt;/div&gt;
-</summary></entry><entry><title>Building Windows Installers In The Cloud</title><link href="http://blog.aclark.net/building-windows-installers-in-the-cloud.html" rel="alternate"></link><updated>2012-08-01T22:19:00+02:00</updated><author><name>aclark@aclark.net</name></author><id>tag:blog.aclark.net,2012-08-01:building-windows-installers-in-the-cloud.html</id><summary type="html">&lt;p&gt;With pythonpackages.com, I want to solve real problems for people today.
+</summary></entry><entry><title>pythonpackages.com: Using PyPI&amp;#039;s OAuth1 support to register and upload packages</title><link href="http://blog.aclark.net/pythonpackagescom-using-pypi039s-oauth1-support-to-register-and-upload-packages.html" rel="alternate"></link><updated>2012-08-07T05:16:00+02:00</updated><author><name>aclark@aclark.net</name></author><id>tag:blog.aclark.net,2012-08-07:pythonpackagescom-using-pypi039s-oauth1-support-to-register-and-upload-packages.html</id><summary type="html">&lt;p&gt;&lt;strong&gt;*TL;DR&lt;/strong&gt; PyPI has OAuth1 support; pythonpackages.com uses it to send
+your GitHub repos to PyPI.* Thanks in very large part to &lt;a class="reference external" href="https://twitter.com/r1chardj0n3s"&gt;Richard
+Jones&lt;/a&gt;, the Python Package Index now has support for registering and
+uploading packages via OAuth1. And using his &lt;a class="reference external" href="https://gist.github.com/0d46c48b230e61e18479"&gt;sample code&lt;/a&gt; I was able
+to take advantage of it on pythonpackages.com. The result is a fairly
+&lt;strong&gt;elegant approach to releasing packages&lt;/strong&gt; sans dirty hacks (I had been
+asking users for their username and password, then storing them in an
+encrypted session cookies so I could send them to PyPI.) Here's how it
+works now.&lt;/p&gt;
+&lt;div class="section" id="sign-in-with-github"&gt;
+&lt;h2&gt;Sign In With GitHub&lt;/h2&gt;
+&lt;p&gt;GitHub provides an easy way to let folks sign in to pythonpackages.com
+with their APIv3. I was able to code the OAuth dance using only the
+requests library (HT Kenneth Reitz). This was working as of late 2011.
+&lt;a href="#id1"&gt;&lt;span class="problematic" id="id2"&gt;`|image0|`_&lt;/span&gt;&lt;/a&gt; &lt;a href="#id3"&gt;&lt;span class="problematic" id="id4"&gt;`|image1|`_&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="select-a-package"&gt;
+&lt;h2&gt;Select a package&lt;/h2&gt;
+&lt;p&gt;Once you are signed in, you can select a package. Selected packages can
+perform various actions, one of which is &lt;strong&gt;Tag and Release&lt;/strong&gt;.
+&lt;a href="#id5"&gt;&lt;span class="problematic" id="id6"&gt;`|image2|`_&lt;/span&gt;&lt;/a&gt; As soon as you select Tag and Release, you are required to
+authenticate with PyPI.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="strikeout-enter-your-pypi-credentials"&gt;
+&lt;h2&gt;[STRIKEOUT:Enter your PyPI credentials]&lt;/h2&gt;
+&lt;p&gt;In order to get the beta out the door, a dirty hack was added to allow
+users to enter their PyPI credentials. Credentials were saved in an
+encrypted session cookie, then written out to .pypirc before calling
+`python setup.py upload`. Really terrible. This was shipped in early
+July 2012 and is thankfully no longer necessary (though it is &lt;a class="reference external" href="http://docs.pythonpackages.com/en/latest/security.html#github-credentials"&gt;still
+necessary to push the initial commit to GitHub.&lt;/a&gt;)&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="authorize-pythonpackages-com"&gt;
+&lt;h2&gt;Authorize pythonpackages.com&lt;/h2&gt;
+&lt;p&gt;Now authorization can happen elegantly via OAuth1. First, sign in to
+PyPI. Then authorize pythonpackages.com to act on your behalf. Lastly,
+profit (register and upload your package). &lt;a href="#id7"&gt;&lt;span class="problematic" id="id8"&gt;`|image3|`_&lt;/span&gt;&lt;/a&gt; &lt;a href="#id9"&gt;&lt;span class="problematic" id="id10"&gt;`|image4|`_&lt;/span&gt;&lt;/a&gt;
+&lt;a href="#id11"&gt;&lt;span class="problematic" id="id12"&gt;`|image5|`_&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="register-and-upload-your-package"&gt;
+&lt;h2&gt;Register and upload your package&lt;/h2&gt;
+&lt;p&gt;At this point you are free to tag and release. &lt;a href="#id13"&gt;&lt;span class="problematic" id="id14"&gt;`|image6|`_&lt;/span&gt;&lt;/a&gt; &lt;a href="#id15"&gt;&lt;span class="problematic" id="id16"&gt;`|image7|`_&lt;/span&gt;&lt;/a&gt;
+I am really excited about this. I began fantasizing about it almost a
+year ago and after several false starts (pypissh, openid, avoidance) it
+is now a reality. If you have a minute, please &lt;a class="reference external" href="https://pythonpackages.com/signup"&gt;give it a try&lt;/a&gt;.&lt;/p&gt;
+&lt;/p&gt;&lt;/div&gt;
+&lt;div class="system-messages section"&gt;
+&lt;h2&gt;Docutils System Messages&lt;/h2&gt;
+&lt;div class="system-message" id="id1"&gt;
+&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/pythonpackages-com-using-pypis-oauth1-support-to-register-and-upload-packages.rst&lt;/tt&gt;, line 20); &lt;em&gt;&lt;a href="#id2"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+Unknown target name: &amp;quot;|image0|&amp;quot;.&lt;/div&gt;
+&lt;div class="system-message" id="id3"&gt;
+&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/pythonpackages-com-using-pypis-oauth1-support-to-register-and-upload-packages.rst&lt;/tt&gt;, line 20); &lt;em&gt;&lt;a href="#id4"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+Unknown target name: &amp;quot;|image1|&amp;quot;.&lt;/div&gt;
+&lt;div class="system-message" id="id5"&gt;
+&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/pythonpackages-com-using-pypis-oauth1-support-to-register-and-upload-packages.rst&lt;/tt&gt;, line 28); &lt;em&gt;&lt;a href="#id6"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+Unknown target name: &amp;quot;|image2|&amp;quot;.&lt;/div&gt;
+&lt;div class="system-message" id="id7"&gt;
+&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/pythonpackages-com-using-pypis-oauth1-support-to-register-and-upload-packages.rst&lt;/tt&gt;, line 46); &lt;em&gt;&lt;a href="#id8"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+Unknown target name: &amp;quot;|image3|&amp;quot;.&lt;/div&gt;
+&lt;div class="system-message" id="id9"&gt;
+&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/pythonpackages-com-using-pypis-oauth1-support-to-register-and-upload-packages.rst&lt;/tt&gt;, line 46); &lt;em&gt;&lt;a href="#id10"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+Unknown target name: &amp;quot;|image4|&amp;quot;.&lt;/div&gt;
+&lt;div class="system-message" id="id11"&gt;
+&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/pythonpackages-com-using-pypis-oauth1-support-to-register-and-upload-packages.rst&lt;/tt&gt;, line 46); &lt;em&gt;&lt;a href="#id12"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+Unknown target name: &amp;quot;|image5|&amp;quot;.&lt;/div&gt;
+&lt;div class="system-message" id="id13"&gt;
+&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/pythonpackages-com-using-pypis-oauth1-support-to-register-and-upload-packages.rst&lt;/tt&gt;, line 54); &lt;em&gt;&lt;a href="#id14"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+Unknown target name: &amp;quot;|image6|&amp;quot;.&lt;/div&gt;
+&lt;div class="system-message" id="id15"&gt;
+&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/pythonpackages-com-using-pypis-oauth1-support-to-register-and-upload-packages.rst&lt;/tt&gt;, line 54); &lt;em&gt;&lt;a href="#id16"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+Unknown target name: &amp;quot;|image7|&amp;quot;.&lt;/div&gt;
+&lt;/div&gt;
+</summary><category term="Plone"></category><category term="Python"></category></entry><entry><title>Building Windows Installers In The Cloud</title><link href="http://blog.aclark.net/building-windows-installers-in-the-cloud.html" rel="alternate"></link><updated>2012-08-01T22:19:00+02:00</updated><author><name>aclark@aclark.net</name></author><id>tag:blog.aclark.net,2012-08-01:building-windows-installers-in-the-cloud.html</id><summary type="html">&lt;p&gt;With pythonpackages.com, I want to solve real problems for people today.
 So here's a proof of concept for building Windows installers quickly and
 easily &amp;quot;in the cloud&amp;quot; (i.e. without a Windows machine local). This
 article is mostly about the back end, as the front end is &lt;a class="reference external" href="http://docs.pythonpackages.com/en/latest/introduction.html"&gt;already
@@ -368,4 +441,140 @@ Unknown target name: &amp;quot;|image5|&amp;quot;.&lt;/div&gt;
 &lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/introducing-pythonpackages-com.rst&lt;/tt&gt;, line 76); &lt;em&gt;&lt;a href="#id12"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 Unknown target name: &amp;quot;|image6|&amp;quot;.&lt;/div&gt;
 &lt;/div&gt;
-</summary></entry></feed>
+</summary></entry><entry><title>You&amp;#039;re so vain, so why not use Vanity?</title><link href="http://blog.aclark.net/you039re-so-vain-so-why-not-use-vanity.html" rel="alternate"></link><updated>2011-06-16T12:01:00+02:00</updated><author><name>aclark@aclark.net</name></author><id>tag:blog.aclark.net,2011-06-16:you039re-so-vain-so-why-not-use-vanity.html</id><summary type="html">&lt;p&gt;A few months ago I created a package called &lt;strong&gt;Vanity&lt;/strong&gt;[0] that
+provides easy access to package download statistics from &lt;strong&gt;PyPI&lt;/strong&gt;. You
+can find the source code here: &lt;a class="reference external" href="https://github.com/aclark4life/vanity"&gt;https://github.com/aclark4life/vanity&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;I love this tool, and I use it all the time to gauge the value of a
+package. Of course, downloads are only one criteria you can use to judge
+the value of a package, and arguably not even a very good one.
+&lt;strong&gt;Vanity&lt;/strong&gt; itself is a good example of this phenomenon. I find it
+incredibly useful, but in it's history it has only been downloaded &lt;em&gt;130&lt;/em&gt;
+times.&lt;/p&gt;
+&lt;p&gt;Other packages I have created with much less value have been downloaded
+more times, e.g. &lt;strong&gt;plonetheme.aclark_twitter&lt;/strong&gt; which has been
+downloaded&amp;nbsp; &lt;em&gt;674&lt;/em&gt; times. But that package has also been around much
+longer. So obviously another useful metric would be the &lt;em&gt;time period&lt;/em&gt;
+during which the downloads occurred.&lt;/p&gt;
+&lt;p&gt;&lt;p&gt;Anyway, here is how it works:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+$ easy_install vanity
+&lt;/pre&gt;
+&lt;p&gt;Then:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+$ vanity &amp;lt;package&amp;gt;
+&lt;/pre&gt;
+&lt;p&gt;For example:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+$ vanity vanity
+Package `vanity` has been downloaded 130 times!
+&lt;/pre&gt;
+&lt;p&gt;Or:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+$ vanity plonetheme.aclark_twitter
+Package `plonetheme.aclark_twitter` has been downloaded 674 times!
+&lt;/pre&gt;
+&lt;p&gt;Some of my other favorites:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+$ vanity Django[1]
+Package `Django` has been downloaded 302111 times!
+&lt;/pre&gt;
+&lt;pre class="literal-block"&gt;
+$ vanity zope.component
+Package `zope.component` has been downloaded 210541 times!
+&lt;/pre&gt;
+&lt;pre class="literal-block"&gt;
+$ vanity pyramid
+Package `pyramid` has been downloaded 26067 times!
+&lt;/pre&gt;
+&lt;p&gt;Another thing to consider is if hitting &lt;strong&gt;PyPI&lt;/strong&gt; each time is really
+necessary. I'm told there is &lt;strong&gt;PyPI&lt;/strong&gt; data living somewhere else, and in
+future versions I would like to make vanity use that data by default.&lt;/p&gt;
+&lt;/p&gt;&lt;p&gt;So, this post is simply to announce &lt;strong&gt;Vanity&lt;/strong&gt; to a wider audience in
+the event that some folks may find it useful. Otherwise, I will be happy
+to continue to watch &lt;strong&gt;Vanity&lt;/strong&gt; downloads crawl ever so slowly towards
+200. :-)&lt;/p&gt;
+&lt;div class="section" id="notes"&gt;
+&lt;h2&gt;Notes&lt;/h2&gt;
+&lt;p&gt;[0] By standing on the shoulders of some Plone giants, &lt;a class="reference external" href="http://davisagli.com/"&gt;David Glick,&lt;/a&gt;
+in particular.&lt;/p&gt;
+&lt;/p&gt;&lt;p&gt;[1] There is a &lt;a class="reference external" href="https://github.com/aclark4life/vanity/issues/1"&gt;known issue&lt;/a&gt; with regard to making Vanity case
+insensitive.&lt;/p&gt;
+&lt;/div&gt;
+</summary><category term="Plone"></category><category term="Python"></category></entry><entry><title>In Defense of PyPI</title><link href="http://blog.aclark.net/in-defense-of-pypi.html" rel="alternate"></link><updated>2011-01-31T09:19:00+01:00</updated><author><name>aclark@aclark.net</name></author><id>tag:blog.aclark.net,2011-01-31:in-defense-of-pypi.html</id><summary type="html">&lt;p&gt;Everyone on the &lt;em&gt;Python Planet&lt;/em&gt; is probably already familiar with Peter
+Fein's recent article &lt;a class="reference external" href="http://blog.wearpants.org/elitism-and-the-importance-of-pypi"&gt;about PyPI use (or lack thereof).&lt;/a&gt; But in case
+not, particularly striking was the number of folks who joined the &amp;quot;PyPI
+bashing&amp;quot; in the comments. In fact, it has inspired me to write this post
+&amp;quot;in defense of PyPI&amp;quot;. I would like to offer the Python community a
+summary of what I think are the general criticisms, along with my
+responses as a &amp;quot;sysadmin / developer type&amp;quot;.&lt;/p&gt;
+&lt;p&gt;First let me say this: I love PyPI! And I agree with Peter, if your
+package isn't on PyPI it&amp;nbsp; &amp;quot;doesn't exist&amp;quot;. I wouldn't put it quite like
+that; but I would say it's fairly important if you are publishing open
+source Python code, to consider uploading it to the Python Package
+Index.&lt;/p&gt;
+&lt;p&gt;Why?&lt;/p&gt;
+&lt;div class="section" id="because-everybody-wins"&gt;
+&lt;h2&gt;Because Everybody Wins&lt;/h2&gt;
+&lt;p&gt;Believe it or not, the general Python community is interested in seeing
+your code. Whether to use it for an example, or to avoid reinventing the
+wheel, or whatever the reason; we'd like a chance to see your code. But
+if you don't publish it to PyPI, we may never get that chance!&lt;/p&gt;
+&lt;/p&gt;&lt;p&gt;For better or worse, PyPI is the canonical place on Earth for Python
+packages. It's the CPAN of Python. I understand that not everyone is
+100% comfortable with this, but that doesn't make it any less true. If
+you accept that &amp;quot;open source is good&amp;quot;, and that &amp;quot;Python rules&amp;quot;, then you
+simply must take this next leap of faith: &amp;quot;PyPI is &lt;em&gt;the&lt;/em&gt; place for
+Python packages&amp;quot;.&lt;/p&gt;
+&lt;p&gt;[waves hand]&lt;/p&gt;
+&lt;p&gt;Moving on, why else should you consider uploading your packages to PyPI?&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="because-it-is-the-right-thing-to-do"&gt;
+&lt;h2&gt;Because It Is The &amp;quot;Right&amp;quot; Thing To Do&lt;/h2&gt;
+&lt;p&gt;Another thing that struck me is the number of folks who (appear to)
+confuse &amp;quot;version control&amp;quot; with &amp;quot;distribution&amp;quot;. If I'm not mistaken,
+Launchpad, Github, and Bitbucket are primarily designed for Bazaar, Git,
+and Mercurial hosting respectively. These sites can host your
+distribution tarballs, but they certainly weren't &lt;em&gt;designed and built&lt;/em&gt;
+to do so. Rather, they were designed and built to host your source code.&lt;/p&gt;
+&lt;/p&gt;&lt;p&gt;In some cases, a project may wish to host it's own &lt;a class="reference external" href="http://dist.plone.org/"&gt;distribution
+server&lt;/a&gt;. Whether it be for redundancy (although PyPI has begun to
+tackle this) or &amp;quot;branding&amp;quot; or other reasons, I would argue this is the
+preferred way of handling it: &lt;em&gt;in addition to uploading to PyPI, not in
+place of it&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;Why?&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="because-it-is-not-that-hard"&gt;
+&lt;h2&gt;Because It Is Not That Hard&lt;/h2&gt;
+&lt;p&gt;Ahem… we get it. The situation with easy_install is &amp;quot;less than ideal&amp;quot;.
+But this is something to be fixed, not avoided. If you are receiving too
+many support requests, may I suggest &lt;a class="reference external" href="http://blog.jazkarta.com/2010/05/15/installing-plone-without-buildout/#comment-162"&gt;simply telling people not to use
+easy_install&lt;/a&gt;. Or, if the problem is proper packaging, learn how to
+&lt;a class="reference external" href="http://groups.google.com/group/pylons-devel/msg/abfe9e7a43f62594"&gt;test your packages&lt;/a&gt; before uploading them. Due to the large number of
+screwed up releases I've made, I've come to rely on a&lt;a class="reference external" href="http://pypi.python.org/pypi/Products.PloneSoftwareCenter"&gt;local PyPI&lt;/a&gt; and
+a virtualenv to test installations. Others use &lt;a class="reference external" href="http://groups.google.com/group/pylons-devel/msg/696c69843eecd026"&gt;even simpler methods&lt;/a&gt;.
+And with tools like &lt;a class="reference external" href="http://pypi.python.org/pypi/jarn.mkrelease"&gt;mkrelease,&lt;/a&gt; it's easy to upload your package to
+multiple PyPI locations with just a single command (although
+leaping-tall-buildings-in-a single-bound is not yet supported.)&lt;/p&gt;
+&lt;/p&gt;&lt;p&gt;The point is, please consider helping the community fix the problem
+rather than simply avoiding it. There are folks &lt;a class="reference external" href="http://wiki.python.org/moin/Distutils/SprintParis"&gt;actively trying to
+improve the situation&lt;/a&gt; right now.&lt;/p&gt;
+&lt;p&gt;Let's see, what else?&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="because-it-does-not-have-to-be-perfect"&gt;
+&lt;h2&gt;Because It Does Not Have To Be Perfect&lt;/h2&gt;
+&lt;p&gt;Over the years I've seen various and sundry criticisms of the PyPI user
+interface. Fine. I have not looked into the current development process,
+but I assume the author/maintainers would be open to some constructive
+criticism and/or development assistance.&lt;/p&gt;
+&lt;/p&gt;&lt;p&gt;It doesn't have to be Github-sexy to be useful. If you would like to
+report a bug or feature request, do it &lt;a class="reference external" href="http://sourceforge.net/tracker/?group_id=66150"&gt;here&lt;/a&gt; (at least, I think that
+is the right place.)&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="conclusion"&gt;
+&lt;h2&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;I hope this convinces at least some folks to consider uploading their
+packages to PyPI. If it doesn't, please let me know why in the comments.&lt;/p&gt;
+&lt;/p&gt;&lt;p&gt;&lt;em&gt;Did you enjoy reading this article? If so, please consider `helping me
+help Plone`_.&lt;/em&gt;&lt;/p&gt;
+&lt;/div&gt;
+</summary><category term="Plone"></category><category term="Python"></category></entry></feed>

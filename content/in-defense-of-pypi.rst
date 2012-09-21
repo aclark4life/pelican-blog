@@ -1,7 +1,8 @@
 In Defense of PyPI
 ##################
 :date: 2011-01-31 09:19
-:category: Plone, Python
+:tags: Plone, Python
+:category: Python
 
 Everyone on the *Python Planet* is probably already familiar with Peter
 Fein's recent article `about PyPI use (or lack thereof).`_ But in case

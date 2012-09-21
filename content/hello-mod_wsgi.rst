@@ -1,7 +1,8 @@
 Hello mod_wsgi
 ##############
 :date: 2011-08-28 20:43
-:category: Plone, Python
+:tags: Plone, Python
+:category: Plone
 
 It seems I've inadvertently started another series of blog entry:  the
 "hello world" series, wherein I explain how to easily get started with
