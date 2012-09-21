@@ -24,7 +24,9 @@ to work when 2.x is released) in the 1.6.x series.&lt;/p&gt;
 software with just a few clicks.&lt;/em&gt;&lt;/p&gt;
 &lt;div class="section" id="pyformance-0-2"&gt;
 &lt;h2&gt;pyformance 0.2&lt;/h2&gt;
-&lt;p&gt;pythonpackages.com recently processed it's first official release via the &lt;a class="reference external" href="http://blog.aclark.net/2012/08/10/pythonpackages-com-new-github-service-git-push-to-release/"&gt;new GitHub Service&lt;/a&gt;. &lt;a href="#id1"&gt;&lt;span class="problematic" id="id2"&gt;`|image0|`_&lt;/span&gt;&lt;/a&gt; As such, we are celebrating the release of &lt;a class="reference external" href="https://github.com/omergertel/pyformance"&gt;pyformance&lt;/a&gt; 0.2! According to the author &lt;a class="reference external" href="https://twitter.com/omergertel"&gt;Omer Gertel&lt;/a&gt;:&lt;/p&gt;
+&lt;p&gt;pythonpackages.com recently processed it's first official release via the &lt;a class="reference external" href="http://blog.aclark.net/2012/08/10/pythonpackages-com-new-github-service-git-push-to-release/"&gt;new GitHub Service&lt;/a&gt;.&lt;/p&gt;
+&lt;img alt="http://aclark4life.files.wordpress.com/2012/08/screen-shot-2012-08-13-at-9-00-05-am.png?w=300" src="http://aclark4life.files.wordpress.com/2012/08/screen-shot-2012-08-13-at-9-00-05-am.png?w=300" /&gt;
+&lt;p&gt;As such, we are celebrating the release of &lt;a class="reference external" href="https://github.com/omergertel/pyformance"&gt;pyformance&lt;/a&gt; 0.2! According to the author &lt;a class="reference external" href="https://twitter.com/omergertel"&gt;Omer Gertel&lt;/a&gt;:&lt;/p&gt;
 &lt;pre class="literal-block"&gt;
 It's a straight forward port of Coda Hale's fantastic metrics
 package (originally for java). I don't have all of it ported yet,
@@ -39,12 +41,6 @@ GitHub:&lt;/p&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;&lt;a class="reference external" href="https://github.com/omergertel/pyformance"&gt;https://github.com/omergertel/pyformance&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/div&gt;
-&lt;div class="system-messages section"&gt;
-&lt;h2&gt;Docutils System Messages&lt;/h2&gt;
-&lt;div class="system-message" id="id1"&gt;
-&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/pythonpackages-com-pyformance-0-2.rst&lt;/tt&gt;, line 12); &lt;em&gt;&lt;a href="#id2"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
-Unknown target name: &amp;quot;|image0|&amp;quot;.&lt;/div&gt;
 &lt;/div&gt;
 </summary><category term="Python"></category></entry><entry><title>pythonpackages.com: New GitHub Service &amp;quot;git push to release&amp;quot;</title><link href="http://blog.aclark.net/pythonpackagescom-new-github-service-quotgit-push-to-releasequot.html" rel="alternate"></link><updated>2012-08-10T05:50:00Z</updated><author><name>Alex Clark</name></author><id>tag:blog.aclark.net,2012-08-10:pythonpackagescom-new-github-service-quotgit-push-to-releasequot.html</id><summary type="html">&lt;p&gt;&lt;em&gt;pythonpackages.com helps Python programmers package and release their
 software with just a few clicks.&lt;/em&gt;&lt;/p&gt;
