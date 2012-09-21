@@ -22,8 +22,10 @@ SOCIAL = (
     ('atom feed (Mozilla)', 'http://blog.aclark.net/Mozilla.atom.xml'),
     ('atom feed (Plone)', 'http://blog.aclark.net/Plone.atom.xml'),
     ('atom feed (Python)', 'http://blog.aclark.net/Python.atom.xml'),
-    ('Twitter', 'http://twitter.com/aclark4life'),
+    ('ACLARK.NET, LLC', 'http://aclark.net'),
     ('GitHub', 'http://github.com/aclark4life'),
+    ('PythonPackages', 'http://pythonpackages.com'),
+    ('Twitter', 'http://twitter.com/aclark4life'),
 )
 
 DEFAULT_PAGINATION = 10
