@@ -28,7 +28,7 @@ Instructions
 -  On the Python Package Index, authorize pythonpackages.com to act on your behalf, as explained here: http://blog.aclark.net/pythonpackagescom-using-pypi039s-oauth1-support-to-register-and-upload-packages.html (**pythonpackages.com -> Dashboard -> Manage accounts -> PyPI -> Authorize**).
 -  On GitHub, configure the PythonPackages service to be Active on any repository that contains a Python package you want to release (**Repo -> Admin -> Service Hooks -> PythonPackages -> [\*] Active**).
 
-Now you can git push to release! If you have any trouble, please `open a ticket`_. *These instructions will live permanently here: http://docs.pythonpackages.com/en/latest/github-service.html.*
+Now you can git push to release! If you have any trouble, please `open a ticket`_. These instructions will live permanently here: http://docs.pythonpackages.com/en/latest/github-service.html.
 
 .. _GitHub Service: https://github.com/github/github-services
 .. _`http://pythonpackages.com/signup`: http://pythonpackages.com/signup
