@@ -75,7 +75,7 @@ All the details are here if you'd like to take a look:
 
 - https://github.com/ACLARKNET/aclarknet.github.com/commits/master
 
-Comments from more knowledgable Pelican users welcome! Like this article? Tip me on Gittip!
+Comments from more knowledgable Pelican users welcome. Like this article? Tip me on Gittip!
 
 .. raw:: html
 

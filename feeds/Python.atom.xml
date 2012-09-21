@@ -59,7 +59,7 @@ $ make publish; git commit -a -m &amp;quot;Publish&amp;quot;; git push
 &lt;ul class="simple"&gt;
 &lt;li&gt;&lt;a class="reference external" href="https://github.com/ACLARKNET/aclarknet.github.com/commits/master"&gt;https://github.com/ACLARKNET/aclarknet.github.com/commits/master&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Comments from more knowledgable Pelican users welcome! Like this article? Tip me on Gittip!&lt;/p&gt;
+&lt;p&gt;Comments from more knowledgable Pelican users welcome. Like this article? Tip me on Gittip!&lt;/p&gt;
 &lt;iframe style="border: 0; margin: 0; padding: 0;"
     src="https://www.gittip.com/aclark4life/widget.html"
     width="48pt" height="20pt"&gt;&lt;/iframe&gt;&lt;table class="docutils footnote" frame="void" id="id3" rules="none"&gt;
