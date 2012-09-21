@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Alex Clark</title><link href="http://blog.aclark.net/" rel="alternate"></link><link href="http://blog.aclark.net/feeds/Mozilla.atom.xml" rel="self"></link><id>http://blog.aclark.net/</id><updated>2011-10-03T17:25:00+02:00</updated><entry><title>Vagrant, Puppet and Mozilla, oh my!</title><link href="http://blog.aclark.net/vagrant-puppet-and-mozilla-oh-my.html" rel="alternate"></link><updated>2011-10-03T17:25:00+02:00</updated><author><name>aclark@aclark.net</name></author><id>tag:blog.aclark.net,2011-10-03:vagrant-puppet-and-mozilla-oh-my.html</id><summary type="html">&lt;p&gt;&lt;em&gt;Warning: This post is only loosely Python related and not at all Plone
+related, but I thought folks might enjoy hearing about Vagrant and
+Puppet because these tools may help you do your Plone and Python jobs
+better.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;For the past couple weeks I've been working on creating a virtual
+machine to bootstrap a kitsune environment. Kitsune is the Django site
+that powers support.mozilla.com. I've now reached what I call the &lt;strong&gt;2nd
+milestone&lt;/strong&gt;.&lt;/p&gt;
+&lt;div class="section" id="milestones"&gt;
+&lt;h2&gt;Milestones&lt;/h2&gt;
+&lt;p&gt;The milestones are as follows:&lt;/p&gt;
+&lt;ol class="arabic simple"&gt;
+&lt;li&gt;Get the VM running to the point where one can type &lt;strong&gt;./manage.py&lt;/strong&gt;
+and receive the help output (and not a traceback). This sounds
+trivial but there is actually a lot of work involved to get to this
+point. Namely, figuring out how to make &lt;a class="reference external" href="http://puppetlabs.com/"&gt;Puppet&lt;/a&gt; execute each of the
+required steps successfully, together. (You would expect to be able
+to just define the steps in order, but those with this expectation
+will be disappointed. I assume Puppet has their reasons, and they are
+probably even good ones. :-))&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Get the VM running to the point where one can open
+http://33.33.33.10:8000 from the host to see kitsune running. Once
+step #1 is done, this is actually easier than it sounds because I'm
+&amp;quot;cheating&amp;quot;. Test data has been imported and a syncdb has been run,
+but I'm using supervisor to manage the runserver process (for now).&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Get the VM running like it does in production. This will involve
+configuring &lt;strong&gt;Apache&lt;/strong&gt;and &lt;strong&gt;mod_wsgi&lt;/strong&gt; as well as resolving any
+issues that remain with the app. I'll rely on the kitsune team to
+help with this, as I'm still learning the app. This is the &amp;quot;exciting&amp;quot;
+part for me because I get to learn something new. While Vagrant and
+Puppet are also new to me, I consider these technologies part of my
+&amp;quot;past life&amp;quot; (as a system administrator) and Django sites part of my
+&amp;quot;future life&amp;quot; (as a web developer).&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Now about the technologies.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="vagrant"&gt;
+&lt;h2&gt;Vagrant&lt;/h2&gt;
+&lt;p&gt;I had heard of &lt;a class="reference external" href="http://vagrantup.com/"&gt;Vagrant&lt;/a&gt; before, but never tried it. I am now sorry I
+waited so long because the &amp;quot;cool factor&amp;quot; is very high. It requires that
+&lt;a class="reference external" href="https://www.virtualbox.org/"&gt;Virtualbox&lt;/a&gt; be installed, which I also danced around for too long
+before committing (being a former Parallels user).&lt;/p&gt;
+&lt;/p&gt;&lt;p&gt;&lt;p&gt;On OS X Lion[1], installing Vagrant is simply a matter of:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+$ gem install vagrant
+&lt;/pre&gt;
+&lt;p&gt;Once you have `vagrant` installed you can do:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+$ vagrant init
+&lt;/pre&gt;
+&lt;p&gt;inside some revision-controlled directory and you have the beginnings of
+a virtual machine you can share with the masses. This is how
+&lt;a class="reference external" href="https://github.com/aclark4life/kitsune-vagrant"&gt;kitsune-vagrant&lt;/a&gt; was born. Hopefully this shared virtual machine will
+eventually make some new developer's life much easier.&lt;/p&gt;
+&lt;/p&gt;&lt;p&gt;We now arrive at a fork in the road; though Vagrant makes it easy to
+follow both paths: Chef or Puppet (it supports both). I don't recall
+what made me choose Puppet over Chef, but it might have been that the
+&lt;a class="reference external" href="https://github.com/rhelmer/socorro-vagrant"&gt;Socorro folks were using it already&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Once you decide on Puppet (and assuming you do), it's pretty easy to
+figure out that your next move is to create a manifest file for Puppet
+to apply[2].&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="puppet"&gt;
+&lt;h2&gt;Puppet&lt;/h2&gt;
+&lt;p&gt;My knowledge of Puppet is currently quite limited. Specifically, I only
+know how to create a manifest file. (Vagrant does the rest!) I imagine
+there is much more to Puppet, especially with regard to doing actual
+configuration management on production servers. But I have not explored
+any of that yet.&lt;/p&gt;
+&lt;/p&gt;&lt;p&gt;However, I did learn quite a bit about Puppet just from writing the
+manifest. The first most important thing I learned is this: &lt;strong&gt;Puppet is
+in charge&lt;/strong&gt;. It does things the way it wants to and you need to follow
+its rules. The first and biggest challenge is to achieve a linear
+execution of tasks.&lt;/p&gt;
+&lt;p&gt;You cannot write rules in order and hope for the best. This will fail
+spectacularly when something executes before something else was supposed
+to. The way around this is via `require =&amp;gt;` statements.&lt;/p&gt;
+&lt;p&gt;&lt;p&gt;A grep through kitsune.pp reveals:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+require =&amp;gt; Exec['git_clone'],
+require =&amp;gt; Exec['db_sync'],
+require =&amp;gt; Exec['packages_upgrade'],
+require =&amp;gt; Exec['packages_update'],
+require =&amp;gt; Package[$packages_native],
+require =&amp;gt; Exec['git_clone'],
+require =&amp;gt; Exec['chown_kitsune'],
+require =&amp;gt; Exec['packages_compiled'],
+require =&amp;gt; Exec['packages_vendor'],
+require =&amp;gt; Exec['db_create'],
+require =&amp;gt; Exec['db_import'],
+require =&amp;gt; file['/etc/supervisor/supervisord.conf'],
+require =&amp;gt; Exec['supervisor_stop'],
+&lt;/pre&gt;
+&lt;p&gt;This roughly translates to the following workflow logic:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;Ensure that `aptitude -y update; aptitude -y upgrade` have been run
+before you try to install the list of packages we require.&lt;/li&gt;
+&lt;li&gt;Ensure the list of packages we require is installed before we
+checkout the code.&lt;/li&gt;
+&lt;li&gt;Ensure the code has been checked out (and pip install / git submodule
+have been run) before you try to syncdb and run the application.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;There is a bit more to it, but with that knowledge you should be able to
+&lt;a class="reference external" href="https://github.com/aclark4life/kitsune-vagrant/blob/master/manifests/kitsune.pp"&gt;read and understand kitsune.pp in full&lt;/a&gt;. I learned most of the
+remaining required puppeteering from this
+site:&lt;a class="reference external" href="http://www.puppetcookbook.com/"&gt;http://www.puppetcookbook.com/&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="mozilla"&gt;
+&lt;h2&gt;Mozilla&lt;/h2&gt;
+&lt;p&gt;Oh my! This Mozilla work is a ton of fun[3]; I attribute this in part
+due to the structure of their organization: I was invited immediately to
+collaborate in IRC with the kitsune team and as a result, we all have
+something to show for it[4].&lt;/p&gt;
+&lt;p&gt;&lt;a href="#id3"&gt;&lt;span class="problematic" id="id4"&gt;`|image0|`_&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Next I will be working on the 3rd milestone! Hope to finish by the end
+of this week.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="notes"&gt;
+&lt;h2&gt;Notes&lt;/h2&gt;
+&lt;p&gt;[1] This did not work on Snow Leopard, because `gem` is too old.
+However if you `brew install ruby` and try again, it should work.&lt;/p&gt;
+&lt;/p&gt;&lt;p&gt;[2] I didn't bother to investigate Chef, but I am curious about it.&lt;/p&gt;
+&lt;p&gt;[3] And I hope this is only the beginning.&lt;/p&gt;
+&lt;p&gt;[4] I hope to get a Mozilla gig but even if I don't, being able to do
+this type of work is very rewarding (which is why you will often hear
+people in open source say that to get paid for the type of work they do
+is a dream come true :-)).&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="system-messages section"&gt;
+&lt;h2&gt;Docutils System Messages&lt;/h2&gt;
+&lt;div class="system-message" id="id3"&gt;
+&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/vagrant-puppet-and-mozilla-oh-my.rst&lt;/tt&gt;, line 159); &lt;em&gt;&lt;a href="#id4"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+Unknown target name: &amp;quot;|image0|&amp;quot;.&lt;/div&gt;
+&lt;/div&gt;
+</summary><category term="Mozilla"></category><category term="Plone"></category><category term="Python"></category></entry><entry><title>Mozilla and PyPI</title><link href="http://blog.aclark.net/mozilla-and-pypi.html" rel="alternate"></link><updated>2011-09-22T12:03:00+02:00</updated><author><name>aclark@aclark.net</name></author><id>tag:blog.aclark.net,2011-09-22:mozilla-and-pypi.html</id><summary type="html">&lt;p&gt;The &lt;a class="reference external" href="http://blog.aclark.net/in-defense-of-pypi"&gt;last time I wrote about PyPI&lt;/a&gt; some folks mistook the subject to be
+&lt;a class="reference external" href="http://pypy.org/"&gt;PyPy&lt;/a&gt;, so let me be clear: this article is about the &lt;a class="reference external" href="http://pypi.python.org/pypi"&gt;Python Packaging
+Index&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;I recently began doing some volunteer work for Mozilla[1], working on a
+&lt;a class="reference external" href="https://github.com/aclark4life/kitsune-vagrant"&gt;virtual machine setup&lt;/a&gt; to make kitsune development easier (kitsune is
+the code name for the Django site that powers &lt;a class="reference external" href="http://support.mozilla.com"&gt;support.mozilla.com&lt;/a&gt;).&lt;/p&gt;
+&lt;div class="section" id="git-submodules"&gt;
+&lt;h2&gt;Git submodules&lt;/h2&gt;
+&lt;p&gt;In doing so, I came across an interesting command from their
+&lt;a class="reference external" href="https://github.com/jsocol/kitsune/blob/master/docs/installation.rst"&gt;installation docs&lt;/a&gt;:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+$ git submodule update --init --recursive
+&lt;/pre&gt;
+&lt;p&gt;I can recall some vague rumblings about git submodules prior to this
+incident, but nothing I'd call &amp;quot;familiarity&amp;quot;. So, I shrugged it off and
+went about the business of creating the VM (and resisting the urge to
+use &lt;a class="reference external" href="http://pypi.python.org/pypi/zc.buildout/1.5.2"&gt;zc.buildout&lt;/a&gt; to do it):&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;On day 1, I created a &lt;a class="reference external" href="http://virtualbox.org"&gt;VirtualBox&lt;/a&gt; VM using the latest Ubuntu Server
+and was able to assemble and run the application by following the
+instructions.&lt;/li&gt;
+&lt;li&gt;On day 2, I began to &lt;a class="reference external" href="http://vagrantup.com"&gt;&amp;quot;vagrantize&amp;quot;&lt;/a&gt; the process. Here I ran into a
+bit of trouble with the git-submodule command[2]. This led me to seek
+alternative methods to install the various Python packages it was
+trying to install (when stuck on a problem I often like to pursue the
+alternatives immediately, so I have them if I need them.)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="section" id="zamboni"&gt;
+&lt;h2&gt;Zamboni&lt;/h2&gt;
+&lt;p&gt;Then, in the Mozilla IRC channel #sumodev (&lt;strong&gt;su&lt;/strong&gt;pport &lt;strong&gt;mo&lt;/strong&gt;zilla)
+some nice Mozillian (willkg) pointed me to this gem:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://mozweb.readthedocs.org/en/latest/packaging.html"&gt;http://mozweb.readthedocs.org/en/latest/packaging.html&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href="#id2"&gt;&lt;span class="problematic" id="id3"&gt;`|http://www.flickr.com/photos/jadensmommy24/239370733/|`_&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/p&gt;&lt;p&gt;Which in turn led me to the following two links:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://jbalogh.github.com/zamboni/topics/packages/"&gt;http://jbalogh.github.com/zamboni/topics/packages/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://playdoh.readthedocs.org/en/latest/packages.html#packages"&gt;http://playdoh.readthedocs.org/en/latest/packages.html#packages&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Again, faint rumblings… this time about zamboni (not THAT Zamboni). I
+know I've heard of it, but I wouldn't call myself familiar with it. So,
+I innocently read the following:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;strong&gt;Python projects can incur a number of dependencies. ``pip`` can be
+handy, but we’ve had better luck with distributing a ``vendor``
+library.&lt;/strong&gt;&lt;/blockquote&gt;
+&lt;p&gt;At which point I immediately thought to myself:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;strong&gt;Yeah… I hear that.&lt;/strong&gt;&lt;/blockquote&gt;
+&lt;p&gt;Followed a few seconds later by&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;strong&gt;Wait… what?!?&lt;/strong&gt;&lt;/blockquote&gt;
+&lt;/div&gt;
+&lt;div class="section" id="playdoh"&gt;
+&lt;h2&gt;Playdoh&lt;/h2&gt;
+&lt;p&gt;Some time/research later[3], I (re)discovered that zamboni is the
+codename for &lt;a class="reference external" href="https://addons.mozilla.org"&gt;addons.mozilla.org&lt;/a&gt;[4]. And &lt;a class="reference external" href="http://playdoh.readthedocs.org/"&gt;Playdoh&lt;/a&gt; is the code name
+for Mozilla's base Django project setup. If you aren't familiar with
+Playdoh, please do give it a whirl[5].&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="pypi"&gt;
+&lt;h2&gt;PyPI&lt;/h2&gt;
+&lt;p&gt;While all of this is very, very interesting to me, I am primarily a
+&amp;quot;systems and processes&amp;quot; guy; and what ultimately stuck with me after two
+days of Mozilla-ing is the following blurb from the Playdoh packaging
+documentation:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;strong&gt;The ``/vendor`` library is supposed to contain all packages and
+repositories. It enables the project to be deployed as one package
+onto many machines, without relying on PyPI-based installations on
+each target machine.&lt;/strong&gt;&lt;/blockquote&gt;
+&lt;p&gt;&amp;quot;Nooooooooooooooo&amp;quot;, I am now saying to myself over and over. &amp;quot;Without
+relying on PyPI-based installations on each target machine.&amp;quot; Another
+&amp;quot;noooooooooooooooo!&amp;quot; :-) I certainly don't fault Mozilla for taking this
+approach, but it makes me sad that large organizations like Mozilla are
+passing over PyPI in favor of alternative methods of distributing Python
+software.&lt;/p&gt;
+&lt;/p&gt;&lt;p&gt;Let us all now hang our heads, for a moment of pause and reflection.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;[a minute passes]&lt;/em&gt;&lt;/p&gt;
+&lt;/p&gt;&lt;/div&gt;
+&lt;div class="section" id="the-future"&gt;
+&lt;h2&gt;The future&lt;/h2&gt;
+&lt;p&gt;I can't speak for anyone else, but I would certainly like to see this
+change in the future. I would LOVE to see PyPI become a place that
+Mozilla felt confident it could use to deploy Python software. And this
+is something I'd love to work on &lt;em&gt;for&lt;/em&gt; Mozilla, if given the
+opportunity[6].&lt;/p&gt;
+&lt;div class="section" id="great-for-python-great-for-mozilla"&gt;
+&lt;h3&gt;Great for Python == great for Mozilla?&lt;/h3&gt;
+&lt;p&gt;It's obvious what's in it for Python, but what's in for Mozilla?&lt;/p&gt;
+&lt;/p&gt;&lt;p&gt;Simple.&lt;/p&gt;
+&lt;p&gt;I happen to share Mozilla's vision for an open web and open source in
+general. And it's great to see them embracing &amp;amp; using Python for their
+web projects! Without a doubt,&amp;nbsp; they are interested in giving back to
+the Python community (e.g. via Playdoh and the Django community, in this
+case.) So I suspect they'd be open to helping the Python community fix a
+long standing issue: the stability and reliability of the Python Package
+Index. It would certainly benefit them in the long run to simplify their
+build process to the point where git-submodule was no longer needed[7].&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="notes"&gt;
+&lt;h2&gt;Notes&lt;/h2&gt;
+&lt;p&gt;[1] I am actively courting Mozilla in hopes of landing a gig by the end
+of the year. So all you Mozillians who know me personally, please put in
+a good word! And all you Mozillians I have not met yet: nice to meet
+you! :-)&lt;/p&gt;
+&lt;/p&gt;&lt;p&gt;[2] The problem turned out to be git-submodule failing to run because
+things like: grep and sed were missing from the PATH. Easily fixed by
+modifying the puppet configuration, but not easily discovered because
+git-submodule itself returned zero! Some guy on #puppet was very helpful
+in getting me to print out debug info.&lt;/p&gt;
+&lt;p&gt;&lt;p&gt;[3] More help from friendly Mozillians in #webdev:&lt;/p&gt;
+&lt;blockquote&gt;
+11:13 &amp;lt; groovecoder&amp;gt; aclark: yeah, zamboni is amo 11:13 &amp;lt; kumar&amp;gt;
+playdoh was extracted from zamboni and other apps 11:13 &amp;lt; kumar&amp;gt; but
+zamboni itself does not eat the playdoh dog food, actually 11:15 &amp;lt;
+kumar&amp;gt; aclark also, in case you're not steeped in our initialisms,
+amo is addons.mozilla.org&lt;/blockquote&gt;
+&lt;p&gt;[4] There is a great presentation about it here:
+&lt;a class="reference external" href="http://www.slideshare.net/andymckay/anatomy-of-a-large-django-site-7590098"&gt;http://www.slideshare.net/andymckay/anatomy-of-a-large-django-site-7590098&lt;/a&gt;.)&lt;/p&gt;
+&lt;/p&gt;&lt;p&gt;&lt;p&gt;[5] More from kumar (emphasis is my own):&lt;/p&gt;
+&lt;blockquote&gt;
+11:25 &amp;lt; kumar&amp;gt; &lt;strong&gt;Playdoh is starting to stabilize&lt;/strong&gt; so it would be
+&lt;strong&gt;good to see some use of it outside Mozilla&lt;/strong&gt;; this would probably
+help us catch Mozilla-specific things that need extraction&lt;/blockquote&gt;
+&lt;p&gt;[6] LARGE HINT ;-)&lt;/p&gt;
+&lt;/p&gt;&lt;p&gt;[7] Again, not that there is anything wrong with what Mozilla is doing
+here. As a systems guy, I just happen to gravitate toward simplifying
+processes by eliminating steps.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="system-messages section"&gt;
+&lt;h2&gt;Docutils System Messages&lt;/h2&gt;
+&lt;div class="system-message" id="id2"&gt;
+&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/mozilla-and-pypi.rst&lt;/tt&gt;, line 47); &lt;em&gt;&lt;a href="#id3"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+Unknown target name: &amp;quot;|http://www.flickr.com/photos/jadensmommy24/239370733/|&amp;quot;.&lt;/div&gt;
+&lt;/div&gt;
+</summary><category term="Plone"></category><category term="Python"></category></entry></feed>
