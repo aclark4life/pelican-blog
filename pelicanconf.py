@@ -18,8 +18,13 @@ DEFAULT_LANG = 'en'
 #SOCIAL = (('You can add links in your config file', '#'),
 #          ('Another social link', '#'),)
 
-SOCIAL = (('Twitter', 'http://twitter.com/aclark4life'),
-          ('GitHub', 'http://github.com/aclark4life'),)
+SOCIAL = (
+    ('atom feed (Mozilla)', 'http://blog.aclark.net/Mozilla.atom.xml'),
+    ('atom feed (Plone)', 'http://blog.aclark.net/Plone.atom.xml'),
+    ('atom feed (Python)', 'http://blog.aclark.net/Python.atom.xml'),
+    ('Twitter', 'http://twitter.com/aclark4life'),
+    ('GitHub', 'http://github.com/aclark4life'),
+)
 
 DEFAULT_PAGINATION = 10
 
