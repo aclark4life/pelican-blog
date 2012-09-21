@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Alex Clark</title><link href="http://blog.aclark.net/" rel="alternate"></link><link href="http://blog.aclark.net/feeds/Mozilla.atom.xml" rel="self"></link><id>http://blog.aclark.net/</id><updated>2012-08-01T22:19:00Z</updated><entry><title>Building Windows Installers In The Cloud</title><link href="http://blog.aclark.net/building-windows-installers-in-the-cloud.html" rel="alternate"></link><updated>2012-08-01T22:19:00Z</updated><author><name>aclark@aclark.net</name></author><id>tag:blog.aclark.net,2012-08-01:building-windows-installers-in-the-cloud.html</id><summary type="html">&lt;p&gt;With pythonpackages.com, I want to solve real problems for people today.
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Alex Clark</title><link href="http://blog.aclark.net/" rel="alternate"></link><link href="http://blog.aclark.net/feeds/Mozilla.atom.xml" rel="self"></link><id>http://blog.aclark.net/</id><updated>2012-08-01T22:19:00Z</updated><entry><title>Building Windows Installers In The Cloud</title><link href="http://blog.aclark.net/building-windows-installers-in-the-cloud.html" rel="alternate"></link><updated>2012-08-01T22:19:00Z</updated><author><name>Alex Clark</name></author><id>tag:blog.aclark.net,2012-08-01:building-windows-installers-in-the-cloud.html</id><summary type="html">&lt;p&gt;With pythonpackages.com, I want to solve real problems for people today.
 So here's a proof of concept for building Windows installers quickly and
 easily &amp;quot;in the cloud&amp;quot; (i.e. without a Windows machine local). This
 article is mostly about the back end, as the front end is &lt;a class="reference external" href="http://docs.pythonpackages.com/en/latest/introduction.html"&gt;already
@@ -94,7 +94,7 @@ Unknown target name: &amp;quot;|image5|&amp;quot;.&lt;/div&gt;
 &lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/building-windows-installers-in-the-cloud.rst&lt;/tt&gt;, line 76); &lt;em&gt;&lt;a href="#id14"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 Unknown target name: &amp;quot;|image6|&amp;quot;.&lt;/div&gt;
 &lt;/div&gt;
-</summary><category term="Mozilla"></category><category term="Plone"></category><category term="Python"></category></entry><entry><title>pythonpackages.com beta launch</title><link href="http://blog.aclark.net/pythonpackagescom-beta-launch.html" rel="alternate"></link><updated>2012-07-04T05:19:00Z</updated><author><name>aclark@aclark.net</name></author><id>tag:blog.aclark.net,2012-07-04:pythonpackagescom-beta-launch.html</id><summary type="html">&lt;p&gt;After 9 months of development, pythonpackages.com has
+</summary><category term="Mozilla"></category><category term="Plone"></category><category term="Python"></category></entry><entry><title>pythonpackages.com beta launch</title><link href="http://blog.aclark.net/pythonpackagescom-beta-launch.html" rel="alternate"></link><updated>2012-07-04T05:19:00Z</updated><author><name>Alex Clark</name></author><id>tag:blog.aclark.net,2012-07-04:pythonpackagescom-beta-launch.html</id><summary type="html">&lt;p&gt;After 9 months of development, pythonpackages.com has
 grand-ceremoniously flipped the switch from alpha to beta. Here is an
 overview of the beta release features.&lt;/p&gt;
 &lt;div class="section" id="killer-github-integration"&gt;
@@ -180,7 +180,7 @@ Unknown target name: &amp;quot;|image10|&amp;quot;.&lt;/div&gt;
 &lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/pythonpackages-com-beta-launch.rst&lt;/tt&gt;, line 53); &lt;em&gt;&lt;a href="#id24"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 Unknown target name: &amp;quot;|image11|&amp;quot;.&lt;/div&gt;
 &lt;/div&gt;
-</summary><category term="Mozilla"></category><category term="Plone"></category><category term="Python"></category></entry><entry><title>Adam Yauch has passed</title><link href="http://blog.aclark.net/adam-yauch-has-passed.html" rel="alternate"></link><updated>2012-05-11T09:58:00Z</updated><author><name>aclark@aclark.net</name></author><id>tag:blog.aclark.net,2012-05-11:adam-yauch-has-passed.html</id><summary type="html">&lt;p&gt;&lt;em&gt;And why it matters to tech people, like me&lt;/em&gt;&lt;/p&gt;
+</summary><category term="Mozilla"></category><category term="Plone"></category><category term="Python"></category></entry><entry><title>Adam Yauch has passed</title><link href="http://blog.aclark.net/adam-yauch-has-passed.html" rel="alternate"></link><updated>2012-05-11T09:58:00Z</updated><author><name>Alex Clark</name></author><id>tag:blog.aclark.net,2012-05-11:adam-yauch-has-passed.html</id><summary type="html">&lt;p&gt;&lt;em&gt;And why it matters to tech people, like me&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;(I hope my tech colleagues will indulge my thoughts on the recent
 passing of Beastie Boy Adam Yauch.)&lt;/p&gt;
 &lt;p&gt;TL;DR: I &amp;lt;3 the Beastie Boys and will miss Adam Yauch; and I suspect
@@ -253,7 +253,7 @@ Mike D who gave it to me.&lt;/p&gt;
 &lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/adam-yauch-has-passed.rst&lt;/tt&gt;, line 59); &lt;em&gt;&lt;a href="#id2"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 Unknown target name: &amp;quot;|image0|&amp;quot;.&lt;/div&gt;
 &lt;/div&gt;
-</summary><category term="Mozilla"></category><category term="Plone"></category><category term="Python"></category></entry><entry><title>New Year&amp;#039;s Python Meme 2012</title><link href="http://blog.aclark.net/new-year039s-python-meme-2012.html" rel="alternate"></link><updated>2011-12-21T13:11:00Z</updated><author><name>aclark@aclark.net</name></author><id>tag:blog.aclark.net,2011-12-21:new-year039s-python-meme-2012.html</id><summary type="html">&lt;p&gt;&lt;em&gt;My response to
+</summary><category term="Mozilla"></category><category term="Plone"></category><category term="Python"></category></entry><entry><title>New Year&amp;#039;s Python Meme 2012</title><link href="http://blog.aclark.net/new-year039s-python-meme-2012.html" rel="alternate"></link><updated>2011-12-21T13:11:00Z</updated><author><name>Alex Clark</name></author><id>tag:blog.aclark.net,2011-12-21:new-year039s-python-meme-2012.html</id><summary type="html">&lt;p&gt;&lt;em&gt;My response to
 `http://tarekziade.wordpress.com/2011/12/20/new-years-python-meme-2/`_
 (with gratuitous links to `pythonpackages.com`_, my new project,
 sprinkled throughout).&lt;/em&gt;&lt;/p&gt;
@@ -294,7 +294,7 @@ would write in 2012?&lt;/strong&gt;&lt;/p&gt;
 and launches it in first quarter of 2012; and I hope folks find it
 useful.&lt;/p&gt;
 &lt;/div&gt;
-</summary><category term="Mozilla"></category><category term="Plone"></category><category term="Python"></category></entry><entry><title>Vagrant, Puppet and Mozilla, oh my!</title><link href="http://blog.aclark.net/vagrant-puppet-and-mozilla-oh-my.html" rel="alternate"></link><updated>2011-10-03T17:25:00Z</updated><author><name>aclark@aclark.net</name></author><id>tag:blog.aclark.net,2011-10-03:vagrant-puppet-and-mozilla-oh-my.html</id><summary type="html">&lt;p&gt;&lt;em&gt;Warning: This post is only loosely Python related and not at all Plone
+</summary><category term="Mozilla"></category><category term="Plone"></category><category term="Python"></category></entry><entry><title>Vagrant, Puppet and Mozilla, oh my!</title><link href="http://blog.aclark.net/vagrant-puppet-and-mozilla-oh-my.html" rel="alternate"></link><updated>2011-10-03T17:25:00Z</updated><author><name>Alex Clark</name></author><id>tag:blog.aclark.net,2011-10-03:vagrant-puppet-and-mozilla-oh-my.html</id><summary type="html">&lt;p&gt;&lt;em&gt;Warning: This post is only loosely Python related and not at all Plone
 related, but I thought folks might enjoy hearing about Vagrant and
 Puppet because these tools may help you do your Plone and Python jobs
 better.&lt;/em&gt;&lt;/p&gt;
