@@ -24,6 +24,7 @@ SOCIAL = (
     ('atom feed (Python)', 'http://blog.aclark.net/Python.atom.xml'),
     ('ACLARK.NET, LLC', 'http://aclark.net'),
     ('GitHub', 'http://github.com/aclark4life'),
+    ('Gittip', 'https://www.gittip.com/aclark4life'),
     ('PythonPackages', 'http://pythonpackages.com'),
     ('Twitter', 'http://twitter.com/aclark4life'),
 )
