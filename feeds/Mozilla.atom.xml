@@ -51,7 +51,7 @@ $ make html
 &lt;/div&gt;
 &lt;div class="section" id="workflow"&gt;
 &lt;h2&gt;Workflow&lt;/h2&gt;
-&lt;p&gt;Now I write articles in restructured text and publish like so:&lt;/p&gt;
+&lt;p&gt;Now I write articles in restructured text in the &lt;cite&gt;content/&lt;/cite&gt; directory and publish them like so:&lt;/p&gt;
 &lt;pre class="literal-block"&gt;
 $ make publish; git commit -a -m &amp;quot;Publish&amp;quot;; git push
 &lt;/pre&gt;

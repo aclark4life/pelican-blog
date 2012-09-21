@@ -67,7 +67,7 @@ A few things were tricky.
 Workflow
 --------
 
-Now I write articles in restructured text and publish like so::
+Now I write articles in restructured text in the `content/` directory and publish them like so::
 
     $ make publish; git commit -a -m "Publish"; git push
 
