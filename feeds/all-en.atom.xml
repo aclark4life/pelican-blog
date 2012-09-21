@@ -33,8 +33,8 @@ package (originally for java). I don't have all of it ported yet,
 and it's not tested as much as it should be, but it's a good start.
 
 (BTW, if you do blog about PyFormance, you may also want to mention
-this&amp;nbsp;\ `talk by Coda Hale`_ about metrics. He explains some of the
-math behind the package. )
+this&amp;nbsp;talk by Coda Hale about metrics: http://www.youtube.com/watch?v=czes-oa0yik
+He explains some of the math behind the package.)
 &lt;/pre&gt;
 &lt;p&gt;Done! :-) Thanks Omer for using our service. Check out pyformance on GitHub:&lt;/p&gt;
 &lt;ul class="simple"&gt;
