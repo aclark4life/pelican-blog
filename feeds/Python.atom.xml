@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Alex Clark</title><link href="http://blog.aclark.net/" rel="alternate"></link><link href="http://blog.aclark.net/feeds/Python.atom.xml" rel="self"></link><id>http://blog.aclark.net/</id><updated>2012-08-13T21:10:00+02:00</updated><entry><title>Bootstrapping a Buildout 1.6 release</title><link href="http://blog.aclark.net/bootstrapping-a-buildout-16-release.html" rel="alternate"></link><updated>2012-08-13T21:10:00+02:00</updated><author><name>aclark@aclark.net</name></author><id>tag:blog.aclark.net,2012-08-13:bootstrapping-a-buildout-16-release.html</id><summary type="html">&lt;p&gt;A lot of work has been done on Buildout lately, most notably:&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Alex Clark</title><link href="http://blog.aclark.net/" rel="alternate"></link><link href="http://blog.aclark.net/feeds/Python.atom.xml" rel="self"></link><id>http://blog.aclark.net/</id><updated>2012-08-13T21:10:00Z</updated><entry><title>Bootstrapping a Buildout 1.6 release</title><link href="http://blog.aclark.net/bootstrapping-a-buildout-16-release.html" rel="alternate"></link><updated>2012-08-13T21:10:00Z</updated><author><name>aclark@aclark.net</name></author><id>tag:blog.aclark.net,2012-08-13:bootstrapping-a-buildout-16-release.html</id><summary type="html">&lt;p&gt;A lot of work has been done on Buildout lately, most notably:&lt;/p&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;Jim Fulton is &lt;a class="reference external" href="https://github.com/buildout/buildout/commits/master"&gt;working on Buildout 2&lt;/a&gt;.&lt;/li&gt;
 &lt;li&gt;Ross Patterson has greatly &lt;a class="reference external" href="http://rpatterson.net/blog/buildout-performance-improvements"&gt;improved Buildout performance&lt;/a&gt;.&lt;/li&gt;
@@ -20,7 +20,7 @@ hours&lt;/strong&gt; or so of now. Please add a comment or weigh in on
 discovered only pre-existing failures. We are also preparing to do
 &amp;quot;Buildout 2 prophylactic releases&amp;quot; (i.e. releases that make 1.x continue
 to work when 2.x is released) in the 1.6.x series.&lt;/p&gt;
-&lt;/p&gt;</summary><category term="Plone"></category><category term="Python"></category></entry><entry><title>pythonpackages.com: pyformance 0.2</title><link href="http://blog.aclark.net/pythonpackagescom-pyformance-02.html" rel="alternate"></link><updated>2012-08-13T13:15:00+02:00</updated><author><name>aclark@aclark.net</name></author><id>tag:blog.aclark.net,2012-08-13:pythonpackagescom-pyformance-02.html</id><summary type="html">&lt;p&gt;&lt;em&gt;pythonpackages.com helps Python programmers package and release their
+&lt;/p&gt;</summary><category term="Plone"></category><category term="Python"></category></entry><entry><title>pythonpackages.com: pyformance 0.2</title><link href="http://blog.aclark.net/pythonpackagescom-pyformance-02.html" rel="alternate"></link><updated>2012-08-13T13:15:00Z</updated><author><name>aclark@aclark.net</name></author><id>tag:blog.aclark.net,2012-08-13:pythonpackagescom-pyformance-02.html</id><summary type="html">&lt;p&gt;&lt;em&gt;pythonpackages.com helps Python programmers package and release their
 software with just a few clicks.&lt;/em&gt;&lt;/p&gt;
 &lt;div class="section" id="pyformance-0-2"&gt;
 &lt;h2&gt;pyformance 0.2&lt;/h2&gt;
@@ -47,7 +47,7 @@ GitHub:&lt;/p&gt;
 &lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/pythonpackages-com-pyformance-0-2.rst&lt;/tt&gt;, line 12); &lt;em&gt;&lt;a href="#id2"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 Unknown target name: &amp;quot;|image0|&amp;quot;.&lt;/div&gt;
 &lt;/div&gt;
-</summary></entry><entry><title>pythonpackages.com: New GitHub Service &amp;quot;git push to release&amp;quot;</title><link href="http://blog.aclark.net/pythonpackagescom-new-github-service-quotgit-push-to-releasequot.html" rel="alternate"></link><updated>2012-08-10T05:50:00+02:00</updated><author><name>aclark@aclark.net</name></author><id>tag:blog.aclark.net,2012-08-10:pythonpackagescom-new-github-service-quotgit-push-to-releasequot.html</id><summary type="html">&lt;p&gt;&lt;em&gt;pythonpackages.com helps Python programmers package and release their
+</summary></entry><entry><title>pythonpackages.com: New GitHub Service &amp;quot;git push to release&amp;quot;</title><link href="http://blog.aclark.net/pythonpackagescom-new-github-service-quotgit-push-to-releasequot.html" rel="alternate"></link><updated>2012-08-10T05:50:00Z</updated><author><name>aclark@aclark.net</name></author><id>tag:blog.aclark.net,2012-08-10:pythonpackagescom-new-github-service-quotgit-push-to-releasequot.html</id><summary type="html">&lt;p&gt;&lt;em&gt;pythonpackages.com helps Python programmers package and release their
 software with just a few clicks.&lt;/em&gt;&lt;/p&gt;
 &lt;div class="section" id="pythonpackages-github-service"&gt;
 &lt;h2&gt;PythonPackages GitHub Service&lt;/h2&gt;
@@ -87,7 +87,7 @@ here:&amp;nbsp;`http://docs.pythonpackages.com/en/latest/github-service.html`_.&
 &lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/pythonpackages-com-new-github-service-git-push-to-release.rst&lt;/tt&gt;, line 12); &lt;em&gt;&lt;a href="#id2"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 Unknown target name: &amp;quot;|image0|&amp;quot;.&lt;/div&gt;
 &lt;/div&gt;
-</summary></entry><entry><title>pythonpackages.com: Using PyPI&amp;#039;s OAuth1 support to register and upload packages</title><link href="http://blog.aclark.net/pythonpackagescom-using-pypi039s-oauth1-support-to-register-and-upload-packages.html" rel="alternate"></link><updated>2012-08-07T05:16:00+02:00</updated><author><name>aclark@aclark.net</name></author><id>tag:blog.aclark.net,2012-08-07:pythonpackagescom-using-pypi039s-oauth1-support-to-register-and-upload-packages.html</id><summary type="html">&lt;p&gt;&lt;strong&gt;*TL;DR&lt;/strong&gt; PyPI has OAuth1 support; pythonpackages.com uses it to send
+</summary></entry><entry><title>pythonpackages.com: Using PyPI&amp;#039;s OAuth1 support to register and upload packages</title><link href="http://blog.aclark.net/pythonpackagescom-using-pypi039s-oauth1-support-to-register-and-upload-packages.html" rel="alternate"></link><updated>2012-08-07T05:16:00Z</updated><author><name>aclark@aclark.net</name></author><id>tag:blog.aclark.net,2012-08-07:pythonpackagescom-using-pypi039s-oauth1-support-to-register-and-upload-packages.html</id><summary type="html">&lt;p&gt;&lt;strong&gt;*TL;DR&lt;/strong&gt; PyPI has OAuth1 support; pythonpackages.com uses it to send
 your GitHub repos to PyPI.* Thanks in very large part to &lt;a class="reference external" href="https://twitter.com/r1chardj0n3s"&gt;Richard
 Jones&lt;/a&gt;, the Python Package Index now has support for registering and
 uploading packages via OAuth1. And using his &lt;a class="reference external" href="https://gist.github.com/0d46c48b230e61e18479"&gt;sample code&lt;/a&gt; I was able
@@ -160,7 +160,7 @@ Unknown target name: &amp;quot;|image6|&amp;quot;.&lt;/div&gt;
 &lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/pythonpackages-com-using-pypis-oauth1-support-to-register-and-upload-packages.rst&lt;/tt&gt;, line 54); &lt;em&gt;&lt;a href="#id16"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 Unknown target name: &amp;quot;|image7|&amp;quot;.&lt;/div&gt;
 &lt;/div&gt;
-</summary><category term="Plone"></category><category term="Python"></category></entry><entry><title>Building Windows Installers In The Cloud</title><link href="http://blog.aclark.net/building-windows-installers-in-the-cloud.html" rel="alternate"></link><updated>2012-08-01T22:19:00+02:00</updated><author><name>aclark@aclark.net</name></author><id>tag:blog.aclark.net,2012-08-01:building-windows-installers-in-the-cloud.html</id><summary type="html">&lt;p&gt;With pythonpackages.com, I want to solve real problems for people today.
+</summary><category term="Plone"></category><category term="Python"></category></entry><entry><title>Building Windows Installers In The Cloud</title><link href="http://blog.aclark.net/building-windows-installers-in-the-cloud.html" rel="alternate"></link><updated>2012-08-01T22:19:00Z</updated><author><name>aclark@aclark.net</name></author><id>tag:blog.aclark.net,2012-08-01:building-windows-installers-in-the-cloud.html</id><summary type="html">&lt;p&gt;With pythonpackages.com, I want to solve real problems for people today.
 So here's a proof of concept for building Windows installers quickly and
 easily &amp;quot;in the cloud&amp;quot; (i.e. without a Windows machine local). This
 article is mostly about the back end, as the front end is &lt;a class="reference external" href="http://docs.pythonpackages.com/en/latest/introduction.html"&gt;already
@@ -255,7 +255,7 @@ Unknown target name: &amp;quot;|image5|&amp;quot;.&lt;/div&gt;
 &lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/building-windows-installers-in-the-cloud.rst&lt;/tt&gt;, line 77); &lt;em&gt;&lt;a href="#id14"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 Unknown target name: &amp;quot;|image6|&amp;quot;.&lt;/div&gt;
 &lt;/div&gt;
-</summary><category term="Mozilla"></category><category term="Plone"></category><category term="Python"></category></entry><entry><title>pythonpackages.com beta launch</title><link href="http://blog.aclark.net/pythonpackagescom-beta-launch.html" rel="alternate"></link><updated>2012-07-04T05:19:00+02:00</updated><author><name>aclark@aclark.net</name></author><id>tag:blog.aclark.net,2012-07-04:pythonpackagescom-beta-launch.html</id><summary type="html">&lt;p&gt;After 9 months of development, pythonpackages.com has
+</summary><category term="Mozilla"></category><category term="Plone"></category><category term="Python"></category></entry><entry><title>pythonpackages.com beta launch</title><link href="http://blog.aclark.net/pythonpackagescom-beta-launch.html" rel="alternate"></link><updated>2012-07-04T05:19:00Z</updated><author><name>aclark@aclark.net</name></author><id>tag:blog.aclark.net,2012-07-04:pythonpackagescom-beta-launch.html</id><summary type="html">&lt;p&gt;After 9 months of development, pythonpackages.com has
 grand-ceremoniously flipped the switch from alpha to beta. Here is an
 overview of the beta release features.&lt;/p&gt;
 &lt;div class="section" id="killer-github-integration"&gt;
@@ -341,7 +341,7 @@ Unknown target name: &amp;quot;|image10|&amp;quot;.&lt;/div&gt;
 &lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/pythonpackages-com-beta-launch.rst&lt;/tt&gt;, line 54); &lt;em&gt;&lt;a href="#id24"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 Unknown target name: &amp;quot;|image11|&amp;quot;.&lt;/div&gt;
 &lt;/div&gt;
-</summary><category term="Mozilla"></category><category term="Plone"></category><category term="Python"></category></entry><entry><title>New Year&amp;#039;s Python Meme 2012</title><link href="http://blog.aclark.net/new-year039s-python-meme-2012.html" rel="alternate"></link><updated>2011-12-21T13:11:00+01:00</updated><author><name>aclark@aclark.net</name></author><id>tag:blog.aclark.net,2011-12-21:new-year039s-python-meme-2012.html</id><summary type="html">&lt;p&gt;&lt;em&gt;My response to
+</summary><category term="Mozilla"></category><category term="Plone"></category><category term="Python"></category></entry><entry><title>New Year&amp;#039;s Python Meme 2012</title><link href="http://blog.aclark.net/new-year039s-python-meme-2012.html" rel="alternate"></link><updated>2011-12-21T13:11:00Z</updated><author><name>aclark@aclark.net</name></author><id>tag:blog.aclark.net,2011-12-21:new-year039s-python-meme-2012.html</id><summary type="html">&lt;p&gt;&lt;em&gt;My response to
 `http://tarekziade.wordpress.com/2011/12/20/new-years-python-meme-2/`_
 (with gratuitous links to `pythonpackages.com`_, my new project,
 sprinkled throughout).&lt;/em&gt;&lt;/p&gt;
@@ -382,7 +382,7 @@ would write in 2012?&lt;/strong&gt;&lt;/p&gt;
 and launches it in first quarter of 2012; and I hope folks find it
 useful.&lt;/p&gt;
 &lt;/div&gt;
-</summary><category term="Mozilla"></category><category term="Plone"></category><category term="Python"></category></entry><entry><title>Introducing pythonpackages.com</title><link href="http://blog.aclark.net/introducing-pythonpackagescom.html" rel="alternate"></link><updated>2011-11-29T02:24:00+01:00</updated><author><name>aclark@aclark.net</name></author><id>tag:blog.aclark.net,2011-11-29:introducing-pythonpackagescom.html</id><summary type="html">&lt;div class="section" id="the-website-for-python-egoists"&gt;
+</summary><category term="Mozilla"></category><category term="Plone"></category><category term="Python"></category></entry><entry><title>Introducing pythonpackages.com</title><link href="http://blog.aclark.net/introducing-pythonpackagescom.html" rel="alternate"></link><updated>2011-11-29T02:24:00Z</updated><author><name>aclark@aclark.net</name></author><id>tag:blog.aclark.net,2011-11-29:introducing-pythonpackagescom.html</id><summary type="html">&lt;div class="section" id="the-website-for-python-egoists"&gt;
 &lt;h2&gt;The website for Python egoists™&lt;/h2&gt;
 &lt;p&gt;I have this overwhelming desire to know how many times my favorite
 Python packages have been downloaded. Don't you? If so, look no further
@@ -462,7 +462,7 @@ Unknown target name: &amp;quot;|image5|&amp;quot;.&lt;/div&gt;
 &lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/introducing-pythonpackages-com.rst&lt;/tt&gt;, line 76); &lt;em&gt;&lt;a href="#id12"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 Unknown target name: &amp;quot;|image6|&amp;quot;.&lt;/div&gt;
 &lt;/div&gt;
-</summary></entry><entry><title>You&amp;#039;re so vain, so why not use Vanity?</title><link href="http://blog.aclark.net/you039re-so-vain-so-why-not-use-vanity.html" rel="alternate"></link><updated>2011-06-16T12:01:00+02:00</updated><author><name>aclark@aclark.net</name></author><id>tag:blog.aclark.net,2011-06-16:you039re-so-vain-so-why-not-use-vanity.html</id><summary type="html">&lt;p&gt;A few months ago I created a package called &lt;strong&gt;Vanity&lt;/strong&gt;[0] that
+</summary></entry><entry><title>You&amp;#039;re so vain, so why not use Vanity?</title><link href="http://blog.aclark.net/you039re-so-vain-so-why-not-use-vanity.html" rel="alternate"></link><updated>2011-06-16T12:01:00Z</updated><author><name>aclark@aclark.net</name></author><id>tag:blog.aclark.net,2011-06-16:you039re-so-vain-so-why-not-use-vanity.html</id><summary type="html">&lt;p&gt;A few months ago I created a package called &lt;strong&gt;Vanity&lt;/strong&gt;[0] that
 provides easy access to package download statistics from &lt;strong&gt;PyPI&lt;/strong&gt;. You
 can find the source code here: &lt;a class="reference external" href="https://github.com/aclark4life/vanity"&gt;https://github.com/aclark4life/vanity&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;I love this tool, and I use it all the time to gauge the value of a
@@ -521,7 +521,7 @@ in particular.&lt;/p&gt;
 &lt;/p&gt;&lt;p&gt;[1] There is a &lt;a class="reference external" href="https://github.com/aclark4life/vanity/issues/1"&gt;known issue&lt;/a&gt; with regard to making Vanity case
 insensitive.&lt;/p&gt;
 &lt;/div&gt;
-</summary><category term="Plone"></category><category term="Python"></category></entry><entry><title>In Defense of PyPI</title><link href="http://blog.aclark.net/in-defense-of-pypi.html" rel="alternate"></link><updated>2011-01-31T09:19:00+01:00</updated><author><name>aclark@aclark.net</name></author><id>tag:blog.aclark.net,2011-01-31:in-defense-of-pypi.html</id><summary type="html">&lt;p&gt;Everyone on the &lt;em&gt;Python Planet&lt;/em&gt; is probably already familiar with Peter
+</summary><category term="Plone"></category><category term="Python"></category></entry><entry><title>In Defense of PyPI</title><link href="http://blog.aclark.net/in-defense-of-pypi.html" rel="alternate"></link><updated>2011-01-31T09:19:00Z</updated><author><name>aclark@aclark.net</name></author><id>tag:blog.aclark.net,2011-01-31:in-defense-of-pypi.html</id><summary type="html">&lt;p&gt;Everyone on the &lt;em&gt;Python Planet&lt;/em&gt; is probably already familiar with Peter
 Fein's recent article &lt;a class="reference external" href="http://blog.wearpants.org/elitism-and-the-importance-of-pypi"&gt;about PyPI use (or lack thereof).&lt;/a&gt; But in case
 not, particularly striking was the number of folks who joined the &amp;quot;PyPI
 bashing&amp;quot; in the comments. In fact, it has inspired me to write this post
