@@ -40,4 +40,4 @@ TAG_FEED_ATOM = 'feeds/%s.atom.xml'
 TAG_FEED_RSS = None
 
 # Generate fancy permalinks
-ARTICLE_PERMALINK_STRUCTURE = '/%Y/%m/%d/'
+#ARTICLE_PERMALINK_STRUCTURE = '/%Y/%m/%d/'
