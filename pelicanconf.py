@@ -38,3 +38,6 @@ CATEGORY_FEED_ATOM = None
 CATEGORY_FEED_RSS = None
 TAG_FEED_ATOM = 'feeds/%s.atom.xml'
 TAG_FEED_RSS = None
+
+# Generate fancy permalinks
+ARTICLE_PERMALINK_STRUCTURE = '/%Y/%m/%d/'

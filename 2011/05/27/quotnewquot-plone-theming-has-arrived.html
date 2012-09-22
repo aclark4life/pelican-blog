@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <title>&quot;New&quot; Plone theming has arrived</title>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="../../.././theme/css/main.css" type="text/css" />
+        
+        <link href="http://blog.aclark.net/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Alex Clark Atom Feed" />
+        
+        
+
+        <!--[if IE]>
+                <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+        <!--[if lte IE 7]>
+                <link rel="stylesheet" type="text/css" media="all" href="../../.././css/ie.css"/>
+                <script src="../../.././js/IE8.js" type="text/javascript"></script><![endif]-->
+
+        <!--[if lt IE 7]>
+                <link rel="stylesheet" type="text/css" media="all" href="../../.././css/ie6.css"/><![endif]-->
+
+</head>
+
+<body id="index" class="home">
+
+<a href="https://github.com/ACLARKNET/aclarknet.github.com">
+
+<img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub" />
+
+</a>
+
+        <header id="banner" class="body">
+                <h1><a href="../../../.">Alex Clark </a></h1>
+                <nav><ul>
+                
+                
+                
+                
+                
+                    <li class="active"><a href="../../.././category/blog.html">Blog</a></li>
+                
+                </ul></nav>
+        </header><!-- /#banner -->
+        
+<section id="content" class="body">
+  <article>
+    <header>
+      <h1 class="entry-title">
+        <a href="2011/05/27/quotnewquot-plone-theming-has-arrived.html" rel="bookmark"
+           title="Permalink to &quot;New&quot; Plone theming has arrived">&amp;quot;New&amp;quot; Plone theming has arrived</a></h1>
+      
+    </header>
+
+    <div class="entry-content">
+      <footer class="post-info">
+        <abbr class="published" title="2011-05-27T17:00:00">
+                Fri 27 May 2011
+        </abbr>
+
+        
+        <address class="vcard author">
+                By <a class="url fn" href="../../.././author/alex-clark.html">Alex Clark</a>
+        </address>
+        
+<p>In <a href="../../.././category/blog.html">Blog</a>. </p>
+<p>tags: <a href="../../.././tag/plone.html">Plone</a></p>
+
+
+</footer><!-- /.post-info -->
+      <p><strong>Edit2:</strong>Enfold/Ploud.net looking for theme developers, see Alan
+Runyan's comment below.</p>
+<p><strong>Edit</strong>: Laurence Rowe made new Diazo and plone.app.theming releases so
+the <a class="reference external" href="https://github.com/aclark4life/plonetheme.unilluminated/blob/master/unilluminated.zip?raw=true">zip file</a>now works! Thanks Laurence.</p>
+<p>Due to the new Diazo theming features now available, I am very excited
+about the recent release of <a class="reference external" href="http://pypi.python.org/pypi/Plone/4.1rc2">Plone 4.1rc2</a> and <a class="reference external" href="http://pypi.python.org/pypi/plone.app.theming/1.0b2">plone.app.theming
+1.0b2</a>. So much so, I created a couple themes (in just a few hours) to
+demonstrate my <a class="reference external" href="http://en.wikipedia.org/wiki/Rapture">rapture [1]</a>:</p>
+<ul class="simple">
+<li>(released)
+<a class="reference external" href="http://pypi.python.org/pypi/plonetheme.unilluminated/0.1.0">http://pypi.python.org/pypi/plonetheme.unilluminated/0.1.0</a></li>
+<li>(unreleased) <a class="reference external" href="https://github.com/aclark4life/plonetheme.coolblue">https://github.com/aclark4life/plonetheme.coolblue</a></li>
+</ul>
+<p>Granted, these aren't entirely &quot;finished&quot; (e.g. lots of CSS improvements
+are needed) but it is truly impressive how much you can do with so
+little effort (thanks to the hard work of the Diazo team, Plone team,
+and of course the theme designers themselves).</p>
+</p><p>The best part has got to be the <a class="reference external" href="http://pypi.python.org/pypi/plone.app.theming/1.0b2#zip-file-format">zip file packaging features</a> in
+plone.app.theming (provided by <a class="reference external" href="http://pypi.python.org/pypi/plone.resource/1.0b2">plone.resource</a>). While I did have a
+bit of trouble getting <a class="reference external" href="https://github.com/aclark4life/plonetheme.unilluminated/blob/master/plonetheme/unilluminated/theme/unilluminated.zip">my zip file</a> to work, I suspect I'll get that
+issue resolved this week (I don't think I was able to import any zipped
+themes, even the ones from p.a.theming tests).</p>
+<div class="section" id="suprise-i-like-it">
+<h2>Suprise! I like it</h2>
+<p>What I am most surprised about is how much I like this approach:</p>
+<ul class="simple">
+<li>Developers can easily distribute themes in Python packages, and pay a
+much smaller &quot;theming tax&quot; with new style Diazo theming.</li>
+<li>They can also optionally choose to distribute Diazo themes as zip
+files for easy public consumption (although I can't think of any
+good, automated way to publish just the zip files.)</li>
+<li>If I am not mistaken the contents of a zipped theme can be loaded
+<a class="reference external" href="https://github.com/aclark4life/plonetheme.unilluminated/blob/master/plonetheme/unilluminated/configure.zcml">quite elegantly</a>, without changing their contents, via a <a class="reference external" href="https://github.com/aclark4life/plonetheme.unilluminated/">Python
+package</a>.</li>
+</ul>
+<p>So, let us now commence the spamming of PyPI and the <a class="reference external" href="http://plone.org/products">Plone.org
+downloads section</a> with &quot;fun&quot; easy-to-install (read: no buildout) Plone
+themes! [2]</p>
+</div>
+<div class="section" id="disclaimer">
+<h2>Disclaimer</h2>
+<p>These are my experiences with relatively new Plone technologies. If I've
+made a mistake or if your experiences are different, please let me know
+in the comments.</p>
+</p><p>[1] Please forgive gratuitous belated rapture humor.</p>
+<p>[2] Before you get upset over any suggested spamming, I only mean to
+suggest that the ability to distribute a theme as a zip file lowers the
+bar to Plone adoption tremendously. Personally (and tentatively, since
+I'm not even sure if everything is meant to work the way I currently
+expect it to), I plan to include a zipped archive of any theme I
+distribute as a Python package because it is so easy to do so (or
+hopefully will be very soon). But how the community chooses to
+capitalize on this new-found ability remains to be seen.</p>
+</div>
+
+    </div><!-- /.entry-content -->
+    
+    <div class="comments">
+      <h2>Comments !</h2>
+      <div id="disqus_thread"></div>
+      <script type="text/javascript">
+        var disqus_identifier = "2011/05/27/quotnewquot-plone-theming-has-arrived.html";
+        (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://aclark-blog.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+      </script>
+    </div>
+    
+
+  </article>
+</section>
+
+        <section id="extras" class="body">
+        
+        
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+                            <li><a href="http://blog.aclark.net/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">atom feed</a></li>
+                            
+
+                        
+                            <li><a href="http://blog.aclark.net/Mozilla.atom.xml">atom feed (Mozilla)</a></li>
+                        
+                            <li><a href="http://blog.aclark.net/Plone.atom.xml">atom feed (Plone)</a></li>
+                        
+                            <li><a href="http://blog.aclark.net/Python.atom.xml">atom feed (Python)</a></li>
+                        
+                            <li><a href="http://github.com/aclark4life">GitHub</a></li>
+                        
+                            <li><a href="https://www.gittip.com/aclark4life">Gittip</a></li>
+                        
+                            <li><a href="https://pythonpackages.com/user/aclark4life">PythonPackages</a></li>
+                        
+                            <li><a href="http://twitter.com/aclark4life">Twitter</a></li>
+                        
+                        </ul>
+                </div><!-- /.social -->
+        
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+
+    <script type="text/javascript">
+    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+    try {
+        var pageTracker = _gat._getTracker("UA-34988446-1");
+    pageTracker._trackPageview();
+    } catch(err) {}</script>
+
+
+
+<script type="text/javascript">
+    var disqus_shortname = 'aclark-blog';
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+
+</body>
+</html>
