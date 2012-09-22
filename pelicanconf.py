@@ -22,7 +22,6 @@ SOCIAL = (
     ('atom feed (Mozilla)', 'http://blog.aclark.net/Mozilla.atom.xml'),
     ('atom feed (Plone)', 'http://blog.aclark.net/Plone.atom.xml'),
     ('atom feed (Python)', 'http://blog.aclark.net/Python.atom.xml'),
-    ('ACLARK.NET, LLC', 'http://aclark.net'),
     ('GitHub', 'http://github.com/aclark4life'),
     ('Gittip', 'https://www.gittip.com/aclark4life'),
     ('PythonPackages', 'https://pythonpackages.com/user/aclark4life'),
