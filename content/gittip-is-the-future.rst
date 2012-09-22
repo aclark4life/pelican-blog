@@ -22,7 +22,7 @@ Why? If for no other reason, because it comes from a member of the Python commun
 And succeed they will, with gittip. Some particularly impressive results so far: 
 
 - Chad Whitacre, the founder, is making almost $160 per week: https://www.gittip.com/whit537/
-- David Glick, a Plone developer, is making over $100 per week: https://www.gittip.com/davisagli/
+- David Glick, a newly independent Plone developer, is making over $100 per week: https://www.gittip.com/davisagli/
 - Read The Docs, everyone's favorite documentation hosting site, is making almost $100 per week: https://www.gittip.com/readthedocs/
 
 Whilst no one is making a living off of gittip yet, with enough support and momentum it's only a matter of time before they do. Toward that end, I have written a blog entry for the `gittip blog`_ describing among other things: how I'd like to make a living with gittip. Here is an excerpt:
