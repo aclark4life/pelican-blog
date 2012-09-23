@@ -1,6 +1,5 @@
-ARTICLE_PERMALINK_STRUCTURE = '/%Y/%m/%d/'
-ARTICLE_SAVE_AS = '{slug}/index.html'
-ARTICLE_URL = '{slug}'
+ARTICLE_SAVE_AS = '/{date:%Y}/{date:%m}/{date:%d}/{slug}/index.html'
+ARTICLE_URL = '/{date:%Y}/{date:%m}/{date:%d}/{slug}/'
 AUTHOR = u'Alex Clark'
 CATEGORY_FEED_ATOM = None
 CATEGORY_FEED_RSS = None
@@ -11,7 +10,6 @@ DELETE_OUTPUT_DIRECTORY = True
 DISQUS_SITENAME = 'aclark-blog'
 GITHUB_URL = 'https://github.com/ACLARKNET/aclarknet.github.com'
 GOOGLE_ANALYTICS = 'UA-34988446-1'
-RELATIVE_URLS = False
 SITENAME = u'Alex Clark'
 SITEURL = 'http://blog.aclark.net'
 SITEURL = 'http://blog.aclark.net'
