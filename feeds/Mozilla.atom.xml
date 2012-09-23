@@ -1,5 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Alex Clark</title><link href="http://blog.aclark.net/" rel="alternate"></link><link href="http://blog.aclark.net/feeds/Mozilla.atom.xml" rel="self"></link><id>http://blog.aclark.net/</id><updated>2012-09-21T21:45:00Z</updated><entry><title>Gittip is the future</title><link href="http://blog.aclark.net/2012/09/21/gittip-is-the-future" rel="alternate"></link><updated>2012-09-21T21:45:00Z</updated><author><name>Alex Clark</name></author><id>tag:blog.aclark.net,2012-09-21:2012/09/21/gittip-is-the-future</id><summary type="html">&lt;p&gt;Heard of Gittip? If not, you should know: it has a lot of people (including me) excited about the potential to make a living doing what they love. From the Gittip blog &lt;a class="footnote-reference" href="#id2" id="id1"&gt;[1]&lt;/a&gt;:&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Alex Clark</title><link href="http://blog.aclark.net/" rel="alternate"></link><link href="http://blog.aclark.net/feeds/Mozilla.atom.xml" rel="self"></link><id>http://blog.aclark.net/</id><updated>2012-09-22T21:45:00Z</updated><entry><title>Sorry for the blog spam</title><link href="http://blog.aclark.net//2012/09/22/sorry-for-the-blog-spam/" rel="alternate"></link><updated>2012-09-22T21:45:00Z</updated><author><name>Alex Clark</name></author><id>tag:blog.aclark.net,2012-09-22:/2012/09/22/sorry-for-the-blog-spam/</id><summary type="html">&lt;p&gt;As I'm just learning &lt;a class="reference external" href="http://blog.getpelican.com"&gt;Pelican&lt;/a&gt;, &lt;a class="reference external" href="https://twitter.com/djco"&gt;Dirkjan Ochtman&lt;/a&gt; pointed out that I can have &amp;quot;fancy&amp;quot; URLs via the &lt;cite&gt;ARTICLE_PERMALINK_STRUCTURE&lt;/cite&gt; setting. So the blog spam you are seeing is a result of my publishing the same two articles with two different URLs (fancy and non-fancy). My apologies for the noise.&lt;/p&gt;
+&lt;div class="section" id="publishconf-py"&gt;
+&lt;h2&gt;publishconf.py&lt;/h2&gt;
+&lt;p&gt;And actually, I found &lt;cite&gt;ARTICLE_URL&lt;/cite&gt; and &lt;cite&gt;ARTICLE_SAVE_AS&lt;/cite&gt; to be the settings I wanted to use instead &lt;a class="footnote-reference" href="#id4" id="id1"&gt;[1]&lt;/a&gt;. My &lt;a class="reference external" href="https://github.com/ACLARKNET/aclarknet.github.com/blob/master/publishconf.py"&gt;publishconf.py&lt;/a&gt; now looks like this &lt;a class="footnote-reference" href="#id5" id="id2"&gt;[2]&lt;/a&gt;:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+ARTICLE_SAVE_AS = '/{date:%Y}/{date:%m}/{date:%d}/{slug}/index.html'
+ARTICLE_URL = '/{date:%Y}/{date:%m}/{date:%d}/{slug}/'
+AUTHOR = u'Alex Clark'
+CATEGORY_FEED_ATOM = None
+CATEGORY_FEED_RSS = None
+DEFAULT_CATEGORY = 'Blog'
+DEFAULT_LANG = 'en'
+DEFAULT_PAGINATION = 10
+DELETE_OUTPUT_DIRECTORY = True
+DISQUS_SITENAME = 'aclark-blog'
+GITHUB_URL = 'https://github.com/ACLARKNET/aclarknet.github.com'
+GOOGLE_ANALYTICS = 'UA-34988446-1'
+SITENAME = u'Alex Clark'
+SITEURL = 'http://blog.aclark.net'
+SOCIAL = (
+    ('GitHub', 'http://github.com/aclark4life'),
+    ('Gittip', 'https://www.gittip.com/aclark4life'),
+    ('PythonPackages', 'https://pythonpackages.com/user/aclark4life'),
+    ('Twitter', 'http://twitter.com/aclark4life'),
+    ('atom feed (Mozilla)', 'http://blog.aclark.net/Mozilla.atom.xml'),
+    ('atom feed (Plone)', 'http://blog.aclark.net/Plone.atom.xml'),
+    ('atom feed (Python)', 'http://blog.aclark.net/Python.atom.xml'),
+)
+TAG_FEED_ATOM = 'feeds/%s.atom.xml'
+TAG_FEED_RSS = None
+TWITTER_USERNAME = 'aclark4life'
+&lt;/pre&gt;
+&lt;table class="docutils footnote" frame="void" id="id4" rules="none"&gt;
+&lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
+&lt;tbody valign="top"&gt;
+&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#id1"&gt;[1]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;a class="reference external" href="http://pelican.notmyidea.org/en/3.0/settings.html#url-settings"&gt;http://pelican.notmyidea.org/en/3.0/settings.html#url-settings&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;table class="docutils footnote" frame="void" id="id5" rules="none"&gt;
+&lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
+&lt;tbody valign="top"&gt;
+&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#id2"&gt;[2]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;I removed the extraneous pelicanconf.py and put everything in one file&lt;/td&gt;&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+</summary><category term="Mozilla"></category><category term="Plone"></category><category term="Python"></category></entry><entry><title>Gittip is the future</title><link href="http://blog.aclark.net//2012/09/21/gittip-is-the-future/" rel="alternate"></link><updated>2012-09-21T21:45:00Z</updated><author><name>Alex Clark</name></author><id>tag:blog.aclark.net,2012-09-21:/2012/09/21/gittip-is-the-future/</id><summary type="html">&lt;p&gt;Heard of Gittip? If not, you should know: it has a lot of people (including me) excited about the potential to make a living doing what they love. From the Gittip blog &lt;a class="footnote-reference" href="#id2" id="id1"&gt;[1]&lt;/a&gt;:&lt;/p&gt;
 &lt;blockquote&gt;
 Gittip is a system for funding people who build free culture. The core is small weekly gifts. The idea is that if 1,000 people give $1 a week to a great programmer, musician, scientist, teacher, etc., then that frees them up to pursue their vision even further for making the world better.&lt;/blockquote&gt;
 &lt;p&gt;I love this idea! In particular, because it speaks to me more than other similar offerings:&lt;/p&gt;
@@ -40,7 +85,7 @@ Gittip is a system for funding people who build free culture. The core is small 
 &lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#id1"&gt;[1]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;a class="reference external" href="http://blog.gittip.com/post/30116848405/with-payouts-gittip-is-minimally-viable"&gt;http://blog.gittip.com/post/30116848405/with-payouts-gittip-is-minimally-viable&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-</summary><category term="Mozilla"></category><category term="Plone"></category><category term="Python"></category></entry><entry><title>Yes, this blog is now powered by Pelican</title><link href="http://blog.aclark.net/2012/09/21/yes-this-blog-is-now-powered-by-pelican" rel="alternate"></link><updated>2012-09-21T15:30:00Z</updated><author><name>Alex Clark</name></author><id>tag:blog.aclark.net,2012-09-21:2012/09/21/yes-this-blog-is-now-powered-by-pelican</id><summary type="html">&lt;p&gt;As an open source &amp;quot;Plone guy&amp;quot;, I'm always prepared to defend and explain my choice to &lt;strong&gt;not&lt;/strong&gt; use Plone for blogging. A couple years ago, I started using Wordpress in order to learn its feature set. I enjoyed my time with it, but after moving to wordpress.com for &amp;quot;trouble free&amp;quot; hosting, I found I couldn't control my category feeds the way I wanted; the honeymoon was over.&lt;/p&gt;
+</summary><category term="Mozilla"></category><category term="Plone"></category><category term="Python"></category></entry><entry><title>Yes, this blog is now powered by Pelican</title><link href="http://blog.aclark.net//2012/09/21/yes-this-blog-is-now-powered-by-pelican/" rel="alternate"></link><updated>2012-09-21T15:30:00Z</updated><author><name>Alex Clark</name></author><id>tag:blog.aclark.net,2012-09-21:/2012/09/21/yes-this-blog-is-now-powered-by-pelican/</id><summary type="html">&lt;p&gt;As an open source &amp;quot;Plone guy&amp;quot;, I'm always prepared to defend and explain my choice to &lt;strong&gt;not&lt;/strong&gt; use Plone for blogging. A couple years ago, I started using Wordpress in order to learn its feature set. I enjoyed my time with it, but after moving to wordpress.com for &amp;quot;trouble free&amp;quot; hosting, I found I couldn't control my category feeds the way I wanted; the honeymoon was over.&lt;/p&gt;
 &lt;p&gt;This was a giant let down, because I was hoping to avoid putting any time in to my blogging infrastructure. For weeks I did nothing. I poked at various options: Pelican, Plone, Tumblr, others. Eventually, I found my way back to Pelican and now I'm happy again.&lt;/p&gt;
 &lt;img alt="http://blog.aclark.net/images/pelican.png" src="http://blog.aclark.net/images/pelican.png" /&gt;
 &lt;p&gt;Pelican is a static blog generator, as you may have heard. So &lt;strong&gt;one big advantage&lt;/strong&gt; is:&lt;/p&gt;
@@ -116,7 +161,7 @@ $ make publish; git commit -a -m &amp;quot;Publish&amp;quot;; git push
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;/div&gt;
-</summary><category term="Mozilla"></category><category term="Plone"></category><category term="Python"></category></entry><entry><title>Building Windows Installers In The Cloud</title><link href="http://blog.aclark.net/2012/08/01/building-windows-installers-in-the-cloud" rel="alternate"></link><updated>2012-08-01T22:19:00Z</updated><author><name>Alex Clark</name></author><id>tag:blog.aclark.net,2012-08-01:2012/08/01/building-windows-installers-in-the-cloud</id><summary type="html">&lt;p&gt;With pythonpackages.com, I want to solve real problems for people today.
+</summary><category term="Mozilla"></category><category term="Plone"></category><category term="Python"></category></entry><entry><title>Building Windows Installers In The Cloud</title><link href="http://blog.aclark.net//2012/08/01/building-windows-installers-in-the-cloud/" rel="alternate"></link><updated>2012-08-01T22:19:00Z</updated><author><name>Alex Clark</name></author><id>tag:blog.aclark.net,2012-08-01:/2012/08/01/building-windows-installers-in-the-cloud/</id><summary type="html">&lt;p&gt;With pythonpackages.com, I want to solve real problems for people today.
 So here's a proof of concept for building Windows installers quickly and
 easily &amp;quot;in the cloud&amp;quot; (i.e. without a Windows machine local). This
 article is mostly about the back end, as the front end is &lt;a class="reference external" href="http://docs.pythonpackages.com/en/latest/introduction.html"&gt;already
@@ -211,7 +256,7 @@ Unknown target name: &amp;quot;|image5|&amp;quot;.&lt;/div&gt;
 &lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/building-windows-installers-in-the-cloud.rst&lt;/tt&gt;, line 76); &lt;em&gt;&lt;a href="#id14"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 Unknown target name: &amp;quot;|image6|&amp;quot;.&lt;/div&gt;
 &lt;/div&gt;
-</summary><category term="Mozilla"></category><category term="Plone"></category><category term="Python"></category></entry><entry><title>pythonpackages.com beta launch</title><link href="http://blog.aclark.net/2012/07/04/pythonpackagescom-beta-launch" rel="alternate"></link><updated>2012-07-04T05:19:00Z</updated><author><name>Alex Clark</name></author><id>tag:blog.aclark.net,2012-07-04:2012/07/04/pythonpackagescom-beta-launch</id><summary type="html">&lt;p&gt;After 9 months of development, pythonpackages.com has
+</summary><category term="Mozilla"></category><category term="Plone"></category><category term="Python"></category></entry><entry><title>pythonpackages.com beta launch</title><link href="http://blog.aclark.net//2012/07/04/pythonpackagescom-beta-launch/" rel="alternate"></link><updated>2012-07-04T05:19:00Z</updated><author><name>Alex Clark</name></author><id>tag:blog.aclark.net,2012-07-04:/2012/07/04/pythonpackagescom-beta-launch/</id><summary type="html">&lt;p&gt;After 9 months of development, pythonpackages.com has
 grand-ceremoniously flipped the switch from alpha to beta. Here is an
 overview of the beta release features.&lt;/p&gt;
 &lt;div class="section" id="killer-github-integration"&gt;
@@ -297,7 +342,7 @@ Unknown target name: &amp;quot;|image10|&amp;quot;.&lt;/div&gt;
 &lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/pythonpackages-com-beta-launch.rst&lt;/tt&gt;, line 53); &lt;em&gt;&lt;a href="#id24"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 Unknown target name: &amp;quot;|image11|&amp;quot;.&lt;/div&gt;
 &lt;/div&gt;
-</summary><category term="Mozilla"></category><category term="Plone"></category><category term="Python"></category></entry><entry><title>Adam Yauch has passed</title><link href="http://blog.aclark.net/2012/05/11/adam-yauch-has-passed" rel="alternate"></link><updated>2012-05-11T09:58:00Z</updated><author><name>Alex Clark</name></author><id>tag:blog.aclark.net,2012-05-11:2012/05/11/adam-yauch-has-passed</id><summary type="html">&lt;p&gt;&lt;em&gt;And why it matters to tech people, like me&lt;/em&gt;&lt;/p&gt;
+</summary><category term="Mozilla"></category><category term="Plone"></category><category term="Python"></category></entry><entry><title>Adam Yauch has passed</title><link href="http://blog.aclark.net//2012/05/11/adam-yauch-has-passed/" rel="alternate"></link><updated>2012-05-11T09:58:00Z</updated><author><name>Alex Clark</name></author><id>tag:blog.aclark.net,2012-05-11:/2012/05/11/adam-yauch-has-passed/</id><summary type="html">&lt;p&gt;&lt;em&gt;And why it matters to tech people, like me&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;(I hope my tech colleagues will indulge my thoughts on the recent
 passing of Beastie Boy Adam Yauch.)&lt;/p&gt;
 &lt;p&gt;TL;DR: I &amp;lt;3 the Beastie Boys and will miss Adam Yauch; and I suspect
@@ -370,7 +415,7 @@ Mike D who gave it to me.&lt;/p&gt;
 &lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/adam-yauch-has-passed.rst&lt;/tt&gt;, line 59); &lt;em&gt;&lt;a href="#id2"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 Unknown target name: &amp;quot;|image0|&amp;quot;.&lt;/div&gt;
 &lt;/div&gt;
-</summary><category term="Mozilla"></category><category term="Plone"></category><category term="Python"></category></entry><entry><title>New Year&amp;#039;s Python Meme 2012</title><link href="http://blog.aclark.net/2011/12/21/new-year039s-python-meme-2012" rel="alternate"></link><updated>2011-12-21T13:11:00Z</updated><author><name>Alex Clark</name></author><id>tag:blog.aclark.net,2011-12-21:2011/12/21/new-year039s-python-meme-2012</id><summary type="html">&lt;p&gt;&lt;em&gt;My response to
+</summary><category term="Mozilla"></category><category term="Plone"></category><category term="Python"></category></entry><entry><title>New Year&amp;#039;s Python Meme 2012</title><link href="http://blog.aclark.net//2011/12/21/new-year039s-python-meme-2012/" rel="alternate"></link><updated>2011-12-21T13:11:00Z</updated><author><name>Alex Clark</name></author><id>tag:blog.aclark.net,2011-12-21:/2011/12/21/new-year039s-python-meme-2012/</id><summary type="html">&lt;p&gt;&lt;em&gt;My response to
 `http://tarekziade.wordpress.com/2011/12/20/new-years-python-meme-2/`_
 (with gratuitous links to `pythonpackages.com`_, my new project,
 sprinkled throughout).&lt;/em&gt;&lt;/p&gt;
@@ -411,7 +456,7 @@ would write in 2012?&lt;/strong&gt;&lt;/p&gt;
 and launches it in first quarter of 2012; and I hope folks find it
 useful.&lt;/p&gt;
 &lt;/div&gt;
-</summary><category term="Mozilla"></category><category term="Plone"></category><category term="Python"></category></entry><entry><title>Vagrant, Puppet and Mozilla, oh my!</title><link href="http://blog.aclark.net/2011/10/03/vagrant-puppet-and-mozilla-oh-my" rel="alternate"></link><updated>2011-10-03T17:25:00Z</updated><author><name>Alex Clark</name></author><id>tag:blog.aclark.net,2011-10-03:2011/10/03/vagrant-puppet-and-mozilla-oh-my</id><summary type="html">&lt;p&gt;&lt;em&gt;Warning: This post is only loosely Python related and not at all Plone
+</summary><category term="Mozilla"></category><category term="Plone"></category><category term="Python"></category></entry><entry><title>Vagrant, Puppet and Mozilla, oh my!</title><link href="http://blog.aclark.net//2011/10/03/vagrant-puppet-and-mozilla-oh-my/" rel="alternate"></link><updated>2011-10-03T17:25:00Z</updated><author><name>Alex Clark</name></author><id>tag:blog.aclark.net,2011-10-03:/2011/10/03/vagrant-puppet-and-mozilla-oh-my/</id><summary type="html">&lt;p&gt;&lt;em&gt;Warning: This post is only loosely Python related and not at all Plone
 related, but I thought folks might enjoy hearing about Vagrant and
 Puppet because these tools may help you do your Plone and Python jobs
 better.&lt;/em&gt;&lt;/p&gt;

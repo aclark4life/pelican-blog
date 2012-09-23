@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-        <title>repoze.bfg tonight FTW!</title>
+        <title>Sorry for the blog spam</title>
         <meta charset="utf-8" />
         <link rel="stylesheet" href="../../../../.././theme/css/main.css" type="text/css" />
         
@@ -46,8 +46,8 @@
   <article>
     <header>
       <h1 class="entry-title">
-        <a href="/2008/09/02/repozebfg-tonight-ftw/" rel="bookmark"
-           title="Permalink to repoze.bfg tonight FTW!">repoze.bfg tonight FTW!</a></h1>
+        <a href="/2012/09/22/sorry-for-the-blog-spam/" rel="bookmark"
+           title="Permalink to Sorry for the blog spam">Sorry for the blog spam</a></h1>
       
 <a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="aclark4life">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
 
@@ -55,8 +55,8 @@
 
     <div class="entry-content">
       <footer class="post-info">
-        <abbr class="published" title="2008-09-02T13:09:00">
-                Tue 02 September 2008
+        <abbr class="published" title="2012-09-22T21:45:00">
+                Sat 22 September 2012
         </abbr>
 
         
@@ -65,33 +65,55 @@
         </address>
         
 <p>In <a href="../../../../.././category/blog.html">Blog</a>. </p>
-<p>tags: <a href="../../../../.././tag/plone.html">Plone</a></p>
+<p>tags: <a href="../../../../.././tag/mozilla.html">Mozilla</a><a href="../../../../.././tag/plone.html">Plone</a><a href="../../../../.././tag/python.html">Python</a></p>
 
 
 </footer><!-- /.post-info -->
-      <p>Tonight ex-Zope Corporation luminary <strong>Chris McDonough</strong> unveils his
-<a class="reference external" href="http://static.repoze.org/bfgdocs/">BFG</a> (Big ****ing Gun) which:</p>
-<p>(excerpt from <a class="reference external" href="http://static.repoze.org/bfgdocs/index.html">http://static.repoze.org/bfgdocs/index.html</a>)</p>
-<ul class="simple">
-<li>is a<strong>Python web application framework</strong>.</li>
-<li>is inspired by Zope’s publisher, though it is less ambitious in
-scope.</li>
-<li>relies heavily on Zope libraries and WSGI.</li>
-</ul>
-<p>Woo Hoo! My favorite thing about repoze.bfg is:</p>
-</p><p>(excerpt from
-<a class="reference external" href="http://static.repoze.org/bfgdocs/narr/introduction.html#why">http://static.repoze.org/bfgdocs/narr/introduction.html#why</a>)</p>
-<ul class="simple">
-<li><strong>Familiarity</strong>: As web developers, we’ve become accustomed to
-working in very particular ways (primarily using Zope 2) over the
-years.&nbsp; This framework is a canonization of practices that “fit our
-brains”.</li>
-</ul>
-<p>We are also celebrating only (a little over) one month left until <a class="reference external" href="http://plone.org/2008">Plone
-Conference 2008</a> at the Ronald Reagan Building in DC (and <a class="reference external" href="http://www.openplans.org/projects/plone-conference-2008-dc/sprint">sprint</a> at
-Arlington Career Center in VA).</p>
-</p><p>See you tonight!</p>
-<p><a class="reference external" href="http://zpugdc.org/meetings/mtg67">http://zpugdc.org/meetings/mtg67</a></p>
+      <p>As I'm just learning <a class="reference external" href="http://blog.getpelican.com">Pelican</a>, <a class="reference external" href="https://twitter.com/djco">Dirkjan Ochtman</a> pointed out that I can have &quot;fancy&quot; URLs via the <cite>ARTICLE_PERMALINK_STRUCTURE</cite> setting. So the blog spam you are seeing is a result of my publishing the same two articles with two different URLs (fancy and non-fancy). My apologies for the noise.</p>
+<div class="section" id="publishconf-py">
+<h2>publishconf.py</h2>
+<p>And actually, I found <cite>ARTICLE_URL</cite> and <cite>ARTICLE_SAVE_AS</cite> to be the settings I wanted to use instead <a class="footnote-reference" href="#id4" id="id1">[1]</a>. My <a class="reference external" href="https://github.com/ACLARKNET/aclarknet.github.com/blob/master/publishconf.py">publishconf.py</a> now looks like this <a class="footnote-reference" href="#id5" id="id2">[2]</a>:</p>
+<pre class="literal-block">
+ARTICLE_SAVE_AS = '/{date:%Y}/{date:%m}/{date:%d}/{slug}/index.html'
+ARTICLE_URL = '/{date:%Y}/{date:%m}/{date:%d}/{slug}/'
+AUTHOR = u'Alex Clark'
+CATEGORY_FEED_ATOM = None
+CATEGORY_FEED_RSS = None
+DEFAULT_CATEGORY = 'Blog'
+DEFAULT_LANG = 'en'
+DEFAULT_PAGINATION = 10
+DELETE_OUTPUT_DIRECTORY = True
+DISQUS_SITENAME = 'aclark-blog'
+GITHUB_URL = 'https://github.com/ACLARKNET/aclarknet.github.com'
+GOOGLE_ANALYTICS = 'UA-34988446-1'
+SITENAME = u'Alex Clark'
+SITEURL = 'http://blog.aclark.net'
+SOCIAL = (
+    ('GitHub', 'http://github.com/aclark4life'),
+    ('Gittip', 'https://www.gittip.com/aclark4life'),
+    ('PythonPackages', 'https://pythonpackages.com/user/aclark4life'),
+    ('Twitter', 'http://twitter.com/aclark4life'),
+    ('atom feed (Mozilla)', 'http://blog.aclark.net/Mozilla.atom.xml'),
+    ('atom feed (Plone)', 'http://blog.aclark.net/Plone.atom.xml'),
+    ('atom feed (Python)', 'http://blog.aclark.net/Python.atom.xml'),
+)
+TAG_FEED_ATOM = 'feeds/%s.atom.xml'
+TAG_FEED_RSS = None
+TWITTER_USERNAME = 'aclark4life'
+</pre>
+<table class="docutils footnote" frame="void" id="id4" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id1">[1]</a></td><td><a class="reference external" href="http://pelican.notmyidea.org/en/3.0/settings.html#url-settings">http://pelican.notmyidea.org/en/3.0/settings.html#url-settings</a></td></tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="id5" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id2">[2]</a></td><td>I removed the extraneous pelicanconf.py and put everything in one file</td></tr>
+</tbody>
+</table>
+</div>
 
     </div><!-- /.entry-content -->
     
@@ -99,7 +121,7 @@ Arlington Career Center in VA).</p>
       <h2>Comments !</h2>
       <div id="disqus_thread"></div>
       <script type="text/javascript">
-        var disqus_identifier = "/2008/09/02/repozebfg-tonight-ftw/";
+        var disqus_identifier = "/2012/09/22/sorry-for-the-blog-spam/";
         (function() {
         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
         dsq.src = 'http://aclark-blog.disqus.com/embed.js';
