@@ -570,15 +570,15 @@ Unknown target name: &amp;quot;|image1|&amp;quot;.&lt;/div&gt;
 these words? Lately I've been spending a lot of time developing
 &lt;a class="reference external" href="http://pythonpackages.com"&gt;pythonpackages.com&lt;/a&gt;, (now running on heroku!) during which time I see
 a lot of these kinds of packages being released:&lt;/p&gt;
-&lt;p&gt;&lt;a href="#id1"&gt;&lt;span class="problematic" id="id2"&gt;`|image0|`_&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external" href="http://aclark4life.files.wordpress.com/2012/05/screen-shot-2012-05-23-at-9-41-32-pm.png"&gt;|image0|&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;I kid about the killing part, but seriously: &lt;strong&gt;this is a problem&lt;/strong&gt;.
 Fortunately for us, our PyPI overloads see fit to occasionally remove
 these packages, and for this I am grateful. I love seeing this:&lt;/p&gt;
-&lt;p&gt;&lt;a href="#id3"&gt;&lt;span class="problematic" id="id4"&gt;`|image1|`_&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external" href="http://aclark4life.files.wordpress.com/2012/05/screen-shot-2012-05-23-at-9-57-43-pm.png"&gt;|image1|&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;I mean it makes me &lt;em&gt;dance-around-the-room&lt;/em&gt; happy! Ahem. But are they
 really all gone? Close enough. A quick &lt;a class="reference external" href="https://crate.io/?q=a+simple+printer+of+nested+lists"&gt;crate.io search&lt;/a&gt; now shows only
 2 packages instead of 4 pages of results:&lt;/p&gt;
-&lt;p&gt;&lt;a href="#id5"&gt;&lt;span class="problematic" id="id6"&gt;`|image2|`_&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external" href="http://aclark4life.files.wordpress.com/2012/05/screen-shot-2012-05-23-at-10-04-46-pm.png"&gt;|image2|&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Hallelujah! But is this the best we can do? I know that some
 well-meaning person wrote a book containing the example that is leading
 some poor, misguided souls to spam PyPI (if only the author listed the
@@ -592,18 +592,6 @@ frequent enough to be annoying). After grousing about it in public, it
 stopped happening!&lt;/p&gt;
 &lt;p&gt;I wonder if some good natured grousing about our friends (read: enemies)
 the &lt;em&gt;simple printers of nested lists&lt;/em&gt; will do the same?&lt;/p&gt;
-&lt;div class="system-messages section"&gt;
-&lt;h2&gt;Docutils System Messages&lt;/h2&gt;
-&lt;div class="system-message" id="id1"&gt;
-&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/a-simple-printer-of-nested-lists.rst&lt;/tt&gt;, line 13); &lt;em&gt;&lt;a href="#id2"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
-Unknown target name: &amp;quot;|image0|&amp;quot;.&lt;/div&gt;
-&lt;div class="system-message" id="id3"&gt;
-&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/a-simple-printer-of-nested-lists.rst&lt;/tt&gt;, line 19); &lt;em&gt;&lt;a href="#id4"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
-Unknown target name: &amp;quot;|image1|&amp;quot;.&lt;/div&gt;
-&lt;div class="system-message" id="id5"&gt;
-&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/a-simple-printer-of-nested-lists.rst&lt;/tt&gt;, line 25); &lt;em&gt;&lt;a href="#id6"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
-Unknown target name: &amp;quot;|image2|&amp;quot;.&lt;/div&gt;
-&lt;/div&gt;
 </summary><category term="Plone"></category><category term="Python"></category></entry><entry><title>Adam Yauch has passed</title><link href="http://blog.aclark.net//2012/05/11/adam-yauch-has-passed/" rel="alternate"></link><updated>2012-05-11T09:58:00Z</updated><author><name>Alex Clark</name></author><id>tag:blog.aclark.net,2012-05-11:/2012/05/11/adam-yauch-has-passed/</id><summary type="html">&lt;p&gt;&lt;em&gt;And why it matters to tech people, like me&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;(I hope my tech colleagues will indulge my thoughts on the recent
 passing of Beastie Boy Adam Yauch.)&lt;/p&gt;
@@ -642,9 +630,10 @@ had a lot of fun. Most importantly: I proved to myself I could do it.
 The shows I put on with my band were awesome; they were true rock shows:
 those in which the audience responded positively, viscerally. There is
 no better feeling in the world than that type of self-expression.&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external" href="http://aclark4life.files.wordpress.com/2012/05/img_0391.jpg"&gt;|image0|&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
-&lt;div class="section" id="image0-who-i-am-now"&gt;
-&lt;h2&gt;&lt;a href="#id1"&gt;&lt;span class="problematic" id="id2"&gt;`|image0|`_&lt;/span&gt;&lt;/a&gt;Who I am now&lt;/h2&gt;
+&lt;div class="section" id="who-i-am-now"&gt;
+&lt;h2&gt;Who I am now&lt;/h2&gt;
 &lt;p&gt;Eventually the band imploded, and I found a new obsession: technology. I
 have always been obsessed with tech, but never focused on it exclusively
 until the mid to late 2000s. Now I have a new set of heroes to emulate,
@@ -670,12 +659,6 @@ who has rapped, joked, snowboarded, and philanthropized his way through
 all our lives: thank you for the inspiration; I use it every day, and
 I'll never forget it was &lt;em&gt;you&lt;/em&gt; and your closest two brothers Ad-Rock and
 Mike D who gave it to me.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="system-messages section"&gt;
-&lt;h2&gt;Docutils System Messages&lt;/h2&gt;
-&lt;div class="system-message" id="id1"&gt;
-&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/adam-yauch-has-passed.rst&lt;/tt&gt;, line 55); &lt;em&gt;&lt;a href="#id2"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
-Unknown target name: &amp;quot;|image0|&amp;quot;.&lt;/div&gt;
 &lt;/div&gt;
 </summary><category term="Mozilla"></category><category term="Plone"></category><category term="Python"></category></entry><entry><title>test-plone tmp</title><link href="http://blog.aclark.net//2012/04/04/test-plone-tmp/" rel="alternate"></link><updated>2012-04-04T14:14:00Z</updated><author><name>Alex Clark</name></author><id>tag:blog.aclark.net,2012-04-04:/2012/04/04/test-plone-tmp/</id><summary type="html">&lt;p&gt;Since Day 1 with Plone circa 2004, I've always taken pride in and
 greatly enjoyed refining my development environment. It's been stable

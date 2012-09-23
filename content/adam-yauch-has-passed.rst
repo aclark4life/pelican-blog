@@ -51,7 +51,9 @@ The shows I put on with my band were awesome; they were true rock shows:
 those in which the audience responded positively, viscerally. There is
 no better feeling in the world than that type of self-expression.
 
-`|image0|`_\ Who I am now
+`|image0|`_
+
+Who I am now
 -------------------------
 
 Eventually the band imploded, and I found a new obsession: technology. I
@@ -82,7 +84,4 @@ all our lives: thank you for the inspiration; I use it every day, and
 I'll never forget it was *you* and your closest two brothers Ad-Rock and
 Mike D who gave it to me.
 
-.. _|image1|: http://aclark4life.files.wordpress.com/2012/05/img_0391.jpg
-
-.. |image0| image:: http://aclark4life.files.wordpress.com/2012/05/img_0391.jpg
-.. |image1| image:: http://aclark4life.files.wordpress.com/2012/05/img_0391.jpg
+.. _|image0|: http://aclark4life.files.wordpress.com/2012/05/img_0391.jpg

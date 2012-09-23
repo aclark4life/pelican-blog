@@ -8,7 +8,7 @@ Well, no blood yet. But certainly sweat and tears! If `Plone Conference
 `Professional Plone Development`_ was my inspiration for this book:
 `Plone 3.3 Site Administration`_.
 
-`|image0|`_\ For the past 14 months or so, I have been writing a book
+`|image0|`_ For the past 14 months or so, I have been writing a book
 aimed at end users of Plone; folks that have little knowledge of how to
 do much more than add content. It is intended to make them feel more
 comfortable performing various site administrator tasks. Topics like
@@ -174,7 +174,6 @@ always looking for a challenge.
 .. _Plone Conference 2008: http://plone.org/2008
 .. _Professional Plone Development: https://www.packtpub.com/Professional-Plone-web-applications-CMS/book
 .. _Plone 3.3 Site Administration: https://www.packtpub.com/plone-3-3-site-administration/book
-.. _|image1|: http://blog.aclark.net/wp-content/uploads/2010/03/plone-site-admin.jpg
 .. _MacGyver: http://en.wikipedia.org/wiki/MacGyver
 .. _full WSGI support in Zope 2: http://article.gmane.org/gmane.comp.web.zope.plone.devel/23887
 .. _pre-order now: https://www.packtpub.com/plone-3-3-site-administration/book
@@ -182,5 +181,4 @@ always looking for a challenge.
 .. _my previous blog entry: http://blog.aclark.net/?p=170
 .. _get in touch.: mailto:aclark@aclark.net?subject="Hire%20Alex%20Clark"
 .. _contact: http://aclark.net/contact-info
-.. |image0| image:: http://blog.aclark.net/wp-content/uploads/2010/03/plone-site-admin.jpg
-.. |image1| image:: http://blog.aclark.net/wp-content/uploads/2010/03/plone-site-admin.jpg
+.. _|image0|: http://blog.aclark.net/wp-content/uploads/2010/03/plone-site-admin.jpg

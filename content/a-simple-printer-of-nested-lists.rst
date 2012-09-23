@@ -48,9 +48,9 @@ the *simple printers of nested lists* will do the same?
 .. _`http://testpypi.python.org/pypi`: http://testpypi.python.org/pypi
 .. _Deliverance: http://pythonpackages.com/package/deliverance
 
-.. |image0| image:: http://aclark4life.files.wordpress.com/2012/05/screen-shot-2012-05-23-at-9-41-32-pm.png
-.. |image1| image:: http://aclark4life.files.wordpress.com/2012/05/screen-shot-2012-05-23-at-9-57-43-pm.png
-.. |image2| image:: http://aclark4life.files.wordpress.com/2012/05/screen-shot-2012-05-23-at-10-04-46-pm.png
-.. |image3| image:: http://aclark4life.files.wordpress.com/2012/05/screen-shot-2012-05-23-at-9-41-32-pm.png
-.. |image4| image:: http://aclark4life.files.wordpress.com/2012/05/screen-shot-2012-05-23-at-9-57-43-pm.png
-.. |image5| image:: http://aclark4life.files.wordpress.com/2012/05/screen-shot-2012-05-23-at-10-04-46-pm.png
+.. _|image0|: http://aclark4life.files.wordpress.com/2012/05/screen-shot-2012-05-23-at-9-41-32-pm.png
+.. _|image1|: http://aclark4life.files.wordpress.com/2012/05/screen-shot-2012-05-23-at-9-57-43-pm.png
+.. _|image2|: http://aclark4life.files.wordpress.com/2012/05/screen-shot-2012-05-23-at-10-04-46-pm.png
+.. _|image3|: http://aclark4life.files.wordpress.com/2012/05/screen-shot-2012-05-23-at-9-41-32-pm.png
+.. _|image4|: http://aclark4life.files.wordpress.com/2012/05/screen-shot-2012-05-23-at-9-57-43-pm.png
+.. _|image5|: http://aclark4life.files.wordpress.com/2012/05/screen-shot-2012-05-23-at-10-04-46-pm.png

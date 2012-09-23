@@ -90,18 +90,14 @@ Check it out! `|image6|`_
 .. _roadmap for beta Q3 is here: http://docs.pythonpackages.com/en/latest/roadmap.html
 .. _Dia: http://dia-installer.de/
 .. _|image13|: http://aclark4life.files.wordpress.com/2012/08/pythonpackages-diagram.png
-
-.. |image0| image:: http://aclark4life.files.wordpress.com/2012/08/screen-shot-2012-08-01-at-3-41-28-pm.png?w=300
-.. |image1| image:: http://aclark4life.files.wordpress.com/2012/08/50-56-240-204-screen-capture.png?w=300
-.. |image2| image:: http://aclark4life.files.wordpress.com/2012/08/screen-shot-2012-08-01-at-4-39-53-pm.png?w=300
-.. |image3| image:: http://aclark4life.files.wordpress.com/2012/08/buddy-screen-capture.png?w=300
-.. |image4| image:: http://aclark4life.files.wordpress.com/2012/08/buddy-screen-capture-2.png?w=300
-.. |image5| image:: http://aclark4life.files.wordpress.com/2012/08/buddy-screen-capture-3.png?w=300
-.. |image6| image:: http://aclark4life.files.wordpress.com/2012/08/pythonpackages-diagram.png?w=300
-.. |image7| image:: http://aclark4life.files.wordpress.com/2012/08/screen-shot-2012-08-01-at-3-41-28-pm.png?w=300
-.. |image8| image:: http://aclark4life.files.wordpress.com/2012/08/50-56-240-204-screen-capture.png?w=300
-.. |image9| image:: http://aclark4life.files.wordpress.com/2012/08/screen-shot-2012-08-01-at-4-39-53-pm.png?w=300
-.. |image10| image:: http://aclark4life.files.wordpress.com/2012/08/buddy-screen-capture.png?w=300
-.. |image11| image:: http://aclark4life.files.wordpress.com/2012/08/buddy-screen-capture-2.png?w=300
-.. |image12| image:: http://aclark4life.files.wordpress.com/2012/08/buddy-screen-capture-3.png?w=300
-.. |image13| image:: http://aclark4life.files.wordpress.com/2012/08/pythonpackages-diagram.png?w=300
+.. _|image0|: http://aclark4life.files.wordpress.com/2012/08/screen-shot-2012-08-01-at-3-41-28-pm.png?w=300
+.. _|image1|: http://aclark4life.files.wordpress.com/2012/08/50-56-240-204-screen-capture.png?w=300
+.. _|image2|: http://aclark4life.files.wordpress.com/2012/08/screen-shot-2012-08-01-at-4-39-53-pm.png?w=300
+.. _|image3|: http://aclark4life.files.wordpress.com/2012/08/buddy-screen-capture.png?w=300
+.. _|image4|: http://aclark4life.files.wordpress.com/2012/08/buddy-screen-capture-2.png?w=300
+.. _|image5|: http://aclark4life.files.wordpress.com/2012/08/buddy-screen-capture-3.png?w=300
+.. _|image6|: http://aclark4life.files.wordpress.com/2012/08/pythonpackages-diagram.png?w=300
+.. _|image7|: http://aclark4life.files.wordpress.com/2012/08/screen-shot-2012-08-01-at-3-41-28-pm.png?w=300
+.. _|image8|: http://aclark4life.files.wordpress.com/2012/08/50-56-240-204-screen-capture.png?w=300
+.. _|image9|: http://aclark4life.files.wordpress.com/2012/08/screen-shot-2012-08-01-at-4-39-53-pm.png?w=300
+.. _|image10|: http://aclark4life.files.wordpress.com/2012/08/buddy-screen-capture.png?w=300
