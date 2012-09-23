@@ -1,4 +1,4 @@
-Bootstrapping a Buildout 1.6 release
+Bootstrapping a Buildout 1-6 release
 ####################################
 :date: 2012-08-13 21:10
 :tags: Plone, Python
