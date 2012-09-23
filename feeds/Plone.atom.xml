@@ -116,7 +116,7 @@ $ make publish; git commit -a -m &amp;quot;Publish&amp;quot;; git push
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;/div&gt;
-</summary><category term="Mozilla"></category><category term="Plone"></category><category term="Python"></category></entry><entry><title>Bootstrapping a Buildout 1.6 release</title><link href="http://blog.aclark.net/2012/08/13/bootstrapping-a-buildout-16-release" rel="alternate"></link><updated>2012-08-13T21:10:00Z</updated><author><name>Alex Clark</name></author><id>tag:blog.aclark.net,2012-08-13:2012/08/13/bootstrapping-a-buildout-16-release</id><summary type="html">&lt;p&gt;A lot of work has been done on Buildout lately, most notably:&lt;/p&gt;
+</summary><category term="Mozilla"></category><category term="Plone"></category><category term="Python"></category></entry><entry><title>Bootstrapping a Buildout 1-6 release</title><link href="http://blog.aclark.net/2012/08/13/bootstrapping-a-buildout-1-6-release" rel="alternate"></link><updated>2012-08-13T21:10:00Z</updated><author><name>Alex Clark</name></author><id>tag:blog.aclark.net,2012-08-13:2012/08/13/bootstrapping-a-buildout-1-6-release</id><summary type="html">&lt;p&gt;A lot of work has been done on Buildout lately, most notably:&lt;/p&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;Jim Fulton is &lt;a class="reference external" href="https://github.com/buildout/buildout/commits/master"&gt;working on Buildout 2&lt;/a&gt;.&lt;/li&gt;
 &lt;li&gt;Ross Patterson has greatly &lt;a class="reference external" href="http://rpatterson.net/blog/buildout-performance-improvements"&gt;improved Buildout performance&lt;/a&gt;.&lt;/li&gt;
