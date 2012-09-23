@@ -12,7 +12,6 @@ GITHUB_URL = 'https://github.com/ACLARKNET/aclarknet.github.com'
 GOOGLE_ANALYTICS = 'UA-34988446-1'
 SITENAME = u'Alex Clark'
 SITEURL = 'http://blog.aclark.net'
-SITEURL = 'http://blog.aclark.net'
 SOCIAL = (
     ('GitHub', 'http://github.com/aclark4life'),
     ('Gittip', 'https://www.gittip.com/aclark4life'),
