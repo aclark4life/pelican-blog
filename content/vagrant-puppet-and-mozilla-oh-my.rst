@@ -50,14 +50,6 @@ waited so long because the "cool factor" is very high. It requires that
 `Virtualbox`_ be installed, which I also danced around for too long
 before committing (being a former Parallels user).
 
-.. raw:: html
-
-   </p>
-
-.. raw:: html
-
-   <p>
-
 On OS X Lion[1], installing Vagrant is simply a matter of:
 
 ::
@@ -74,10 +66,6 @@ inside some revision-controlled directory and you have the beginnings of
 a virtual machine you can share with the masses. This is how
 `kitsune-vagrant`_ was born. Hopefully this shared virtual machine will
 eventually make some new developer's life much easier.
-
-.. raw:: html
-
-   </p>
 
 We now arrive at a fork in the road; though Vagrant makes it easy to
 follow both paths: Chef or Puppet (it supports both). I don't recall
@@ -97,10 +85,6 @@ there is much more to Puppet, especially with regard to doing actual
 configuration management on production servers. But I have not explored
 any of that yet.
 
-.. raw:: html
-
-   </p>
-
 However, I did learn quite a bit about Puppet just from writing the
 manifest. The first most important thing I learned is this: **Puppet is
 in charge**. It does things the way it wants to and you need to follow
@@ -110,10 +94,6 @@ execution of tasks.
 You cannot write rules in order and hope for the best. This will fail
 spectacularly when something executes before something else was supposed
 to. The way around this is via \`require =>\` statements.
-
-.. raw:: html
-
-   <p>
 
 A grep through kitsune.pp reveals:
 
@@ -165,10 +145,6 @@ Notes
 
 [1] This did not work on Snow Leopard, because \`gem\` is too old.
 However if you \`brew install ruby\` and try again, it should work.
-
-.. raw:: html
-
-   </p>
 
 [2] I didn't bother to investigate Chef, but I am curious about it.
 

@@ -12,10 +12,6 @@ Contributor`_.
 
 Now, it is as simple as editing your buildout.cfg like so:
 
-.. raw:: html
-
-   <p>
-
 1. Add a part for supervisor:
 
 ::
@@ -112,10 +108,6 @@ Now, it is as simple as editing your buildout.cfg like so:
     zeo: startedinstance: started
 
 and generally go about your business, unfettered.
-
-.. raw:: html
-
-   </p>
 
 .. _last wrote about supervisor: /Members/aclark/supervisor-rocks/
 .. _collective.recipe.supervisor: http://pypi.python.org/pypi/collective.recipe.supervisor/0.4

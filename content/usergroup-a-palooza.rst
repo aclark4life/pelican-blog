@@ -31,10 +31,6 @@ Thing ™. It suggests that:
 
 See you at the next Python/Zope/Plone/Grok/Repoze meeting! ;-)
 
-.. raw:: html
-
-   </p>
-
 .. _|image1|: http://aclark4life.files.wordpress.com/2007/11/nate-zpugdc.jpg
 .. _Tres Seaver: http://agendaless.com
 .. _ZUG-SIG: http://mail.zope.org/mailman/listinfo/zug-sig

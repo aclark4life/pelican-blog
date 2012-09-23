@@ -62,10 +62,6 @@ compete most effectively with "the big boys" (i.e. all our
 friends/colleagues/etc at http://plone.net) we need to be more
 pro-active about seeking out new business.
 
-.. raw:: html
-
-   </p>
-
 That's where you come in.
 
 About you
@@ -113,10 +109,6 @@ Next step
 
 Sound like you? Let's talk: `aclark@aclark.net`_, 301-312-5236.
 
-.. raw:: html
-
-   </p>
-
 We look forward to hearing from you, and please feel free to pass this
 information on to anyone you think may be interested in this
 opportunity.
@@ -128,10 +120,6 @@ Notes
    Even something as small as 8 hours per month would be helpful.
 #. `http://aclark.net/team`_
 #. `http://aclark.net/clients`_
-
-.. raw:: html
-
-   </p>
 
 .. _aclark@aclark.net: mailto:aclark@aclark.net
 .. _`http://aclark.net/team`: http://aclark.net/team

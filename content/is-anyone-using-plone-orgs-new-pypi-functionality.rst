@@ -19,10 +19,6 @@ This blog entry is both a "call to arms" to everyone involved in
 helping, and a message to everyone waiting patiently that we haven't
 forgotten about you! :-D
 
-.. raw:: html
-
-   </p>
-
 In particular, I'd like to hear from any early adopters of the new
 `http://plone.org/products`_\ section. You can read about how to use the
 new PyPI functionality here, if you haven't already:

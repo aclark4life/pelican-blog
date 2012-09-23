@@ -13,10 +13,6 @@ which is why I linked to the 3.3.3 unified installer (although there is
 no Windows installer for 3.3.3 yet, which is why it's not released on
 plone.org).
 
-.. raw:: html
-
-   <p>
-
 That said, since both Plone and Zope 2 have been packaged as eggs 
 (Plone became an egg in version 3.2 and Zope 2 became an egg as of Zope
 2.12 which is the version of Zope 2 that Plone 4 will use) it has become
@@ -34,14 +30,6 @@ editor and type:
       Plone
 
 Amazing!
-
-.. raw:: html
-
-   </p>
-
-.. raw:: html
-
-   <p>
 
 Of course there is the nasty bit about PIL, which I get around
 now-a-days by adding a very specific find-link, e.g.:
@@ -80,14 +68,6 @@ likely want to install buildout first so you can join in the fun.
 Fortunately, the nice Python people have made that easy with a package
 called `Distribute`_.
 
-.. raw:: html
-
-   </p>
-
-.. raw:: html
-
-   <p>
-
 Following their instructions, you can do this:
 
 ::
@@ -106,14 +86,6 @@ Then:
 
 After which you will have a buildout.cfg file, and you can follow along
 with the above steps. Happy?
-
-.. raw:: html
-
-   </p>
-
-.. raw:: html
-
-   <p>
 
 The best part about all of this is that (on a fast internet connection)
 it should only be a matter of minutes before you are able to do this:
@@ -142,23 +114,11 @@ If you'd like to get a little less noisy and skip debug mode but still
 run in the foreground, you can use April 2008's famous addition to
 plone.recipe.zope2instance:
 
-.. raw:: html
-
-   </p>
-
-.. raw:: html
-
-   <p>
-
 ::
 
     aclark@Alex-Clarks-MacBook-Pro:~/Developer/public-plone/ > bin/instance console
 
 Sweet, blissful, silent running Plone.
-
-.. raw:: html
-
-   </p>
 
 Happy Plone 4'ing all!
 

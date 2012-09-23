@@ -7,10 +7,6 @@ UNIX Tips for the Elderly
 post, I'd like to mention this so I won't forget it again (and, in case
 I do some nice Plonista somewhere wil remind me ;-).
 
-.. raw:: html
-
-   <p>
-
 I often want to do ***something*** to a bunch of files on the
 filesystem, e.g.
 
@@ -52,10 +48,6 @@ or
 
 ... and afterwards go back to whatever I was supposed to be working on
 in the first place. There, I feel better now! Thanks for listening,
-
-.. raw:: html
-
-   </p>
 
  
 

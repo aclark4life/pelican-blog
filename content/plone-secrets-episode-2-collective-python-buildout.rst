@@ -24,10 +24,6 @@ Check out this `log`_:
 
 It has been going strong for over 3 years.
 
-.. raw:: html
-
-   </p>
-
 If I recall correctly, it was born out of the frustration¹ of having to
 compile Python on Mac OS X Leopard. Python *never* compiles correctly on
 new versions of OS X (which is a complete mystery to me given that Apple
@@ -54,14 +50,6 @@ Or:
 
 If you are on Windows, give up (unless you have a Microsoft C compiler).
 Sorry.
-
-.. raw:: html
-
-   </p>
-
-.. raw:: html
-
-   <p>
 
 Now, check out the code from the repository (if you are a member of the
 `Collective`_ and may potentially contribute something back, make sure
@@ -120,16 +108,8 @@ Now you can add **/opt/local/bin** to your environment PATH variable.
 This will make it easy to choose a particular Python, PIP, or Virtualenv
 at your leisure.
 
-.. raw:: html
-
-   </p>
-
 Unfortunately, if you pip install something, it will end up in the
 checkout instead of */opt/local/bin*.
-
-.. raw:: html
-
-   <p>
 
 To get around this, I usually pick one Python for daily use, and add its
 bin directory to my environment PATH variable:
@@ -218,20 +198,12 @@ That's it! There is not too much more to say, other than I hope you find
 this post useful and will consider using the `Collective Python
 buildout`_.
 
-.. raw:: html
-
-   </p>
-
 Of course, comments are always welcome.
 
 Notes
 -----
 
 ¹ Experienced by its creator, `fschulze`_.
-
-.. raw:: html
-
-   </p>
 
 ² It will likely end up on `Github`_ at some point.
 

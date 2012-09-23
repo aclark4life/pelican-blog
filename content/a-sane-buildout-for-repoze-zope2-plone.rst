@@ -15,10 +15,6 @@ year`_. For the purposes of this blog entry, I'll refer to the issue as
 the "index vs. find-links" conundrum in buildout  (find-links in
 buildout are equivalent to distribution\_links in setuptools).
 
-.. raw:: html
-
-   </p>
-
 For those that want strict repeatability, using the index parameter is
 the clear winner. It simply forces buildout to do the right thing now
 and forever, by limiting what packages it can select from. For those
@@ -37,29 +33,13 @@ This is essentially why people like this method (the counter argument is
 that it is simple to add any additional egg you may want to your index,
 but we'll get to that later).
 
-.. raw:: html
-
-   </p>
-
-.. raw:: html
-
-   <p>
-
 So a simple buildout using this method might look like this:
 
     0. virtualenv plone; cd plone
 
-    .. raw:: html
-
-       </p>
-
     1. bin/easy\_install zc.buildout
 
     2. bin/buildout init
-
-    .. raw:: html
-
-       <p>
 
     3. Edit buildout.cfg:
 
@@ -90,14 +70,6 @@ buildout, but for now I'll just list them here:
 
     5. bin/mkzopeinstance
 
-    .. raw:: html
-
-       </p>
-
-    .. raw:: html
-
-       <p>
-
     6. bin/addzope2user admin admin
 
 Now, the moment we've all been waiting for… the fun part!
@@ -124,10 +96,6 @@ You should see something like:
 At this point, you should be able to login to
 http://localhost:8080/manage and create a Plone site.
 
-.. raw:: html
-
-   </p>
-
 Of course, we did a sloppy job here, creating the Zope2 instance in the
 root of the buildout, etc. It is possible that
 `plone.recipe.zope2install`_ may help us in the future by supporting
@@ -146,30 +114,14 @@ buildout that follows. The downside is that \*you\* can't control what I
 put in the index. However, you can certainly create your own index using
 this technique.
 
-.. raw:: html
-
-   </p>
-
-.. raw:: html
-
-   <p>
-
 An arguably even simpler buildout using this technique might look like
 this:
 
     0. virtualenv plone; cd plone
 
-    .. raw:: html
-
-       </p>
-
     1. bin/easy\_install zc.buildout
 
     2. bin/buildout init
-
-    .. raw:: html
-
-       <p>
 
     3. Edit buildout.cfg:
 
@@ -188,14 +140,6 @@ this:
     4. bin/buildout
 
     5. bin/mkzopeinstance
-
-    .. raw:: html
-
-       </p>
-
-    .. raw:: html
-
-       <p>
 
     6. bin/addzope2user admin admin
 
@@ -216,10 +160,6 @@ rename `http://dist.plone.org/experimental/release/3.3rc3/`_ to
 http://dist.plone.org/repoze/release/3.3rc3/. Of course, if anyone
 objects to this or finds it confusing, I can just as easily remove it
 (from dist.plone.org).
-
-.. raw:: html
-
-   </p>
 
 Special thanks to `Chris McDonough`_ and `Martin Aspeli`_ for helping me
 scratch my itch!

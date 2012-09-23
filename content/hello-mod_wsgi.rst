@@ -100,10 +100,6 @@ I've been using my `test-plone`_ script for years now, and I'm hoping
 that the test-apache script proves just as useful (especially as Plone
 moves closer to a WSGI-supporting stack via `Zope 2.13`_).
 
-.. raw:: html
-
-   </p>
-
 .. _various exciting Python technologies: http://blog.aclark.net/2011/08/20/hello-plone/
 .. _mod\_wsgi: http://code.google.com/p/modwsgi/
 .. _`http://code.google.com/p/modwsgi/wiki/QuickInstallationGuide`: http://code.google.com/p/modwsgi/wiki/QuickInstallationGuide

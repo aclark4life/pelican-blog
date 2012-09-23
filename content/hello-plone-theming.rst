@@ -20,8 +20,4 @@ The Diazo rules can get complex, but it's very easy to get your first
 rule done and working and then off you go. You may find this `new
 tutorial on pythonpackages.com`_. Enjoy, and get busy theming Plone.
 
-.. raw:: html
-
-   </p>
-
 .. _new tutorial on pythonpackages.com: http://readthedocs.org/docs/pythonpackages-docs/en/latest/features/examples/ex8-diazo.html

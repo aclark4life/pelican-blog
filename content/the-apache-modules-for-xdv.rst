@@ -19,10 +19,6 @@ Previously, I had been blissfully running http://aclark.net with NGINX,
 Plone 4 trunk, and XDV on a small virtual machine and absolutely loving
 it.
 
-.. raw:: html
-
-   </p>
-
 Additionally, I had separate virtual machines for my Wordpress blog
 (blog.aclark.net) and Subversion software repository (svn.aclark.net).
 The isolation of these services made them easy to manage and still

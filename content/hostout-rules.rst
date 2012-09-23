@@ -39,10 +39,6 @@ technical person and don't like them, I guarantee you at least
 understand them and can see why they might be appropriate in some cases
 over another technology.
 
-.. raw:: html
-
-   </p>
-
 Anyway, back to the awesomeness.
 
 Fabric
@@ -65,10 +61,6 @@ function called "bar", inside a (local) file called fabfile.py, on a
 speak. That is to say, you create a local fabfile.py file, and Fabric
 runs the code remotely for you on any number of hosts you give it.
 Brilliant.
-
-.. raw:: html
-
-   </p>
 
 Now, what could be better than these two technologies? These two
 technologies *together*, that's what. (See where I am going with this?)
@@ -96,10 +88,6 @@ staging site to production. I pitched the idea of a utility called
 "mr.pusher" to accomplish this task to Dylan, with the caveat that I was
 interested in making it work with Hostout.
 
-.. raw:: html
-
-   </p>
-
 As it turns out, between Hostout and a recipe I created years ago called
 `collective.recipe.rsync`_, "mr.pusher" almost already existed. Now back
 to the story.
@@ -109,14 +97,6 @@ Fabric integration made easy
 
 Since I knew I wanted to be able to execute a "push" command remotely, I
 figured I would finally get acclimated with Hostout.
-
-.. raw:: html
-
-   </p>
-
-.. raw:: html
-
-   <p>
 
 After a small wrestling match in my head with the docs, I came up with
 `this`_:
@@ -179,10 +159,6 @@ Conclusion
 I really like this setup, and I really appreciate what Hostout gets me
 "for free"; I didn't have to create a fabfile.py, I just configured my
 staging and production host parameters in buildout.cfg and off I went.
-
-.. raw:: html
-
-   </p>
 
 Of course, there is always room for improvement. The next most logical
 step for me would be to add cloud integration. If I could provision a

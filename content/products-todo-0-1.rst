@@ -15,10 +15,6 @@ through from start to finish, including:
 Repeat steps 2 and 3 as needed or desired. That product is Products.todo
 (`http://pypi.python.org/pypi/Products.todo/`_)
 
-.. raw:: html
-
-   </p>
-
 I also wanted to:
 
 -  Include the buildout in the product so I could easily add buildbot (a
@@ -31,10 +27,6 @@ I'm off to a good start I think as, while it took me a couple days (more
 than I expected), the product is now on pypi. (Thanks to
 irc://irc.freenode.net#plone and the product-developers list for the
 help!)
-
-.. raw:: html
-
-   </p>
 
 Next steps:
 
@@ -54,10 +46,6 @@ Next steps:
 -  New screenshot
 -  0.2 version on PyPI
 -  Thanks for the comments everyone!
-
-.. raw:: html
-
-   </p>
 
 .. _|image1|: http://aclark4life.files.wordpress.com/2008/11/products-todo.png
 .. _Plone Conference 2008: http://plone.org/2008

@@ -48,9 +48,5 @@ products/ directory:
 As always, there are `better ways to do this`_ but getting it done is
 nice too. Comments welcome! :-)
 
-.. raw:: html
-
-   </p>
-
 .. _`http://svn.gocept.com/viewcvs/ZNagios/trunk.tar.gz?view=tar`: http://svn.gocept.com/viewcvs/ZNagios/trunk.tar.gz?view=tar
 .. _better ways to do this: http://dev.plone.org/plone/changeset/21090

@@ -24,10 +24,6 @@ extremely Plone friendly web group called `WebLion`_) needs your help!
 Last I spoke with Eric he had reached 60% of his desired goal, so let's
 help him get to the finish line (by Wednesday).
 
-.. raw:: html
-
-   </p>
-
 You can (and probably should, if you can afford it ;-) donate a little
 something here:
 `http://www.theartofbeingstill.com/help-me-get-to-baarn`_

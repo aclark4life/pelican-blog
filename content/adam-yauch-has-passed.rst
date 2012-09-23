@@ -20,10 +20,6 @@ Madonna, and of course the Beastie Boys. While I was obsessed with
 Michael Jackson back then, I don't recall trying too hard to emulate the
 Beastie Boys… until the 90s.
 
-.. raw:: html
-
-   </p>
-
 In the early 90s, I was just out of high school (where I discovered Led
 Zeppelin, Pink Floyd, Beatles, Stones etc), was working full time at
 Chili's, and had no serious plans for college. I was really into music,
@@ -74,10 +70,6 @@ Without death to make life precious, there would be no joy in living. We
 all only have a short period of time in life to accomplish our goals, so
 it is important that we spend time trying to do so. (And if your goals
 include helping other people, bonus points from Adam.)
-
-.. raw:: html
-
-   </p>
 
 I cannot thank Adam Yauch (MCA), Adam Horovitz (Ad-Rock), and Mike D
 enough; for providing me with all the inspiration I needed, when I

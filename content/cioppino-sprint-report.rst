@@ -25,18 +25,12 @@ together at the Plone Conference 2008 sprint, smiling and working on
 their laptops. Before his death, it was just a random image that would
 occasionally pop into my head. Now, it's something I'll remember him by.
 
-.. raw:: html
-
-   </p>
 
 We also corresponded briefly about his `ExternalStorage`_ add-on for
 Plone, around the time we upgraded plone.org from Plone 2.5 to Plone 3.0
 (circa 2008), as well as traded emails about his invitation to attend
 Plone Conference 2008 in DC (for his visa application).
 
-.. raw:: html
-
-   <p>
 
 The funniest thing he ever said to me was when I was making the rounds
 asking for donations for Plone Conference 2008. He replied,
@@ -50,9 +44,6 @@ also reminded me of one the things I love most about Plone: the
 opportunity (I may never get otherwise) to correspond/collaborate with
 cool, passionate people all over the world.
 
-.. raw:: html
-
-   </p>
 
 To me, Dorneles was one of the living embodiments of the *coolness* and
 *worldliness* of the Plone project.
@@ -66,9 +57,6 @@ how many lives he touched with his work. And goodbye Dorneles; though I
 knew you very little, I will miss you very much. May your legacy live
 on, long in to the future.
 
-.. raw:: html
-
-   </p>
 
 Incidentally, if you would like to give money to help support Dorneles'
 family in the aftermath of this tragedy, you can do so here:
@@ -85,10 +73,6 @@ Sprint report
 happened (and I was only there for two days!); hopefully this report
 will be useful.
 
-.. raw:: html
-
-   </p>
-
 The focus of this sprint was evaluator approachability (i.e. making
 Plone look good to prospective new users).
 
@@ -100,10 +84,6 @@ direction regarding strategies to improve plone.net, documentation, and
 end user support. But most importantly, he pointed out that the first
 stop for any prospective new user is the website, so it's important that
 it look good.
-
-.. raw:: html
-
-   </p>
 
 David Glick (davisagli) and Elizabeth Leddy (eleddy) wasted no time in
 diving in to the 150 or so open tickets in the (now defunct) `plone.org
@@ -127,14 +107,6 @@ Additionally:
    now-blissfully-aligned username and password fields of the
    login\_form:
 
-   .. raw:: html
-
-      </p>
-
-   .. raw:: html
-
-      <p>
-
    [caption id="attachment\_1712" align="aligncenter" width="368"
    caption="Ahhhh… alignment."]\ `|image1|`_\ [/caption]
 -  zenwryly fixed the `team section`_ of plone.org.
@@ -151,14 +123,6 @@ Additionally:
 -  Jon Stahl (remotely) added a `"follow" section`_ to plone.org.
 -  hennaheto and feeeeesh produced this amazing (but `possibly
    non-compliant`_) sprint logo:\ ``_
-
-   .. raw:: html
-
-      </p>
-
-   .. raw:: html
-
-      <p>
 
    [caption id="attachment\_1763" align="aligncenter" width="367"
    caption="Cioppino sprint logo"]\ `|image2|`_\ [/caption]
@@ -210,14 +174,6 @@ event. To that end:
    (This feature may not work as expected yet, eleddy is resolving
    issues.) Check it out:
 
-   .. raw:: html
-
-      </p>
-
-   .. raw:: html
-
-      <p>
-
    [caption id="attachment\_1941" align="aligncenter" width="368"
    caption="Who's got two thumbs and likes
    Plone?"]\ `|image3|`_\ [/caption]
@@ -226,16 +182,8 @@ event. To that end:
    plone.org. Here are some screenshots of how the new sections will
    look once they launch:
 
-   .. raw:: html
-
-      </p>
-
    [caption id="attachment\_1948" align="aligncenter" width="336"
    caption="New support section"]\ `|image4|`_\ [/caption]
-
-   .. raw:: html
-
-      <p>
 
    [caption id="attachment\_1951" align="aligncenter" width="334"
    caption="New documentation section"]\ `|image5|`_\ [/caption]
@@ -243,10 +191,6 @@ event. To that end:
 That's it! Just so you don't worry the sprinters worked too hard, you
 can rest assured everyone was in good hands with zenwryly and his
 travelling-bar:
-
-.. raw:: html
-
-   </p>
 
 [caption id="attachment\_1913" align="aligncenter" width="290"
 caption="Ross Patterson's travelling bar"]\ `|image6|`_\ [/caption]
@@ -257,10 +201,6 @@ caption="Ross Patterson's travelling bar"]\ `|image6|`_\ [/caption]
 fun-but-hard work that goes in to attending a sprint, please consider
 `donating to my travel fund`_. Only three days left, and I'm still a few
 dollars short!*
-
-.. raw:: html
-
-   </p>
 
 .. _Cioppino Sprint: http://coactivate.org/projects/snow-sprint-west-2011/project-home
 .. _beautiful location: http://twitpic.com/3y21yk

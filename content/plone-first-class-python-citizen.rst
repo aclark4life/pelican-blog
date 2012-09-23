@@ -18,10 +18,6 @@ PyPI support in PSC
 Circa 2008, Tarek Ziadé and others finished the PyPI integration branch
 of PloneSoftwareCenter started by Sidnei Da Silva 2 years before.
 
-.. raw:: html
-
-   </p>
-
 `|image0|`_
 
 This was a big step towards the "Pythonification" of Plone, mainly
@@ -42,10 +38,6 @@ along came `readthedocs.org`_ (a Django Dash production, IIRC). And to
 Community Managed Developer Manual** to the `Github collective`_ and
 configured the RTD `service hook`_.
 
-.. raw:: html
-
-   </p>
-
 `|image1|`_
 
 This means that whenever anyone commits a change to the developer
@@ -63,15 +55,7 @@ Comparison`_ service, Plone now has its very own `grid comparison
 website`_! (`Djangopackages.com`_ was first, followed by
 `pyramid.opencomparison.org`_.)
 
-.. raw:: html
-
-   </p>
-
 `|image2|`_
-
-.. raw:: html
-
-   <p>
 
 This is a site where folks can add packages hosted elsewhere (e.g. svn,
 github, pypi), vote on them, and add grid comparisons to compare
@@ -81,14 +65,6 @@ waiting to use them to answer questions like:
 
     **Q: What's the best blogging add-on for Plone?**
 
-    .. raw:: html
-
-       </p>
-
-    .. raw:: html
-
-       <p>
-
     **A: http://plone.opencomparison.org/grids/g/weblogs/**
 
 The content is entirely user driven (TTW only) so please head over to
@@ -97,10 +73,6 @@ packages! And while you are at it, please report any issues you find
 here: `https://github.com/opencomparison/opencomparison/issues`_.
 Lastly, let's all tweet a big thanks to `@pydanny`_\ and `@audreyr`_ for
 their hard work and generosity!
-
-.. raw:: html
-
-   </p>
 
 .. _Plone: http://plone.org
 .. _|image3|: http://aclark4life.files.wordpress.com/2011/10/screen-shot-2011-10-22-at-9-18-04-am.png

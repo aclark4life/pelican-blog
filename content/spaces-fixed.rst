@@ -13,10 +13,6 @@ issue has actually been resolved by Apple, yay! See this post on
 macosxhints.com for more information:
 `http://www.macosxhints.com/article.php?story=2008021122525348`_
 
-.. raw:: html
-
-   <p>
-
 The short of it is, to alter the annoying spaces-follows-application
 behavior, do this:
 
@@ -30,10 +26,6 @@ behavior, do this:
 
 Now Plonistas everywhere (including Tomster) can give Spaces another
 try!
-
-.. raw:: html
-
-   </p>
 
 And now, with my sincerest thanks to Apple, I leave you to go work in
 another Space...

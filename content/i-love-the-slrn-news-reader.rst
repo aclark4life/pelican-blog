@@ -38,10 +38,6 @@ See:\ `http://slrn.sourceforge.net/manual/slrn-manual.html`_ for more
 information. I hope this post helps someone get started
 using\ ***slrn**!*
 
-.. raw:: html
-
-   </p>
-
 *Next, in Part II, I will cover **slrnpull**; the program I use
 (distributed with slrn) to download news. I never "read it live" and I
 will explain why ;-)*

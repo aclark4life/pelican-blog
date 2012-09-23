@@ -17,10 +17,6 @@ What’s the coolest Python application, framework or library you have discovere
 `pythonpackages.com`_\ (more or less). I used building the site as an
 excuse to learn Pyramid, and it was well worth it.
 
-.. raw:: html
-
-   </p>
-
 **What new programming technique did you learn in 2011?**
 
 I learned to **not** reinvent the wheel, and to collaborate with others
@@ -33,10 +29,6 @@ creating a "one off" migration script:
 I've since learned my lesson and have been collaborating meaningfully
 with `Dylan Jay`_\ on the more widely-supported `mr.migrator`_ and
 friends.
-
-.. raw:: html
-
-   </p>
 
 **What’s the name of the open source project you contributed to the most
 in 2011? What did you do?**

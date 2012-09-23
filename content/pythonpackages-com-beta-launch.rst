@@ -56,10 +56,6 @@ get access to GitHub organizations, whose repositories can then be
 `|image11|`_ If you'd like to get started using the site, check out the
 `crash course`_.
 
-.. raw:: html
-
-   </p>
-
 .. _|image12|: http://aclark4life.files.wordpress.com/2012/07/screen-shot-2012-07-03-at-11-15-58-pm.png
 .. _|image13|: http://aclark4life.files.wordpress.com/2012/07/screen-shot-2012-07-03-at-11-07-38-pm.png
 .. _|image14|: http://aclark4life.files.wordpress.com/2012/07/screen-shot-2012-07-03-at-11-24-38-pm1.png

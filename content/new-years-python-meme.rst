@@ -53,10 +53,6 @@ What are the three top things you want to learn in 2010?
 
 Happy (Python) New Year everyone!
 
-.. raw:: html
-
-   </p>
-
 .. _|image1|: http://aclark4life.files.wordpress.com/2009/12/python-komrades.png
 .. _Zenoss: http://zenoss.org
 .. _`http://plone.org/products/dexterity/documentation/manual/five.grok`: http://plone.org/products/dexterity/documentation/manual/five.grok

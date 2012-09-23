@@ -24,10 +24,6 @@ and:
 I plan to use either `epydoc`_ or `pudge`_. Suggestions welcome! For
 more information please see:
 
-.. raw:: html
-
-   </p>
-
 `http://plone.org/development/teams/documentation/documentation-tracker/37`_
 
 and:

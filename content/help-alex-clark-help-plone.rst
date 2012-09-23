@@ -64,10 +64,6 @@ I am trying to raise $1,000 USD to cover the following:
 I would appreciate any amount you can afford to give, to
 help-me-help-Plone be as great as it can be!
 
-.. raw:: html
-
-   </p>
-
 Please use the Chip-in below, or if you prefer (for all you
 anti-flash-ites), you can donate directly via PayPal with my email
 address: **aclark@aclark.net**.

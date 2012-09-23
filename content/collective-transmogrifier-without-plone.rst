@@ -28,10 +28,6 @@ configure and execute pipelines (currently only GenericSetup profiles
 and Python code are supported), I thought I'd experiment with removing
 the CMFCore dependency.
 
-.. raw:: html
-
-   </p>
-
 The initial, *experimental* results can be seen in action here:
 
 -  `https://github.com/aclark4life/mr\_migrator\_demo`_
@@ -88,10 +84,6 @@ Credits
 Thanks Martijn Pieters for creating collective.transmogrifier; thanks
 Martin Aspeli and Dylan Jay for their blueprints; and thanks Dylan Jay
 for bringing transmogrifier to the masses via mr.migrator.
-
-.. raw:: html
-
-   </p>
 
 .. _collective.transmogrifier: http://pypi.python.org/pypi/collective.transmogrifier
 .. _mr.migrator: https://github.com/collective/mr.migrator

@@ -38,10 +38,6 @@ it was not quite ready for production (i.e. "`if you want to use Silver
 Lining, Silver Lining is not for you`_\ " :-)), I ended up using the
 Rackspace Cloud **web interface**.
 
-.. raw:: html
-
-   </p>
-
 I was so impressed with it:
 
 `|image0|`_
@@ -51,10 +47,6 @@ sites) to their service within a matter of 1-2 months. Now, I know what
 you are thinking, and I do intend to explore other services (in fact, I
 have tried `Slicehost`_ and it was OK), but this service made my life so
 much easier I wanted to mention some of its key features:
-
-.. raw:: html
-
-   </p>
 
 -  "On the fly" requisitioning. You can add/remove hosts anytime and you
    only pay for the time they are up.
@@ -98,10 +90,6 @@ it. I have yet to experience any issues related to the Python version,
 for whatever that is worth (possibly due to the fact that Plone 2.1
 originally shipped with Python 2.3 and Zope 2.7, then Zope 2.8 came
 along which worked with Python 2.4. Just a guess).
-
-.. raw:: html
-
-   </p>
 
 .. _`http://www.zope.org/help`: http://www.zope.org/help
 .. _deployed one: http://harryroseman.com

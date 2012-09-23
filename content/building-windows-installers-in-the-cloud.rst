@@ -78,9 +78,6 @@ also mention that I recently used `Dia`_ (<3) to create this
 info-graphic, in hopes of better communicating what I'm trying to build.
 Check it out! `|image6|`_
 
-.. raw:: html
-
-   </p>
 
 .. _already documented: http://docs.pythonpackages.com/en/latest/introduction.html
 .. _our current plans: http://pythonpackages.com/plans

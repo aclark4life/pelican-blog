@@ -3,10 +3,6 @@ Repoze &quot;meetups&quot;
 :date: 2007-10-28 19:17
 :tags: Plone
 
-.. raw:: html
-
-   <div style="text-align:left;">
-
 `|image0|`_\ As Paul Everitt `recently`_ `mentioned`_, the `dudes`_ are
 back! Three (self-described,ex-Zope Corp) graybeards doing what they
 love to do best! Using Zope. But this is not your father's Zope
@@ -19,27 +15,11 @@ Please help spread the word about this event by pointing people
 towards\ `http://zpugdc.org/meetings/mtg57`_. Or, if you prefer "Web
 2.0":
 
-.. raw:: html
-
-   </div>
-
  
-
-.. raw:: html
-
-   <div style="margin-left:107px;text-align:center;width:214px;font-family:tahoma, verdana, sans serif;font-size:12px;">
 
 `Click here to check out The Washington DC Python Meetup Group!`_
 
-.. raw:: html
-
-   </div>
-
  
-
-.. raw:: html
-
-   </p>
 
 Lastly, we welcome anyone in the Washington, DC, USA area to join us.
 

@@ -20,10 +20,6 @@ downloaded  *674* times. But that package has also been around much
 longer. So obviously another useful metric would be the *time period*
 during which the downloads occurred.
 
-.. raw:: html
-
-   <p>
-
 Anyway, here is how it works:
 
 ::
@@ -71,10 +67,6 @@ Another thing to consider is if hitting **PyPI** each time is really
 necessary. I'm told there is **PyPI** data living somewhere else, and in
 future versions I would like to make vanity use that data by default.
 
-.. raw:: html
-
-   </p>
-
 So, this post is simply to announce **Vanity** to a wider audience in
 the event that some folks may find it useful. Otherwise, I will be happy
 to continue to watch **Vanity** downloads crawl ever so slowly towards
@@ -85,10 +77,6 @@ Notes
 
 [0] By standing on the shoulders of some Plone giants, `David Glick,`_
 in particular.
-
-.. raw:: html
-
-   </p>
 
 [1] There is a `known issue`_ with regard to making Vanity case
 insensitive.

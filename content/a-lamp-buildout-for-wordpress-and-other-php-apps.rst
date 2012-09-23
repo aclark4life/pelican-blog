@@ -47,14 +47,6 @@ several PHP apps with it just for kicks, including:
 
 It builds Apache, PHP, MySQL, GD, and Supervisor. Let's take a look.
 
-.. raw:: html
-
-   </p>
-
-.. raw:: html
-
-   <p>
-
 First, we define the parts. For each of these, we'll do something useful
 to contribute to the end result.
 
@@ -81,14 +73,6 @@ to contribute to the end result.
 
 Now that the parts are listed, the rest of the buildout must define
 those parts.
-
-.. raw:: html
-
-   </p>
-
-.. raw:: html
-
-   <p>
 
 First, we add some utilities required by this buildout.
 
@@ -214,15 +198,9 @@ And the supervisor that will control everything.
 
 If you are interested in trying this yourself, please see:
 
-.. raw:: html
-
-   </p>
-
 `http://svn.aclark.net/svn/public/buildout/lamp/trunk/`_
 
 and let me know how it goes!
-
- 
 
 .. _LAMP buildout: http://svn.aclark.net/svn/public/buildout/lamp/trunk/
 .. _add the Plone egg, run buildout, and start your site: getting-excited-about-plone-3-2

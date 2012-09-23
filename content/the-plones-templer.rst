@@ -78,10 +78,6 @@ readthedocs.org`_. If you are interested in helping, please gather
 around the #plone on irc.freenode.net to discuss options (I am aclark on
 IRC).
 
-.. raw:: html
-
-   </p>
-
 .. _Daniel Nouri started the ZopeSkel project: http://danielnouri.org/blog/devel/zope/quickstart-with-pastescript.html
 .. _PasteScript: http://pypi.python.org/pypi/PasteScript/1.7.5
 .. _some folks at the BBQ: http://www.coactivate.org/projects/zopeskel-bbq-sprint/project-home

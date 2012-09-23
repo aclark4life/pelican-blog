@@ -147,10 +147,6 @@ Above all, I am flexible. This post is about me, but I am certainly
 willing to listen to what you, prospective employer, has to offer. If
 there is a good fit, I am confident we can make it work.
 
-.. raw:: html
-
-   </p>
-
 I look forward to hearing from you!
 
 Oh, I almost forgot, my updated resume is here:

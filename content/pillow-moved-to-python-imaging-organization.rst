@@ -3,10 +3,6 @@ Pillow moved to python-imaging organization
 :date: 2012-07-25 02:19
 :tags: Plone, Python
 
-.. raw:: html
-
-   <p>
-
 On 7/30/2010 Pillow, the "friendly" PIL fork, was released. Since then,
 there have been a number of releases:
 
@@ -56,10 +52,6 @@ bitbucket, which has some Python 3-compat if I understand correctly.)
 The new home for Pillow is:
 
 -  `https://github.com/python-imaging/Pillow`_
-
-.. raw:: html
-
-   </p>
 
 .. _Plone collective: http://github.com/collective
 .. _python-imaging: http://github.com/python-imaging

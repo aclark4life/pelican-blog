@@ -8,51 +8,19 @@ Take Back The Tap!
 
 This site is noteworthy because:
 
-.. raw:: html
-
-   <ul>
-
-.. raw:: html
-
-   <li>
-
 It  helps a worthy cause by addressing numerous environmental concerns
 with bottled water in the United States.
 
-.. raw:: html
-
-   </li>
-
-.. raw:: html
-
-   <li>
-
 It is our first Plone 3 site launch.
-
-.. raw:: html
-
-   </li>
-
-.. raw:: html
-
-   <li>
 
 It is an integrator success story. The following technology was used to
 create and deploy this site:
-
-.. raw:: html
-
-   </li>
 
 -  `Plone 3.0.6`_
 -  `PloneFormGen 1.2.1`_
 -  `RedirectionTool 1.2`_
 -  `qSEOptimizer`_\ 1.0.1
 -  `webcouturier.dropdownmenu 1.1.2`_
-
-.. raw:: html
-
-   </ul>
 
 Thanks to:
 
@@ -67,10 +35,6 @@ Thanks to:
 -  Everyone else (I may have missed)!
 
 Feedback welcome!
-
-.. raw:: html
-
-   </p>
 
 .. _|image1|: http://aclark4life.files.wordpress.com/2008/03/tbtt.gif
 .. _`http://www.takebackthetap.org!`: http://www.takebackthetap.org/

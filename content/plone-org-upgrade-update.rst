@@ -51,10 +51,6 @@ I'm targeting the end of May to launch the \*real\* new site. Sorry for
 the delay (I promised end of April!) Needless to say, I will be actively
 working on finishing everything between now and then.
 
-.. raw:: html
-
-   </p>
-
 We will be remote sprinting in #psc on irc.freenode.net this Sunday @
 2:00PM EDT if you would like to join us!
 

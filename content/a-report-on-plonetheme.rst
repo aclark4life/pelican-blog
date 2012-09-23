@@ -144,10 +144,6 @@ Dependencies
 You'll notice in the **[theme]** section, comments about various
 packages that were not included with all of the various themes.
 
-.. raw:: html
-
-   </p>
-
 As far as I can tell, it is in the best interest of "old style" theme
 developers to specify these packages in their setup.py files with the
 install\_requires parameter!
@@ -186,10 +182,6 @@ jbot modifies default Plone theme?
 I've noticed this before in both Plone Classic and now Sunburst when
 jbot is installed. No idea what the actual cause is:
 
-.. raw:: html
-
-   </p>
-
 [caption id="attachment\_492" align="aligncenter" width="537"
 caption="Why jbot why!?"]\ `|Why jbot why!?|`_\ [/caption]
 
@@ -209,15 +201,7 @@ Bug report please?
 
 I know, I know. I should open a ticket for the jbot thing.
 
-.. raw:: html
-
-   </p>
-
 And now off to play!
-
-.. raw:: html
-
-   </p>
 
 [caption id="attachment\_501" align="aligncenter" width="192"
 caption="Installable themes in Plone 4"]\ `|Installable themes in Plone

@@ -32,20 +32,12 @@ thanks to everyone that has helped with the upgrade so far including but
 not limited to: Limi, Wiggy, SteveM, Tarek, Maurits, Newbery, Jens,
 Witsch, MattBowen!
 
-.. raw:: html
-
-   </p>
-
 Lastly, I promise to:
 
 -  Cut the fundraiser off as soon as I reach my goal, and
 -  Report back with results by the end of the month.
 
 Now without further ado, please donate-away! :-)
-
-.. raw:: html
-
-   </p>
 
 .. figure:: https://www.paypal.com/en_US/i/scr/pixel.gif
    :align: center

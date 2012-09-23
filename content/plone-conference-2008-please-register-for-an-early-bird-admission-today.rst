@@ -14,10 +14,6 @@ conference sprint, to all the good food/drink/people/places to enjoy in
 between. This promises to be one of the biggest and best Plone
 Conferences ever.
 
-.. raw:: html
-
-   </p>
-
 To that end, I'd like to invite everyone to participate in the early
 bird registration now open at: `http://ploneconf2008.eventbrite.com`_
 and I encourage everyone to register right now. We need the support of

@@ -17,10 +17,6 @@ newsworthy. What is interesting, though, is *how* this new customized
 form came to be; and how its features compare to the default contact
 form.
 
-.. raw:: html
-
-   </p>
-
 So here goes: In Plone, we have a page template called
 `contact-info.cpt`_. It's not so special (in that it is pretty
 feature-\ *less*, though it will send mail if you ask it to) but it does
@@ -37,10 +33,6 @@ Been there, done that: CMFFormController
 [caption id="attachment\_3304" align="alignright" width="259"
 caption="Photo credit: Scott Beale / Laughing
 Squid"]\ `|image1|`_\ [/caption]
-
-.. raw:: html
-
-   </p>
 
 First, let me start with the technology that is used to implement the
 contact form. It's called `CMFFormController`_ and it went out of style
@@ -77,10 +69,6 @@ details to newcomers. I don't want to tell people in IRC to go to
 **portal\_skins** anymore. I want my "OS X Lion release for Plone",
 please (sans Vista overtones.) :-)
 
-.. raw:: html
-
-   </p>
-
 So how do we get there? Well, in the case of portal\_skins there is talk
 of decommissioning **portal\_view\_customizations,** which was supposed
 to be the "new portal\_skins" as I understand it. But since half of our
@@ -100,18 +88,10 @@ happen with **portal\_view\_customizations**, but the \*minute\* we know
 some technology is out of date, we should reveal it in the user
 interface (even in the ZMI user interface). E.g.:
 
-.. raw:: html
-
-   <div class="mceTemp mceIEcenter" style="text-align:center;">
-
 `|image2|`_
     Curiously, the attribute that holds this string is lowercase "title"
     (I'd expect camel case Description, though I'm not entirely sure why
     I expect that.)
-
-.. raw:: html
-
-   </div>
 
 Hanno Schlichting has made some great progress recently with enhancing
 the ZMI for Plone users, especially with regard to\ *file-system vs.
@@ -130,10 +110,6 @@ post because it is fun to play with the future. And it's important to
 work hard toward achieving it. But enough of that, here is what you need
 to know today.
 
-.. raw:: html
-
-   </p>
-
 Like I said, I customized the contact form.
 
 Old style vs. new style
@@ -143,10 +119,6 @@ Back in the "old days" you had to create a CMF skin layer and put a copy
 of the template in a directory on the file system, configured as a File
 System Directory View. *Everything* used to be customized via skin
 layers.
-
-.. raw:: html
-
-   </p>
 
 Now-a-days, we have z3c.jbot. Though a bit of a hack², it does exactly
 what you'd expect, almost exactly how you'd expect it to. It `doesn't
@@ -198,10 +170,6 @@ Alternatively, use `ZopeSkel`_ to generate all this boilerplate code for
 you. It does a much better, and more complete job than what I have done
 here. The important thing is that you *understand what is going on*.
 
-.. raw:: html
-
-   </p>
-
 In the case of aclark.net, our Python package is called
 `plonetheme.aclarknet`_.
 
@@ -229,10 +197,6 @@ customize. E.g.
 (For some reason, github thinks that file is binary, so `here are the
 contents`_.)
 
-.. raw:: html
-
-   </p>
-
 Now, this is the amazing part: in addition to templates in views,
 viewlets and portlets, we can customize any `CMF`_ object! E.g. the
 `RestrictedPython`_ (more technology anyone?) CMFFormController
@@ -249,17 +213,9 @@ Step 3: Configure template overrides
 Now that we have customized Plone templates, we can configure Plone to
 use our customizations.
 
-.. raw:: html
-
-   </p>
-
 This is done via a technology you may have heard of: `ZCML`_. Using
 ZCML, we can tell Plone (or jbot in this case) to use the templates in
 our "templates" directory.
-
-.. raw:: html
-
-   <p>
 
 The ZCML we are going to use is placed in the "top level" configure.zcml
 file in our package. That means we need a top level configure.zcml file:
@@ -294,10 +250,6 @@ This file is located here:
 
 In order to see what is really going on, check out this diagram:
 
-.. raw:: html
-
-   </p>
-
 `|image4|`_
 
 You can see that everything inside the <configure></configure> tag(s) is
@@ -315,17 +267,9 @@ spammers' ability to automate form submission. To foil the spammers, we
 want to add a captcha form that will hopefully require that an actual
 human to fill out the form.
 
-.. raw:: html
-
-   </p>
-
 Thanks to David Glick and Groundwire, we have `collective.recaptcha`_
 which provides an integration of `Google's Recaptcha service`_ into
 Plone.
-
-.. raw:: html
-
-   <p>
 
 In order to use it, first we add the package to our buildout, e.g.:
 
@@ -349,10 +293,6 @@ See the rest of the file here:
 
 Now run buildout and restart Plone.
 
-.. raw:: html
-
-   </p>
-
 With collective.recaptcha installed via buildout, you should now be able
 to open http://yoursite:8080/Plone/@@recaptcha-settings to configure
 Recaptcha:
@@ -365,10 +305,6 @@ Recaptcha:
 
 (To get a public and private key, you can sign up for recaptcha here:
 http://www.google.com/recaptcha)
-
-.. raw:: html
-
-   <p>
 
 Lastly, make the appropriate changes to the contact form and validation
 script. E.g. `include the captcha image:`_
@@ -403,10 +339,6 @@ That's it!
 who know Plone already, a lot of what might seem impossible to newcomers
 is "reasonable" for them. No flames please. Unless you absolutely must.
 ;-)
-
-.. raw:: html
-
-   </p>
 
 ² I hear people call it that, though I don't know the details. I assume
 it "monkey patches" which template to use at render-time.

@@ -52,10 +52,6 @@ line. Next, pass traffic to Apache like so (in
 
 Now on to Apache.
 
-.. raw:: html
-
-   </p>
-
 ***Please note that the syntax above is for Varnish 3.x and the syntax
 has (annoyingly) changed from 2.x to 3.x.***
 
@@ -117,10 +113,6 @@ Notes
 -----
 
 [0] Using the latest distribution, "oneric".
-
-.. raw:: html
-
-   </p>
 
 [1] I first saw this technique at NASA when NASA Science was powered by
 Plone; I found it odd at the time but years later it makes perfect

@@ -19,10 +19,6 @@ in order to:
 
 `|image0|`_
 
-.. raw:: html
-
-   </p>
-
 `|image1|`_
 
 In the next version, I'll try to import `Twitter Bootstrap JavaScript`_

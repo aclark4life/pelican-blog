@@ -188,10 +188,6 @@ on readthedocs.org for more! ¹ c.f. SNL skit w/Rob Schnieder and/or Adam
 Sander too, apparently: `http://www.youtube.com/watch?v=muA5EBmpDhA`_ I
 like the Rob Schnieder ones better :-)
 
-.. raw:: html
-
-   </p>
-
 .. _`https://github.com/aclark4life/hello\_plone`: https://github.com/aclark4life/hello_plone
 .. _zc.buildout 1.5.2 page on PyPI: http://pypi.python.org/pypi/zc.buildout/1.5.2#user-defaults
 .. _|image3|: http://aclark4life.files.wordpress.com/2011/08/screen-shot-2011-08-20-at-5-04-49-pm.png

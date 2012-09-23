@@ -26,14 +26,6 @@ that with little more than a Python interpreter, one can forge a working
 Plone site within minutes. But it is not just a fantasy, it is (more or
 less) the status quo. (Maybe even `MacGyver`_ used Python?)
 
-.. raw:: html
-
-   </p>
-
-.. raw:: html
-
-   <p>
-
 So, this book begins at the beginning: by making sure folks are
 comfortable installing and using Python on there operating system of
 choice (or using the pre-installed Python). If you read *Professional
@@ -46,10 +38,6 @@ of Chapter 3:
 This book does not make that assumption and tries to cover everything
 you may need to know after installing your operating system up to that
 point.
-
-.. raw:: html
-
-   </p>
 
 In **Chapter 1**, we cover installing and running Python on three
 popular operating systems: Mac OS X 10.6 (my main squeeze), Windows 7,
@@ -64,10 +52,6 @@ Buildout to install Plone and its add-ons!" sentiment that has been
 prevalent since Buildout was first introduced to Plone several years
 ago. I don't know if Buildout was the "right" way to go, but I do know
 that I love using it and I would like to help others feel the same way.
-
-.. raw:: html
-
-   </p>
 
 The bottom line is this: Plone made a conscious decision to "become more
 Pythonic" by using eggs. With that choice came more complexity from
@@ -96,10 +80,6 @@ installers (like the Unified Installer), this book aims to make you more
 competent and comfortable performing a variety of Buildout-related
 tasks.
 
-.. raw:: html
-
-   </p>
-
 In **Chapters 2-7**, we present various buildout configuration files
 that correspond to specific tasks that are related to various subjects,
 e.g. theming, maintenance, and optimization. The reader is expected to
@@ -120,10 +100,6 @@ working non-stop since mid-March to make sure it gets out the door as
 quickly as possible; I expect it to be available **Real Soon Now™**. I
 apologize to those of you who have pre-ordered and are now waiting for
 it!
-
-.. raw:: html
-
-   </p>
 
 So get ready! I plan to have over 200 pages of draft material submitted
 by the end of this month. I will continue to work with PACKT to address
@@ -179,10 +155,6 @@ Distribute, Pip, Buildout, etc. and you want to feel more comfortable
 managing your Plone site, you will not want to miss the `one day class I
 am teaching at Plone Symposium East 2010`_!
 
-.. raw:: html
-
-   </p>
-
 The book will hopefully be out by then, but the class will go on either
 way.
 
@@ -198,9 +170,6 @@ once more to `get in touch.`_ And also, to feel free to reach whenever
 you come across this blog entry and are in need of Plone help. We are
 always looking for a challenge.
 
-.. raw:: html
-
-   </p>
 
 ``_
 

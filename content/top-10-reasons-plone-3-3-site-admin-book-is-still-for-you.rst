@@ -29,10 +29,6 @@ the book was first published. Most importantly, it addresses the release
 of Plone 4 in the context of the book title "Plone 3.3 Site
 Administration".
 
-.. raw:: html
-
-   </p>
-
 So without further ado, why "Plone 3.3 Site Administration" is (still)
 for you:
 
@@ -124,10 +120,6 @@ BaaS (Buildout as a Service)
 
 (Yes, I am serious)
 
-.. raw:: html
-
-   </p>
-
 And finally for whatever it is worth, many of the lessons learned from
 writing the book from the author's perspective ended up here:
 
@@ -140,10 +132,6 @@ maintain stability and/or to only change when you want to change). When
 a change (like a security fix or configuration change) comes along, the
 author pushes changes out to the dist server than deploys the dist
 server changes to production.
-
-.. raw:: html
-
-   </p>
 
 [1] DISCLAIMER: Please DO NOT RELY ON this "BaaS example" for anything
 important, EVER. It's only here for educational purposes (for now at

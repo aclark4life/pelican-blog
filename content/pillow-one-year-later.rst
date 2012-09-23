@@ -40,10 +40,6 @@ are healthy and functioning properly, your success or failure will be
 determined by the folks in the community (as it should be). In this
 case, the Plone and Python communities have spoken clearly.
 
-.. raw:: html
-
-   </p>
-
 .. _|image1|\ Pillow: http://pypi.python.org/pypi/Pillow
 .. _UnifiedInstaller: http://launchpad.net/plone/4.1/4.1.2/+download/Plone-4.1.2-UnifiedInstaller.tgz
 .. _folks from the Django community: https://github.com/collective/Pillow/commit/8a282c9ea4382045822ca4fc15e586ebd2f7ace7

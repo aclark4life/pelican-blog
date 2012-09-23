@@ -3,10 +3,6 @@ I reinstalled recently
 :date: 2010-10-15 11:42
 :tags: Plone
 
-.. raw:: html
-
-   <p>
-
 And for whatever it is worth to anyone, here are the notes I took (for
 the first time ever, when doing a reinstall):
 

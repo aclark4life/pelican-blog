@@ -3,14 +3,6 @@ First Post
 :date: 2007-10-17 08:55
 :tags: Plone
 
-.. raw:: html
-
-   <div class="plain">
-
-.. raw:: html
-
-   </p>
-
 `|image0|`_\ Why? Because I can (read: `Plone`_ allows me to do so) but
 also:
 
@@ -20,10 +12,6 @@ also:
 -  I want to get my web 2.0 **ON**. ;-)
 
 To that end, this post is about my `build tools`_ and how I love them.
-
-.. raw:: html
-
-   </p>
 
 Note: there are **much** better ways to accomplish what I'm doing here.
 I'm reminding *myself* this as much as the reader. So why do I continue
@@ -49,22 +37,6 @@ and having a working instance a few seconds later (with Product[A,B,C]
 installed)! Of course this requires I have a working Zope already... and
 that I edit Zope's skel/etc/zope.conf... but hey nothing is perfect and
 old habits die hard.
-
-.. raw:: html
-
-   </p>
-
-.. raw:: html
-
-   <p>
-
-.. raw:: html
-
-   </div>
-
-.. raw:: html
-
-   </p>
 
 .. _|image1|: http://aclark4life.files.wordpress.com/2007/10/look-at-me.jpg
 .. _Plone: http://plone.org/

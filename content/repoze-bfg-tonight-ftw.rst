@@ -15,10 +15,6 @@ Tonight ex-Zope Corporation luminary **Chris McDonough** unveils his
 
 Woo Hoo! My favorite thing about repoze.bfg is:
 
-.. raw:: html
-
-   </p>
-
 (excerpt from
 `http://static.repoze.org/bfgdocs/narr/introduction.html#why`_)
 
@@ -30,10 +26,6 @@ Woo Hoo! My favorite thing about repoze.bfg is:
 We are also celebrating only (a little over) one month left until `Plone
 Conference 2008`_ at the Ronald Reagan Building in DC (and `sprint`_ at
 Arlington Career Center in VA).
-
-.. raw:: html
-
-   </p>
 
 See you tonight!
 

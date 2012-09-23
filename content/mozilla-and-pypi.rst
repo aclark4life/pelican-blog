@@ -45,10 +45,6 @@ some nice Mozillian (willkg) pointed me to this gem:
 
 `|http://www.flickr.com/photos/jadensmommy24/239370733/|`_
 
-.. raw:: html
-
-   </p>
-
 Which in turn led me to the following two links:
 
 -  `http://jbalogh.github.com/zamboni/topics/packages/`_
@@ -98,17 +94,9 @@ approach, but it makes me sad that large organizations like Mozilla are
 passing over PyPI in favor of alternative methods of distributing Python
 software.
 
-.. raw:: html
-
-   </p>
-
 Let us all now hang our heads, for a moment of pause and reflection.
 
 *[a minute passes]*
-
-.. raw:: html
-
-   </p>
 
 The future
 ----------
@@ -123,10 +111,6 @@ Great for Python == great for Mozilla?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 It's obvious what's in it for Python, but what's in for Mozilla?
-
-.. raw:: html
-
-   </p>
 
 Simple.
 
@@ -149,19 +133,11 @@ of the year. So all you Mozillians who know me personally, please put in
 a good word! And all you Mozillians I have not met yet: nice to meet
 you! :-)
 
-.. raw:: html
-
-   </p>
-
 [2] The problem turned out to be git-submodule failing to run because
 things like: grep and sed were missing from the PATH. Easily fixed by
 modifying the puppet configuration, but not easily discovered because
 git-submodule itself returned zero! Some guy on #puppet was very helpful
 in getting me to print out debug info.
-
-.. raw:: html
-
-   <p>
 
 [3] More help from friendly Mozillians in #webdev:
 
@@ -174,14 +150,6 @@ in getting me to print out debug info.
 [4] There is a great presentation about it here:
 `http://www.slideshare.net/andymckay/anatomy-of-a-large-django-site-7590098`_.)
 
-.. raw:: html
-
-   </p>
-
-.. raw:: html
-
-   <p>
-
 [5] More from kumar (emphasis is my own):
 
     11:25 < kumar> **Playdoh is starting to stabilize** so it would be
@@ -189,10 +157,6 @@ in getting me to print out debug info.
     help us catch Mozilla-specific things that need extraction
 
 [6] LARGE HINT ;-)
-
-.. raw:: html
-
-   </p>
 
 [7] Again, not that there is anything wrong with what Mozilla is doing
 here. As a systems guy, I just happen to gravitate toward simplifying

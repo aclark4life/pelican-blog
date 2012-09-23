@@ -23,10 +23,6 @@ are needed) but it is truly impressive how much you can do with so
 little effort (thanks to the hard work of the Diazo team, Plone team,
 and of course the theme designers themselves).
 
-.. raw:: html
-
-   </p>
-
 The best part has got to be the `zip file packaging features`_ in
 plone.app.theming (provided by `plone.resource`_). While I did have a
 bit of trouble getting `my zip file`_ to work, I suspect I'll get that
@@ -57,10 +53,6 @@ Disclaimer
 These are my experiences with relatively new Plone technologies. If I've
 made a mistake or if your experiences are different, please let me know
 in the comments.
-
-.. raw:: html
-
-   </p>
 
 [1] Please forgive gratuitous belated rapture humor.
 

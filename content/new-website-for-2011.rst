@@ -22,24 +22,12 @@ One of the requirements I had in developing a new website was that I
 would ditch my old Products.aclark\_net package in favor of… nothing.
 (Sort of.)
 
-.. raw:: html
-
-   </p>
-
 What I mean is, the entire website was developed and deployed within a
 single, small buildout:
 `https://github.com/aclark4life/aclark\_net\_website`_.
 
 The buildout is meant to be instructional (!) so if you have questions,
 please ask them in the comments.
-
-.. raw:: html
-
-   </p>
-
-.. raw:: html
-
-   <p>
 
 ::
 
@@ -124,10 +112,6 @@ way). That meant that for this website, rather than migrate content
 schema extender) I opted to setup a "clean" Plone and copy/paste/edit
 content.
 
-.. raw:: html
-
-   </p>
-
 On a small site like ours, this was a no-brainer for me. But it
 definitely exposes a weakness of Plone. Now that theming has improved,
 we really need a better "content story". To me, that is starting to mean
@@ -143,10 +127,6 @@ Of course there is always more to do. The first thing that jumps out
 that is missing from this deployment is "cool (Javascript) overlays" or
 "pop-ups," depending on who you ask. I didn't have time to add them
 prior to launch, but I will most likely add them later `because I can`_.
-
-.. raw:: html
-
-   </p>
 
 A couple more Plone-core related features I would love to see
 implemented (technically, Diazo is not in the core yet):
@@ -176,10 +156,6 @@ Schlichting for making Plone fast again. Martin Aspeli and Laurence Rowe
 for Diazo. And David Glick, for being "always on" (and my own personal
 devil's advocate).
 
-.. raw:: html
-
-   </p>
-
 And really, everyone involved in the Plone project on a day to day
 basis. Plone development and consulting can be frustrating at times, but
 more often than not it is a magical experience, due in no small part due
@@ -203,10 +179,6 @@ To the future
 -------------
 
 Onwards Plone team! Here is to 2011.
-
-.. raw:: html
-
-   </p>
 
 .. _December 23, 2010: https://github.com/aclark4life/aclark_net_website/commit/514a46a652d9ffb393fd7f83a296306761c995b7
 .. _`https://github.com/aclark4life/aclark\_net\_website`: https://github.com/aclark4life/aclark_net_website

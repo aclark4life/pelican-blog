@@ -66,10 +66,6 @@ Similarly, no mention of git or mercurial in a section about version
 control (Subversion only), but I suppose (again) those familiar with
 these technologies already know which one they prefer.
 
-.. raw:: html
-
-   </p>
-
 Lastly, I liked the variety of approaches described in the "download
 Plone" section, from using platform installers to using the unified
 installer to satisfying all the Plone dependencies by hand. All good
@@ -83,10 +79,6 @@ your buildout as a "develop egg" are the main topics covered here. (A
 side note: I'm very much looking forward to the upcoming release of
 ZopeSkel 2.14!
 `http://www.coactivate.org/projects/zopeskel-bbq-sprint/blog/2009/10/13/zopeskel-bbq-sprint-days-two-three-and-four/`_
-
-.. raw:: html
-
-   </p>
 
 )
 
@@ -192,10 +184,6 @@ has been making some improvements to collective.xdv recently, and I see
 there is a new version here:
 `http://pypi.python.org/pypi/collective.xdv`_ (I think this version
 handles 404s).
-
-.. raw:: html
-
-   </p>
 
 Bottom line: this is great stuff but potentially confusing in that you
 have an add-on, collective.xdv, that applies an XSLT transform "on the

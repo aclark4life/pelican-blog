@@ -55,10 +55,6 @@ I am really excited about this. I began fantasizing about it almost a
 year ago and after several false starts (pypissh, openid, avoidance) it
 is now a reality. If you have a minute, please `give it a try`_.
 
-.. raw:: html
-
-   </p>
-
 .. _Richard Jones: https://twitter.com/r1chardj0n3s
 .. _sample code: https://gist.github.com/0d46c48b230e61e18479
 .. _|image8|: http://aclark4life.files.wordpress.com/2012/08/screen-shot-2012-08-07-at-12-26-20-am.png

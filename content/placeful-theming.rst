@@ -42,14 +42,6 @@ which is a problem if you want to placefully replace the logo because
 there is no easy way to do it (perhaps you could use some trick to
 return a different image file with the same file name).
 
-.. raw:: html
-
-   </p>
-
-.. raw:: html
-
-   <p>
-
 Plone ships with:
 
 ::
@@ -72,8 +64,4 @@ Next, add in some CSS to make use of the previous two changes:
     body.section-foo-bar-baz {    background-image: url(gradient.png);}.section-foo-bar-baz #portal-globalnav li a {    border: 0px;    background: #0066CC;    color: white;    font-size: 110%;    font-face: bold;}.section-foo-bar-baz #portal-globalnav {    background: #0066CC;    padding: 0.25em;}.section-foo-bar-baz #portal-breadcrumbs,.section-foo-bar-baz #portal-personaltools {    background: white;}.section-foo-bar-baz #portal-top {     background: white;}.section-foo-bar-baz #portal-logo {     margin: 1em;    background-image: url(ama_logo.gif);    background-repeat: no-repeat;}.section-foo-bar-baz #visual-portal-wrapper {     background: white;    margin: auto;    width: 883px;    position: relative;}.section-foo-bar-baz body {     background-image: url(gradient.png);    background-repeat: repeat;}#portal-logo {     margin: 1em;    background-image: url(logo.jpg);    background-repeat: no-repeat;}#portal-logo a {     display: block;    width: 650px;    height: 80px;}
 
 I hope this helps someone get started with placeful theming.
-
-.. raw:: html
-
-   </p>
 

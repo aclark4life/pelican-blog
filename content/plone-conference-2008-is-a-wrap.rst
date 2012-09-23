@@ -18,10 +18,6 @@ ago, and since then I've been trying to find the time to upload them to
 process so I decided to "give up" and just upload the ripped copies to
 `dist.plone.org`_.
 
-.. raw:: html
-
-   </p>
-
 As such, if anyone in the community has the time and expertise to
 convert these to Quicktime format, I would greatly appreciate it, and I
 would be happy to upload the results to blip.tv (this is how we did it
@@ -42,10 +38,6 @@ they are interested, here:
 Remarkably, some of these newly added videos are *still* relevant
 **and** enjoyable to watch, as are many of the ones already available in
 the easily browsable `archive`_.
-
-.. raw:: html
-
-   </p>
 
 My sincerest apologies to the community and especially to those whose
 videos were amongst this group for the delay, you should not have had to

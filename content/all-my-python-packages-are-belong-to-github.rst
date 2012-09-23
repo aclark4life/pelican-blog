@@ -23,10 +23,6 @@ always, I'm happy to provide assistance to anyone that needs it to move
 their code. (I'm in #plone on irc.freenode.net or you can email
 aclark@aclark.net.)
 
-.. raw:: html
-
-   </p>
-
 .. _great git migration: http://plone.293351.n2.nabble.com/DVCS-options-for-Plone-Core-tt6295582.html
 .. _beta test pythonpackages.com: http://pythonpackages.com/signup
 .. _any package I have Owner or Maintainer permission for on PyPI: https://gist.github.com/3317288

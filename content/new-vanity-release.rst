@@ -171,10 +171,6 @@ Pyramid
 
 Enjoy the new release.
 
-.. raw:: html
-
-   </p>
-
 .. _stats: http://crate.io/
 .. _goodness: http://python3wos.appspot.com/
 .. _vanity: http://pythonpackages.com/info/vanity

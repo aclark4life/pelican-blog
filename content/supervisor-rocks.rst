@@ -31,14 +31,6 @@ Here's how to do it:
 (Uncomment the admin lines if you want to password protect your
 supervisor.)
 
-.. raw:: html
-
-   </p>
-
-.. raw:: html
-
-   <p>
-
 That's it! Now you can run buildout as normal:
 
 ::
@@ -60,15 +52,7 @@ same time (for fun and profit):
 
 You even get a nice web interface for free:
 
-.. raw:: html
-
-   </p>
-
 `|Supervisor rocks!|`_
-
-.. raw:: html
-
-   <p>
 
 How cool is that? Incidentally, one thing I have always found confusing
 is how to stop supervisord:
@@ -88,10 +72,6 @@ happier is:
 -  A port of Supervisor to Windows (/me ducks).
 
 Thoughts?
-
-.. raw:: html
-
-   </p>
 
 Thanks Chris McDonough of `Agendaless Consulting`_ and Mike Naberezny of
 `Maintainable Software,`_ plus `contributors`_ for creating/maintaining

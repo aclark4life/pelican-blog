@@ -25,10 +25,6 @@ This is a gratuitous rip off of any Plone firm's website that has
 contact info in the upper right of their site (e.g.
 http://sixfeetup.com).
 
-.. raw:: html
-
-   </p>
-
 I knew I wanted to do "my version" of adding contact info to the upper
 right, and I think I've seen someone use this exact technique somewhere
 else (I would credit them if I could remember.)
@@ -56,10 +52,6 @@ Note also that I am using the early-supported XPath syntax, but the more
 friendly CSS syntax is supported now too. See `http://diazo.org`_ for
 more information.
 
-.. raw:: html
-
-   </p>
-
 For the full set of Diazo rules for this site, see here:
 
 -  Plone:
@@ -73,10 +65,6 @@ Step 2
 Next, we need to create and display only the "Contact us today!" link,
 which also involves disabling the "Log in" link. These tricks can be
 performed in the Zope Management Interface via the portal\_actions tool.
-
-.. raw:: html
-
-   </p>
 
 First, browse to \`Site Setup -> Zope Management Interface ->
 portal\_actions -> user\` and create a \`contact\` action:
@@ -99,10 +87,6 @@ Lastly and most importantly, persist your work on the file system
 outside of the database. You don't want to be forced to recreate this
 site action ever again through the web.
 
-.. raw:: html
-
-   </p>
-
 This involves exporting the action via portal setup, and adding it to
 your package's GenericSetup profile. Browse to \`Site Setup -> Zope
 Management Interface -> portal\_setup -> Export. Check the \`Action
@@ -120,10 +104,6 @@ steps\`:
 This will give you a tarred/gzipped file that when extracted will give
 you an \`actions.xml\` file. Edit this file to include only the action
 you created, like so:
-
-.. raw:: html
-
-   <p>
 
  
 
@@ -180,10 +160,6 @@ You can find this file in its entirety here:
 
 And of course, these styles apply to the public facing site.
 
-.. raw:: html
-
-   </p>
-
 `|image6|`_
 
 Results
@@ -191,10 +167,6 @@ Results
 
 On a new Plone site, the option to install this customization will look
 like so:
-
-.. raw:: html
-
-   </p>
 
 `|image7|`_
 

@@ -20,10 +20,6 @@ work on Plone.org upgrade issues, including:
 Hope to "see" you there. We have lots of jobs for lots of people if you
 are interested in helping.
 
-.. raw:: html
-
-   </p>
-
 .. _collective.dist: http://pypi.python.org/pypi/collective.dist/0.1.9
 .. _collective.psc.blobstorage: http://svn.plone.org/svn/collective/collective.psc.blobstorage
 .. _collective.psc.externalstorage: http://svn.plone.org/svn/collective/collective.psc.externalstorage/

@@ -40,10 +40,6 @@ Shooting for January 22.  Hopefully that will work for most people.
 Please help us spread the word to interested parties... more details to
 come.
 
-.. raw:: html
-
-   </p>
-
 .. _Toronto Plone user's group: http://groups.google.com/group/topug
 .. _plone.org: http://plone.org/
 .. _`http://www.coactivate.org/projects/ploneorg-upgrade/tasks/tasklist/show/993`: http://www.coactivate.org/projects/ploneorg-upgrade/tasks/tasklist/show/993
