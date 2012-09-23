@@ -4,7 +4,7 @@ Sorry for the blog spam
 :date: 2012-09-22 21:45
 :tags: Mozilla, Plone, Python
 
-As I'm just learning `Pelican`_, `Dirkjan Ochtman`_ pointed out that I can have "fancy" URLs via the `ARTICLE_PERMALINK_STRUCTURE` setting. So the blog spam you are seeing is a result of my publishing the same two articles with two different URLs (fancy and non-fancy). My apologies for the noise.
+As I'm just learning `Pelican`_, `Dirkjan Ochtman pointed out`_ that I can have "fancy" URLs via the `ARTICLE_PERMALINK_STRUCTURE` setting. So the blog spam you are seeing is a result of my publishing the same two articles with two different URLs (fancy and non-fancy). My apologies for the noise.
 
 publishconf.py
 --------------
@@ -38,7 +38,7 @@ And actually, I found `ARTICLE_URL` and `ARTICLE_SAVE_AS` to be the settings I w
     TAG_FEED_RSS = None
     TWITTER_USERNAME = 'aclark4life'
 
-.. _`Dirkjan Ochtman`: https://twitter.com/djco
+.. _`Dirkjan Ochtman pointed out`: http://blog.aclark.net/2012/09/21/yes-this-blog-is-now-powered-by-pelican/#comment-658707601
 .. _`Pelican`: http://blog.getpelican.com
 .. _`publishconf.py`: https://github.com/ACLARKNET/aclarknet.github.com/blob/master/publishconf.py
 .. [1] http://pelican.notmyidea.org/en/3.0/settings.html#url-settings
