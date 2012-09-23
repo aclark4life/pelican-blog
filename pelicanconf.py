@@ -31,3 +31,9 @@ ARTICLE_PERMALINK_STRUCTURE = '/%Y/%m/%d/'
 # Disable .html
 ARTICLE_URL = '{slug}'
 ARTICLE_SAVE_AS = "{slug}/index.html"
+
+
+
+ARTICLE_URL = ‘/{date:%Y}/{date:%b}/{date:%d}/{slug}/’
+ARTICLE_SAVE_AS = ‘/{date:%Y}/{date:%b}/{date:%d}/{slug}/index.html’
+
