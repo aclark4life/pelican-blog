@@ -284,7 +284,7 @@ plans`_.&lt;/em&gt;&lt;/p&gt;
 &lt;div class="section" id="step-1-to-the-clouds"&gt;
 &lt;h2&gt;Step 1: To The Clouds&lt;/h2&gt;
 &lt;p&gt;For the purpose of the demo, I booted up a Windows server on Rackspace
-Cloud and started installing things. &lt;a href="#id1"&gt;&lt;span class="problematic" id="id2"&gt;`|image0|`_&lt;/span&gt;&lt;/a&gt; On the short list of
+Cloud and started installing things. &lt;a class="reference external" href="http://aclark4life.files.wordpress.com/2012/08/screen-shot-2012-08-01-at-3-41-28-pm.png?w=300"&gt;|image0|&lt;/a&gt; On the short list of
 things to install was:&lt;/p&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;Python 2.7 from python.org.&lt;/li&gt;
@@ -304,7 +304,7 @@ Studio is apparently called a &amp;quot;solution&amp;quot;, how quaint!)&lt;/li&
 &lt;li&gt;Start the site.&lt;/li&gt;
 &lt;li&gt;Start testing.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;a href="#id3"&gt;&lt;span class="problematic" id="id4"&gt;`|image1|`_&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external" href="http://aclark4life.files.wordpress.com/2012/08/50-56-240-204-screen-capture.png?w=300"&gt;|image1|&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="step-2-fix-all-the-bugs"&gt;
 &lt;h2&gt;Step 2: Fix all the bugs&lt;/h2&gt;
@@ -329,8 +329,8 @@ run `python setup.py bdist_wininst`.&lt;/li&gt;
 &lt;h2&gt;Step 3: Profit!&lt;/h2&gt;
 &lt;p&gt;I have to admit: I was giddy when it started working, and I was able to
 create a Windows Installer for Pillow (Python Imaging Library fork).
-&lt;a href="#id5"&gt;&lt;span class="problematic" id="id6"&gt;`|image3|`_&lt;/span&gt;&lt;/a&gt; I was even happier when I ran the installer and it worked.
-&lt;a href="#id7"&gt;&lt;span class="problematic" id="id8"&gt;`|image4|`_&lt;/span&gt;&lt;/a&gt; &lt;a href="#id9"&gt;&lt;span class="problematic" id="id10"&gt;`|image5|`_&lt;/span&gt;&lt;/a&gt; That's it. Next I hope to &lt;a class="reference external" href="http://pythonpackages.com/plans"&gt;get some customers&lt;/a&gt;
+&lt;a class="reference external" href="http://aclark4life.files.wordpress.com/2012/08/buddy-screen-capture.png?w=300"&gt;|image3|&lt;/a&gt; I was even happier when I ran the installer and it worked.
+&lt;a class="reference external" href="http://aclark4life.files.wordpress.com/2012/08/buddy-screen-capture-2.png?w=300"&gt;|image4|&lt;/a&gt; &lt;a class="reference external" href="http://aclark4life.files.wordpress.com/2012/08/buddy-screen-capture-3.png?w=300"&gt;|image5|&lt;/a&gt; That's it. Next I hope to &lt;a class="reference external" href="http://pythonpackages.com/plans"&gt;get some customers&lt;/a&gt;
 so I can keep the Windows box running, and make it available to the
 public.&lt;/p&gt;
 &lt;/div&gt;
@@ -339,28 +339,19 @@ public.&lt;/p&gt;
 &lt;p&gt;In case you are interested, the &lt;a class="reference external" href="http://docs.pythonpackages.com/en/latest/roadmap.html"&gt;roadmap for beta Q3 is here&lt;/a&gt;. I will
 also mention that I recently used &lt;a class="reference external" href="http://dia-installer.de/"&gt;Dia&lt;/a&gt; (&amp;lt;3) to create this
 info-graphic, in hopes of better communicating what I'm trying to build.
-Check it out! &lt;a href="#id11"&gt;&lt;span class="problematic" id="id12"&gt;`|image6|`_&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="system-messages section"&gt;
-&lt;h2&gt;Docutils System Messages&lt;/h2&gt;
-&lt;div class="system-message" id="id1"&gt;
-&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/building-windows-installers-in-the-cloud.rst&lt;/tt&gt;, line 18); &lt;em&gt;&lt;a href="#id2"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
-Unknown target name: &amp;quot;|image0|&amp;quot;.&lt;/div&gt;
-&lt;div class="system-message" id="id3"&gt;
-&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/building-windows-installers-in-the-cloud.rst&lt;/tt&gt;, line 39); &lt;em&gt;&lt;a href="#id4"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
-Unknown target name: &amp;quot;|image1|&amp;quot;.&lt;/div&gt;
-&lt;div class="system-message" id="id5"&gt;
-&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/building-windows-installers-in-the-cloud.rst&lt;/tt&gt;, line 63); &lt;em&gt;&lt;a href="#id6"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
-Unknown target name: &amp;quot;|image3|&amp;quot;.&lt;/div&gt;
-&lt;div class="system-message" id="id7"&gt;
-&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/building-windows-installers-in-the-cloud.rst&lt;/tt&gt;, line 63); &lt;em&gt;&lt;a href="#id8"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
-Unknown target name: &amp;quot;|image4|&amp;quot;.&lt;/div&gt;
-&lt;div class="system-message" id="id9"&gt;
-&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/building-windows-installers-in-the-cloud.rst&lt;/tt&gt;, line 63); &lt;em&gt;&lt;a href="#id10"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
-Unknown target name: &amp;quot;|image5|&amp;quot;.&lt;/div&gt;
-&lt;div class="system-message" id="id11"&gt;
-&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/building-windows-installers-in-the-cloud.rst&lt;/tt&gt;, line 73); &lt;em&gt;&lt;a href="#id12"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
-Unknown target name: &amp;quot;|image6|&amp;quot;.&lt;/div&gt;
+Check it out! &lt;a class="reference external" href="http://aclark4life.files.wordpress.com/2012/08/pythonpackages-diagram.png?w=300"&gt;|image6|&lt;/a&gt;&lt;/p&gt;
+&lt;div class="system-message"&gt;
+&lt;p class="system-message-title"&gt;System Message: WARNING/2 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/building-windows-installers-in-the-cloud.rst&lt;/tt&gt;, line 100); &lt;em&gt;&lt;a href="#id1"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+Duplicate explicit target name: &amp;quot;|image7|&amp;quot;.&lt;/div&gt;
+&lt;div class="system-message"&gt;
+&lt;p class="system-message-title"&gt;System Message: WARNING/2 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/building-windows-installers-in-the-cloud.rst&lt;/tt&gt;, line 101); &lt;em&gt;&lt;a href="#id2"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+Duplicate explicit target name: &amp;quot;|image8|&amp;quot;.&lt;/div&gt;
+&lt;div class="system-message"&gt;
+&lt;p class="system-message-title"&gt;System Message: WARNING/2 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/building-windows-installers-in-the-cloud.rst&lt;/tt&gt;, line 102); &lt;em&gt;&lt;a href="#id3"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+Duplicate explicit target name: &amp;quot;|image9|&amp;quot;.&lt;/div&gt;
+&lt;div class="system-message"&gt;
+&lt;p class="system-message-title"&gt;System Message: WARNING/2 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/building-windows-installers-in-the-cloud.rst&lt;/tt&gt;, line 103); &lt;em&gt;&lt;a href="#id4"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+Duplicate explicit target name: &amp;quot;|image10|&amp;quot;.&lt;/div&gt;
 &lt;/div&gt;
 </summary><category term="Mozilla"></category><category term="Plone"></category><category term="Python"></category></entry><entry><title>Pillow moved to python-imaging organization</title><link href="http://blog.aclark.net//2012/07/25/pillow-moved-to-python-imaging-organization/" rel="alternate"></link><updated>2012-07-25T02:19:00Z</updated><author><name>Alex Clark</name></author><id>tag:blog.aclark.net,2012-07-25:/2012/07/25/pillow-moved-to-python-imaging-organization/</id><summary type="html">&lt;p&gt;On 7/30/2010 Pillow, the &amp;quot;friendly&amp;quot; PIL fork, was released. Since then,
 there have been a number of releases:&lt;/p&gt;
@@ -4183,7 +4174,7 @@ Unknown target name: &amp;quot;|http://beakersblog.files.wordpress.com/2010/02/c
 2006&lt;/a&gt; was my inspiration for &lt;a class="reference external" href="http://plone.org/2008"&gt;Plone Conference 2008&lt;/a&gt;, then
 &lt;a class="reference external" href="https://www.packtpub.com/Professional-Plone-web-applications-CMS/book"&gt;Professional Plone Development&lt;/a&gt; was my inspiration for this book:
 &lt;a class="reference external" href="https://www.packtpub.com/plone-3-3-site-administration/book"&gt;Plone 3.3 Site Administration&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;a href="#id3"&gt;&lt;span class="problematic" id="id4"&gt;`|image0|`_&lt;/span&gt;&lt;/a&gt;For the past 14 months or so, I have been writing a book
+&lt;p&gt;&lt;a class="reference external" href="http://blog.aclark.net/wp-content/uploads/2010/03/plone-site-admin.jpg"&gt;|image0|&lt;/a&gt; For the past 14 months or so, I have been writing a book
 aimed at end users of Plone; folks that have little knowledge of how to
 do much more than add content. It is intended to make them feel more
 comfortable performing various site administrator tasks. Topics like
@@ -4324,12 +4315,6 @@ appreciate everyone's interest. However, I wanted to encourage everyone
 once more to &lt;a class="reference external" href="mailto:aclark&amp;#64;aclark.net?subject=&amp;quot;Hire%20Alex%20Clark&amp;quot;"&gt;get in touch.&lt;/a&gt; And also, to feel free to reach whenever
 you come across this blog entry and are in need of Plone help. We are
 always looking for a challenge.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="system-messages section"&gt;
-&lt;h2&gt;Docutils System Messages&lt;/h2&gt;
-&lt;div class="system-message" id="id3"&gt;
-&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/blood-sweat-tears-and-a-new-plone-book.rst&lt;/tt&gt;, line 11); &lt;em&gt;&lt;a href="#id4"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
-Unknown target name: &amp;quot;|image0|&amp;quot;.&lt;/div&gt;
 &lt;/div&gt;
 </summary><category term="Plone"></category></entry><entry><title>I need something to do</title><link href="http://blog.aclark.net//2010/03/22/i-need-something-to-do/" rel="alternate"></link><updated>2010-03-22T17:06:00Z</updated><author><name>Alex Clark</name></author><id>tag:blog.aclark.net,2010-03-22:/2010/03/22/i-need-something-to-do/</id><summary type="html">&lt;p&gt;I would like to think I have done &lt;a class="reference external" href="http://plone.org/2008"&gt;my&lt;/a&gt; &lt;a class="reference external" href="http://aclark.net/plone-site-admin"&gt;share&lt;/a&gt; for Plone over the past
 few years. In return, I know that Plone has done its share for me. I
