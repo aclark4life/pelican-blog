@@ -109,7 +109,7 @@ several PHP apps with it just for kicks, including:</p>
 <li>phpMyAdmin</li>
 </ul>
 <p>It builds Apache, PHP, MySQL, GD, and Supervisor. Let's take a look.</p>
-</p><p><p>First, we define the parts. For each of these, we'll do something useful
+<p>First, we define the parts. For each of these, we'll do something useful
 to contribute to the end result.</p>
 <pre class="literal-block">
 [buildout]
@@ -133,7 +133,7 @@ parts =
 </pre>
 <p>Now that the parts are listed, the rest of the buildout must define
 those parts.</p>
-</p><p><p>First, we add some utilities required by this buildout.</p>
+<p>First, we add some utilities required by this buildout.</p>
 <pre class="literal-block">
 [env]
 recipe = gocept.recipe.env[grp]
@@ -246,7 +246,7 @@ programs =
                                              -f ${buildout:directory}/etc/httpd.conf ]
 </pre>
 <p>If you are interested in trying this yourself, please see:</p>
-</p><p><a class="reference external" href="http://svn.aclark.net/svn/public/buildout/lamp/trunk/">http://svn.aclark.net/svn/public/buildout/lamp/trunk/</a></p>
+<p><a class="reference external" href="http://svn.aclark.net/svn/public/buildout/lamp/trunk/">http://svn.aclark.net/svn/public/buildout/lamp/trunk/</a></p>
 <p>and let me know how it goes!</p>
 </div>
 

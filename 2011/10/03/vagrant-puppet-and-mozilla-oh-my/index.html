@@ -111,7 +111,7 @@ Puppet are also new to me, I consider these technologies part of my
 waited so long because the &quot;cool factor&quot; is very high. It requires that
 <a class="reference external" href="https://www.virtualbox.org/">Virtualbox</a> be installed, which I also danced around for too long
 before committing (being a former Parallels user).</p>
-</p><p><p>On OS X Lion[1], installing Vagrant is simply a matter of:</p>
+<p>On OS X Lion[1], installing Vagrant is simply a matter of:</p>
 <pre class="literal-block">
 $ gem install vagrant
 </pre>
@@ -123,7 +123,7 @@ $ vagrant init
 a virtual machine you can share with the masses. This is how
 <a class="reference external" href="https://github.com/aclark4life/kitsune-vagrant">kitsune-vagrant</a> was born. Hopefully this shared virtual machine will
 eventually make some new developer's life much easier.</p>
-</p><p>We now arrive at a fork in the road; though Vagrant makes it easy to
+<p>We now arrive at a fork in the road; though Vagrant makes it easy to
 follow both paths: Chef or Puppet (it supports both). I don't recall
 what made me choose Puppet over Chef, but it might have been that the
 <a class="reference external" href="https://github.com/rhelmer/socorro-vagrant">Socorro folks were using it already</a>.</p>
@@ -138,7 +138,7 @@ know how to create a manifest file. (Vagrant does the rest!) I imagine
 there is much more to Puppet, especially with regard to doing actual
 configuration management on production servers. But I have not explored
 any of that yet.</p>
-</p><p>However, I did learn quite a bit about Puppet just from writing the
+<p>However, I did learn quite a bit about Puppet just from writing the
 manifest. The first most important thing I learned is this: <strong>Puppet is
 in charge</strong>. It does things the way it wants to and you need to follow
 its rules. The first and biggest challenge is to achieve a linear
@@ -146,7 +146,7 @@ execution of tasks.</p>
 <p>You cannot write rules in order and hope for the best. This will fail
 spectacularly when something executes before something else was supposed
 to. The way around this is via `require =&gt;` statements.</p>
-<p><p>A grep through kitsune.pp reveals:</p>
+<p>A grep through kitsune.pp reveals:</p>
 <pre class="literal-block">
 require =&gt; Exec['git_clone'],
 require =&gt; Exec['db_sync'],
@@ -190,7 +190,7 @@ of this week.</p>
 <h2>Notes</h2>
 <p>[1] This did not work on Snow Leopard, because `gem` is too old.
 However if you `brew install ruby` and try again, it should work.</p>
-</p><p>[2] I didn't bother to investigate Chef, but I am curious about it.</p>
+<p>[2] I didn't bother to investigate Chef, but I am curious about it.</p>
 <p>[3] And I hope this is only the beginning.</p>
 <p>[4] I hope to get a Mozilla gig but even if I don't, being able to do
 this type of work is very rewarding (which is why you will often hear
@@ -200,7 +200,7 @@ is a dream come true :-)).</p>
 <div class="system-messages section">
 <h2>Docutils System Messages</h2>
 <div class="system-message" id="id3">
-<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">/Users/aclark/Developer/blog/content/vagrant-puppet-and-mozilla-oh-my.rst</tt>, line 158); <em><a href="#id4">backlink</a></em></p>
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">/Users/aclark/Developer/blog/content/vagrant-puppet-and-mozilla-oh-my.rst</tt>, line 138); <em><a href="#id4">backlink</a></em></p>
 Unknown target name: &quot;|image0|&quot;.</div>
 </div>
 

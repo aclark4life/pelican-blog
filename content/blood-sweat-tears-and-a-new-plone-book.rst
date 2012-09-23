@@ -170,9 +170,6 @@ once more to `get in touch.`_ And also, to feel free to reach whenever
 you come across this blog entry and are in need of Plone help. We are
 always looking for a challenge.
 
-
-``_
-
 .. _Plone Conference 2006: http://plone.org/events/conferences/seattle-2006
 .. _Plone Conference 2008: http://plone.org/2008
 .. _Professional Plone Development: https://www.packtpub.com/Professional-Plone-web-applications-CMS/book
@@ -184,7 +181,6 @@ always looking for a challenge.
 .. _one day class I am teaching at Plone Symposium East 2010: http://plone-site-admin.eventbrite.com
 .. _my previous blog entry: http://blog.aclark.net/?p=170
 .. _get in touch.: mailto:aclark@aclark.net?subject="Hire%20Alex%20Clark"
-.. _: http://aclark.net/contact-info
-
+.. _contact: http://aclark.net/contact-info
 .. |image0| image:: http://blog.aclark.net/wp-content/uploads/2010/03/plone-site-admin.jpg
 .. |image1| image:: http://blog.aclark.net/wp-content/uploads/2010/03/plone-site-admin.jpg

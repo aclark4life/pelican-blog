@@ -39,7 +39,7 @@ See you at the next Python/Zope/Plone/Grok/Repoze meeting! ;-)
 .. _better than the old one: http://www.zope.org/Resources/UserGroups/index_html_old
 .. _come and gone: http://czug.org
 .. _unification attempts: http://theploneblog.org/blog/archive/2005/11/17/here-a-user-group-there-a-user-group
-.. _come and gone: http://www.zope.org/Members/chrisa/UGmls
+.. _come and gone2: http://www.zope.org/Members/chrisa/UGmls
 .. _`http://wiki.python.org/moin/LocalUserGroups`: http://wiki.python.org/moin/LocalUserGroups
 .. _`http://plone.org/support/local-user-groups`: http://plone.org/support/local-user-groups/
 .. _fourth age of Zope: http://faassen.n--tree.net/blog/view/weblog/2007/11/15/0

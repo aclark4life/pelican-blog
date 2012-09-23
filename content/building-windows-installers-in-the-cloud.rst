@@ -62,9 +62,6 @@ Step 3: Profit!
 
 I have to admit: I was giddy when it started working, and I was able to
 create a Windows Installer for Pillow (Python Imaging Library fork).
-[caption id="attachment\_5143" align="aligncenter"
-width="300"]\ `|image2|`_ (We know there are security implications here.
-We are currently addressing them as best as we can.)[/caption]
 `|image3|`_ I was even happier when I ran the installer and it worked.
 `|image4|`_ `|image5|`_ That's it. Next I hope to `get some customers`_
 so I can keep the Windows box running, and make it available to the

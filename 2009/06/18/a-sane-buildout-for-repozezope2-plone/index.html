@@ -78,7 +78,7 @@ recently described in great detail</a> and <a class="reference external" href="h
 year</a>. For the purposes of this blog entry, I'll refer to the issue as
 the &quot;index vs. find-links&quot; conundrum in buildout&nbsp; (find-links in
 buildout are equivalent to distribution_links in setuptools).</p>
-</p><p>For those that want strict repeatability, using the index parameter is
+<p>For those that want strict repeatability, using the index parameter is
 the clear winner. It simply forces buildout to do the right thing now
 and forever, by limiting what packages it can select from. For those
 that want functionality and don't mind the occasional egg-out-of-whack
@@ -94,16 +94,12 @@ free to add any package from <a class="reference external" href="http://pypi.pyt
 This is essentially why people like this method (the counter argument is
 that it is simple to add any additional egg you may want to your index,
 but we'll get to that later).</p>
-</p><p><p>So a simple buildout using this method might look like this:</p>
+<p>So a simple buildout using this method might look like this:</p>
 <blockquote>
 <ol class="arabic simple" start="0">
 <li>virtualenv plone; cd plone</li>
-</ol>
-</p><ol class="arabic simple">
 <li>bin/easy_install zc.buildout</li>
 <li>bin/buildout init</li>
-</ol>
-<p><ol class="arabic simple" start="3">
 <li>Edit buildout.cfg:</li>
 </ol>
 </blockquote>
@@ -133,8 +129,6 @@ buildout, but for now I'll just list them here:</p>
 <blockquote>
 <ol class="arabic simple" start="5">
 <li>bin/mkzopeinstance</li>
-</ol>
-</p><p><ol class="arabic simple" start="6">
 <li>bin/addzope2user admin admin</li>
 </ol>
 </blockquote>
@@ -161,7 +155,7 @@ zserver on port 8080
 </pre>
 <p>At this point, you should be able to login to
 <a class="reference external" href="http://localhost:8080/manage">http://localhost:8080/manage</a> and create a Plone site.</p>
-</p><p>Of course, we did a sloppy job here, creating the Zope2 instance in the
+<p>Of course, we did a sloppy job here, creating the Zope2 instance in the
 root of the buildout, etc. It is possible that
 <a class="reference external" href="http://pypi.python.org/pypi/plone.recipe.zope2instance/3.2">plone.recipe.zope2install</a> may help us in the future by supporting
 repoze.zope2 instances (or maybe it does already, I didn't try).</p>
@@ -176,17 +170,13 @@ project. If it is, we can accommodate you (I hope) with the &quot;index&quot;
 buildout that follows. The downside is that *you* can't control what I
 put in the index. However, you can certainly create your own index using
 this technique.</p>
-</p><p><p>An arguably even simpler buildout using this technique might look like
+<p>An arguably even simpler buildout using this technique might look like
 this:</p>
 <blockquote>
 <ol class="arabic simple" start="0">
 <li>virtualenv plone; cd plone</li>
-</ol>
-</p><ol class="arabic simple">
 <li>bin/easy_install zc.buildout</li>
 <li>bin/buildout init</li>
-</ol>
-<p><ol class="arabic simple" start="3">
 <li>Edit buildout.cfg:</li>
 </ol>
 </blockquote>
@@ -204,14 +194,6 @@ eggs =
 4. bin/buildout
 
 5. bin/mkzopeinstance
-
-.. raw:: html
-
-   &lt;/p&gt;
-
-.. raw:: html
-
-   &lt;p&gt;
 
 6. bin/addzope2user admin admin
 
@@ -232,7 +214,7 @@ rename <a class="reference external" href="http://dist.plone.org/experimental/re
 <a class="reference external" href="http://dist.plone.org/repoze/release/3.3rc3/">http://dist.plone.org/repoze/release/3.3rc3/</a>. Of course, if anyone
 objects to this or finds it confusing, I can just as easily remove it
 (from dist.plone.org).</p>
-</p><p>Special thanks to <a class="reference external" href="http://plope.com/">Chris McDonough</a> and <a class="reference external" href="http://www.martinaspeli.net/">Martin Aspeli</a> for helping me
+<p>Special thanks to <a class="reference external" href="http://plope.com/">Chris McDonough</a> and <a class="reference external" href="http://www.martinaspeli.net/">Martin Aspeli</a> for helping me
 scratch my itch!</p>
 <p>Finally, please don't rely on any of this &quot;in production&quot; yet unless you
 know what you are doing. I tested these techniques up to the point of

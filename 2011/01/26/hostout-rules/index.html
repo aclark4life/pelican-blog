@@ -97,7 +97,7 @@ done&quot; sort of way. Of course not everyone likes them, but if you are a
 technical person and don't like them, I guarantee you at least
 understand them and can see why they might be appropriate in some cases
 over another technology.</p>
-</p><p>Anyway, back to the awesomeness.</p>
+<p>Anyway, back to the awesomeness.</p>
 </div>
 <div class="section" id="fabric">
 <h2>Fabric</h2>
@@ -116,7 +116,7 @@ function called &quot;bar&quot;, inside a (local) file called fabfile.py, on a
 speak. That is to say, you create a local fabfile.py file, and Fabric
 runs the code remotely for you on any number of hosts you give it.
 Brilliant.</p>
-</p><p>Now, what could be better than these two technologies? These two
+<p>Now, what could be better than these two technologies? These two
 technologies <em>together</em>, that's what. (See where I am going with this?)
 And what could be better than joining these two technologies? Joining
 them with <em>absolutely no effort required on your part whatsoever</em>,
@@ -137,7 +137,7 @@ after the launch, I realized I needed a quick and easy way to deploy my
 staging site to production. I pitched the idea of a utility called
 &quot;mr.pusher&quot; to accomplish this task to Dylan, with the caveat that I was
 interested in making it work with Hostout.</p>
-</p><p>As it turns out, between Hostout and a recipe I created years ago called
+<p>As it turns out, between Hostout and a recipe I created years ago called
 <a class="reference external" href="http://pypi.python.org/pypi/collective.recipe.rsync">collective.recipe.rsync</a>, &quot;mr.pusher&quot; almost already existed. Now back
 to the story.</p>
 </div>
@@ -145,7 +145,7 @@ to the story.</p>
 <h3>Fabric integration made easy</h3>
 <p>Since I knew I wanted to be able to execute a &quot;push&quot; command remotely, I
 figured I would finally get acclimated with Hostout.</p>
-</p><p><p>After a small wrestling match in my head with the docs, I came up with
+<p>After a small wrestling match in my head with the docs, I came up with
 <a class="reference external" href="https://github.com/aclark4life/aclark_net_website/blob/master/buildout.cfg#L64">this</a>:</p>
 <pre class="literal-block">
 # Hostout makes Fabric integration easy
@@ -198,7 +198,7 @@ combination with a<a class="reference external" href="https://github.com/aclark4
 <p>I really like this setup, and I really appreciate what Hostout gets me
 &quot;for free&quot;; I didn't have to create a fabfile.py, I just configured my
 staging and production host parameters in buildout.cfg and off I went.</p>
-</p><p>Of course, there is always room for improvement. The next most logical
+<p>Of course, there is always room for improvement. The next most logical
 step for me would be to add cloud integration. If I could provision a
 new Rackspace cloud server via buildout, and then host-it-out, I think
 the future will have arrived. And since that is exactly what

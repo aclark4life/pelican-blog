@@ -88,7 +88,7 @@ and `here`_.)
 .. _Maintainable Software,: http://maintainable.com/
 .. _contributors: http://supervisord.org/contributors/
 .. _here: http://svn.repoze.org/buildouts/repoze.zope2/trunk/etc/supervisord.conf
-.. _here: http://blog.delaguardia.com.mx/index.php?op=ViewArticle&articleId=106&blogId=1
+.. _here2: http://blog.delaguardia.com.mx/index.php?op=ViewArticle&articleId=106&blogId=1
 
 .. |image0| image:: http://aclark4life.files.wordpress.com/2008/05/supervisor.png
 .. |Supervisor rocks!| image:: Picture2.png/image_preview

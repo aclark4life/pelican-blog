@@ -16,16 +16,12 @@ this month (October 2007) and announce them here.
 
 First announcment coming soon.
 
- 
-
-``_
-
 .. _|image1|: http://aclark4life.files.wordpress.com/2007/10/is-this-thing-on.jpg
 .. _planet: http://planet.plone.org
 .. _joining Tomster: http://tomster.org/blog/archive/2007/10/17/today-is-my-first-plone-day
 .. _10% Manifesto: http://www.plonesolutions.com/blog/the-10-plone-manifesto/
 .. _Geir Bækholt at Jarn: http://www.jarn.com/blog/the-10-plone-manifesto/
-.. _: http://www.plonesolutions.com/blog/the-10-plone-manifesto/
+.. _foo: http://www.plonesolutions.com/blog/the-10-plone-manifesto/
 
 .. |image0| image:: http://aclark4life.files.wordpress.com/2007/10/is-this-thing-on.jpg
 .. |image1| image:: http://aclark4life.files.wordpress.com/2007/10/is-this-thing-on.jpg

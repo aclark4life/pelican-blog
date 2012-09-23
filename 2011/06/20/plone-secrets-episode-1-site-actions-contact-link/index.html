@@ -85,7 +85,7 @@ on aclark.net.</p>
 <p>This is a gratuitous rip off of any Plone firm's website that has
 contact info in the upper right of their site (e.g.
 <a class="reference external" href="http://sixfeetup.com">http://sixfeetup.com</a>).</p>
-</p><p>I knew I wanted to do &quot;my version&quot; of adding contact info to the upper
+<p>I knew I wanted to do &quot;my version&quot; of adding contact info to the upper
 right, and I think I've seen someone use this exact technique somewhere
 else (I would credit them if I could remember.)</p>
 <p>Long story short: Plone 4's sunburst theme has a nice JavaScript drop
@@ -107,7 +107,7 @@ accomplished via the following Diazo rule:</li>
 <p>Note also that I am using the early-supported XPath syntax, but the more
 friendly CSS syntax is supported now too. See <a class="reference external" href="http://diazo.org">http://diazo.org</a> for
 more information.</p>
-</p><p>For the full set of Diazo rules for this site, see here:</p>
+<p>For the full set of Diazo rules for this site, see here:</p>
 <ul class="simple">
 <li>Plone:
 <a class="reference external" href="https://github.com/ACLARKNET/aclark_net_website/blob/master/src/plonetheme.aclarknet/plonetheme/aclarknet/theme/aclarknet/rules.xml">https://github.com/ACLARKNET/aclark_net_website/blob/master/src/plonetheme.aclarknet/plonetheme/aclarknet/theme/aclarknet/rules.xml</a></li>
@@ -120,7 +120,7 @@ more information.</p>
 <p>Next, we need to create and display only the &quot;Contact us today!&quot; link,
 which also involves disabling the &quot;Log in&quot; link. These tricks can be
 performed in the Zope Management Interface via the portal_actions tool.</p>
-</p><p>First, browse to `Site Setup -&gt; Zope Management Interface -&gt;
+<p>First, browse to `Site Setup -&gt; Zope Management Interface -&gt;
 portal_actions -&gt; user` and create a `contact` action:</p>
 <p><a href="#id3"><span class="problematic" id="id4">`|image1|`_</span></a></p>
 <p>Fill in the appropriate fields and click `Save changes`:</p>
@@ -134,7 +134,7 @@ clicking `Save changes`:</p>
 <p>Lastly and most importantly, persist your work on the file system
 outside of the database. You don't want to be forced to recreate this
 site action ever again through the web.</p>
-</p><p>This involves exporting the action via portal setup, and adding it to
+<p>This involves exporting the action via portal setup, and adding it to
 your package's GenericSetup profile. Browse to `Site Setup -&gt; Zope
 Management Interface -&gt; portal_setup -&gt; Export. Check the `Action
 providers` step:</p>
@@ -145,7 +145,7 @@ steps`:</p>
 <p>This will give you a tarred/gzipped file that when extracted will give
 you an `actions.xml` file. Edit this file to include only the action
 you created, like so:</p>
-<p><pre class="literal-block">
+<pre class="literal-block">
 &lt;?xml version=&quot;1.0&quot;?&gt; &lt;/object&gt;
 &lt;/object&gt;
 </pre>
@@ -192,13 +192,13 @@ the CSS ids that Plone uses:</p>
 <li><a class="reference external" href="https://github.com/ACLARKNET/aclark_net_website/blob/master/src/plonetheme.aclarknet/plonetheme/aclarknet/theme/aclarknet/static/css/plone.css#L519">https://github.com/ACLARKNET/aclark_net_website/blob/master/src/plonetheme.aclarknet/plonetheme/aclarknet/theme/aclarknet/static/css/plone.css#L519</a></li>
 </ul>
 <p>And of course, these styles apply to the public facing site.</p>
-</p><p><a href="#id13"><span class="problematic" id="id14">`|image6|`_</span></a></p>
+<p><a href="#id13"><span class="problematic" id="id14">`|image6|`_</span></a></p>
 </div>
 <div class="section" id="results">
 <h2>Results</h2>
 <p>On a new Plone site, the option to install this customization will look
 like so:</p>
-</p><p><a href="#id15"><span class="problematic" id="id16">`|image7|`_</span></a></p>
+<p><a href="#id15"><span class="problematic" id="id16">`|image7|`_</span></a></p>
 <p>And the action will look like this, when you are logged in (else you
 will see only the &quot;Contact us today!&quot; link):</p>
 <p><a href="#id17"><span class="problematic" id="id18">`|image8|`_</span></a></p>
@@ -220,28 +220,28 @@ to see happen.</p>
 <p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">/Users/aclark/Developer/blog/content/plone-secrets-episode-1-site-actions-contact-link.rst</tt>, line 22); <em><a href="#id2">backlink</a></em></p>
 Unknown target name: &quot;|image0|&quot;.</div>
 <div class="system-message" id="id3">
-<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">/Users/aclark/Developer/blog/content/plone-secrets-episode-1-site-actions-contact-link.rst</tt>, line 84); <em><a href="#id4">backlink</a></em></p>
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">/Users/aclark/Developer/blog/content/plone-secrets-episode-1-site-actions-contact-link.rst</tt>, line 72); <em><a href="#id4">backlink</a></em></p>
 Unknown target name: &quot;|image1|&quot;.</div>
 <div class="system-message" id="id5">
-<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">/Users/aclark/Developer/blog/content/plone-secrets-episode-1-site-actions-contact-link.rst</tt>, line 88); <em><a href="#id6">backlink</a></em></p>
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">/Users/aclark/Developer/blog/content/plone-secrets-episode-1-site-actions-contact-link.rst</tt>, line 76); <em><a href="#id6">backlink</a></em></p>
 Unknown target name: &quot;|image2|&quot;.</div>
 <div class="system-message" id="id7">
-<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">/Users/aclark/Developer/blog/content/plone-secrets-episode-1-site-actions-contact-link.rst</tt>, line 93); <em><a href="#id8">backlink</a></em></p>
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">/Users/aclark/Developer/blog/content/plone-secrets-episode-1-site-actions-contact-link.rst</tt>, line 81); <em><a href="#id8">backlink</a></em></p>
 Unknown target name: &quot;|image3|&quot;.</div>
 <div class="system-message" id="id9">
-<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">/Users/aclark/Developer/blog/content/plone-secrets-episode-1-site-actions-contact-link.rst</tt>, line 111); <em><a href="#id10">backlink</a></em></p>
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">/Users/aclark/Developer/blog/content/plone-secrets-episode-1-site-actions-contact-link.rst</tt>, line 95); <em><a href="#id10">backlink</a></em></p>
 Unknown target name: &quot;|image4|&quot;.</div>
 <div class="system-message" id="id11">
-<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">/Users/aclark/Developer/blog/content/plone-secrets-episode-1-site-actions-contact-link.rst</tt>, line 116); <em><a href="#id12">backlink</a></em></p>
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">/Users/aclark/Developer/blog/content/plone-secrets-episode-1-site-actions-contact-link.rst</tt>, line 100); <em><a href="#id12">backlink</a></em></p>
 Unknown target name: &quot;|image5|&quot;.</div>
 <div class="system-message" id="id13">
-<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">/Users/aclark/Developer/blog/content/plone-secrets-episode-1-site-actions-contact-link.rst</tt>, line 187); <em><a href="#id14">backlink</a></em></p>
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">/Users/aclark/Developer/blog/content/plone-secrets-episode-1-site-actions-contact-link.rst</tt>, line 163); <em><a href="#id14">backlink</a></em></p>
 Unknown target name: &quot;|image6|&quot;.</div>
 <div class="system-message" id="id15">
-<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">/Users/aclark/Developer/blog/content/plone-secrets-episode-1-site-actions-contact-link.rst</tt>, line 199); <em><a href="#id16">backlink</a></em></p>
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">/Users/aclark/Developer/blog/content/plone-secrets-episode-1-site-actions-contact-link.rst</tt>, line 171); <em><a href="#id16">backlink</a></em></p>
 Unknown target name: &quot;|image7|&quot;.</div>
 <div class="system-message" id="id17">
-<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">/Users/aclark/Developer/blog/content/plone-secrets-episode-1-site-actions-contact-link.rst</tt>, line 204); <em><a href="#id18">backlink</a></em></p>
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">/Users/aclark/Developer/blog/content/plone-secrets-episode-1-site-actions-contact-link.rst</tt>, line 176); <em><a href="#id18">backlink</a></em></p>
 Unknown target name: &quot;|image8|&quot;.</div>
 </div>
 

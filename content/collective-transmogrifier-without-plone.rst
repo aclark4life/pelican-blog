@@ -63,8 +63,6 @@ locally, as explained in the rest of the `README`_:
     object called "Plone" and then:    $ bin/mr.migratorYou should end up with content in Plone that looks like this:
     …
 
-``_\ `|image0|`_
-
 I hope this helps move the state of the art forward a bit; it would be
 great to share this technology with the rest of the Python world. And in
 case you are curious about the changes, you can read the revision log
@@ -89,10 +87,9 @@ for bringing transmogrifier to the masses via mr.migrator.
 .. _mr.migrator: https://github.com/collective/mr.migrator
 .. _`https://github.com/aclark4life/mr\_migrator\_demo`: https://github.com/aclark4life/mr_migrator_demo
 .. _README: https://github.com/aclark4life/mr_migrator_demo/raw/master/README.txt
-.. _: ../wp-content/uploads/2011/04/content.png
+.. _foo: ../wp-content/uploads/2011/04/content.png
 .. _|image1|: http://blog.aclark.net/wp-content/uploads/2011/04/content1.png
 .. _`http://dev.plone.org/collective/log/collective.transmogrifier/branches/aclark-mr-migrator-compat`: http://dev.plone.org/collective/log/collective.transmogrifier/branches/aclark-mr-migrator-compat
 .. _`http://dev.plone.org/collective/changeset/237628/collective.transmogrifier/branches/aclark-mr-migrator-compat`: http://dev.plone.org/collective/changeset/237628/collective.transmogrifier/branches/aclark-mr-migrator-compat
 
 .. |image0| image:: http://blog.aclark.net/wp-content/uploads/2011/04/content1.png
-.. |image1| image:: http://blog.aclark.net/wp-content/uploads/2011/04/content1.png

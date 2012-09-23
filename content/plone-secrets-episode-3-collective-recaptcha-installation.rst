@@ -30,10 +30,6 @@ Why do I say this?
 Been there, done that: CMFFormController
 ========================================
 
-[caption id="attachment\_3304" align="alignright" width="259"
-caption="Photo credit: Scott Beale / Laughing
-Squid"]\ `|image1|`_\ [/caption]
-
 First, let me start with the technology that is used to implement the
 contact form. It's called `CMFFormController`_ and it went out of style
 in the 1970s, along with disco and bell bottoms. Bell bottoms came back,

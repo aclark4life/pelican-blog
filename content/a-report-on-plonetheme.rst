@@ -3,11 +3,6 @@ A report on plonetheme.*
 :date: 2010-11-04 11:09
 :tags: Plone
 
-[caption id="attachment\_486" align="alignright" width="398"
-caption="Photo credit:
-http://www.flickr.com/photos/adactio/2917093994/"]\ `|Photo credit:
-http://www.flickr.com/photos/adactio/2917093994/|`_\ [/caption]
-
 By now, most of us are familiar with XDV and how awesome it is for
 theming Plone (or any website). You should also be aware that XDV has
 been renamed to **Diazo**, and collective.xdv is now called
@@ -146,7 +141,7 @@ packages that were not included with all of the various themes.
 
 As far as I can tell, it is in the best interest of "old style" theme
 developers to specify these packages in their setup.py files with the
-install\_requires parameter!
+install_requires parameter!
 
 OK, it's actually in my best interest because then I have to do less
 work, but you get the idea.
@@ -182,9 +177,6 @@ jbot modifies default Plone theme?
 I've noticed this before in both Plone Classic and now Sunburst when
 jbot is installed. No idea what the actual cause is:
 
-[caption id="attachment\_492" align="aligncenter" width="537"
-caption="Why jbot why!?"]\ `|Why jbot why!?|`_\ [/caption]
-
 Disclaimer
 ----------
 
@@ -203,10 +195,6 @@ I know, I know. I should open a ticket for the jbot thing.
 
 And now off to play!
 
-[caption id="attachment\_501" align="aligncenter" width="192"
-caption="Installable themes in Plone 4"]\ `|Installable themes in Plone
-4|`_\ [/caption]
-
 P.S. I will report on the install process in the comments.
 
 So far, *Andreas* installed, worked, and looked nice while *Bluegray
@@ -216,12 +204,9 @@ Theme 1.0.0b2* required a ZMI undo ;-)
 .. _|image4|: http://blog.aclark.net/wp-content/uploads/2010/11/Screen-shot-2010-11-04-at-10.35.12-AM.png
 .. _|image5|: http://blog.aclark.net/wp-content/uploads/2010/11/Screen-shot-2010-11-04-at-10.34.14-AM.png
 
-.. |Photo credit:
-http://www.flickr.com/photos/adactio/2917093994/| image:: http://blog.aclark.net/wp-content/uploads/2010/11/2917093994_ffe4d2ff52_o.jpg
-.. |Why jbot
-why!?| image:: http://blog.aclark.net/wp-content/uploads/2010/11/Screen-shot-2010-11-04-at-10.35.12-AM.png
-.. |Installable themes in Plone
-4| image:: http://blog.aclark.net/wp-content/uploads/2010/11/Screen-shot-2010-11-04-at-10.34.14-AM.png
+.. |Photo credit: http://www.flickr.com/photos/adactio/2917093994/| image:: http://blog.aclark.net/wp-content/uploads/2010/11/2917093994_ffe4d2ff52_o.jpg
+.. |Why jbot why!?| image:: http://blog.aclark.net/wp-content/uploads/2010/11/Screen-shot-2010-11-04-at-10.35.12-AM.png
+.. |Installable themes in Plone 4| image:: http://blog.aclark.net/wp-content/uploads/2010/11/Screen-shot-2010-11-04-at-10.34.14-AM.png
 .. |image3| image:: http://blog.aclark.net/wp-content/uploads/2010/11/2917093994_ffe4d2ff52_o.jpg
 .. |image4| image:: http://blog.aclark.net/wp-content/uploads/2010/11/Screen-shot-2010-11-04-at-10.35.12-AM.png
 .. |image5| image:: http://blog.aclark.net/wp-content/uploads/2010/11/Screen-shot-2010-11-04-at-10.34.14-AM.png

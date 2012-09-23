@@ -15,11 +15,6 @@ The workflow you may now enjoy is:
 -  Login with your GitHub account
 -  Select a repository that contains a Python package
 
-[caption id="attachment\_5000" align="alignnone"
-width="300"]\ `|image0|`_ Ohhh, look, my repos[/caption] [caption id=""
-align="alignnone" width="300"]\ `|image1|`_ Ahhh, look at my
-selection[/caption]
-
 One-click release
 -----------------
 
@@ -27,18 +22,11 @@ More sweet workflow:
 
 -  Click a button to release to a test index, PyPI
 
-[caption id="attachment\_5015" align="alignnone"
-width="300"]\ `|image2|`_ Oh snap, I just did a release[/caption]
-
 Create packages through-the-web (with PasteScript)
 --------------------------------------------------
 
 There's a lot of room for growth, but this feature is exciting even in
-its simplest form. [caption id="attachment\_5006" align="alignnone"
-width="300"]\ `|image3|`_ Really? I just type it in?[/caption] [caption
-id="attachment\_5008" align="alignnone" width="300"]\ `|image4|`_ OMFG I
-can't believe this is a thing[/caption] [caption id="attachment\_5009"
-align="alignnone" width="300"]\ `|image5|`_ Win-ning[/caption]
+its simplest form. 
 
 Dashboard o releases
 --------------------

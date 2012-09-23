@@ -10,12 +10,6 @@ who have really inspired me to be the best I can be.
 
 But it is time for a change.
 
-[caption id="attachment\_287" align="alignright" width="492"
-caption="Image credit:
-http://screenmusings.org/ForrestGump/pages/fg\_0885.htm"]\ `|Image
-credit:
-http://screenmusings.org/ForrestGump/pages/fg\_0885.htm|`_\ [/caption]
-
 If my life were the movie `Forrest Gump`_, this would be the part where
 Forrest stops running, stands in the highway for a minute… then turns
 around and goes home to Greenbow Alabama (which as it turns out is a
@@ -164,6 +158,5 @@ Oh, I almost forgot, my updated resume is here:
 .. _`http://aclark.net/team/aclark/resume`: http://aclark.net/team/aclark/resume
 .. _`http://aclark.net/team/aclark/resume-pdf`: http://aclark.net/team/aclark/resume-pdf
 
-.. |Image credit:
-http://screenmusings.org/ForrestGump/pages/fg\_0885.htm| image:: http://blog.aclark.net/wp-content/uploads/2010/03/fg_0885.jpg
+.. |Image credit: http://screenmusings.org/ForrestGump/pages/fg\_0885.htm| image:: http://blog.aclark.net/wp-content/uploads/2010/03/fg_0885.jpg
 .. |image1| image:: http://blog.aclark.net/wp-content/uploads/2010/03/fg_0885.jpg

@@ -46,7 +46,6 @@ conference, and help the planning team move forward. See you all in DC!
 .. _`http://new.plone.org/`: http://new.plone.org/
 .. _Tarek's most recent blog entry: http://tarekziade.wordpress.com/2008/07/01/ploneorg-migration/
 .. _`http://www.nabble.com/plone.org-buildout-refactored-to18266816s6747.html`: http://www.nabble.com/plone.org-buildout-refactored-to18266816s6747.html
-.. _`http://ploneconf2008.eventbrite.com`: http://ploneconf2008.eventbrite.com/
 
 .. |image0| image:: http://aclark4life.files.wordpress.com/2008/07/ploneconf.png
 .. |image1| image:: http://aclark4life.files.wordpress.com/2008/07/ploneconf.png

@@ -3,10 +3,6 @@ Introducing charm; death to charm!
 :date: 2011-03-29 17:20
 :tags: Plone
 
-[caption id="attachment\_2290" align="alignright" width="373"
-caption="First slide of my talk, from "back in the day"
-(http://blip.tv/file/761624/)"]`|image0|`_\ [/caption]
-
 A long time ago (several years ago, or more) one of my first Plone jobs
 was importing content from the file system (put there by another CMS) to
 a client's Plone 2.5 website (see: `http://blip.tv/file/761624/`_).
@@ -120,9 +116,6 @@ I envision a "simple" way it could work.)
 .. raw:: html
 
    </p>
-
-[caption id="attachment\_2312" align="aligncenter" width="478"
-caption="Click to watch screencast"]\ `|image1|`_\ [/caption]
 
 After charm
 -----------

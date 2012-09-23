@@ -106,9 +106,6 @@ Additionally:
    Trish pondered core commit access). My favorite of which is the
    now-blissfully-aligned username and password fields of the
    login\_form:
-
-   [caption id="attachment\_1712" align="aligncenter" width="368"
-   caption="Ahhhh… alignment."]\ `|image1|`_\ [/caption]
 -  zenwryly fixed the `team section`_ of plone.org.
 -  davisagli completed the last remaining task to fix
    `PloneSoftwareCenter`_ permissions on plone.org (the sharing tab
@@ -121,11 +118,7 @@ Additionally:
    `took that ball and ran with it`_, added tests and otherwise prepared
    for the future (i.e. Plone 4 compat).
 -  Jon Stahl (remotely) added a `"follow" section`_ to plone.org.
--  hennaheto and feeeeesh produced this amazing (but `possibly
-   non-compliant`_) sprint logo:\ ``_
-
-   [caption id="attachment\_1763" align="aligncenter" width="367"
-   caption="Cioppino sprint logo"]\ `|image2|`_\ [/caption]
+-  hennaheto and feeeeesh produced this amazing (but `possibly non-compliant`_) sprint logo
 
 Day 3, Day 4 and Day 5 
 ~~~~~~~~~~~~~~~~~~~~~~~
@@ -144,8 +137,7 @@ then:
 -  zenwryly and limi moved content from plone.net to plone.org.
 -  aclark (remotely) pulled the DNS trigger on plone.net (re-configured
    A records for plone.net, to resolve to the same IP as plone.org)
--  eleddy and spanktar created and released
-   `cioppino.twothumbs`_\ ``_\ to facilitate "thumb style" (up/down)
+-  eleddy and spanktar created and released `cioppino.twothumbs`_ to facilitate "thumb style" (up/down)
    ratings in PloneSoftwareCenter.
 -  davisagli made it so Plone can start without PIL (via fixes to
    PlonePAS and plone.app.blob). And these fixes even made it in to
@@ -173,29 +165,13 @@ event. To that end:
 -  eleddy and aclark deployed the "two thumbs" feature to plone.org.
    (This feature may not work as expected yet, eleddy is resolving
    issues.) Check it out:
-
-   [caption id="attachment\_1941" align="aligncenter" width="368"
-   caption="Who's got two thumbs and likes
-   Plone?"]\ `|image3|`_\ [/caption]
-
 -  limi continued to improve the documentation/ and support/ sections of
    plone.org. Here are some screenshots of how the new sections will
    look once they launch:
 
-   [caption id="attachment\_1948" align="aligncenter" width="336"
-   caption="New support section"]\ `|image4|`_\ [/caption]
-
-   [caption id="attachment\_1951" align="aligncenter" width="334"
-   caption="New documentation section"]\ `|image5|`_\ [/caption]
-
 That's it! Just so you don't worry the sprinters worked too hard, you
 can rest assured everyone was in good hands with zenwryly and his
 travelling-bar:
-
-[caption id="attachment\_1913" align="aligncenter" width="290"
-caption="Ross Patterson's travelling bar"]\ `|image6|`_\ [/caption]
-
- 
 
 *If you enjoyed reading this report and/or appreciate all the
 fun-but-hard work that goes in to attending a sprint, please consider
@@ -219,10 +195,10 @@ dollars short!*
 .. _took that ball and ran with it: http://rpatterson.net/blog/cioppino-sprint
 .. _"follow" section: http://plone.org/follow
 .. _possibly non-compliant: http://plone.org/foundation/logo/logoguidelines.pdf/view
-.. _: http://aclark4life.files.wordpress.com/2011/02/ly66r.jpg
+.. _foo: http://aclark4life.files.wordpress.com/2011/02/ly66r.jpg
 .. _|image9|: http://aclark4life.files.wordpress.com/2011/02/ly66r.jpg
 .. _cioppino.twothumbs: http://pypi.python.org/pypi/cioppino.twothumbs/1
-.. _: http://pypi.python.org/pypi/cioppino.twothumbs/1
+.. _bar: http://pypi.python.org/pypi/cioppino.twothumbs/1
 .. _dist.plone.org: http://dist.plone.org/archive/
 .. _land on plone.org: http://plone.org/2008
 .. _|image10|: http://aclark4life.files.wordpress.com/2011/02/screen-shot-2011-02-16-at-6-58-52-am.png

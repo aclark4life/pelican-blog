@@ -229,7 +229,6 @@ Plone stacks up to the competition.
 .. _`http://docs.zope.org/zope2/zope2book/ZPT.html`: http://docs.zope.org/zope2/zope2book/ZPT.html
 .. _`http://pypi.python.org/pypi/Products.FSDump/FSDump-0.9.4`: http://pypi.python.org/pypi/Products.FSDump/FSDump-0.9.4
 .. _`http://plone.org/products/collective-fancyzoomview`: http://plone.org/products/collective-fancyzoomview
-.. _PyPI features of plone.org mentioned: ../is-anyone-using-plone.orgs-new-pypi-functionality
 .. _`http://pypi.python.org/pypi/jarn.mkrelease/2.0.2.`: http://pypi.python.org/pypi/jarn.mkrelease/2.0.2
 .. _`http://pypi.python.org/pypi/collective.xdv`: http://pypi.python.org/pypi/collective.xdv
 .. _`http://www.packtpub.com/plone-3-theming-create-flexible-powerful-professional-templates`: http://www.packtpub.com/plone-3-theming-create-flexible-powerful-professional-templates/mid/220709943ki3?utm_source=aclark.net&utm_medium=affiliate&utm_content=blog&utm_campaign=mdb_001376
