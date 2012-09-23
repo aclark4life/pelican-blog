@@ -4,16 +4,7 @@
 AUTHOR = u"Alex Clark"
 SITENAME = u"Alex Clark"
 SITEURL = 'http://blog.aclark.net'
-
-#TIMEZONE = 'America/New York'
-
 DEFAULT_LANG = 'en'
-
-LINKS = (
-    ('ACLARK.NET, LLC', 'http://aclark.net'),
-    ('PythonPackages', 'http://pythonpackages.com'),
-)
-
 SOCIAL = (
     ('atom feed (Mozilla)', 'http://blog.aclark.net/Mozilla.atom.xml'),
     ('atom feed (Plone)', 'http://blog.aclark.net/Plone.atom.xml'),

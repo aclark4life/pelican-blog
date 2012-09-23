@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Alex Clark</title><link href="http://blog.aclark.net/" rel="alternate"></link><link href="http://blog.aclark.net/feeds/all.atom.xml" rel="self"></link><id>http://blog.aclark.net/</id><updated>2012-09-21T21:45:00Z</updated><entry><title>Gittip is the future</title><link href="http://blog.aclark.net/2012/09/21/gittip-is-the-future" rel="alternate"></link><updated>2012-09-21T21:45:00Z</updated><author><name>Alex Clark</name></author><id>tag:blog.aclark.net,2012-09-21:2012/09/21/gittip-is-the-future</id><summary type="html">&lt;p&gt;Heard of Gittip? If not, you should know: it has a lot of people (including me) excited about the potential to make a living doing what they love. From the Gittip blog &lt;a class="footnote-reference" href="#id2" id="id1"&gt;[1]&lt;/a&gt;:&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>A Pelican Blog</title><link href="http://blog.aclark.net/" rel="alternate"></link><link href="http://blog.aclark.net/feeds/all.atom.xml" rel="self"></link><id>http://blog.aclark.net/</id><updated>2012-09-21T21:45:00Z</updated><entry><title>Gittip is the future</title><link href="http://blog.aclark.net/gittip-is-the-future.html" rel="alternate"></link><updated>2012-09-21T21:45:00Z</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2012-09-21:gittip-is-the-future.html</id><summary type="html">&lt;p&gt;Heard of Gittip? If not, you should know: it has a lot of people (including me) excited about the potential to make a living doing what they love. From the Gittip blog &lt;a class="footnote-reference" href="#id2" id="id1"&gt;[1]&lt;/a&gt;:&lt;/p&gt;
 &lt;blockquote&gt;
 Gittip is a system for funding people who build free culture. The core is small weekly gifts. The idea is that if 1,000 people give $1 a week to a great programmer, musician, scientist, teacher, etc., then that frees them up to pursue their vision even further for making the world better.&lt;/blockquote&gt;
 &lt;p&gt;I love this idea! In particular, because it speaks to me more than other similar offerings:&lt;/p&gt;
@@ -40,7 +40,7 @@ Gittip is a system for funding people who build free culture. The core is small 
 &lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#id1"&gt;[1]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;a class="reference external" href="http://blog.gittip.com/post/30116848405/with-payouts-gittip-is-minimally-viable"&gt;http://blog.gittip.com/post/30116848405/with-payouts-gittip-is-minimally-viable&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-</summary><category term="Mozilla"></category><category term="Plone"></category><category term="Python"></category></entry><entry><title>Yes, this blog is now powered by Pelican</title><link href="http://blog.aclark.net/2012/09/21/yes-this-blog-is-now-powered-by-pelican" rel="alternate"></link><updated>2012-09-21T15:30:00Z</updated><author><name>Alex Clark</name></author><id>tag:blog.aclark.net,2012-09-21:2012/09/21/yes-this-blog-is-now-powered-by-pelican</id><summary type="html">&lt;p&gt;As an open source &amp;quot;Plone guy&amp;quot;, I'm always prepared to defend and explain my choice to &lt;strong&gt;not&lt;/strong&gt; use Plone for blogging. A couple years ago, I started using Wordpress in order to learn its feature set. I enjoyed my time with it, but after moving to wordpress.com for &amp;quot;trouble free&amp;quot; hosting, I found I couldn't control my category feeds the way I wanted; the honeymoon was over.&lt;/p&gt;
+</summary><category term="Mozilla"></category><category term="Plone"></category><category term="Python"></category></entry><entry><title>Yes, this blog is now powered by Pelican</title><link href="http://blog.aclark.net/yes-this-blog-is-now-powered-by-pelican.html" rel="alternate"></link><updated>2012-09-21T15:30:00Z</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2012-09-21:yes-this-blog-is-now-powered-by-pelican.html</id><summary type="html">&lt;p&gt;As an open source &amp;quot;Plone guy&amp;quot;, I'm always prepared to defend and explain my choice to &lt;strong&gt;not&lt;/strong&gt; use Plone for blogging. A couple years ago, I started using Wordpress in order to learn its feature set. I enjoyed my time with it, but after moving to wordpress.com for &amp;quot;trouble free&amp;quot; hosting, I found I couldn't control my category feeds the way I wanted; the honeymoon was over.&lt;/p&gt;
 &lt;p&gt;This was a giant let down, because I was hoping to avoid putting any time in to my blogging infrastructure. For weeks I did nothing. I poked at various options: Pelican, Plone, Tumblr, others. Eventually, I found my way back to Pelican and now I'm happy again.&lt;/p&gt;
 &lt;img alt="http://blog.aclark.net/images/pelican.png" src="http://blog.aclark.net/images/pelican.png" /&gt;
 &lt;p&gt;Pelican is a static blog generator, as you may have heard. So &lt;strong&gt;one big advantage&lt;/strong&gt; is:&lt;/p&gt;
@@ -116,7 +116,7 @@ $ make publish; git commit -a -m &amp;quot;Publish&amp;quot;; git push
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;/div&gt;
-</summary><category term="Mozilla"></category><category term="Plone"></category><category term="Python"></category></entry><entry><title>Bootstrapping a Buildout 1.6 release</title><link href="http://blog.aclark.net/2012/08/13/bootstrapping-a-buildout-16-release" rel="alternate"></link><updated>2012-08-13T21:10:00Z</updated><author><name>Alex Clark</name></author><id>tag:blog.aclark.net,2012-08-13:2012/08/13/bootstrapping-a-buildout-16-release</id><summary type="html">&lt;p&gt;A lot of work has been done on Buildout lately, most notably:&lt;/p&gt;
+</summary><category term="Mozilla"></category><category term="Plone"></category><category term="Python"></category></entry><entry><title>Bootstrapping a Buildout 1.6 release</title><link href="http://blog.aclark.net/bootstrapping-a-buildout-16-release.html" rel="alternate"></link><updated>2012-08-13T21:10:00Z</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2012-08-13:bootstrapping-a-buildout-16-release.html</id><summary type="html">&lt;p&gt;A lot of work has been done on Buildout lately, most notably:&lt;/p&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;Jim Fulton is &lt;a class="reference external" href="https://github.com/buildout/buildout/commits/master"&gt;working on Buildout 2&lt;/a&gt;.&lt;/li&gt;
 &lt;li&gt;Ross Patterson has greatly &lt;a class="reference external" href="http://rpatterson.net/blog/buildout-performance-improvements"&gt;improved Buildout performance&lt;/a&gt;.&lt;/li&gt;
@@ -137,7 +137,7 @@ hours&lt;/strong&gt; or so of now. Please add a comment or weigh in on
 discovered only pre-existing failures. We are also preparing to do
 &amp;quot;Buildout 2 prophylactic releases&amp;quot; (i.e. releases that make 1.x continue
 to work when 2.x is released) in the 1.6.x series.&lt;/p&gt;
-&lt;/p&gt;</summary><category term="Plone"></category><category term="Python"></category></entry><entry><title>pythonpackages.com: pyformance 0.2</title><link href="http://blog.aclark.net/2012/08/13/pythonpackagescom-pyformance-02" rel="alternate"></link><updated>2012-08-13T13:15:00Z</updated><author><name>Alex Clark</name></author><id>tag:blog.aclark.net,2012-08-13:2012/08/13/pythonpackagescom-pyformance-02</id><summary type="html">&lt;p&gt;&lt;em&gt;pythonpackages.com helps Python programmers package and release their
+&lt;/p&gt;</summary><category term="Plone"></category><category term="Python"></category></entry><entry><title>pythonpackages.com: pyformance 0.2</title><link href="http://blog.aclark.net/pythonpackagescom-pyformance-02.html" rel="alternate"></link><updated>2012-08-13T13:15:00Z</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2012-08-13:pythonpackagescom-pyformance-02.html</id><summary type="html">&lt;p&gt;&lt;em&gt;pythonpackages.com helps Python programmers package and release their
 software with just a few clicks.&lt;/em&gt;&lt;/p&gt;
 &lt;div class="section" id="pyformance-0-2"&gt;
 &lt;h2&gt;pyformance 0.2&lt;/h2&gt;
@@ -159,7 +159,7 @@ He explains some of the math behind the package.)
 &lt;/ul&gt;
 &lt;p&gt;And the &lt;a class="reference external" href="http://www.youtube.com/watch?v=czes-oa0yik"&gt;talk by Coda Hale&lt;/a&gt;.&lt;/p&gt;
 &lt;/div&gt;
-</summary><category term="Python"></category></entry><entry><title>All My Python Packages Are Belong To GitHub</title><link href="http://blog.aclark.net/2012/08/10/all-my-python-packages-are-belong-to-github" rel="alternate"></link><updated>2012-08-10T20:44:00Z</updated><author><name>Alex Clark</name></author><id>tag:blog.aclark.net,2012-08-10:2012/08/10/all-my-python-packages-are-belong-to-github</id><summary type="html">&lt;p&gt;&lt;em&gt;Including many Plone add-ons&lt;/em&gt; Hi. My name is Alex &amp;quot;please don't call
+</summary><category term="Python"></category></entry><entry><title>All My Python Packages Are Belong To GitHub</title><link href="http://blog.aclark.net/all-my-python-packages-are-belong-to-github.html" rel="alternate"></link><updated>2012-08-10T20:44:00Z</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2012-08-10:all-my-python-packages-are-belong-to-github.html</id><summary type="html">&lt;p&gt;&lt;em&gt;Including many Plone add-ons&lt;/em&gt; Hi. My name is Alex &amp;quot;please don't call
 them products&amp;quot; Clark. But you may call me aclark or aclark4life. In the
 spirit of continuing the &lt;a class="reference external" href="http://plone.293351.n2.nabble.com/DVCS-options-for-Plone-Core-tt6295582.html"&gt;great git migration&lt;/a&gt;, and in order to &lt;a class="reference external" href="http://pythonpackages.com/signup"&gt;beta
 test pythonpackages.com&lt;/a&gt;, I've just moved the last of my Subversion
@@ -177,7 +177,7 @@ always, I'm happy to provide assistance to anyone that needs it to move
 their code. (I'm in #plone on irc.freenode.net or you can email
 &lt;a class="reference external" href="mailto:aclark&amp;#64;aclark.net"&gt;aclark&amp;#64;aclark.net&lt;/a&gt;.)&lt;/p&gt;
 &lt;/p&gt;&lt;/div&gt;
-</summary><category term="Plone"></category></entry><entry><title>pythonpackages.com: New GitHub Service "push to release"</title><link href="http://blog.aclark.net/2012/08/10/pythonpackagescom-new-github-service-push-to-release" rel="alternate"></link><updated>2012-08-10T05:50:00Z</updated><author><name>Alex Clark</name></author><id>tag:blog.aclark.net,2012-08-10:2012/08/10/pythonpackagescom-new-github-service-push-to-release</id><summary type="html">&lt;p&gt;&lt;em&gt;pythonpackages.com helps Python programmers package and release their
+</summary><category term="Plone"></category></entry><entry><title>pythonpackages.com: New GitHub Service "push to release"</title><link href="http://blog.aclark.net/pythonpackagescom-new-github-service-push-to-release.html" rel="alternate"></link><updated>2012-08-10T05:50:00Z</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2012-08-10:pythonpackagescom-new-github-service-push-to-release.html</id><summary type="html">&lt;p&gt;&lt;em&gt;pythonpackages.com helps Python programmers package and release their
 software with just a few clicks.&lt;/em&gt;&lt;/p&gt;
 &lt;div class="section" id="pythonpackages-github-service"&gt;
 &lt;h2&gt;PythonPackages GitHub Service&lt;/h2&gt;
@@ -198,7 +198,7 @@ $ git commit -a -m &amp;quot;Release 1.0&amp;quot;; git push
 &lt;p&gt;Now you can git push to release! If you have any trouble, please &lt;a class="reference external" href="https://bitbucket.org/pythonpackages/pythonpackages.com/issues/new"&gt;open a ticket&lt;/a&gt;. These instructions will live permanently here:&amp;nbsp;&lt;a class="reference external" href="http://docs.pythonpackages.com/en/latest/github-service.html"&gt;http://docs.pythonpackages.com/en/latest/github-service.html&lt;/a&gt;.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-</summary><category term="Python"></category></entry><entry><title>pythonpackages.com: Using PyPI&amp;#039;s OAuth1 support to register and upload packages</title><link href="http://blog.aclark.net/2012/08/07/pythonpackagescom-using-pypi039s-oauth1-support-to-register-and-upload-packages" rel="alternate"></link><updated>2012-08-07T05:16:00Z</updated><author><name>Alex Clark</name></author><id>tag:blog.aclark.net,2012-08-07:2012/08/07/pythonpackagescom-using-pypi039s-oauth1-support-to-register-and-upload-packages</id><summary type="html">&lt;p&gt;&lt;strong&gt;*TL;DR&lt;/strong&gt; PyPI has OAuth1 support; pythonpackages.com uses it to send
+</summary><category term="Python"></category></entry><entry><title>pythonpackages.com: Using PyPI&amp;#039;s OAuth1 support to register and upload packages</title><link href="http://blog.aclark.net/pythonpackagescom-using-pypi039s-oauth1-support-to-register-and-upload-packages.html" rel="alternate"></link><updated>2012-08-07T05:16:00Z</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2012-08-07:pythonpackagescom-using-pypi039s-oauth1-support-to-register-and-upload-packages.html</id><summary type="html">&lt;p&gt;&lt;strong&gt;*TL;DR&lt;/strong&gt; PyPI has OAuth1 support; pythonpackages.com uses it to send
 your GitHub repos to PyPI.* Thanks in very large part to &lt;a class="reference external" href="https://twitter.com/r1chardj0n3s"&gt;Richard
 Jones&lt;/a&gt;, the Python Package Index now has support for registering and
 uploading packages via OAuth1. And using his &lt;a class="reference external" href="https://gist.github.com/0d46c48b230e61e18479"&gt;sample code&lt;/a&gt; I was able
@@ -271,7 +271,7 @@ Unknown target name: &amp;quot;|image6|&amp;quot;.&lt;/div&gt;
 &lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/pythonpackages-com-using-pypis-oauth1-support-to-register-and-upload-packages.rst&lt;/tt&gt;, line 53); &lt;em&gt;&lt;a href="#id16"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 Unknown target name: &amp;quot;|image7|&amp;quot;.&lt;/div&gt;
 &lt;/div&gt;
-</summary><category term="Plone"></category><category term="Python"></category></entry><entry><title>Building Windows Installers In The Cloud</title><link href="http://blog.aclark.net/2012/08/01/building-windows-installers-in-the-cloud" rel="alternate"></link><updated>2012-08-01T22:19:00Z</updated><author><name>Alex Clark</name></author><id>tag:blog.aclark.net,2012-08-01:2012/08/01/building-windows-installers-in-the-cloud</id><summary type="html">&lt;p&gt;With pythonpackages.com, I want to solve real problems for people today.
+</summary><category term="Plone"></category><category term="Python"></category></entry><entry><title>Building Windows Installers In The Cloud</title><link href="http://blog.aclark.net/building-windows-installers-in-the-cloud.html" rel="alternate"></link><updated>2012-08-01T22:19:00Z</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2012-08-01:building-windows-installers-in-the-cloud.html</id><summary type="html">&lt;p&gt;With pythonpackages.com, I want to solve real problems for people today.
 So here's a proof of concept for building Windows installers quickly and
 easily &amp;quot;in the cloud&amp;quot; (i.e. without a Windows machine local). This
 article is mostly about the back end, as the front end is &lt;a class="reference external" href="http://docs.pythonpackages.com/en/latest/introduction.html"&gt;already
@@ -366,7 +366,7 @@ Unknown target name: &amp;quot;|image5|&amp;quot;.&lt;/div&gt;
 &lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/building-windows-installers-in-the-cloud.rst&lt;/tt&gt;, line 76); &lt;em&gt;&lt;a href="#id14"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 Unknown target name: &amp;quot;|image6|&amp;quot;.&lt;/div&gt;
 &lt;/div&gt;
-</summary><category term="Mozilla"></category><category term="Plone"></category><category term="Python"></category></entry><entry><title>Pillow moved to python-imaging organization</title><link href="http://blog.aclark.net/2012/07/25/pillow-moved-to-python-imaging-organization" rel="alternate"></link><updated>2012-07-25T02:19:00Z</updated><author><name>Alex Clark</name></author><id>tag:blog.aclark.net,2012-07-25:2012/07/25/pillow-moved-to-python-imaging-organization</id><summary type="html">&lt;p&gt;&lt;p&gt;On 7/30/2010 Pillow, the &amp;quot;friendly&amp;quot; PIL fork, was released. Since then,
+</summary><category term="Mozilla"></category><category term="Plone"></category><category term="Python"></category></entry><entry><title>Pillow moved to python-imaging organization</title><link href="http://blog.aclark.net/pillow-moved-to-python-imaging-organization.html" rel="alternate"></link><updated>2012-07-25T02:19:00Z</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2012-07-25:pillow-moved-to-python-imaging-organization.html</id><summary type="html">&lt;p&gt;&lt;p&gt;On 7/30/2010 Pillow, the &amp;quot;friendly&amp;quot; PIL fork, was released. Since then,
 there have been a number of releases:&lt;/p&gt;
 &lt;pre class="literal-block"&gt;
 $ vanity Pillow
@@ -414,7 +414,7 @@ The new home for Pillow is:&lt;/p&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;&lt;a class="reference external" href="https://github.com/python-imaging/Pillow"&gt;https://github.com/python-imaging/Pillow&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/p&gt;</summary><category term="Plone"></category><category term="Python"></category></entry><entry><title>The Plones Templer</title><link href="http://blog.aclark.net/2012/07/12/the-plones-templer" rel="alternate"></link><updated>2012-07-12T20:48:00Z</updated><author><name>Alex Clark</name></author><id>tag:blog.aclark.net,2012-07-12:2012/07/12/the-plones-templer</id><summary type="html">&lt;p&gt;(c.f. Knights Templar) I think we have a situation that could use the
+&lt;/p&gt;</summary><category term="Plone"></category><category term="Python"></category></entry><entry><title>The Plones Templer</title><link href="http://blog.aclark.net/the-plones-templer.html" rel="alternate"></link><updated>2012-07-12T20:48:00Z</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2012-07-12:the-plones-templer.html</id><summary type="html">&lt;p&gt;(c.f. Knights Templar) I think we have a situation that could use the
 help of the Plone and Python communities at large. It goes something
 like this:&lt;/p&gt;
 &lt;ol class="arabic simple"&gt;
@@ -484,7 +484,7 @@ refactoring, they have produced some &lt;a class="reference external" href="http
 readthedocs.org&lt;/a&gt;. If you are interested in helping, please gather
 around the #plone on irc.freenode.net to discuss options (I am aclark on
 IRC).&lt;/p&gt;
-&lt;/p&gt;</summary><category term="Plone"></category><category term="Python"></category></entry><entry><title>pythonpackages.com beta launch</title><link href="http://blog.aclark.net/2012/07/04/pythonpackagescom-beta-launch" rel="alternate"></link><updated>2012-07-04T05:19:00Z</updated><author><name>Alex Clark</name></author><id>tag:blog.aclark.net,2012-07-04:2012/07/04/pythonpackagescom-beta-launch</id><summary type="html">&lt;p&gt;After 9 months of development, pythonpackages.com has
+&lt;/p&gt;</summary><category term="Plone"></category><category term="Python"></category></entry><entry><title>pythonpackages.com beta launch</title><link href="http://blog.aclark.net/pythonpackagescom-beta-launch.html" rel="alternate"></link><updated>2012-07-04T05:19:00Z</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2012-07-04:pythonpackagescom-beta-launch.html</id><summary type="html">&lt;p&gt;After 9 months of development, pythonpackages.com has
 grand-ceremoniously flipped the switch from alpha to beta. Here is an
 overview of the beta release features.&lt;/p&gt;
 &lt;div class="section" id="killer-github-integration"&gt;
@@ -570,7 +570,7 @@ Unknown target name: &amp;quot;|image10|&amp;quot;.&lt;/div&gt;
 &lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/pythonpackages-com-beta-launch.rst&lt;/tt&gt;, line 53); &lt;em&gt;&lt;a href="#id24"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 Unknown target name: &amp;quot;|image11|&amp;quot;.&lt;/div&gt;
 &lt;/div&gt;
-</summary><category term="Mozilla"></category><category term="Plone"></category><category term="Python"></category></entry><entry><title>Zope2 Bootstrap</title><link href="http://blog.aclark.net/2012/06/12/zope2-bootstrap" rel="alternate"></link><updated>2012-06-12T10:27:00Z</updated><author><name>Alex Clark</name></author><id>tag:blog.aclark.net,2012-06-12:2012/06/12/zope2-bootstrap</id><summary type="html">&lt;p&gt;&lt;em&gt;Bootstrap all the things, including Zope2.&lt;/em&gt;&lt;/p&gt;
+</summary><category term="Mozilla"></category><category term="Plone"></category><category term="Python"></category></entry><entry><title>Zope2 Bootstrap</title><link href="http://blog.aclark.net/zope2-bootstrap.html" rel="alternate"></link><updated>2012-06-12T10:27:00Z</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2012-06-12:zope2-bootstrap.html</id><summary type="html">&lt;p&gt;&lt;em&gt;Bootstrap all the things, including Zope2.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a class="reference external" href="http://pypi.python.org/pypi/zope2_bootstrap"&gt;zope2_bootstrap&lt;/a&gt; is a new Python package that &lt;a class="reference external" href="http://pypi.python.org/pypi/collective.monkeypatcher"&gt;monkey patches&lt;/a&gt; Zope2
 in order to:&lt;/p&gt;
 &lt;ul class="simple"&gt;
@@ -597,7 +597,7 @@ Unknown target name: &amp;quot;|image0|&amp;quot;.&lt;/div&gt;
 &lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/zope2-bootstrap.rst&lt;/tt&gt;, line 26); &lt;em&gt;&lt;a href="#id5"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 Unknown target name: &amp;quot;|image1|&amp;quot;.&lt;/div&gt;
 &lt;/div&gt;
-</summary><category term="Plone"></category><category term="Python"></category></entry><entry><title>A simple printer of nested lists</title><link href="http://blog.aclark.net/2012/05/23/a-simple-printer-of-nested-lists" rel="alternate"></link><updated>2012-05-23T22:58:00Z</updated><author><name>Alex Clark</name></author><id>tag:blog.aclark.net,2012-05-23:2012/05/23/a-simple-printer-of-nested-lists</id><summary type="html">&lt;p&gt;&lt;em&gt;A rant&lt;/em&gt;&lt;/p&gt;
+</summary><category term="Plone"></category><category term="Python"></category></entry><entry><title>A simple printer of nested lists</title><link href="http://blog.aclark.net/a-simple-printer-of-nested-lists.html" rel="alternate"></link><updated>2012-05-23T22:58:00Z</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2012-05-23:a-simple-printer-of-nested-lists.html</id><summary type="html">&lt;p&gt;&lt;em&gt;A rant&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;Do you ever get the urge to kill? How many of us cringe whenever we see
 these words? Lately I've been spending a lot of time developing
 &lt;a class="reference external" href="http://pythonpackages.com"&gt;pythonpackages.com&lt;/a&gt;, (now running on heroku!) during which time I see
@@ -636,7 +636,7 @@ Unknown target name: &amp;quot;|image1|&amp;quot;.&lt;/div&gt;
 &lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/a-simple-printer-of-nested-lists.rst&lt;/tt&gt;, line 25); &lt;em&gt;&lt;a href="#id6"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 Unknown target name: &amp;quot;|image2|&amp;quot;.&lt;/div&gt;
 &lt;/div&gt;
-</summary><category term="Plone"></category><category term="Python"></category></entry><entry><title>Adam Yauch has passed</title><link href="http://blog.aclark.net/2012/05/11/adam-yauch-has-passed" rel="alternate"></link><updated>2012-05-11T09:58:00Z</updated><author><name>Alex Clark</name></author><id>tag:blog.aclark.net,2012-05-11:2012/05/11/adam-yauch-has-passed</id><summary type="html">&lt;p&gt;&lt;em&gt;And why it matters to tech people, like me&lt;/em&gt;&lt;/p&gt;
+</summary><category term="Plone"></category><category term="Python"></category></entry><entry><title>Adam Yauch has passed</title><link href="http://blog.aclark.net/adam-yauch-has-passed.html" rel="alternate"></link><updated>2012-05-11T09:58:00Z</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2012-05-11:adam-yauch-has-passed.html</id><summary type="html">&lt;p&gt;&lt;em&gt;And why it matters to tech people, like me&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;(I hope my tech colleagues will indulge my thoughts on the recent
 passing of Beastie Boy Adam Yauch.)&lt;/p&gt;
 &lt;p&gt;TL;DR: I &amp;lt;3 the Beastie Boys and will miss Adam Yauch; and I suspect
@@ -709,7 +709,7 @@ Mike D who gave it to me.&lt;/p&gt;
 &lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/adam-yauch-has-passed.rst&lt;/tt&gt;, line 59); &lt;em&gt;&lt;a href="#id2"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 Unknown target name: &amp;quot;|image0|&amp;quot;.&lt;/div&gt;
 &lt;/div&gt;
-</summary><category term="Mozilla"></category><category term="Plone"></category><category term="Python"></category></entry><entry><title>test-plone tmp</title><link href="http://blog.aclark.net/2012/04/04/test-plone-tmp" rel="alternate"></link><updated>2012-04-04T14:14:00Z</updated><author><name>Alex Clark</name></author><id>tag:blog.aclark.net,2012-04-04:2012/04/04/test-plone-tmp</id><summary type="html">&lt;p&gt;Since Day 1 with Plone circa 2004, I've always taken pride in and
+</summary><category term="Mozilla"></category><category term="Plone"></category><category term="Python"></category></entry><entry><title>test-plone tmp</title><link href="http://blog.aclark.net/test-plone-tmp.html" rel="alternate"></link><updated>2012-04-04T14:14:00Z</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2012-04-04:test-plone-tmp.html</id><summary type="html">&lt;p&gt;Since Day 1 with Plone circa 2004, I've always taken pride in and
 greatly enjoyed refining my development environment. It's been stable
 for a while now (&amp;gt; 1 year or so) so I thought I'd share.&lt;/p&gt;
 &lt;div class="section" id="operating-system"&gt;
@@ -781,7 +781,7 @@ install add-ons, check ZMI settings, etc.&lt;/p&gt;
 &lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/test-plone-tmp.rst&lt;/tt&gt;, line 98); &lt;em&gt;&lt;a href="#id2"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 Unknown target name: &amp;quot;|image0|&amp;quot;.&lt;/div&gt;
 &lt;/div&gt;
-</summary><category term="Plone"></category><category term="Python"></category></entry><entry><title>New vanity release</title><link href="http://blog.aclark.net/2012/01/30/new-vanity-release" rel="alternate"></link><updated>2012-01-30T09:52:00Z</updated><author><name>Alex Clark</name></author><id>tag:blog.aclark.net,2012-01-30:2012/01/30/new-vanity-release</id><summary type="html">&lt;p&gt;With all the Python &lt;a class="reference external" href="http://crate.io/"&gt;stats&lt;/a&gt; &lt;a class="reference external" href="http://python3wos.appspot.com/"&gt;goodness&lt;/a&gt; going on recently, I got
+</summary><category term="Plone"></category><category term="Python"></category></entry><entry><title>New vanity release</title><link href="http://blog.aclark.net/new-vanity-release.html" rel="alternate"></link><updated>2012-01-30T09:52:00Z</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2012-01-30:new-vanity-release.html</id><summary type="html">&lt;p&gt;With all the Python &lt;a class="reference external" href="http://crate.io/"&gt;stats&lt;/a&gt; &lt;a class="reference external" href="http://python3wos.appspot.com/"&gt;goodness&lt;/a&gt; going on recently, I got
 inspired to make a new &lt;a class="reference external" href="http://pythonpackages.com/info/vanity"&gt;vanity&lt;/a&gt; release. This release features the
 ability to display per package download statistics via the `-v` or
 `--verbose` command line argument.&lt;/p&gt;
@@ -942,7 +942,7 @@ Package `pyramid` has been downloaded 97,222 times!
 &lt;/pre&gt;
 &lt;p&gt;Enjoy the new release.&lt;/p&gt;
 &lt;/p&gt;&lt;/div&gt;
-</summary><category term="Plone"></category><category term="Python"></category></entry><entry><title>Hello Plone theming</title><link href="http://blog.aclark.net/2012/01/25/hello-plone-theming" rel="alternate"></link><updated>2012-01-25T00:15:00Z</updated><author><name>Alex Clark</name></author><id>tag:blog.aclark.net,2012-01-25:2012/01/25/hello-plone-theming</id><summary type="html">&lt;p&gt;In this post, we introduce a new tutorial aimed at bridging the gap
+</summary><category term="Plone"></category><category term="Python"></category></entry><entry><title>Hello Plone theming</title><link href="http://blog.aclark.net/hello-plone-theming.html" rel="alternate"></link><updated>2012-01-25T00:15:00Z</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2012-01-25:hello-plone-theming.html</id><summary type="html">&lt;p&gt;In this post, we introduce a new tutorial aimed at bridging the gap
 between the &lt;strong&gt;incredibly easy to use and enormously powerful Diazo
 theming engine for Plone&lt;/strong&gt;, and bootstrapping your first new theme. You
 do not need to have any Python skills whatsoever to perform these tasks.
@@ -958,7 +958,7 @@ plone.app.theming.)&lt;/li&gt;
 &lt;p&gt;The Diazo rules can get complex, but it's very easy to get your first
 rule done and working and then off you go. You may find this &lt;a class="reference external" href="http://readthedocs.org/docs/pythonpackages-docs/en/latest/features/examples/ex8-diazo.html"&gt;new
 tutorial on pythonpackages.com&lt;/a&gt;. Enjoy, and get busy theming Plone.&lt;/p&gt;
-&lt;/p&gt;</summary><category term="Plone"></category><category term="Python"></category></entry><entry><title>New Year&amp;#039;s Python Meme 2012</title><link href="http://blog.aclark.net/2011/12/21/new-year039s-python-meme-2012" rel="alternate"></link><updated>2011-12-21T13:11:00Z</updated><author><name>Alex Clark</name></author><id>tag:blog.aclark.net,2011-12-21:2011/12/21/new-year039s-python-meme-2012</id><summary type="html">&lt;p&gt;&lt;em&gt;My response to
+&lt;/p&gt;</summary><category term="Plone"></category><category term="Python"></category></entry><entry><title>New Year&amp;#039;s Python Meme 2012</title><link href="http://blog.aclark.net/new-year039s-python-meme-2012.html" rel="alternate"></link><updated>2011-12-21T13:11:00Z</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2011-12-21:new-year039s-python-meme-2012.html</id><summary type="html">&lt;p&gt;&lt;em&gt;My response to
 `http://tarekziade.wordpress.com/2011/12/20/new-years-python-meme-2/`_
 (with gratuitous links to `pythonpackages.com`_, my new project,
 sprinkled throughout).&lt;/em&gt;&lt;/p&gt;
@@ -999,7 +999,7 @@ would write in 2012?&lt;/strong&gt;&lt;/p&gt;
 and launches it in first quarter of 2012; and I hope folks find it
 useful.&lt;/p&gt;
 &lt;/div&gt;
-</summary><category term="Mozilla"></category><category term="Plone"></category><category term="Python"></category></entry><entry><title>Introducing pythonpackages.com</title><link href="http://blog.aclark.net/2011/11/29/introducing-pythonpackagescom" rel="alternate"></link><updated>2011-11-29T02:24:00Z</updated><author><name>Alex Clark</name></author><id>tag:blog.aclark.net,2011-11-29:2011/11/29/introducing-pythonpackagescom</id><summary type="html">&lt;div class="section" id="the-website-for-python-egoists"&gt;
+</summary><category term="Mozilla"></category><category term="Plone"></category><category term="Python"></category></entry><entry><title>Introducing pythonpackages.com</title><link href="http://blog.aclark.net/introducing-pythonpackagescom.html" rel="alternate"></link><updated>2011-11-29T02:24:00Z</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2011-11-29:introducing-pythonpackagescom.html</id><summary type="html">&lt;div class="section" id="the-website-for-python-egoists"&gt;
 &lt;h2&gt;The website for Python egoists™&lt;/h2&gt;
 &lt;p&gt;I have this overwhelming desire to know how many times my favorite
 Python packages have been downloaded. Don't you? If so, look no further
@@ -1079,7 +1079,7 @@ Unknown target name: &amp;quot;|image5|&amp;quot;.&lt;/div&gt;
 &lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/introducing-pythonpackages-com.rst&lt;/tt&gt;, line 76); &lt;em&gt;&lt;a href="#id12"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 Unknown target name: &amp;quot;|image6|&amp;quot;.&lt;/div&gt;
 &lt;/div&gt;
-</summary><category term="Python"></category></entry><entry><title>Plone.org maintenance</title><link href="http://blog.aclark.net/2011/11/29/ploneorg-maintenance" rel="alternate"></link><updated>2011-11-29T00:54:00Z</updated><author><name>Alex Clark</name></author><id>tag:blog.aclark.net,2011-11-29:2011/11/29/ploneorg-maintenance</id><summary type="html">&lt;div class="section" id="plans"&gt;
+</summary><category term="Python"></category></entry><entry><title>Plone.org maintenance</title><link href="http://blog.aclark.net/ploneorg-maintenance.html" rel="alternate"></link><updated>2011-11-29T00:54:00Z</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2011-11-29:ploneorg-maintenance.html</id><summary type="html">&lt;div class="section" id="plans"&gt;
 &lt;h2&gt;Plans&lt;/h2&gt;
 &lt;p&gt;I am planning to do some work on the plone.org server and website by the
 end of the year, including:&lt;/p&gt;
@@ -1108,7 +1108,7 @@ project to my calendar as paid work. So if you are able to help out by
 donating some portion of the goal, I would appreciate it. Please use the
 chip-in below to contribute to this effort.&lt;/p&gt;
 &lt;/p&gt;&lt;/div&gt;
-</summary><category term="Plone"></category></entry><entry><title>Plone secrets: Episode 4 - Varnish in front</title><link href="http://blog.aclark.net/2011/11/09/plone-secrets-episode-4-varnish-in-front" rel="alternate"></link><updated>2011-11-09T12:50:00Z</updated><author><name>Alex Clark</name></author><id>tag:blog.aclark.net,2011-11-09:2011/11/09/plone-secrets-episode-4-varnish-in-front</id><summary type="html">&lt;p&gt;&lt;em&gt;This just in from the production department: use Varnish. (And please
+</summary><category term="Plone"></category></entry><entry><title>Plone secrets: Episode 4 - Varnish in front</title><link href="http://blog.aclark.net/plone-secrets-episode-4-varnish-in-front.html" rel="alternate"></link><updated>2011-11-09T12:50:00Z</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2011-11-09:plone-secrets-episode-4-varnish-in-front.html</id><summary type="html">&lt;p&gt;&lt;em&gt;This just in from the production department: use Varnish. (And please
 forgive the heavily meme-laden approach to describing these techniques
 :-).)&lt;/em&gt;&lt;/p&gt;
 &lt;div class="section" id="cache-all-the-hosts"&gt;
@@ -1213,7 +1213,7 @@ to stomach this yet.&lt;/p&gt;
 &lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/plone-secrets-episode-4-varnish-in-front.rst&lt;/tt&gt;, line 13); &lt;em&gt;&lt;a href="#id2"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 Unknown target name: &amp;quot;|image0|&amp;quot;.&lt;/div&gt;
 &lt;/div&gt;
-</summary><category term="Plone"></category></entry><entry><title>Plone: First class Python citizen</title><link href="http://blog.aclark.net/2011/10/24/plone-first-class-python-citizen" rel="alternate"></link><updated>2011-10-24T09:09:00Z</updated><author><name>Alex Clark</name></author><id>tag:blog.aclark.net,2011-10-24:2011/10/24/plone-first-class-python-citizen</id><summary type="html">&lt;p&gt;&lt;em&gt;The Plone community and software fit nicely within the larger Python
+</summary><category term="Plone"></category></entry><entry><title>Plone: First class Python citizen</title><link href="http://blog.aclark.net/plone-first-class-python-citizen.html" rel="alternate"></link><updated>2011-10-24T09:09:00Z</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2011-10-24:plone-first-class-python-citizen.html</id><summary type="html">&lt;p&gt;&lt;em&gt;The Plone community and software fit nicely within the larger Python
 ecosystem. Here's why.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;For almost as long as I have been involved in the &lt;a class="reference external" href="http://plone.org"&gt;Plone&lt;/a&gt; project, I've
 been interested in Plone's role in the Python ecosystem. Today as I look
@@ -1283,7 +1283,7 @@ Unknown target name: &amp;quot;|image1|&amp;quot;.&lt;/div&gt;
 &lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/plone-first-class-python-citizen.rst&lt;/tt&gt;, line 70); &lt;em&gt;&lt;a href="#id6"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 Unknown target name: &amp;quot;|image2|&amp;quot;.&lt;/div&gt;
 &lt;/div&gt;
-</summary><category term="Plone"></category><category term="Python"></category></entry><entry><title>Pillow: one year later</title><link href="http://blog.aclark.net/2011/10/14/pillow-one-year-later" rel="alternate"></link><updated>2011-10-14T13:11:00Z</updated><author><name>Alex Clark</name></author><id>tag:blog.aclark.net,2011-10-14:2011/10/14/pillow-one-year-later</id><summary type="html">&lt;p&gt;&lt;em&gt;For anyone unfamiliar with Pillow, it is the &amp;quot;friendly PIL fork&amp;quot;: a
+</summary><category term="Plone"></category><category term="Python"></category></entry><entry><title>Pillow: one year later</title><link href="http://blog.aclark.net/pillow-one-year-later.html" rel="alternate"></link><updated>2011-10-14T13:11:00Z</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2011-10-14:pillow-one-year-later.html</id><summary type="html">&lt;p&gt;&lt;em&gt;For anyone unfamiliar with Pillow, it is the &amp;quot;friendly PIL fork&amp;quot;: a
 fork of PIL that aims to remain a good citizen in the PIL community
 through its actions.&lt;/em&gt;&lt;/p&gt;
 &lt;div class="section" id="warm-and-fluffy-history"&gt;
@@ -1322,7 +1322,7 @@ case, the Plone and Python communities have spoken clearly.&lt;/p&gt;
 &lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/pillow-one-year-later.rst&lt;/tt&gt;, line 13); &lt;em&gt;&lt;a href="#id2"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 Unknown target name: &amp;quot;|image0|pillow&amp;quot;.&lt;/div&gt;
 &lt;/div&gt;
-</summary><category term="Plone"></category><category term="Python"></category></entry><entry><title>Vagrant, Puppet and Mozilla, oh my!</title><link href="http://blog.aclark.net/2011/10/03/vagrant-puppet-and-mozilla-oh-my" rel="alternate"></link><updated>2011-10-03T17:25:00Z</updated><author><name>Alex Clark</name></author><id>tag:blog.aclark.net,2011-10-03:2011/10/03/vagrant-puppet-and-mozilla-oh-my</id><summary type="html">&lt;p&gt;&lt;em&gt;Warning: This post is only loosely Python related and not at all Plone
+</summary><category term="Plone"></category><category term="Python"></category></entry><entry><title>Vagrant, Puppet and Mozilla, oh my!</title><link href="http://blog.aclark.net/vagrant-puppet-and-mozilla-oh-my.html" rel="alternate"></link><updated>2011-10-03T17:25:00Z</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2011-10-03:vagrant-puppet-and-mozilla-oh-my.html</id><summary type="html">&lt;p&gt;&lt;em&gt;Warning: This post is only loosely Python related and not at all Plone
 related, but I thought folks might enjoy hearing about Vagrant and
 Puppet because these tools may help you do your Plone and Python jobs
 better.&lt;/em&gt;&lt;/p&gt;
@@ -1456,7 +1456,7 @@ is a dream come true :-)).&lt;/p&gt;
 &lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/vagrant-puppet-and-mozilla-oh-my.rst&lt;/tt&gt;, line 158); &lt;em&gt;&lt;a href="#id4"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 Unknown target name: &amp;quot;|image0|&amp;quot;.&lt;/div&gt;
 &lt;/div&gt;
-</summary><category term="Mozilla"></category><category term="Plone"></category><category term="Python"></category></entry><entry><title>Mozilla and PyPI</title><link href="http://blog.aclark.net/2011/09/22/mozilla-and-pypi" rel="alternate"></link><updated>2011-09-22T12:03:00Z</updated><author><name>Alex Clark</name></author><id>tag:blog.aclark.net,2011-09-22:2011/09/22/mozilla-and-pypi</id><summary type="html">&lt;p&gt;The &lt;a class="reference external" href="http://blog.aclark.net/in-defense-of-pypi"&gt;last time I wrote about PyPI&lt;/a&gt; some folks mistook the subject to be
+</summary><category term="Mozilla"></category><category term="Plone"></category><category term="Python"></category></entry><entry><title>Mozilla and PyPI</title><link href="http://blog.aclark.net/mozilla-and-pypi.html" rel="alternate"></link><updated>2011-09-22T12:03:00Z</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2011-09-22:mozilla-and-pypi.html</id><summary type="html">&lt;p&gt;The &lt;a class="reference external" href="http://blog.aclark.net/in-defense-of-pypi"&gt;last time I wrote about PyPI&lt;/a&gt; some folks mistook the subject to be
 &lt;a class="reference external" href="http://pypy.org/"&gt;PyPy&lt;/a&gt;, so let me be clear: this article is about the &lt;a class="reference external" href="http://pypi.python.org/pypi"&gt;Python Packaging
 Index&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;I recently began doing some volunteer work for Mozilla[1], working on a
@@ -1595,7 +1595,7 @@ processes by eliminating steps.&lt;/p&gt;
 &lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/mozilla-and-pypi.rst&lt;/tt&gt;, line 46); &lt;em&gt;&lt;a href="#id3"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 Unknown target name: &amp;quot;|http://www.flickr.com/photos/jadensmommy24/239370733/|&amp;quot;.&lt;/div&gt;
 &lt;/div&gt;
-</summary><category term="Plone"></category><category term="Python"></category></entry><entry><title>Hello mod_wsgi</title><link href="http://blog.aclark.net/2011/08/28/hello-mod_wsgi" rel="alternate"></link><updated>2011-08-28T20:43:00Z</updated><author><name>Alex Clark</name></author><id>tag:blog.aclark.net,2011-08-28:2011/08/28/hello-mod_wsgi</id><summary type="html">&lt;p&gt;It seems I've inadvertently started another series of blog entry:&amp;nbsp; the
+</summary><category term="Plone"></category><category term="Python"></category></entry><entry><title>Hello mod_wsgi</title><link href="http://blog.aclark.net/hello-mod_wsgi.html" rel="alternate"></link><updated>2011-08-28T20:43:00Z</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2011-08-28:hello-mod_wsgi.html</id><summary type="html">&lt;p&gt;It seems I've inadvertently started another series of blog entry:&amp;nbsp; the
 &amp;quot;hello world&amp;quot; series, wherein I explain how to easily get started with
 &lt;a class="reference external" href="http://blog.aclark.net/2011/08/20/hello-plone/"&gt;various exciting Python technologies&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;This time, in order to familiarize myself with &lt;a class="reference external" href="http://code.google.com/p/modwsgi/"&gt;mod_wsgi&lt;/a&gt;, I've
@@ -1678,7 +1678,7 @@ moves closer to a WSGI-supporting stack via &lt;a class="reference external" hre
 &lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/hello-mod_wsgi.rst&lt;/tt&gt;, line 66); &lt;em&gt;&lt;a href="#id2"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 Unknown target name: &amp;quot;|image0|&amp;quot;.&lt;/div&gt;
 &lt;/div&gt;
-</summary><category term="Plone"></category><category term="Python"></category></entry><entry><title>Hello Plone</title><link href="http://blog.aclark.net/2011/08/20/hello-plone" rel="alternate"></link><updated>2011-08-20T20:27:00Z</updated><author><name>Alex Clark</name></author><id>tag:blog.aclark.net,2011-08-20:2011/08/20/hello-plone</id><summary type="html">&lt;p&gt;This is a &amp;quot;hello world&amp;quot; style tutorial/application for Plone, aimed
+</summary><category term="Plone"></category><category term="Python"></category></entry><entry><title>Hello Plone</title><link href="http://blog.aclark.net/hello-plone.html" rel="alternate"></link><updated>2011-08-20T20:27:00Z</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2011-08-20:hello-plone.html</id><summary type="html">&lt;p&gt;This is a &amp;quot;hello world&amp;quot; style tutorial/application for Plone, aimed
 squarely at Python developers. I have created a project on Github too,
 to hold the code:&lt;/p&gt;
 &lt;ul class="simple"&gt;
@@ -1850,7 +1850,7 @@ Unknown target name: &amp;quot;|image1|&amp;quot;.&lt;/div&gt;
 &lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/hello-plone.rst&lt;/tt&gt;, line 168); &lt;em&gt;&lt;a href="#id6"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 Unknown target name: &amp;quot;|image2|&amp;quot;.&lt;/div&gt;
 &lt;/div&gt;
-</summary><category term="Plone"></category><category term="Python"></category></entry><entry><title>Plone secrets: Episode 3 - Collective Recaptcha installation</title><link href="http://blog.aclark.net/2011/08/09/plone-secrets-episode-3-collective-recaptcha-installation" rel="alternate"></link><updated>2011-08-09T12:19:00Z</updated><author><name>Alex Clark</name></author><id>tag:blog.aclark.net,2011-08-09:2011/08/09/plone-secrets-episode-3-collective-recaptcha-installation</id><summary type="html">&lt;p&gt;&lt;strong&gt;*Another one from the: &amp;quot;wow, this approach is totally and completely
+</summary><category term="Plone"></category><category term="Python"></category></entry><entry><title>Plone secrets: Episode 3 - Collective Recaptcha installation</title><link href="http://blog.aclark.net/plone-secrets-episode-3-collective-recaptcha-installation.html" rel="alternate"></link><updated>2011-08-09T12:19:00Z</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2011-08-09:plone-secrets-episode-3-collective-recaptcha-installation.html</id><summary type="html">&lt;p&gt;&lt;strong&gt;*Another one from the: &amp;quot;wow, this approach is totally and completely
 non-obvious to beginners&amp;quot; department.*&lt;/strong&gt;&lt;/p&gt;
 &lt;div class="section" id="my-kingdom-for-a-custom-contact-form-with-captcha"&gt;
 &lt;h2&gt;My kingdom for a (custom) contact form (with captcha)&lt;/h2&gt;
@@ -2155,7 +2155,7 @@ Unknown target name: &amp;quot;|image4|&amp;quot;.&lt;/div&gt;
 &lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/plone-secrets-episode-3-collective-recaptcha-installation.rst&lt;/tt&gt;, line 362); &lt;em&gt;&lt;a href="#id12"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 Unknown target name: &amp;quot;|image5|&amp;quot;.&lt;/div&gt;
 &lt;/div&gt;
-</summary><category term="Plone"></category></entry><entry><title>Plone secrets: Episode 2 - Collective Python buildout</title><link href="http://blog.aclark.net/2011/07/06/plone-secrets-episode-2-collective-python-buildout" rel="alternate"></link><updated>2011-07-06T12:45:00Z</updated><author><name>Alex Clark</name></author><id>tag:blog.aclark.net,2011-07-06:2011/07/06/plone-secrets-episode-2-collective-python-buildout</id><summary type="html">&lt;p&gt;You know who uses the (Plone) Collective Python buildout? Me neither,
+</summary><category term="Plone"></category></entry><entry><title>Plone secrets: Episode 2 - Collective Python buildout</title><link href="http://blog.aclark.net/plone-secrets-episode-2-collective-python-buildout.html" rel="alternate"></link><updated>2011-07-06T12:45:00Z</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2011-07-06:plone-secrets-episode-2-collective-python-buildout.html</id><summary type="html">&lt;p&gt;You know who uses the (Plone) Collective Python buildout? Me neither,
 because we don't have any good statistics on its use (that I know of).
 If it were a Python package, we could at least &lt;a class="reference external" href="http://blog.aclark.net/2011/06/16/youre-so-vain-so-why-not-use-vanity/"&gt;count the number of
 times it has been downloaded&lt;/a&gt;.&lt;/p&gt;
@@ -2334,7 +2334,7 @@ buildout&lt;/a&gt;.&lt;/p&gt;
 &lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/plone-secrets-episode-2-collective-python-buildout.rst&lt;/tt&gt;, line 23); &lt;em&gt;&lt;a href="#id2"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 Unknown target name: &amp;quot;|image0|&amp;quot;.&lt;/div&gt;
 &lt;/div&gt;
-</summary><category term="Plone"></category><category term="Python"></category></entry><entry><title>Plone secrets: Episode 1 — Site actions contact link</title><link href="http://blog.aclark.net/2011/06/20/plone-secrets-episode-1-site-actions-contact-link" rel="alternate"></link><updated>2011-06-20T12:31:00Z</updated><author><name>Alex Clark</name></author><id>tag:blog.aclark.net,2011-06-20:2011/06/20/plone-secrets-episode-1-site-actions-contact-link</id><summary type="html">&lt;p&gt;Today I am introducing a new category of blog entry called &lt;strong&gt;Plone
+</summary><category term="Plone"></category><category term="Python"></category></entry><entry><title>Plone secrets: Episode 1 — Site actions contact link</title><link href="http://blog.aclark.net/plone-secrets-episode-1-site-actions-contact-link.html" rel="alternate"></link><updated>2011-06-20T12:31:00Z</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2011-06-20:plone-secrets-episode-1-site-actions-contact-link.html</id><summary type="html">&lt;p&gt;Today I am introducing a new category of blog entry called &lt;strong&gt;Plone
 secrets&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;The goal is to describe a set of developer/integrator techniques that
 are extremely valuable, but completely non-obvious to newcomers.&lt;/p&gt;
@@ -2509,7 +2509,7 @@ Unknown target name: &amp;quot;|image7|&amp;quot;.&lt;/div&gt;
 &lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/plone-secrets-episode-1-site-actions-contact-link.rst&lt;/tt&gt;, line 204); &lt;em&gt;&lt;a href="#id18"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 Unknown target name: &amp;quot;|image8|&amp;quot;.&lt;/div&gt;
 &lt;/div&gt;
-</summary><category term="Plone"></category></entry><entry><title>You&amp;#039;re so vain, so why not use Vanity?</title><link href="http://blog.aclark.net/2011/06/16/you039re-so-vain-so-why-not-use-vanity" rel="alternate"></link><updated>2011-06-16T12:01:00Z</updated><author><name>Alex Clark</name></author><id>tag:blog.aclark.net,2011-06-16:2011/06/16/you039re-so-vain-so-why-not-use-vanity</id><summary type="html">&lt;p&gt;A few months ago I created a package called &lt;strong&gt;Vanity&lt;/strong&gt;[0] that
+</summary><category term="Plone"></category></entry><entry><title>You&amp;#039;re so vain, so why not use Vanity?</title><link href="http://blog.aclark.net/you039re-so-vain-so-why-not-use-vanity.html" rel="alternate"></link><updated>2011-06-16T12:01:00Z</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2011-06-16:you039re-so-vain-so-why-not-use-vanity.html</id><summary type="html">&lt;p&gt;A few months ago I created a package called &lt;strong&gt;Vanity&lt;/strong&gt;[0] that
 provides easy access to package download statistics from &lt;strong&gt;PyPI&lt;/strong&gt;. You
 can find the source code here: &lt;a class="reference external" href="https://github.com/aclark4life/vanity"&gt;https://github.com/aclark4life/vanity&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;I love this tool, and I use it all the time to gauge the value of a
@@ -2568,7 +2568,7 @@ in particular.&lt;/p&gt;
 &lt;/p&gt;&lt;p&gt;[1] There is a &lt;a class="reference external" href="https://github.com/aclark4life/vanity/issues/1"&gt;known issue&lt;/a&gt; with regard to making Vanity case
 insensitive.&lt;/p&gt;
 &lt;/div&gt;
-</summary><category term="Plone"></category><category term="Python"></category></entry><entry><title>ACLARK.NET seeks unique candidate for part time business consulting</title><link href="http://blog.aclark.net/2011/06/14/aclarknet-seeks-unique-candidate-for-part-time-business-consulting" rel="alternate"></link><updated>2011-06-14T15:40:00Z</updated><author><name>Alex Clark</name></author><id>tag:blog.aclark.net,2011-06-14:2011/06/14/aclarknet-seeks-unique-candidate-for-part-time-business-consulting</id><summary type="html">&lt;p&gt;We are looking for a unique and talented (but mostly non-technical)
+</summary><category term="Plone"></category><category term="Python"></category></entry><entry><title>ACLARK.NET seeks unique candidate for part time business consulting</title><link href="http://blog.aclark.net/aclarknet-seeks-unique-candidate-for-part-time-business-consulting.html" rel="alternate"></link><updated>2011-06-14T15:40:00Z</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2011-06-14:aclarknet-seeks-unique-candidate-for-part-time-business-consulting.html</id><summary type="html">&lt;p&gt;We are looking for a unique and talented (but mostly non-technical)
 individual that is passionate about Plone, and able to dedicate some
 small amount of time per month to generating new business for us[1].&lt;/p&gt;
 &lt;p&gt;Plone is up and coming (again)! And we want to (1.) capitalize on that
@@ -2672,7 +2672,7 @@ Even something as small as 8 hours per month would be helpful.&lt;/li&gt;
 &lt;li&gt;&lt;a class="reference external" href="http://aclark.net/clients"&gt;http://aclark.net/clients&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/p&gt;&lt;/div&gt;
-</summary><category term="Plone"></category></entry><entry><title>&amp;quot;New&amp;quot; Plone theming has arrived</title><link href="http://blog.aclark.net/2011/05/27/quotnewquot-plone-theming-has-arrived" rel="alternate"></link><updated>2011-05-27T17:00:00Z</updated><author><name>Alex Clark</name></author><id>tag:blog.aclark.net,2011-05-27:2011/05/27/quotnewquot-plone-theming-has-arrived</id><summary type="html">&lt;p&gt;&lt;strong&gt;Edit2:&lt;/strong&gt;Enfold/Ploud.net looking for theme developers, see Alan
+</summary><category term="Plone"></category></entry><entry><title>&amp;quot;New&amp;quot; Plone theming has arrived</title><link href="http://blog.aclark.net/quotnewquot-plone-theming-has-arrived.html" rel="alternate"></link><updated>2011-05-27T17:00:00Z</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2011-05-27:quotnewquot-plone-theming-has-arrived.html</id><summary type="html">&lt;p&gt;&lt;strong&gt;Edit2:&lt;/strong&gt;Enfold/Ploud.net looking for theme developers, see Alan
 Runyan's comment below.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Edit&lt;/strong&gt;: Laurence Rowe made new Diazo and plone.app.theming releases so
 the &lt;a class="reference external" href="https://github.com/aclark4life/plonetheme.unilluminated/blob/master/unilluminated.zip?raw=true"&gt;zip file&lt;/a&gt;now works! Thanks Laurence.&lt;/p&gt;
@@ -2726,7 +2726,7 @@ distribute as a Python package because it is so easy to do so (or
 hopefully will be very soon). But how the community chooses to
 capitalize on this new-found ability remains to be seen.&lt;/p&gt;
 &lt;/div&gt;
-</summary><category term="Plone"></category></entry><entry><title>Top 10 reasons &amp;quot;Plone 3.3. Site Admin&amp;quot; book is (still) for you</title><link href="http://blog.aclark.net/2011/05/10/top-10-reasons-quotplone-33-site-adminquot-book-is-still-for-you" rel="alternate"></link><updated>2011-05-10T13:34:00Z</updated><author><name>Alex Clark</name></author><id>tag:blog.aclark.net,2011-05-10:2011/05/10/top-10-reasons-quotplone-33-site-adminquot-book-is-still-for-you</id><summary type="html">&lt;p&gt;About a year ago, I was frantically trying to finish &lt;a class="reference external" href="http://aclark.net/training"&gt;Plone 3.3 Site
+</summary><category term="Plone"></category></entry><entry><title>Top 10 reasons &amp;quot;Plone 3.3. Site Admin&amp;quot; book is (still) for you</title><link href="http://blog.aclark.net/top-10-reasons-quotplone-33-site-adminquot-book-is-still-for-you.html" rel="alternate"></link><updated>2011-05-10T13:34:00Z</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2011-05-10:top-10-reasons-quotplone-33-site-adminquot-book-is-still-for-you.html</id><summary type="html">&lt;p&gt;About a year ago, I was frantically trying to finish &lt;a class="reference external" href="http://aclark.net/training"&gt;Plone 3.3 Site
 Administration&lt;/a&gt; in time to teach it at Plone Symposium East 2010 (at
 Penn State University) as well as publish it. I remember staying up all
 night to finish &amp;amp; submit the final drafts then driving 4 hours to Penn
@@ -2853,7 +2853,7 @@ least).&lt;/p&gt;
 &lt;p&gt;[2] Yeah, I don't get out much :-)&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-</summary><category term="Plone"></category><category term="Python"></category></entry><entry><title>Plone Conference 2008 (!) is a wrap</title><link href="http://blog.aclark.net/2011/05/03/plone-conference-2008-is-a-wrap" rel="alternate"></link><updated>2011-05-03T20:00:00Z</updated><author><name>Alex Clark</name></author><id>tag:blog.aclark.net,2011-05-03:2011/05/03/plone-conference-2008-is-a-wrap</id><summary type="html">&lt;p&gt;Embarrassingly, I have yet to finish my obligations to the life-changing
+</summary><category term="Plone"></category><category term="Python"></category></entry><entry><title>Plone Conference 2008 (!) is a wrap</title><link href="http://blog.aclark.net/plone-conference-2008-is-a-wrap.html" rel="alternate"></link><updated>2011-05-03T20:00:00Z</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2011-05-03:plone-conference-2008-is-a-wrap.html</id><summary type="html">&lt;p&gt;Embarrassingly, I have yet to finish my obligations to the life-changing
 &lt;a class="reference external" href="http://plone.org/2008"&gt;Plone Conference 2008&lt;/a&gt; until NOW: approximately 2 years, 6 months, and
 23 days after the end of the post-conference sprint.&lt;/p&gt;
 &lt;div class="section" id="the-story"&gt;
@@ -2891,7 +2891,7 @@ wait 2 days let alone over 2 years!&lt;/p&gt;
 &lt;p&gt;Thus, I now declare &lt;a class="reference external" href="http://plone.org/2008"&gt;Plone Conference 2008&lt;/a&gt; to be wrapped. Thanks to
 Sean Kelly for the &lt;a class="reference external" href="http://dev.plone.org/plone/ticket/11762"&gt;help transferring the video&lt;/a&gt; to plone.org.&lt;/p&gt;
 &lt;/div&gt;
-</summary><category term="Plone"></category></entry><entry><title>collective.transmogrifier without Plone?</title><link href="http://blog.aclark.net/2011/04/15/collectivetransmogrifier-without-plone" rel="alternate"></link><updated>2011-04-15T20:31:00Z</updated><author><name>Alex Clark</name></author><id>tag:blog.aclark.net,2011-04-15:2011/04/15/collectivetransmogrifier-without-plone</id><summary type="html">&lt;p&gt;Yes!&lt;/p&gt;
+</summary><category term="Plone"></category></entry><entry><title>collective.transmogrifier without Plone?</title><link href="http://blog.aclark.net/collectivetransmogrifier-without-plone.html" rel="alternate"></link><updated>2011-04-15T20:31:00Z</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2011-04-15:collectivetransmogrifier-without-plone.html</id><summary type="html">&lt;p&gt;Yes!&lt;/p&gt;
 &lt;p&gt;Since I began drinking the &lt;a class="reference external" href="http://pypi.python.org/pypi/collective.transmogrifier"&gt;collective.transmogrifier&lt;/a&gt; Kool Aid a few
 months back, I've gotten quite excited about the possibility of being
 able to use it outside Plone, i.e. like &amp;quot;regular&amp;quot; Python people would
@@ -2974,7 +2974,7 @@ malformed hyperlink target.&lt;/div&gt;
 &lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/collective-transmogrifier-without-plone.rst&lt;/tt&gt;, line 70); &lt;em&gt;&lt;a href="#id4"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 Unknown target name: &amp;quot;|image0|&amp;quot;.&lt;/div&gt;
 &lt;/div&gt;
-</summary><category term="Plone"></category></entry><entry><title>Introducing charm; death to charm!</title><link href="http://blog.aclark.net/2011/03/29/introducing-charm-death-to-charm" rel="alternate"></link><updated>2011-03-29T17:20:00Z</updated><author><name>Alex Clark</name></author><id>tag:blog.aclark.net,2011-03-29:2011/03/29/introducing-charm-death-to-charm</id><summary type="html">&lt;p&gt;[caption id=&amp;quot;attachment_2290&amp;quot; align=&amp;quot;alignright&amp;quot; width=&amp;quot;373&amp;quot;
+</summary><category term="Plone"></category></entry><entry><title>Introducing charm; death to charm!</title><link href="http://blog.aclark.net/introducing-charm-death-to-charm.html" rel="alternate"></link><updated>2011-03-29T17:20:00Z</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2011-03-29:introducing-charm-death-to-charm.html</id><summary type="html">&lt;p&gt;[caption id=&amp;quot;attachment_2290&amp;quot; align=&amp;quot;alignright&amp;quot; width=&amp;quot;373&amp;quot;
 caption=&amp;quot;First slide of my talk, from &amp;quot;back in the day&amp;quot;
 (&lt;a class="reference external" href="http://blip.tv/file/761624/"&gt;http://blip.tv/file/761624/&lt;/a&gt;)&amp;quot;]`|image0|`_[/caption]&lt;/p&gt;
 &lt;p&gt;A long time ago (several years ago, or more) one of my first Plone jobs
@@ -3088,7 +3088,7 @@ than ever to write reusable code.&lt;/p&gt;
 &lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/introducing-charm-death-to-charm.rst&lt;/tt&gt;, line 124); &lt;em&gt;&lt;a href="#id2"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 Unknown target name: &amp;quot;|image1|&amp;quot;.&lt;/div&gt;
 &lt;/div&gt;
-</summary><category term="Plone"></category></entry><entry><title>Cioppino Sprint Report</title><link href="http://blog.aclark.net/2011/02/16/cioppino-sprint-report" rel="alternate"></link><updated>2011-02-16T09:04:00Z</updated><author><name>Alex Clark</name></author><id>tag:blog.aclark.net,2011-02-16:2011/02/16/cioppino-sprint-report</id><summary type="html">&lt;p&gt;The &lt;a class="reference external" href="http://coactivate.org/projects/snow-sprint-west-2011/project-home"&gt;Cioppino Sprint&lt;/a&gt; was recently held in Bodega Bay, CA. It was a
+</summary><category term="Plone"></category></entry><entry><title>Cioppino Sprint Report</title><link href="http://blog.aclark.net/cioppino-sprint-report.html" rel="alternate"></link><updated>2011-02-16T09:04:00Z</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2011-02-16:cioppino-sprint-report.html</id><summary type="html">&lt;p&gt;The &lt;a class="reference external" href="http://coactivate.org/projects/snow-sprint-west-2011/project-home"&gt;Cioppino Sprint&lt;/a&gt; was recently held in Bodega Bay, CA. It was a
 &lt;a class="reference external" href="http://twitpic.com/3y21yk"&gt;beautiful location&lt;/a&gt; for a gathering of awesome Plone folks; and much
 was accomplished. Unfortunately on the second morning of the sprint, we
 were all deeply saddened to hear about the passing of Dorneles Treméa.&lt;/p&gt;
@@ -3318,7 +3318,7 @@ Unknown target name: &amp;quot;|image5|&amp;quot;.&lt;/div&gt;
 &lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/cioppino-sprint-report.rst&lt;/tt&gt;, line 251); &lt;em&gt;&lt;a href="#id18"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 Unknown target name: &amp;quot;|image6|&amp;quot;.&lt;/div&gt;
 &lt;/div&gt;
-</summary><category term="Plone"></category></entry><entry><title>In Defense of PyPI</title><link href="http://blog.aclark.net/2011/01/31/in-defense-of-pypi" rel="alternate"></link><updated>2011-01-31T09:19:00Z</updated><author><name>Alex Clark</name></author><id>tag:blog.aclark.net,2011-01-31:2011/01/31/in-defense-of-pypi</id><summary type="html">&lt;p&gt;Everyone on the &lt;em&gt;Python Planet&lt;/em&gt; is probably already familiar with Peter
+</summary><category term="Plone"></category></entry><entry><title>In Defense of PyPI</title><link href="http://blog.aclark.net/in-defense-of-pypi.html" rel="alternate"></link><updated>2011-01-31T09:19:00Z</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2011-01-31:in-defense-of-pypi.html</id><summary type="html">&lt;p&gt;Everyone on the &lt;em&gt;Python Planet&lt;/em&gt; is probably already familiar with Peter
 Fein's recent article &lt;a class="reference external" href="http://blog.wearpants.org/elitism-and-the-importance-of-pypi"&gt;about PyPI use (or lack thereof).&lt;/a&gt; But in case
 not, particularly striking was the number of folks who joined the &amp;quot;PyPI
 bashing&amp;quot; in the comments. In fact, it has inspired me to write this post
@@ -3395,7 +3395,7 @@ packages to PyPI. If it doesn't, please let me know why in the comments.&lt;/p&g
 &lt;/p&gt;&lt;p&gt;&lt;em&gt;Did you enjoy reading this article? If so, please consider `helping me
 help Plone`_.&lt;/em&gt;&lt;/p&gt;
 &lt;/div&gt;
-</summary><category term="Plone"></category><category term="Python"></category></entry><entry><title>Hostout rules</title><link href="http://blog.aclark.net/2011/01/26/hostout-rules" rel="alternate"></link><updated>2011-01-26T15:17:00Z</updated><author><name>Alex Clark</name></author><id>tag:blog.aclark.net,2011-01-26:2011/01/26/hostout-rules</id><summary type="html">&lt;p&gt;&lt;em&gt;As in &amp;quot;dominates&amp;quot;, not a &amp;quot;list of rules&amp;quot; :-)&lt;/em&gt;&lt;/p&gt;
+</summary><category term="Plone"></category><category term="Python"></category></entry><entry><title>Hostout rules</title><link href="http://blog.aclark.net/hostout-rules.html" rel="alternate"></link><updated>2011-01-26T15:17:00Z</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2011-01-26:hostout-rules.html</id><summary type="html">&lt;p&gt;&lt;em&gt;As in &amp;quot;dominates&amp;quot;, not a &amp;quot;list of rules&amp;quot; :-)&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;I spent a long time avoiding &lt;a class="reference external" href="http://pypi.python.org/pypi/collective.hostout"&gt;collective.hostout&lt;/a&gt; for reasons I will
 call &amp;quot;technical stylistic differences&amp;quot; with the author Dylan Jay.&lt;/p&gt;
 &lt;p&gt;But then I grew up (and in cases of Plone growth like this, I usually
@@ -3533,7 +3533,7 @@ the future will have arrived. And since that is exactly what
 &lt;p&gt;&lt;em&gt;Did you enjoy reading this article? Please consider `helping me help
 Plone in February 2011`_.&lt;/em&gt;&lt;/p&gt;
 &lt;/div&gt;
-</summary><category term="Plone"></category></entry><entry><title>You should buy &amp;quot;Plone 3 for Education&amp;quot; right now</title><link href="http://blog.aclark.net/2011/01/25/you-should-buy-quotplone-3-for-educationquot-right-now" rel="alternate"></link><updated>2011-01-25T13:11:00Z</updated><author><name>Alex Clark</name></author><id>tag:blog.aclark.net,2011-01-25:2011/01/25/you-should-buy-quotplone-3-for-educationquot-right-now</id><summary type="html">&lt;p&gt;&lt;a href="#id1"&gt;&lt;span class="problematic" id="id2"&gt;`|image0|`_&lt;/span&gt;&lt;/a&gt;&lt;em&gt;With what must be the fifth or sixth round of apologies to
+</summary><category term="Plone"></category></entry><entry><title>You should buy &amp;quot;Plone 3 for Education&amp;quot; right now</title><link href="http://blog.aclark.net/you-should-buy-quotplone-3-for-educationquot-right-now.html" rel="alternate"></link><updated>2011-01-25T13:11:00Z</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2011-01-25:you-should-buy-quotplone-3-for-educationquot-right-now.html</id><summary type="html">&lt;p&gt;&lt;a href="#id1"&gt;&lt;span class="problematic" id="id2"&gt;`|image0|`_&lt;/span&gt;&lt;/a&gt;&lt;em&gt;With what must be the fifth or sixth round of apologies to
 both Erik Rose and PACKT publishing for the delay (very sorry guys),
 here is my review! Better late than never.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;&lt;p&gt;I get bored with the same ol' blog entry titles:&lt;/p&gt;
@@ -3664,7 +3664,7 @@ help Plone in February 2011.`_&lt;/em&gt;&lt;/p&gt;
 &lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/you-should-buy-plone-3-for-education-right-now.rst&lt;/tt&gt;, line 6); &lt;em&gt;&lt;a href="#id2"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 Unknown target name: &amp;quot;|image0|&amp;quot;.&lt;/div&gt;
 &lt;/div&gt;
-</summary><category term="Plone"></category></entry><entry><title>Help Alex Clark help Plone</title><link href="http://blog.aclark.net/2011/01/21/help-alex-clark-help-plone" rel="alternate"></link><updated>2011-01-21T11:00:00Z</updated><author><name>Alex Clark</name></author><id>tag:blog.aclark.net,2011-01-21:2011/01/21/help-alex-clark-help-plone</id><summary type="html">&lt;p&gt;It's been a few years since I last attended a Plone sprint. And that is
+</summary><category term="Plone"></category></entry><entry><title>Help Alex Clark help Plone</title><link href="http://blog.aclark.net/help-alex-clark-help-plone.html" rel="alternate"></link><updated>2011-01-21T11:00:00Z</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2011-01-21:help-alex-clark-help-plone.html</id><summary type="html">&lt;p&gt;It's been a few years since I last attended a Plone sprint. And that is
 by no means for lack of desire. I fantasize about spending a year
 attending every Plone (and Python) related event on the planet, but I've
 got a ways to go before I can make that dream a reality.&lt;a href="#id1"&gt;&lt;span class="problematic" id="id2"&gt;`|image0|`_&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
@@ -3732,7 +3732,7 @@ address: &lt;strong&gt;aclark&amp;#64;aclark.net&lt;/strong&gt;.&lt;/p&gt;
 &lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/help-alex-clark-help-plone.rst&lt;/tt&gt;, line 6); &lt;em&gt;&lt;a href="#id2"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 Unknown target name: &amp;quot;|image0|&amp;quot;.&lt;/div&gt;
 &lt;/div&gt;
-</summary><category term="Plone"></category></entry><entry><title>New website for 2011!</title><link href="http://blog.aclark.net/2011/01/19/new-website-for-2011" rel="alternate"></link><updated>2011-01-19T18:56:00Z</updated><author><name>Alex Clark</name></author><id>tag:blog.aclark.net,2011-01-19:2011/01/19/new-website-for-2011</id><summary type="html">&lt;p&gt;Edit: In addition to &amp;quot;cool overlays&amp;quot;, I added a couple Plone-core todo
+</summary><category term="Plone"></category></entry><entry><title>New website for 2011!</title><link href="http://blog.aclark.net/new-website-for-2011.html" rel="alternate"></link><updated>2011-01-19T18:56:00Z</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2011-01-19:new-website-for-2011.html</id><summary type="html">&lt;p&gt;Edit: In addition to &amp;quot;cool overlays&amp;quot;, I added a couple Plone-core todo
 items (that I may like to PLIP/implement)&lt;/p&gt;
 &lt;div class="section" id="purpose-driven"&gt;
 &lt;h2&gt;Purpose-driven&lt;/h2&gt;
@@ -3896,7 +3896,7 @@ buildout and theme, and nothing else.&lt;/li&gt;
 &lt;h2&gt;To the future&lt;/h2&gt;
 &lt;p&gt;Onwards Plone team! Here is to 2011.&lt;/p&gt;
 &lt;/p&gt;&lt;/div&gt;
-</summary><category term="Plone"></category></entry><entry><title>A report on plonetheme.*</title><link href="http://blog.aclark.net/2010/11/04/a-report-on-plonetheme" rel="alternate"></link><updated>2010-11-04T11:09:00Z</updated><author><name>Alex Clark</name></author><id>tag:blog.aclark.net,2010-11-04:2010/11/04/a-report-on-plonetheme</id><summary type="html">&lt;p&gt;[caption id=&amp;quot;attachment_486&amp;quot; align=&amp;quot;alignright&amp;quot; width=&amp;quot;398&amp;quot;
+</summary><category term="Plone"></category></entry><entry><title>A report on plonetheme.*</title><link href="http://blog.aclark.net/a-report-on-plonetheme.html" rel="alternate"></link><updated>2010-11-04T11:09:00Z</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2010-11-04:a-report-on-plonetheme.html</id><summary type="html">&lt;p&gt;[caption id=&amp;quot;attachment_486&amp;quot; align=&amp;quot;alignright&amp;quot; width=&amp;quot;398&amp;quot;
 caption=&amp;quot;Photo credit:
 &lt;a class="reference external" href="http://www.flickr.com/photos/adactio/2917093994/"&gt;http://www.flickr.com/photos/adactio/2917093994/&lt;/a&gt;&amp;quot;]&lt;a href="#id11"&gt;&lt;span class="problematic" id="id12"&gt;`|Photo credit:
 http://www.flickr.com/photos/adactio/2917093994/|`_&lt;/span&gt;&lt;/a&gt;[/caption]&lt;/p&gt;
@@ -4121,7 +4121,7 @@ Unknown target name: &amp;quot;|why jbot why!?|&amp;quot;.&lt;/div&gt;
 &lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/a-report-on-plonetheme.rst&lt;/tt&gt;, line 222); &lt;em&gt;&lt;a href="#id16"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 Unknown target name: &amp;quot;|installable themes in plone 4|&amp;quot;.&lt;/div&gt;
 &lt;/div&gt;
-</summary><category term="Plone"></category></entry><entry><title>I reinstalled recently</title><link href="http://blog.aclark.net/2010/10/15/i-reinstalled-recently" rel="alternate"></link><updated>2010-10-15T11:42:00Z</updated><author><name>Alex Clark</name></author><id>tag:blog.aclark.net,2010-10-15:2010/10/15/i-reinstalled-recently</id><summary type="html">&lt;p&gt;&lt;p&gt;And for whatever it is worth to anyone, here are the notes I took (for
+</summary><category term="Plone"></category></entry><entry><title>I reinstalled recently</title><link href="http://blog.aclark.net/i-reinstalled-recently.html" rel="alternate"></link><updated>2010-10-15T11:42:00Z</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2010-10-15:i-reinstalled-recently.html</id><summary type="html">&lt;p&gt;&lt;p&gt;And for whatever it is worth to anyone, here are the notes I took (for
 the first time ever, when doing a reinstall):&lt;/p&gt;
 &lt;pre class="literal-block"&gt;
 o System Preferences -&amp;gt; Organize alphabeticallyo Sync bluetooth mouseo Software update * 2
@@ -4186,7 +4186,7 @@ reinstalling everything (from the internet). I just drag back
 applications from my Time Capsule (also note, I purposefully do not
 allow Time Machine to restore my home directory, because that feels
 &amp;quot;dirty&amp;quot; to me).&lt;/p&gt;
-</summary><category term="Plone"></category></entry><entry><title>The Apache modules for XDV</title><link href="http://blog.aclark.net/2010/07/12/the-apache-modules-for-xdv" rel="alternate"></link><updated>2010-07-12T08:25:00Z</updated><author><name>Alex Clark</name></author><id>tag:blog.aclark.net,2010-07-12:2010/07/12/the-apache-modules-for-xdv</id><summary type="html">&lt;p&gt;&lt;a href="#id1"&gt;&lt;span class="problematic" id="id2"&gt;`|http://beakersblog.files.wordpress.com/2010/02/consolidation.jpg|`_&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+</summary><category term="Plone"></category></entry><entry><title>The Apache modules for XDV</title><link href="http://blog.aclark.net/the-apache-modules-for-xdv.html" rel="alternate"></link><updated>2010-07-12T08:25:00Z</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2010-07-12:the-apache-modules-for-xdv.html</id><summary type="html">&lt;p&gt;&lt;a href="#id1"&gt;&lt;span class="problematic" id="id2"&gt;`|http://beakersblog.files.wordpress.com/2010/02/consolidation.jpg|`_&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;I was recently tasked with consolidating our various &lt;strong&gt;business
 services&lt;/strong&gt; (website, software repository, mailing lists, ldap, etc.) on
 to a single virtual machine (ostensibly to save money, although it
@@ -4461,7 +4461,7 @@ now (I am expecting to review pre-finals this week some time).&lt;/p&gt;
 &lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/the-apache-modules-for-xdv.rst&lt;/tt&gt;, line 6); &lt;em&gt;&lt;a href="#id2"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 Unknown target name: &amp;quot;|http://beakersblog.files.wordpress.com/2010/02/consolidation.jpg|&amp;quot;.&lt;/div&gt;
 &lt;/div&gt;
-</summary><category term="Plone"></category></entry><entry><title>Blood, sweat, tears… and a new Plone book!</title><link href="http://blog.aclark.net/2010/03/30/blood-sweat-tears-and-a-new-plone-book" rel="alternate"></link><updated>2010-03-30T18:15:00Z</updated><author><name>Alex Clark</name></author><id>tag:blog.aclark.net,2010-03-30:2010/03/30/blood-sweat-tears-and-a-new-plone-book</id><summary type="html">&lt;p&gt;Well, no blood yet. But certainly sweat and tears! If &lt;a class="reference external" href="http://plone.org/events/conferences/seattle-2006"&gt;Plone Conference
+</summary><category term="Plone"></category></entry><entry><title>Blood, sweat, tears… and a new Plone book!</title><link href="http://blog.aclark.net/blood-sweat-tears-and-a-new-plone-book.html" rel="alternate"></link><updated>2010-03-30T18:15:00Z</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2010-03-30:blood-sweat-tears-and-a-new-plone-book.html</id><summary type="html">&lt;p&gt;Well, no blood yet. But certainly sweat and tears! If &lt;a class="reference external" href="http://plone.org/events/conferences/seattle-2006"&gt;Plone Conference
 2006&lt;/a&gt; was my inspiration for &lt;a class="reference external" href="http://plone.org/2008"&gt;Plone Conference 2008&lt;/a&gt;, then
 &lt;a class="reference external" href="https://www.packtpub.com/Professional-Plone-web-applications-CMS/book"&gt;Professional Plone Development&lt;/a&gt; was my inspiration for this book:
 &lt;a class="reference external" href="https://www.packtpub.com/plone-3-3-site-administration/book"&gt;Plone 3.3 Site Administration&lt;/a&gt;.&lt;/p&gt;
@@ -4621,7 +4621,7 @@ malformed hyperlink target.&lt;/div&gt;
 &lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/blood-sweat-tears-and-a-new-plone-book.rst&lt;/tt&gt;, line 11); &lt;em&gt;&lt;a href="#id6"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 Unknown target name: &amp;quot;|image0|&amp;quot;.&lt;/div&gt;
 &lt;/div&gt;
-</summary><category term="Plone"></category></entry><entry><title>I need something to do</title><link href="http://blog.aclark.net/2010/03/22/i-need-something-to-do" rel="alternate"></link><updated>2010-03-22T17:06:00Z</updated><author><name>Alex Clark</name></author><id>tag:blog.aclark.net,2010-03-22:2010/03/22/i-need-something-to-do</id><summary type="html">&lt;p&gt;I would like to think I have done &lt;a class="reference external" href="http://plone.org/2008"&gt;my&lt;/a&gt; &lt;a class="reference external" href="http://aclark.net/plone-site-admin"&gt;share&lt;/a&gt; for Plone over the past
+</summary><category term="Plone"></category></entry><entry><title>I need something to do</title><link href="http://blog.aclark.net/i-need-something-to-do.html" rel="alternate"></link><updated>2010-03-22T17:06:00Z</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2010-03-22:i-need-something-to-do.html</id><summary type="html">&lt;p&gt;I would like to think I have done &lt;a class="reference external" href="http://plone.org/2008"&gt;my&lt;/a&gt; &lt;a class="reference external" href="http://aclark.net/plone-site-admin"&gt;share&lt;/a&gt; for Plone over the past
 few years. In return, I know that Plone has done its share for me. I
 have learned a lot, made a good living, and met a lot of amazing folks
 who have really inspired me to be the best I can be.&lt;/p&gt;
@@ -4779,7 +4779,7 @@ Undefined substitution referenced: &amp;quot;image1&amp;quot;.&lt;/div&gt;
 &lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/i-need-something-to-do.rst&lt;/tt&gt;, line 13); &lt;em&gt;&lt;a href="#id4"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 Unknown target name: &amp;quot;|image credit: http://screenmusings.org/forrestgump/pages/fg_0885.htm|&amp;quot;.&lt;/div&gt;
 &lt;/div&gt;
-</summary><category term="Plone"></category></entry><entry><title>Using Buildout to deploy a Plone 2.1 site to the cloud</title><link href="http://blog.aclark.net/2010/03/15/using-buildout-to-deploy-a-plone-21-site-to-the-cloud" rel="alternate"></link><updated>2010-03-15T21:03:00Z</updated><author><name>Alex Clark</name></author><id>tag:blog.aclark.net,2010-03-15:2010/03/15/using-buildout-to-deploy-a-plone-21-site-to-the-cloud</id><summary type="html">&lt;p&gt;Believe it or not, there are still Plone 2.1 sites in production. (And
+</summary><category term="Plone"></category></entry><entry><title>Using Buildout to deploy a Plone 2.1 site to the cloud</title><link href="http://blog.aclark.net/using-buildout-to-deploy-a-plone-21-site-to-the-cloud.html" rel="alternate"></link><updated>2010-03-15T21:03:00Z</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2010-03-15:using-buildout-to-deploy-a-plone-21-site-to-the-cloud.html</id><summary type="html">&lt;p&gt;Believe it or not, there are still Plone 2.1 sites in production. (And
 1.0 sites too, for that matter. Just look for the tell-tale '/help'
 sign, e.g. &lt;a class="reference external" href="http://www.zope.org/help"&gt;http://www.zope.org/help&lt;/a&gt;, if you suspect Plone 1).&lt;/p&gt;
 &lt;p&gt;I know, because I just &lt;a class="reference external" href="http://harryroseman.com"&gt;deployed one&lt;/a&gt; (a cool artist's site if you have
@@ -4863,10 +4863,10 @@ along which worked with Python 2.4. Just a guess).&lt;/p&gt;
 &lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/using-buildout-to-deploy-a-plone-2-1-site-to-the-cloud.rst&lt;/tt&gt;, line 47); &lt;em&gt;&lt;a href="#id2"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 Unknown target name: &amp;quot;|image0|&amp;quot;.&lt;/div&gt;
 &lt;/div&gt;
-</summary><category term="Plone"></category></entry><entry><title>just friends (first cut).mov</title><link href="http://blog.aclark.net/2010/01/12/just-friends-first-cutmov" rel="alternate"></link><updated>2010-01-12T12:54:00Z</updated><author><name>Alex Clark</name></author><id>tag:blog.aclark.net,2010-01-12:2010/01/12/just-friends-first-cutmov</id><summary type="html">&lt;p&gt;[youtube &lt;a class="reference external" href="http://www.youtube.com/watch?v=_dK-l41uRio&amp;amp;w=420&amp;amp;h=315"&gt;http://www.youtube.com/watch?v=_dK-l41uRio&amp;amp;w=420&amp;amp;h=315&lt;/a&gt;] Just
+</summary><category term="Plone"></category></entry><entry><title>just friends (first cut).mov</title><link href="http://blog.aclark.net/just-friends-first-cutmov.html" rel="alternate"></link><updated>2010-01-12T12:54:00Z</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2010-01-12:just-friends-first-cutmov.html</id><summary type="html">&lt;p&gt;[youtube &lt;a class="reference external" href="http://www.youtube.com/watch?v=_dK-l41uRio&amp;amp;w=420&amp;amp;h=315"&gt;http://www.youtube.com/watch?v=_dK-l41uRio&amp;amp;w=420&amp;amp;h=315&lt;/a&gt;] Just
 Friends ============ Copyright © Alex Clark 2010 (Capo 5) A (form) I
 just want to be friends with you A (form) I don't want to have to do&lt;/p&gt;
-</summary><category term="Music"></category></entry><entry><title>No, really, you can (just) use Buildout to install Plone.</title><link href="http://blog.aclark.net/2010/01/07/no-really-you-can-just-use-buildout-to-install-plone" rel="alternate"></link><updated>2010-01-07T12:39:00Z</updated><author><name>Alex Clark</name></author><id>tag:blog.aclark.net,2010-01-07:2010/01/07/no-really-you-can-just-use-buildout-to-install-plone</id><summary type="html">&lt;p&gt;This is a follow up to my &lt;a class="reference external" href="http://old.aclark.net/team/aclark/blog/plone-as-eggs"&gt;Getting Excited about Plone as Eggs&lt;/a&gt; post,
+</summary><category term="Music"></category></entry><entry><title>No, really, you can (just) use Buildout to install Plone.</title><link href="http://blog.aclark.net/no-really-you-can-just-use-buildout-to-install-plone.html" rel="alternate"></link><updated>2010-01-07T12:39:00Z</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2010-01-07:no-really-you-can-just-use-buildout-to-install-plone.html</id><summary type="html">&lt;p&gt;This is a follow up to my &lt;a class="reference external" href="http://old.aclark.net/team/aclark/blog/plone-as-eggs"&gt;Getting Excited about Plone as Eggs&lt;/a&gt; post,
 because I can't keep updating that one forever.&lt;/p&gt;
 &lt;p&gt;Generally speaking, the recommended (and supported) way to install Plone
 is via the installers, e.g. the &lt;a class="reference external" href="http://launchpad.net/plone/3.3/3.3.3/+download/Plone-3.3.3-UnifiedInstaller.tgz"&gt;Unified Installer&lt;/a&gt;. Obviously, if you
@@ -4966,7 +4966,7 @@ aclark&amp;#64;Alex-Clarks-MacBook-Pro:~/Developer/public-plone/ &amp;gt; bin/in
 &lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/no-really-you-can-just-use-buildout-to-install-plone.rst&lt;/tt&gt;, line 127); &lt;em&gt;&lt;a href="#id2"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 Unknown target name: &amp;quot;|image0|&amp;quot;.&lt;/div&gt;
 &lt;/div&gt;
-</summary><category term="Plone"></category></entry><entry><title>Yup, this blog is now powered by WordPress.</title><link href="http://blog.aclark.net/2010/01/06/yup-this-blog-is-now-powered-by-wordpress" rel="alternate"></link><updated>2010-01-06T22:18:00Z</updated><author><name>Alex Clark</name></author><id>tag:blog.aclark.net,2010-01-06:2010/01/06/yup-this-blog-is-now-powered-by-wordpress</id><summary type="html">&lt;p&gt;&lt;strong&gt;(Or, &amp;quot;How I learned to stop worrying and use the right tool for the
+</summary><category term="Plone"></category></entry><entry><title>Yup, this blog is now powered by WordPress.</title><link href="http://blog.aclark.net/yup-this-blog-is-now-powered-by-wordpress.html" rel="alternate"></link><updated>2010-01-06T22:18:00Z</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2010-01-06:yup-this-blog-is-now-powered-by-wordpress.html</id><summary type="html">&lt;p&gt;&lt;strong&gt;(Or, &amp;quot;How I learned to stop worrying and use the right tool for the
 job.&amp;quot;)&lt;/strong&gt; My first blog entry was &lt;a class="reference external" href="http://blog.aclark.net/2007/10/17/first-post/"&gt;well over two years ago&lt;/a&gt;. I've
 learned enough Plone since then to know that I hardly know anything!
 Toward the end of 2009, I begin to realize that I was doing way too
@@ -4989,14 +4989,14 @@ course, this blog was shipped using &lt;a class="reference external" href="http:
 say this. I want to be more prolific in 2010, and I'm hoping that using
 the right tool for the job will help me achieve that. It has worked
 wonders so far.&lt;/p&gt;
-</summary><category term="Plone"></category></entry><entry><title>you know me (first cut).mov</title><link href="http://blog.aclark.net/2010/01/06/you-know-me-first-cutmov" rel="alternate"></link><updated>2010-01-06T12:24:00Z</updated><author><name>Alex Clark</name></author><id>tag:blog.aclark.net,2010-01-06:2010/01/06/you-know-me-first-cutmov</id><summary type="html">&lt;p&gt;[youtube &lt;a class="reference external" href="http://www.youtube.com/watch?v=CVlBiQ00KDg"&gt;http://www.youtube.com/watch?v=CVlBiQ00KDg&lt;/a&gt;] You Know Me
+</summary><category term="Plone"></category></entry><entry><title>you know me (first cut).mov</title><link href="http://blog.aclark.net/you-know-me-first-cutmov.html" rel="alternate"></link><updated>2010-01-06T12:24:00Z</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2010-01-06:you-know-me-first-cutmov.html</id><summary type="html">&lt;p&gt;[youtube &lt;a class="reference external" href="http://www.youtube.com/watch?v=CVlBiQ00KDg"&gt;http://www.youtube.com/watch?v=CVlBiQ00KDg&lt;/a&gt;] You Know Me
 =========== © 2010 Alex Clark You know me I'm ready to go I'm ready to
 go I'm ready to go&lt;/p&gt;
-</summary><category term="Music"></category></entry><entry><title>be there or be square (first cut).mov</title><link href="http://blog.aclark.net/2010/01/01/be-there-or-be-square-first-cutmov" rel="alternate"></link><updated>2010-01-01T15:04:00Z</updated><author><name>Alex Clark</name></author><id>tag:blog.aclark.net,2010-01-01:2010/01/01/be-there-or-be-square-first-cutmov</id><summary type="html">&lt;p&gt;[youtube &lt;a class="reference external" href="http://www.youtube.com/watch?v=YAv9N0mri_w&amp;amp;w=420&amp;amp;h=315"&gt;http://www.youtube.com/watch?v=YAv9N0mri_w&amp;amp;w=420&amp;amp;h=315&lt;/a&gt;] be
+</summary><category term="Music"></category></entry><entry><title>be there or be square (first cut).mov</title><link href="http://blog.aclark.net/be-there-or-be-square-first-cutmov.html" rel="alternate"></link><updated>2010-01-01T15:04:00Z</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2010-01-01:be-there-or-be-square-first-cutmov.html</id><summary type="html">&lt;p&gt;[youtube &lt;a class="reference external" href="http://www.youtube.com/watch?v=YAv9N0mri_w&amp;amp;w=420&amp;amp;h=315"&gt;http://www.youtube.com/watch?v=YAv9N0mri_w&amp;amp;w=420&amp;amp;h=315&lt;/a&gt;] be
 there or be square ===================== © Alex Clark 2010 D i just want
 to be there D you don't want to be square D either way don't matter D
 that's from what i gather&lt;/p&gt;
-</summary><category term="Music"></category></entry><entry><title>Toronto Plone Add-ons Sprint #1 Report</title><link href="http://blog.aclark.net/2010/01/01/toronto-plone-add-ons-sprint-1-report" rel="alternate"></link><updated>2010-01-01T07:03:00Z</updated><author><name>Alex Clark</name></author><id>tag:blog.aclark.net,2010-01-01:2010/01/01/toronto-plone-add-ons-sprint-1-report</id><summary type="html">&lt;p&gt;Last month, members of the &lt;a class="reference external" href="http://groups.google.com/group/topug"&gt;Toronto Plone user's group&lt;/a&gt; helped with
+</summary><category term="Music"></category></entry><entry><title>Toronto Plone Add-ons Sprint #1 Report</title><link href="http://blog.aclark.net/toronto-plone-add-ons-sprint-1-report.html" rel="alternate"></link><updated>2010-01-01T07:03:00Z</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2010-01-01:toronto-plone-add-ons-sprint-1-report.html</id><summary type="html">&lt;p&gt;Last month, members of the &lt;a class="reference external" href="http://groups.google.com/group/topug"&gt;Toronto Plone user's group&lt;/a&gt; helped with
 Plone.org maintenance. Here is the sprint &amp;quot;report out&amp;quot; from Jordan
 Baker:&lt;/p&gt;
 &lt;div class="section" id="toronto-plone-addons-sprint-report-1"&gt;
@@ -5033,7 +5033,7 @@ Please help us spread the word to interested parties... more details to
 come.&lt;/p&gt;
 &lt;/p&gt;&lt;/div&gt;
 &lt;/div&gt;
-</summary><category term="Plone"></category></entry><entry><title>New year’s Python meme</title><link href="http://blog.aclark.net/2009/12/31/new-years-python-meme" rel="alternate"></link><updated>2009-12-31T18:22:00Z</updated><author><name>Alex Clark</name></author><id>tag:blog.aclark.net,2009-12-31:2009/12/31/new-years-python-meme</id><summary type="html">&lt;div class="section" id="image0-whats-the-coolest-python-application-framework-or-library-you-have-discovered-in-2009"&gt;
+</summary><category term="Plone"></category></entry><entry><title>New year’s Python meme</title><link href="http://blog.aclark.net/new-years-python-meme.html" rel="alternate"></link><updated>2009-12-31T18:22:00Z</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2009-12-31:new-years-python-meme.html</id><summary type="html">&lt;div class="section" id="image0-whats-the-coolest-python-application-framework-or-library-you-have-discovered-in-2009"&gt;
 &lt;h2&gt;&lt;a href="#id1"&gt;&lt;span class="problematic" id="id2"&gt;`|image0|`_&lt;/span&gt;&lt;/a&gt;What’s the coolest Python application, framework or library you have discovered in 2009?&lt;/h2&gt;
 &lt;p&gt;That would be &lt;a class="reference external" href="http://zenoss.org"&gt;Zenoss&lt;/a&gt;. I'm very impressed with the application as well
 as the community, which is awesome. They remind me a lot of the Plone
@@ -5086,7 +5086,7 @@ it useful.&lt;/li&gt;
 &lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/new-years-python-meme.rst&lt;/tt&gt;, line 7); &lt;em&gt;&lt;a href="#id2"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 Unknown target name: &amp;quot;|image0|&amp;quot;.&lt;/div&gt;
 &lt;/div&gt;
-</summary><category term="Python"></category></entry><entry><title>Review of Veda Williams&amp;#039; Plone 3 Theming</title><link href="http://blog.aclark.net/2009/09/22/review-of-veda-williams039-plone-3-theming" rel="alternate"></link><updated>2009-09-22T16:17:00Z</updated><author><name>Alex Clark</name></author><id>tag:blog.aclark.net,2009-09-22:2009/09/22/review-of-veda-williams039-plone-3-theming</id><summary type="html">&lt;p&gt;&lt;a href="#id2"&gt;&lt;span class="problematic" id="id3"&gt;`|image0|`_&lt;/span&gt;&lt;/a&gt;First things first, I can't overstate enough how much I
+</summary><category term="Python"></category></entry><entry><title>Review of Veda Williams&amp;#039; Plone 3 Theming</title><link href="http://blog.aclark.net/review-of-veda-williams039-plone-3-theming.html" rel="alternate"></link><updated>2009-09-22T16:17:00Z</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2009-09-22:review-of-veda-williams039-plone-3-theming.html</id><summary type="html">&lt;p&gt;&lt;a href="#id2"&gt;&lt;span class="problematic" id="id3"&gt;`|image0|`_&lt;/span&gt;&lt;/a&gt;First things first, I can't overstate enough how much I
 personally appreciate Veda's efforts to bring the
 (currently-and-unfortunately, but-not-for-long) complex world of Plone
 theming to the masses. It's an acquired taste, but once you get the hang
@@ -5285,7 +5285,7 @@ Duplicate target name, cannot be used as a unique reference: &amp;quot;pypi feat
 &lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/review-of-veda-williams-plone-3-theming.rst&lt;/tt&gt;, line 174); &lt;em&gt;&lt;a href="#id7"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 Duplicate target name, cannot be used as a unique reference: &amp;quot;pypi features of plone.org mentioned&amp;quot;.&lt;/div&gt;
 &lt;/div&gt;
-</summary><category term="Plone"></category></entry><entry><title>A sane buildout for repoze.zope2 + Plone?</title><link href="http://blog.aclark.net/2009/06/18/a-sane-buildout-for-repozezope2-plone" rel="alternate"></link><updated>2009-06-18T22:09:00Z</updated><author><name>Alex Clark</name></author><id>tag:blog.aclark.net,2009-06-18:2009/06/18/a-sane-buildout-for-repozezope2-plone</id><summary type="html">&lt;p&gt;(This is also a follow-up of sorts to &lt;a class="reference external" href="http://www.martinaspeli.net/articles/rolling-out-repoze"&gt;Martin Aspeli's excellent
+</summary><category term="Plone"></category></entry><entry><title>A sane buildout for repoze.zope2 + Plone?</title><link href="http://blog.aclark.net/a-sane-buildout-for-repozezope2-plone.html" rel="alternate"></link><updated>2009-06-18T22:09:00Z</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2009-06-18:a-sane-buildout-for-repozezope2-plone.html</id><summary type="html">&lt;p&gt;(This is also a follow-up of sorts to &lt;a class="reference external" href="http://www.martinaspeli.net/articles/rolling-out-repoze"&gt;Martin Aspeli's excellent
 introduction to repoze and Plone from last year&lt;/a&gt;.)&lt;/p&gt;
 &lt;div class="section" id="a-tale-of-two-buildouts"&gt;
 &lt;h2&gt;A Tale of Two Buildouts&lt;/h2&gt;
@@ -5456,7 +5456,7 @@ starting Zope (via paste) and adding a Plone site, nothing more! :-)&lt;/p&gt;
 &lt;p&gt;I, however, am getting a new server next week and will be hosting this
 site on &lt;a class="reference external" href="http://repoze.org/quickstart.html#repoze.zope2"&gt;repoze.zope2&lt;/a&gt; very shortly ;-)&lt;/p&gt;
 &lt;/div&gt;
-</summary><category term="Plone"></category></entry><entry><title>A LAMP buildout for Wordpress and other PHP apps</title><link href="http://blog.aclark.net/2009/04/21/a-lamp-buildout-for-wordpress-and-other-php-apps" rel="alternate"></link><updated>2009-04-21T00:23:00Z</updated><author><name>Alex Clark</name></author><id>tag:blog.aclark.net,2009-04-21:2009/04/21/a-lamp-buildout-for-wordpress-and-other-php-apps</id><summary type="html">&lt;div class="section" id="a-buildout-for-php"&gt;
+</summary><category term="Plone"></category></entry><entry><title>A LAMP buildout for Wordpress and other PHP apps</title><link href="http://blog.aclark.net/a-lamp-buildout-for-wordpress-and-other-php-apps.html" rel="alternate"></link><updated>2009-04-21T00:23:00Z</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2009-04-21:a-lamp-buildout-for-wordpress-and-other-php-apps.html</id><summary type="html">&lt;div class="section" id="a-buildout-for-php"&gt;
 &lt;h2&gt;A Buildout for PHP?&lt;/h2&gt;
 &lt;p&gt;Having been a Plone Consultant for many years now, I find it very
 painful to deal with non-Python-based technologies and I often will go
@@ -5636,7 +5636,7 @@ programs =
 &lt;/p&gt;&lt;p&gt;&lt;a class="reference external" href="http://svn.aclark.net/svn/public/buildout/lamp/trunk/"&gt;http://svn.aclark.net/svn/public/buildout/lamp/trunk/&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;and let me know how it goes!&lt;/p&gt;
 &lt;/div&gt;
-</summary><category term="Plone"></category></entry><entry><title>Is anyone using Plone.org&amp;#039;s new PyPI functionality?</title><link href="http://blog.aclark.net/2009/03/13/is-anyone-using-ploneorg039s-new-pypi-functionality" rel="alternate"></link><updated>2009-03-13T11:09:00Z</updated><author><name>Alex Clark</name></author><id>tag:blog.aclark.net,2009-03-13:2009/03/13/is-anyone-using-ploneorg039s-new-pypi-functionality</id><summary type="html">&lt;p&gt;Lots of exciting things are happening with Plone.org!&lt;/p&gt;
+</summary><category term="Plone"></category></entry><entry><title>Is anyone using Plone.org&amp;#039;s new PyPI functionality?</title><link href="http://blog.aclark.net/is-anyone-using-ploneorg039s-new-pypi-functionality.html" rel="alternate"></link><updated>2009-03-13T11:09:00Z</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2009-03-13:is-anyone-using-ploneorg039s-new-pypi-functionality.html</id><summary type="html">&lt;p&gt;Lots of exciting things are happening with Plone.org!&lt;/p&gt;
 &lt;ol class="arabic simple"&gt;
 &lt;li&gt;&lt;a class="reference external" href="http://twitter.com/calvinhp"&gt;Calvin Hendryx-Parker&lt;/a&gt; and &lt;a class="reference external" href="http://sixfeetup.com"&gt;Six Feet Up&lt;/a&gt; are working on moving
 *.plone.org to one of their powerful new servers (with some
@@ -5659,12 +5659,12 @@ new PyPI functionality here, if you haven't already:
 &lt;a class="reference external" href="http://plone.org/products/Products.todo/"&gt;http://plone.org/products/Products.todo/.&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;So if you are using it, I'd definitely like to hear your experiences. Or
 if not, please give it a try!&lt;/p&gt;
-</summary><category term="Plone"></category></entry><entry><title>Nirvana Old Age Interrupted</title><link href="http://blog.aclark.net/2009/02/07/nirvana-old-age-interrupted" rel="alternate"></link><updated>2009-02-07T21:26:00Z</updated><author><name>Alex Clark</name></author><id>tag:blog.aclark.net,2009-02-07:2009/02/07/nirvana-old-age-interrupted</id><summary type="html">&lt;p&gt;[youtube &lt;a class="reference external" href="http://www.youtube.com/watch?v=ec200NlbTA4&amp;amp;w=420&amp;amp;h=315"&gt;http://www.youtube.com/watch?v=ec200NlbTA4&amp;amp;w=420&amp;amp;h=315&lt;/a&gt;] This is
+</summary><category term="Plone"></category></entry><entry><title>Nirvana Old Age Interrupted</title><link href="http://blog.aclark.net/nirvana-old-age-interrupted.html" rel="alternate"></link><updated>2009-02-07T21:26:00Z</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2009-02-07:nirvana-old-age-interrupted.html</id><summary type="html">&lt;p&gt;[youtube &lt;a class="reference external" href="http://www.youtube.com/watch?v=ec200NlbTA4&amp;amp;w=420&amp;amp;h=315"&gt;http://www.youtube.com/watch?v=ec200NlbTA4&amp;amp;w=420&amp;amp;h=315&lt;/a&gt;] This is
 a cover of Nirvana's &amp;quot;Old Age&amp;quot; and is absolutely hilarious. Not because
 of my performance (although that is funny too) but because, while I
 thought I had permission from my wife to make noise, you will see at the
 end I most certainly did not!&lt;/p&gt;
-</summary><category term="Music"></category></entry><entry><title>Help esteele go to Baarn!</title><link href="http://blog.aclark.net/2009/01/23/help-esteele-go-to-baarn" rel="alternate"></link><updated>2009-01-23T12:38:00Z</updated><author><name>Alex Clark</name></author><id>tag:blog.aclark.net,2009-01-23:2009/01/23/help-esteele-go-to-baarn</id><summary type="html">&lt;p&gt;A few years back, I was &lt;a class="reference external" href="http://plone.org/events/sprints/past-sprints/baarn-ui-sprint-2007/"&gt;invited to the Baarn UI Sprint 2007.&lt;/a&gt; This was
+</summary><category term="Music"></category></entry><entry><title>Help esteele go to Baarn!</title><link href="http://blog.aclark.net/help-esteele-go-to-baarn.html" rel="alternate"></link><updated>2009-01-23T12:38:00Z</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2009-01-23:help-esteele-go-to-baarn.html</id><summary type="html">&lt;p&gt;A few years back, I was &lt;a class="reference external" href="http://plone.org/events/sprints/past-sprints/baarn-ui-sprint-2007/"&gt;invited to the Baarn UI Sprint 2007.&lt;/a&gt; This was
 a huge turning point for me and Plone. Having just attended the &lt;a class="reference external" href="http://plone.org/events/conferences/seattle-2006"&gt;annual
 conference in Seattle&lt;/a&gt;, I was raring to contribute. And in getting
 invited, I felt like a Catholic getting invited to the Vatican to hang
@@ -5691,7 +5691,7 @@ something here:
 attending this event (in fact, Weblion is funding the trip, donations
 are for food and incidentals if I recall correctly).&lt;/p&gt;
 &lt;p&gt;So please help! :-D&lt;/p&gt;
-</summary><category term="Plone"></category></entry><entry><title>Getting excited about Plone as eggs</title><link href="http://blog.aclark.net/2008/12/15/getting-excited-about-plone-as-eggs" rel="alternate"></link><updated>2008-12-15T12:17:00Z</updated><author><name>Alex Clark</name></author><id>tag:blog.aclark.net,2008-12-15:2008/12/15/getting-excited-about-plone-as-eggs</id><summary type="html">&lt;div class="portalMessage"&gt;&lt;div style="color:black;"&gt;&lt;p&gt;Updated for 4.x&lt;/p&gt;
+</summary><category term="Plone"></category></entry><entry><title>Getting excited about Plone as eggs</title><link href="http://blog.aclark.net/getting-excited-about-plone-as-eggs.html" rel="alternate"></link><updated>2008-12-15T12:17:00Z</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2008-12-15:getting-excited-about-plone-as-eggs.html</id><summary type="html">&lt;div class="portalMessage"&gt;&lt;div style="color:black;"&gt;&lt;p&gt;Updated for 4.x&lt;/p&gt;
 &lt;/div&gt;&lt;/div&gt;&lt;p&gt;I'm really excited about this, as it greatly simplifies the development
 and deployment story for &lt;a class="reference external" href="http://plone.org"&gt;Plone&lt;/a&gt;. For example, you can now create a
 Plone buildout.cfg file as follows:&lt;/p&gt;
@@ -5711,7 +5711,7 @@ eggs =
 &lt;p&gt;For full instructions, see:
 &lt;a class="reference external" href="http://svn.aclark.net/svn/public/buildout/plone/trunk/README.txt"&gt;http://svn.aclark.net/svn/public/buildout/plone/trunk/README.txt&lt;/a&gt;&lt;/p&gt;
 &lt;/p&gt;&lt;p&gt;Thanks framework team and core developers for this impressive release!&lt;/p&gt;
-</summary><category term="Plone"></category></entry><entry><title>ZPUGDC Meeting Tonight</title><link href="http://blog.aclark.net/2008/12/02/zpugdc-meeting-tonight" rel="alternate"></link><updated>2008-12-02T07:22:00Z</updated><author><name>Alex Clark</name></author><id>tag:blog.aclark.net,2008-12-02:2008/12/02/zpugdc-meeting-tonight</id><summary type="html">&lt;p&gt;&lt;a href="#id1"&gt;&lt;span class="problematic" id="id2"&gt;`|image0|`_&lt;/span&gt;&lt;/a&gt;Reblog:&lt;/p&gt;
+</summary><category term="Plone"></category></entry><entry><title>ZPUGDC Meeting Tonight</title><link href="http://blog.aclark.net/zpugdc-meeting-tonight.html" rel="alternate"></link><updated>2008-12-02T07:22:00Z</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2008-12-02:zpugdc-meeting-tonight.html</id><summary type="html">&lt;p&gt;&lt;a href="#id1"&gt;&lt;span class="problematic" id="id2"&gt;`|image0|`_&lt;/span&gt;&lt;/a&gt;Reblog:&lt;/p&gt;
 &lt;p&gt;&lt;a class="reference external" href="http://python-groups.blogspot.com/2008/12/zpugdc-dc-python-meetup-december.html"&gt;http://python-groups.blogspot.com/2008/12/zpugdc-dc-python-meetup-december.html&lt;/a&gt;&lt;/p&gt;
 &lt;div class="system-messages section"&gt;
 &lt;h2&gt;Docutils System Messages&lt;/h2&gt;
@@ -5719,7 +5719,7 @@ eggs =
 &lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/zpugdc-meeting-tonight.rst&lt;/tt&gt;, line 6); &lt;em&gt;&lt;a href="#id2"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 Unknown target name: &amp;quot;|image0|&amp;quot;.&lt;/div&gt;
 &lt;/div&gt;
-</summary><category term="Plone"></category></entry><entry><title>Naked Plone Theme</title><link href="http://blog.aclark.net/2008/11/19/naked-plone-theme" rel="alternate"></link><updated>2008-11-19T10:30:00Z</updated><author><name>Alex Clark</name></author><id>tag:blog.aclark.net,2008-11-19:2008/11/19/naked-plone-theme</id><summary type="html">&lt;p&gt;&lt;a href="#id1"&gt;&lt;span class="problematic" id="id2"&gt;`|image0|`_&lt;/span&gt;&lt;/a&gt;I've needed this for quite some time, but I'm just getting
+</summary><category term="Plone"></category></entry><entry><title>Naked Plone Theme</title><link href="http://blog.aclark.net/naked-plone-theme.html" rel="alternate"></link><updated>2008-11-19T10:30:00Z</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2008-11-19:naked-plone-theme.html</id><summary type="html">&lt;p&gt;&lt;a href="#id1"&gt;&lt;span class="problematic" id="id2"&gt;`|image0|`_&lt;/span&gt;&lt;/a&gt;I've needed this for quite some time, but I'm just getting
 around to shipping it. In addition to making it easy to 'turn off' a lot
 of default Plone css, js, etc., this product (discreetly) adds one of my
 all time favorite tweaks, the 'Advanced Setup' site action. (Limi,
@@ -5734,7 +5734,7 @@ easily, wherever you happen to be on the site. (See screenshot.)&lt;/p&gt;
 &lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/naked-plone-theme.rst&lt;/tt&gt;, line 6); &lt;em&gt;&lt;a href="#id2"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 Unknown target name: &amp;quot;|image0|&amp;quot;.&lt;/div&gt;
 &lt;/div&gt;
-</summary><category term="Plone"></category></entry><entry><title>Products.todo 0.1</title><link href="http://blog.aclark.net/2008/11/13/productstodo-01" rel="alternate"></link><updated>2008-11-13T08:07:00Z</updated><author><name>Alex Clark</name></author><id>tag:blog.aclark.net,2008-11-13:2008/11/13/productstodo-01</id><summary type="html">&lt;p&gt;&lt;a href="#id1"&gt;&lt;span class="problematic" id="id2"&gt;`|image0|`_&lt;/span&gt;&lt;/a&gt;I needed a project to jump start my return to Plone after
+</summary><category term="Plone"></category></entry><entry><title>Products.todo 0.1</title><link href="http://blog.aclark.net/productstodo-01.html" rel="alternate"></link><updated>2008-11-13T08:07:00Z</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2008-11-13:productstodo-01.html</id><summary type="html">&lt;p&gt;&lt;a href="#id1"&gt;&lt;span class="problematic" id="id2"&gt;`|image0|`_&lt;/span&gt;&lt;/a&gt;I needed a project to jump start my return to Plone after
 spending months organizing &lt;a class="reference external" href="http://plone.org/2008"&gt;Plone Conference 2008&lt;/a&gt;, and I had the idea
 that I wanted to, very quickly, see a product's development cycle
 through from start to finish, including:&lt;/p&gt;
@@ -5782,7 +5782,7 @@ maybe I need to focus on testing just the features I add...&lt;/li&gt;
 &lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/products-todo-0-1.rst&lt;/tt&gt;, line 6); &lt;em&gt;&lt;a href="#id2"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 Unknown target name: &amp;quot;|image0|&amp;quot;.&lt;/div&gt;
 &lt;/div&gt;
-</summary><category term="Plone"></category></entry><entry><title>September 2008 is the month of Plone.org</title><link href="http://blog.aclark.net/2008/09/02/september-2008-is-the-month-of-ploneorg" rel="alternate"></link><updated>2008-09-02T17:15:00Z</updated><author><name>Alex Clark</name></author><id>tag:blog.aclark.net,2008-09-02:2008/09/02/september-2008-is-the-month-of-ploneorg</id><summary type="html">&lt;p&gt;&lt;a class="reference external" href="http://plone.org/2008"&gt;Plone Conference 2008&lt;/a&gt; is fast approaching and in order to avoid
+</summary><category term="Plone"></category></entry><entry><title>September 2008 is the month of Plone.org</title><link href="http://blog.aclark.net/september-2008-is-the-month-of-ploneorg.html" rel="alternate"></link><updated>2008-09-02T17:15:00Z</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2008-09-02:september-2008-is-the-month-of-ploneorg.html</id><summary type="html">&lt;p&gt;&lt;a class="reference external" href="http://plone.org/2008"&gt;Plone Conference 2008&lt;/a&gt; is fast approaching and in order to avoid
 embarrassment, disappointment, and a huge public outcry, I'd like to
 kick off &lt;em&gt;&amp;quot;September 2008: The Month Of Plone.org&amp;quot;&lt;/em&gt; (cue: daunting
 music) so that we can finish upgrading plone.org to Plone 3 &lt;strong&gt;before the
@@ -5790,7 +5790,7 @@ conference begins&lt;/strong&gt;. I have created an OpenPlans project to help
 coordinate efforts:
 &lt;a class="reference external" href="http://www.openplans.org/projects/ploneorg-upgrade/project-home"&gt;http://www.openplans.org/projects/ploneorg-upgrade/project-home&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;If you are interested in helping, please &lt;a class="reference external" href="http://www.openplans.org/projects/ploneorg-upgrade/request-membership"&gt;join the project&lt;/a&gt;.&lt;/p&gt;
-</summary><category term="Plone"></category></entry><entry><title>repoze.bfg tonight FTW!</title><link href="http://blog.aclark.net/2008/09/02/repozebfg-tonight-ftw" rel="alternate"></link><updated>2008-09-02T13:09:00Z</updated><author><name>Alex Clark</name></author><id>tag:blog.aclark.net,2008-09-02:2008/09/02/repozebfg-tonight-ftw</id><summary type="html">&lt;p&gt;Tonight ex-Zope Corporation luminary &lt;strong&gt;Chris McDonough&lt;/strong&gt; unveils his
+</summary><category term="Plone"></category></entry><entry><title>repoze.bfg tonight FTW!</title><link href="http://blog.aclark.net/repozebfg-tonight-ftw.html" rel="alternate"></link><updated>2008-09-02T13:09:00Z</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2008-09-02:repozebfg-tonight-ftw.html</id><summary type="html">&lt;p&gt;Tonight ex-Zope Corporation luminary &lt;strong&gt;Chris McDonough&lt;/strong&gt; unveils his
 &lt;a class="reference external" href="http://static.repoze.org/bfgdocs/"&gt;BFG&lt;/a&gt; (Big ****ing Gun) which:&lt;/p&gt;
 &lt;p&gt;(excerpt from &lt;a class="reference external" href="http://static.repoze.org/bfgdocs/index.html"&gt;http://static.repoze.org/bfgdocs/index.html&lt;/a&gt;)&lt;/p&gt;
 &lt;ul class="simple"&gt;
@@ -5813,7 +5813,7 @@ Conference 2008&lt;/a&gt; at the Ronald Reagan Building in DC (and &lt;a class="
 Arlington Career Center in VA).&lt;/p&gt;
 &lt;/p&gt;&lt;p&gt;See you tonight!&lt;/p&gt;
 &lt;p&gt;&lt;a class="reference external" href="http://zpugdc.org/meetings/mtg67"&gt;http://zpugdc.org/meetings/mtg67&lt;/a&gt;&lt;/p&gt;
-</summary><category term="Plone"></category></entry><entry><title>RE: collective.recipe.supervisor: Thank you!</title><link href="http://blog.aclark.net/2008/08/10/re-collectiverecipesupervisor-thank-you" rel="alternate"></link><updated>2008-08-10T05:24:00Z</updated><author><name>Alex Clark</name></author><id>tag:blog.aclark.net,2008-08-10:2008/08/10/re-collectiverecipesupervisor-thank-you</id><summary type="html">&lt;p&gt;Since I &lt;a class="reference external" href="/Members/aclark/supervisor-rocks/"&gt;last wrote about supervisor&lt;/a&gt; it's become even more easy and
+</summary><category term="Plone"></category></entry><entry><title>RE: collective.recipe.supervisor: Thank you!</title><link href="http://blog.aclark.net/re-collectiverecipesupervisor-thank-you.html" rel="alternate"></link><updated>2008-08-10T05:24:00Z</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2008-08-10:re-collectiverecipesupervisor-thank-you.html</id><summary type="html">&lt;p&gt;Since I &lt;a class="reference external" href="/Members/aclark/supervisor-rocks/"&gt;last wrote about supervisor&lt;/a&gt; it's become even more easy and
 more fun to add it to your buildout with
 &lt;a class="reference external" href="http://pypi.python.org/pypi/collective.recipe.supervisor/0.4"&gt;collective.recipe.supervisor&lt;/a&gt;. I &lt;strong&gt;really&lt;/strong&gt; appreciate what this
 recipe allows me to do (because it makes my job/life so much easier) and
@@ -5917,7 +5917,7 @@ instance: stopped$ bin/supervisorctl start  all
 zeo: startedinstance: started
 &lt;/pre&gt;
 &lt;p&gt;and generally go about your business, unfettered.&lt;/p&gt;
-&lt;/p&gt;</summary><category term="Plone"></category></entry><entry><title>Plone Conference 2008: Please register for an early bird admission today.</title><link href="http://blog.aclark.net/2008/07/01/plone-conference-2008-please-register-for-an-early-bird-admission-today" rel="alternate"></link><updated>2008-07-01T08:09:00Z</updated><author><name>Alex Clark</name></author><id>tag:blog.aclark.net,2008-07-01:2008/07/01/plone-conference-2008-please-register-for-an-early-bird-admission-today</id><summary type="html">&lt;p&gt;&lt;a class="reference external" href="http://ploneconf2008.eventbrite.com/"&gt;http://ploneconf2008.eventbrite.com/&lt;/a&gt;&lt;/p&gt;
+&lt;/p&gt;</summary><category term="Plone"></category></entry><entry><title>Plone Conference 2008: Please register for an early bird admission today.</title><link href="http://blog.aclark.net/plone-conference-2008-please-register-for-an-early-bird-admission-today.html" rel="alternate"></link><updated>2008-07-01T08:09:00Z</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2008-07-01:plone-conference-2008-please-register-for-an-early-bird-admission-today.html</id><summary type="html">&lt;p&gt;&lt;a class="reference external" href="http://ploneconf2008.eventbrite.com/"&gt;http://ploneconf2008.eventbrite.com/&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href="#id3"&gt;&lt;span class="problematic" id="id4"&gt;`|image0|`_&lt;/span&gt;&lt;/a&gt;Organizing a &lt;a class="reference external" href="http://plone.org/events/conference/2008-washington-dc"&gt;Plone Conference&lt;/a&gt; is a lot like planning to
 invite 300-400 of your closest friends over for a 7-day long party, or,
 at least, it feels that way to me. I'm really looking forward to seeing
@@ -5961,7 +5961,7 @@ Duplicate target name, cannot be used as a unique reference: &amp;quot;http://pl
 &lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/plone-conference-2008-please-register-for-an-early-bird-admission-today.rst&lt;/tt&gt;, line 41); &lt;em&gt;&lt;a href="#id8"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 Duplicate target name, cannot be used as a unique reference: &amp;quot;http://ploneconf2008.eventbrite.com&amp;quot;.&lt;/div&gt;
 &lt;/div&gt;
-</summary><category term="Plone"></category></entry><entry><title>Placeful Theming</title><link href="http://blog.aclark.net/2008/06/02/placeful-theming" rel="alternate"></link><updated>2008-06-02T07:02:00Z</updated><author><name>Alex Clark</name></author><id>tag:blog.aclark.net,2008-06-02:2008/06/02/placeful-theming</id><summary type="html">&lt;p&gt;I had to do a bit of placeful theming lately and I thought I would share
+</summary><category term="Plone"></category></entry><entry><title>Placeful Theming</title><link href="http://blog.aclark.net/placeful-theming.html" rel="alternate"></link><updated>2008-06-02T07:02:00Z</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2008-06-02:placeful-theming.html</id><summary type="html">&lt;p&gt;I had to do a bit of placeful theming lately and I thought I would share
 the techniques I used (thanks davisagli, jonbaldievieso, vedawms). Let's
 say you have a Plone 3 site, and for some location /foo/bar/baz, you
 want 'baz' and everything below it to look different. I made this change
@@ -6009,7 +6009,7 @@ body.section-foo-bar-baz {    background-image: url(gradient.png);}.section-foo-
 &lt;/pre&gt;
 &lt;p&gt;I hope this helps someone get started with placeful theming.&lt;/p&gt;
 &lt;/p&gt;&lt;/div&gt;
-</summary><category term="Plone"></category></entry><entry><title>Plone.org upgrade remote sprint!</title><link href="http://blog.aclark.net/2008/05/22/ploneorg-upgrade-remote-sprint" rel="alternate"></link><updated>2008-05-22T07:07:00Z</updated><author><name>Alex Clark</name></author><id>tag:blog.aclark.net,2008-05-22:2008/05/22/ploneorg-upgrade-remote-sprint</id><summary type="html">&lt;p&gt;Join us this Saturday in &lt;a class="reference external" href="irc://irc.freenode.net#PxC"&gt;irc://irc.freenode.net#PxC&lt;/a&gt; (channel reserved
+</summary><category term="Plone"></category></entry><entry><title>Plone.org upgrade remote sprint!</title><link href="http://blog.aclark.net/ploneorg-upgrade-remote-sprint.html" rel="alternate"></link><updated>2008-05-22T07:07:00Z</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2008-05-22:ploneorg-upgrade-remote-sprint.html</id><summary type="html">&lt;p&gt;Join us this Saturday in &lt;a class="reference external" href="irc://irc.freenode.net#PxC"&gt;irc://irc.freenode.net#PxC&lt;/a&gt; (channel reserved
 for discussion of PloneHelpCenter/PloneSoftwareCenter) at 4:00AM EDT to
 work on Plone.org upgrade issues, including:&lt;/p&gt;
 &lt;ul class="simple"&gt;
@@ -6025,7 +6025,7 @@ implementing pluggable storage in PloneSoftwareCenter.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Hope to &amp;quot;see&amp;quot; you there. We have lots of jobs for lots of people if you
 are interested in helping.&lt;/p&gt;
-&lt;/p&gt;</summary><category term="Plone"></category></entry><entry><title>Supervisor rocks!</title><link href="http://blog.aclark.net/2008/05/15/supervisor-rocks" rel="alternate"></link><updated>2008-05-15T07:41:00Z</updated><author><name>Alex Clark</name></author><id>tag:blog.aclark.net,2008-05-15:2008/05/15/supervisor-rocks</id><summary type="html">&lt;p&gt;&lt;a href="#id2"&gt;&lt;span class="problematic" id="id3"&gt;`|image0|`_&lt;/span&gt;&lt;/a&gt;(This is essentially a reiteration of &lt;a class="reference external" href="http://blog.delaguardia.com.mx/index.php?op=ViewArticle&amp;amp;articleId=106&amp;amp;blogId=1"&gt;Carlos' previous
+&lt;/p&gt;</summary><category term="Plone"></category></entry><entry><title>Supervisor rocks!</title><link href="http://blog.aclark.net/supervisor-rocks.html" rel="alternate"></link><updated>2008-05-15T07:41:00Z</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2008-05-15:supervisor-rocks.html</id><summary type="html">&lt;p&gt;&lt;a href="#id2"&gt;&lt;span class="problematic" id="id3"&gt;`|image0|`_&lt;/span&gt;&lt;/a&gt;(This is essentially a reiteration of &lt;a class="reference external" href="http://blog.delaguardia.com.mx/index.php?op=ViewArticle&amp;amp;articleId=106&amp;amp;blogId=1"&gt;Carlos' previous
 blog entry&lt;/a&gt;. :-))&lt;/p&gt;
 &lt;p&gt;It just occurred to me that we should probably be using &lt;a class="reference external" href="http://supervisord.org"&gt;Supervisor&lt;/a&gt;
 all over the place in our buildouts. Here's why:&lt;/p&gt;
@@ -6104,7 +6104,7 @@ Duplicate target name, cannot be used as a unique reference: &amp;quot;here&amp;
 &lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/supervisor-rocks.rst&lt;/tt&gt;, line 100); &lt;em&gt;&lt;a href="#id9"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 Duplicate target name, cannot be used as a unique reference: &amp;quot;here&amp;quot;.&lt;/div&gt;
 &lt;/div&gt;
-</summary><category term="Plone"></category></entry><entry><title>Plone.org upgrade update!</title><link href="http://blog.aclark.net/2008/05/01/ploneorg-upgrade-update" rel="alternate"></link><updated>2008-05-01T11:53:00Z</updated><author><name>Alex Clark</name></author><id>tag:blog.aclark.net,2008-05-01:2008/05/01/ploneorg-upgrade-update</id><summary type="html">&lt;p&gt;Thanks again to everyone who contributed to my travel fund. I really
+</summary><category term="Plone"></category></entry><entry><title>Plone.org upgrade update!</title><link href="http://blog.aclark.net/ploneorg-upgrade-update.html" rel="alternate"></link><updated>2008-05-01T11:53:00Z</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2008-05-01:ploneorg-upgrade-update.html</id><summary type="html">&lt;p&gt;Thanks again to everyone who contributed to my travel fund. I really
 appreciate it and being able to work closely with Tarek Ziadé and
 Matthew Wilkes on PloneSoftwareCenter and PloneOrg was amazing,
 productive, and fun. Of course being in the company of all the sprinters
@@ -6153,7 +6153,7 @@ the delay (I promised end of April!) Needless to say, I will be actively
 working on finishing everything between now and then.&lt;/p&gt;
 &lt;/p&gt;&lt;p&gt;We will be remote sprinting in #psc on irc.freenode.net this Sunday &amp;#64;
 2:00PM EDT if you would like to join us!&lt;/p&gt;
-</summary><category term="Plone"></category></entry><entry><title>Help me upgrade plone.org</title><link href="http://blog.aclark.net/2008/04/18/help-me-upgrade-ploneorg" rel="alternate"></link><updated>2008-04-18T18:01:00Z</updated><author><name>Alex Clark</name></author><id>tag:blog.aclark.net,2008-04-18:2008/04/18/help-me-upgrade-ploneorg</id><summary type="html">&lt;p&gt;You may be wondering why plone.org is not running the latest version of
+</summary><category term="Plone"></category></entry><entry><title>Help me upgrade plone.org</title><link href="http://blog.aclark.net/help-me-upgrade-ploneorg.html" rel="alternate"></link><updated>2008-04-18T18:01:00Z</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2008-04-18:help-me-upgrade-ploneorg.html</id><summary type="html">&lt;p&gt;You may be wondering why plone.org is not running the latest version of
 Plone. Well wonder no more! By the end of this month, it will be. I have
 been &lt;a class="reference external" href="http://dev.plone.org/plone/log/PloneOrg/buildouts/branches/3.0"&gt;working on&lt;/a&gt;the various bits and pieces needed to upgrade for
 months, including:&lt;/p&gt;
@@ -6190,20 +6190,20 @@ Witsch, MattBowen!&lt;/p&gt;
 &lt;/p&gt;&lt;div class="figure align-center"&gt;
 &lt;img alt="" src="https://www.paypal.com/en_US/i/scr/pixel.gif" /&gt;
 &lt;/div&gt;
-</summary><category term="Plone"></category></entry><entry><title>NASA story slashdotted!</title><link href="http://blog.aclark.net/2008/04/12/nasa-story-slashdotted" rel="alternate"></link><updated>2008-04-12T06:43:00Z</updated><author><name>Alex Clark</name></author><id>tag:blog.aclark.net,2008-04-12:2008/04/12/nasa-story-slashdotted</id><summary type="html">&lt;p&gt;Hi all,&lt;/p&gt;
+</summary><category term="Plone"></category></entry><entry><title>NASA story slashdotted!</title><link href="http://blog.aclark.net/nasa-story-slashdotted.html" rel="alternate"></link><updated>2008-04-12T06:43:00Z</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2008-04-12:nasa-story-slashdotted.html</id><summary type="html">&lt;p&gt;Hi all,&lt;/p&gt;
 &lt;p&gt;I just noticed that my submission to slashdot was posted (sorry, NASA
 ;-). Please use your mod points and/or add comments (or do whatever
 slashdot people do) to promote Plone. I've sent an email asking that the
 link to plone.org be restored (it was removed by the editor, probably
 because I made it too big :-).&lt;/p&gt;
 &lt;p&gt;&lt;a class="reference external" href="http://science.slashdot.org/science/08/04/12/0010230.shtml"&gt;http://science.slashdot.org/science/08/04/12/0010230.shtml&lt;/a&gt;&lt;/p&gt;
-</summary><category term="Plone"></category></entry><entry><title>NASA starts new science Web site, powered by Plone</title><link href="http://blog.aclark.net/2008/04/10/nasa-starts-new-science-web-site-powered-by-plone" rel="alternate"></link><updated>2008-04-10T14:25:00Z</updated><author><name>Alex Clark</name></author><id>tag:blog.aclark.net,2008-04-10:2008/04/10/nasa-starts-new-science-web-site-powered-by-plone</id><summary type="html">&lt;p&gt;For those who haven't heard about it yet: last night's (5:30PM EDT)
+</summary><category term="Plone"></category></entry><entry><title>NASA starts new science Web site, powered by Plone</title><link href="http://blog.aclark.net/nasa-starts-new-science-web-site-powered-by-plone.html" rel="alternate"></link><updated>2008-04-10T14:25:00Z</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2008-04-10:nasa-starts-new-science-web-site-powered-by-plone.html</id><summary type="html">&lt;p&gt;For those who haven't heard about it yet: last night's (5:30PM EDT)
 launch of &lt;a class="reference external" href="http://nasascience.nasa.gov"&gt;http://nasascience.nasa.gov&lt;/a&gt; marks the launch of yet
 another high-profile Plone site! Congratulations to NASA, InDyne, and
 the developers: Reed O'Brien, Daniel Greenfeld, and Chris Shenton! You
 guys rock! You can read more about it here:
 &lt;a class="reference external" href="http://www.upi.com/NewsTrack/Science/2008/04/10/nasa_starts_new_science_web_site/1059/"&gt;http://www.upi.com/NewsTrack/Science/2008/04/10/nasa_starts_new_science_web_site/1059/.&lt;/a&gt;&lt;/p&gt;
-</summary><category term="Plone"></category></entry><entry><title>Take Back The Tap!</title><link href="http://blog.aclark.net/2008/03/17/take-back-the-tap" rel="alternate"></link><updated>2008-03-17T13:47:00Z</updated><author><name>Alex Clark</name></author><id>tag:blog.aclark.net,2008-03-17:2008/03/17/take-back-the-tap</id><summary type="html">&lt;p&gt;&lt;a href="#id1"&gt;&lt;span class="problematic" id="id2"&gt;`|image0|`_&lt;/span&gt;&lt;/a&gt;ACLARK.NET, LLC is proud to announce:
+</summary><category term="Plone"></category></entry><entry><title>Take Back The Tap!</title><link href="http://blog.aclark.net/take-back-the-tap.html" rel="alternate"></link><updated>2008-03-17T13:47:00Z</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2008-03-17:take-back-the-tap.html</id><summary type="html">&lt;p&gt;&lt;a href="#id1"&gt;&lt;span class="problematic" id="id2"&gt;`|image0|`_&lt;/span&gt;&lt;/a&gt;ACLARK.NET, LLC is proud to announce:
 &lt;a class="reference external" href="http://www.takebackthetap.org/"&gt;http://www.takebackthetap.org!&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;This site is noteworthy because:&lt;/p&gt;
 &lt;ul&gt;&lt;li&gt;&lt;p&gt;It&amp;nbsp; helps a worthy cause by addressing numerous environmental concerns
@@ -6237,7 +6237,7 @@ everyone!)&lt;/li&gt;
 &lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/take-back-the-tap.rst&lt;/tt&gt;, line 6); &lt;em&gt;&lt;a href="#id2"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 Unknown target name: &amp;quot;|image0|&amp;quot;.&lt;/div&gt;
 &lt;/div&gt;
-</summary><category term="Plone"></category></entry><entry><title>Spaces fixed!</title><link href="http://blog.aclark.net/2008/03/06/spaces-fixed" rel="alternate"></link><updated>2008-03-06T09:31:00Z</updated><author><name>Alex Clark</name></author><id>tag:blog.aclark.net,2008-03-06:2008/03/06/spaces-fixed</id><summary type="html">&lt;p&gt;For those of you using Spaces in Mac OS X, I'd like to follow up my
+</summary><category term="Plone"></category></entry><entry><title>Spaces fixed!</title><link href="http://blog.aclark.net/spaces-fixed.html" rel="alternate"></link><updated>2008-03-06T09:31:00Z</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2008-03-06:spaces-fixed.html</id><summary type="html">&lt;p&gt;For those of you using Spaces in Mac OS X, I'd like to follow up my
 &lt;a class="reference external" href="spaces-spaces-spaces-fix"&gt;previous post&lt;/a&gt; with some exciting news regarding Spaces in Mac OS X
 10.5.2. It's &amp;quot;fixed&amp;quot;! Thousands of former FVWM users can now rejoice as
 they enjoy sane desktop pager functionality. As you know, I've been
@@ -6258,7 +6258,7 @@ behavior, do this:&lt;/p&gt;
 try!&lt;/p&gt;
 &lt;/p&gt;&lt;p&gt;And now, with my sincerest thanks to Apple, I leave you to go work in
 another Space...&lt;/p&gt;
-</summary><category term="Plone"></category></entry><entry><title>UNIX Tips for the Elderly</title><link href="http://blog.aclark.net/2008/03/06/unix-tips-for-the-elderly" rel="alternate"></link><updated>2008-03-06T09:31:00Z</updated><author><name>Alex Clark</name></author><id>tag:blog.aclark.net,2008-03-06:2008/03/06/unix-tips-for-the-elderly</id><summary type="html">&lt;p&gt;&lt;a href="#id1"&gt;&lt;span class="problematic" id="id2"&gt;`|image0|`_&lt;/span&gt;&lt;/a&gt;With apologies to the Plone community for the off-topic
+</summary><category term="Plone"></category></entry><entry><title>UNIX Tips for the Elderly</title><link href="http://blog.aclark.net/unix-tips-for-the-elderly.html" rel="alternate"></link><updated>2008-03-06T09:31:00Z</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2008-03-06:unix-tips-for-the-elderly.html</id><summary type="html">&lt;p&gt;&lt;a href="#id1"&gt;&lt;span class="problematic" id="id2"&gt;`|image0|`_&lt;/span&gt;&lt;/a&gt;With apologies to the Plone community for the off-topic
 post, I'd like to mention this so I won't forget it again (and, in case
 I do some nice Plonista somewhere wil remind me ;-).&lt;/p&gt;
 &lt;p&gt;&lt;p&gt;I often want to do &lt;strong&gt;*something*&lt;/strong&gt; to a bunch of files on the
@@ -6301,7 +6301,7 @@ comments.&lt;/p&gt;
 &lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/unix-tips-for-the-elderly.rst&lt;/tt&gt;, line 6); &lt;em&gt;&lt;a href="#id2"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 Unknown target name: &amp;quot;|image0|&amp;quot;.&lt;/div&gt;
 &lt;/div&gt;
-</summary><category term="Plone"></category></entry><entry><title>Spaces.. Spaces.. Spaces.. fix for Spaces.app in Mac OS X Leopard</title><link href="http://blog.aclark.net/2008/01/01/spaces-spaces-spaces-fix-for-spacesapp-in-mac-os-x-leopard" rel="alternate"></link><updated>2008-01-01T19:50:00Z</updated><author><name>Alex Clark</name></author><id>tag:blog.aclark.net,2008-01-01:2008/01/01/spaces-spaces-spaces-fix-for-spacesapp-in-mac-os-x-leopard</id><summary type="html">&lt;p&gt;&lt;a href="#id1"&gt;&lt;span class="problematic" id="id2"&gt;`|image0|`_&lt;/span&gt;&lt;/a&gt;Like many &lt;a class="reference external" href="http://plone.org"&gt;Plone&lt;/a&gt; developers, I primarily develop on Mac
+</summary><category term="Plone"></category></entry><entry><title>Spaces.. Spaces.. Spaces.. fix for Spaces.app in Mac OS X Leopard</title><link href="http://blog.aclark.net/spaces-spaces-spaces-fix-for-spacesapp-in-mac-os-x-leopard.html" rel="alternate"></link><updated>2008-01-01T19:50:00Z</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2008-01-01:spaces-spaces-spaces-fix-for-spacesapp-in-mac-os-x-leopard.html</id><summary type="html">&lt;p&gt;&lt;a href="#id1"&gt;&lt;span class="problematic" id="id2"&gt;`|image0|`_&lt;/span&gt;&lt;/a&gt;Like many &lt;a class="reference external" href="http://plone.org"&gt;Plone&lt;/a&gt; developers, I primarily develop on Mac
 OS X. Also, like many Plone developers I salivate over, and immediately
 install any updates to Mac OS X that are released, including Leopard.
 Overall, I have been very happy with Leopard, but there is one thing
@@ -6349,7 +6349,7 @@ you give Spaces.. Spaces.. Spaces.. a try.&lt;/p&gt;
 &lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/spaces-spaces-spaces-fix-for-spaces-app-in-mac-os-x-leopard.rst&lt;/tt&gt;, line 6); &lt;em&gt;&lt;a href="#id2"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 Unknown target name: &amp;quot;|image0|&amp;quot;.&lt;/div&gt;
 &lt;/div&gt;
-</summary><category term="Plone"></category></entry><entry><title>zc.buildout recipe tip: hexagonit.recipe.download FTW! (For the win)</title><link href="http://blog.aclark.net/2007/11/28/zcbuildout-recipe-tip-hexagonitrecipedownload-ftw-for-the-win" rel="alternate"></link><updated>2007-11-28T21:36:00Z</updated><author><name>Alex Clark</name></author><id>tag:blog.aclark.net,2007-11-28:2007/11/28/zcbuildout-recipe-tip-hexagonitrecipedownload-ftw-for-the-win</id><summary type="html">&lt;p&gt;Sometimes an &amp;quot;old style&amp;quot; product is distributed as foo.tar.gz and
+</summary><category term="Plone"></category></entry><entry><title>zc.buildout recipe tip: hexagonit.recipe.download FTW! (For the win)</title><link href="http://blog.aclark.net/zcbuildout-recipe-tip-hexagonitrecipedownload-ftw-for-the-win.html" rel="alternate"></link><updated>2007-11-28T21:36:00Z</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2007-11-28:zcbuildout-recipe-tip-hexagonitrecipedownload-ftw-for-the-win.html</id><summary type="html">&lt;p&gt;Sometimes an &amp;quot;old style&amp;quot; product is distributed as foo.tar.gz and
 extracts to foo/, but the product is actually called Bar! This can be a
 problem when using the &lt;strong&gt;plone.recipe.productdistros&lt;/strong&gt; recipe because
 when 'Bar' is extracted to parts/productdistros/foo, it will not work.&lt;/p&gt;
@@ -6388,7 +6388,7 @@ products/ directory:&lt;/p&gt;
 &lt;/pre&gt;
 &lt;p&gt;As always, there are &lt;a class="reference external" href="http://dev.plone.org/plone/changeset/21090"&gt;better ways to do this&lt;/a&gt; but getting it done is
 nice too. Comments welcome! :-)&lt;/p&gt;
-&lt;/p&gt;</summary><category term="Plone"></category></entry><entry><title>Usergroup-a-palooza</title><link href="http://blog.aclark.net/2007/11/20/usergroup-a-palooza" rel="alternate"></link><updated>2007-11-20T16:51:00Z</updated><author><name>Alex Clark</name></author><id>tag:blog.aclark.net,2007-11-20:2007/11/20/usergroup-a-palooza</id><summary type="html">&lt;p&gt;&lt;a href="#id2"&gt;&lt;span class="problematic" id="id3"&gt;`|image0|`_&lt;/span&gt;&lt;/a&gt;Today at the behest of &lt;a class="reference external" href="http://agendaless.com"&gt;Tres Seaver&lt;/a&gt; and &lt;a class="reference external" href="http://mail.zope.org/mailman/listinfo/zug-sig"&gt;ZUG-SIG&lt;/a&gt; , I
+&lt;/p&gt;</summary><category term="Plone"></category></entry><entry><title>Usergroup-a-palooza</title><link href="http://blog.aclark.net/usergroup-a-palooza.html" rel="alternate"></link><updated>2007-11-20T16:51:00Z</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2007-11-20:usergroup-a-palooza.html</id><summary type="html">&lt;p&gt;&lt;a href="#id2"&gt;&lt;span class="problematic" id="id3"&gt;`|image0|`_&lt;/span&gt;&lt;/a&gt;Today at the behest of &lt;a class="reference external" href="http://agendaless.com"&gt;Tres Seaver&lt;/a&gt; and &lt;a class="reference external" href="http://mail.zope.org/mailman/listinfo/zug-sig"&gt;ZUG-SIG&lt;/a&gt; , I
 updated &lt;a class="reference external" href="http://www.zope.org/Resources/UserGroups"&gt;http://www.zope.org/Resources/UserGroups&lt;/a&gt;. Most of the
 information came from&lt;a class="reference external" href="http://trizpug.org"&gt;Chris Calloway&lt;/a&gt;, I just converted it to
 structured text. Now it's &lt;a class="reference external" href="http://www.zope.org/Resources/UserGroups/index_html_old"&gt;better than the old one&lt;/a&gt; and should be
@@ -6430,7 +6430,7 @@ Duplicate target name, cannot be used as a unique reference: &amp;quot;come and 
 &lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/usergroup-a-palooza.rst&lt;/tt&gt;, line 14); &lt;em&gt;&lt;a href="#id7"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 Duplicate target name, cannot be used as a unique reference: &amp;quot;come and gone&amp;quot;.&lt;/div&gt;
 &lt;/div&gt;
-</summary><category term="Plone"></category></entry><entry><title>Repoze &amp;quot;meetups&amp;quot;</title><link href="http://blog.aclark.net/2007/10/28/repoze-quotmeetupsquot" rel="alternate"></link><updated>2007-10-28T19:17:00Z</updated><author><name>Alex Clark</name></author><id>tag:blog.aclark.net,2007-10-28:2007/10/28/repoze-quotmeetupsquot</id><summary type="html">&lt;div style="text-align:left;"&gt;&lt;p&gt;&lt;a href="#id1"&gt;&lt;span class="problematic" id="id2"&gt;`|image0|`_&lt;/span&gt;&lt;/a&gt;As Paul Everitt &lt;a class="reference external" href="http://radio.weblogs.com/0116506/2007/10/26.html#a440"&gt;recently&lt;/a&gt; &lt;a class="reference external" href="http://radio.weblogs.com/0116506/2007/10/26.html#a441"&gt;mentioned&lt;/a&gt;, the &lt;a class="reference external" href="http://agendaless.com"&gt;dudes&lt;/a&gt; are
+</summary><category term="Plone"></category></entry><entry><title>Repoze &amp;quot;meetups&amp;quot;</title><link href="http://blog.aclark.net/repoze-quotmeetupsquot.html" rel="alternate"></link><updated>2007-10-28T19:17:00Z</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2007-10-28:repoze-quotmeetupsquot.html</id><summary type="html">&lt;div style="text-align:left;"&gt;&lt;p&gt;&lt;a href="#id1"&gt;&lt;span class="problematic" id="id2"&gt;`|image0|`_&lt;/span&gt;&lt;/a&gt;As Paul Everitt &lt;a class="reference external" href="http://radio.weblogs.com/0116506/2007/10/26.html#a440"&gt;recently&lt;/a&gt; &lt;a class="reference external" href="http://radio.weblogs.com/0116506/2007/10/26.html#a441"&gt;mentioned&lt;/a&gt;, the &lt;a class="reference external" href="http://agendaless.com"&gt;dudes&lt;/a&gt; are
 back! Three (self-described,ex-Zope Corp) graybeards doing what they
 love to do best! Using Zope. But this is not your father's Zope
 (assuming your dad used Zope in the early 2000s) this is Repoze, which
@@ -6449,7 +6449,7 @@ towards&lt;a class="reference external" href="http://zpugdc.org/meetings/mtg57"&
 &lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/repoze-meetups.rst&lt;/tt&gt;, line 10); &lt;em&gt;&lt;a href="#id2"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 Unknown target name: &amp;quot;|image0|&amp;quot;.&lt;/div&gt;
 &lt;/div&gt;
-</summary><category term="Plone"></category></entry><entry><title>My Plone Days (October 2007)</title><link href="http://blog.aclark.net/2007/10/18/my-plone-days-october-2007" rel="alternate"></link><updated>2007-10-18T13:09:00Z</updated><author><name>Alex Clark</name></author><id>tag:blog.aclark.net,2007-10-18:2007/10/18/my-plone-days-october-2007</id><summary type="html">&lt;p&gt;My focus will be &lt;a class="reference external" href="http://plone.org/products/plonesoftwarecenter"&gt;PloneSoftwareCenter (PSC)&lt;/a&gt;. That's right! You heard
+</summary><category term="Plone"></category></entry><entry><title>My Plone Days (October 2007)</title><link href="http://blog.aclark.net/my-plone-days-october-2007.html" rel="alternate"></link><updated>2007-10-18T13:09:00Z</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2007-10-18:my-plone-days-october-2007.html</id><summary type="html">&lt;p&gt;My focus will be &lt;a class="reference external" href="http://plone.org/products/plonesoftwarecenter"&gt;PloneSoftwareCenter (PSC)&lt;/a&gt;. That's right! You heard
 it here first. After a little prodding on IRC from Martin Aspeli, Steve
 McMahon, and Geir Bækholt I am declaring myself the &amp;quot;owner&amp;quot; of &lt;a class="reference external" href="http://plone.org/products/plonesoftwarecenter"&gt;PSC&lt;/a&gt;
 (read: responsible for releases). I'll spend my first two days (16 hours
@@ -6457,7 +6457,7 @@ next Tuesday and Thursday, 9-5 EDT) working on &lt;a class="reference external" 
 ready to ship (with Plone 3 compatibility).&lt;/p&gt;
 &lt;p&gt;For more information about the TPPM (10% Plone Manifesto) please see:
 &lt;a class="reference external" href="http://www.jarn.com/blog/the-10-plone-manifesto/"&gt;http://www.jarn.com/blog/the-10-plone-manifesto/&lt;/a&gt;&lt;/p&gt;
-</summary><category term="Plone"></category></entry><entry><title>Is this thing on?</title><link href="http://blog.aclark.net/2007/10/17/is-this-thing-on" rel="alternate"></link><updated>2007-10-17T09:48:00Z</updated><author><name>Alex Clark</name></author><id>tag:blog.aclark.net,2007-10-17:2007/10/17/is-this-thing-on</id><summary type="html">&lt;p&gt;&lt;a href="#id3"&gt;&lt;span class="problematic" id="id4"&gt;`|image0|`_&lt;/span&gt;&lt;/a&gt;... because it is showing up on &lt;a class="reference external" href="http://planet.plone.org"&gt;planet&lt;/a&gt;! Sorry about the
+</summary><category term="Plone"></category></entry><entry><title>Is this thing on?</title><link href="http://blog.aclark.net/is-this-thing-on.html" rel="alternate"></link><updated>2007-10-17T09:48:00Z</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2007-10-17:is-this-thing-on.html</id><summary type="html">&lt;p&gt;&lt;a href="#id3"&gt;&lt;span class="problematic" id="id4"&gt;`|image0|`_&lt;/span&gt;&lt;/a&gt;... because it is showing up on &lt;a class="reference external" href="http://planet.plone.org"&gt;planet&lt;/a&gt;! Sorry about the
 duplicates. I have recreated my blog using Just Plone ™ (and I didn't
 realize syndication was turned on already ;-)) In any event, here it is!&lt;/p&gt;
 &lt;p&gt;And while I have your attention, I've decided that I am &lt;a class="reference external" href="http://tomster.org/blog/archive/2007/10/17/today-is-my-first-plone-day"&gt;joining
@@ -6480,7 +6480,7 @@ malformed hyperlink target.&lt;/div&gt;
 &lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/is-this-thing-on.rst&lt;/tt&gt;, line 6); &lt;em&gt;&lt;a href="#id4"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 Unknown target name: &amp;quot;|image0|&amp;quot;.&lt;/div&gt;
 &lt;/div&gt;
-</summary><category term="Plone"></category></entry><entry><title>I love the &amp;#039;slrn&amp;#039; news reader.</title><link href="http://blog.aclark.net/2007/10/17/i-love-the-039slrn039-news-reader" rel="alternate"></link><updated>2007-10-17T09:26:00Z</updated><author><name>Alex Clark</name></author><id>tag:blog.aclark.net,2007-10-17:2007/10/17/i-love-the-039slrn039-news-reader</id><summary type="html">&lt;p&gt;&lt;a href="#id1"&gt;&lt;span class="problematic" id="id2"&gt;`|image0|`_&lt;/span&gt;&lt;/a&gt;I've been meaning to write this blog entry about &lt;strong&gt;*slrn*&lt;/strong&gt;
+</summary><category term="Plone"></category></entry><entry><title>I love the &amp;#039;slrn&amp;#039; news reader.</title><link href="http://blog.aclark.net/i-love-the-039slrn039-news-reader.html" rel="alternate"></link><updated>2007-10-17T09:26:00Z</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2007-10-17:i-love-the-039slrn039-news-reader.html</id><summary type="html">&lt;p&gt;&lt;a href="#id1"&gt;&lt;span class="problematic" id="id2"&gt;`|image0|`_&lt;/span&gt;&lt;/a&gt;I've been meaning to write this blog entry about &lt;strong&gt;*slrn*&lt;/strong&gt;
 ever since I started using it some time last year. Finally, here it is.
 But this is not the blog entry I had originally intended to write. There
 were some grandiose ideas about where I first heard of it; the blog
@@ -6521,7 +6521,7 @@ will explain why ;-)*&lt;/p&gt;
 &lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/i-love-the-slrn-news-reader.rst&lt;/tt&gt;, line 6); &lt;em&gt;&lt;a href="#id2"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 Unknown target name: &amp;quot;|image0|&amp;quot;.&lt;/div&gt;
 &lt;/div&gt;
-</summary><category term="Plone"></category></entry><entry><title>Help improve Plone&amp;#039;s API documentation</title><link href="http://blog.aclark.net/2007/10/17/help-improve-plone039s-api-documentation" rel="alternate"></link><updated>2007-10-17T09:19:00Z</updated><author><name>Alex Clark</name></author><id>tag:blog.aclark.net,2007-10-17:2007/10/17/help-improve-plone039s-api-documentation</id><summary type="html">&lt;p&gt;&lt;a href="#id1"&gt;&lt;span class="problematic" id="id2"&gt;`|image0|`_&lt;/span&gt;&lt;/a&gt;I'm travelling from Washington, DC, USA to Mountain View,
+</summary><category term="Plone"></category></entry><entry><title>Help improve Plone&amp;#039;s API documentation</title><link href="http://blog.aclark.net/help-improve-plone039s-api-documentation.html" rel="alternate"></link><updated>2007-10-17T09:19:00Z</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2007-10-17:help-improve-plone039s-api-documentation.html</id><summary type="html">&lt;p&gt;&lt;a href="#id1"&gt;&lt;span class="problematic" id="id2"&gt;`|image0|`_&lt;/span&gt;&lt;/a&gt;I'm travelling from Washington, DC, USA to Mountain View,
 CA, USA June 26 - 29 to participate in the 2007 &lt;a class="reference external" href="http://plone.org/events/sprints/doc-ecommerce"&gt;Plone Doccomm Sprint&lt;/a&gt;.
 My main focus will be updating Plone's online API documentation
 (available at &lt;a class="reference external" href="http://api.plone.org/"&gt;http://api.plone.org&lt;/a&gt;). If you are interested in seeing
@@ -6556,7 +6556,7 @@ reached it (so people don't give too much).&lt;/p&gt;
 &lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/help-improve-plones-api-documentation.rst&lt;/tt&gt;, line 6); &lt;em&gt;&lt;a href="#id2"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 Unknown target name: &amp;quot;|image0|&amp;quot;.&lt;/div&gt;
 &lt;/div&gt;
-</summary><category term="Plone"></category></entry><entry><title>First Post</title><link href="http://blog.aclark.net/2007/10/17/first-post" rel="alternate"></link><updated>2007-10-17T08:55:00Z</updated><author><name>Alex Clark</name></author><id>tag:blog.aclark.net,2007-10-17:2007/10/17/first-post</id><summary type="html">&lt;div class="plain"&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="#id1"&gt;&lt;span class="problematic" id="id2"&gt;`|image0|`_&lt;/span&gt;&lt;/a&gt;Why? Because I can (read: &lt;a class="reference external" href="http://plone.org/"&gt;Plone&lt;/a&gt; allows me to do so) but
+</summary><category term="Plone"></category></entry><entry><title>First Post</title><link href="http://blog.aclark.net/first-post.html" rel="alternate"></link><updated>2007-10-17T08:55:00Z</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2007-10-17:first-post.html</id><summary type="html">&lt;div class="plain"&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="#id1"&gt;&lt;span class="problematic" id="id2"&gt;`|image0|`_&lt;/span&gt;&lt;/a&gt;Why? Because I can (read: &lt;a class="reference external" href="http://plone.org/"&gt;Plone&lt;/a&gt; allows me to do so) but
 also:&lt;/p&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;I have been reading a lot of &lt;a class="reference external" href="http://planet.plone.org/"&gt;Plone blogs&lt;/a&gt; lately and they have
@@ -6591,5 +6591,5 @@ old habits die hard.&lt;/p&gt;
 &lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/first-post.rst&lt;/tt&gt;, line 14); &lt;em&gt;&lt;a href="#id2"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 Unknown target name: &amp;quot;|image0|&amp;quot;.&lt;/div&gt;
 &lt;/div&gt;
-</summary><category term="Plone"></category></entry><entry><title>Technorati Post Claim, Please Ignore.</title><link href="http://blog.aclark.net/2007/10/10/technorati-post-claim-please-ignore" rel="alternate"></link><updated>2007-10-10T19:47:00Z</updated><author><name>Alex Clark</name></author><id>tag:blog.aclark.net,2007-10-10:2007/10/10/technorati-post-claim-please-ignore</id><summary type="html">&lt;p&gt;&lt;a class="reference external" href="http://technorati.com/claim/nj735fhurk"&gt;Technorati Profile&lt;/a&gt;&lt;/p&gt;
+</summary><category term="Plone"></category></entry><entry><title>Technorati Post Claim, Please Ignore.</title><link href="http://blog.aclark.net/technorati-post-claim-please-ignore.html" rel="alternate"></link><updated>2007-10-10T19:47:00Z</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2007-10-10:technorati-post-claim-please-ignore.html</id><summary type="html">&lt;p&gt;&lt;a class="reference external" href="http://technorati.com/claim/nj735fhurk"&gt;Technorati Profile&lt;/a&gt;&lt;/p&gt;
 </summary><category term="Plone"></category></entry></feed>
