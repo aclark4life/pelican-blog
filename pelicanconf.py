@@ -9,14 +9,10 @@ SITEURL = 'http://blog.aclark.net'
 
 DEFAULT_LANG = 'en'
 
-# Blogroll
-#LINKS =  (('Pelican', 'http://docs.notmyidea.org/alexis/pelican/'),
-#          ('Python.org', 'http://python.org'),
-#          ('Jinja2', 'http://jinja.pocoo.org'),
-#          ('You can modify those links in your config file', '#'),)
-# Social widget
-#SOCIAL = (('You can add links in your config file', '#'),
-#          ('Another social link', '#'),)
+LINKS = (
+    ('ACLARK.NET, LLC', 'http://aclark.net'),
+    ('PythonPackages', 'http://pythonpackages.com'),
+)
 
 SOCIAL = (
     ('atom feed (Mozilla)', 'http://blog.aclark.net/Mozilla.atom.xml'),
@@ -40,4 +36,7 @@ TAG_FEED_ATOM = 'feeds/%s.atom.xml'
 TAG_FEED_RSS = None
 
 # Generate fancy permalinks
-#ARTICLE_PERMALINK_STRUCTURE = '/%Y/%m/%d/'
+ARTICLE_PERMALINK_STRUCTURE = '/%Y/%m/%d/'
+# Disable .html
+ARTICLE_URL = '{slug}'
+ARTICLE_SAVE_AS = "{slug}/index.html"

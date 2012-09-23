@@ -17,3 +17,4 @@ DELETE_OUTPUT_DIRECTORY = True
 DISQUS_SITENAME = "aclark-blog"
 GOOGLE_ANALYTICS = "UA-34988446-1"
 GITHUB_URL = "https://github.com/ACLARKNET/aclarknet.github.com"
+TWITTER_USERNAME = 'aclark4life'
