@@ -42,94 +42,94 @@ All of this brings me to the actual point of this post which is to take a quick 
 
 **88 plonetheme themes**::
 
-    plonetheme.porseleinplaats - An installable theme for Plone 3
-    plonetheme.laboral        - An installable theme for Plone 4
-    plonetheme.sunburst       - The default theme for Plone 4.
-    plonetheme.gov            - An installable theme for Plone 4
-    plonetheme.mvob           - An installable Plone4 theme
-    plonetheme.wmoWonen       - An installable theme for Plone 4
-    plonetheme.notredame      - Theme for Plone 3 with color scheme based on new Plone Logo
-    plonetheme.fui            - A Plone 3.0 theme for FUI
-    plonetheme.classic        - The classic Plone 3 default theme.
-    plonetheme.intk           - An installable theme for Plone 3
-    plonetheme.colorcontext   - Total CSS rebuild and color themed sections
-    plonetheme.twinapex       - Twinapex Theme is a theming product for Plone to give your site a professional corporate look
-    plonetheme.responsivetheme - An installable theme for Plone 4 that uses a fluid grid system
-    plonetheme.basic          - An easily customizable theme for Plone 4
-    plonetheme.unilluminated  - An installable Diazo theme for Plone 4.1
-    plonetheme.xtheme         - An installable theme for Plone
-    plonetheme.peerstheme     - An installable theme for Plone 3.0
-    plonetheme.ewb_case       - A Plone 4 theme for EWB Case
-    plonetheme.nautica05      - An installable theme for Plone 3.x
-    plonetheme.sait2009       - SAIT-2009 installable Plone theme
-    plonetheme.labs           - An installable theme for Plone
-    plonetheme.stylized       - An installable theme for Plone 3.0 based on the stylized theme by NodeThirtyThree.
-    plonetheme.transition     - An installable Diazo theme for Plone 4.1
-    plonetheme.intkBase       - An installable theme for Plone 4
-    plonetheme.mimbo          - An installable theme for Plone 3.0 based on the Mimbo theme by Darren Hoyt
-    plonetheme.ploneorg       - Plone.org theme
-    plonetheme.cultureCab     - An installable theme for Plone 3
-    plonetheme.greencommunity - An installable theme for Plone 3.0.
-    plonetheme.leavesdew      - An installable Diazo theme for Plone 4.1
-    plonetheme.aclark_twitter - Complete silliness: make your Plone site look like Alex Clark's Twitter profile.
-    plonetheme.keepitsimple   - An installable theme for Plone 4, fluid 3-column theme, minimalistic and light colored design
-    plonetheme.tidyblog       - An installable theme for Plone 3.0
-    plonetheme.blueblog       - An installable theme for Plone 3.0
-    plonetheme.hamnavoe       - An installable theme for Plone 3.0
-    plonetheme.terrafirma     - An installable theme for Plone 3.0
-    plonetheme.solemnity      - An installable theme for Plone 3.0 based on the solemnity theme by Six Shooter Media.
-    plonetheme.colorfulworld  - An installable theme for Plone 4
-    plonetheme.bluegray       - An installable theme for Plone
-    plonetheme.python         - 
-    plonetheme.andreas01      - An installable theme for Plone 3.0.
-    plonetheme.level2         - An installable theme for Plone 3.0
-    plonetheme.evergreen      - An installable Diazo theme for Plone 4.1
-    plonetheme.delicious2     - An installable theme for Plone 3.0
-    plonetheme.subordinate    - An installable theme for Plone 3.0
-    plonetheme.broadcaster    - An installable theme for Plone 3.0
-    plonetheme.codapress      - An installable Diazo theme for Plone 4.1
-    plonetheme.bananaleaf     - An installable Diazo theme for Plone 4.1
-    plonetheme.grungeera      - An installable Diazo theme for Plone 4.1
-    plonetheme.andreas02      - 
-    plonetheme.discovery      - An installable Diazo theme for Plone 4.1
-    plonetheme.relic          - An installable theme for Plone 3.0.
-    plonetheme.jsjamba        - An installable theme for Plone 4
-    plonetheme.earthlingtwo   - An installable Diazo theme for Plone 4.1
-    plonetheme.p2             - An installable theme for Plone 3.0
-    plonetheme.coolblue       - An installable Diazo theme for Plone 4.1
-    plonetheme.simplicity     - An installable theme for Plone 3.0
-    plonetheme.burned         - An installable Diazo theme for Plone 4.1
-    plonetheme.netsightintranet - A clean, intranet theme for Plone 3.0
-    plonetheme.woodexperience - An installable Diazo theme for Plone 4.1
-    plonetheme.redmusic       - An installable Diazo theme for Plone 4.1
-    plonetheme.drupal         - Get all the power of Drupal for Plone ;)
-    plonetheme.darkened       - An installable Diazo theme for Plone 4.1
-    plonetheme.essay          - 
-    plonetheme.ReOrg          - Theme that reorganizes screen real-estate abd gives plone a fresh look
     plonetheme.Bangalore      - An installable theme for Plone 3
-    plonetheme.nonzero        - A theme for Plone 3 based on the Nonzero design by NodeThirtyThree
-    plonetheme.corporatemale  - An elastic layout presentation suitable for a corporate business.
-    plonetheme.equipoteih     - An installable theme for Plone 3.0
-    plonetheme.cleantheme     - An installable theme for Plone 3.0
-    plonetheme.pyar           - A PyAr theme for Plone 3.x
-    plonetheme.html5_hotpink  - Diazo theme for Plone
-    plonetheme.bootstrap      - bootstrap css integration
-    plonetheme.overlappedtabs - A theme for plone 3.x with overlapping tabs
-    plonetheme.aqueouslight   - An installable Diazo theme for Plone 4.1
-    plonetheme.minimalist     - An installable theme for Plone 3.0
-    plonetheme.inbusiness     - An installable theme for Plone 3.0
-    plonetheme.freshpick      - An installable Diazo theme for Plone 4.1
-    plonetheme.flowerbuds     - UNKNOWN
     plonetheme.GreenEarthTheme3_0 - An installable theme for Plone 3
-    plonetheme.pollination    - Pollination Theme
-    plonetheme.rcom           - An installable theme for Plone 3.0.
-    plonetheme.responsive1140 - A responsive theme for Plone
-    plonetheme.criticas       - An installable theme for Plone 3.0
-    plonetheme.portaltwodotoh - An elastic lounded corners.
-    plonetheme.gemstone       - Arcsin's Gemstone web design for Plone4
+    plonetheme.ReOrg          - Theme that reorganizes screen real-estate abd gives plone a fresh look
+    plonetheme.aclark_twitter - Complete silliness: make your Plone site look like Alex Clark's Twitter profile.
+    plonetheme.andreas01      - An installable theme for Plone 3.0.
+    plonetheme.andreas02      - 
+    plonetheme.aqueouslight   - An installable Diazo theme for Plone 4.1
+    plonetheme.bananaleaf     - An installable Diazo theme for Plone 4.1
+    plonetheme.basic          - An easily customizable theme for Plone 4
+    plonetheme.blueblog       - An installable theme for Plone 3.0
+    plonetheme.bluegray       - An installable theme for Plone
+    plonetheme.bootstrap      - bootstrap css integration
+    plonetheme.broadcaster    - An installable theme for Plone 3.0
     plonetheme.bronzecube     - An installable theme for Plone 3
-    plonetheme.lithium        - An installable theme for Plone 3.0
+    plonetheme.burned         - An installable Diazo theme for Plone 4.1
+    plonetheme.classic        - The classic Plone 3 default theme.
+    plonetheme.cleantheme     - An installable theme for Plone 3.0
+    plonetheme.codapress      - An installable Diazo theme for Plone 4.1
+    plonetheme.colorcontext   - Total CSS rebuild and color themed sections
+    plonetheme.colorfulworld  - An installable theme for Plone 4
+    plonetheme.coolblue       - An installable Diazo theme for Plone 4.1
+    plonetheme.corporatemale  - An elastic layout presentation suitable for a corporate business.
+    plonetheme.criticas       - An installable theme for Plone 3.0
+    plonetheme.cultureCab     - An installable theme for Plone 3
+    plonetheme.darkened       - An installable Diazo theme for Plone 4.1
+    plonetheme.delicious2     - An installable theme for Plone 3.0
+    plonetheme.discovery      - An installable Diazo theme for Plone 4.1
+    plonetheme.drupal         - Get all the power of Drupal for Plone ;)
+    plonetheme.earthlingtwo   - An installable Diazo theme for Plone 4.1
     plonetheme.elemental      - Elemental Plone 4 Theme
+    plonetheme.equipoteih     - An installable theme for Plone 3.0
+    plonetheme.essay          - 
+    plonetheme.evergreen      - An installable Diazo theme for Plone 4.1
+    plonetheme.ewb_case       - A Plone 4 theme for EWB Case
+    plonetheme.flowerbuds     - UNKNOWN
+    plonetheme.freshpick      - An installable Diazo theme for Plone 4.1
+    plonetheme.fui            - A Plone 3.0 theme for FUI
+    plonetheme.gemstone       - Arcsin's Gemstone web design for Plone4
+    plonetheme.gov            - An installable theme for Plone 4
+    plonetheme.greencommunity - An installable theme for Plone 3.0.
+    plonetheme.grungeera      - An installable Diazo theme for Plone 4.1
+    plonetheme.hamnavoe       - An installable theme for Plone 3.0
+    plonetheme.html5_hotpink  - Diazo theme for Plone
+    plonetheme.inbusiness     - An installable theme for Plone 3.0
+    plonetheme.intk           - An installable theme for Plone 3
+    plonetheme.intkBase       - An installable theme for Plone 4
+    plonetheme.jsjamba        - An installable theme for Plone 4
+    plonetheme.keepitsimple   - An installable theme for Plone 4, fluid 3-column theme, minimalistic and light colored design
+    plonetheme.laboral        - An installable theme for Plone 4
+    plonetheme.labs           - An installable theme for Plone
+    plonetheme.leavesdew      - An installable Diazo theme for Plone 4.1
+    plonetheme.level2         - An installable theme for Plone 3.0
+    plonetheme.lithium        - An installable theme for Plone 3.0
+    plonetheme.mimbo          - An installable theme for Plone 3.0 based on the Mimbo theme by Darren Hoyt
+    plonetheme.minimalist     - An installable theme for Plone 3.0
+    plonetheme.mvob           - An installable Plone4 theme
+    plonetheme.nautica05      - An installable theme for Plone 3.x
+    plonetheme.netsightintranet - A clean, intranet theme for Plone 3.0
+    plonetheme.nonzero        - A theme for Plone 3 based on the Nonzero design by NodeThirtyThree
+    plonetheme.notredame      - Theme for Plone 3 with color scheme based on new Plone Logo
+    plonetheme.overlappedtabs - A theme for plone 3.x with overlapping tabs
+    plonetheme.p2             - An installable theme for Plone 3.0
+    plonetheme.peerstheme     - An installable theme for Plone 3.0
+    plonetheme.ploneorg       - Plone.org theme
+    plonetheme.pollination    - Pollination Theme
+    plonetheme.porseleinplaats - An installable theme for Plone 3
+    plonetheme.portaltwodotoh - An elastic lounded corners.
+    plonetheme.pyar           - A PyAr theme for Plone 3.x
+    plonetheme.python         - 
+    plonetheme.rcom           - An installable theme for Plone 3.0.
+    plonetheme.redmusic       - An installable Diazo theme for Plone 4.1
+    plonetheme.relic          - An installable theme for Plone 3.0.
+    plonetheme.responsive1140 - A responsive theme for Plone
+    plonetheme.responsivetheme - An installable theme for Plone 4 that uses a fluid grid system
+    plonetheme.sait2009       - SAIT-2009 installable Plone theme
+    plonetheme.simplicity     - An installable theme for Plone 3.0
+    plonetheme.solemnity      - An installable theme for Plone 3.0 based on the solemnity theme by Six Shooter Media.
+    plonetheme.stylized       - An installable theme for Plone 3.0 based on the stylized theme by NodeThirtyThree.
+    plonetheme.subordinate    - An installable theme for Plone 3.0
+    plonetheme.sunburst       - The default theme for Plone 4.
+    plonetheme.terrafirma     - An installable theme for Plone 3.0
+    plonetheme.tidyblog       - An installable theme for Plone 3.0
+    plonetheme.transition     - An installable Diazo theme for Plone 4.1
+    plonetheme.twinapex       - Twinapex Theme is a theming product for Plone to give your site a professional corporate look
+    plonetheme.unilluminated  - An installable Diazo theme for Plone 4.1
+    plonetheme.wmoWonen       - An installable theme for Plone 4
+    plonetheme.woodexperience - An installable Diazo theme for Plone 4.1
+    plonetheme.xtheme         - An installable theme for Plone
 
 **1 diazotheme theme**::
 
@@ -138,73 +138,73 @@ All of this brings me to the actual point of this post which is to take a quick 
 **5 Products themes**::
 
     Products.Andreas09Theme   - An example theme for Plone 3.0
-    Products.PloneTableless   - Plone Tableless provides a completly tableless version of the Plone Default theme
-    Products.NuPlone          - A new theme for Plone 3.0
     Products.HSCustom         - The HSCustom theme was originally created for my band's website.
     Products.naked_plone      - An installable theme for Plone 3.0 that does little but override default public stylesheets with empty ones.
+    Products.NuPlone          - A new theme for Plone 3.0
+    Products.PloneTableless   - Plone Tableless provides a completly tableless version of the Plone Default theme
 
 **60 other themes (WTF?!)**::
 
-    medialog.subskins         - An installable theme and theming tool for Plone 4
-    v2.theme                  - An installable theme for Plone 4
-    zettwerk.ui               - Adding jquery.ui's themeroller to plone 4 for easy theme customization.
-    medialog.subskinsiii      - An installable theme for Plone 3.0
-    quintagroup.theme.sunrain - Free Diazo Theme for Plone 4.2
-    quintagroup.theme.schools - Free Diazo theme for Plone 4.2
-    collective.phantasy       - dynamic theme for Plone
-    quintagroup.theme.estatelite - Free Diazo Theme for Plone 4.1
-    redomino.css3theme        - A responsive (and mobile) theme for Plone 4 (based on sunburst)
-    quintagroup.theme.techlight - Free diazo theme for Plone 4.1
-    plone.theme               - Tools for managing themes in CMF and Plone sites
-    sc.paster.theme           - Produto de tema para o portal Plone (skin).
-    quintagroup.theme.lite    - Free Diazo Theme for Plone 4.1
-    themetweaker.themeswitcher - A product for switching themes in Plone.
-    quintagroup.theme.whiteblack - Free Diazo Theme for Plone 4.1
-    jalon.theme               - An installable theme for Plone 3
-    semicinternet.theme.cambrils - A free Plone theme from SEMIC Internet for Plone 4
-    collective.responsivetheme - A responsive theme based on sunburst for Plone 4
-    beyondskins.pythonbrasil.site - This product is a installable Plone 3 Theme developed by Simples Consultoria for use in Python Brasil [7] Conference web site.
-    cooking.theme             - This is plone theme created from css/html ready design.
-    collective.fastview       - View and viewlet helper modules for Plone theme and five.grok developers
-    collective.shinythings    - Jazz up your Plone theme
-    plone.app.themeeditor     - Theme Editor for Plone, Customize your theme resources
-    beyondskins.ploneday.site2010 - World Plone Day 2010 theme.
-    atrealtheme.gienah        - An installable theme for Plone 3.0
-    heddex.cityportal         - Installable theme for Plone
-    medialog.roundskin        - An installable theme for Plone 3
-    gomobile.templates        - Project templates creating Web and Mobile themes for Plone
-    ilrt.migrationtool        - A site migration tool for Plone that uses the site's theme egg version releases
-    medialog.kuliadentheme    - An installable theme for Plone 3.0
-    quintagroup.themetemplate - Quintagroup theme template for Plone 3 with nested namespace
-    collective.lesscss        - This package allow theme developers to add LESS stylesheets into a Plone site.
-    heddex.tranquility        - An installable visual theme for Plone 3
-    webcouturier.city.theme   - Plone visual theme
-    beyondskins.ploneday.site - Installable Plone 3 theme for World Plone Day
-    heddex.greenfield         - An installable theme for Plone 4
-    webcouturier.icompany.theme - Plone theme in blue/green colors
     alterootheme.busycity     - Free City Plone 3.0 Theme
-    collective.jqueryuithememanager - JQueryUI theme manager for Plone
-    ityou.bluetheme           - An installable theme for Plone 4
-    xdvtheme.sparkling        - An xdv Theme for Plone
-    iscorpio.themes.redmaple  - iscorpio readmaple Plone 3 theme
-    beyondskins.ploneday.site2011 - World Plone Day 2011 theme.
-    uvsq.theme                - An installable theme for Plone 3
-    beyondskins.pyconbrasil2008 - Plone Theme developed by Simples Consultoria
-    freearch.theme            - Free Arch Theme for Plone
-    atrealtheme.algol         - An installable theme for Plone 3.0
-    jalonedit.theme           - JalonEdit Theme for PLONE 4
-    gameprog.theme            - An installable theme for Plone 3.0
-    collective.threecolorstheme - A Phantasy theme variation for Plone, with 3 dynamic colors
-    quintagroup.sunrain.policy - extension for SunRain Plone theme
-    dgsanco.plone3theme       - Plone3 Theme for DG Sanco
-    uofl.dztheme.simplesite   - A Diazo theme for Plone 4 and UofL Simple Left-Nav Sites
-    xdvtheme.inventions       - A xdvtheme for Plone
-    raptus.theme.plonebartop  - move the plone-bar on the top
-    beyondskins.ploneday.site2009 - Installable Plone 3 theme developed to promote World Plone Day 2009 (April 22nd)
-    raptus.theme.ploneformgen - set standard theme for ploneformgen
     alterootheme.intensesimplicity - A Plone 3.0 Theme based on a free template by David Uliana
-    soniatheme                - An installable theme for Plone 3.0
     alterootheme.lazydays     - A Theme for Plone 3.0 based on OpenWebDesign.org Lazy Days theme
+    atrealtheme.algol         - An installable theme for Plone 3.0
+    atrealtheme.gienah        - An installable theme for Plone 3.0
+    beyondskins.ploneday.site - Installable Plone 3 theme for World Plone Day
+    beyondskins.ploneday.site2009 - Installable Plone 3 theme developed to promote World Plone Day 2009 (April 22nd)
+    beyondskins.ploneday.site2010 - World Plone Day 2010 theme.
+    beyondskins.ploneday.site2011 - World Plone Day 2011 theme.
+    beyondskins.pyconbrasil2008 - Plone Theme developed by Simples Consultoria
+    beyondskins.pythonbrasil.site - This product is a installable Plone 3 Theme developed by Simples Consultoria for use in Python Brasil [7] Conference web site.
+    collective.fastview       - View and viewlet helper modules for Plone theme and five.grok developers
+    collective.jqueryuithememanager - JQueryUI theme manager for Plone
+    collective.lesscss        - This package allow theme developers to add LESS stylesheets into a Plone site.
+    collective.phantasy       - dynamic theme for Plone
+    collective.responsivetheme - A responsive theme based on sunburst for Plone 4
+    collective.shinythings    - Jazz up your Plone theme
+    collective.threecolorstheme - A Phantasy theme variation for Plone, with 3 dynamic colors
+    cooking.theme             - This is plone theme created from css/html ready design.
+    dgsanco.plone3theme       - Plone3 Theme for DG Sanco
+    freearch.theme            - Free Arch Theme for Plone
+    gameprog.theme            - An installable theme for Plone 3.0
+    gomobile.templates        - Project templates creating Web and Mobile themes for Plone
+    heddex.cityportal         - Installable theme for Plone
+    heddex.greenfield         - An installable theme for Plone 4
+    heddex.tranquility        - An installable visual theme for Plone 3
+    ilrt.migrationtool        - A site migration tool for Plone that uses the site's theme egg version releases
+    iscorpio.themes.redmaple  - iscorpio readmaple Plone 3 theme
+    ityou.bluetheme           - An installable theme for Plone 4
+    jalon.theme               - An installable theme for Plone 3
+    jalonedit.theme           - JalonEdit Theme for PLONE 4
+    medialog.kuliadentheme    - An installable theme for Plone 3.0
+    medialog.roundskin        - An installable theme for Plone 3
+    medialog.subskins         - An installable theme and theming tool for Plone 4
+    medialog.subskinsiii      - An installable theme for Plone 3.0
+    plone.app.themeeditor     - Theme Editor for Plone, Customize your theme resources
+    plone.theme               - Tools for managing themes in CMF and Plone sites
+    quintagroup.sunrain.policy - extension for SunRain Plone theme
+    quintagroup.theme.estatelite - Free Diazo Theme for Plone 4.1
+    quintagroup.theme.lite    - Free Diazo Theme for Plone 4.1
+    quintagroup.theme.schools - Free Diazo theme for Plone 4.2
+    quintagroup.theme.sunrain - Free Diazo Theme for Plone 4.2
+    quintagroup.theme.techlight - Free diazo theme for Plone 4.1
+    quintagroup.theme.whiteblack - Free Diazo Theme for Plone 4.1
+    quintagroup.themetemplate - Quintagroup theme template for Plone 3 with nested namespace
+    raptus.theme.plonebartop  - move the plone-bar on the top
+    raptus.theme.ploneformgen - set standard theme for ploneformgen
+    redomino.css3theme        - A responsive (and mobile) theme for Plone 4 (based on sunburst)
+    sc.paster.theme           - Produto de tema para o portal Plone (skin).
+    semicinternet.theme.cambrils - A free Plone theme from SEMIC Internet for Plone 4
+    soniatheme                - An installable theme for Plone 3.0
+    themetweaker.themeswitcher - A product for switching themes in Plone.
+    uofl.dztheme.simplesite   - A Diazo theme for Plone 4 and UofL Simple Left-Nav Sites
+    uvsq.theme                - An installable theme for Plone 3
+    v2.theme                  - An installable theme for Plone 4
+    webcouturier.city.theme   - Plone visual theme
+    webcouturier.icompany.theme - Plone theme in blue/green colors
+    xdvtheme.inventions       - A xdvtheme for Plone
+    xdvtheme.sparkling        - An xdv Theme for Plone
+    zettwerk.ui               - Adding jquery.ui's themeroller to plone 4 for easy theme customization.
 
 That last one is a surprise, and that's a total of **154 themes for Plone on PyPI** (assuming I didn't miss any which I probably did). If we had the man power, all of these themes could be made to work with the latest Plone and work with either old style or new style technology. So if we can't do that (which is a hugely ambitious goal) let's at least try to come close!
 
