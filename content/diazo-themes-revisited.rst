@@ -9,7 +9,7 @@ With Diazo theming on the rise (going in to 4.3 core) I'd like to take a look at
 What are themes?
 ----------------
 
-Themes control the way the site looks. For the scope of this post, at least, I don't care about "views", "viewlets", "portlets", "tiles", etc. In fact, I'm not sure I ever want to mix "templating" (for lack of a better word) with theming. There is a bit of discussion going on right now amongst the core developers regarding how to make it easier for themers to associate there template code with application code. And while I fully support this discussion, at present the bottom line is:
+Themes control the way the site looks. For the scope of this post, at least, I don't care about "views", "viewlets", "portlets", "tiles", etc. In fact, I'm not sure I ever want to mix "templating" (for lack of a better word) with theming. There is a bit of discussion going on right now amongst the core developers regarding how to make it easier for themers to associate their template code with application code. And while I fully support this discussion, at present the bottom line is:
 
 - "Old style"[1]_ theming is still a valid way to control the look and feel of a Plone system.
 - "New style" (Diazo) theming is a great way to isolote the complexity of the stack and get HTML/CSS/JavaScript folks going quickly (especially in 4.3a1 with the new theme editor!)
