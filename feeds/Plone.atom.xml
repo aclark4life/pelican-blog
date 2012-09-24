@@ -28,7 +28,7 @@
 &lt;div class="section" id="what-is-the-point"&gt;
 &lt;h3&gt;What is the point?&lt;/h3&gt;
 &lt;p&gt;All of this brings me to the actual point of this post which is to take a quick look at the Plone themeing landscape in order to spur more Diazo theme development (or old style theming, if that is your thing). Quickly, using pip to search PyPI by package namespace I see:&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;88&lt;/strong&gt; plonetheme themes:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;88 plonetheme themes&lt;/strong&gt;:&lt;/p&gt;
 &lt;pre class="literal-block"&gt;
 plonetheme.porseleinplaats - An installable theme for Plone 3
 plonetheme.laboral        - An installable theme for Plone 4
@@ -119,11 +119,11 @@ plonetheme.bronzecube     - An installable theme for Plone 3
 plonetheme.lithium        - An installable theme for Plone 3.0
 plonetheme.elemental      - Elemental Plone 4 Theme
 &lt;/pre&gt;
-&lt;p&gt;&lt;strong&gt;1&lt;/strong&gt; diazotheme theme:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;1 diazotheme theme&lt;/strong&gt;:&lt;/p&gt;
 &lt;pre class="literal-block"&gt;
 diazotheme.bootstrap      - Plone theme based on Twitter's Bootstrap CSS
 &lt;/pre&gt;
-&lt;p&gt;&lt;strong&gt;5&lt;/strong&gt; Products themes:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;5 Products themes&lt;/strong&gt;:&lt;/p&gt;
 &lt;pre class="literal-block"&gt;
 Products.Andreas09Theme   - An example theme for Plone 3.0
 Products.PloneTableless   - Plone Tableless provides a completly tableless version of the Plone Default theme
@@ -131,7 +131,7 @@ Products.NuPlone          - A new theme for Plone 3.0
 Products.HSCustom         - The HSCustom theme was originally created for my band's website.
 Products.naked_plone      - An installable theme for Plone 3.0 that does little but override default public stylesheets with empty ones.
 &lt;/pre&gt;
-&lt;p&gt;&lt;strong&gt;60&lt;/strong&gt; other themes (WTF?!):&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;60 other themes (WTF?!)&lt;/strong&gt;:&lt;/p&gt;
 &lt;pre class="literal-block"&gt;
 medialog.subskins         - An installable theme and theming tool for Plone 4
 v2.theme                  - An installable theme for Plone 4
