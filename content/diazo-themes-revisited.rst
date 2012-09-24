@@ -40,7 +40,7 @@ What is the point?
 
 All of this brings me to the actual point of this post which is to take a quick look at the Plone themeing landscape in order to spur more Diazo theme development (or old style theming, if that is your thing). Quickly, using pip to search PyPI by package namespace I see:
 
-88 plonetheme themes::
+**88** plonetheme themes::
 
     plonetheme.porseleinplaats - An installable theme for Plone 3
     plonetheme.laboral        - An installable theme for Plone 4
@@ -131,11 +131,11 @@ All of this brings me to the actual point of this post which is to take a quick 
     plonetheme.lithium        - An installable theme for Plone 3.0
     plonetheme.elemental      - Elemental Plone 4 Theme
 
-1 diazotheme theme::
+**1** diazotheme theme::
 
     diazotheme.bootstrap      - Plone theme based on Twitter's Bootstrap CSS
 
-5 Products themes::
+**5** Products themes::
 
     Products.Andreas09Theme   - An example theme for Plone 3.0
     Products.PloneTableless   - Plone Tableless provides a completly tableless version of the Plone Default theme
@@ -143,7 +143,7 @@ All of this brings me to the actual point of this post which is to take a quick 
     Products.HSCustom         - The HSCustom theme was originally created for my band's website.
     Products.naked_plone      - An installable theme for Plone 3.0 that does little but override default public stylesheets with empty ones.
 
-60 other themes (WTF?!)::
+**60** other themes (WTF?!)::
 
     medialog.subskins         - An installable theme and theming tool for Plone 4
     v2.theme                  - An installable theme for Plone 4
