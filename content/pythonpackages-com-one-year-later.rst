@@ -1,4 +1,4 @@
-pythonpackages.com one year later
+pythonpackages-com one year later
 =================================
 :date: 2012-09-28 10:00
 :tags: Plone, Python
