@@ -309,6 +309,11 @@
 &lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
+&lt;div class="section" id="customize-templates"&gt;
+&lt;h2&gt;Customize templates&lt;/h2&gt;
+&lt;p&gt;As you may have noticed above I use &lt;tt class="docutils literal"&gt;z3c.jbot&lt;/tt&gt; to customize various Plone templates.&lt;/p&gt;
+&lt;img alt="https://raw.github.com/ACLARKNET/aclarknet.github.com/master/images/custom-templates.png" src="https://raw.github.com/ACLARKNET/aclarknet.github.com/master/images/custom-templates.png" /&gt;
+&lt;/div&gt;
 &lt;div class="section" id="add-content"&gt;
 &lt;h2&gt;Add content&lt;/h2&gt;
 &lt;p&gt;I then cut/pasted all my content from the old site to the new site. This is a lot of work, but I like mimicking the experience of someone non-tech-savvy using Plone for the first time.&lt;/p&gt;
