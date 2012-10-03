@@ -16,7 +16,7 @@
 /***** Global *****/
 /* Body */
 body {
-    background: #fdf6e3;
+    background: #F5F4EF;
     color: #000305;
     font-size: 87.5%; /* Base font size: 14px */
     font-family: 'Trebuchet MS', Trebuchet, 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -98,9 +98,11 @@ dt {font-weight: bold;}
 dd {margin-left: 1.5em;}
 
 pre{
-    background-color: #002b36;
-    color: #839496;
-    padding: 10px; margin: 10px; overflow: auto;
+    background-color: #fdf6e3; padding: 10px; color: #657b83; margin: 10px; overflow: auto;
+    border: 1px solid #657b83;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
     /* www.pathf.com/blogs/2008/05/formatting-quoted-code-in-blog-posts-css21-white-space-pre-wrap/ */
     white-space: pre; white-space: pre-wrap; word-wrap: break-word;
     padding: 15px;
@@ -252,8 +254,7 @@ img.left, figure.left {float: left; margin: 0 2em 2em 0;}
 	Body
 *****************/
 #content {
-    background-color: #EEE8D5;
-    color: #586E75;
+	background: #fff;
 	margin-bottom: 2em;
 	overflow: hidden;
 	padding: 20px 20px;
@@ -316,8 +317,7 @@ img.left, figure.left {float: left; margin: 0 2em 2em 0;}
 		.social a[type$='atom+xml'], .social a[type$='rss+xml'] {background-image: url('../images/icons/rss.png');}
 		.social a[href*='twitter.com'] {background-image: url('../images/icons/twitter.png');}
 		.social a[href*='linkedin.com'] {background-image: url('../images/icons/linkedin.png');}
-		.social a[href*='gitorious.org'] {background-image: url('../images/icons/gitorious.png');}
-        .social a[href*='gittip.com'] {background-image: url('../images/icons/gittip.png');}
+		.social a[href*='gitorious.org'] {background-image: url('../images/icons/gitorious.org');}
 
 /*
 	About
@@ -434,3 +434,11 @@ li:last-child .hentry, #content > .hentry {border: 0; margin: 0;}
 	
 	#add-comment input[type='submit'] {float: right; margin: 0 .5em;}
 	#add-comment * {margin-bottom: .5em;}
+
+img {
+    border: 1px solid #657b83;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    padding: 5px;
+}
