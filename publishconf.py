@@ -23,4 +23,5 @@ SOCIAL = (
 )
 TAG_FEED_ATOM = 'feeds/%s.atom.xml'
 TAG_FEED_RSS = None
+THEME = 'notmyidea_solarized'
 TWITTER_USERNAME = 'aclark4life'
