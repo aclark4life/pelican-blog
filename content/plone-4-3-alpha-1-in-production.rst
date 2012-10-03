@@ -338,6 +338,12 @@ Then styled to fit with CSS:
         padding-top: 15px;
     }
 
+Customize templates
+-------------------
+
+As you may have noticed above I use ``z3c.jbot`` to customize various Plone templates.
+
+.. image:: https://raw.github.com/ACLARKNET/aclarknet.github.com/master/images/custom-templates.png
 
 Add content
 -----------
