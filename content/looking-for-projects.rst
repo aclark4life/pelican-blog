@@ -1,6 +1,6 @@
 Looking for projects
 ====================
-:date: 2012-10-04 1:00
+:date: 2012-10-04 10:30
 :tags: Plone, Python, Mozilla
 
 .. image:: https://raw.github.com/ACLARKNET/aclarknet.github.com/master/images/use_python.jpg
