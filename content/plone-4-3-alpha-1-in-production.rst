@@ -8,7 +8,7 @@ I love upgrading Plone. Given the choice between an afternoon in the sun and upg
 Always upgrading?
 -----------------
 
-I would love to see the trend of continuous integration make it's way all the way to deployment, so that one day our Plone sites are getting new code as soon as it's released. Until then, it's nice to know that Plone's upgrade procedure is fairly predictable and stable, if not entirely straightforward [1]_.
+I would love to see the trend of continuous integration make its way all the way to deployment, so that one day our Plone sites are getting new code as soon as it's released. Until then, it's nice to know that Plone's upgrade procedure is fairly predictable and stable, if not entirely straightforward [1]_.
 
 How do I upgrade?
 -----------------
