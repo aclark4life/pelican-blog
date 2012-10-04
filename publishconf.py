@@ -13,10 +13,11 @@ GOOGLE_ANALYTICS = 'UA-34988446-1'
 SITENAME = u'Alex Clark'
 SITEURL = 'http://blog.aclark.net'
 SOCIAL = (
+    ('aclark4life', 'http://twitter.com/aclark4life'),
+    ('ACLARKNET', 'http://twitter.com/ACLARKNET'),
     ('GitHub', 'http://github.com/aclark4life'),
     ('Gittip', 'https://www.gittip.com/aclark4life'),
     ('PythonPackages', 'https://pythonpackages.com/user/aclark4life'),
-    ('Twitter', 'http://twitter.com/aclark4life'),
     ('atom feed (Mozilla)', 'http://blog.aclark.net/Mozilla.atom.xml'),
     ('atom feed (Plone)', 'http://blog.aclark.net/Plone.atom.xml'),
     ('atom feed (Python)', 'http://blog.aclark.net/Python.atom.xml'),

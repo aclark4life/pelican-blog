@@ -49,8 +49,58 @@
         
             <aside id="featured" class="body">
                 <article>
-                    <h1 class="entry-title"><a href=".././/2012/09/22/sorry-for-the-blog-spam/">Sorry for the blog spam</a></h1> 
+                    <h1 class="entry-title"><a href=".././/2012/10/04/looking-for-projects/">Looking for projects</a></h1> 
                     <footer class="post-info">
+        <abbr class="published" title="2012-10-04T01:00:00">
+                Thu 04 October 2012
+        </abbr>
+
+        
+        <address class="vcard author">
+                By <a class="url fn" href=".././author/alex-clark.html">Alex Clark</a>
+        </address>
+        
+<p>In <a href=".././category/blog.html">Blog</a>. </p>
+<p>tags: <a href=".././tag/plone.html">Plone</a><a href=".././tag/python.html">Python</a><a href=".././tag/mozilla.html">Mozilla</a></p>
+
+
+</footer><!-- /.post-info --><img alt="https://raw.github.com/ACLARKNET/aclarknet.github.com/master/images/use_python.jpg" src="https://raw.github.com/ACLARKNET/aclarknet.github.com/master/images/use_python.jpg" />
+<p>With <a class="reference external" href="http://blog.aclark.net/2012/09/28/pythonpackages-com-one-year-later/">pythonpackages.com winding down</a>, I am now actively seeking projects for Q4 2012 and beyond. I am good at:</p>
+<ul class="simple">
+<li>Deploying Plone sites: <a class="reference external" href="http://blog.aclark.net/2012/10/03/plone-4-3-alpha-1-in-production/">http://blog.aclark.net/2012/10/03/plone-4-3-alpha-1-in-production/</a></li>
+<li>Maintaining and releasing Python packages: <a class="reference external" href="http://pypi.python.org/pypi?%3Aaction=search&amp;term=aclark&amp;submit=search">http://pypi.python.org/pypi?%3Aaction=search&amp;term=aclark&amp;submit=search</a></li>
+<li>Cat herding volunteers: <a class="reference external" href="http://lists.plone.org/pipermail/plone-com/Week-of-Mon-20120903/000039.html">http://lists.plone.org/pipermail/plone-com/Week-of-Mon-20120903/000039.html</a></li>
+<li>Writing documentation: <a class="reference external" href="http://docs.pythonpackages.com/en/latest/index.html">http://docs.pythonpackages.com/en/latest/index.html</a></li>
+<li>Writing narrative text: <a class="reference external" href="http://www.packtpub.com/plone-33-site-administration/book">http://www.packtpub.com/plone-33-site-administration/book</a></li>
+<li>Writing Python code: <a class="reference external" href="https://github.com/aclark4life">https://github.com/aclark4life</a></li>
+</ul>
+<p>Also, I've put together a list of projects I am involved in (or have been involved in): <a class="reference external" href="http://resume.aclark.net/projects/">http://resume.aclark.net/projects/</a>, and please feel free to check out my résumé: <a class="reference external" href="http://resume.aclark.net/">http://resume.aclark.net/</a>. If you'd like to discuss how I can help you or your team, please get in touch: <a class="reference external" href="mailto:aclark&#64;aclark.net">aclark&#64;aclark.net</a>.</p>
+<p>There are <a href=".././/2012/10/04/looking-for-projects/#disqus_thread">comments</a>.</p>
+                </article>
+                
+            </aside><!-- /#featured -->
+            
+                <section id="content" class="body">
+                    <h1>Other articles</h1>
+                    <hr />
+                    <ol id="posts-list" class="hfeed">
+            
+        
+        
+        
+            
+
+        
+         
+            
+            <li><article class="hentry">    
+                <header>
+                    <h1><a href=".././/2012/09/22/sorry-for-the-blog-spam/" rel="bookmark"
+                           title="Permalink to Sorry for the blog spam">Sorry for the blog spam</a></h1>
+                </header>
+                
+                <div class="entry-content">
+                <footer class="post-info">
         <abbr class="published" title="2012-09-22T21:45:00">
                 Sat 22 September 2012
         </abbr>
@@ -64,62 +114,14 @@
 <p>tags: <a href=".././tag/mozilla.html">Mozilla</a><a href=".././tag/plone.html">Plone</a><a href=".././tag/python.html">Python</a></p>
 
 
-</footer><!-- /.post-info --><p>As I'm just learning <a class="reference external" href="http://blog.getpelican.com">Pelican</a>, <a class="reference external" href="http://blog.aclark.net/2012/09/21/yes-this-blog-is-now-powered-by-pelican/#comment-658707601">Dirkjan Ochtman pointed out</a> that I can have &quot;fancy&quot; URLs via the <cite>ARTICLE_PERMALINK_STRUCTURE</cite> setting. So the blog spam you are seeing is a result of my publishing the same two articles with two different URLs (fancy and non-fancy). My apologies for the noise.</p>
+</footer><!-- /.post-info -->
+                <p>As I'm just learning <a class="reference external" href="http://blog.getpelican.com">Pelican</a>, <a class="reference external" href="http://blog.aclark.net/2012/09/21/yes-this-blog-is-now-powered-by-pelican/#comment-658707601">Dirkjan Ochtman pointed out</a> that I can have &quot;fancy&quot; URLs via the <cite>ARTICLE_PERMALINK_STRUCTURE</cite> setting. So the blog spam you are seeing is a result of my publishing the same two articles with two different URLs (fancy and non-fancy). My apologies for the noise.</p>
 <div class="section" id="publishconf-py">
-<h2>publishconf.py</h2>
-<p>And actually, I found <cite>ARTICLE_URL</cite> and <cite>ARTICLE_SAVE_AS</cite> to be the settings I wanted to use instead <a class="footnote-reference" href="#id4" id="id1">[1]</a>. My <a class="reference external" href="https://github.com/ACLARKNET/aclarknet.github.com/blob/master/publishconf.py">publishconf.py</a> now looks like this <a class="footnote-reference" href="#id5" id="id2">[2]</a>:</p>
-<pre class="literal-block">
-ARTICLE_SAVE_AS = '/{date:%Y}/{date:%m}/{date:%d}/{slug}/index.html'
-ARTICLE_URL = '/{date:%Y}/{date:%m}/{date:%d}/{slug}/'
-AUTHOR = u'Alex Clark'
-CATEGORY_FEED_ATOM = None
-CATEGORY_FEED_RSS = None
-DEFAULT_CATEGORY = 'Blog'
-DEFAULT_LANG = 'en'
-DEFAULT_PAGINATION = 10
-DELETE_OUTPUT_DIRECTORY = True
-DISQUS_SITENAME = 'aclark-blog'
-GITHUB_URL = 'https://github.com/ACLARKNET/aclarknet.github.com'
-GOOGLE_ANALYTICS = 'UA-34988446-1'
-SITENAME = u'Alex Clark'
-SITEURL = 'http://blog.aclark.net'
-SOCIAL = (
-    ('GitHub', 'http://github.com/aclark4life'),
-    ('Gittip', 'https://www.gittip.com/aclark4life'),
-    ('PythonPackages', 'https://pythonpackages.com/user/aclark4life'),
-    ('Twitter', 'http://twitter.com/aclark4life'),
-    ('atom feed (Mozilla)', 'http://blog.aclark.net/Mozilla.atom.xml'),
-    ('atom feed (Plone)', 'http://blog.aclark.net/Plone.atom.xml'),
-    ('atom feed (Python)', 'http://blog.aclark.net/Python.atom.xml'),
-)
-TAG_FEED_ATOM = 'feeds/%s.atom.xml'
-TAG_FEED_RSS = None
-TWITTER_USERNAME = 'aclark4life'
-</pre>
-<table class="docutils footnote" frame="void" id="id4" rules="none">
-<colgroup><col class="label" /><col /></colgroup>
-<tbody valign="top">
-<tr><td class="label"><a class="fn-backref" href="#id1">[1]</a></td><td><a class="reference external" href="http://pelican.notmyidea.org/en/3.0/settings.html#url-settings">http://pelican.notmyidea.org/en/3.0/settings.html#url-settings</a></td></tr>
-</tbody>
-</table>
-<table class="docutils footnote" frame="void" id="id5" rules="none">
-<colgroup><col class="label" /><col /></colgroup>
-<tbody valign="top">
-<tr><td class="label"><a class="fn-backref" href="#id2">[2]</a></td><td>I removed the extraneous pelicanconf.py and put everything in one file</td></tr>
-</tbody>
-</table>
-</div>
-<p>There are <a href=".././/2012/09/22/sorry-for-the-blog-spam/#disqus_thread">comments</a>.</p>
-                </article>
-                
-            </aside><!-- /#featured -->
-            
-                <section id="content" class="body">
-                    <h1>Other articles</h1>
-                    <hr />
-                    <ol id="posts-list" class="hfeed">
-            
-        
+<h2>publishconf ...</h2></div>
+                <a class="readmore" href=".././/2012/09/22/sorry-for-the-blog-spam/">read more</a>
+                <p>There are <a href=".././/2012/09/22/sorry-for-the-blog-spam/#disqus_thread">comments</a>.</p>
+                </div><!-- /.entry-content -->
+            </article></li>
         
         
             
@@ -416,13 +418,15 @@ better.</em></p>
                             
 
                         
+                            <li><a href="http://twitter.com/aclark4life">aclark4life</a></li>
+                        
+                            <li><a href="http://twitter.com/ACLARKNET">ACLARKNET</a></li>
+                        
                             <li><a href="http://github.com/aclark4life">GitHub</a></li>
                         
                             <li><a href="https://www.gittip.com/aclark4life">Gittip</a></li>
                         
                             <li><a href="https://pythonpackages.com/user/aclark4life">PythonPackages</a></li>
-                        
-                            <li><a href="http://twitter.com/aclark4life">Twitter</a></li>
                         
                             <li><a href="http://blog.aclark.net/Mozilla.atom.xml">atom feed (Mozilla)</a></li>
                         
