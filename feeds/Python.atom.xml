@@ -59,11 +59,11 @@
 &lt;h2&gt;What can you do to help?&lt;/h2&gt;
 &lt;p&gt;If you believe in the ideas behind pythonpackages.com (primarily: eliminating the need to think about packaging at all; e.g. through task automation, and process improvement behind the scenes; i.e. supporting new technology like distutils2/packaging, wheel, et al.; in order to present a seemless packaging story to developer-consumers.) then the best thing you can do is to purchase a paid plan:&lt;/p&gt;
 &lt;ul class="simple"&gt;
-&lt;li&gt;&lt;a class="reference external" href="https://pythonpackages.com/plans"&gt;https://pythonpackages.com/plans&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://pythonpackages.com/plans"&gt;http://pythonpackages.com/plans&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;The second best thing you can do is support me on gittip:&lt;/p&gt;
 &lt;ul class="simple"&gt;
-&lt;li&gt;&lt;a class="reference external" href="http://gittip.com/aclark4life"&gt;http://gittip.com/aclark4life&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://gittip.com/aclark4life"&gt;https://gittip.com/aclark4life&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;These funds will go towards covering hosting costs until such time as the service can pay for itself. I am also asking folks who appreciate my open source work in general to consider a gittip donation. If you cannot help financially, you can still use the free plan to release packages! Please try it out and &lt;a class="reference external" href="https://bitbucket.org/pythonpackages/pythonpackages.com/issues/new"&gt;give feedback&lt;/a&gt;. (The paid plans get you access to more package slots, so you don't have to swap out the free slot, and organizations, so you can release packages from organization repos).&lt;/p&gt;
 &lt;p&gt;Thanks for considering!&lt;/p&gt;
