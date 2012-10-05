@@ -62,11 +62,11 @@ What can you do to help?
 
 If you believe in the ideas behind pythonpackages.com (primarily: eliminating the need to think about packaging at all; e.g. through task automation, and process improvement behind the scenes; i.e. supporting new technology like distutils2/packaging, wheel, et al.; in order to present a seemless packaging story to developer-consumers.) then the best thing you can do is to purchase a paid plan:
 
-- https://pythonpackages.com/plans
+- http://pythonpackages.com/plans
 
 The second best thing you can do is support me on gittip:
 
-- http://gittip.com/aclark4life
+- https://gittip.com/aclark4life
 
 These funds will go towards covering hosting costs until such time as the service can pay for itself. I am also asking folks who appreciate my open source work in general to consider a gittip donation. If you cannot help financially, you can still use the free plan to release packages! Please try it out and `give feedback`_. (The paid plans get you access to more package slots, so you don't have to swap out the free slot, and organizations, so you can release packages from organization repos).
 
