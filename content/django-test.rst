@@ -1,8 +1,8 @@
 Hello, Django!
 ==============
 
-date: 2012-10-15
-tags: Django
+:date: 2012-10-15
+:tags: Django
 
 Test post
 ---------
