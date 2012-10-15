@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Alex Clark</title><link href="http://blog.aclark.net/" rel="alternate"></link><link href="http://blog.aclark.net/feeds/Django.atom.xml" rel="self"></link><id>http://blog.aclark.net/</id><updated>2012-10-15T18:40:00Z</updated><entry><title>Hello, Django!</title><link href="http://blog.aclark.net//2012/10/15/hello-django/" rel="alternate"></link><updated>2012-10-15T18:40:00Z</updated><author><name>Alex Clark</name></author><id>tag:blog.aclark.net,2012-10-15:/2012/10/15/hello-django/</id><summary type="html">&lt;div class="section" id="test-post"&gt;
+&lt;h2&gt;Test post&lt;/h2&gt;
+&lt;p&gt;This is a test post to create a Django tag feed. Hello, Django planet!&lt;/p&gt;
+&lt;/div&gt;
+</summary><category term="Django"></category></entry></feed>
