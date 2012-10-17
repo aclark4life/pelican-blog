@@ -1,6 +1,6 @@
 ARTICLE_SAVE_AS = '/{date:%Y}/{date:%m}/{date:%d}/{slug}/index.html'
 ARTICLE_URL = '/{date:%Y}/{date:%m}/{date:%d}/{slug}/'
-AUTHOR = u'Alex Clark'
+AUTHOR = u'aclark'
 CATEGORY_FEED_ATOM = None
 CATEGORY_FEED_RSS = None
 DEFAULT_CATEGORY = 'Blog'
