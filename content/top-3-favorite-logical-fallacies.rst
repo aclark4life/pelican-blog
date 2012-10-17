@@ -13,18 +13,18 @@ Fallacy
 
 In the course of debate, you may encounter a `fallacy`_ or "faulty reasoning". Discussion of fallacy is my favorite part of debate. So without further ado, my top 3 "favorite" [1]_ logical fallacies; of all those I've encountered since I begun to debate in electronic form in the mid-1990s. *Disclaimer: I have been on both sides of all three, I'm human. My goal in writing this blog entry is to facilitate better conversations within the communities I care about: Mozilla, Python, and Plone.*
 
-You will regret your comments!
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#1. You will regret your comments!
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 This may be true, but it's probably not the point. And it's probably better to stay on topic then it is to stray into personal attacks, or what you may feel is "helping" [2]_ the other person.
 
-You are out of line!
-~~~~~~~~~~~~~~~~~~~~
+#2. You are out of line!
+~~~~~~~~~~~~~~~~~~~~~~~~
 
 This may be true too, but it may take both sides to acknowledge the lines. When discussing a point, even though it's tempting to cry foul, it's probably better to stay on point. Sometimes you need a break, in which case it's OK to say "let's take a break and pick this up again later" [3]_
 
-You are wrong!
-~~~~~~~~~~~~~~
+#3. You are wrong!
+~~~~~~~~~~~~~~~~~~
 
 Perhaps. But it is likely that you may never agree with your debate counterparts. It's much better to focus on the core issues, and how you can compromise, then it is to focus attention on what is "right" and "wrong" (and who is right and wrong) [4]_.
 
