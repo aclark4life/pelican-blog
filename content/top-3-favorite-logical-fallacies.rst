@@ -39,7 +39,7 @@ It feels great to get those out. If anyone reading this has formal training in d
 .. _`fallacy`: http://en.wikipedia.org/wiki/Fallacy 
 .. _`gittip`: http://gittip.com/aclark4life
 
-.. [1] I say "favorite" because these fallacies have crystallized in my brain over the years to the point where I feel I can categorize and describe them.
+.. [1] I say "favorite" because these fallacies have crystallized in my brain over the years to the point where I feel I can categorize and discuss them.
 .. [2] I say "helping" because it's probably hurting the intended recipient (whether it's true or not). Sorry, it's not up to you to decide whether or not someone else will regret their comments.
 .. [3] I am married. And there is no better place in the world, than within the institution of marriage, to learn how to debate. :-)
 .. [4] There may be no tangible right or wrong, just preference. Discuss your preferences, then what you need from the other side to be happy. Then ask the other side to do the same.
