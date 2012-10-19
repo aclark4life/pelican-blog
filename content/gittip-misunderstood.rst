@@ -4,7 +4,7 @@ Gittip, Misunderstood
 :date: 2012-10-19 03:00
 :tags: Mozilla, Plone, Python
 
-People do not understand gittip. Or, they do not understand how I use it. Worse, they **think** they understand it. So much so, some choose to comment about it publicly.
+People do not understand gittip. Or, they do not understand how I use it. Worse, they **think** they understand it [1]_. So much so, some choose to comment about it publicly.
 
 .. image:: https://raw.github.com/ACLARKNET/aclarknet.github.com/master/images/condescend.jpg
 
@@ -16,7 +16,7 @@ Remember `gittip is the future`_? Someone anonymously commented:
 
 Really? Well, I have to agree. I **don't like seeing panhandlers** on the street. But I'd never yell "Nobody likes a beggar!" at them. Why? Because: I don't care what they do. Does their presence sometimes annoy me? Sure, because I have to read the sign. And then I have to nod, like "What's up" and "Nah, sorry" at the same time (an acquired skill).
 
-But that is not what bothers me the most about my friend @dfgd.com's comment. What bothers me the most is: I don't claim to know or understand why people do what they do. And short of a loitering law being broken somewhere, I think they have every right to do it (as long as they are not harming me or others). I'd even like to see a pandhandler use Square to accept payments. It sounds ridiculous, but I'd actually pay a panhandler that was accepting credit cards (I have no idea why this amuses me, but it does; of course, you may think twice about what is happening when they swipe but could a panhandler really figure out how to… I digress, back to the story.)
+But that is not what bothers me the most about my friend @dfgd.com's comment. What bothers me most is: I don't claim to know or understand why people do what they do. And short of a loitering law being broken somewhere, I think they have every right to do it (as long as they are not harming me or others). I'd even like to see a pandhandler use Square to accept payments. It sounds ridiculous, but I'd actually pay a panhandler that was accepting credit cards (I have no idea why this amuses me, but it does; of course, you may think twice about what is happening when they swipe but could a panhandler really figure out how to… I digress, back to the story.)
 
 Anyway, pro tip: the people who choose to use gittip are not begging. Some (most?) never ask for a dime. I choose to promote my gittip link and I am now going to tell you why, so if anyone ever asks? Or condescends? Here it is:
 
@@ -50,4 +50,10 @@ Are you aware of all those things and don't want to gittip me? That's fine too. 
 
 I (like so many others before me and along with me in the Plone, Python, and Mozilla communities) have become an entrepreneur. In addition to thinking about "what consulting projects am I going to work to pay my bills", I like thinking about "what services can I build to pay my bills". And I'm so lucky I get the chance to do it.
 
+*You know what to do or not to do because you have just read this article:* http://gittip.com/aclark4life
+
+*You may also want to follow me on Twitter:* http://twitter.com/aclark4life
+
 .. _`gittip is the future`: http://blog.aclark.net/gittip-is-the-future.html
+
+.. [1] http://blogs.hbr.org/ashkenas/2011/02/your-communications-may-not-be.html
