@@ -8,7 +8,7 @@ People do not understand gittip. Or, they do not understand how I use it. Worse,
 
 .. image:: https://raw.github.com/ACLARKNET/aclarknet.github.com/master/images/condescend.jpg
 
-Remember `gittip is the future`_? Someone anonymously commented: 
+Remember `gittip is the future`_? Someone commented: 
 
     "Nobody likes a beggar." 
 
@@ -33,7 +33,7 @@ I have a funny story I like tell to… well, to you, now: I've done AdSense in t
 Money is not my boss
 --------------------
 
-Some people go **APE SHIT** and get **REALLY UNCOMFORTABLE** in certain situations involving money. I don't. Are you concerned that I'm not volunteering enough and getting paid too much? Don't be. I assure you, I can figure it out. If you have any questions, just ask me: aclark@aclark.net. Are you concerned that because I get paid, someone else may get the wrong impression about volunteering and why do some people get paid and some don't and don't you worry this may give the wrong…? No. I trust that if someone wants to volunteer, that's exactly what they are going to do.
+Some people go **APE SHIT** and get **REALLY UNCOMFORTABLE** in certain situations involving money. I am not one of them. Are you concerned that I'm not volunteering enough and getting paid too much? Don't be. I assure you, I can figure it out. If you have any questions, just ask me: aclark@aclark.net. Are you concerned that because I get paid, someone else may get the wrong impression about volunteering and why do some people get paid and some don't and don't you worry this may give the wrong…? No. I trust that if someone wants to volunteer, that's exactly what they are going to do.
 
 I have vision
 -------------
