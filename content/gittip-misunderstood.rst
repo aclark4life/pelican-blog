@@ -18,7 +18,7 @@ Really? Well, I have to agree. I **don't like seeing panhandlers** on the street
 
 But that is not what bothers me the most about my friend @dfgd.com's comment. What bothers me the most is: I don't claim to know or understand why people do what they do. And short of a loitering law being broken somewhere, I think they have every right to do it (as long as they are not harming me or others). I'd even like to see a pandhandler use Square to accept payments. It sounds ridiculous, but I'd actually pay a panhandler that was accepting credit cards (I have no idea why this amuses me, but it does; of course, you may think twice about what is happening when they swipe but could a panhandler really figure out how to… I digress, back to the story.)
 
-Anyway, pro tip: the people who choose to use gittip are not begging. Some (most?) never ask for a dime. I choose to promote my gittip link and I am now going to tell you why, so if anyone ever asks? Or condescends? Here it is:
+Anyway, **pro tip: the people who choose to use gittip are not begging**. Some (most?) never ask for a dime. I choose to promote my gittip link and I am now going to tell you why, so if anyone ever asks? Or condescends? Here it is:
 
 I like the project
 ------------------
