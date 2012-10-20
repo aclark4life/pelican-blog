@@ -34,7 +34,7 @@ Add-ons
 
 .. image:: https://raw.github.com/ACLARKNET/aclarknet.github.com/master/images/addons.png
 
-Did you see? You might have missed it. No mention of **Products** WHAT-SO-EVER. "Product" was a term that Zope2 used for Python libraries that enhanced the functionality of Zope2, and it stuck. Now, it should die in favor of something everyone else in the world understands: add-on. Well played, Aspeli. Well played.
+Did you see? You might have missed it. No mention of **Products** WHAT-SO-EVER. "Product" was a term that Zope2 used for Python libraries that enhanced the functionality of Zope2, and it stuck. Now, it should die in favor of a term everyone else in the world is familiar with (in this context): add-on. Well played, Aspeli. Well played.
 
 The Review
 ----------
