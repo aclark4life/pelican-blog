@@ -39,7 +39,7 @@ Did you see? You might have missed it. No mention of **Products** WHAT-SO-EVER. 
 The Review
 ----------
 
-I will now talk about each chapter briefly. This will be TL;DR-style, but I hope you'll get a nice idea for why this book is so great. If you have any questions, please don't hesitate to ask them in the comments.
+I will now talk about each chapter briefly. This will be TL;DR-style, but I hope you'll get a nice idea for why this book is so great. Every imaginable detail for each section is covered in the book in painstaking detail by Aspeli. If you have any questions, please don't hesitate to ask them in the comments.
 
 Chapter 1: Plone in Context
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
