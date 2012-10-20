@@ -13,7 +13,7 @@ First: I liked it. Second: I appreciate Aspeli writing it. Third: Like many othe
 - It's good for the community
 - It's good for Plone
 
-So if you care about Plone: please go buy both an electronic and paper version of this book **RIGHT NOW** [0]_. While you are at it, please pick up a copy of **Plone 3.3 Site Administration**. It's quite good, and I hear the author is a **swell guy** and would most certainly appreciate your generosity [1]_ [2]_.
+So if you care about Plone: please go buy both an electronic and paper version of this book **RIGHT NOW** [0]_. While you are at it, please pick up a copy of **Plone 3.3 Site Administration**. It's quite good, and I hear the author is a **swell guy** too and would most certainly appreciate your generosity [1]_ [2]_.
 
 What I like
 -----------
