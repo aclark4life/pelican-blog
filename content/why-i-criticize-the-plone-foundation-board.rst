@@ -15,7 +15,7 @@ The Fallacy Of False Cause
 
 *I don't like what you have to say, therefore you must be quiet.* **Not necessarily. You may choose not to listen.**
 
-As long as you are polite, respectful, and on topic: you can have a civil discussion with almost any human individual or group in today's world. At least, this is what I believe to be true [0]_. The challenge is in `sticking to those criteria`_. Conversations often become heated and stray outside of respectful lines, because we are human. Did you step out of line? It's OK. You can apologize. If someone does not accept your apology, they were never actually your friend to begin with, sorry. Which is also not a problem: you don't have to be friends with everyone. Not everyone has to like you. This, also, is life. I like myself, other people like me, and that's enough for me. And note: if someone doesn't like you? That's not your problem, either. The **Taliban probably doesn't like me**, but there's absolutely nothing in this lifetime I can do about it. Life goes on.
+As long as you are polite, respectful, and on topic: you can have a civil discussion with almost any human individual or group in today's world. The challenge is in `sticking to those criteria`_. Conversations often become heated and stray outside of respectful lines, because we are human. Did you step out of line? It's OK. You can apologize. If someone does not accept your apology, they were never actually your friend to begin with, sorry. Which is also not a problem: you don't have to be friends with everyone. Not everyone has to like you. This, also, is life. I like myself, other people like me, and that's enough for me. And note: if someone doesn't like you? That's not your problem, either. The **Taliban probably doesn't like me**, but there's absolutely nothing in this lifetime I can do about it. Life goes on.
 
 Issues
 ------
@@ -51,5 +51,4 @@ Here's to you, Plone. And to the next 10 years of success.
 .. _`sticking to those criteria`: http://blog.aclark.net/2012/10/17/top-3-favorite-logical-fallacies/
 .. _`Plone Conference 2008`: http://plone.org/2008
 .. _`National Institutes of Health`: http://afni.nimh.nih.gov
-.. [0] Inasmuch as one can define a truth in this context.
 .. [1] Success means different things to different people.
