@@ -25,7 +25,7 @@ From the famous (?) pricing scrap of 2010 (i wanted a more expensive server with
 Success
 -------
 
-Plone's success is my success and vice versa. I do a lot of different things in life, so I'm not going to say that Plone must succeed for me to succeed. But I must succeed, and if I can help Plone succeed too, I'm going to do everything within my power to make it happen. Let me be clear: Plone does not need me to be successful. But if you've seen the "Plone: I wish I could quit you." T-Shirt by Tarek Ziadé (shown above), you may know why I keep struggling to make Plone as good as it can be, albeit by my excessively high and overly strict (but not unrealistic) standards; which some, I am sure, do not like.
+Plone's success [1]_ is my success and vice versa. I do a lot of different things in life, so I'm not going to say that Plone must succeed for me to succeed. But I must succeed, and if I can help Plone succeed too, I'm going to do everything within my power to make it happen. Let me be clear: Plone does not need me to be successful. But if you've seen the "Plone: I wish I could quit you." T-Shirt by Tarek Ziadé (shown above), you may know why I keep struggling to make Plone as good as it can be, albeit by my excessively high and overly strict (but not unrealistic) standards; which some, I am sure, do not like.
 
 Conclusion
 ----------
