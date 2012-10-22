@@ -8,7 +8,7 @@ Why I Criticize The Plone Foundation Board
 
 TL;DR: Because I care.
 
-As some of you can probably relate to, I've had my fair share of disagreements with the Plone Foundation Board over the years. The good news is, for the most part, it (just like the community) is staffed with **very reasonable people** who if you push them on an issue, will acknowledge that there are always competing viewpoints to any issue you can think of. This is life.
+As some of you can probably relate to, I've had my fair share of disagreements with the Plone Foundation Board over the years. The good news is, for the most part, it (just like the community) is staffed with **very reasonable people** who if you push them on an issue, will acknowledge that there are always competing viewpoints to any issue you can think of.
 
 The Fallacy Of False Cause
 --------------------------
@@ -20,7 +20,7 @@ As long as you are polite, respectful, and on topic: you can have a civil discus
 Issues
 ------
 
-From the famous (?) pricing scrap of 2010 (i wanted a more expensive server with VM capability, they didn't) to various financially sensitive issues: i.e. I occasionally want to be financially compensated as a "volunteer". And while the Board does compensate volunteers in many ways, they frequently don't agree with the ways I've suggested. This again, is life. And who could forget `Plone Conference 2008`_? This was the first year that the Foundation received a percentage of the ticket sales. Now if I recall correctly while there were certainly some heated debates, none were too taxing or unreasonable (unless you count the ones we collectively had with The Ronald Reagan Building ;-)).
+From the famous (?) pricing scrap of 2010 (i wanted a more expensive server with VM capability, they didn't) to various financially sensitive issues: i.e. I occasionally want to be financially compensated as a "volunteer". And while the Board does compensate volunteers in many ways, they frequently don't agree with the ways I've suggested. And who could forget `Plone Conference 2008`_? This was the first year that the Foundation received a percentage of the ticket sales. Now if I recall correctly there were certainly some heated debates, but none were too taxing or unreasonable (unless you count the ones we collectively had with The Ronald Reagan Building ;-)).
 
 Now on to my point.
 
