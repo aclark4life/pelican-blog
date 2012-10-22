@@ -1,5 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Alex Clark</title><link href="http://blog.aclark.net/" rel="alternate"></link><link href="http://blog.aclark.net/feeds/all-en.atom.xml" rel="self"></link><id>http://blog.aclark.net/</id><updated>2012-10-20T19:15:00Z</updated><entry><title>Review of Aspeli's Professional Plone 4 Development</title><link href="http://blog.aclark.net//2012/10/20/review-of-aspelis-professional-plone-4-development/" rel="alternate"></link><updated>2012-10-20T19:15:00Z</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2012-10-20:/2012/10/20/review-of-aspelis-professional-plone-4-development/</id><summary type="html">&lt;p&gt;&lt;em&gt;I owe PACKT a review of this book, so here it is.&lt;/em&gt;&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Alex Clark</title><link href="http://blog.aclark.net/" rel="alternate"></link><link href="http://blog.aclark.net/feeds/all-en.atom.xml" rel="self"></link><id>http://blog.aclark.net/</id><updated>2012-10-22T01:00:00Z</updated><entry><title>Why Split The Lists</title><link href="http://blog.aclark.net//2012/10/22/why-split-the-lists/" rel="alternate"></link><updated>2012-10-22T01:00:00Z</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2012-10-22:/2012/10/22/why-split-the-lists/</id><summary type="html">&lt;div class="section" id="background"&gt;
+&lt;h2&gt;Background&lt;/h2&gt;
+&lt;p&gt;The Plone community consists (roughly) of Founders, Contributors, and Users. It has formalized itself into a 501(c)(3) software foundation with a corresponding board and membership. The board conducts business on behalf of the community and the board and foundation members are all recognized contributors. Both the board and the membership have their own private mailing list.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="issue"&gt;
+&lt;h2&gt;Issue&lt;/h2&gt;
+&lt;p&gt;Over the years, issues have been raised on the membership list that have led to more discussion than all of the foundation membership are comfortable with. And some have expressed that concern (usually without addressing the orginal concern or &amp;quot;topic&amp;quot; of the thread).&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="fix"&gt;
+&lt;h2&gt;Fix&lt;/h2&gt;
+&lt;p&gt;While I am quite confident that folks can manage their own &lt;strong&gt;INBOXES&lt;/strong&gt; (or should be able to), I'm not confident that folks (myself included) can resist engaging with others over issues like:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;The &amp;quot;religious&amp;quot; aspect (The Plone community is better than this!)&lt;/li&gt;
+&lt;li&gt;The practical aspect (Everyone can just control themselves!)&lt;/li&gt;
+&lt;li&gt;The miscommunication (You are obviously &amp;quot;wrong&amp;quot; about XYZ which I won't address but rather suggest you stop!)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;To me, the fix is simple. Do the most practical thing and split the lists into: Membership-announce and Membership-discuss (note: discussions with the board list are a different matter.) This says nothing about the health of the community (which is strong), it just means: announce is for important information like &amp;quot;please renew your foundation membership&amp;quot; and discuss is for hashing out issues that foundation members care about.&lt;/p&gt;
+&lt;p&gt;As someone who volunteers to help maintain the lists for the community, I don't take this suggestion lightly but I think it's the right thing to do to move forward and make the most number of people happy. That said, if a vote decides otherwise I am OK with that, but I'll be curbing the amount of discussion I would actually like to do on the membership list.&lt;/p&gt;
+&lt;/div&gt;
+</summary></entry><entry><title>Review of Aspeli's Professional Plone 4 Development</title><link href="http://blog.aclark.net//2012/10/20/review-of-aspelis-professional-plone-4-development/" rel="alternate"></link><updated>2012-10-20T19:15:00Z</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2012-10-20:/2012/10/20/review-of-aspelis-professional-plone-4-development/</id><summary type="html">&lt;p&gt;&lt;em&gt;I owe PACKT a review of this book, so here it is.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;First: I liked it. Second: I appreciate Aspeli writing it. Third: Like many others, I couldn't wait for it to come out. Fourth: I know that it was a &lt;strong&gt;TON OF WORK&lt;/strong&gt; and &lt;strong&gt;PROBABLY NOT WORTH THE MONEY&lt;/strong&gt; to write it. So why write a Plone book? A few reasons (other than money):&lt;/p&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;It's good for you&lt;/li&gt;
