@@ -57,6 +57,7 @@ $ virtualenv .
 $ bin/pip install -r requirements.txt
 $ bin/django-admin.py runserver --settings=hello.settings
 &lt;/pre&gt;
+&lt;p&gt;&lt;em&gt;The code above can be found here: https://github.com/aclark4life/django-hello&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;Consider a&lt;/em&gt;&lt;/p&gt;
 &lt;iframe style="border: 0; margin: 0; padding: 0;"
         src="https://www.gittip.com/aclark4life/widget.html"
