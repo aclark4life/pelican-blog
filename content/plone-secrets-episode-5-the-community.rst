@@ -70,5 +70,5 @@ Good luck to us all!
 
 <3
 
-.. [0] I'm not listing the core developers because there are over 100 of them and they don't formally meet as far as I know. But of course, without the Founders and Core Developers none of us would be here. So a special thanks to them as well. 
+.. [0] I'm not listing the core developers because there are over 100 of them and they don't formally meet as far as I know. But of course, without the Founders and Core Developers none of us would be here. So a very special thanks to them as well. 
 .. [1] Term coined by Wyn Williams
