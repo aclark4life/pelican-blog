@@ -1,5 +1,64 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Alex Clark</title><link href="http://blog.aclark.net/" rel="alternate"></link><link href="http://blog.aclark.net/feeds/Django.atom.xml" rel="self"></link><id>http://blog.aclark.net/</id><updated>2012-10-15T18:40:00Z</updated><entry><title>Hello, Django!</title><link href="http://blog.aclark.net//2012/10/15/hello-django/" rel="alternate"></link><updated>2012-10-15T18:40:00Z</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2012-10-15:/2012/10/15/hello-django/</id><summary type="html">&lt;div class="section" id="test-post"&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Alex Clark</title><link href="http://blog.aclark.net/" rel="alternate"></link><link href="http://blog.aclark.net/feeds/Django.atom.xml" rel="self"></link><id>http://blog.aclark.net/</id><updated>2012-10-23T13:00:00Z</updated><entry><title>Hello Django</title><link href="http://blog.aclark.net//2012/10/23/hello-django/" rel="alternate"></link><updated>2012-10-23T13:00:00Z</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2012-10-23:/2012/10/23/hello-django/</id><summary type="html">&lt;p&gt;Django doesn't really need a hello world style introduction, it's documentation speaks for itself. But still, this is what &lt;strong&gt;Hello World&lt;/strong&gt; in Django looks like to me. I hate boilerplate, and I love breaking software down to its core elements; just enough to start the server.&lt;/p&gt;
+&lt;p&gt;setup.py:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+from setuptools import setup
+
+setup(
+    name='hello',
+)
+&lt;/pre&gt;
+&lt;p&gt;requirements.txt:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+Django==1.4.1
+-e .
+&lt;/pre&gt;
+&lt;p&gt;settings.py:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+from hello import urls
+
+
+DEBUG = True
+ROOT_URLCONF = urls
+&lt;/pre&gt;
+&lt;p&gt;urls.py:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+from django.conf.urls import patterns
+
+urlpatterns = patterns(
+    '',
+    (r'', 'hello.views.index'),
+)
+&lt;/pre&gt;
+&lt;p&gt;views.py:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+from django.http import HttpResponse
+import datetime
+
+
+# Based on https://docs.djangoproject.com/en/1.4/topics/http/views/
+def index(request):
+    &amp;quot;&amp;quot;&amp;quot;
+    This function takes a Django request object and returns a 'Hello World'
+    style response, by wrapping some HTML in a Django response object.
+    &amp;quot;&amp;quot;&amp;quot;
+
+    now = datetime.datetime.now()
+    html = &amp;quot;&amp;lt;html&amp;gt;&amp;lt;body&amp;gt;It is now %s.&amp;lt;/body&amp;gt;&amp;lt;/html&amp;gt;&amp;quot; % now
+    return HttpResponse(html)
+&lt;/pre&gt;
+&lt;div class="section" id="installation"&gt;
+&lt;h2&gt;Installation&lt;/h2&gt;
+&lt;p&gt;To install:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+$ git clone this-repo
+$ cd this-repo
+$ virtualenv .
+$ bin/pip install -r requirements.txt
+$ bin/django-admin.py runserver --settings=hello.settings
+&lt;/pre&gt;
+&lt;/div&gt;
+</summary><category term="Django"></category><category term="Python"></category></entry><entry><title>Hello, Django!</title><link href="http://blog.aclark.net//2012/10/15/hello-django/" rel="alternate"></link><updated>2012-10-15T18:40:00Z</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2012-10-15:/2012/10/15/hello-django/</id><summary type="html">&lt;div class="section" id="test-post"&gt;
 &lt;h2&gt;Test post&lt;/h2&gt;
 &lt;p&gt;This is a test post to create a Django tag feed. Hello, Django planet!&lt;/p&gt;
 &lt;/div&gt;

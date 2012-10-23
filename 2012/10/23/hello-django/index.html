@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-        <title>Hello, Django!</title>
+        <title>Hello Django</title>
         <meta charset="utf-8" />
         <link rel="stylesheet" href="../../../../.././theme/css/main.css" type="text/css" />
         
@@ -46,8 +46,8 @@
   <article>
     <header>
       <h1 class="entry-title">
-        <a href="/2012/10/15/hello-django/" rel="bookmark"
-           title="Permalink to Hello, Django!">Hello, Django!</a></h1>
+        <a href="/2012/10/23/hello-django/" rel="bookmark"
+           title="Permalink to Hello Django">Hello Django</a></h1>
       
 <a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="aclark4life">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
 
@@ -55,8 +55,8 @@
 
     <div class="entry-content">
       <footer class="post-info">
-        <abbr class="published" title="2012-10-15T18:40:00">
-                Mon 15 October 2012
+        <abbr class="published" title="2012-10-23T13:00:00">
+                Tue 23 October 2012
         </abbr>
 
         
@@ -65,18 +65,73 @@
         </address>
         
 <p>In <a href="../../../../.././category/blog.html">Blog</a>. </p>
-<p>tags: <a href="../../../../.././tag/django.html">Django</a></p>
+<p>tags: <a href="../../../../.././tag/django.html">Django</a><a href="../../../../.././tag/python.html">Python</a></p>
 
 
 Translations: 
     
-        <a href="../../../../.././/2012/10/23/hello-django/">en</a>
+        <a href="../../../../.././/2012/10/15/hello-django/">en</a>
     
 
 </footer><!-- /.post-info -->
-      <div class="section" id="test-post">
-<h2>Test post</h2>
-<p>This is a test post to create a Django tag feed. Hello, Django planet!</p>
+      <p>Django doesn't really need a hello world style introduction, it's documentation speaks for itself. But still, this is what <strong>Hello World</strong> in Django looks like to me. I hate boilerplate, and I love breaking software down to its core elements; just enough to start the server.</p>
+<p>setup.py:</p>
+<pre class="literal-block">
+from setuptools import setup
+
+setup(
+    name='hello',
+)
+</pre>
+<p>requirements.txt:</p>
+<pre class="literal-block">
+Django==1.4.1
+-e .
+</pre>
+<p>settings.py:</p>
+<pre class="literal-block">
+from hello import urls
+
+
+DEBUG = True
+ROOT_URLCONF = urls
+</pre>
+<p>urls.py:</p>
+<pre class="literal-block">
+from django.conf.urls import patterns
+
+urlpatterns = patterns(
+    '',
+    (r'', 'hello.views.index'),
+)
+</pre>
+<p>views.py:</p>
+<pre class="literal-block">
+from django.http import HttpResponse
+import datetime
+
+
+# Based on https://docs.djangoproject.com/en/1.4/topics/http/views/
+def index(request):
+    &quot;&quot;&quot;
+    This function takes a Django request object and returns a 'Hello World'
+    style response, by wrapping some HTML in a Django response object.
+    &quot;&quot;&quot;
+
+    now = datetime.datetime.now()
+    html = &quot;&lt;html&gt;&lt;body&gt;It is now %s.&lt;/body&gt;&lt;/html&gt;&quot; % now
+    return HttpResponse(html)
+</pre>
+<div class="section" id="installation">
+<h2>Installation</h2>
+<p>To install:</p>
+<pre class="literal-block">
+$ git clone this-repo
+$ cd this-repo
+$ virtualenv .
+$ bin/pip install -r requirements.txt
+$ bin/django-admin.py runserver --settings=hello.settings
+</pre>
 </div>
 
     </div><!-- /.entry-content -->
@@ -85,7 +140,7 @@ Translations:
       <h2>Comments !</h2>
       <div id="disqus_thread"></div>
       <script type="text/javascript">
-        var disqus_identifier = "/2012/10/15/hello-django/";
+        var disqus_identifier = "/2012/10/23/hello-django/";
         (function() {
         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
         dsq.src = 'http://aclark-blog.disqus.com/embed.js';
