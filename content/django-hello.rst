@@ -64,3 +64,13 @@ To install::
     $ virtualenv .
     $ bin/pip install -r requirements.txt
     $ bin/django-admin.py runserver --settings=hello.settings
+
+*Consider a*
+
+.. raw:: html
+
+    <iframe style="border: 0; margin: 0; padding: 0;"
+            src="https://www.gittip.com/aclark4life/widget.html"
+            width="48pt" height="20pt"></iframe>
+
+<3
