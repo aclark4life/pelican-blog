@@ -65,7 +65,10 @@
 
 
 </footer><!-- /.post-info --><p><em>Pillow is the &quot;friendly&quot; PIL fork. Initially just a packaging fork, now considering image code bug fixes and Python 3 support. To be friendly, we attempt to track changes against upstream tickets in PIL.</em></p>
-<p>Pillow 1.7.8 is out!</p>
+<p>Pillow 1.7.8 is out! Read about it here:</p>
+<ul class="simple">
+<li><a class="reference external" href="http://pypi.python.org/pypi/Pillow/1.7.8">http://pypi.python.org/pypi/Pillow/1.7.8</a></li>
+</ul>
 <div class="section" id="features">
 <h2>Features</h2>
 <ul class="simple">
@@ -81,6 +84,39 @@
 <li>Removed doctests.py that made tests of other packages fail. [thomasdesvenain]</li>
 <li>Fix opening psd files with RGBA layers when A mode is not of type 65535 but 3. Fixes issue <a class="reference external" href="https://github.com/python-imaging/Pillow/issues/3">https://github.com/python-imaging/Pillow/issues/3</a> [thomasdesvenain]</li>
 </ul>
+</div>
+<div class="section" id="install">
+<h2>Install</h2>
+<p>To install Pillow:</p>
+<pre class="literal-block">
+$ easy_install Pillow
+</pre>
+<p>Or:</p>
+<pre class="literal-block">
+$ pip install Pillow
+</pre>
+<p>Or:</p>
+<pre class="literal-block">
+$ python setup.py install (inside the extracted zip)
+</pre>
+<p>Or:</p>
+<pre class="literal-block">
+$ pip install zc.buildout
+$ buildout init
+</pre>
+<p>With <tt class="docutils literal">buildout.cfg</tt>:</p>
+<pre class="literal-block">
+[buildout]
+parts = pillow
+
+[pillow]
+recipe = zc.recipe.egg
+</pre>
+<p>And:</p>
+<pre class="literal-block">
+$ buildout
+</pre>
+<p>(Note: easy_install &amp; pip each handle namespace packages differently, so you should choose one or the other, and not mix the two.)</p>
 </div>
 <div class="section" id="report-issues">
 <h2>Report issues</h2>
