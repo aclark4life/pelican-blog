@@ -49,8 +49,87 @@
         
             <aside id="featured" class="body">
                 <article>
-                    <h1 class="entry-title"><a href=".././/2012/10/23/django-hello/">Django Hello</a></h1> 
+                    <h1 class="entry-title"><a href=".././/2012/11/02/pillow-178/">Pillow 1.7.8</a></h1> 
                     <footer class="post-info">
+        <abbr class="published" title="2012-11-02T11:00:00">
+                Fri 02 November 2012
+        </abbr>
+
+        
+        <address class="vcard author">
+                By <a class="url fn" href=".././author/aclark.html">aclark</a>
+        </address>
+        
+<p>In <a href=".././category/blog.html">Blog</a>. </p>
+<p>tags: <a href=".././tag/python.html">Python</a></p>
+
+
+</footer><!-- /.post-info --><p><em>Pillow is the &quot;friendly&quot; PIL fork. Initially just a packaging fork, now considering image code bug fixes and Python 3 support. To be friendly, we attempt to track changes against upstream tickets in PIL.</em></p>
+<p>Pillow 1.7.8 is out!</p>
+<div class="section" id="features">
+<h2>Features</h2>
+<ul class="simple">
+<li>It's PIL (Python Imaging Library)</li>
+<li>It installs on all modern systems <a class="footnote-reference" href="#id2" id="id1">[1]</a></li>
+<li>Win32 eggs are provided (special thanks to Takayuki Shimizukawa)</li>
+</ul>
+</div>
+<div class="section" id="changes">
+<h2>Changes</h2>
+<p>This release includes:</p>
+<ul class="simple">
+<li>Removed doctests.py that made tests of other packages fail. [thomasdesvenain]</li>
+<li>Fix opening psd files with RGBA layers when A mode is not of type 65535 but 3. Fixes issue <a class="reference external" href="https://github.com/python-imaging/Pillow/issues/3">https://github.com/python-imaging/Pillow/issues/3</a> [thomasdesvenain]</li>
+</ul>
+</div>
+<div class="section" id="report-issues">
+<h2>Report issues</h2>
+<p>If you find an issue, please report it here:</p>
+<ul class="simple">
+<li><a class="reference external" href="https://github.com/python-imaging/Pillow/issues">https://github.com/python-imaging/Pillow/issues</a></li>
+</ul>
+<p>Better yet: please fork, fix, and submit a pull request. Please also solicit for peer review once the pull request has been submitted.</p>
+</div>
+<div class="section" id="discussion">
+<h2>Discussion</h2>
+<p>You may discuss issues related to PIL, Pillow, and Python imaging on the image-sig list:</p>
+<ul class="simple">
+<li><a class="reference external" href="http://mail.python.org/mailman/listinfo/image-sig">http://mail.python.org/mailman/listinfo/image-sig</a></li>
+</ul>
+<p>Enjoy using Pillow!</p>
+<table class="docutils footnote" frame="void" id="id2" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id1">[1]</a></td><td>If it doesn't, please report it: <a class="reference external" href="https://github.com/python-imaging/Pillow/issues">https://github.com/python-imaging/Pillow/issues</a></td></tr>
+</tbody>
+</table>
+</div>
+<p>There are <a href=".././/2012/11/02/pillow-178/#disqus_thread">comments</a>.</p>
+                </article>
+                
+            </aside><!-- /#featured -->
+            
+                <section id="content" class="body">
+                    <h1>Other articles</h1>
+                    <hr />
+                    <ol id="posts-list" class="hfeed">
+            
+        
+        
+        
+            
+
+        
+         
+            
+            <li><article class="hentry">    
+                <header>
+                    <h1><a href=".././/2012/10/23/django-hello/" rel="bookmark"
+                           title="Permalink to Django Hello">Django Hello</a></h1>
+                </header>
+                
+                <div class="entry-content">
+                <footer class="post-info">
         <abbr class="published" title="2012-10-23T13:00:00">
                 Tue 23 October 2012
         </abbr>
@@ -64,81 +143,15 @@
 <p>tags: <a href=".././tag/django.html">Django</a><a href=".././tag/python.html">Python</a></p>
 
 
-</footer><!-- /.post-info --><p>Django doesn't really need a hello world style introduction, its documentation speaks for itself. But this is what <strong>Hello World</strong> in Django looks like to me. I hate boilerplate and I love reducing software down to its core components; just enough to start the server.</p>
+</footer><!-- /.post-info -->
+                <p>Django doesn't really need a hello world style introduction, its documentation speaks for itself. But this is what <strong>Hello World</strong> in Django looks like to me. I hate boilerplate and I love reducing software down to its core components; just enough to start the server.</p>
 <p>setup.py:</p>
 <pre class="literal-block">
-from setuptools import setup
-
-setup(
-    name='hello',
-)
-</pre>
-<p>requirements.txt:</p>
-<pre class="literal-block">
-Django==1.4.1
--e .
-</pre>
-<p>settings.py:</p>
-<pre class="literal-block">
-from hello import urls
-
-
-DEBUG = True
-ROOT_URLCONF = urls
-</pre>
-<p>urls.py:</p>
-<pre class="literal-block">
-from django.conf.urls import patterns
-
-urlpatterns = patterns(
-    '',
-    (r'', 'hello.views.index'),
-)
-</pre>
-<p>views.py:</p>
-<pre class="literal-block">
-from django.http import HttpResponse
-import datetime
-
-
-# Based on https://docs.djangoproject.com/en/1.4/topics/http/views/
-def index(request):
-    &quot;&quot;&quot;
-    This function takes a Django request object and returns a 'Hello World'
-    style response, by wrapping some HTML in a Django response object.
-    &quot;&quot;&quot;
-
-    now = datetime.datetime.now()
-    html = &quot;&lt;html&gt;&lt;body&gt;It is now %s.&lt;/body&gt;&lt;/html&gt;&quot; % now
-    return HttpResponse(html)
-</pre>
-<div class="section" id="installation">
-<h2>Installation</h2>
-<p>To install:</p>
-<pre class="literal-block">
-$ git clone this-repo
-$ cd this-repo
-$ virtualenv .
-$ bin/pip install -r requirements.txt
-$ bin/django-admin.py runserver --settings=hello.settings
-</pre>
-<p><em>The above code can be found here:</em> <a class="reference external" href="https://github.com/aclark4life/django-hello">https://github.com/aclark4life/django-hello</a></p>
-<p><em>Consider a</em></p>
-<iframe style="border: 0; margin: 0; padding: 0;"
-        src="https://www.gittip.com/aclark4life/widget.html"
-        width="48pt" height="20pt"></iframe><p>&lt;3</p>
-</div>
-<p>There are <a href=".././/2012/10/23/django-hello/#disqus_thread">comments</a>.</p>
-                </article>
-                
-            </aside><!-- /#featured -->
-            
-                <section id="content" class="body">
-                    <h1>Other articles</h1>
-                    <hr />
-                    <ol id="posts-list" class="hfeed">
-            
-        
+from setuptools ...</pre>
+                <a class="readmore" href=".././/2012/10/23/django-hello/">read more</a>
+                <p>There are <a href=".././/2012/10/23/django-hello/#disqus_thread">comments</a>.</p>
+                </div><!-- /.entry-content -->
+            </article></li>
         
         
             
@@ -429,48 +442,6 @@ Gittip is a system for funding people who build free culture. The core is small 
                 <p>As an open source &quot;Plone guy&quot;, I'm always prepared to defend and explain my choice to <strong>not</strong> use Plone for blogging. A couple years ago, I started using Wordpress in order to learn its feature set. I enjoyed my time with it, but after moving to wordpress.com for ...</p>
                 <a class="readmore" href=".././/2012/09/21/yes-this-blog-is-now-powered-by-pelican/">read more</a>
                 <p>There are <a href=".././/2012/09/21/yes-this-blog-is-now-powered-by-pelican/#disqus_thread">comments</a>.</p>
-                </div><!-- /.entry-content -->
-            </article></li>
-        
-        
-            
-
-        
-         
-            
-            <li><article class="hentry">    
-                <header>
-                    <h1><a href=".././/2012/08/13/bootstrapping-a-buildout-1-6-release/" rel="bookmark"
-                           title="Permalink to Bootstrapping a Buildout 1-6 release">Bootstrapping a Buildout 1-6 release</a></h1>
-                </header>
-                
-                <div class="entry-content">
-                <footer class="post-info">
-        <abbr class="published" title="2012-08-13T21:10:00">
-                Mon 13 August 2012
-        </abbr>
-
-        
-        <address class="vcard author">
-                By <a class="url fn" href=".././author/aclark.html">aclark</a>
-        </address>
-        
-<p>In <a href=".././category/blog.html">Blog</a>. </p>
-<p>tags: <a href=".././tag/plone.html">Plone</a><a href=".././tag/python.html">Python</a></p>
-
-
-</footer><!-- /.post-info -->
-                <p>A lot of work has been done on Buildout lately, most notably:</p>
-<ul class="simple">
-<li>Jim Fulton is <a class="reference external" href="https://github.com/buildout/buildout/commits/master">working on Buildout 2</a>.</li>
-<li>Ross Patterson has greatly <a class="reference external" href="http://rpatterson.net/blog/buildout-performance-improvements">improved Buildout performance</a>.</li>
-<li>Domen Kožar has <a class="reference external" href="http://zope3.pov.lt/trac/changeset/127507">provided a patch</a> that takes a conservative
-approach to Ross's performance improvements.</li>
-<li>I have offered to do a release.</li>
-</ul>
-<p>And ...</p>
-                <a class="readmore" href=".././/2012/08/13/bootstrapping-a-buildout-1-6-release/">read more</a>
-                <p>There are <a href=".././/2012/08/13/bootstrapping-a-buildout-1-6-release/#disqus_thread">comments</a>.</p>
                 </div><!-- /.entry-content -->
             </article></li>
         
