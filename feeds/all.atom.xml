@@ -1,16 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Alex Clark</title><link href="http://blog.aclark.net/" rel="alternate"></link><link href="http://blog.aclark.net/feeds/all.atom.xml" rel="self"></link><id>http://blog.aclark.net/</id><updated>2012-11-12T13:30:00Z</updated><entry><title>Plone Guide</title><link href="http://blog.aclark.net//2012/11/12/plone-guide/" rel="alternate"></link><updated>2012-11-12T13:30:00Z</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2012-11-12:/2012/11/12/plone-guide/</id><summary type="html">&lt;p&gt;Yesterday, with a tweet I announced the start of a new personal project:&lt;/p&gt;
-&lt;img alt="https://raw.github.com/ACLARKNET/aclarknet.github.com/master/images/tweet.png" src="https://raw.github.com/ACLARKNET/aclarknet.github.com/master/images/tweet.png" /&gt;
-&lt;div class="section" id="why"&gt;
-&lt;h2&gt;Why?&lt;/h2&gt;
-&lt;p&gt;I think about Plone a lot as it relates to my current professional work. So much so, I have more thoughts than I can currently keep track of in blogs, tweets, etc. So I decided to make an effort to write them all down.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="section" id="you-can-help"&gt;
-&lt;h2&gt;You Can Help!&lt;/h2&gt;
-&lt;p&gt;One of the things I think about a lot is what other people think about Plone. So I decided that this book will feature comments from readers in it.&lt;/p&gt;
-&lt;img alt="https://raw.github.com/ACLARKNET/aclarknet.github.com/master/images/comments.png" src="https://raw.github.com/ACLARKNET/aclarknet.github.com/master/images/comments.png" /&gt;
-&lt;/div&gt;
-</summary><category term="Plone"></category><category term="Python"></category></entry><entry><title>Pillow 1-7-8</title><link href="http://blog.aclark.net//2012/11/02/pillow-1-7-8/" rel="alternate"></link><updated>2012-11-02T11:00:00Z</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2012-11-02:/2012/11/02/pillow-1-7-8/</id><summary type="html">&lt;p&gt;&lt;em&gt;Pillow is the &amp;quot;friendly&amp;quot; PIL fork. Initially just a packaging fork, now considering image code bug fixes and Python 3 support. To be friendly, we attempt to track changes against upstream tickets in PIL.&lt;/em&gt;&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Alex Clark</title><link href="http://blog.aclark.net/" rel="alternate"></link><link href="http://blog.aclark.net/feeds/all.atom.xml" rel="self"></link><id>http://blog.aclark.net/</id><updated>2012-11-02T11:00:00Z</updated><entry><title>Pillow 1-7-8</title><link href="http://blog.aclark.net//2012/11/02/pillow-1-7-8/" rel="alternate"></link><updated>2012-11-02T11:00:00Z</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2012-11-02:/2012/11/02/pillow-1-7-8/</id><summary type="html">&lt;p&gt;&lt;em&gt;Pillow is the &amp;quot;friendly&amp;quot; PIL fork. Initially just a packaging fork, now considering image code bug fixes and Python 3 support. To be friendly, we attempt to track changes against upstream tickets in PIL.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;Pillow 1.7.8 is out! Read about it here:&lt;/p&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;&lt;a class="reference external" href="http://pypi.python.org/pypi/Pillow/1.7.8"&gt;http://pypi.python.org/pypi/Pillow/1.7.8&lt;/a&gt;&lt;/li&gt;
