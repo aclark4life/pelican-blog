@@ -49,8 +49,58 @@
         
             <aside id="featured" class="body">
                 <article>
-                    <h1 class="entry-title"><a href=".//2012/11/02/pillow-1-7-8/">Pillow 1-7-8</a></h1> 
+                    <h1 class="entry-title"><a href=".//2012/11/12/plone-guide/">Plone Guide</a></h1> 
                     <footer class="post-info">
+        <abbr class="published" title="2012-11-12T13:30:00">
+                Mon 12 November 2012
+        </abbr>
+
+        
+        <address class="vcard author">
+                By <a class="url fn" href="./author/aclark.html">aclark</a>
+        </address>
+        
+<p>In <a href="./category/blog.html">Blog</a>. </p>
+<p>tags: <a href="./tag/plone.html">Plone</a><a href="./tag/python.html">Python</a></p>
+
+
+</footer><!-- /.post-info --><p>Yesterday, with a tweet I announced the start of a new personal project:</p>
+<img alt="https://raw.github.com/ACLARKNET/aclarknet.github.com/master/images/tweet.png" src="https://raw.github.com/ACLARKNET/aclarknet.github.com/master/images/tweet.png" />
+<div class="section" id="why">
+<h2>Why?</h2>
+<p>I think about Plone a lot as it relates to my current professional work. So much so, I have more thoughts than I can currently keep track of in blogs, tweets, etc. So I decided to make an effort to write them all down.</p>
+</div>
+<div class="section" id="you-can-help">
+<h2>You Can Help!</h2>
+<p>One of the things I think about a lot is what other people think about Plone. So I decided that this book will feature comments from readers in it.</p>
+<img alt="https://raw.github.com/ACLARKNET/aclarknet.github.com/master/images/comments.png" src="https://raw.github.com/ACLARKNET/aclarknet.github.com/master/images/comments.png" />
+</div>
+<p>There are <a href=".//2012/11/12/plone-guide/#disqus_thread">comments</a>.</p>
+                </article>
+                
+            </aside><!-- /#featured -->
+            
+                <section id="content" class="body">
+                    <h1>Other articles</h1>
+                    <hr />
+                    <ol id="posts-list" class="hfeed">
+            
+        
+        
+        
+            
+
+        
+         
+            
+            <li><article class="hentry">    
+                <header>
+                    <h1><a href=".//2012/11/02/pillow-1-7-8/" rel="bookmark"
+                           title="Permalink to Pillow 1-7-8">Pillow 1-7-8</a></h1>
+                </header>
+                
+                <div class="entry-content">
+                <footer class="post-info">
         <abbr class="published" title="2012-11-02T11:00:00">
                 Fri 02 November 2012
         </abbr>
@@ -64,93 +114,15 @@
 <p>tags: <a href="./tag/python.html">Python</a></p>
 
 
-</footer><!-- /.post-info --><p><em>Pillow is the &quot;friendly&quot; PIL fork. Initially just a packaging fork, now considering image code bug fixes and Python 3 support. To be friendly, we attempt to track changes against upstream tickets in PIL.</em></p>
+</footer><!-- /.post-info -->
+                <p><em>Pillow is the &quot;friendly&quot; PIL fork. Initially just a packaging fork, now considering image code bug fixes and Python 3 support. To be friendly, we attempt to track changes against upstream tickets in PIL.</em></p>
 <p>Pillow 1.7.8 is out! Read about it here:</p>
 <ul class="simple">
-<li><a class="reference external" href="http://pypi.python.org/pypi/Pillow/1.7.8">http://pypi.python.org/pypi/Pillow/1.7.8</a></li>
-</ul>
-<div class="section" id="features">
-<h2>Features</h2>
-<ul class="simple">
-<li>It's PIL (Python Imaging Library)</li>
-<li>It installs on all modern systems <a class="footnote-reference" href="#id2" id="id1">[1]</a></li>
-<li>Win32 eggs are provided (special thanks to Takayuki Shimizukawa)</li>
-</ul>
-</div>
-<div class="section" id="changes">
-<h2>Changes</h2>
-<p>This release includes:</p>
-<ul class="simple">
-<li>Removed doctests.py that made tests of other packages fail. [thomasdesvenain]</li>
-<li>Fix opening psd files with RGBA layers when A mode is not of type 65535 but 3. Fixes issue <a class="reference external" href="https://github.com/python-imaging/Pillow/issues/3">https://github.com/python-imaging/Pillow/issues/3</a> [thomasdesvenain]</li>
-</ul>
-</div>
-<div class="section" id="install">
-<h2>Install</h2>
-<p>To install Pillow:</p>
-<pre class="literal-block">
-$ easy_install Pillow
-</pre>
-<p>Or:</p>
-<pre class="literal-block">
-$ pip install Pillow
-</pre>
-<p>Or:</p>
-<pre class="literal-block">
-$ python setup.py install (inside the extracted zip)
-</pre>
-<p>Or:</p>
-<pre class="literal-block">
-$ pip install zc.buildout
-$ buildout init
-</pre>
-<p>With <tt class="docutils literal">buildout.cfg</tt>:</p>
-<pre class="literal-block">
-[buildout]
-parts = pillow
-
-[pillow]
-recipe = zc.recipe.egg
-</pre>
-<p>And:</p>
-<pre class="literal-block">
-$ buildout
-</pre>
-<p>(Note: easy_install &amp; pip each handle namespace packages differently, so you should choose one or the other, and not mix the two.)</p>
-</div>
-<div class="section" id="report-issues">
-<h2>Report issues</h2>
-<p>If you find an issue, please report it here:</p>
-<ul class="simple">
-<li><a class="reference external" href="https://github.com/python-imaging/Pillow/issues">https://github.com/python-imaging/Pillow/issues</a></li>
-</ul>
-<p>Better yet: please fork, fix, and submit a pull request. Please also solicit for peer review once the pull request has been submitted.</p>
-</div>
-<div class="section" id="discussion">
-<h2>Discussion</h2>
-<p>You may discuss issues related to PIL, Pillow, and Python imaging on the image-sig list:</p>
-<ul class="simple">
-<li><a class="reference external" href="http://mail.python.org/mailman/listinfo/image-sig">http://mail.python.org/mailman/listinfo/image-sig</a></li>
-</ul>
-<p>Enjoy using Pillow!</p>
-<table class="docutils footnote" frame="void" id="id2" rules="none">
-<colgroup><col class="label" /><col /></colgroup>
-<tbody valign="top">
-<tr><td class="label"><a class="fn-backref" href="#id1">[1]</a></td><td>If it doesn't, please report it: <a class="reference external" href="https://github.com/python-imaging/Pillow/issues">https://github.com/python-imaging/Pillow/issues</a></td></tr>
-</tbody>
-</table>
-</div>
-<p>There are <a href=".//2012/11/02/pillow-1-7-8/#disqus_thread">comments</a>.</p>
-                </article>
-                
-            </aside><!-- /#featured -->
-            
-                <section id="content" class="body">
-                    <h1>Other articles</h1>
-                    <hr />
-                    <ol id="posts-list" class="hfeed">
-            
-        
+<li><a class="reference external" href="http://pypi.python.org/pypi/Pillow/1.7.8">http://pypi.python.org/pypi/Pillow ...</a></li></ul>
+                <a class="readmore" href=".//2012/11/02/pillow-1-7-8/">read more</a>
+                <p>There are <a href=".//2012/11/02/pillow-1-7-8/#disqus_thread">comments</a>.</p>
+                </div><!-- /.entry-content -->
+            </article></li>
         
         
             
@@ -443,44 +415,6 @@ from setuptools ...</pre>
 <p>I love to debate issues. The more complex, the better. I have no formal training in <a class="reference external" href="http://en.wikipedia.org/wiki/Debate">debate</a>, but I wish I did. It may have better prepared me to face different personality types with varying degree of communication skill. You don't have to watch the 2012 U.S. Presidential ...</p>
                 <a class="readmore" href=".//2012/10/17/top-3-favorite-logical-fallacies/">read more</a>
                 <p>There are <a href=".//2012/10/17/top-3-favorite-logical-fallacies/#disqus_thread">comments</a>.</p>
-                </div><!-- /.entry-content -->
-            </article></li>
-        
-        
-            
-
-        
-         
-            
-            <li><article class="hentry">    
-                <header>
-                    <h1><a href=".//2012/10/15/hello-django/" rel="bookmark"
-                           title="Permalink to Hello, Django!">Hello, Django!</a></h1>
-                </header>
-                
-                <div class="entry-content">
-                <footer class="post-info">
-        <abbr class="published" title="2012-10-15T18:40:00">
-                Mon 15 October 2012
-        </abbr>
-
-        
-        <address class="vcard author">
-                By <a class="url fn" href="./author/aclark.html">aclark</a>
-        </address>
-        
-<p>In <a href="./category/blog.html">Blog</a>. </p>
-<p>tags: <a href="./tag/django.html">Django</a></p>
-
-
-</footer><!-- /.post-info -->
-                <div class="section" id="test-post">
-<h2>Test post</h2>
-<p>This is a test post to create a Django tag feed. Hello, Django planet!</p>
-</div>
-
-                <a class="readmore" href=".//2012/10/15/hello-django/">read more</a>
-                <p>There are <a href=".//2012/10/15/hello-django/#disqus_thread">comments</a>.</p>
                 </div><!-- /.entry-content -->
             </article></li>
         
