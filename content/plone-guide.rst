@@ -1,7 +1,7 @@
 Plone Guide
 ===========
 
-:date: 2012-11-23 13:30
+:date: 2012-11-23 8:30
 :tags: Plone, Python
 
 Who
