@@ -1,5 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Alex Clark</title><link href="http://blog.aclark.net/" rel="alternate"></link><link href="http://blog.aclark.net/feeds/all.atom.xml" rel="self"></link><id>http://blog.aclark.net/</id><updated>2012-11-23T08:30:00Z</updated><entry><title>Plone Guide</title><link href="http://blog.aclark.net//2012/11/23/plone-guide/" rel="alternate"></link><updated>2012-11-23T08:30:00Z</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2012-11-23:/2012/11/23/plone-guide/</id><summary type="html">&lt;div class="section" id="who"&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Alex Clark</title><link href="http://blog.aclark.net/" rel="alternate"></link><link href="http://blog.aclark.net/feeds/all.atom.xml" rel="self"></link><id>http://blog.aclark.net/</id><updated>2012-12-18T18:00:00Z</updated><entry><title>The Zen of Zope, by Alex Clark</title><link href="http://blog.aclark.net//2012/12/18/the-zen-of-zope-by-alex-clark/" rel="alternate"></link><updated>2012-12-18T18:00:00Z</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2012-12-18:/2012/12/18/the-zen-of-zope-by-alex-clark/</id><summary type="html">&lt;pre class="literal-block"&gt;
+&amp;gt;&amp;gt;&amp;gt; import other
+The Zen of Zope, by Alex Clark
+
+
+Beautiful is an attribute of ugly.
+Explicit is implemented by implicit.
+Simple is provided by complex.
+Complex is directly provided by complicated.
+Flat only implements nested.
+Sparse has tagged value dense.
+Readability count is not in range.
+Special cases could not adapt the rules.
+Practicality implements purity.
+Errors should never require a specification that doesn’t extend the specification of silence.
+Unless explicit is a multi-adapter.
+In subscribing to ambiguity, return all the objects that refuse the temptation to guess.
+There should be none-- and preferably only zero --output from a handler.
+Although that way may not be obvious at first unless you've registered an adapter hook
+Now is verified by never.
+Although never is not implemented by *right* now.
+If the implementation is hard to explain, it queries the bad idea utility.
+If the implementation is easy to explain, it may query the good idea utility.
+Implicit namespace packages are one honking great idea -- let's do more of those!
+&lt;/pre&gt;
+</summary><category term="plone"></category><category term="python"></category></entry><entry><title>Plone Guide</title><link href="http://blog.aclark.net//2012/11/23/plone-guide/" rel="alternate"></link><updated>2012-11-23T08:30:00Z</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2012-11-23:/2012/11/23/plone-guide/</id><summary type="html">&lt;div class="section" id="who"&gt;
 &lt;h2&gt;Who&lt;/h2&gt;
 &lt;p&gt;For anyone new to my blog, welcome. I am Alex Clark: Python Web Developer.&lt;/p&gt;
 &lt;/div&gt;
