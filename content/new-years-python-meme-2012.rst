@@ -20,7 +20,7 @@ Javascript: check. Unit testing: check. These are techniques I have learned enou
 
 **3. Which open source project did you contribute to the most in 2012 ? What did you do?**
 
-This is the first year that Plone did not consume my every moment. I also spent significant time working on `Buildout <https://github.com/buildout>`_ (INI-config-driven system to install Python packages and other software, & perform other related and miscellaneous tasks) and `Pillow (PIL fork) <https://github.com/python-image>`_. With the help of many others, I hope to get a Python 3.3 compatible release of Pillow out by PyCon 2013. And I'll support Buildout < 2.x until such time as Buildout 2.x goes mainstream.
+This is the first year that Plone did not consume my every moment. I also spent significant time working on `Buildout <https://github.com/buildout>`_ (INI-config-driven system to install Python packages and other software, & perform other related and miscellaneous tasks) and `Pillow (PIL fork) <https://github.com/python-imaging>`_. With the help of many others, I hope to get a Python 3.3 compatible release of Pillow out by PyCon 2013. And I'll support Buildout < 2.x until such time as Buildout 2.x goes mainstream.
 
 **4. Which Python blog or website did you read the most in 2012?**
 
