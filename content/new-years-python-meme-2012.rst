@@ -8,7 +8,7 @@ New Year's Python Meme 2012
 
 *This is my entry for Tarek Ziadé's New Year's Python Meme, a tradition I have come to enjoy. Both to reflect on the current year and look back on previous years. So here it is.*
 
-I did this in `2009 <http://blog.aclark.net/2009/12/31/new-years-python-meme/>`_ & `2011 <http://blog.aclark.net/2011/12/21/new-years-python-meme-2011/>`_ let's try it again.
+I did this in `2009 <http://blog.aclark.net/2009/12/31/new-years-python-meme/>`_ & `2011 <http://blog.aclark.net/2011/12/21/new-years-python-meme-2011/>`_. Let's try it again.
 
 **1. What’s the coolest Python application, framework or library you have discovered in 2012?**
 
