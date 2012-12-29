@@ -496,46 +496,28 @@ all our lives: thank you for the inspiration; I use it every day, and
 I'll never forget it was &lt;em&gt;you&lt;/em&gt; and your closest two brothers Ad-Rock and
 Mike D who gave it to me.&lt;/p&gt;
 &lt;/div&gt;
-</summary><category term="Mozilla"></category><category term="Plone"></category><category term="Python"></category></entry><entry><title>New Year&amp;#039;s Python Meme 2012</title><link href="http://blog.aclark.net//2011/12/21/new-year039s-python-meme-2012/" rel="alternate"></link><updated>2011-12-21T13:11:00Z</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2011-12-21:/2011/12/21/new-year039s-python-meme-2012/</id><summary type="html">&lt;p&gt;&lt;em&gt;My response to
-`http://tarekziade.wordpress.com/2011/12/20/new-years-python-meme-2/`_
-(with gratuitous links to `pythonpackages.com`_, my new project,
-sprinkled throughout).&lt;/em&gt;&lt;/p&gt;
+</summary><category term="Mozilla"></category><category term="Plone"></category><category term="Python"></category></entry><entry><title>New Year&amp;#039;s Python Meme 2012</title><link href="http://blog.aclark.net//2011/12/21/new-year039s-python-meme-2012/" rel="alternate"></link><updated>2011-12-21T13:11:00Z</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2011-12-21:/2011/12/21/new-year039s-python-meme-2012/</id><summary type="html">&lt;p&gt;&lt;em&gt;My response to `http://tarekziade.wordpress.com/2011/12/20/new-years-python-meme-2/`_&amp;nbsp; (with gratuitous links to `pythonpackages.com`_, my new project, sprinkled throughout).&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;It was fun &lt;a class="reference external" href="http://blog.aclark.net/2009/12/31/new-years-python-meme/"&gt;answering in 2009&lt;/a&gt;, so I thought I'd play again.&lt;/p&gt;
 &lt;div class="section" id="whats-the-coolest-python-application-framework-or-library-you-have-discovered-in-2011"&gt;
 &lt;h2&gt;What’s the coolest Python application, framework or library you have discovered in 2011?&lt;/h2&gt;
-&lt;p&gt;&lt;a class="reference external" href="http://www.pylonsproject.org/"&gt;Pyramid&lt;/a&gt;. In early 2011 I released &lt;a class="reference external" href="http://pythonpackages.com/info/vanity"&gt;vanity&lt;/a&gt;, which later became
-&lt;a class="reference external" href="http://pythonpackages.com"&gt;pythonpackages.com&lt;/a&gt;(more or less). I used building the site as an
-excuse to learn Pyramid, and it was well worth it.&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external" href="http://www.pylonsproject.org/"&gt;Pyramid&lt;/a&gt;. In early 2011 I released &lt;a class="reference external" href="http://pythonpackages.com/info/vanity"&gt;vanity&lt;/a&gt;, which later became &lt;a class="reference external" href="http://pythonpackages.com"&gt;pythonpackages.com&lt;/a&gt;(more or less). I used building the site as an excuse to learn Pyramid, and it was well worth it.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;What new programming technique did you learn in 2011?&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;I learned to &lt;strong&gt;not&lt;/strong&gt; reinvent the wheel, and to collaborate with others
-on solving hard problems (which in and of itself is hard). Long story
-short, I took a little bit of heat within the Plone CMS community for
-creating a &amp;quot;one off&amp;quot; migration script:&lt;/p&gt;
+&lt;p&gt;I learned to &lt;strong&gt;not&lt;/strong&gt; reinvent the wheel, and to collaborate with others on solving hard problems (which in and of itself is hard). Long story short, I took a little bit of heat within the Plone CMS community for creating a &amp;quot;one off&amp;quot; migration script:&lt;/p&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;&lt;a class="reference external" href="http://pythonpackages.com/info/parse2plone"&gt;http://pythonpackages.com/info/parse2plone&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;I've since learned my lesson and have been collaborating meaningfully
-with &lt;a class="reference external" href="https://twitter.com/#!/djay75"&gt;Dylan Jay&lt;/a&gt;on the more widely-supported &lt;a class="reference external" href="http://pythonpackages.com/info/mr.migrator"&gt;mr.migrator&lt;/a&gt; and
-friends.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;What’s the name of the open source project you contributed to the most
-in 2011? What did you do?&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;I contributed to the &lt;a class="reference external" href="http://plone.org"&gt;Plone&lt;/a&gt; project quite a bit (as I have been doing
-for years now), but I also fell in love with &lt;a class="reference external" href="http://mozilla.org"&gt;Mozilla&lt;/a&gt; (and their
-mission) and began working on various things, including a virtual
-machine to help with the development of &lt;a class="reference external" href="http://support.mozilla.com"&gt;support.mozilla.com&lt;/a&gt;:&lt;/p&gt;
+&lt;p&gt;I've since learned my lesson and have been collaborating meaningfully with &lt;a class="reference external" href="https://twitter.com/#!/djay75"&gt;Dylan Jay&lt;/a&gt;on the more widely-supported &lt;a class="reference external" href="http://pythonpackages.com/info/mr.migrator"&gt;mr.migrator&lt;/a&gt; and friends.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;What’s the name of the open source project you contributed to the most in 2011? What did you do?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;I contributed to the &lt;a class="reference external" href="http://plone.org"&gt;Plone&lt;/a&gt; project quite a bit (as I have been doing for years now), but I also fell in love with &lt;a class="reference external" href="http://mozilla.org"&gt;Mozilla&lt;/a&gt; (and their mission) and began working on various things, including a virtual machine to help with the development of &lt;a class="reference external" href="http://support.mozilla.com"&gt;support.mozilla.com&lt;/a&gt;:&lt;/p&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;&lt;a class="reference external" href="https://github.com/aclark4life/kitsune-vagrant"&gt;https://github.com/aclark4life/kitsune-vagrant&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;strong&gt;What was the Python blog or website you read the most in 2011?&lt;/strong&gt;&lt;/p&gt;
-&lt;/p&gt;&lt;p&gt;&lt;a class="reference external" href="http://news.ycombinator.com/"&gt;Hacker news&lt;/a&gt;. I have the start-up bug.&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external" href="http://news.ycombinator.com/"&gt;Hacker news&lt;/a&gt;. I have the start-up bug.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;What are the three top things you want to learn in 2012?&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;JavaScript, JavaScript, and JavaScript. I first heard the term 15 years
-ago and have been avoiding it ever since. Time to jump in.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;What is the top software, application or library you wish someone
-would write in 2012?&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;I hope someone (me) writes a &amp;quot;secret&amp;quot; feature for &lt;a class="reference external" href="http://pythonpackages.com"&gt;pythonpackages.com&lt;/a&gt;
-and launches it in first quarter of 2012; and I hope folks find it
-useful.&lt;/p&gt;
+&lt;p&gt;JavaScript, JavaScript, and JavaScript. I first heard the term 15 years ago and have been avoiding it ever since. Time to jump in.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;What is the top software, application or library you wish someone would write in 2012?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;I hope someone (me) writes a &amp;quot;secret&amp;quot; feature for &lt;a class="reference external" href="http://pythonpackages.com"&gt;pythonpackages.com&lt;/a&gt; and launches it in first quarter of 2012; and I hope folks find it useful.&lt;/p&gt;
 &lt;/div&gt;
 </summary><category term="Mozilla"></category><category term="Plone"></category><category term="Python"></category></entry><entry><title>Vagrant, Puppet and Mozilla, oh my!</title><link href="http://blog.aclark.net//2011/10/03/vagrant-puppet-and-mozilla-oh-my/" rel="alternate"></link><updated>2011-10-03T17:25:00Z</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2011-10-03:/2011/10/03/vagrant-puppet-and-mozilla-oh-my/</id><summary type="html">&lt;p&gt;&lt;em&gt;Warning: This post is only loosely Python related and not at all Plone
 related, but I thought folks might enjoy hearing about Vagrant and

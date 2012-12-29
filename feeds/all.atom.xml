@@ -2176,46 +2176,28 @@ plone.app.theming.)&lt;/li&gt;
 &lt;p&gt;The Diazo rules can get complex, but it's very easy to get your first
 rule done and working and then off you go. You may find this &lt;a class="reference external" href="http://readthedocs.org/docs/pythonpackages-docs/en/latest/features/examples/ex8-diazo.html"&gt;new
 tutorial on pythonpackages.com&lt;/a&gt;. Enjoy, and get busy theming Plone.&lt;/p&gt;
-</summary><category term="Plone"></category><category term="Python"></category></entry><entry><title>New Year&amp;#039;s Python Meme 2012</title><link href="http://blog.aclark.net//2011/12/21/new-year039s-python-meme-2012/" rel="alternate"></link><updated>2011-12-21T13:11:00Z</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2011-12-21:/2011/12/21/new-year039s-python-meme-2012/</id><summary type="html">&lt;p&gt;&lt;em&gt;My response to
-`http://tarekziade.wordpress.com/2011/12/20/new-years-python-meme-2/`_
-(with gratuitous links to `pythonpackages.com`_, my new project,
-sprinkled throughout).&lt;/em&gt;&lt;/p&gt;
+</summary><category term="Plone"></category><category term="Python"></category></entry><entry><title>New Year&amp;#039;s Python Meme 2012</title><link href="http://blog.aclark.net//2011/12/21/new-year039s-python-meme-2012/" rel="alternate"></link><updated>2011-12-21T13:11:00Z</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2011-12-21:/2011/12/21/new-year039s-python-meme-2012/</id><summary type="html">&lt;p&gt;&lt;em&gt;My response to `http://tarekziade.wordpress.com/2011/12/20/new-years-python-meme-2/`_&amp;nbsp; (with gratuitous links to `pythonpackages.com`_, my new project, sprinkled throughout).&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;It was fun &lt;a class="reference external" href="http://blog.aclark.net/2009/12/31/new-years-python-meme/"&gt;answering in 2009&lt;/a&gt;, so I thought I'd play again.&lt;/p&gt;
 &lt;div class="section" id="whats-the-coolest-python-application-framework-or-library-you-have-discovered-in-2011"&gt;
 &lt;h2&gt;What’s the coolest Python application, framework or library you have discovered in 2011?&lt;/h2&gt;
-&lt;p&gt;&lt;a class="reference external" href="http://www.pylonsproject.org/"&gt;Pyramid&lt;/a&gt;. In early 2011 I released &lt;a class="reference external" href="http://pythonpackages.com/info/vanity"&gt;vanity&lt;/a&gt;, which later became
-&lt;a class="reference external" href="http://pythonpackages.com"&gt;pythonpackages.com&lt;/a&gt;(more or less). I used building the site as an
-excuse to learn Pyramid, and it was well worth it.&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external" href="http://www.pylonsproject.org/"&gt;Pyramid&lt;/a&gt;. In early 2011 I released &lt;a class="reference external" href="http://pythonpackages.com/info/vanity"&gt;vanity&lt;/a&gt;, which later became &lt;a class="reference external" href="http://pythonpackages.com"&gt;pythonpackages.com&lt;/a&gt;(more or less). I used building the site as an excuse to learn Pyramid, and it was well worth it.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;What new programming technique did you learn in 2011?&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;I learned to &lt;strong&gt;not&lt;/strong&gt; reinvent the wheel, and to collaborate with others
-on solving hard problems (which in and of itself is hard). Long story
-short, I took a little bit of heat within the Plone CMS community for
-creating a &amp;quot;one off&amp;quot; migration script:&lt;/p&gt;
+&lt;p&gt;I learned to &lt;strong&gt;not&lt;/strong&gt; reinvent the wheel, and to collaborate with others on solving hard problems (which in and of itself is hard). Long story short, I took a little bit of heat within the Plone CMS community for creating a &amp;quot;one off&amp;quot; migration script:&lt;/p&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;&lt;a class="reference external" href="http://pythonpackages.com/info/parse2plone"&gt;http://pythonpackages.com/info/parse2plone&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;I've since learned my lesson and have been collaborating meaningfully
-with &lt;a class="reference external" href="https://twitter.com/#!/djay75"&gt;Dylan Jay&lt;/a&gt;on the more widely-supported &lt;a class="reference external" href="http://pythonpackages.com/info/mr.migrator"&gt;mr.migrator&lt;/a&gt; and
-friends.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;What’s the name of the open source project you contributed to the most
-in 2011? What did you do?&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;I contributed to the &lt;a class="reference external" href="http://plone.org"&gt;Plone&lt;/a&gt; project quite a bit (as I have been doing
-for years now), but I also fell in love with &lt;a class="reference external" href="http://mozilla.org"&gt;Mozilla&lt;/a&gt; (and their
-mission) and began working on various things, including a virtual
-machine to help with the development of &lt;a class="reference external" href="http://support.mozilla.com"&gt;support.mozilla.com&lt;/a&gt;:&lt;/p&gt;
+&lt;p&gt;I've since learned my lesson and have been collaborating meaningfully with &lt;a class="reference external" href="https://twitter.com/#!/djay75"&gt;Dylan Jay&lt;/a&gt;on the more widely-supported &lt;a class="reference external" href="http://pythonpackages.com/info/mr.migrator"&gt;mr.migrator&lt;/a&gt; and friends.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;What’s the name of the open source project you contributed to the most in 2011? What did you do?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;I contributed to the &lt;a class="reference external" href="http://plone.org"&gt;Plone&lt;/a&gt; project quite a bit (as I have been doing for years now), but I also fell in love with &lt;a class="reference external" href="http://mozilla.org"&gt;Mozilla&lt;/a&gt; (and their mission) and began working on various things, including a virtual machine to help with the development of &lt;a class="reference external" href="http://support.mozilla.com"&gt;support.mozilla.com&lt;/a&gt;:&lt;/p&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;&lt;a class="reference external" href="https://github.com/aclark4life/kitsune-vagrant"&gt;https://github.com/aclark4life/kitsune-vagrant&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;strong&gt;What was the Python blog or website you read the most in 2011?&lt;/strong&gt;&lt;/p&gt;
-&lt;/p&gt;&lt;p&gt;&lt;a class="reference external" href="http://news.ycombinator.com/"&gt;Hacker news&lt;/a&gt;. I have the start-up bug.&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external" href="http://news.ycombinator.com/"&gt;Hacker news&lt;/a&gt;. I have the start-up bug.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;What are the three top things you want to learn in 2012?&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;JavaScript, JavaScript, and JavaScript. I first heard the term 15 years
-ago and have been avoiding it ever since. Time to jump in.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;What is the top software, application or library you wish someone
-would write in 2012?&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;I hope someone (me) writes a &amp;quot;secret&amp;quot; feature for &lt;a class="reference external" href="http://pythonpackages.com"&gt;pythonpackages.com&lt;/a&gt;
-and launches it in first quarter of 2012; and I hope folks find it
-useful.&lt;/p&gt;
+&lt;p&gt;JavaScript, JavaScript, and JavaScript. I first heard the term 15 years ago and have been avoiding it ever since. Time to jump in.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;What is the top software, application or library you wish someone would write in 2012?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;I hope someone (me) writes a &amp;quot;secret&amp;quot; feature for &lt;a class="reference external" href="http://pythonpackages.com"&gt;pythonpackages.com&lt;/a&gt; and launches it in first quarter of 2012; and I hope folks find it useful.&lt;/p&gt;
 &lt;/div&gt;
 </summary><category term="Mozilla"></category><category term="Plone"></category><category term="Python"></category></entry><entry><title>Introducing pythonpackages.com</title><link href="http://blog.aclark.net//2011/11/29/introducing-pythonpackagescom/" rel="alternate"></link><updated>2011-11-29T02:24:00Z</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2011-11-29:/2011/11/29/introducing-pythonpackagescom/</id><summary type="html">&lt;div class="section" id="the-website-for-python-egoists"&gt;
 &lt;h2&gt;The website for Python egoists™&lt;/h2&gt;
@@ -6061,37 +6043,22 @@ Please help us spread the word to interested parties... more details to
 come.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-</summary><category term="Plone"></category></entry><entry><title>New year’s Python meme</title><link href="http://blog.aclark.net//2009/12/31/new-years-python-meme/" rel="alternate"></link><updated>2009-12-31T18:22:00Z</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2009-12-31:/2009/12/31/new-years-python-meme/</id><summary type="html">&lt;div class="section" id="image0-whats-the-coolest-python-application-framework-or-library-you-have-discovered-in-2009"&gt;
-&lt;h2&gt;&lt;a href="#id1"&gt;&lt;span class="problematic" id="id2"&gt;`|image0|`_&lt;/span&gt;&lt;/a&gt;What’s the coolest Python application, framework or library you have discovered in 2009?&lt;/h2&gt;
-&lt;p&gt;That would be &lt;a class="reference external" href="http://zenoss.org"&gt;Zenoss&lt;/a&gt;. I'm very impressed with the application as well
-as the community, which is awesome. They remind me a lot of the Plone
-community; I think the two can learn a lot from each other.&lt;/p&gt;
+</summary><category term="Plone"></category></entry><entry><title>New year’s Python meme</title><link href="http://blog.aclark.net//2009/12/31/new-years-python-meme/" rel="alternate"></link><updated>2009-12-31T18:22:00Z</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2009-12-31:/2009/12/31/new-years-python-meme/</id><summary type="html">&lt;img alt="https://raw.github.com/ACLARKNET/aclarknet.github.com/master/images/lenin_packaging.png" src="https://raw.github.com/ACLARKNET/aclarknet.github.com/master/images/lenin_packaging.png" /&gt;
+&lt;div class="section" id="whats-the-coolest-python-application-framework-or-library-you-have-discovered-in-2009"&gt;
+&lt;h2&gt;What’s the coolest Python application, framework or library you have discovered in 2009?&lt;/h2&gt;
+&lt;p&gt;That would be &lt;a class="reference external" href="http://zenoss.org"&gt;Zenoss&lt;/a&gt;. I'm very impressed with the application as well as the community, which is awesome. They remind me a lot of the Plone community; I think the two can learn a lot from each other.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="what-new-programming-technique-did-you-learn-in-2009"&gt;
 &lt;h2&gt;What new programming technique did you learn in 2009?&lt;/h2&gt;
-&lt;p&gt;Generally speaking, I'm happy with my progress as a Plone integrator,
-plowing through the tremendous Plone code stack, on my way to complete
-mastery. I may never get there, but I'm having fun trying. In other
-words, I know a lot more about how far the Zope2/CMF/Five rabbit hole
-goes. If I had to pick, I'd choose Grok in Plone, mostly as it relates
-to Dexterity:
-&lt;a class="reference external" href="http://plone.org/products/dexterity/documentation/manual/five.grok"&gt;http://plone.org/products/dexterity/documentation/manual/five.grok&lt;/a&gt;. I
-created &lt;a class="reference external" href="http://plone.org/products/collective-project"&gt;http://plone.org/products/collective-project&lt;/a&gt; as a result, or
-rather, I converted the package to use Dexterity types so I could learn
-Dexterity, in part ;-). At first I was angry at being &amp;quot;forced&amp;quot; to use
-Grok techniques in Plone, but then it grew on me.&lt;/p&gt;
+&lt;p&gt;Generally speaking, I'm happy with my progress as a Plone integrator, plowing through the tremendous Plone code stack, on my way to complete mastery. I may never get there, but I'm having fun trying. In other words, I know a lot more about how far the Zope2/CMF/Five rabbit hole goes. If I had to pick, I'd choose Grok in Plone, mostly as it relates to Dexterity: &lt;a class="reference external" href="http://plone.org/products/dexterity/documentation/manual/five.grok"&gt;http://plone.org/products/dexterity/documentation/manual/five.grok&lt;/a&gt;. I created &lt;a class="reference external" href="http://plone.org/products/collective-project"&gt;http://plone.org/products/collective-project&lt;/a&gt; as a result, or rather, I converted the package to use Dexterity types so I could learn Dexterity, in part ;-). At first I was angry at being &amp;quot;forced&amp;quot; to use Grok techniques in Plone, but then it grew on me.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="whats-the-name-of-the-open-source-project-you-contributed-the-most-in-2009-what-did-you-do"&gt;
 &lt;h2&gt;What’s the name of the open source project you contributed the most in 2009? What did you do?&lt;/h2&gt;
 &lt;p&gt;&lt;a class="reference external" href="http://plone.org"&gt;Plone&lt;/a&gt;.&lt;/p&gt;
 &lt;ul class="simple"&gt;
-&lt;li&gt;I dug out from &lt;a class="reference external" href="http://plone.org/events/conferences/2008-washington-dc"&gt;Plone Conference 2008&lt;/a&gt;, which included publishing
-the &lt;a class="reference external" href="http://plone.org/events/conferences/2008-washington-dc/agenda"&gt;videos and slides&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;I helped move plone.org to &lt;a class="reference external" href="http://sixfeetup.com"&gt;Six Feet Up&lt;/a&gt;, and have been looking
-after &lt;a class="reference external" href="http://dev.plone.org/plone/browser/Products.PloneOrg/trunk"&gt;it&lt;/a&gt; as well as &lt;a class="reference external" href="http://plone.org/news/plone-domain-dns-changes"&gt;other infrastructure issues&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;I worked on a book called 'Plone Site Admin', which will most likely
-come out in early 2010 (via &lt;a class="reference external" href="http://packtpub.com"&gt;Packt&lt;/a&gt;). I hope the community will find
-it useful.&lt;/li&gt;
+&lt;li&gt;I dug out from &lt;a class="reference external" href="http://plone.org/events/conferences/2008-washington-dc"&gt;Plone Conference 2008&lt;/a&gt;, which included publishing the &lt;a class="reference external" href="http://plone.org/events/conferences/2008-washington-dc/agenda"&gt;videos and slides&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;I helped move plone.org to &lt;a class="reference external" href="http://sixfeetup.com"&gt;Six Feet Up&lt;/a&gt;, and have been looking after &lt;a class="reference external" href="http://dev.plone.org/plone/browser/Products.PloneOrg/trunk"&gt;it&lt;/a&gt; as well as &lt;a class="reference external" href="http://plone.org/news/plone-domain-dns-changes"&gt;other infrastructure issues&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;I worked on a book called 'Plone Site Admin', which will most likely come out in early 2010 (via &lt;a class="reference external" href="http://packtpub.com"&gt;Packt&lt;/a&gt;). I hope the community will find it useful.&lt;/li&gt;
 &lt;li&gt;I contributed a &lt;a class="reference external" href="http://dev.plone.org/plone/ticket/9330"&gt;new feature&lt;/a&gt; to Plone 4.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
@@ -6107,12 +6074,6 @@ it useful.&lt;/li&gt;
 &lt;li&gt;&lt;a class="reference external" href="http://dev.plone.org/plone/browser/buildouts/plone-coredev/branches/4.0"&gt;Plone 4 core development&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Happy (Python) New Year everyone!&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="system-messages section"&gt;
-&lt;h2&gt;Docutils System Messages&lt;/h2&gt;
-&lt;div class="system-message" id="id1"&gt;
-&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/new-years-python-meme.rst&lt;/tt&gt;, line 7); &lt;em&gt;&lt;a href="#id2"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
-Unknown target name: &amp;quot;|image0|&amp;quot;.&lt;/div&gt;
 &lt;/div&gt;
 </summary><category term="Python"></category></entry><entry><title>Review of Veda Williams&amp;#039; Plone 3 Theming</title><link href="http://blog.aclark.net//2009/09/22/review-of-veda-williams039-plone-3-theming/" rel="alternate"></link><updated>2009-09-22T16:17:00Z</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2009-09-22:/2009/09/22/review-of-veda-williams039-plone-3-theming/</id><summary type="html">&lt;p&gt;&lt;a href="#id1"&gt;&lt;span class="problematic" id="id2"&gt;`|image0|`_&lt;/span&gt;&lt;/a&gt;First things first, I can't overstate enough how much I
 personally appreciate Veda's efforts to bring the
