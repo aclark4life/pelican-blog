@@ -24,7 +24,7 @@ This is the first year that Plone did not consume my every moment. I also spent 
 
 **4. Which Python blog or website did you read the most in 2012?**
 
-Planets: Django, Mozilla, Plone, Python. Reddits: Python. Other feeds: Hacker News & Tech Crunch. I added Tech Crunch this year to satisfy my "startup itch", as was recommended to me to do by Jonathon Perrelli of Fortify.vc in DC.
+Planets: Django, Mozilla, Plone, Python. Reddits: Python. Other feeds: Hacker News & Tech Crunch. I added Tech Crunch this year to satisfy my "startup itch", as was recommended to me by Jonathon Perrelli of Fortify.vc in DC.
 
 **5. What are the three top things you want to learn in 2013?**
 
