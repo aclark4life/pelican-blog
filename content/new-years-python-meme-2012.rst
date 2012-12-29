@@ -32,7 +32,7 @@ How to hustle. Hustling, and more hustling. I've gained a lot (enough?) technica
 
 **6. What is the top software, application or library you wish someone would write in 2013?**
 
-I hope that I get more significant time to put into my "baby": pythonpackages.com. In particular, I'm considering adding a Travis-like service which would spawn Windows VMs to run tests and produce executables for Python packages (to address a particular pain point I've discovered along the way: people want to support Windows, but often don't have the ability to do so easily.)
+I hope that I get more significant time to put into my "baby": `pythonpackages.com <https://github.com/pythonpackages>`_. In particular, I'm considering adding a Travis-like service which would spawn Windows VMs to run tests and produce executables for Python packages (to address a particular pain point I've discovered along the way: people want to support Windows, but often don't have the ability to do so easily.)
 
 Happy (Python) New Year!
 
