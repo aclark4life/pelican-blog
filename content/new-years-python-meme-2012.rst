@@ -4,9 +4,7 @@ New Year's Python Meme 2012
 :date: 2011-12-21 13:11
 :tags: Mozilla, Plone, Python
 
-*My response to `http://tarekziade.wordpress.com/2011/12/20/new-years-python-meme-2/`_  (with gratuitous links to `pythonpackages.com`_, my new project, sprinkled throughout).*
-
-It was fun `answering in 2009`_, so I thought I'd play again.
+My response to `http://tarekziade.wordpress.com/2011/12/20/new-years-python-meme-2/`_. It was fun `answering in 2009`_, so I thought I'd play again.
 
 What’s the coolest Python application, framework or library you have discovered in 2011?
 ========================================================================================
