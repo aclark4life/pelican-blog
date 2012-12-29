@@ -1,5 +1,6 @@
-New Year&#039;s Python Meme 2012
-################################
+New Year's Python Meme 2012
+###########################
+
 :date: 2011-12-21 13:11
 :tags: Mozilla, Plone, Python
 
