@@ -12,7 +12,7 @@ I did this in `2009 <http://blog.aclark.net/2009/12/31/new-years-python-meme/>`_
 
 **1. What’s the coolest Python application, framework or library you have discovered in 2012?**
 
-That would be Kenneth Reitz's Requests. Like many others, I've been bitten by the elegance and simplicity bug that is inherent and ingrained in the Requests library. Primarily, I used it to build pythonpackages.com. In particular, I used it to communicate with the almost-equally-elegant (IMHO) GitHub API. This is why I like requests (among other reasons): I don't need to use a "third party" library to communicate with the GitHub API. Such libraries (I think) attempt to make my job easier by hiding complexity and presenting simpler APIs to use. This is sometimes necessary, but no substitute for *really* and *actually* simple APIs and good documentation (both of which GitHub and Kenneth provide, with their respective APIs.)
+That would be `Kenneth Reitz's Requests <http://docs.python-requests.org/en/latest/>`_. Like many others, I've been bitten by the elegance and simplicity bug that is inherent and ingrained in the Requests library. Primarily, I used it to build pythonpackages.com. In particular, I used it to communicate with the almost-equally-elegant (IMHO) GitHub API. This is why I like requests (among other reasons): I don't need to use a "third party" library to communicate with the GitHub API. Such libraries (I think) attempt to make my job easier by hiding complexity and presenting simpler APIs to use. This is sometimes necessary, but no substitute for *really* and *actually* simple APIs and good documentation (both of which GitHub and Kenneth provide, with their respective APIs.)
 
 **2. What new programming technique did you learn in 2012?**
 
