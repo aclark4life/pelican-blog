@@ -45,7 +45,7 @@ If the implementation is hard to explain, it queries the bad idea utility.
 If the implementation is easy to explain, it may query the good idea utility.
 Implicit namespace packages are one honking great idea -- let's do more of those!
 &lt;/pre&gt;
-</summary><category term="plone"></category><category term="python"></category></entry><entry><title>Plone Guide</title><link href="http://blog.aclark.net//2012/11/23/plone-guide/" rel="alternate"></link><updated>2012-11-23T08:30:00Z</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2012-11-23:/2012/11/23/plone-guide/</id><summary type="html">&lt;div class="section" id="who"&gt;
+</summary><category term="Plone"></category><category term="Python"></category></entry><entry><title>Plone Guide</title><link href="http://blog.aclark.net//2012/11/23/plone-guide/" rel="alternate"></link><updated>2012-11-23T08:30:00Z</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2012-11-23:/2012/11/23/plone-guide/</id><summary type="html">&lt;div class="section" id="who"&gt;
 &lt;h2&gt;Who&lt;/h2&gt;
 &lt;p&gt;For anyone new to my blog, welcome. I am Alex Clark: Python Web Developer.&lt;/p&gt;
 &lt;/div&gt;
