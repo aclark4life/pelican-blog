@@ -12,6 +12,6 @@ Regarding my recent "Goodbye Plone" post:
 
 - While I stand behind my need to distance myself from such conflicts, I don't want to give the Plone Community or the outside world the wrong impression.
 
-So, let me say this: I'm thinking about what happened today, and I'm going to comment about it in the future. I.E. after 24 hours or so. Regardless of future updates, please consider me: "around in some capacity, but not as fully engaged for personal reasons" :-). This is an attempt to revert my abrubt departure, while at the same time not fully re-engage until such time as I can determine the best course of action. Note that above all, and aside from my personal and professional goals, I don't want to be disruptive to other community members if I can help it.
+So, let me say this: I'm thinking about what happened today, and I'm going to comment about it in the future. I.E. after 24 hours or so. Regardless of future updates, please consider me: "around in some capacity, but not as fully engaged for personal reasons" :-). This is an attempt to revert my abrubt departure, while at the same time not fully re-engage until such time as I can determine the best course of action. Note that above all, and aside from my personal and professional goals, I don't want to be disruptive to the community if I can help it.
 
 Thanks for reading.
