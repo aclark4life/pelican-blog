@@ -31,7 +31,7 @@ I'd also like to clarify my intentions with regard to two of my most recent and 
 - Zen of Zope
 - Plone Kitty
 
-They are intended to be *pro* Zope and *pro* Plone. Yes, Zope is complicated. But it's also useful. And full of "been there, done that" wisdom. Yes, the simple days of Plone Kitty are gone, but there are many great things ahead. Let's carry the best of the past forward into the future.
+They are intended to be *pro* Zope and *pro* Plone. Yes, Zope can be complex. But it's also useful. And full of "been there, done that" wisdom. Yes, the simple days of Plone Kitty are gone, but there are many great things ahead. Let's carry the best of the past forward into the future.
 
 I don't always state my intentions this explicitly: because that is no where near as fun for me. But I don't want folks to get the wrong impression either, so please help me get the message right if you can.
 
