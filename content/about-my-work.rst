@@ -21,6 +21,8 @@ Or just email me:
 
 - aclark@aclark.net
 
+Or add a comment below.
+
 Controversial Entries Explained
 -------------------------------
 
