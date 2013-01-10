@@ -8,7 +8,7 @@ PIL is on its way to **Python 3** via Pillow. Support from Brian Crowell and oth
 
 - https://github.com/python-imaging/Pillow/pull/35
 
-And work continues toward a **pre-PyCon 2013** release! Please help if you can: 
+And work continues toward a pre **PyCon 2013** release! Please help if you can: 
 
 - Ubuntu users, read through https://github.com/python-imaging/Pillow/issues/18 and provide assistance with testing this Ubuntu package: https://launchpad.net/~pythoneers/+archive/ppa.
 - Git experts, please comment on the merge issue described here: https://github.com/python-imaging/Pillow/pull/35.
