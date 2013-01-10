@@ -16,10 +16,6 @@ Enter: Plone. Both the web and Plone have changed drastically since The Plone Ki
 
 From the `Plone Kitty website <http://plone-1-fun.herokuapp.com>`_ (now running on Heroku!)::
 
-    Plone was once great. Actually, Plone is still great but the excitement around it has dissipated. It's time to fix that.
-
     If you used Plone "back in the day" (early 2000s), please add a comment below about your experiences then. If you are new to Plone or just curious about it now, please add a comment below about your initial impressions.
 
-    Let's bring the excitement back to Plone in 2013!
-
-So if you'd like to add **your bit of nostalgia**, or first impressions of Plone, `please do so here <http://plone-1-fun.herokuapp.com/#disqus>`_. I appreciate any and all comments, good or bad, about Plone.
+So if you'd like to add **your bit of nostalgia**, or first impressions of Plone, `please do so here <http://plone-1-fun.herokuapp.com/#disqus>`_. I appreciate any and all comments.
