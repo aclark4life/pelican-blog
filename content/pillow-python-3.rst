@@ -15,4 +15,3 @@ And work continues toward a pre-PyCon-2013 release! Please help if you can:
 - Everyone else, please git clone the master branch for testing: **git://github.com/python-imaging/Pillow.git** and report issues as you find them: https://github.com/python-imaging/Pillow/issues.
 
 Thank you!
-- 
