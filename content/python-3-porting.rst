@@ -30,4 +30,4 @@ Now I know what you are thinking: **porting Python 2 software to Python 3 is a l
 - The Python 3 Wall of Shame is now the `Python 3 Wall of Superpowers <https://python3wos.appspot.com/>`_. We are over the hump.
 - Many popular Python web frameworks support or are about to support Python 3 e.g. CherryPy, Django, Pyramid.
 
-So, there is no time like the present to **take a serious look at Python 3**!
+So, there is no time like the present to **take a serious look at Python 3**.
