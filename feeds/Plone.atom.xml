@@ -6966,13 +6966,7 @@ will explain why ;-)*&lt;/p&gt;
 &lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/i-love-the-slrn-news-reader.rst&lt;/tt&gt;, line 6); &lt;em&gt;&lt;a href="#id2"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 Unknown target name: &amp;quot;|image0|&amp;quot;.&lt;/div&gt;
 &lt;/div&gt;
-</summary><category term="Plone"></category></entry><entry><title>Help improve Plone&amp;#039;s API documentation</title><link href="http://blog.aclark.net//2007/10/17/help-improve-plone039s-api-documentation/" rel="alternate"></link><updated>2007-10-17T09:19:00-04:00</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2007-10-17:/2007/10/17/help-improve-plone039s-api-documentation/</id><summary type="html">&lt;p&gt;&lt;a href="#id1"&gt;&lt;span class="problematic" id="id2"&gt;`|image0|`_&lt;/span&gt;&lt;/a&gt;I'm travelling from Washington, DC, USA to Mountain View,
-CA, USA June 26 - 29 to participate in the 2007 &lt;a class="reference external" href="http://plone.org/events/sprints/doc-ecommerce"&gt;Plone Doccomm Sprint&lt;/a&gt;.
-My main focus will be updating Plone's online API documentation
-(available at &lt;a class="reference external" href="http://api.plone.org/"&gt;http://api.plone.org&lt;/a&gt;). If you are interested in seeing
-this done and would like to help, please consider making a donation to
-help offset the cost of my airfare. In return, I will create and upload
-API documentation for:&lt;/p&gt;
+</summary><category term="Plone"></category></entry><entry><title>Help improve Plone API documentation</title><link href="http://blog.aclark.net//2007/10/17/help-improve-plone-api-documentation/" rel="alternate"></link><updated>2007-10-17T09:19:00-04:00</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2007-10-17:/2007/10/17/help-improve-plone-api-documentation/</id><summary type="html">&lt;p&gt;I'm travelling from Washington, DC, USA to Mountain View, CA, USA June 26 - 29 to participate in the 2007 &lt;a class="reference external" href="http://plone.org/events/sprints/doc-ecommerce"&gt;Plone Doccomm Sprint&lt;/a&gt;. My main focus will be updating Plone's online API documentation (available at &lt;a class="reference external" href="http://api.plone.org/"&gt;http://api.plone.org&lt;/a&gt;). If you are interested in seeing this done and would like to help, please consider making a donation to help offset the cost of my airfare. In return, I will create and upload API documentation for:&lt;/p&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;Plone-2.5.3&lt;/li&gt;
 &lt;li&gt;Archetypes-1.4.4&lt;/li&gt;
@@ -6984,23 +6978,17 @@ API documentation for:&lt;/p&gt;
 &lt;li&gt;Archetypes-1.5.0&lt;/li&gt;
 &lt;li&gt;CMF-2.1.0&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;I plan to use either &lt;a class="reference external" href="http://epydoc.sourceforge.net/"&gt;epydoc&lt;/a&gt; or &lt;a class="reference external" href="http://pudge.lesscode.org/"&gt;pudge&lt;/a&gt;. Suggestions welcome! For
-more information please see:&lt;/p&gt;
-&lt;p&gt;&lt;a class="reference external" href="http://plone.org/development/teams/documentation/documentation-tracker/37"&gt;http://plone.org/development/teams/documentation/documentation-tracker/37&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;I plan to use either &lt;a class="reference external" href="http://epydoc.sourceforge.net/"&gt;epydoc&lt;/a&gt; or &lt;a class="reference external" href="http://pudge.lesscode.org/"&gt;pudge&lt;/a&gt;. Suggestions welcome! For more information please see:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://plone.org/development/teams/documentation/documentation-tracker/37"&gt;http://plone.org/development/teams/documentation/documentation-tracker/37&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;p&gt;and:&lt;/p&gt;
-&lt;p&gt;&lt;a class="reference external" href="http://www.nabble.com/Turn-off-api.plone.org--tf3602743.html#a10064645"&gt;http://www.nabble.com/Turn-off-api.plone.org--tf3602743.html#a10064645&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;(I originally suggested we turn off api.plone.org but that was met with
-a resounding &amp;quot;no!&amp;quot;)&lt;/p&gt;
-&lt;p&gt;And without further ado, please consider making a donation! Any amount
-is welcome; the goal is $600 USD. I will make an announcement once I've
-reached it (so people don't give too much).&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://www.nabble.com/Turn-off-api.plone.org--tf3602743.html#a10064645"&gt;http://www.nabble.com/Turn-off-api.plone.org--tf3602743.html#a10064645&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;(I originally suggested we turn off api.plone.org but that was met with a resounding &amp;quot;no!&amp;quot;)&lt;/p&gt;
+&lt;p&gt;And without further ado, please consider making a donation! Any amount is welcome; the goal is $600 USD. I will make an announcement once I've reached it (so people don't give too much).&lt;/p&gt;
 &lt;p&gt;Thank You!!!&lt;/p&gt;
-&lt;div class="system-messages section"&gt;
-&lt;h2&gt;Docutils System Messages&lt;/h2&gt;
-&lt;div class="system-message" id="id1"&gt;
-&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/help-improve-plones-api-documentation.rst&lt;/tt&gt;, line 6); &lt;em&gt;&lt;a href="#id2"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
-Unknown target name: &amp;quot;|image0|&amp;quot;.&lt;/div&gt;
-&lt;/div&gt;
 </summary><category term="Plone"></category></entry><entry><title>First Post</title><link href="http://blog.aclark.net//2007/10/17/first-post/" rel="alternate"></link><updated>2007-10-17T08:55:00-04:00</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2007-10-17:/2007/10/17/first-post/</id><summary type="html">&lt;p&gt;Why? Because I can (read: &lt;a class="reference external" href="http://plone.org/"&gt;Plone&lt;/a&gt; allows me to do so) but also:&lt;/p&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;I have been reading a lot of &lt;a class="reference external" href="http://planet.plone.org/"&gt;Plone blogs&lt;/a&gt; lately and they have inspired me to write my own.&lt;/li&gt;
