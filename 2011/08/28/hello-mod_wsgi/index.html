@@ -47,26 +47,19 @@
                 By <a class="url fn" href="../../../../../author/aclark.html">aclark</a>
         </address>
         <p>In <a href="../../../../../category/blog.html">Blog</a>. </p>
-<p>tags: <a href="../../../../../tag/plone.html">Plone</a><a href="../../../../../tag/python.html">Python</a></p></footer><!-- /.post-info -->      <p>It seems I've inadvertently started another series of blog entry:&nbsp; the
-&quot;hello world&quot; series, wherein I explain how to easily get started with
-<a class="reference external" href="http://blog.aclark.net/2011/08/20/hello-plone/">various exciting Python technologies</a>.</p>
-<p>This time, in order to familiarize myself with <a class="reference external" href="http://code.google.com/p/modwsgi/">mod_wsgi</a>, I've
-created a buildout to automate some of the processes explained in:</p>
+<p>tags: <a href="../../../../../tag/plone.html">Plone</a><a href="../../../../../tag/python.html">Python</a></p></footer><!-- /.post-info -->      <p>It seems I've inadvertently started another series of blog entry:&nbsp;the &quot;hello world&quot; series, wherein I explain how to easily get started with <a class="reference external" href="http://blog.aclark.net/2011/08/20/hello-plone/">various exciting Python technologies</a>.</p>
+<p>This time, in order to familiarize myself with <a class="reference external" href="http://code.google.com/p/modwsgi/">mod_wsgi</a>, I've created a buildout to automate some of the processes explained in:</p>
 <ul class="simple">
 <li><a class="reference external" href="http://code.google.com/p/modwsgi/wiki/QuickInstallationGuide">http://code.google.com/p/modwsgi/wiki/QuickInstallationGuide</a></li>
 </ul>
-<p>(This series also helps me to subtly introduce the zc.buildout
-&quot;extendables&quot; I have been working on. More on those in a future post.)</p>
+<p>(This series also helps me to subtly introduce the zc.buildout &quot;extendables&quot; I have been working on. More on those in a future post.)</p>
 <div class="section" id="the-extendables">
 <h2>The extendables</h2>
-<p>The extendables make it easy to bootstrap a development environment with
-complex software requirements, via <a class="reference external" href="http://pypi.python.org/pypi/zc.buildout/1.5.2">zc.buildout</a>. In this case, I want
-to be able to type:</p>
+<p>The extendables make it easy to bootstrap a development environment with complex software requirements, via <a class="reference external" href="http://pypi.python.org/pypi/zc.buildout/1.5.2">zc.buildout</a>. In this case, I want to be able to type:</p>
 <pre class="literal-block">
 $ test-apache test-dir
 </pre>
-<p>And get a working, <em>disposable</em> Apache instance minutes later. I also
-want that Apache to come with a mod_wsgi app installed and working.</p>
+<p>And get a working, <em>disposable</em> Apache instance minutes later. I also want that Apache to come with a mod_wsgi app installed and working.</p>
 </div>
 <div class="section" id="setup">
 <h2>Setup</h2>
@@ -80,28 +73,23 @@ $ bin/buildout init
 <p>Edit the buildout.cfg to look like this:</p>
 <pre class="literal-block">
 [buildout]
-extends = http://x.aclark.net/apache/2.2.x/buildout.cfg
+extends = https://raw.github.com/pythonpackages/buildout-apache-modwsgi/master/2.2.x
 </pre>
 <p>Run buildout:</p>
 <pre class="literal-block">
 $ bin/buildout
 </pre>
-<p>Assuming successful completion, you should be able to run Apache in the
-foreground via:</p>
+<p>Assuming successful completion, you should be able to run Apache in the foreground via:</p>
 <pre class="literal-block">
 $ bin/supervisord -e debug -n
 </pre>
-<p>Now check <a class="reference external" href="http://localhost:8080">http://localhost:8080</a>, you should see:</p>
-<p><a href="#id1"><span class="problematic" id="id2">`|image0|`_</span></a></p>
-<p>This works because the <a class="reference external" href="https://github.com/ACLARKNET/build/blob/master/apache/2.2.x/buildout.cfg">&quot;extendable&quot; (buildout configuration file)</a>
-contains:</p>
+<p>Now check <a class="reference external" href="http://localhost:8080">http://localhost:8080</a>.</p>
+<p>This works because the <a class="reference external" href="https://github.com/ACLARKNET/build/blob/master/apache/2.2.x/buildout.cfg">&quot;extendable&quot; (buildout configuration file)</a> contains:</p>
 <ul class="simple">
-<li>The <a class="reference external" href="https://github.com/ACLARKNET/build/blob/master/apache/2.2.x/app.wsgi.in">little WSGI app</a> from the QuickInstallationGuide, templatized
-via <a class="reference external" href="http://pypi.python.org/pypi/collective.recipe.template/1.9">collective.recipe.template</a>.</li>
+<li>The <a class="reference external" href="https://github.com/ACLARKNET/build/blob/master/apache/2.2.x/app.wsgi.in">little WSGI app</a> from the QuickInstallationGuide, templatized via <a class="reference external" href="http://pypi.python.org/pypi/collective.recipe.template/1.9">collective.recipe.template</a>.</li>
 <li>A <a class="reference external" href="https://github.com/ACLARKNET/build/blob/master/apache/2.2.x/httpd.conf.in">templatized httpd.conf file</a>.</li>
 </ul>
-<p>I like to automate the process even further with the <a class="reference external" href="https://github.com/ACLARKNET/binfiles/blob/master/test-apache">following
-script</a>:</p>
+<p>I like to automate the process even further with the <a class="reference external" href="https://github.com/ACLARKNET/binfiles/blob/master/test-apache">following script</a>:</p>
 <pre class="literal-block">
 #!/bin/shmkdir $1
 virtualenv-2.6 $1
@@ -110,25 +98,16 @@ bin/easy_install zc.buildout
 bin/buildout init
 cat &lt;&lt; EOF &gt; buildout.cfg
 [buildout]
-extends = http://x.aclark.net/apache/2.2.x/buildout.cfg
+extends = https://raw.github.com/pythonpackages/buildout-apache-modwsgi/master/2.2.x
 EOF
 bin/buildout
 bin/supervisord -e debug -n
 </pre>
-<p>Thus closing the loop on this blog entry, and making the following
-possible:</p>
+<p>Thus closing the loop on this blog entry, and making the following possible:</p>
 <pre class="literal-block">
 $ test-apache test-dir
 </pre>
-<p>I've been using my <a class="reference external" href="https://github.com/ACLARKNET/binfiles/blob/master/test-plone">test-plone</a> script for years now, and I'm hoping
-that the test-apache script proves just as useful (especially as Plone
-moves closer to a WSGI-supporting stack via <a class="reference external" href="http://pypi.python.org/pypi/Zope2/2.13.9">Zope 2.13</a>).</p>
-</div>
-<div class="system-messages section">
-<h2>Docutils System Messages</h2>
-<div class="system-message" id="id1">
-<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">/Users/aclark/Developer/blog/content/hello-mod_wsgi.rst</tt>, line 66); <em><a href="#id2">backlink</a></em></p>
-Unknown target name: &quot;|image0|&quot;.</div>
+<p>I've been using my <a class="reference external" href="https://github.com/ACLARKNET/binfiles/blob/master/test-plone">test-plone</a> script for years now, and I'm hoping that the test-apache script proves just as useful (especially as Plone moves closer to a WSGI-supporting stack via <a class="reference external" href="http://pypi.python.org/pypi/Zope2/2.13.9">Zope 2.13</a>).</p>
 </div>
 
     </div><!-- /.entry-content -->
