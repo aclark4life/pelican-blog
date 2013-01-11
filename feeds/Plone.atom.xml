@@ -7123,40 +7123,23 @@ reached it (so people don't give too much).&lt;/p&gt;
 &lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/help-improve-plones-api-documentation.rst&lt;/tt&gt;, line 6); &lt;em&gt;&lt;a href="#id2"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 Unknown target name: &amp;quot;|image0|&amp;quot;.&lt;/div&gt;
 &lt;/div&gt;
-</summary><category term="Plone"></category></entry><entry><title>First Post</title><link href="http://blog.aclark.net//2007/10/17/first-post/" rel="alternate"></link><updated>2007-10-17T08:55:00-04:00</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2007-10-17:/2007/10/17/first-post/</id><summary type="html">&lt;p&gt;&lt;a href="#id1"&gt;&lt;span class="problematic" id="id2"&gt;`|image0|`_&lt;/span&gt;&lt;/a&gt;Why? Because I can (read: &lt;a class="reference external" href="http://plone.org/"&gt;Plone&lt;/a&gt; allows me to do so) but
-also:&lt;/p&gt;
+</summary><category term="Plone"></category></entry><entry><title>First Post</title><link href="http://blog.aclark.net//2007/10/17/first-post/" rel="alternate"></link><updated>2007-10-17T08:55:00-04:00</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2007-10-17:/2007/10/17/first-post/</id><summary type="html">&lt;p&gt;Why? Because I can (read: &lt;a class="reference external" href="http://plone.org/"&gt;Plone&lt;/a&gt; allows me to do so) but also:&lt;/p&gt;
 &lt;ul class="simple"&gt;
-&lt;li&gt;I have been reading a lot of &lt;a class="reference external" href="http://planet.plone.org/"&gt;Plone blogs&lt;/a&gt; lately and they have
-inspired me to write my own.&lt;/li&gt;
+&lt;li&gt;I have been reading a lot of &lt;a class="reference external" href="http://planet.plone.org/"&gt;Plone blogs&lt;/a&gt; lately and they have inspired me to write my own.&lt;/li&gt;
 &lt;li&gt;I want to interact with other Plonistas.&lt;/li&gt;
 &lt;li&gt;I want to get my web 2.0 &lt;strong&gt;ON&lt;/strong&gt;. ;-)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;To that end, this post is about my &lt;a class="reference external" href="http://svn.plone.org/svn/collective/newzope"&gt;build tools&lt;/a&gt; and how I love them.&lt;/p&gt;
-&lt;p&gt;Note: there are &lt;strong&gt;much&lt;/strong&gt; better ways to accomplish what I'm doing here.
-I'm reminding &lt;em&gt;myself&lt;/em&gt; this as much as the reader. So why do I continue
-to use them? Good question! I'll save the answer for another post, but
-for now you should be aware of these (better) alternatives:&lt;/p&gt;
+&lt;p&gt;Note: there are &lt;strong&gt;much&lt;/strong&gt; better ways to accomplish what I'm doing here. I'm reminding &lt;em&gt;myself&lt;/em&gt; this as much as the reader. So why do I continue to use them? Good question! I'll save the answer for another post, but for now you should be aware of these (better) alternatives:&lt;/p&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;&lt;a class="reference external" href="http://dev.plone.org/plone/browser/ploneout/trunk/README.txt"&gt;Buildout&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class="reference external" href="http://agendaless.com/Members/chrism/software/buildit"&gt;Buildit&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class="reference external" href="http://plone.org/products/instancemanager"&gt;Instance Manager&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;I used buildout for the first time at the &lt;a class="reference external" href="http://plone.org/events/sprints/baarn-ui-sprint-2007/"&gt;Baarn UI Sprint 2007&lt;/a&gt; and
-really enjoyed it. I have also used and enjoyed Chris McDonough's
-buildit. That may be where I end up (and there are several more to
-choose from) but for now I still enjoy typing:&lt;/p&gt;
+&lt;p&gt;I used buildout for the first time at the &lt;a class="reference external" href="http://plone.org/events/sprints/baarn-ui-sprint-2007/"&gt;Baarn UI Sprint 2007&lt;/a&gt; and really enjoyed it. I have also used and enjoyed Chris McDonough's buildit. That may be where I end up (and there are several more to choose from) but for now I still enjoy typing:&lt;/p&gt;
 &lt;pre class="literal-block"&gt;
 newzope test-site ProductA ProductB ProductC
 &lt;/pre&gt;
-&lt;p&gt;and having a working instance a few seconds later (with Product[A,B,C]
-installed)! Of course this requires I have a working Zope already... and
-that I edit Zope's skel/etc/zope.conf... but hey nothing is perfect and
-old habits die hard.&lt;/p&gt;
-&lt;div class="system-messages section"&gt;
-&lt;h2&gt;Docutils System Messages&lt;/h2&gt;
-&lt;div class="system-message" id="id1"&gt;
-&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/first-post.rst&lt;/tt&gt;, line 6); &lt;em&gt;&lt;a href="#id2"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
-Unknown target name: &amp;quot;|image0|&amp;quot;.&lt;/div&gt;
-&lt;/div&gt;
+&lt;p&gt;and having a working instance a few seconds later (with Product[A,B,C] installed)! Of course this requires I have a working Zope already... and that I edit Zope's skel/etc/zope.conf... but hey nothing is perfect and old habits die hard.&lt;/p&gt;
 </summary><category term="Plone"></category></entry><entry><title>Technorati Post Claim, Please Ignore.</title><link href="http://blog.aclark.net//2007/10/10/technorati-post-claim-please-ignore/" rel="alternate"></link><updated>2007-10-10T19:47:00-04:00</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2007-10-10:/2007/10/10/technorati-post-claim-please-ignore/</id><summary type="html">&lt;p&gt;&lt;a class="reference external" href="http://technorati.com/claim/nj735fhurk"&gt;Technorati Profile&lt;/a&gt;&lt;/p&gt;
 </summary><category term="Plone"></category></entry></feed>
