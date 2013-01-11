@@ -33,8 +33,56 @@
 
                             <aside id="featured" class="body">
                 <article>
-                    <h1 class="entry-title"><a href=".//2013/01/10/pillow-python-3/">Pillow Python 3</a></h1> 
+                    <h1 class="entry-title"><a href=".//2013/01/10/python-3-porting/">Python 3 Porting</a></h1> 
                     <footer class="post-info">
+        <abbr class="published" title="2013-01-10T19:15:00">
+                Thu 10 January 2013
+        </abbr>
+
+                <address class="vcard author">
+                By <a class="url fn" href="./author/aclark.html">aclark</a>
+        </address>
+        <p>In <a href="./category/blog.html">Blog</a>. </p>
+<p>tags: <a href="./tag/django.html">Django</a><a href="./tag/mozilla.html">Mozilla</a><a href="./tag/plone.html">Plone</a><a href="./tag/python.html">Python</a></p></footer><!-- /.post-info --><p><em>The 3 in 2013 is for Python 3</em></p>
+<img alt="https://raw.github.com/ACLARKNET/aclarknet.github.com/master/images/python-3-port.jpg" src="https://raw.github.com/ACLARKNET/aclarknet.github.com/master/images/python-3-port.jpg" />
+<p>I tend to like projects that everyone else <strong>hates</strong>, e.g.:</p>
+<ul class="simple">
+<li>Removing persistent Python objects associated with missing classes in ZODB.</li>
+<li>Making new releases for old software that is still useful but unmaintained.</li>
+<li>Running flake8 on 10s or 100s of source files and hand-fixing the results.</li>
+</ul>
+<p>Part of this has to do with <strong>repetition</strong>. I know how to do these things, and I like doing them. Over and over. If someone says, &quot;my Data.fs file is broken&quot; I get excited. Anyway, I hope you get the idea.</p>
+<div class="section" id="i-am-your-man">
+<h2>I am your man</h2>
+<p>Which brings me to the subject of this post: <strong>Python 3 Porting</strong>. I've been helping out with porting the Python Imaging Library to Python 3 (via the Pillow fork). I've not written any code yet, but it strikes me as the type of thing I'd be very interested in doing professionally. So, if you or your company are in need of a &quot;workhorse&quot; to plow through old code and update it, <a class="reference external" href="http://aclark.net/team/alex-clark">I am your man</a>. Please do <a class="reference external" href="mailto:info&#64;aclark.net">get in touch</a>.</p>
+</div>
+<div class="section" id="what-s-in-it-for-you">
+<h2>What's in it for you</h2>
+<p>Now I know what you are thinking: <strong>porting Python 2 software to Python 3 is a lot of work for little gain</strong>. Maybe. Maybe not. I'm not going to try to convince you otherwise, however I will tell you this:</p>
+<ul class="simple">
+<li>For me, 2013 is &quot;the year of Python 3&quot;. I've now promised to deliver and maintain a <strong>Python 3 compatible PIL by PyCon 2013</strong>. I now care about Python 3 (this was not true before).</li>
+<li>The Python 3 Wall of Shame is now the <a class="reference external" href="https://python3wos.appspot.com/">Python 3 Wall of Superpowers</a>. We are over the hump.</li>
+<li>Many popular Python web frameworks support or are about to support Python 3 e.g. CherryPy, Django, Pyramid.</li>
+</ul>
+<p>So, there is no time like the present to <strong>take a serious look at Python 3</strong>!</p>
+</div>
+<p>There are <a href=".//2013/01/10/python-3-porting/#disqus_thread">comments</a>.</p>                </article>
+                            </aside><!-- /#featured -->
+                            <section id="content" class="body">
+                    <h1>Other articles</h1>
+                    <hr />
+                    <ol id="posts-list" class="hfeed">
+                                                
+
+                 
+                        <li><article class="hentry">    
+                <header>
+                    <h1><a href=".//2013/01/10/pillow-python-3/" rel="bookmark"
+                           title="Permalink to Pillow Python 3">Pillow Python 3</a></h1>
+                </header>
+                
+                <div class="entry-content">
+                <footer class="post-info">
         <abbr class="published" title="2013-01-10T12:15:00">
                 Thu 10 January 2013
         </abbr>
@@ -43,24 +91,17 @@
                 By <a class="url fn" href="./author/aclark.html">aclark</a>
         </address>
         <p>In <a href="./category/blog.html">Blog</a>. </p>
-<p>tags: <a href="./tag/python.html">Python</a></p></footer><!-- /.post-info --><p>PIL is on its way to <strong>Python 3</strong> via Pillow. Support from Brian Crowell and others has been merged into master here:</p>
+<p>tags: <a href="./tag/python.html">Python</a></p></footer><!-- /.post-info -->                <p>PIL is on its way to <strong>Python 3</strong> via Pillow. Support from Brian Crowell and others has been merged into master here:</p>
 <ul class="simple">
 <li><a class="reference external" href="https://github.com/python-imaging/Pillow/pull/35">https://github.com/python-imaging/Pillow/pull/35</a></li>
 </ul>
 <p>And work continues toward a pre <strong>PyCon 2013</strong> release! Please help if you can:</p>
 <ul class="simple">
-<li>Ubuntu users, read through <a class="reference external" href="https://github.com/python-imaging/Pillow/issues/18">https://github.com/python-imaging/Pillow/issues/18</a> and provide assistance with testing this Ubuntu package: <a class="reference external" href="https://launchpad.net/~pythoneers/+archive/ppa">https://launchpad.net/~pythoneers/+archive/ppa</a>.</li>
-<li>Git experts, please comment on the merge issue described here: <a class="reference external" href="https://github.com/python-imaging/Pillow/pull/35">https://github.com/python-imaging/Pillow/pull/35</a>.</li>
-<li>Everyone else, please git clone the master branch for testing: <strong>git://github.com/python-imaging/Pillow.git</strong> and report issues as you find them: <a class="reference external" href="https://github.com/python-imaging/Pillow/issues">https://github.com/python-imaging/Pillow/issues</a>.</li>
-</ul>
-<p>Thank you!</p>
-<p>There are <a href=".//2013/01/10/pillow-python-3/#disqus_thread">comments</a>.</p>                </article>
-                            </aside><!-- /#featured -->
-                            <section id="content" class="body">
-                    <h1>Other articles</h1>
-                    <hr />
-                    <ol id="posts-list" class="hfeed">
-                                                
+<li>Ubuntu users, read through <a class="reference external" href="https://github.com/python-imaging/Pillow/issues/18">https://github.com ...</a></li></ul>
+                <a class="readmore" href=".//2013/01/10/pillow-python-3/">read more</a>
+                <p>There are <a href=".//2013/01/10/pillow-python-3/#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
+            </article></li>
+                            
 
                  
                         <li><article class="hentry">    
@@ -281,32 +322,6 @@ Special cases could not ...</pre>
 <li><a class="reference external" href="http://pypi.python.org/pypi/Pillow/1.7.8">http://pypi.python.org/pypi/Pillow ...</a></li></ul>
                 <a class="readmore" href=".//2012/11/02/pillow-1-7-8/">read more</a>
                 <p>There are <a href=".//2012/11/02/pillow-1-7-8/#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
-            </article></li>
-                            
-
-                 
-                        <li><article class="hentry">    
-                <header>
-                    <h1><a href=".//2012/10/23/django-hello/" rel="bookmark"
-                           title="Permalink to Django Hello">Django Hello</a></h1>
-                </header>
-                
-                <div class="entry-content">
-                <footer class="post-info">
-        <abbr class="published" title="2012-10-23T13:00:00">
-                Tue 23 October 2012
-        </abbr>
-
-                <address class="vcard author">
-                By <a class="url fn" href="./author/aclark.html">aclark</a>
-        </address>
-        <p>In <a href="./category/blog.html">Blog</a>. </p>
-<p>tags: <a href="./tag/django.html">Django</a><a href="./tag/python.html">Python</a></p></footer><!-- /.post-info -->                <p>Django doesn't really need a hello world style introduction, its documentation speaks for itself. But this is what <strong>Hello World</strong> in Django looks like to me. I hate boilerplate and I love reducing software down to its core components; just enough to start the server.</p>
-<p>setup.py:</p>
-<pre class="literal-block">
-from setuptools ...</pre>
-                <a class="readmore" href=".//2012/10/23/django-hello/">read more</a>
-                <p>There are <a href=".//2012/10/23/django-hello/#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
             </article></li>
                             </ol><!-- /#posts-list -->
                             <p class="paginator">
