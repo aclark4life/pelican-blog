@@ -5,6 +5,8 @@ Cioppino Sprint Report
 
 The `Cioppino Sprint`_ was recently held in Bodega Bay, CA. It was a `beautiful location`_ for a gathering of awesome Plone folks; and much was accomplished. Unfortunately on the second morning of the sprint, we were all deeply saddened to hear about the passing of Dorneles Treméa.
 
+.. image:: https://raw.github.com/ACLARKNET/aclarknet.github.com/master/images/bodega.jpg
+
 The passing of Dorneles Treméa
 ------------------------------
 
@@ -14,7 +16,6 @@ Memories
 ~~~~~~~~
 
 In particular, I have this memory of Dorneles and Alan Runyan sitting together at the Plone Conference 2008 sprint, smiling and working on their laptops. Before his death, it was just a random image that would occasionally pop into my head. Now, it's something I'll remember him by.
-
 
 We also corresponded briefly about his `ExternalStorage`_ add-on for Plone, around the time we upgraded plone.org from Plone 2.5 to Plone 3.0 (circa 2008), as well as traded emails about his invitation to attend Plone Conference 2008 in DC (for his visa application).  
 
@@ -38,9 +39,7 @@ Anyway, the sprint (or at least my part of it) was awesome! Amidst the very sad 
 Sprint report
 -------------
 
-It's a bit overwhelming to try and capture everything that happened (and I was only there for two days!); hopefully this report will be useful.
-
-The focus of this sprint was evaluator approachability (i.e. making Plone look good to prospective new users).
+It's a bit overwhelming to try and capture everything that happened (and I was only there for two days!); hopefully this report will be useful. The focus of this sprint was evaluator approachability (i.e. making Plone look good to prospective new users).
 
 Day 1 and Day 2 
 ~~~~~~~~~~~~~~~~
@@ -113,9 +112,7 @@ travelling-bar:
 .. _took that ball and ran with it: http://rpatterson.net/blog/cioppino-sprint
 .. _"follow" section: http://plone.org/follow
 .. _possibly non-compliant: http://plone.org/foundation/logo/logoguidelines.pdf/view
-.. _foo: http://aclark4life.files.wordpress.com/2011/02/ly66r.jpg
 .. _cioppino.twothumbs: http://pypi.python.org/pypi/cioppino.twothumbs/1
-.. _bar: http://pypi.python.org/pypi/cioppino.twothumbs/1
 .. _dist.plone.org: http://dist.plone.org/archive/
 .. _land on plone.org: http://plone.org/2008
 .. _donating to my travel fund: http://blog.aclark.net/2011/01/21/help-alex-clark-help-plone/
