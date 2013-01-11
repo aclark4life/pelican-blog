@@ -89,10 +89,10 @@ I've been using my `test-plone`_ script for years now, and I'm hoping that the t
 .. _mod\_wsgi: http://code.google.com/p/modwsgi/
 .. _`http://code.google.com/p/modwsgi/wiki/QuickInstallationGuide`: http://code.google.com/p/modwsgi/wiki/QuickInstallationGuide
 .. _zc.buildout: http://pypi.python.org/pypi/zc.buildout/1.5.2
-.. _aforementioned extendable: http://x.aclark.net/apache/2.2.x/buildout.cfg
+.. _aforementioned extendable: https://raw.github.com/pythonpackages/buildout-apache-modwsgi/master/2.2.x
 .. _|image1|: http://aclark4life.files.wordpress.com/2011/08/screen-shot-2011-08-28-at-8-09-00-pm.png
-.. _"extendable" (buildout configuration file): https://github.com/ACLARKNET/build/blob/master/apache/2.2.x/buildout.cfg
-.. _little WSGI app: https://github.com/ACLARKNET/build/blob/master/apache/2.2.x/app.wsgi.in
+.. _"extendable" (buildout configuration file): https://raw.github.com/pythonpackages/buildout-apache-modwsgi/master/2.2.x
+.. _little WSGI app: https://raw.github.com/pythonpackages/buildout-apache-modwsgi/master/conf/app.wsgi.in
 .. _collective.recipe.template: http://pypi.python.org/pypi/collective.recipe.template/1.9
 .. _templatized httpd.conf file: https://github.com/ACLARKNET/build/blob/master/apache/2.2.x/httpd.conf.in
 .. _following script: https://github.com/ACLARKNET/binfiles/blob/master/test-apache
