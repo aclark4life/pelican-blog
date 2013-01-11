@@ -91,11 +91,9 @@ event. To that end:
 -  eleddy and aclark deployed the "two thumbs" feature to plone.org.  (This feature may not work as expected yet, eleddy is resolving issues.) Check it out:
 -  limi continued to improve the documentation/ and support/ sections of plone.org. Here are some screenshots of how the new sections will look once they launch:
 
-That's it! Just so you don't worry the sprinters worked too hard, you
-can rest assured everyone was in good hands with zenwryly and his
-travelling-bar:
+That's it! Just so you don't worry the sprinters worked too hard, you can rest assured everyone was in good hands with zenwryly and his travelling-bar.
 
-*If you enjoyed reading this report and/or appreciate all the fun-but-hard work that goes in to attending a sprint, please consider `donating to my travel fund`_. Only three days left, and I'm still a few dollars short!*
+*If you enjoyed reading this report and/or appreciate all the fun-but-hard work that goes in to attending a sprint, please consider* `donating to my travel fund`_. *Only three days left, and I'm still a few dollars short!*
 
 .. _Cioppino Sprint: http://coactivate.org/projects/snow-sprint-west-2011/project-home
 .. _beautiful location: http://twitpic.com/3y21yk
