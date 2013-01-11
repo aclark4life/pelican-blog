@@ -2926,16 +2926,13 @@ $ test-apache test-dir
 &lt;/pre&gt;
 &lt;p&gt;I've been using my &lt;a class="reference external" href="https://github.com/ACLARKNET/binfiles/blob/master/test-plone"&gt;test-plone&lt;/a&gt; script for years now, and I'm hoping that the test-apache script proves just as useful (especially as Plone moves closer to a WSGI-supporting stack via &lt;a class="reference external" href="http://pypi.python.org/pypi/Zope2/2.13.9"&gt;Zope 2.13&lt;/a&gt;).&lt;/p&gt;
 &lt;/div&gt;
-</summary><category term="Plone"></category><category term="Python"></category></entry><entry><title>Hello Plone</title><link href="http://blog.aclark.net//2011/08/20/hello-plone/" rel="alternate"></link><updated>2011-08-20T20:27:00-04:00</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2011-08-20:/2011/08/20/hello-plone/</id><summary type="html">&lt;p&gt;This is a &amp;quot;hello world&amp;quot; style tutorial/application for Plone, aimed
-squarely at Python developers. I have created a project on Github too,
-to hold the code:&lt;/p&gt;
+</summary><category term="Plone"></category><category term="Python"></category></entry><entry><title>Hello Plone</title><link href="http://blog.aclark.net//2011/08/20/hello-plone/" rel="alternate"></link><updated>2011-08-20T20:27:00-04:00</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2011-08-20:/2011/08/20/hello-plone/</id><summary type="html">&lt;p&gt;This is a &amp;quot;hello world&amp;quot; style tutorial/application for Plone, aimed squarely at Python developers. I have created a project on Github too, to hold the code:&lt;/p&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;&lt;a class="reference external" href="https://github.com/aclark4life/hello_plone"&gt;https://github.com/aclark4life/hello_plone&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;div class="section" id="step-1-setup"&gt;
 &lt;h2&gt;Step 1 - Setup&lt;/h2&gt;
-&lt;p&gt;Everyone in the Python world loves virtualenv, so this step will be a
-familiar one. Inside the hello_plone repo, I first create a virtualenv:&lt;/p&gt;
+&lt;p&gt;Everyone in the Python world loves virtualenv, so this step will be a familiar one. Inside the hello_plone repo, I first create a virtualenv:&lt;/p&gt;
 &lt;pre class="literal-block"&gt;
 $ virtualenv .
 &lt;/pre&gt;
@@ -2943,10 +2940,7 @@ $ virtualenv .
 &lt;pre class="literal-block"&gt;
 $ bin/pip install zc.buildout
 &lt;/pre&gt;
-&lt;p&gt;As you see, Plone uses Buildout. One day it may not, but for now it
-does. Get over it. ;-) (Or better yet, help us figure out how to make
-Buildout optional in Plone. Many would welcome the improvement, and hail
-you as their conquering hero!) Until then:&lt;/p&gt;
+&lt;p&gt;As you see, Plone uses Buildout. One day it may not, but for now it does. Get over it. ;-) (Or better yet, help us figure out how to make Buildout optional in Plone. Many would welcome the improvement, and hail you as their conquering hero!) Until then:&lt;/p&gt;
 &lt;pre class="literal-block"&gt;
 $ bin/buildout init
 &lt;/pre&gt;
@@ -2959,31 +2953,16 @@ extends = http://pythonpackages.com/buildout/plone/4.2.x-dev
 &lt;pre class="literal-block"&gt;
 $ bin/buildout
 &lt;/pre&gt;
-&lt;p&gt;It will take some time to download all the packages, but you only have
-to do this once. Afterward, you can configure a global packages
-directory and share that amongst all your development projects. See the
-&lt;a class="reference external" href="http://pypi.python.org/pypi/zc.buildout/1.5.2#user-defaults"&gt;zc.buildout 1.5.2 page on PyPI&lt;/a&gt; to find out more. When it finishes, do
-this:&lt;/p&gt;
+&lt;p&gt;It will take some time to download all the packages, but you only have to do this once. Afterward, you can configure a global packages directory and share that amongst all your development projects. See the &lt;a class="reference external" href="http://pypi.python.org/pypi/zc.buildout/1.5.2#user-defaults"&gt;zc.buildout 1.5.2 page on PyPI&lt;/a&gt; to find out more. When it finishes, do this:&lt;/p&gt;
 &lt;pre class="literal-block"&gt;
 $ bin/plone fg
 &lt;/pre&gt;
-&lt;p&gt;Then open &lt;a class="reference external" href="http://localhost:8080"&gt;http://localhost:8080&lt;/a&gt; and you should see this: &lt;a href="#id1"&gt;&lt;span class="problematic" id="id2"&gt;`|image0|`_&lt;/span&gt;&lt;/a&gt;
-Click the button and follow the steps. You don't need to select any
-additional add-ons from the list. Afterward, you should get a Plone site
-here: &lt;a class="reference external" href="http://localhost:8080/Plone"&gt;http://localhost:8080/Plone&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Then open &lt;a class="reference external" href="http://localhost:8080"&gt;http://localhost:8080&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Click the button and follow the steps. You don't need to select any additional add-ons from the list. Afterward, you should get a Plone site here: &lt;a class="reference external" href="http://localhost:8080/Plone"&gt;http://localhost:8080/Plone&lt;/a&gt;.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="step-2-develop"&gt;
 &lt;h2&gt;Step 2 - Develop&lt;/h2&gt;
-&lt;p&gt;There are a ton of things you can do in Plone, but it is primarily a
-&amp;quot;content management system&amp;quot; meaning, &amp;quot;you put your website in it.&amp;quot;¹ And
-I don't mean your &amp;quot;crazy cool next gen web app&amp;quot; website. I mean your
-web. site. The one you use for you or your business or church or band or
-bridge club or whatever. Since this is a &amp;quot;hello world&amp;quot; demonstration, I
-am going to show you how to start writing Python code whose results will
-&amp;quot;show up on the screen&amp;quot; in short order. After that, I'll point you to
-some next steps. So, to develop we need a Python package. Create your
-own, or use zopeskel (paster wrapped in some &amp;quot;user friendliness&amp;quot;). Or
-use paster with the zopeskel templates installed.&lt;/p&gt;
+&lt;p&gt;There are a ton of things you can do in Plone, but it is primarily a &amp;quot;content management system&amp;quot; meaning, &amp;quot;you put your website in it.&amp;quot;¹ And I don't mean your &amp;quot;crazy cool next gen web app&amp;quot; website. I mean your web. site. The one you use for you or your business or church or band or bridge club or whatever. Since this is a &amp;quot;hello world&amp;quot; demonstration, I am going to show you how to start writing Python code whose results will &amp;quot;show up on the screen&amp;quot; in short order. After that, I'll point you to some next steps. So, to develop we need a Python package. Create your own, or use zopeskel (paster wrapped in some &amp;quot;user friendliness&amp;quot;). Or use paster with the zopeskel templates installed.&lt;/p&gt;
 &lt;pre class="literal-block"&gt;
 $ bin/pip install zopeskel
 $ bin/zopeskel plone_basic my.app
@@ -2992,14 +2971,7 @@ plone: A project for Plone add-ons
 
 …
 &lt;/pre&gt;
-&lt;p&gt;Now that we have a Python package, we want to &amp;quot;load it in Plone&amp;quot;. To do
-that, we need to add the package to our buildout. Fortunately, buildout
-has a mechanism for this particular use case built in. It's called a
-&amp;quot;develop egg&amp;quot;, and it is configured via the `develop` parameter
-available in the `buildout` section. Additionally, we need to &amp;quot;tell
-Plone&amp;quot; about our develop egg too. But this is done in the same way you
-tell Plone about any other package. You add it to the `eggs` parameter
-of the `plone.recipe.zope2instance` section. So now we have:&lt;/p&gt;
+&lt;p&gt;Now that we have a Python package, we want to &amp;quot;load it in Plone&amp;quot;. To do that, we need to add the package to our buildout. Fortunately, buildout has a mechanism for this particular use case built in. It's called a &amp;quot;develop egg&amp;quot;, and it is configured via the `develop` parameter available in the `buildout` section. Additionally, we need to &amp;quot;tell Plone&amp;quot; about our develop egg too. But this is done in the same way you tell Plone about any other package. You add it to the `eggs` parameter of the `plone.recipe.zope2instance` section. So now we have:&lt;/p&gt;
 &lt;pre class="literal-block"&gt;
 [buildout]
 develop = ./my.app
@@ -3008,9 +2980,7 @@ extends = http://build.pythonpackages.com/buildout/plone/4.2.x-dev
 [plone]
 eggs += my.app
 &lt;/pre&gt;
-&lt;p&gt;Now let's write some code. We are going to: &amp;quot;wire up a template to a
-view&amp;quot;, say &amp;quot;hello world!&amp;quot; then &amp;quot;call it a day&amp;quot;. This is accomplished via
-some &amp;quot;goo&amp;quot; maintained by the &lt;a class="reference external" href="http://docs.zope.org/zopetoolkit/"&gt;Zope Toolkit project&lt;/a&gt;:&lt;/p&gt;
+&lt;p&gt;Now let's write some code. We are going to: &amp;quot;wire up a template to a view&amp;quot;, say &amp;quot;hello world!&amp;quot; then &amp;quot;call it a day&amp;quot;. This is accomplished via some &amp;quot;goo&amp;quot; maintained by the &lt;a class="reference external" href="http://docs.zope.org/zopetoolkit/"&gt;Zope Toolkit project&lt;/a&gt;:&lt;/p&gt;
 &lt;pre class="literal-block"&gt;
 from Products.Five.browser.pagetemplatefile import
     ViewPageTemplateFile
@@ -3026,10 +2996,7 @@ class Hello(BrowserPage):
 &amp;nbsp;&amp;nbsp;&amp;nbsp; def __call__(self):
 &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; return self.template()
 &lt;/pre&gt;
-&lt;p&gt;And it can go in: &lt;strong&gt;*my.app/my/app/hello.py*.&lt;/strong&gt; Now, because Plone uses
-the &lt;a class="reference external" href="http://pypi.python.org/pypi/zope.component/3.10.0"&gt;Zope component architecture&lt;/a&gt;, we need to &amp;quot;wire up&amp;quot; the &amp;quot;component&amp;quot;
-we just created. This is done via the &lt;a class="reference external" href="http://pypi.python.org/pypi/zope.configuration/3.7.4"&gt;Zope Configuration Markup
-Language&lt;/a&gt;:&lt;/p&gt;
+&lt;p&gt;And it can go in: &lt;strong&gt;*my.app/my/app/hello.py*.&lt;/strong&gt; Now, because Plone uses the &lt;a class="reference external" href="http://pypi.python.org/pypi/zope.component/3.10.0"&gt;Zope component architecture&lt;/a&gt;, we need to &amp;quot;wire up&amp;quot; the &amp;quot;component&amp;quot; we just created. This is done via the &lt;a class="reference external" href="http://pypi.python.org/pypi/zope.configuration/3.7.4"&gt;Zope Configuration Markup Language&lt;/a&gt;:&lt;/p&gt;
 &lt;pre class="literal-block"&gt;
 &amp;lt;configure
 &amp;nbsp;&amp;nbsp;&amp;nbsp; xmlns:browser=&amp;quot;http://namespaces.zope.org/browser&amp;quot;&amp;gt;
@@ -3043,16 +3010,8 @@ Language&lt;/a&gt;:&lt;/p&gt;
 
 &amp;lt;/configure&amp;gt;
 &lt;/pre&gt;
-&lt;p&gt;And it goes in: &lt;strong&gt;*my.app/my/app/configure.zcml*&lt;/strong&gt;. It &amp;quot;just works&amp;quot;
-because we include an &lt;a class="reference external" href="http://pypi.python.org/pypi/z3c.autoinclude/0.3.4"&gt;entry point in our setup.py&lt;/a&gt; to make it so
-(paster took care of that, in this case.) Lastly, create:
-&lt;strong&gt;*my.app/my/app/hello.pt.*&lt;/strong&gt; And put &amp;quot;Hello world!&amp;quot; in it. Stop and
-start Plone (i.e. CTRL-C, bin/plone fg) and then open:
-&lt;a class="reference external" href="http://localhost:8080/Plone/hello"&gt;http://localhost:8080/Plone/hello&lt;/a&gt;. You should see: &lt;a href="#id3"&gt;&lt;span class="problematic" id="id4"&gt;`|image1|`_&lt;/span&gt;&lt;/a&gt; Nice, but
-a little boring. At the very least, let us get our &amp;quot;hello world!&amp;quot; to
-show up &amp;quot;in Plone&amp;quot;. To do this, we simply invoke Plone's main_template
-and insert our text into the main content area. Add the following to
-&lt;strong&gt;*my.app/my/app/hello.pt.*&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;And it goes in: &lt;strong&gt;*my.app/my/app/configure.zcml*&lt;/strong&gt;. It &amp;quot;just works&amp;quot; because we include an &lt;a class="reference external" href="http://pypi.python.org/pypi/z3c.autoinclude/0.3.4"&gt;entry point in our setup.py&lt;/a&gt; to make it so (paster took care of that, in this case.) Lastly, create: &lt;strong&gt;*my.app/my/app/hello.pt.*&lt;/strong&gt; And put &amp;quot;Hello world!&amp;quot; in it. Stop and start Plone (i.e. CTRL-C, bin/plone fg) and then open: &lt;a class="reference external" href="http://localhost:8080/Plone/hello"&gt;http://localhost:8080/Plone/hello&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Nice, but a little boring. At the very least, let us get our &amp;quot;hello world!&amp;quot; to show up &amp;quot;in Plone&amp;quot;. To do this, we simply invoke Plone's main_template and insert our text into the main content area. Add the following to &lt;strong&gt;*my.app/my/app/hello.pt.*&lt;/strong&gt;&lt;/p&gt;
 &lt;pre class="literal-block"&gt;
 &amp;lt;div metal:use-macro=&amp;quot;here/main_template/macros/master&amp;quot;&amp;gt;
 
@@ -3064,39 +3023,17 @@ and insert our text into the main content area. Add the following to
 
 &amp;lt;/div&amp;gt;
 &lt;/pre&gt;
-&lt;p&gt;As you can see, we are using &lt;a class="reference external" href="http://docs.zope.org/zope2/zope2book/ZPT.html"&gt;Zope Page Templates&lt;/a&gt;. ZPTs must be valid
-XHTML, much to the &lt;a class="reference external" href="https://docs.djangoproject.com/en/dev/topics/templates/#templates"&gt;chagrin of Django's creators&lt;/a&gt;. But in addition to
-the main con: &amp;quot;making humans edit XML is sadistic!&amp;quot;) there are some pros
-too e.g. &amp;quot;Play nicely with editing tools.&amp;quot; In other words, get over it.
-;-) (Or better yet, add support for using alternative template languages
-in Plone. I have no idea what the technical feasibility is, but it might
-be worth some effort.) Now let's take a look: &lt;a href="#id5"&gt;&lt;span class="problematic" id="id6"&gt;`|image2|`_&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;As you can see, we are using &lt;a class="reference external" href="http://docs.zope.org/zope2/zope2book/ZPT.html"&gt;Zope Page Templates&lt;/a&gt;. ZPTs must be valid XHTML, much to the &lt;a class="reference external" href="https://docs.djangoproject.com/en/dev/topics/templates/#templates"&gt;chagrin of Django's creators&lt;/a&gt;. But in addition to the main con: &amp;quot;making humans edit XML is sadistic!&amp;quot;) there are some pros too e.g. &amp;quot;Play nicely with editing tools.&amp;quot; In other words, get over it.  ;-) (Or better yet, add support for using alternative template languages in Plone. I have no idea what the technical feasibility is, but it might be worth some effort.)&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="step-3-fun-profit"&gt;
 &lt;h2&gt;Step 3 - Fun/profit!&lt;/h2&gt;
-&lt;p&gt;That's not so bad you say? (That is what I am hoping you will say!)
-Great. Some good next steps are:&lt;/p&gt;
+&lt;p&gt;That's not so bad you say? (That is what I am hoping you will say!) Great. Some good next steps are:&lt;/p&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;Theming with Diazo and &lt;a class="reference external" href="http://pypi.python.org/pypi/plone.app.theming/1.0b8"&gt;plone.app.theming&lt;/a&gt;.&lt;/li&gt;
 &lt;li&gt;Content types with Dexterity and &lt;a class="reference external" href="http://pypi.python.org/pypi/plone.app.dexterity/1.0.1"&gt;plone.app.dexterity&lt;/a&gt;.&lt;/li&gt;
 &lt;li&gt;Easy through-the-web form generation with &lt;a class="reference external" href="http://pypi.python.org/pypi/Products.PloneFormGen/1.7b5"&gt;PloneFormGen&lt;/a&gt;.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Also, check out the Plone &lt;a class="reference external" href="http://collective-docs.readthedocs.org"&gt;community managed developer documentation&lt;/a&gt;
-on readthedocs.org for more! ¹ c.f. SNL skit w/Rob Schnieder and/or Adam
-Sander too, apparently: &lt;a class="reference external" href="http://www.youtube.com/watch?v=muA5EBmpDhA"&gt;http://www.youtube.com/watch?v=muA5EBmpDhA&lt;/a&gt; I
-like the Rob Schnieder ones better :-)&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="system-messages section"&gt;
-&lt;h2&gt;Docutils System Messages&lt;/h2&gt;
-&lt;div class="system-message" id="id1"&gt;
-&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/hello-plone.rst&lt;/tt&gt;, line 60); &lt;em&gt;&lt;a href="#id2"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
-Unknown target name: &amp;quot;|image0|&amp;quot;.&lt;/div&gt;
-&lt;div class="system-message" id="id3"&gt;
-&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/hello-plone.rst&lt;/tt&gt;, line 145); &lt;em&gt;&lt;a href="#id4"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
-Unknown target name: &amp;quot;|image1|&amp;quot;.&lt;/div&gt;
-&lt;div class="system-message" id="id5"&gt;
-&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/hello-plone.rst&lt;/tt&gt;, line 168); &lt;em&gt;&lt;a href="#id6"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
-Unknown target name: &amp;quot;|image2|&amp;quot;.&lt;/div&gt;
+&lt;p&gt;Also, check out the Plone &lt;a class="reference external" href="http://collective-docs.readthedocs.org"&gt;community managed developer documentation&lt;/a&gt; on readthedocs.org for more! ¹ c.f. SNL skit w/Rob Schnieder and/or Adam Sander too, apparently: &lt;a class="reference external" href="http://www.youtube.com/watch?v=muA5EBmpDhA"&gt;http://www.youtube.com/watch?v=muA5EBmpDhA&lt;/a&gt; I like the Rob Schnieder ones better :-)&lt;/p&gt;
 &lt;/div&gt;
 </summary><category term="Plone"></category><category term="Python"></category></entry><entry><title>Plone secrets: Episode 3 - Collective Recaptcha installation</title><link href="http://blog.aclark.net//2011/08/09/plone-secrets-episode-3-collective-recaptcha-installation/" rel="alternate"></link><updated>2011-08-09T12:19:00-04:00</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2011-08-09:/2011/08/09/plone-secrets-episode-3-collective-recaptcha-installation/</id><summary type="html">&lt;p&gt;&lt;strong&gt;*Another one from the: &amp;quot;wow, this approach is totally and completely
 non-obvious to beginners&amp;quot; department.*&lt;/strong&gt;&lt;/p&gt;
