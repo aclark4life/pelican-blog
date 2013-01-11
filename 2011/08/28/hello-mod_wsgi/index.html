@@ -63,7 +63,7 @@ $ test-apache test-dir
 </div>
 <div class="section" id="setup">
 <h2>Setup</h2>
-<p>First we use the <a class="reference external" href="http://x.aclark.net/apache/2.2.x/buildout.cfg">aforementioned extendable</a>, like so:</p>
+<p>First we use the <a class="reference external" href="https://raw.github.com/pythonpackages/buildout-apache-modwsgi/master/2.2.x">aforementioned extendable</a>, like so:</p>
 <pre class="literal-block">
 $ virtualenv test-dir
 $ cd test-dir
@@ -84,9 +84,9 @@ $ bin/buildout
 $ bin/supervisord -e debug -n
 </pre>
 <p>Now check <a class="reference external" href="http://localhost:8080">http://localhost:8080</a>.</p>
-<p>This works because the <a class="reference external" href="https://github.com/ACLARKNET/build/blob/master/apache/2.2.x/buildout.cfg">&quot;extendable&quot; (buildout configuration file)</a> contains:</p>
+<p>This works because the <a class="reference external" href="https://raw.github.com/pythonpackages/buildout-apache-modwsgi/master/2.2.x">&quot;extendable&quot; (buildout configuration file)</a> contains:</p>
 <ul class="simple">
-<li>The <a class="reference external" href="https://github.com/ACLARKNET/build/blob/master/apache/2.2.x/app.wsgi.in">little WSGI app</a> from the QuickInstallationGuide, templatized via <a class="reference external" href="http://pypi.python.org/pypi/collective.recipe.template/1.9">collective.recipe.template</a>.</li>
+<li>The <a class="reference external" href="https://raw.github.com/pythonpackages/buildout-apache-modwsgi/master/conf/app.wsgi.in">little WSGI app</a> from the QuickInstallationGuide, templatized via <a class="reference external" href="http://pypi.python.org/pypi/collective.recipe.template/1.9">collective.recipe.template</a>.</li>
 <li>A <a class="reference external" href="https://github.com/ACLARKNET/build/blob/master/apache/2.2.x/httpd.conf.in">templatized httpd.conf file</a>.</li>
 </ul>
 <p>I like to automate the process even further with the <a class="reference external" href="https://github.com/ACLARKNET/binfiles/blob/master/test-apache">following script</a>:</p>

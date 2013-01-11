@@ -2583,7 +2583,7 @@ $ test-apache test-dir
 &lt;/div&gt;
 &lt;div class="section" id="setup"&gt;
 &lt;h2&gt;Setup&lt;/h2&gt;
-&lt;p&gt;First we use the &lt;a class="reference external" href="http://x.aclark.net/apache/2.2.x/buildout.cfg"&gt;aforementioned extendable&lt;/a&gt;, like so:&lt;/p&gt;
+&lt;p&gt;First we use the &lt;a class="reference external" href="https://raw.github.com/pythonpackages/buildout-apache-modwsgi/master/2.2.x"&gt;aforementioned extendable&lt;/a&gt;, like so:&lt;/p&gt;
 &lt;pre class="literal-block"&gt;
 $ virtualenv test-dir
 $ cd test-dir
@@ -2604,9 +2604,9 @@ $ bin/buildout
 $ bin/supervisord -e debug -n
 &lt;/pre&gt;
 &lt;p&gt;Now check &lt;a class="reference external" href="http://localhost:8080"&gt;http://localhost:8080&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;This works because the &lt;a class="reference external" href="https://github.com/ACLARKNET/build/blob/master/apache/2.2.x/buildout.cfg"&gt;&amp;quot;extendable&amp;quot; (buildout configuration file)&lt;/a&gt; contains:&lt;/p&gt;
+&lt;p&gt;This works because the &lt;a class="reference external" href="https://raw.github.com/pythonpackages/buildout-apache-modwsgi/master/2.2.x"&gt;&amp;quot;extendable&amp;quot; (buildout configuration file)&lt;/a&gt; contains:&lt;/p&gt;
 &lt;ul class="simple"&gt;
-&lt;li&gt;The &lt;a class="reference external" href="https://github.com/ACLARKNET/build/blob/master/apache/2.2.x/app.wsgi.in"&gt;little WSGI app&lt;/a&gt; from the QuickInstallationGuide, templatized via &lt;a class="reference external" href="http://pypi.python.org/pypi/collective.recipe.template/1.9"&gt;collective.recipe.template&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;The &lt;a class="reference external" href="https://raw.github.com/pythonpackages/buildout-apache-modwsgi/master/conf/app.wsgi.in"&gt;little WSGI app&lt;/a&gt; from the QuickInstallationGuide, templatized via &lt;a class="reference external" href="http://pypi.python.org/pypi/collective.recipe.template/1.9"&gt;collective.recipe.template&lt;/a&gt;.&lt;/li&gt;
 &lt;li&gt;A &lt;a class="reference external" href="https://github.com/ACLARKNET/build/blob/master/apache/2.2.x/httpd.conf.in"&gt;templatized httpd.conf file&lt;/a&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;I like to automate the process even further with the &lt;a class="reference external" href="https://github.com/ACLARKNET/binfiles/blob/master/test-apache"&gt;following script&lt;/a&gt;:&lt;/p&gt;
