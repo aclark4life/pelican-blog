@@ -6925,47 +6925,19 @@ this month (October 2007) and announce them here.&lt;/p&gt;
 &lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/is-this-thing-on.rst&lt;/tt&gt;, line 6); &lt;em&gt;&lt;a href="#id2"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 Unknown target name: &amp;quot;|image0|&amp;quot;.&lt;/div&gt;
 &lt;/div&gt;
-</summary><category term="Plone"></category></entry><entry><title>I love the &amp;#039;slrn&amp;#039; news reader.</title><link href="http://blog.aclark.net//2007/10/17/i-love-the-039slrn039-news-reader/" rel="alternate"></link><updated>2007-10-17T09:26:00-04:00</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2007-10-17:/2007/10/17/i-love-the-039slrn039-news-reader/</id><summary type="html">&lt;p&gt;&lt;a href="#id1"&gt;&lt;span class="problematic" id="id2"&gt;`|image0|`_&lt;/span&gt;&lt;/a&gt;I've been meaning to write this blog entry about &lt;strong&gt;*slrn*&lt;/strong&gt;
-ever since I started using it some time last year. Finally, here it is.
-But this is not the blog entry I had originally intended to write. There
-were some grandiose ideas about where I first heard of it; the blog
-entry that inspired me to try it; how I was frustrated with the
-alternatives; none of these are present here in any detail. That is
-because I'm frustrated with the length of time it takes to write a
-&amp;quot;quality&amp;quot; blog entry, when all I want to do is get the information out.
-(But that is a separate blog entry :-))&lt;/p&gt;
-&lt;p&gt;To that end, here are a few things I'd like you to know about
-&lt;strong&gt;*slrn*&lt;/strong&gt;:&lt;/p&gt;
+</summary><category term="Plone"></category></entry><entry><title>I love the slrn news reader</title><link href="http://blog.aclark.net//2007/10/17/i-love-the-slrn-news-reader/" rel="alternate"></link><updated>2007-10-17T09:26:00-04:00</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2007-10-17:/2007/10/17/i-love-the-slrn-news-reader/</id><summary type="html">&lt;p&gt;I've been meaning to write this blog entry about &lt;strong&gt;*slrn*&lt;/strong&gt; ever since I started using it some time last year. Finally, here it is. But this is not the blog entry I had originally intended to write. There were some grandiose ideas about where I first heard of it; the blog entry that inspired me to try it; how I was frustrated with the alternatives; none of these are present here in any detail. That is because I'm frustrated with the length of time it takes to write a &amp;quot;quality&amp;quot; blog entry, when all I want to do is get the information out. (But that is a separate blog entry :-))&lt;/p&gt;
+&lt;p&gt;To that end, here are a few things I'd like you to know about &lt;strong&gt;*slrn*&lt;/strong&gt;:&lt;/p&gt;
 &lt;ol class="arabic simple"&gt;
-&lt;li&gt;It rocks, for those that enjoy terminal applications as I do (e.g.
-mutt, w3m, etc.) And by &amp;quot;rocks&amp;quot; I mean, it allows you to do in a
-terminal what most people do in a graphical application. Further, it
-allows you to do it the way you want (for the most part) and by that
-I mean, it allows you to bind keys to actions.&lt;/li&gt;
-&lt;li&gt;It's a bit confusing to get started, that is what I'd like to help
-with here. There is a &lt;a class="reference external" href="http://slrn.sourceforge.net/downloads/slrn.rc"&gt;default config file that you'll want to copy
-to ~/.slrnrc&lt;/a&gt;, and&lt;/li&gt;
-&lt;li&gt;there are some additional configuration parameters I use that were
-hard to track down. Those are:&lt;/li&gt;
+&lt;li&gt;It rocks, for those that enjoy terminal applications as I do (e.g.  mutt, w3m, etc.) And by &amp;quot;rocks&amp;quot; I mean, it allows you to do in a terminal what most people do in a graphical application. Further, it allows you to do it the way you want (for the most part) and by that I mean, it allows you to bind keys to actions.&lt;/li&gt;
+&lt;li&gt;It's a bit confusing to get started, that is what I'd like to help with here. There is a &lt;a class="reference external" href="http://slrn.sourceforge.net/downloads/slrn.rc"&gt;default config file that you'll want to copy to ~/.slrnrc&lt;/a&gt;, and&lt;/li&gt;
+&lt;li&gt;there are some additional configuration parameters I use that were hard to track down. Those are:&lt;/li&gt;
 &lt;/ol&gt;
 &lt;pre class="literal-block"&gt;
 set confirm_actions 14visible_headers &amp;quot;From:,Subject:,Newsgroups:,Followup-To:,Reply-To:,Date:&amp;quot;set query_read_group_cutoff 0set uncollapse_threads 1set netiquette_warnings 0
 &lt;/pre&gt;
-&lt;p&gt;Most of these are self-explanatory, but if you are looking at &amp;quot;set
-confirm_actions 14&amp;quot; and thinking &amp;quot;wtf?&amp;quot; you are not alone :-) I'll
-leave it as an exercise to the reader to explore.
-See:&lt;a class="reference external" href="http://slrn.sourceforge.net/manual/slrn-manual.html"&gt;http://slrn.sourceforge.net/manual/slrn-manual.html&lt;/a&gt; for more
-information. I hope this post helps someone get started
-using&lt;strong&gt;*slrn&lt;/strong&gt;!*&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Next, in Part II, I will cover **slrnpull*&lt;/em&gt;; the program I use
-(distributed with slrn) to download news. I never &amp;quot;read it live&amp;quot; and I
-will explain why ;-)*&lt;/p&gt;
-&lt;div class="system-messages section"&gt;
-&lt;h2&gt;Docutils System Messages&lt;/h2&gt;
-&lt;div class="system-message" id="id1"&gt;
-&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/i-love-the-slrn-news-reader.rst&lt;/tt&gt;, line 6); &lt;em&gt;&lt;a href="#id2"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
-Unknown target name: &amp;quot;|image0|&amp;quot;.&lt;/div&gt;
-&lt;/div&gt;
+&lt;p&gt;Most of these are self-explanatory, but if you are looking at &amp;quot;set confirm_actions 14&amp;quot; and thinking &amp;quot;wtf?&amp;quot; you are not alone :-) I'll leave it as an exercise to the reader to explore.
+See:&lt;a class="reference external" href="http://slrn.sourceforge.net/manual/slrn-manual.html"&gt;http://slrn.sourceforge.net/manual/slrn-manual.html&lt;/a&gt; for more information. I hope this post helps someone get started using&lt;strong&gt;*slrn&lt;/strong&gt;!*&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Next, in Part II, I will cover **slrnpull*&lt;/em&gt;; the program I use (distributed with slrn) to download news. I never &amp;quot;read it live&amp;quot; and I will explain why ;-)*&lt;/p&gt;
 </summary><category term="Plone"></category></entry><entry><title>Help improve Plone API documentation</title><link href="http://blog.aclark.net//2007/10/17/help-improve-plone-api-documentation/" rel="alternate"></link><updated>2007-10-17T09:19:00-04:00</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2007-10-17:/2007/10/17/help-improve-plone-api-documentation/</id><summary type="html">&lt;p&gt;I'm travelling from Washington, DC, USA to Mountain View, CA, USA June 26 - 29 to participate in the 2007 &lt;a class="reference external" href="http://plone.org/events/sprints/doc-ecommerce"&gt;Plone Doccomm Sprint&lt;/a&gt;. My main focus will be updating Plone's online API documentation (available at &lt;a class="reference external" href="http://api.plone.org/"&gt;http://api.plone.org&lt;/a&gt;). If you are interested in seeing this done and would like to help, please consider making a donation to help offset the cost of my airfare. In return, I will create and upload API documentation for:&lt;/p&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;Plone-2.5.3&lt;/li&gt;
