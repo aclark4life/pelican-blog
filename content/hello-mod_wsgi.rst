@@ -8,7 +8,7 @@ It seems I've inadvertently started another series of blog entry: the "hello wo
 
 This time, in order to familiarize myself with `mod\_wsgi`_, I've created a buildout to automate some of the processes explained in:
 
--  `http://code.google.com/p/modwsgi/wiki/QuickInstallationGuide`_
+- `http://code.google.com/p/modwsgi/wiki/QuickInstallationGuide`_
 
 (This series also helps me to subtly introduce the zc.buildout "extendables" I have been working on. More on those in a future post.)
 
@@ -90,7 +90,6 @@ I've been using my `test-plone`_ script for years now, and I'm hoping that the t
 .. _`http://code.google.com/p/modwsgi/wiki/QuickInstallationGuide`: http://code.google.com/p/modwsgi/wiki/QuickInstallationGuide
 .. _zc.buildout: http://pypi.python.org/pypi/zc.buildout/1.5.2
 .. _aforementioned extendable: https://raw.github.com/pythonpackages/buildout-apache-modwsgi/master/2.2.x
-.. _|image1|: http://aclark4life.files.wordpress.com/2011/08/screen-shot-2011-08-28-at-8-09-00-pm.png
 .. _"extendable" (buildout configuration file): https://raw.github.com/pythonpackages/buildout-apache-modwsgi/master/2.2.x
 .. _little WSGI app: https://raw.github.com/pythonpackages/buildout-apache-modwsgi/master/conf/app.wsgi.in
 .. _collective.recipe.template: http://pypi.python.org/pypi/collective.recipe.template/1.9
