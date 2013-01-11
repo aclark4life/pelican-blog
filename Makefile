@@ -59,6 +59,7 @@ publish:
 
 push:
 	git commit -a -m "Publish" ; git push
+	git push bitbucket master
 
 ssh_upload: publish
 	scp -P $(SSH_PORT) -r $(OUTPUTDIR)/* $(SSH_USER)@$(SSH_HOST):$(SSH_TARGET_DIR)
@@ -75,8 +76,5 @@ ftp_upload: publish
 github: publish
 	ghp-import $(OUTPUTDIR)
 	git push origin gh-pages
-
-archive:
-	git push bitbucket master
 
 .PHONY: html help clean regenerate serve devserver publish ssh_upload rsync_upload dropbox_upload ftp_upload github
