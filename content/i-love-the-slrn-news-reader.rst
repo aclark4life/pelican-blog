@@ -16,8 +16,7 @@ To that end, here are a few things I'd like you to know about ***slrn***:
 
     set confirm_actions 14visible_headers "From:,Subject:,Newsgroups:,Followup-To:,Reply-To:,Date:"set query_read_group_cutoff 0set uncollapse_threads 1set netiquette_warnings 0
 
-Most of these are self-explanatory, but if you are looking at "set confirm\_actions 14" and thinking "wtf?" you are not alone :-) I'll leave it as an exercise to the reader to explore.
-See:\ `http://slrn.sourceforge.net/manual/slrn-manual.html`_ for more information. I hope this post helps someone get started using\ ***slrn**!*
+Most of these are self-explanatory, but if you are looking at "set confirm\_actions 14" and thinking "wtf?" you are not alone :-) I'll leave it as an exercise to the reader to explore. See: `http://slrn.sourceforge.net/manual/slrn-manual.html`_ for more information. I hope this post helps someone get started using ***slrn**!*
 
 *Next, in Part II, I will cover **slrnpull**; the program I use (distributed with slrn) to download news. I never "read it live" and I will explain why ;-)*
 
