@@ -19,7 +19,7 @@ Part of this has to do with **repetition**. I know how to do these things, and I
 I am your man
 -------------
 
-Which brings me to the subject of this post: **Python 3 Porting**. I've been helping out with porting the Python Imaging Library to Python 3 (via the Pillow fork). I've not written any code yet, but it strikes me as the type of thing I'd be very interested in doing professionally. So, if you or your company are in need of a "workhorse" to plow through old code and update it, `I am your man <http://aclark.net/team/alex-clark>`_. Please do `get in touch <mailto:info@aclark.net>`_.
+Which brings me to the subject of this post: **Python 3 Porting**. I've been helping out porting the Python Imaging Library to Python 3 (via the Pillow fork, where I am the release manager). And it strikes me as the type of thing I'd be very interested in doing professionally. So, if you or your company are in need of a "workhorse" to plow through old code and update it, `I am your man <http://aclark.net/team/alex-clark>`_. Please do `get in touch <mailto:info@aclark.net>`_.
 
 What's in it for you
 --------------------
