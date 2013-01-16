@@ -7211,21 +7211,10 @@ next Tuesday and Thursday, 9-5 EDT) working on &lt;a class="reference external" 
 ready to ship (with Plone 3 compatibility).&lt;/p&gt;
 &lt;p&gt;For more information about the TPPM (10% Plone Manifesto) please see:
 &lt;a class="reference external" href="http://www.jarn.com/blog/the-10-plone-manifesto/"&gt;http://www.jarn.com/blog/the-10-plone-manifesto/&lt;/a&gt;&lt;/p&gt;
-</summary><category term="Plone"></category></entry><entry><title>Is this thing on?</title><link href="http://blog.aclark.net//2007/10/17/is-this-thing-on/" rel="alternate"></link><updated>2007-10-17T09:48:00-04:00</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2007-10-17:/2007/10/17/is-this-thing-on/</id><summary type="html">&lt;p&gt;&lt;a href="#id1"&gt;&lt;span class="problematic" id="id2"&gt;`|image0|`_&lt;/span&gt;&lt;/a&gt;... because it is showing up on &lt;a class="reference external" href="http://planet.plone.org"&gt;planet&lt;/a&gt;! Sorry about the
-duplicates. I have recreated my blog using Just Plone ™ (and I didn't
-realize syndication was turned on already ;-)) In any event, here it is!&lt;/p&gt;
-&lt;p&gt;And while I have your attention, I've decided that I am &lt;a class="reference external" href="http://tomster.org/blog/archive/2007/10/17/today-is-my-first-plone-day"&gt;joining
-Tomster&lt;/a&gt; and others in pledging allegiance to the Plone by joining the
-&lt;a class="reference external" href="http://www.plonesolutions.com/blog/the-10-plone-manifesto/"&gt;10% Manifesto&lt;/a&gt; as proposed by &lt;a class="reference external" href="http://www.jarn.com/blog/the-10-plone-manifesto/"&gt;Geir Bækholt at Jarn&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;I will schedule my Plone days at the beginning of each month starting
-this month (October 2007) and announce them here.&lt;/p&gt;
+</summary><category term="Plone"></category></entry><entry><title>Is this thing on?</title><link href="http://blog.aclark.net//2007/10/17/is-this-thing-on/" rel="alternate"></link><updated>2007-10-17T09:48:00-04:00</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2007-10-17:/2007/10/17/is-this-thing-on/</id><summary type="html">&lt;p&gt;... because it is showing up on &lt;a class="reference external" href="http://planet.plone.org"&gt;planet&lt;/a&gt;! Sorry about the duplicates. I have recreated my blog using Just Plone ™ (and I didn't realize syndication was turned on already ;-)) In any event, here it is!&lt;/p&gt;
+&lt;p&gt;And while I have your attention, I've decided that I am &lt;a class="reference external" href="http://tomster.org/blog/archive/2007/10/17/today-is-my-first-plone-day"&gt;joining Tomster&lt;/a&gt; and others in pledging allegiance to the Plone by joining the &lt;a class="reference external" href="http://www.plonesolutions.com/blog/the-10-plone-manifesto/"&gt;10% Manifesto&lt;/a&gt; as proposed by &lt;a class="reference external" href="http://www.jarn.com/blog/the-10-plone-manifesto/"&gt;Geir Bækholt at Jarn&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;I will schedule my Plone days at the beginning of each month starting this month (October 2007) and announce them here.&lt;/p&gt;
 &lt;p&gt;First announcment coming soon.&lt;/p&gt;
-&lt;div class="system-messages section"&gt;
-&lt;h2&gt;Docutils System Messages&lt;/h2&gt;
-&lt;div class="system-message" id="id1"&gt;
-&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/is-this-thing-on.rst&lt;/tt&gt;, line 6); &lt;em&gt;&lt;a href="#id2"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
-Unknown target name: &amp;quot;|image0|&amp;quot;.&lt;/div&gt;
-&lt;/div&gt;
 </summary><category term="Plone"></category></entry><entry><title>I love the slrn news reader</title><link href="http://blog.aclark.net//2007/10/17/i-love-the-slrn-news-reader/" rel="alternate"></link><updated>2007-10-17T09:26:00-04:00</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2007-10-17:/2007/10/17/i-love-the-slrn-news-reader/</id><summary type="html">&lt;p&gt;I've been meaning to write this blog entry about &lt;strong&gt;*slrn*&lt;/strong&gt; ever since I started using it some time last year. Finally, here it is. But this is not the blog entry I had originally intended to write. There were some grandiose ideas about where I first heard of it; the blog entry that inspired me to try it; how I was frustrated with the alternatives; none of these are present here in any detail. That is because I'm frustrated with the length of time it takes to write a &amp;quot;quality&amp;quot; blog entry, when all I want to do is get the information out. (But that is a separate blog entry :-))&lt;/p&gt;
 &lt;p&gt;To that end, here are a few things I'd like you to know about &lt;strong&gt;*slrn*&lt;/strong&gt;:&lt;/p&gt;
 &lt;ol class="arabic simple"&gt;
