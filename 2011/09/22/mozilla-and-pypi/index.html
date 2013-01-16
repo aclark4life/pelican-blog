@@ -47,38 +47,23 @@
                 By <a class="url fn" href="../../../../../author/aclark.html">aclark</a>
         </address>
         <p>In <a href="../../../../../category/blog.html">Blog</a>. </p>
-<p>tags: <a href="../../../../../tag/plone.html">Plone</a><a href="../../../../../tag/python.html">Python</a></p></footer><!-- /.post-info -->      <p>The <a class="reference external" href="http://blog.aclark.net/in-defense-of-pypi">last time I wrote about PyPI</a> some folks mistook the subject to be
-<a class="reference external" href="http://pypy.org/">PyPy</a>, so let me be clear: this article is about the <a class="reference external" href="http://pypi.python.org/pypi">Python Packaging
-Index</a>.</p>
-<p>I recently began doing some volunteer work for Mozilla[1], working on a
-<a class="reference external" href="https://github.com/aclark4life/kitsune-vagrant">virtual machine setup</a> to make kitsune development easier (kitsune is
-the code name for the Django site that powers <a class="reference external" href="http://support.mozilla.com">support.mozilla.com</a>).</p>
+<p>tags: <a href="../../../../../tag/plone.html">Plone</a><a href="../../../../../tag/python.html">Python</a></p></footer><!-- /.post-info -->      <p>The <a class="reference external" href="http://blog.aclark.net/in-defense-of-pypi">last time I wrote about PyPI</a> some folks mistook the subject to be <a class="reference external" href="http://pypy.org/">PyPy</a>, so let me be clear: this article is about the <a class="reference external" href="http://pypi.python.org/pypi">Python Packaging Index</a>.</p>
+<p>I recently began doing some volunteer work for Mozilla[1], working on a <a class="reference external" href="https://github.com/aclark4life/kitsune-vagrant">virtual machine setup</a> to make kitsune development easier (kitsune is the code name for the Django site that powers <a class="reference external" href="http://support.mozilla.com">support.mozilla.com</a>).</p>
 <div class="section" id="git-submodules">
 <h2>Git submodules</h2>
-<p>In doing so, I came across an interesting command from their
-<a class="reference external" href="https://github.com/jsocol/kitsune/blob/master/docs/installation.rst">installation docs</a>:</p>
+<p>In doing so, I came across an interesting command from their <a class="reference external" href="https://github.com/jsocol/kitsune/blob/master/docs/installation.rst">installation docs</a>:</p>
 <pre class="literal-block">
 $ git submodule update --init --recursive
 </pre>
-<p>I can recall some vague rumblings about git submodules prior to this
-incident, but nothing I'd call &quot;familiarity&quot;. So, I shrugged it off and
-went about the business of creating the VM (and resisting the urge to
-use <a class="reference external" href="http://pypi.python.org/pypi/zc.buildout/1.5.2">zc.buildout</a> to do it):</p>
+<p>I can recall some vague rumblings about git submodules prior to this incident, but nothing I'd call &quot;familiarity&quot;. So, I shrugged it off and went about the business of creating the VM (and resisting the urge to use <a class="reference external" href="http://pypi.python.org/pypi/zc.buildout/1.5.2">zc.buildout</a> to do it):</p>
 <ul class="simple">
-<li>On day 1, I created a <a class="reference external" href="http://virtualbox.org">VirtualBox</a> VM using the latest Ubuntu Server
-and was able to assemble and run the application by following the
-instructions.</li>
-<li>On day 2, I began to <a class="reference external" href="http://vagrantup.com">&quot;vagrantize&quot;</a> the process. Here I ran into a
-bit of trouble with the git-submodule command[2]. This led me to seek
-alternative methods to install the various Python packages it was
-trying to install (when stuck on a problem I often like to pursue the
-alternatives immediately, so I have them if I need them.)</li>
+<li>On day 1, I created a <a class="reference external" href="http://virtualbox.org">VirtualBox</a> VM using the latest Ubuntu Server and was able to assemble and run the application by following the instructions.</li>
+<li>On day 2, I began to <a class="reference external" href="http://vagrantup.com">&quot;vagrantize&quot;</a> the process. Here I ran into a bit of trouble with the git-submodule command[2]. This led me to seek alternative methods to install the various Python packages it was trying to install (when stuck on a problem I often like to pursue the alternatives immediately, so I have them if I need them.)</li>
 </ul>
 </div>
 <div class="section" id="zamboni">
 <h2>Zamboni</h2>
-<p>Then, in the Mozilla IRC channel #sumodev (<strong>su</strong>pport <strong>mo</strong>zilla)
-some nice Mozillian (willkg) pointed me to this gem:</p>
+<p>Then, in the Mozilla IRC channel #sumodev (<strong>su</strong>pport <strong>mo</strong>zilla) some nice Mozillian (willkg) pointed me to this gem:</p>
 <ul class="simple">
 <li><a class="reference external" href="http://mozweb.readthedocs.org/en/latest/packaging.html">http://mozweb.readthedocs.org/en/latest/packaging.html</a></li>
 </ul>
@@ -88,102 +73,57 @@ some nice Mozillian (willkg) pointed me to this gem:</p>
 <li><a class="reference external" href="http://jbalogh.github.com/zamboni/topics/packages/">http://jbalogh.github.com/zamboni/topics/packages/</a></li>
 <li><a class="reference external" href="http://playdoh.readthedocs.org/en/latest/packages.html#packages">http://playdoh.readthedocs.org/en/latest/packages.html#packages</a></li>
 </ul>
-<p>Again, faint rumblings… this time about zamboni (not THAT Zamboni). I
-know I've heard of it, but I wouldn't call myself familiar with it. So,
-I innocently read the following:</p>
+<p>Again, faint rumblings… this time about zamboni (not THAT Zamboni). I know I've heard of it, but I wouldn't call myself familiar with it. So, I innocently read the following:</p>
 <blockquote>
-<strong>Python projects can incur a number of dependencies. ``pip`` can be
-handy, but we’ve had better luck with distributing a ``vendor``
-library.</strong></blockquote>
+<strong>Python projects can incur a number of dependencies. ``pip`` can be handy, but we’ve had better luck with distributing a ``vendor`` library.</strong></blockquote>
 <p>At which point I immediately thought to myself:</p>
 <blockquote>
 <strong>Yeah… I hear that.</strong></blockquote>
-<p>Followed a few seconds later by</p>
+<p>Followed a few seconds later by:</p>
 <blockquote>
 <strong>Wait… what?!?</strong></blockquote>
 </div>
 <div class="section" id="playdoh">
 <h2>Playdoh</h2>
-<p>Some time/research later[3], I (re)discovered that zamboni is the
-codename for <a class="reference external" href="https://addons.mozilla.org">addons.mozilla.org</a>[4]. And <a class="reference external" href="http://playdoh.readthedocs.org/">Playdoh</a> is the code name
-for Mozilla's base Django project setup. If you aren't familiar with
-Playdoh, please do give it a whirl[5].</p>
+<p>Some time/research later[3], I (re)discovered that zamboni is the codename for <a class="reference external" href="https://addons.mozilla.org">addons.mozilla.org</a>[4]. And <a class="reference external" href="http://playdoh.readthedocs.org/">Playdoh</a> is the code name for Mozilla's base Django project setup. If you aren't familiar with Playdoh, please do give it a whirl[5].</p>
 </div>
 <div class="section" id="pypi">
 <h2>PyPI</h2>
-<p>While all of this is very, very interesting to me, I am primarily a
-&quot;systems and processes&quot; guy; and what ultimately stuck with me after two
-days of Mozilla-ing is the following blurb from the Playdoh packaging
-documentation:</p>
+<p>While all of this is very, very interesting to me, I am primarily a &quot;systems and processes&quot; guy; and what ultimately stuck with me after two days of Mozilla-ing is the following blurb from the Playdoh packaging documentation:</p>
 <blockquote>
-<strong>The ``/vendor`` library is supposed to contain all packages and
-repositories. It enables the project to be deployed as one package
-onto many machines, without relying on PyPI-based installations on
-each target machine.</strong></blockquote>
-<p>&quot;Nooooooooooooooo&quot;, I am now saying to myself over and over. &quot;Without
-relying on PyPI-based installations on each target machine.&quot; Another
-&quot;noooooooooooooooo!&quot; :-) I certainly don't fault Mozilla for taking this
-approach, but it makes me sad that large organizations like Mozilla are
-passing over PyPI in favor of alternative methods of distributing Python
-software.</p>
+<strong>The ``/vendor`` library is supposed to contain all packages and repositories. It enables the project to be deployed as one package onto many machines, without relying on PyPI-based installations on each target machine.</strong></blockquote>
+<p>&quot;Nooooooooooooooo&quot;, I am now saying to myself over and over. &quot;Without relying on PyPI-based installations on each target machine.&quot; Another &quot;noooooooooooooooo!&quot; :-) I certainly don't fault Mozilla for taking this approach, but it makes me sad that large organizations like Mozilla are passing over PyPI in favor of alternative methods of distributing Python software.</p>
 <p>Let us all now hang our heads, for a moment of pause and reflection.</p>
 <p><em>[a minute passes]</em></p>
 </div>
 <div class="section" id="the-future">
 <h2>The future</h2>
-<p>I can't speak for anyone else, but I would certainly like to see this
-change in the future. I would LOVE to see PyPI become a place that
-Mozilla felt confident it could use to deploy Python software. And this
-is something I'd love to work on <em>for</em> Mozilla, if given the
-opportunity[6].</p>
+<p>I can't speak for anyone else, but I would certainly like to see this change in the future. I would LOVE to see PyPI become a place that Mozilla felt confident it could use to deploy Python software. And this is something I'd love to work on <em>for</em> Mozilla, if given the opportunity[6].</p>
 <div class="section" id="great-for-python-great-for-mozilla">
 <h3>Great for Python == great for Mozilla?</h3>
 <p>It's obvious what's in it for Python, but what's in for Mozilla?</p>
 <p>Simple.</p>
-<p>I happen to share Mozilla's vision for an open web and open source in
-general. And it's great to see them embracing &amp; using Python for their
-web projects! Without a doubt,&nbsp; they are interested in giving back to
-the Python community (e.g. via Playdoh and the Django community, in this
-case.) So I suspect they'd be open to helping the Python community fix a
-long standing issue: the stability and reliability of the Python Package
-Index. It would certainly benefit them in the long run to simplify their
-build process to the point where git-submodule was no longer needed[7].</p>
+<p>I happen to share Mozilla's vision for an open web and open source in general. And it's great to see them embracing &amp; using Python for their web projects! Without a doubt,&nbsp; they are interested in giving back to the Python community (e.g. via Playdoh and the Django community, in this case.) So I suspect they'd be open to helping the Python community fix a long standing issue: the stability and reliability of the Python Package Index. It would certainly benefit them in the long run to simplify their build process to the point where git-submodule was no longer needed[7].</p>
 </div>
 </div>
 <div class="section" id="notes">
 <h2>Notes</h2>
-<p>[1] I am actively courting Mozilla in hopes of landing a gig by the end
-of the year. So all you Mozillians who know me personally, please put in
-a good word! And all you Mozillians I have not met yet: nice to meet
-you! :-)</p>
-<p>[2] The problem turned out to be git-submodule failing to run because
-things like: grep and sed were missing from the PATH. Easily fixed by
-modifying the puppet configuration, but not easily discovered because
-git-submodule itself returned zero! Some guy on #puppet was very helpful
-in getting me to print out debug info.</p>
+<p>[1] I am actively courting Mozilla in hopes of landing a gig by the end of the year. So all you Mozillians who know me personally, please put in a good word! And all you Mozillians I have not met yet: nice to meet you! :-)</p>
+<p>[2] The problem turned out to be git-submodule failing to run because things like: grep and sed were missing from the PATH. Easily fixed by modifying the puppet configuration, but not easily discovered because git-submodule itself returned zero! Some guy on #puppet was very helpful in getting me to print out debug info.</p>
 <p>[3] More help from friendly Mozillians in #webdev:</p>
 <blockquote>
-11:13 &lt; groovecoder&gt; aclark: yeah, zamboni is amo 11:13 &lt; kumar&gt;
-playdoh was extracted from zamboni and other apps 11:13 &lt; kumar&gt; but
-zamboni itself does not eat the playdoh dog food, actually 11:15 &lt;
-kumar&gt; aclark also, in case you're not steeped in our initialisms,
-amo is addons.mozilla.org</blockquote>
-<p>[4] There is a great presentation about it here:
-<a class="reference external" href="http://www.slideshare.net/andymckay/anatomy-of-a-large-django-site-7590098">http://www.slideshare.net/andymckay/anatomy-of-a-large-django-site-7590098</a>.)</p>
+11:13 &lt; groovecoder&gt; aclark: yeah, zamboni is amo 11:13 &lt; kumar&gt; playdoh was extracted from zamboni and other apps 11:13 &lt; kumar&gt; but zamboni itself does not eat the playdoh dog food, actually 11:15 &lt; kumar&gt; aclark also, in case you're not steeped in our initialisms, amo is addons.mozilla.org</blockquote>
+<p>[4] There is a great presentation about it here: <a class="reference external" href="http://www.slideshare.net/andymckay/anatomy-of-a-large-django-site-7590098">http://www.slideshare.net/andymckay/anatomy-of-a-large-django-site-7590098</a>.)</p>
 <p>[5] More from kumar (emphasis is my own):</p>
 <blockquote>
-11:25 &lt; kumar&gt; <strong>Playdoh is starting to stabilize</strong> so it would be
-<strong>good to see some use of it outside Mozilla</strong>; this would probably
-help us catch Mozilla-specific things that need extraction</blockquote>
+11:25 &lt; kumar&gt; <strong>Playdoh is starting to stabilize</strong> so it would be <strong>good to see some use of it outside Mozilla</strong>; this would probably help us catch Mozilla-specific things that need extraction</blockquote>
 <p>[6] LARGE HINT ;-)</p>
-<p>[7] Again, not that there is anything wrong with what Mozilla is doing
-here. As a systems guy, I just happen to gravitate toward simplifying
-processes by eliminating steps.</p>
+<p>[7] Again, not that there is anything wrong with what Mozilla is doing here. As a systems guy, I just happen to gravitate toward simplifying processes by eliminating steps.</p>
 </div>
 <div class="system-messages section">
 <h2>Docutils System Messages</h2>
 <div class="system-message" id="id2">
-<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">/Users/aclark/Developer/blog/content/mozilla-and-pypi.rst</tt>, line 46); <em><a href="#id3">backlink</a></em></p>
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">/Users/aclark/Developer/blog/content/mozilla-and-pypi.rst</tt>, line 31); <em><a href="#id3">backlink</a></em></p>
 Unknown target name: &quot;|http://www.flickr.com/photos/jadensmommy24/239370733/|&quot;.</div>
 </div>
 
