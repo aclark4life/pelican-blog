@@ -72,7 +72,7 @@ Now that we have a Python package, we want to "load it in Plone". To do that, we
 
     [buildout]
     develop = ./my.app
-    extends = http://build.pythonpackages.com/buildout/plone/4.2.x-dev
+    extends = http://raw.github.com/pythonpackages/buildout-plone/master/4.3.x
 
     [plone]
     eggs += my.app
