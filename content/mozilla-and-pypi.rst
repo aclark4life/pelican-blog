@@ -28,8 +28,6 @@ Then, in the Mozilla IRC channel #sumodev (**su**\ pport **mo**\ zilla) some nic
 
 - `http://mozweb.readthedocs.org/en/latest/packaging.html`_
 
-`|http://www.flickr.com/photos/jadensmommy24/239370733/|`_
-
 Which in turn led me to the following two links:
 
 - `http://jbalogh.github.com/zamboni/topics/packages/`_

@@ -2467,7 +2467,6 @@ $ git submodule update --init --recursive
 &lt;ul class="simple"&gt;
 &lt;li&gt;&lt;a class="reference external" href="http://mozweb.readthedocs.org/en/latest/packaging.html"&gt;http://mozweb.readthedocs.org/en/latest/packaging.html&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;a href="#id2"&gt;&lt;span class="problematic" id="id3"&gt;`|http://www.flickr.com/photos/jadensmommy24/239370733/|`_&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Which in turn led me to the following two links:&lt;/p&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;&lt;a class="reference external" href="http://jbalogh.github.com/zamboni/topics/packages/"&gt;http://jbalogh.github.com/zamboni/topics/packages/&lt;/a&gt;&lt;/li&gt;
@@ -2519,12 +2518,6 @@ $ git submodule update --init --recursive
 11:25 &amp;lt; kumar&amp;gt; &lt;strong&gt;Playdoh is starting to stabilize&lt;/strong&gt; so it would be &lt;strong&gt;good to see some use of it outside Mozilla&lt;/strong&gt;; this would probably help us catch Mozilla-specific things that need extraction&lt;/blockquote&gt;
 &lt;p&gt;[6] LARGE HINT ;-)&lt;/p&gt;
 &lt;p&gt;[7] Again, not that there is anything wrong with what Mozilla is doing here. As a systems guy, I just happen to gravitate toward simplifying processes by eliminating steps.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="system-messages section"&gt;
-&lt;h2&gt;Docutils System Messages&lt;/h2&gt;
-&lt;div class="system-message" id="id2"&gt;
-&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/mozilla-and-pypi.rst&lt;/tt&gt;, line 31); &lt;em&gt;&lt;a href="#id3"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
-Unknown target name: &amp;quot;|http://www.flickr.com/photos/jadensmommy24/239370733/|&amp;quot;.&lt;/div&gt;
 &lt;/div&gt;
 </summary><category term="Plone"></category><category term="Python"></category></entry><entry><title>Hello mod_wsgi</title><link href="http://blog.aclark.net//2011/08/28/hello-mod_wsgi/" rel="alternate"></link><updated>2011-08-28T20:43:00-04:00</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2011-08-28:/2011/08/28/hello-mod_wsgi/</id><summary type="html">&lt;p&gt;It seems I've inadvertently started another series of blog entry:&amp;nbsp;the &amp;quot;hello world&amp;quot; series, wherein I explain how to easily get started with &lt;a class="reference external" href="http://blog.aclark.net/2011/08/20/hello-plone/"&gt;various exciting Python technologies&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;This time, in order to familiarize myself with &lt;a class="reference external" href="http://code.google.com/p/modwsgi/"&gt;mod_wsgi&lt;/a&gt;, I've created a buildout to automate some of the processes explained in:&lt;/p&gt;
