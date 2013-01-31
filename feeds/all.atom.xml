@@ -6452,21 +6452,7 @@ eggs =
 &lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/zpugdc-meeting-tonight.rst&lt;/tt&gt;, line 6); &lt;em&gt;&lt;a href="#id2"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 Unknown target name: &amp;quot;|image0|&amp;quot;.&lt;/div&gt;
 &lt;/div&gt;
-</summary><category term="Plone"></category></entry><entry><title>Naked Plone Theme</title><link href="http://blog.aclark.net//2008/11/19/naked-plone-theme/" rel="alternate"></link><updated>2008-11-19T10:30:00-05:00</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2008-11-19:/2008/11/19/naked-plone-theme/</id><summary type="html">&lt;p&gt;&lt;a href="#id1"&gt;&lt;span class="problematic" id="id2"&gt;`|image0|`_&lt;/span&gt;&lt;/a&gt;I've needed this for quite some time, but I'm just getting
-around to shipping it. In addition to making it easy to 'turn off' a lot
-of default Plone css, js, etc., this product (discreetly) adds one of my
-all time favorite tweaks, the 'Advanced Setup' site action. (Limi,
-Martin, and Joel Burton will remember this one from 'back in the day'
-;-) The action is disabled by default, but you can enable it by clicking
-'visible' in portal_actions -&amp;gt; site actions. It simply adds a
-'placeful' (string:manage_main) link to the ZMI, so you can access it
-easily, wherever you happen to be on the site. (See screenshot.)&lt;/p&gt;
-&lt;div class="system-messages section"&gt;
-&lt;h2&gt;Docutils System Messages&lt;/h2&gt;
-&lt;div class="system-message" id="id1"&gt;
-&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/naked-plone-theme.rst&lt;/tt&gt;, line 6); &lt;em&gt;&lt;a href="#id2"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
-Unknown target name: &amp;quot;|image0|&amp;quot;.&lt;/div&gt;
-&lt;/div&gt;
+</summary><category term="Plone"></category></entry><entry><title>Naked Plone Theme</title><link href="http://blog.aclark.net//2008/11/19/naked-plone-theme/" rel="alternate"></link><updated>2008-11-19T10:30:00-05:00</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2008-11-19:/2008/11/19/naked-plone-theme/</id><summary type="html">&lt;p&gt;I've needed this for quite some time, but I'm just getting around to shipping it. In addition to making it easy to 'turn off' a lot of default Plone css, js, etc., this product (discreetly) adds one of my all time favorite tweaks, the 'Advanced Setup' site action. (Limi, Martin, and Joel Burton will remember this one from 'back in the day' ;-) The action is disabled by default, but you can enable it by clicking 'visible' in portal_actions -&amp;gt; site actions. It simply adds a 'placeful' (string:manage_main) link to the ZMI, so you can access it easily, wherever you happen to be on the site.&lt;/p&gt;
 </summary><category term="Plone"></category></entry><entry><title>Products.todo 0.1</title><link href="http://blog.aclark.net//2008/11/13/productstodo-01/" rel="alternate"></link><updated>2008-11-13T08:07:00-05:00</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2008-11-13:/2008/11/13/productstodo-01/</id><summary type="html">&lt;p&gt;&lt;a href="#id1"&gt;&lt;span class="problematic" id="id2"&gt;`|image0|`_&lt;/span&gt;&lt;/a&gt;I needed a project to jump start my return to Plone after
 spending months organizing &lt;a class="reference external" href="http://plone.org/2008"&gt;Plone Conference 2008&lt;/a&gt;, and I had the idea
 that I wanted to, very quickly, see a product's development cycle
