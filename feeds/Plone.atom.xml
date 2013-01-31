@@ -5390,61 +5390,49 @@ along which worked with Python 2.4. Just a guess).&lt;/p&gt;
 &lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/using-buildout-to-deploy-a-plone-2-1-site-to-the-cloud.rst&lt;/tt&gt;, line 43); &lt;em&gt;&lt;a href="#id2"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 Unknown target name: &amp;quot;|image0|&amp;quot;.&lt;/div&gt;
 &lt;/div&gt;
-</summary><category term="Plone"></category></entry><entry><title>No, really, you can (just) use Buildout to install Plone.</title><link href="http://blog.aclark.net//2010/01/07/no-really-you-can-just-use-buildout-to-install-plone/" rel="alternate"></link><updated>2010-01-07T12:39:00-05:00</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2010-01-07:/2010/01/07/no-really-you-can-just-use-buildout-to-install-plone/</id><summary type="html">&lt;p&gt;This is a follow up to my &lt;a class="reference external" href="http://old.aclark.net/team/aclark/blog/plone-as-eggs"&gt;Getting Excited about Plone as Eggs&lt;/a&gt; post,
-because I can't keep updating that one forever.&lt;/p&gt;
-&lt;p&gt;Generally speaking, the recommended (and supported) way to install Plone
-is via the installers, e.g. the &lt;a class="reference external" href="http://launchpad.net/plone/3.3/3.3.3/+download/Plone-3.3.3-UnifiedInstaller.tgz"&gt;Unified Installer&lt;/a&gt;. Obviously, if you
-want things to Just Work™ you should be using the latest stable release,
-which is why I linked to the 3.3.3 unified installer (although there is
-no Windows installer for 3.3.3 yet, which is why it's not released on
-plone.org).&lt;/p&gt;
-&lt;p&gt;That said, since both Plone and Zope 2 have been packaged as eggs
-(Plone became an egg in version 3.2 and Zope 2 became an egg as of Zope
-2.12 which is the version of Zope 2 that Plone 4 will use) it has become
-&amp;quot;mostly trivial&amp;quot; to write a buildout.cfg to install Plone with. That
-means that you don't even need paster to do it. You can just fire up an
-editor and type:&lt;/p&gt;
+</summary><category term="Plone"></category></entry><entry><title>No, really, you can (just) use Buildout to install Plone.</title><link href="http://blog.aclark.net//2010/01/07/no-really-you-can-just-use-buildout-to-install-plone/" rel="alternate"></link><updated>2010-01-07T12:39:00-05:00</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2010-01-07:/2010/01/07/no-really-you-can-just-use-buildout-to-install-plone/</id><summary type="html">&lt;p&gt;This is a follow up to my &lt;a class="reference external" href="http://old.aclark.net/team/aclark/blog/plone-as-eggs"&gt;Getting Excited about Plone as Eggs&lt;/a&gt; post, because I can't keep updating that one forever.&lt;/p&gt;
+&lt;p&gt;Generally speaking, the recommended (and supported) way to install Plone is via the installers, e.g. the &lt;a class="reference external" href="http://launchpad.net/plone/3.3/3.3.3/+download/Plone-3.3.3-UnifiedInstaller.tgz"&gt;Unified Installer&lt;/a&gt;. Obviously, if you want things to Just Work™ you should be using the latest stable release, which is why I linked to the 3.3.3 unified installer (although there is no Windows installer for 3.3.3 yet, which is why it's not released on plone.org).&lt;/p&gt;
+&lt;p&gt;That said, since both Plone and Zope 2 have been packaged as eggs&amp;nbsp; (Plone became an egg in version 3.2 and Zope 2 became an egg as of Zope 2.12 which is the version of Zope 2 that Plone 4 will use) it has become &amp;quot;mostly trivial&amp;quot; to write a buildout.cfg to install Plone with. That means that you don't even need paster to do it. You can just fire up an editor and type:&lt;/p&gt;
 &lt;pre class="literal-block"&gt;
-[buildout]parts =
-  instance[instance]
+[buildout]
+parts = instance
+
+[instance]
 recipe = plone.recipe.zope2instance
 user = admin:admin
 eggs =
-  Plone
+    Plone
 &lt;/pre&gt;
 &lt;p&gt;Amazing!&lt;/p&gt;
-&lt;p&gt;Of course there is the nasty bit about PIL, which I get around
-now-a-days by adding a very specific find-link, e.g.:&lt;/p&gt;
+&lt;p&gt;Of course there is the nasty bit about PIL, which I get around now-a-days by adding a very specific find-link, e.g.:&lt;/p&gt;
 &lt;pre class="literal-block"&gt;
-[buildout]parts =
-  instancefind-links = http://dist.plone.org/thirdparty/PILwoTk-1.1.6.4.tar.gz[instance]
+[buildout]
+parts = instance
+find-links = http://dist.plone.org/thirdparty/PILwoTk-1.1.6.4.tar.gz
+
+[instance]
 recipe = plone.recipe.zope2instance
 user = admin:admin
 eggs =
-  PILwoTk
-  Plone
+    PILwoTk
+    Plone
 &lt;/pre&gt;
-&lt;p&gt;What you should have at this point is a working Plone, but not
-necessarily a repeatable buildout. The reason being we have not pinned
-any egg versions yet, so we are effectively asking for whatever the
-latest version of Plone is on PyPI. Fun for playing, not fun for
-production. Fortunately the nice Plone people have created a bunch of
-version pins for us, so we just need to use them:&lt;/p&gt;
+&lt;p&gt;What you should have at this point is a working Plone, but not necessarily a repeatable buildout. The reason being we have not pinned any egg versions yet, so we are effectively asking for whatever the latest version of Plone is on PyPI. Fun for playing, not fun for production. Fortunately the nice Plone people have created a bunch of version pins for us, so we just need to use them:&lt;/p&gt;
 &lt;pre class="literal-block"&gt;
-[buildout]extends =
-&amp;nbsp;&amp;nbsp;&amp;nbsp; http://dist.plone.org/release/4.0a3/versions.cfgversions = versionsparts =
-  instancefind-links = http://dist.plone.org/thirdparty/PILwoTk-1.1.6.4.tar.gz[instance]
+[buildout]
+extends = http://dist.plone.org/release/4.0a3/versions.cfg
+versions = versions
+parts = instance
+find-links = http://dist.plone.org/thirdparty/PILwoTk-1.1.6.4.tar.gz
+
+[instance]
 recipe = plone.recipe.zope2instance
 user = admin:admin
 eggs =
-  PILwoTk
-  Plone
+    PILwoTk
+    Plone
 &lt;/pre&gt;
-&lt;p&gt;If you are completely new to buildout and you are thinking to yourself
-right now &amp;quot;what in the world is this guy talking about?&amp;quot; then you will
-likely want to install buildout first so you can join in the fun.
-Fortunately, the nice Python people have made that easy with a package
-called &lt;a class="reference external" href="http://pypi.python.org/pypi/distribute"&gt;Distribute&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;If you are completely new to buildout and you are thinking to yourself right now &amp;quot;what in the world is this guy talking about?&amp;quot; then you will likely want to install buildout first so you can join in the fun. Fortunately, the nice Python people have made that easy with a package called &lt;a class="reference external" href="http://pypi.python.org/pypi/distribute"&gt;Distribute&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Following their instructions, you can do this:&lt;/p&gt;
 &lt;pre class="literal-block"&gt;
 $ curl -O http://python-distribute.org/distribute_setup.py
@@ -5457,17 +5445,13 @@ $ mkdir plone
 $ cd plone
 $ buildout init
 &lt;/pre&gt;
-&lt;p&gt;After which you will have a buildout.cfg file, and you can follow along
-with the above steps. Happy?&lt;/p&gt;
-&lt;p&gt;The best part about all of this is that (on a fast internet connection)
-it should only be a matter of minutes before you are able to do this:&lt;/p&gt;
+&lt;p&gt;After which you will have a buildout.cfg file, and you can follow along with the above steps. Happy?&lt;/p&gt;
+&lt;p&gt;The best part about all of this is that (on a fast internet connection) it should only be a matter of minutes before you are able to do this:&lt;/p&gt;
 &lt;pre class="literal-block"&gt;
 $ bin/instance fg
 &lt;/pre&gt;
-&lt;p&gt;and be staring at:&lt;/p&gt;
-&lt;p&gt;&lt;a href="#id1"&gt;&lt;span class="problematic" id="id2"&gt;`|image0|`_&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Of course, if you are running in the foreground (recommended for
-debugging) you should see something like this:&lt;/p&gt;
+&lt;p&gt;and be staring at a thing of beauty.&lt;/p&gt;
+&lt;p&gt;Of course, if you are running in the foreground (recommended for debugging) you should see something like this:&lt;/p&gt;
 &lt;pre class="literal-block"&gt;
 aclark&amp;#64;Alex-Clarks-MacBook-Pro:~/Developer/public-plone/ &amp;gt; bin/instance fg
 /Users/aclark/Developer/public-plone/parts/instance/bin/runzope -X debug-mode=on
@@ -5476,20 +5460,12 @@ aclark&amp;#64;Alex-Clarks-MacBook-Pro:~/Developer/public-plone/ &amp;gt; bin/in
  Port: 8080
 2010-01-07 12:08:14 INFO Zope Ready to handle requests
 &lt;/pre&gt;
-&lt;p&gt;If you'd like to get a little less noisy and skip debug mode but still
-run in the foreground, you can use April 2008's famous addition to
-plone.recipe.zope2instance:&lt;/p&gt;
+&lt;p&gt;If you'd like to get a little less noisy and skip debug mode but still run in the foreground, you can use April 2008's famous addition to plone.recipe.zope2instance:&lt;/p&gt;
 &lt;pre class="literal-block"&gt;
 aclark&amp;#64;Alex-Clarks-MacBook-Pro:~/Developer/public-plone/ &amp;gt; bin/instance console
 &lt;/pre&gt;
 &lt;p&gt;Sweet, blissful, silent running Plone.&lt;/p&gt;
 &lt;p&gt;Happy Plone 4'ing all!&lt;/p&gt;
-&lt;div class="system-messages section"&gt;
-&lt;h2&gt;Docutils System Messages&lt;/h2&gt;
-&lt;div class="system-message" id="id1"&gt;
-&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/no-really-you-can-just-use-buildout-to-install-plone.rst&lt;/tt&gt;, line 99); &lt;em&gt;&lt;a href="#id2"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
-Unknown target name: &amp;quot;|image0|&amp;quot;.&lt;/div&gt;
-&lt;/div&gt;
 </summary><category term="Plone"></category></entry><entry><title>Yup, this blog is now powered by WordPress.</title><link href="http://blog.aclark.net//2010/01/06/yup-this-blog-is-now-powered-by-wordpress/" rel="alternate"></link><updated>2010-01-06T22:18:00-05:00</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2010-01-06:/2010/01/06/yup-this-blog-is-now-powered-by-wordpress/</id><summary type="html">&lt;p&gt;&lt;strong&gt;(Or, &amp;quot;How I learned to stop worrying and use the right tool for the
 job.&amp;quot;)&lt;/strong&gt; My first blog entry was &lt;a class="reference external" href="http://blog.aclark.net/2007/10/17/first-post/"&gt;well over two years ago&lt;/a&gt;. I've
 learned enough Plone since then to know that I hardly know anything!
