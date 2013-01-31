@@ -34,7 +34,7 @@ Edit your buildout.cfg and put this in it:
 ::
 
     [buildout]
-    extends = http://pythonpackages.com/buildout/plone/4.2.x-dev
+    extends = http://raw.github.com/pythonpackages/buildout-plone/master/4.3.x
 
 That's it. Now run buildout:
 
