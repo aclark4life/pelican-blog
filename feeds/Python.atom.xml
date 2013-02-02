@@ -929,9 +929,7 @@ refactoring, they have produced some &lt;a class="reference external" href="http
 readthedocs.org&lt;/a&gt;. If you are interested in helping, please gather
 around the #plone on irc.freenode.net to discuss options (I am aclark on
 IRC).&lt;/p&gt;
-</summary><category term="Plone"></category><category term="Python"></category></entry><entry><title>pythonpackages.com beta launch</title><link href="http://blog.aclark.net//2012/07/04/pythonpackagescom-beta-launch/" rel="alternate"></link><updated>2012-07-04T05:19:00-04:00</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2012-07-04:/2012/07/04/pythonpackagescom-beta-launch/</id><summary type="html">&lt;p&gt;After 9 months of development, pythonpackages.com has
-grand-ceremoniously flipped the switch from alpha to beta. Here is an
-overview of the beta release features.&lt;/p&gt;
+</summary><category term="Plone"></category><category term="Python"></category></entry><entry><title>pythonpackages.com beta launch</title><link href="http://blog.aclark.net//2012/07/04/pythonpackagescom-beta-launch/" rel="alternate"></link><updated>2012-07-04T05:19:00-04:00</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2012-07-04:/2012/07/04/pythonpackagescom-beta-launch/</id><summary type="html">&lt;p&gt;After 9 months of development, pythonpackages.com has grand-ceremoniously flipped the switch from alpha to beta. Here is an overview of the beta release features.&lt;/p&gt;
 &lt;div class="section" id="killer-github-integration"&gt;
 &lt;h2&gt;&lt;strong&gt;Killer GitHub integration&lt;/strong&gt;&lt;/h2&gt;
 &lt;p&gt;The workflow you may now enjoy is:&lt;/p&gt;
@@ -949,43 +947,15 @@ overview of the beta release features.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="create-packages-through-the-web-with-pastescript"&gt;
 &lt;h2&gt;Create packages through-the-web (with PasteScript)&lt;/h2&gt;
-&lt;p&gt;There's a lot of room for growth, but this feature is exciting even in
-its simplest form.&lt;/p&gt;
+&lt;p&gt;There's a lot of room for growth, but this feature is exciting even in its simplest form.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="dashboard-o-releases"&gt;
 &lt;h2&gt;Dashboard o releases&lt;/h2&gt;
-&lt;p&gt;pythonpackages.com keeps track of your releases, using the same
-technology that powers the alpha release &amp;quot;package featuring&amp;quot; feature.
-&lt;a href="#id1"&gt;&lt;span class="problematic" id="id2"&gt;`|image6|`_&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;pythonpackages.com keeps track of your releases, using the same technology that powers the alpha release &amp;quot;package featuring&amp;quot; feature.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="github-organization-support"&gt;
 &lt;h2&gt;GitHub Organization support&lt;/h2&gt;
-&lt;p&gt;But wait, there's more. Paid plans (which have not been deployed yet)
-get access to GitHub organizations, whose repositories can then be
-&amp;quot;slotted&amp;quot; like normal. &lt;a href="#id3"&gt;&lt;span class="problematic" id="id4"&gt;`|image7|`_&lt;/span&gt;&lt;/a&gt; &lt;a href="#id5"&gt;&lt;span class="problematic" id="id6"&gt;`|image8|`_&lt;/span&gt;&lt;/a&gt; &lt;a href="#id7"&gt;&lt;span class="problematic" id="id8"&gt;`|image9|`_&lt;/span&gt;&lt;/a&gt; &lt;a href="#id9"&gt;&lt;span class="problematic" id="id10"&gt;`|image10|`_&lt;/span&gt;&lt;/a&gt;
-&lt;a href="#id11"&gt;&lt;span class="problematic" id="id12"&gt;`|image11|`_&lt;/span&gt;&lt;/a&gt; If you'd like to get started using the site, check out the
-&lt;a class="reference external" href="http://docs.pythonpackages.com/en/latest/crashcourse.html"&gt;crash course&lt;/a&gt;.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="system-messages section"&gt;
-&lt;h2&gt;Docutils System Messages&lt;/h2&gt;
-&lt;div class="system-message" id="id1"&gt;
-&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/pythonpackages-com-beta-launch.rst&lt;/tt&gt;, line 34); &lt;em&gt;&lt;a href="#id2"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
-Unknown target name: &amp;quot;|image6|&amp;quot;.&lt;/div&gt;
-&lt;div class="system-message" id="id3"&gt;
-&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/pythonpackages-com-beta-launch.rst&lt;/tt&gt;, line 41); &lt;em&gt;&lt;a href="#id4"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
-Unknown target name: &amp;quot;|image7|&amp;quot;.&lt;/div&gt;
-&lt;div class="system-message" id="id5"&gt;
-&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/pythonpackages-com-beta-launch.rst&lt;/tt&gt;, line 41); &lt;em&gt;&lt;a href="#id6"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
-Unknown target name: &amp;quot;|image8|&amp;quot;.&lt;/div&gt;
-&lt;div class="system-message" id="id7"&gt;
-&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/pythonpackages-com-beta-launch.rst&lt;/tt&gt;, line 41); &lt;em&gt;&lt;a href="#id8"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
-Unknown target name: &amp;quot;|image9|&amp;quot;.&lt;/div&gt;
-&lt;div class="system-message" id="id9"&gt;
-&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/pythonpackages-com-beta-launch.rst&lt;/tt&gt;, line 41); &lt;em&gt;&lt;a href="#id10"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
-Unknown target name: &amp;quot;|image10|&amp;quot;.&lt;/div&gt;
-&lt;div class="system-message" id="id11"&gt;
-&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/pythonpackages-com-beta-launch.rst&lt;/tt&gt;, line 41); &lt;em&gt;&lt;a href="#id12"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
-Unknown target name: &amp;quot;|image11|&amp;quot;.&lt;/div&gt;
+&lt;p&gt;But wait, there's more. Paid plans (which have not been deployed yet) get access to GitHub organizations, whose repositories can then be &amp;quot;slotted&amp;quot; like normal. If you'd like to get started using the site, check out the &lt;a class="reference external" href="http://docs.pythonpackages.com/en/latest/crashcourse.html"&gt;crash course&lt;/a&gt;.&lt;/p&gt;
 &lt;/div&gt;
 </summary><category term="Mozilla"></category><category term="Plone"></category><category term="Python"></category></entry><entry><title>Zope2 Bootstrap</title><link href="http://blog.aclark.net//2012/06/12/zope2-bootstrap/" rel="alternate"></link><updated>2012-06-12T10:27:00-04:00</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2012-06-12:/2012/06/12/zope2-bootstrap/</id><summary type="html">&lt;p&gt;&lt;em&gt;Bootstrap all the things, including Zope2.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a class="reference external" href="http://pypi.python.org/pypi/zope2_bootstrap"&gt;zope2_bootstrap&lt;/a&gt; is a new Python package that &lt;a class="reference external" href="http://pypi.python.org/pypi/collective.monkeypatcher"&gt;monkey patches&lt;/a&gt; Zope2
