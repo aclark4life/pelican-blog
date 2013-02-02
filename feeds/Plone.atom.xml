@@ -2924,31 +2924,18 @@ Unknown target name: &amp;quot;|image4|&amp;quot;.&lt;/div&gt;
 &lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/plone-secrets-episode-3-collective-recaptcha-installation.rst&lt;/tt&gt;, line 298); &lt;em&gt;&lt;a href="#id10"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 Unknown target name: &amp;quot;|image5|&amp;quot;.&lt;/div&gt;
 &lt;/div&gt;
-</summary><category term="Plone"></category></entry><entry><title>Plone secrets: Episode 2 - Collective Python buildout</title><link href="http://blog.aclark.net//2011/07/06/plone-secrets-episode-2-collective-python-buildout/" rel="alternate"></link><updated>2011-07-06T12:45:00-04:00</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2011-07-06:/2011/07/06/plone-secrets-episode-2-collective-python-buildout/</id><summary type="html">&lt;p&gt;You know who uses the (Plone) Collective Python buildout? Me neither,
-because we don't have any good statistics on its use (that I know of).
-If it were a Python package, we could at least &lt;a class="reference external" href="http://blog.aclark.net/2011/06/16/youre-so-vain-so-why-not-use-vanity/"&gt;count the number of
-times it has been downloaded&lt;/a&gt;.&lt;/p&gt;
+</summary><category term="Plone"></category></entry><entry><title>Plone secrets: Episode 2 - Collective Python buildout</title><link href="http://blog.aclark.net//2011/07/06/plone-secrets-episode-2-collective-python-buildout/" rel="alternate"></link><updated>2011-07-06T12:45:00-04:00</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2011-07-06:/2011/07/06/plone-secrets-episode-2-collective-python-buildout/</id><summary type="html">&lt;p&gt;You know who uses the (Plone) Collective Python buildout? Me neither, because we don't have any good statistics on its use (that I know of).  If it were a Python package, we could at least &lt;a class="reference external" href="http://blog.aclark.net/2011/06/16/youre-so-vain-so-why-not-use-vanity/"&gt;count the number of times it has been downloaded&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;You know who should use it? Everyone.&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;[dramatic pause…]&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;OK maybe not everyone, but at least everyone that regularly develops
-with &lt;strong&gt;multiple versions of Python&lt;/strong&gt;. Here's why.&lt;/p&gt;
+&lt;p&gt;OK maybe not everyone, but at least everyone that regularly develops with &lt;strong&gt;multiple versions of Python&lt;/strong&gt;. Here's why.&lt;/p&gt;
 &lt;div class="section" id="actively-maintained"&gt;
 &lt;h2&gt;Actively maintained&lt;/h2&gt;
-&lt;p&gt;Check out this &lt;a class="reference external" href="http://goo.gl/BJw33"&gt;log&lt;/a&gt;:&lt;/p&gt;
-&lt;p&gt;&lt;a href="#id1"&gt;&lt;span class="problematic" id="id2"&gt;`|image0|`_&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;It has been going strong for over 3 years.&lt;/p&gt;
-&lt;p&gt;If I recall correctly, it was born out of the frustration¹ of having to
-compile Python on Mac OS X Leopard. Python &lt;em&gt;never&lt;/em&gt; compiles correctly on
-new versions of OS X (which is a complete mystery to me given that Apple
-ships with Python, don't they think people will want to compile it?).&lt;/p&gt;
+&lt;p&gt;Check out the log. It has been going strong for over 3 years.&lt;/p&gt;
+&lt;p&gt;If I recall correctly, it was born out of the frustration¹ of having to compile Python on Mac OS X Leopard. Python &lt;em&gt;never&lt;/em&gt; compiles correctly on new versions of OS X (which is a complete mystery to me given that Apple ships with Python, don't they think people will want to compile it?).&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="easy-to-install"&gt;
 &lt;h2&gt;Easy to install&lt;/h2&gt;
-&lt;p&gt;Got Subversion? Then you &lt;em&gt;can haz&lt;/em&gt; the Collective Python buildout². You
-will also need to bootstrap it with whatever Python version you happen
-to have laying around. I won't go into detail about this; but suffice it
-to say depending on your OS, one of the following or something like it
-should work:&lt;/p&gt;
+&lt;p&gt;Got Subversion? Then you &lt;em&gt;can haz&lt;/em&gt; the Collective Python buildout². You will also need to bootstrap it with whatever Python version you happen to have laying around. I won't go into detail about this; but suffice it to say depending on your OS, one of the following or something like it should work:&lt;/p&gt;
 &lt;pre class="literal-block"&gt;
 $ aptitude install python2.5
 &lt;/pre&gt;
@@ -2956,11 +2943,8 @@ $ aptitude install python2.5
 &lt;pre class="literal-block"&gt;
 $ brew install python
 &lt;/pre&gt;
-&lt;p&gt;If you are on Windows, give up (unless you have a Microsoft C compiler).
-Sorry.&lt;/p&gt;
-&lt;p&gt;Now, check out the code from the repository (if you are a member of the
-&lt;a class="reference external" href="http://dev.plone.org/collective"&gt;Collective&lt;/a&gt; and may potentially contribute something back, make sure
-you use https):&lt;/p&gt;
+&lt;p&gt;If you are on Windows, give up (unless you have a Microsoft C compiler). Sorry.&lt;/p&gt;
+&lt;p&gt;Now, check out the code from the repository (if you are a member of the &lt;a class="reference external" href="http://dev.plone.org/collective"&gt;Collective&lt;/a&gt; and may potentially contribute something back, make sure you use https):&lt;/p&gt;
 &lt;pre class="literal-block"&gt;
 $ svn co http://svn.plone.org/svn/collective/buildout/python
 &lt;/pre&gt;
@@ -2970,9 +2954,7 @@ $ cd python
 $ python bootstrap.py -d
 $ bin/buildout
 &lt;/pre&gt;
-&lt;p&gt;That's it. The buildout should go merrily on it's way compiling Python
-2.4 through 3.2. When it finishes, you can install it in /opt (or
-wherever you like) with the following command (you might need sudo):&lt;/p&gt;
+&lt;p&gt;That's it. The buildout should go merrily on it's way compiling Python 2.4 through 3.2. When it finishes, you can install it in /opt (or wherever you like) with the following command (you might need sudo):&lt;/p&gt;
 &lt;pre class="literal-block"&gt;
 $ bin/install-links
 &lt;/pre&gt;
@@ -3003,13 +2985,9 @@ virtualenv-3.2
 &lt;/div&gt;
 &lt;div class="section" id="easy-to-configure"&gt;
 &lt;h2&gt;Easy to configure&lt;/h2&gt;
-&lt;p&gt;Now you can add &lt;strong&gt;/opt/local/bin&lt;/strong&gt; to your environment PATH variable.
-This will make it easy to choose a particular Python, PIP, or Virtualenv
-at your leisure.&lt;/p&gt;
-&lt;p&gt;Unfortunately, if you pip install something, it will end up in the
-checkout instead of &lt;em&gt;/opt/local/bin&lt;/em&gt;.&lt;/p&gt;
-&lt;p&gt;To get around this, I usually pick one Python for daily use, and add its
-bin directory to my environment PATH variable:&lt;/p&gt;
+&lt;p&gt;Now you can add &lt;strong&gt;/opt/local/bin&lt;/strong&gt; to your environment PATH variable.  This will make it easy to choose a particular Python, PIP, or Virtualenv at your leisure.&lt;/p&gt;
+&lt;p&gt;Unfortunately, if you pip install something, it will end up in the checkout instead of &lt;em&gt;/opt/local/bin&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;To get around this, I usually pick one Python for daily use, and add its bin directory to my environment PATH variable:&lt;/p&gt;
 &lt;pre class="literal-block"&gt;
 $ echo $PATH | tr ':' 'n'
 /sbin
@@ -3022,8 +3000,7 @@ $ echo $PATH | tr ':' 'n'
 /sbin
 /usr/X11/bin
 &lt;/pre&gt;
-&lt;p&gt;After various pip installs, my 2.7 bin directory contains the usual
-tools of the trade:&lt;/p&gt;
+&lt;p&gt;After various pip installs, my 2.7 bin directory contains the usual tools of the trade:&lt;/p&gt;
 &lt;pre class="literal-block"&gt;
 $ /bin/ls -1 /Users/aclark/Developer/collective/python/
 python-2.7/bin
@@ -3087,21 +3064,13 @@ zeopasswd
 &lt;/div&gt;
 &lt;div class="section" id="wrap-it-up-i-ll-take-it"&gt;
 &lt;h2&gt;Wrap it up, I'll take it&lt;/h2&gt;
-&lt;p&gt;That's it! There is not too much more to say, other than I hope you find
-this post useful and will consider using the &lt;a class="reference external" href="http://svn.plone.org/svn/collective/buildout/python"&gt;Collective Python
-buildout&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;That's it! There is not too much more to say, other than I hope you find this post useful and will consider using the &lt;a class="reference external" href="http://svn.plone.org/svn/collective/buildout/python"&gt;Collective Python buildout&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Of course, comments are always welcome.&lt;/p&gt;
 &lt;div class="section" id="notes"&gt;
 &lt;h3&gt;Notes&lt;/h3&gt;
 &lt;p&gt;¹ Experienced by its creator, &lt;a class="reference external" href="http://twitter.com/fschulze"&gt;fschulze&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;² It will likely end up on &lt;a class="reference external" href="http://github.com/collective"&gt;Github&lt;/a&gt; at some point.&lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="system-messages section"&gt;
-&lt;h2&gt;Docutils System Messages&lt;/h2&gt;
-&lt;div class="system-message" id="id1"&gt;
-&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/plone-secrets-episode-2-collective-python-buildout.rst&lt;/tt&gt;, line 23); &lt;em&gt;&lt;a href="#id2"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
-Unknown target name: &amp;quot;|image0|&amp;quot;.&lt;/div&gt;
 &lt;/div&gt;
 </summary><category term="Plone"></category><category term="Python"></category></entry><entry><title>Plone secrets: Episode 1 — Site actions contact link</title><link href="http://blog.aclark.net//2011/06/20/plone-secrets-episode-1-site-actions-contact-link/" rel="alternate"></link><updated>2011-06-20T12:31:00-04:00</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2011-06-20:/2011/06/20/plone-secrets-episode-1-site-actions-contact-link/</id><summary type="html">&lt;p&gt;Today I am introducing a new category of blog entry called &lt;strong&gt;Plone secrets&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;The goal is to describe a set of developer/integrator techniques that are extremely valuable, but completely non-obvious to newcomers.&lt;/p&gt;

@@ -47,31 +47,18 @@
                 By <a class="url fn" href="../../../../../author/aclark.html">aclark</a>
         </address>
         <p>In <a href="../../../../../category/blog.html">Blog</a>. </p>
-<p>tags: <a href="../../../../../tag/plone.html">Plone</a><a href="../../../../../tag/python.html">Python</a></p></footer><!-- /.post-info -->      <p>You know who uses the (Plone) Collective Python buildout? Me neither,
-because we don't have any good statistics on its use (that I know of).
-If it were a Python package, we could at least <a class="reference external" href="http://blog.aclark.net/2011/06/16/youre-so-vain-so-why-not-use-vanity/">count the number of
-times it has been downloaded</a>.</p>
+<p>tags: <a href="../../../../../tag/plone.html">Plone</a><a href="../../../../../tag/python.html">Python</a></p></footer><!-- /.post-info -->      <p>You know who uses the (Plone) Collective Python buildout? Me neither, because we don't have any good statistics on its use (that I know of).  If it were a Python package, we could at least <a class="reference external" href="http://blog.aclark.net/2011/06/16/youre-so-vain-so-why-not-use-vanity/">count the number of times it has been downloaded</a>.</p>
 <p>You know who should use it? Everyone.</p>
 <p><em>[dramatic pause…]</em></p>
-<p>OK maybe not everyone, but at least everyone that regularly develops
-with <strong>multiple versions of Python</strong>. Here's why.</p>
+<p>OK maybe not everyone, but at least everyone that regularly develops with <strong>multiple versions of Python</strong>. Here's why.</p>
 <div class="section" id="actively-maintained">
 <h2>Actively maintained</h2>
-<p>Check out this <a class="reference external" href="http://goo.gl/BJw33">log</a>:</p>
-<p><a href="#id1"><span class="problematic" id="id2">`|image0|`_</span></a></p>
-<p>It has been going strong for over 3 years.</p>
-<p>If I recall correctly, it was born out of the frustration¹ of having to
-compile Python on Mac OS X Leopard. Python <em>never</em> compiles correctly on
-new versions of OS X (which is a complete mystery to me given that Apple
-ships with Python, don't they think people will want to compile it?).</p>
+<p>Check out the log. It has been going strong for over 3 years.</p>
+<p>If I recall correctly, it was born out of the frustration¹ of having to compile Python on Mac OS X Leopard. Python <em>never</em> compiles correctly on new versions of OS X (which is a complete mystery to me given that Apple ships with Python, don't they think people will want to compile it?).</p>
 </div>
 <div class="section" id="easy-to-install">
 <h2>Easy to install</h2>
-<p>Got Subversion? Then you <em>can haz</em> the Collective Python buildout². You
-will also need to bootstrap it with whatever Python version you happen
-to have laying around. I won't go into detail about this; but suffice it
-to say depending on your OS, one of the following or something like it
-should work:</p>
+<p>Got Subversion? Then you <em>can haz</em> the Collective Python buildout². You will also need to bootstrap it with whatever Python version you happen to have laying around. I won't go into detail about this; but suffice it to say depending on your OS, one of the following or something like it should work:</p>
 <pre class="literal-block">
 $ aptitude install python2.5
 </pre>
@@ -79,11 +66,8 @@ $ aptitude install python2.5
 <pre class="literal-block">
 $ brew install python
 </pre>
-<p>If you are on Windows, give up (unless you have a Microsoft C compiler).
-Sorry.</p>
-<p>Now, check out the code from the repository (if you are a member of the
-<a class="reference external" href="http://dev.plone.org/collective">Collective</a> and may potentially contribute something back, make sure
-you use https):</p>
+<p>If you are on Windows, give up (unless you have a Microsoft C compiler). Sorry.</p>
+<p>Now, check out the code from the repository (if you are a member of the <a class="reference external" href="http://dev.plone.org/collective">Collective</a> and may potentially contribute something back, make sure you use https):</p>
 <pre class="literal-block">
 $ svn co http://svn.plone.org/svn/collective/buildout/python
 </pre>
@@ -93,9 +77,7 @@ $ cd python
 $ python bootstrap.py -d
 $ bin/buildout
 </pre>
-<p>That's it. The buildout should go merrily on it's way compiling Python
-2.4 through 3.2. When it finishes, you can install it in /opt (or
-wherever you like) with the following command (you might need sudo):</p>
+<p>That's it. The buildout should go merrily on it's way compiling Python 2.4 through 3.2. When it finishes, you can install it in /opt (or wherever you like) with the following command (you might need sudo):</p>
 <pre class="literal-block">
 $ bin/install-links
 </pre>
@@ -126,13 +108,9 @@ virtualenv-3.2
 </div>
 <div class="section" id="easy-to-configure">
 <h2>Easy to configure</h2>
-<p>Now you can add <strong>/opt/local/bin</strong> to your environment PATH variable.
-This will make it easy to choose a particular Python, PIP, or Virtualenv
-at your leisure.</p>
-<p>Unfortunately, if you pip install something, it will end up in the
-checkout instead of <em>/opt/local/bin</em>.</p>
-<p>To get around this, I usually pick one Python for daily use, and add its
-bin directory to my environment PATH variable:</p>
+<p>Now you can add <strong>/opt/local/bin</strong> to your environment PATH variable.  This will make it easy to choose a particular Python, PIP, or Virtualenv at your leisure.</p>
+<p>Unfortunately, if you pip install something, it will end up in the checkout instead of <em>/opt/local/bin</em>.</p>
+<p>To get around this, I usually pick one Python for daily use, and add its bin directory to my environment PATH variable:</p>
 <pre class="literal-block">
 $ echo $PATH | tr ':' 'n'
 /sbin
@@ -145,8 +123,7 @@ $ echo $PATH | tr ':' 'n'
 /sbin
 /usr/X11/bin
 </pre>
-<p>After various pip installs, my 2.7 bin directory contains the usual
-tools of the trade:</p>
+<p>After various pip installs, my 2.7 bin directory contains the usual tools of the trade:</p>
 <pre class="literal-block">
 $ /bin/ls -1 /Users/aclark/Developer/collective/python/
 python-2.7/bin
@@ -210,21 +187,13 @@ zeopasswd
 </div>
 <div class="section" id="wrap-it-up-i-ll-take-it">
 <h2>Wrap it up, I'll take it</h2>
-<p>That's it! There is not too much more to say, other than I hope you find
-this post useful and will consider using the <a class="reference external" href="http://svn.plone.org/svn/collective/buildout/python">Collective Python
-buildout</a>.</p>
+<p>That's it! There is not too much more to say, other than I hope you find this post useful and will consider using the <a class="reference external" href="http://svn.plone.org/svn/collective/buildout/python">Collective Python buildout</a>.</p>
 <p>Of course, comments are always welcome.</p>
 <div class="section" id="notes">
 <h3>Notes</h3>
 <p>¹ Experienced by its creator, <a class="reference external" href="http://twitter.com/fschulze">fschulze</a>.</p>
 <p>² It will likely end up on <a class="reference external" href="http://github.com/collective">Github</a> at some point.</p>
 </div>
-</div>
-<div class="system-messages section">
-<h2>Docutils System Messages</h2>
-<div class="system-message" id="id1">
-<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">/Users/aclark/Developer/blog/content/plone-secrets-episode-2-collective-python-buildout.rst</tt>, line 23); <em><a href="#id2">backlink</a></em></p>
-Unknown target name: &quot;|image0|&quot;.</div>
 </div>
 
     </div><!-- /.entry-content -->
