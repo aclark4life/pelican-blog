@@ -6294,40 +6294,11 @@ zeo: startedinstance: started
 &lt;/pre&gt;
 &lt;p&gt;and generally go about your business, unfettered.&lt;/p&gt;
 </summary><category term="Plone"></category></entry><entry><title>Plone Conference 2008: Please register for an early bird admission today.</title><link href="http://blog.aclark.net//2008/07/01/plone-conference-2008-please-register-for-an-early-bird-admission-today/" rel="alternate"></link><updated>2008-07-01T08:09:00-04:00</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2008-07-01:/2008/07/01/plone-conference-2008-please-register-for-an-early-bird-admission-today/</id><summary type="html">&lt;p&gt;&lt;a class="reference external" href="http://ploneconf2008.eventbrite.com/"&gt;http://ploneconf2008.eventbrite.com/&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="#id2"&gt;&lt;span class="problematic" id="id3"&gt;`|image0|`_&lt;/span&gt;&lt;/a&gt;Organizing a &lt;a class="reference external" href="http://plone.org/events/conference/2008-washington-dc"&gt;Plone Conference&lt;/a&gt; is a lot like planning to
-invite 300-400 of your closest friends over for a 7-day long party, or,
-at least, it feels that way to me. I'm really looking forward to seeing
-everyone in DC in just a few short months, and I'm very excited about
-all the possibilities. From the pre-conference training, to the post
-conference sprint, to all the good food/drink/people/places to enjoy in
-between. This promises to be one of the biggest and best Plone
-Conferences ever.&lt;/p&gt;
-&lt;p&gt;To that end, I'd like to invite everyone to participate in the early
-bird registration now open at: &lt;a class="reference external" href="http://ploneconf2008.eventbrite.com"&gt;http://ploneconf2008.eventbrite.com&lt;/a&gt;
-and I encourage everyone to register right now. We need the support of
-everyone in the Plone community to make this conference a success.&lt;/p&gt;
-&lt;p&gt;From spreading the word, to purchasing tickets, to sponsoring the
-conference itself, if you are reading this, you can help. Securing early
-bird registrations is a key part of the planning process; it allows us
-to move forward to the next phase.&lt;/p&gt;
-&lt;p&gt;And finally, a huge thanks to everyone for your support. I continue to
-be amazed by the spirit of the community, and I really appreciate the
-opportunity to work on things like &lt;a class="reference external" href="http://plone.org/events/conferences/2008-washington-dc"&gt;Plone Conference 2008&lt;/a&gt; and
-upgrading plone.org (which I will have more information about soon, but
-until then, please poke around on: &lt;a class="reference external" href="http://new.plone.org/"&gt;http://new.plone.org/&lt;/a&gt; or check out
-&lt;a class="reference external" href="http://tarekziade.wordpress.com/2008/07/01/ploneorg-migration/"&gt;Tarek's most recent blog entry&lt;/a&gt; or Jens' most recent mail to the
-website list:
-&lt;a class="reference external" href="http://www.nabble.com/plone.org-buildout-refactored-to18266816s6747.html"&gt;http://www.nabble.com/plone.org-buildout-refactored-to18266816s6747.html&lt;/a&gt;.
-We have scheduled July 19th as the tentative &amp;quot;go live&amp;quot; date.)&lt;/p&gt;
-&lt;p&gt;So without further ado, please head over to
-&lt;a class="reference external" href="http://ploneconf2008.eventbrite.com"&gt;http://ploneconf2008.eventbrite.com&lt;/a&gt; to secure your place at the
-conference, and help the planning team move forward. See you all in DC!&lt;/p&gt;
-&lt;div class="system-messages section"&gt;
-&lt;h2&gt;Docutils System Messages&lt;/h2&gt;
-&lt;div class="system-message" id="id2"&gt;
-&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/plone-conference-2008-please-register-for-an-early-bird-admission-today.rst&lt;/tt&gt;, line 8); &lt;em&gt;&lt;a href="#id3"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
-Unknown target name: &amp;quot;|image0|&amp;quot;.&lt;/div&gt;
-&lt;/div&gt;
+&lt;p&gt;Organizing a &lt;a class="reference external" href="http://plone.org/events/conference/2008-washington-dc"&gt;Plone Conference&lt;/a&gt; is a lot like planning to invite 300-400 of your closest friends over for a 7-day long party, or, at least, it feels that way to me. I'm really looking forward to seeing everyone in DC in just a few short months, and I'm very excited about all the possibilities. From the pre-conference training, to the post conference sprint, to all the good food/drink/people/places to enjoy in between. This promises to be one of the biggest and best Plone Conferences ever.&lt;/p&gt;
+&lt;p&gt;To that end, I'd like to invite everyone to participate in the early bird registration now open at: &lt;a class="reference external" href="http://ploneconf2008.eventbrite.com"&gt;http://ploneconf2008.eventbrite.com&lt;/a&gt; and I encourage everyone to register right now. We need the support of everyone in the Plone community to make this conference a success.&lt;/p&gt;
+&lt;p&gt;From spreading the word, to purchasing tickets, to sponsoring the conference itself, if you are reading this, you can help. Securing early bird registrations is a key part of the planning process; it allows us to move forward to the next phase.&lt;/p&gt;
+&lt;p&gt;And finally, a huge thanks to everyone for your support. I continue to be amazed by the spirit of the community, and I really appreciate the opportunity to work on things like &lt;a class="reference external" href="http://plone.org/events/conferences/2008-washington-dc"&gt;Plone Conference 2008&lt;/a&gt; and upgrading plone.org (which I will have more information about soon, but until then, please poke around on: &lt;a class="reference external" href="http://new.plone.org/"&gt;http://new.plone.org/&lt;/a&gt; or check out &lt;a class="reference external" href="http://tarekziade.wordpress.com/2008/07/01/ploneorg-migration/"&gt;Tarek's most recent blog entry&lt;/a&gt; or Jens' most recent mail to the website list: &lt;a class="reference external" href="http://www.nabble.com/plone.org-buildout-refactored-to18266816s6747.html"&gt;http://www.nabble.com/plone.org-buildout-refactored-to18266816s6747.html&lt;/a&gt;. We have scheduled July 19th as the tentative &amp;quot;go live&amp;quot; date.)&lt;/p&gt;
+&lt;p&gt;So without further ado, please head over to &lt;a class="reference external" href="http://ploneconf2008.eventbrite.com"&gt;http://ploneconf2008.eventbrite.com&lt;/a&gt; to secure your place at the conference, and help the planning team move forward. See you all in DC!&lt;/p&gt;
 </summary><category term="Plone"></category></entry><entry><title>Placeful Theming</title><link href="http://blog.aclark.net//2008/06/02/placeful-theming/" rel="alternate"></link><updated>2008-06-02T07:02:00-04:00</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2008-06-02:/2008/06/02/placeful-theming/</id><summary type="html">&lt;p&gt;I had to do a bit of placeful theming lately and I thought I would share
 the techniques I used (thanks davisagli, jonbaldievieso, vedawms). Let's
 say you have a Plone 3 site, and for some location /foo/bar/baz, you
