@@ -2458,75 +2458,28 @@ to stomach this yet.&lt;/p&gt;
 &lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/plone-secrets-episode-4-varnish-in-front.rst&lt;/tt&gt;, line 13); &lt;em&gt;&lt;a href="#id2"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 Unknown target name: &amp;quot;|image0|&amp;quot;.&lt;/div&gt;
 &lt;/div&gt;
-</summary><category term="Plone"></category></entry><entry><title>Plone: First class Python citizen</title><link href="http://blog.aclark.net//2011/10/24/plone-first-class-python-citizen/" rel="alternate"></link><updated>2011-10-24T09:09:00-04:00</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2011-10-24:/2011/10/24/plone-first-class-python-citizen/</id><summary type="html">&lt;p&gt;&lt;em&gt;The Plone community and software fit nicely within the larger Python
-ecosystem. Here's why.&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;For almost as long as I have been involved in the &lt;a class="reference external" href="http://plone.org"&gt;Plone&lt;/a&gt; project, I've
-been interested in Plone's role in the Python ecosystem. Today as I look
-across the current landscape, I'm proud to announce a new milestone the
-Plone community can take pride in. But the change didn't happen
-overnight, so first let's take a quick look back.&lt;/p&gt;
+</summary><category term="Plone"></category></entry><entry><title>Plone: First class Python citizen</title><link href="http://blog.aclark.net//2011/10/24/plone-first-class-python-citizen/" rel="alternate"></link><updated>2011-10-24T09:09:00-04:00</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2011-10-24:/2011/10/24/plone-first-class-python-citizen/</id><summary type="html">&lt;p&gt;&lt;em&gt;The Plone community and software fit nicely within the larger Python ecosystem. Here's why.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;For almost as long as I have been involved in the &lt;a class="reference external" href="http://plone.org"&gt;Plone&lt;/a&gt; project, I've been interested in Plone's role in the Python ecosystem. Today as I look across the current landscape, I'm proud to announce a new milestone the Plone community can take pride in. But the change didn't happen overnight, so first let's take a quick look back.&lt;/p&gt;
 &lt;div class="section" id="pypi-support-in-psc"&gt;
 &lt;h2&gt;PyPI support in PSC&lt;/h2&gt;
-&lt;p&gt;Circa 2008, Tarek Ziadé and others finished the PyPI integration branch
-of PloneSoftwareCenter started by Sidnei Da Silva 2 years before.&lt;/p&gt;
-&lt;p&gt;&lt;a href="#id1"&gt;&lt;span class="problematic" id="id2"&gt;`|image0|`_&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;This was a big step towards the &amp;quot;Pythonification&amp;quot; of Plone, mainly
-because Plone packages could now be published on plone.org in the same
-way Python packages are published to the Python Package Index: via
-&amp;quot;python setup.py upload&amp;quot;. In fact if you are publishing Plone packages,
-it is recommended that you release to &lt;em&gt;both&lt;/em&gt; PyPI and plone.org
-simultaneously. This ensures your package is visible to the most number
-of potential users. And you can use &lt;a class="reference external" href="http://pypi.python.org/pypi/jarn.mkrelease"&gt;mkrelease&lt;/a&gt; to automate the
-process.&lt;/p&gt;
+&lt;p&gt;Circa 2008, Tarek Ziadé and others finished the PyPI integration branch of PloneSoftwareCenter started by Sidnei Da Silva 2 years before.&lt;/p&gt;
+&lt;p&gt;This was a big step towards the &amp;quot;Pythonification&amp;quot; of Plone, mainly because Plone packages could now be published on plone.org in the same way Python packages are published to the Python Package Index: via &amp;quot;python setup.py upload&amp;quot;. In fact if you are publishing Plone packages, it is recommended that you release to &lt;em&gt;both&lt;/em&gt; PyPI and plone.org simultaneously. This ensures your package is visible to the most number of potential users. And you can use &lt;a class="reference external" href="http://pypi.python.org/pypi/jarn.mkrelease"&gt;mkrelease&lt;/a&gt; to automate the process.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="collective-docs-at-rtd"&gt;
 &lt;h2&gt;Collective docs at RTD&lt;/h2&gt;
-&lt;p&gt;Just when you thought things couldn't get more exciting in Python land,
-along came &lt;a class="reference external" href="http://readthedocs.org/"&gt;readthedocs.org&lt;/a&gt; (a Django Dash production, IIRC). And to
-&lt;a class="reference external" href="https://github.com/collective/collective.developermanual/commit/4dc34d113b1a62064c83f3c431acc7d8deb42f1a"&gt;join the fun in July 2011&lt;/a&gt;, I moved Mikko Ohtamaa's awesome &lt;strong&gt;Plone
-Community Managed Developer Manual&lt;/strong&gt; to the &lt;a class="reference external" href="http://github.com/collective"&gt;Github collective&lt;/a&gt; and
-configured the RTD &lt;a class="reference external" href="https://github.com/blog/41-service-integration"&gt;service hook&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;a href="#id3"&gt;&lt;span class="problematic" id="id4"&gt;`|image1|`_&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;This means that whenever anyone commits a change to the developer
-manual, within a few minutes a new Sphinx build &lt;a class="reference external" href="http://collective-docs.readthedocs.org/en/latest/index.html"&gt;gets published&lt;/a&gt;. It
-was so easy to set this up, I wish I had done it sooner.&lt;/p&gt;
-&lt;p&gt;So you can that see over the years, we have been working ourselves into
-a frenzy of Python goodness! And last week, it got even better.&lt;/p&gt;
+&lt;p&gt;Just when you thought things couldn't get more exciting in Python land, along came &lt;a class="reference external" href="http://readthedocs.org/"&gt;readthedocs.org&lt;/a&gt; (a Django Dash production, IIRC). And to &lt;a class="reference external" href="https://github.com/collective/collective.developermanual/commit/4dc34d113b1a62064c83f3c431acc7d8deb42f1a"&gt;join the fun in July 2011&lt;/a&gt;, I moved Mikko Ohtamaa's awesome &lt;strong&gt;Plone Community Managed Developer Manual&lt;/strong&gt; to the &lt;a class="reference external" href="http://github.com/collective"&gt;Github collective&lt;/a&gt; and configured the RTD &lt;a class="reference external" href="https://github.com/blog/41-service-integration"&gt;service hook&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;This means that whenever anyone commits a change to the developer manual, within a few minutes a new Sphinx build &lt;a class="reference external" href="http://collective-docs.readthedocs.org/en/latest/index.html"&gt;gets published&lt;/a&gt;. It was so easy to set this up, I wish I had done it sooner.&lt;/p&gt;
+&lt;p&gt;So you can that see over the years, we have been working ourselves into a frenzy of Python goodness! And last week, it got even better.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="introducing-plone-packages"&gt;
 &lt;h2&gt;Introducing: Plone packages!&lt;/h2&gt;
-&lt;p&gt;Thanks to the good folks at &lt;a class="reference external" href="http://www.cartwheelweb.com/"&gt;Cartwheel Web&lt;/a&gt;, makers of the fine &lt;a class="reference external" href="http://opencomparison.org/"&gt;Open
-Comparison&lt;/a&gt; service, Plone now has its very own &lt;a class="reference external" href="http://plone.opencomparison.org"&gt;grid comparison
-website&lt;/a&gt;! (&lt;a class="reference external" href="http://djangopackages.com"&gt;Djangopackages.com&lt;/a&gt; was first, followed by
-&lt;a class="reference external" href="http://pyramid.opencomparison.org"&gt;pyramid.opencomparison.org&lt;/a&gt;.)&lt;/p&gt;
-&lt;p&gt;&lt;a href="#id5"&gt;&lt;span class="problematic" id="id6"&gt;`|image2|`_&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;This is a site where folks can add packages hosted elsewhere (e.g. svn,
-github, pypi), vote on them, and add grid comparisons to compare
-similarly-featured add-ons, frameworks, and other related software.
-Grids are the killer feature of this site, and personally I've been
-waiting to use them to answer questions like:&lt;/p&gt;
+&lt;p&gt;Thanks to the good folks at &lt;a class="reference external" href="http://www.cartwheelweb.com/"&gt;Cartwheel Web&lt;/a&gt;, makers of the fine &lt;a class="reference external" href="http://opencomparison.org/"&gt;Open Comparison&lt;/a&gt; service, Plone now has its very own &lt;a class="reference external" href="http://plone.opencomparison.org"&gt;grid comparison website&lt;/a&gt;! (&lt;a class="reference external" href="http://djangopackages.com"&gt;Djangopackages.com&lt;/a&gt; was first, followed by &lt;a class="reference external" href="http://pyramid.opencomparison.org"&gt;pyramid.opencomparison.org&lt;/a&gt;.)&lt;/p&gt;
+&lt;p&gt;This is a site where folks can add packages hosted elsewhere (e.g. svn, github, pypi), vote on them, and add grid comparisons to compare similarly-featured add-ons, frameworks, and other related software.  Grids are the killer feature of this site, and personally I've been waiting to use them to answer questions like:&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&lt;strong&gt;Q: What's the best blogging add-on for Plone?&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;A: http://plone.opencomparison.org/grids/g/weblogs/&lt;/strong&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;The content is entirely user driven (TTW only) so please head over to
-&lt;a class="reference external" href="http://plone.opencomparison.org"&gt;plone.opencomparison.org&lt;/a&gt;, login with your github ID, and start adding
-packages! And while you are at it, please report any issues you find
-here: &lt;a class="reference external" href="https://github.com/opencomparison/opencomparison/issues"&gt;https://github.com/opencomparison/opencomparison/issues&lt;/a&gt;.
-Lastly, let's all tweet a big thanks to &lt;a class="reference external" href="https://twitter.com/#!/pydanny"&gt;&amp;#64;pydanny&lt;/a&gt;and &lt;a class="reference external" href="https://twitter.com/#!/audreyr"&gt;&amp;#64;audreyr&lt;/a&gt; for
-their hard work and generosity!&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="system-messages section"&gt;
-&lt;h2&gt;Docutils System Messages&lt;/h2&gt;
-&lt;div class="system-message" id="id1"&gt;
-&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/plone-first-class-python-citizen.rst&lt;/tt&gt;, line 21); &lt;em&gt;&lt;a href="#id2"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
-Unknown target name: &amp;quot;|image0|&amp;quot;.&lt;/div&gt;
-&lt;div class="system-message" id="id3"&gt;
-&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/plone-first-class-python-citizen.rst&lt;/tt&gt;, line 41); &lt;em&gt;&lt;a href="#id4"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
-Unknown target name: &amp;quot;|image1|&amp;quot;.&lt;/div&gt;
-&lt;div class="system-message" id="id5"&gt;
-&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/plone-first-class-python-citizen.rst&lt;/tt&gt;, line 58); &lt;em&gt;&lt;a href="#id6"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
-Unknown target name: &amp;quot;|image2|&amp;quot;.&lt;/div&gt;
+&lt;p&gt;The content is entirely user driven (TTW only) so please head over to &lt;a class="reference external" href="http://plone.opencomparison.org"&gt;plone.opencomparison.org&lt;/a&gt;, login with your github ID, and start adding packages! And while you are at it, please report any issues you find here: &lt;a class="reference external" href="https://github.com/opencomparison/opencomparison/issues"&gt;https://github.com/opencomparison/opencomparison/issues&lt;/a&gt;. Lastly, let's all tweet a big thanks to &lt;a class="reference external" href="https://twitter.com/#!/pydanny"&gt;&amp;#64;pydanny&lt;/a&gt;and &lt;a class="reference external" href="https://twitter.com/#!/audreyr"&gt;&amp;#64;audreyr&lt;/a&gt; for their hard work and generosity!&lt;/p&gt;
 &lt;/div&gt;
 </summary><category term="Plone"></category><category term="Python"></category></entry><entry><title>Pillow: one year later</title><link href="http://blog.aclark.net//2011/10/14/pillow-one-year-later/" rel="alternate"></link><updated>2011-10-14T13:11:00-04:00</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2011-10-14:/2011/10/14/pillow-one-year-later/</id><summary type="html">&lt;p&gt;&lt;em&gt;For anyone unfamiliar with Pillow, it is the &amp;quot;friendly PIL fork&amp;quot;: a fork of PIL that aims to remain a good citizen in the PIL community through its actions.&lt;/em&gt;&lt;/p&gt;
 &lt;div class="section" id="warm-and-fluffy-history"&gt;
