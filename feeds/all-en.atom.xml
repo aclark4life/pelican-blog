@@ -2353,38 +2353,24 @@ project to my calendar as paid work. So if you are able to help out by
 donating some portion of the goal, I would appreciate it. Please use the
 chip-in below to contribute to this effort.&lt;/p&gt;
 &lt;/div&gt;
-</summary><category term="Plone"></category></entry><entry><title>Plone secrets: Episode 4 - Varnish in front</title><link href="http://blog.aclark.net//2011/11/09/plone-secrets-episode-4-varnish-in-front/" rel="alternate"></link><updated>2011-11-09T12:50:00-05:00</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2011-11-09:/2011/11/09/plone-secrets-episode-4-varnish-in-front/</id><summary type="html">&lt;p&gt;&lt;em&gt;This just in from the production department: use Varnish. (And please
-forgive the heavily meme-laden approach to describing these techniques
-:-).)&lt;/em&gt;&lt;/p&gt;
+</summary><category term="Plone"></category></entry><entry><title>Plone secrets: Episode 4 - Varnish in front</title><link href="http://blog.aclark.net//2011/11/09/plone-secrets-episode-4-varnish-in-front/" rel="alternate"></link><updated>2011-11-09T12:50:00-05:00</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2011-11-09:/2011/11/09/plone-secrets-episode-4-varnish-in-front/</id><summary type="html">&lt;p&gt;&lt;em&gt;This just in from the production department: use Varnish. (And please forgive the heavily meme-laden approach to describing these techniques :-).)&lt;/em&gt;&lt;/p&gt;
 &lt;div class="section" id="cache-all-the-hosts"&gt;
 &lt;h2&gt;Cache ALL the hosts&lt;/h2&gt;
-&lt;p&gt;&lt;a href="#id1"&gt;&lt;span class="problematic" id="id2"&gt;`|image0|`_&lt;/span&gt;&lt;/a&gt;Our ability to use Varnish in production is no secret by
-now, or at least it shouldn't be. What is often less clear is exactly
-how to use it. One way I like[1], is to run Varnish on your public IP
-port 80 and make Apache listen on your private IP port 80. Then proxy
-from Varnish to Apache and enjoy easy caching goodness on all your
-virtual hosts in Apache.&lt;/p&gt;
+&lt;p&gt;Our ability to use Varnish in production is no secret by now, or at least it shouldn't be. What is often less clear is exactly how to use it. One way I like[1], is to run Varnish on your public IP port 80 and make Apache listen on your private IP port 80. Then proxy from Varnish to Apache and enjoy easy caching goodness on all your virtual hosts in Apache.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="configuration"&gt;
 &lt;h2&gt;Configuration&lt;/h2&gt;
-&lt;p&gt;This should require less than five minutes of down time to implement.
-First, configure the appropriate settings. (Well, first install Apache
-and Varnish if you haven't already: `aptitude install varnish apache2`
-on Ubuntu Linux[0].)&lt;/p&gt;
+&lt;p&gt;This should require less than five minutes of down time to implement. First, configure the appropriate settings. (Well, first install Apache and Varnish if you haven't already: `aptitude install varnish apache2` on Ubuntu Linux[0].)&lt;/p&gt;
 &lt;div class="section" id="varnish"&gt;
 &lt;h3&gt;Varnish&lt;/h3&gt;
-&lt;p&gt;To modify the listen IP address and port, we typically edit a file like
-&lt;em&gt;/etc/default/varnish&lt;/em&gt; (in Ubuntu). However you do it, configure the
-equivalent of the following on your system:&lt;/p&gt;
+&lt;p&gt;To modify the listen IP address and port, we typically edit a file like &lt;em&gt;/etc/default/varnish&lt;/em&gt; (in Ubuntu). However you do it, configure the equivalent of the following on your system:&lt;/p&gt;
 &lt;pre class="literal-block"&gt;
 DAEMON_OPTS=&amp;quot;-a 174.143.252.11:80
 &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; -T localhost:6082
 &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; -f /etc/varnish/default.vcl
 &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; -s malloc,256m&amp;quot;
 &lt;/pre&gt;
-&lt;p&gt;This environment variable is then passed to &lt;em&gt;varnishd&lt;/em&gt; on the command
-line. Next, pass traffic to Apache like so (in
-&lt;em&gt;/etc/varnish/default.vcl&lt;/em&gt; on Ubuntu):&lt;/p&gt;
+&lt;p&gt;This environment variable is then passed to &lt;em&gt;varnishd&lt;/em&gt; on the command line. Next, pass traffic to Apache like so (in &lt;em&gt;/etc/varnish/default.vcl&lt;/em&gt; on Ubuntu):&lt;/p&gt;
 &lt;pre class="literal-block"&gt;
 backend default {
  .host = &amp;quot;127.0.0.1&amp;quot;;
@@ -2392,14 +2378,11 @@ backend default {
  }
 &lt;/pre&gt;
 &lt;p&gt;Now on to Apache.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;*Please note that the syntax above is for Varnish 3.x and the syntax
-has (annoyingly) changed from 2.x to 3.x.*&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;*Please note that the syntax above is for Varnish 3.x and the syntax has (annoyingly) changed from 2.x to 3.x.*&lt;/strong&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="apache"&gt;
 &lt;h3&gt;Apache&lt;/h3&gt;
-&lt;p&gt;The Apache part is a bit simpler. You just need to change the listen
-port (on Ubuntu this is done in &lt;em&gt;/etc/apache2/ports.conf&lt;/em&gt;), typically
-from something like:&lt;/p&gt;
+&lt;p&gt;The Apache part is a bit simpler. You just need to change the listen port (on Ubuntu this is done in &lt;em&gt;/etc/apache2/ports.conf&lt;/em&gt;), typically from something like:&lt;/p&gt;
 &lt;pre class="literal-block"&gt;
 Listen *:80
 &lt;/pre&gt;
@@ -2411,11 +2394,7 @@ Listen 127.0.0.1:80
 &lt;/div&gt;
 &lt;div class="section" id="restart-all-the-services"&gt;
 &lt;h2&gt;Restart ALL the services&lt;/h2&gt;
-&lt;p&gt;Now restart both services. If all goes well you shouldn't notice any
-difference, except better performance, and when you make a website
-change and need to clear the cache[2]. For this, I rely on telnetting to
-the varnish port and issuing the `ban.url` command (formerly
-`url.purge` in 2.x):&lt;/p&gt;
+&lt;p&gt;Now restart both services. If all goes well you shouldn't notice any difference, except better performance, and when you make a website change and need to clear the cache[2]. For this, I rely on telnetting to the varnish port and issuing the `ban.url` command (formerly `url.purge` in 2.x):&lt;/p&gt;
 &lt;pre class="literal-block"&gt;
 $ telnet localhost 6082
 Trying 127.0.0.1...
@@ -2432,16 +2411,11 @@ Type 'quit' to close CLI session.ban.url /
 &lt;/div&gt;
 &lt;div class="section" id="cache-all-the-disks"&gt;
 &lt;h2&gt;Cache ALL the disks&lt;/h2&gt;
-&lt;p&gt;This site has Varnish and Apache configured as described in this
-article. It also has disk caching in Apache enabled, thanks to Elizabeth
-Leddy's article:&lt;/p&gt;
+&lt;p&gt;This site has Varnish and Apache configured as described in this article. It also has disk caching in Apache enabled, thanks to Elizabeth Leddy's article:&lt;/p&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;&lt;a class="reference external" href="http://plonechix.blogspot.com/2011/08/10-minute-caching-with-apache.html"&gt;http://plonechix.blogspot.com/2011/08/10-minute-caching-with-apache.html&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;As a result, it's &lt;strong&gt;PEPPY AS THE DICKENS™&lt;/strong&gt; on a 512MB &amp;quot;slice&amp;quot; (Cloud
-server) from Rackspace Cloud. And now you know yet another &amp;quot;Plone
-secret&amp;quot;. Now go make your Plone sites faster, and let me know how it
-goes in the comments section below.&lt;/p&gt;
+&lt;p&gt;As a result, it's &lt;strong&gt;PEPPY AS THE DICKENS™&lt;/strong&gt; on a 512MB &amp;quot;slice&amp;quot; (Cloud server) from Rackspace Cloud. And now you know yet another &amp;quot;Plone secret&amp;quot;. Now go make your Plone sites faster, and let me know how it goes in the comments section below.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="notes"&gt;
 &lt;h2&gt;Notes&lt;/h2&gt;
@@ -2451,12 +2425,6 @@ Plone; I found it odd at the time but years later it makes perfect
 sense.&lt;/p&gt;
 &lt;p&gt;[2] Ideally you'd configure this in p.a.caching, but I've not been able
 to stomach this yet.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="system-messages section"&gt;
-&lt;h2&gt;Docutils System Messages&lt;/h2&gt;
-&lt;div class="system-message" id="id1"&gt;
-&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/plone-secrets-episode-4-varnish-in-front.rst&lt;/tt&gt;, line 13); &lt;em&gt;&lt;a href="#id2"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
-Unknown target name: &amp;quot;|image0|&amp;quot;.&lt;/div&gt;
 &lt;/div&gt;
 </summary><category term="Plone"></category></entry><entry><title>Plone: First class Python citizen</title><link href="http://blog.aclark.net//2011/10/24/plone-first-class-python-citizen/" rel="alternate"></link><updated>2011-10-24T09:09:00-04:00</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2011-10-24:/2011/10/24/plone-first-class-python-citizen/</id><summary type="html">&lt;p&gt;&lt;em&gt;The Plone community and software fit nicely within the larger Python ecosystem. Here's why.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;For almost as long as I have been involved in the &lt;a class="reference external" href="http://plone.org"&gt;Plone&lt;/a&gt; project, I've been interested in Plone's role in the Python ecosystem. Today as I look across the current landscape, I'm proud to announce a new milestone the Plone community can take pride in. But the change didn't happen overnight, so first let's take a quick look back.&lt;/p&gt;
@@ -2879,112 +2847,46 @@ class Hello(BrowserPage):
 &lt;/ul&gt;
 &lt;p&gt;Also, check out the Plone &lt;a class="reference external" href="http://collective-docs.readthedocs.org"&gt;community managed developer documentation&lt;/a&gt; on readthedocs.org for more! ¹ c.f. SNL skit w/Rob Schnieder and/or Adam Sander too, apparently: &lt;a class="reference external" href="http://www.youtube.com/watch?v=muA5EBmpDhA"&gt;http://www.youtube.com/watch?v=muA5EBmpDhA&lt;/a&gt; I like the Rob Schnieder ones better :-)&lt;/p&gt;
 &lt;/div&gt;
-</summary><category term="Plone"></category><category term="Python"></category></entry><entry><title>Plone secrets: Episode 3 - Collective Recaptcha installation</title><link href="http://blog.aclark.net//2011/08/09/plone-secrets-episode-3-collective-recaptcha-installation/" rel="alternate"></link><updated>2011-08-09T12:19:00-04:00</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2011-08-09:/2011/08/09/plone-secrets-episode-3-collective-recaptcha-installation/</id><summary type="html">&lt;p&gt;&lt;strong&gt;*Another one from the: &amp;quot;wow, this approach is totally and completely
-non-obvious to beginners&amp;quot; department.*&lt;/strong&gt;&lt;/p&gt;
+</summary><category term="Plone"></category><category term="Python"></category></entry><entry><title>Plone secrets: Episode 3 - Collective Recaptcha installation</title><link href="http://blog.aclark.net//2011/08/09/plone-secrets-episode-3-collective-recaptcha-installation/" rel="alternate"></link><updated>2011-08-09T12:19:00-04:00</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2011-08-09:/2011/08/09/plone-secrets-episode-3-collective-recaptcha-installation/</id><summary type="html">&lt;p&gt;&lt;strong&gt;*Another one from the: &amp;quot;wow, this approach is totally and completely non-obvious to beginners&amp;quot; department.*&lt;/strong&gt;&lt;/p&gt;
 &lt;div class="section" id="my-kingdom-for-a-custom-contact-form-with-captcha"&gt;
 &lt;h2&gt;My kingdom for a (custom) contact form (with captcha)&lt;/h2&gt;
-&lt;p&gt;I don't know if I've made written-mention of this anywhere else, but
-&lt;a class="reference external" href="http://aclark.net"&gt;aclark.net&lt;/a&gt;has a new customized &lt;a class="reference external" href="http://aclark.net/contact-info"&gt;contact form&lt;/a&gt; with captcha. ;-)
-&lt;a href="#id1"&gt;&lt;span class="problematic" id="id2"&gt;`|image0|`_&lt;/span&gt;&lt;/a&gt; It is customized via &lt;a class="reference external" href="http://pypi.python.org/pypi/z3c.jbot"&gt;z3c.jbot&lt;/a&gt; which is an awesome tool
-(more on that later). This in and of itself is not-so-terribly
-newsworthy. What is interesting, though, is &lt;em&gt;how&lt;/em&gt; this new customized
-form came to be; and how its features compare to the default contact
-form.&lt;/p&gt;
-&lt;p&gt;So here goes: In Plone, we have a page template called
-&lt;a class="reference external" href="http://svn.plone.org/svn/plone/Products.CMFPlone/trunk/Products/CMFPlone/skins/plone_templates/contact-info.cpt"&gt;contact-info.cpt&lt;/a&gt;. It's not so special (in that it is pretty
-feature-&lt;em&gt;less&lt;/em&gt;, though it will send mail if you ask it to) but it does
-the job for most folks. And it almost has to, because customizing it is
-beyond the realm of what &lt;em&gt;anyone&lt;/em&gt; would call &amp;quot;straight forward&amp;quot; or
-&amp;quot;reasonable to expect from TTW customizers, integrators, or even
-developers&amp;quot;¹.&lt;/p&gt;
+&lt;p&gt;I don't know if I've made written-mention of this anywhere else, but &lt;a class="reference external" href="http://aclark.net"&gt;aclark.net&lt;/a&gt;has a new customized &lt;a class="reference external" href="http://aclark.net/contact-info"&gt;contact form&lt;/a&gt; with captcha. ;-) It is customized via &lt;a class="reference external" href="http://pypi.python.org/pypi/z3c.jbot"&gt;z3c.jbot&lt;/a&gt; which is an awesome tool (more on that later). This in and of itself is not-so-terribly newsworthy. What is interesting, though, is &lt;em&gt;how&lt;/em&gt; this new customized form came to be; and how its features compare to the default contact form.&lt;/p&gt;
+&lt;p&gt;So here goes: In Plone, we have a page template called &lt;a class="reference external" href="http://svn.plone.org/svn/plone/Products.CMFPlone/trunk/Products/CMFPlone/skins/plone_templates/contact-info.cpt"&gt;contact-info.cpt&lt;/a&gt;. It's not so special (in that it is pretty feature-&lt;em&gt;less&lt;/em&gt;, though it will send mail if you ask it to) but it does the job for most folks. And it almost has to, because customizing it is beyond the realm of what &lt;em&gt;anyone&lt;/em&gt; would call &amp;quot;straight forward&amp;quot; or &amp;quot;reasonable to expect from TTW customizers, integrators, or even developers&amp;quot;¹.&lt;/p&gt;
 &lt;p&gt;Why do I say this?&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="been-there-done-that-cmfformcontroller"&gt;
 &lt;h2&gt;Been there, done that: CMFFormController&lt;/h2&gt;
-&lt;p&gt;First, let me start with the technology that is used to implement the
-contact form.&amp;nbsp;It's called &lt;a class="reference external" href="http://pypi.python.org/pypi/Products.CMFFormController"&gt;CMFFormController&lt;/a&gt; and it went out of style
-in the 1970s, along with disco and bell bottoms. Bell bottoms came back,
-but CMFFormController didn't! Don't get me wrong: CMFFormController is a
-decent technology/implementation. It works. But it's not very &amp;quot;modern&amp;quot;
-by today's coding standards. As such, it will simply be dragged along
-Plone-version-after-Plone-version until either: a.) someone wants to
-replace it, or b.) it becomes too big of a maintenance burden to support
-and someone has to replace it. This is the way of many things, and there
-is nothing inherently wrong with this phenomenon. In fact, there are
-even good things about it: e.g. the release manager, framework team, and
-core developers' ability to publish release-after-solid-release under
-such code-aging circumstances is a testament to their skill and
-dedication.&lt;/p&gt;
+&lt;p&gt;First, let me start with the technology that is used to implement the contact form.&amp;nbsp;It's called &lt;a class="reference external" href="http://pypi.python.org/pypi/Products.CMFFormController"&gt;CMFFormController&lt;/a&gt; and it went out of style in the 1970s, along with disco and bell bottoms. Bell bottoms came back, but CMFFormController didn't! Don't get me wrong: CMFFormController is a decent technology/implementation. It works. But it's not very &amp;quot;modern&amp;quot; by today's coding standards. As such, it will simply be dragged along Plone-version-after-Plone-version until either: a.) someone wants to replace it, or b.) it becomes too big of a maintenance burden to support and someone has to replace it. This is the way of many things, and there is nothing inherently wrong with this phenomenon. In fact, there are even good things about it: e.g. the release manager, framework team, and core developers' ability to publish release-after-solid-release under such code-aging circumstances is a testament to their skill and dedication.&lt;/p&gt;
 &lt;p&gt;BUT… and this is a BIG BUT.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="we-can-do-better"&gt;
 &lt;h2&gt;We can do better&lt;/h2&gt;
-&lt;p&gt;Leaving this old stuff laying around, with no new stuff to point new
-users to does a huge disservice to &lt;em&gt;all&lt;/em&gt; of our users. It flies
-&lt;em&gt;directly&lt;/em&gt; in the face of one of our core missions: as &lt;a class="reference external" href="https://twitter.com/#!/asigottech"&gt;Wyn Williams&lt;/a&gt;
-put it once, to be the&lt;/p&gt;
+&lt;p&gt;Leaving this old stuff laying around, with no new stuff to point new users to does a huge disservice to &lt;em&gt;all&lt;/em&gt; of our users. It flies &lt;em&gt;directly&lt;/em&gt; in the face of one of our core missions: as &lt;a class="reference external" href="https://twitter.com/#!/asigottech"&gt;Wyn Williams&lt;/a&gt; put it once, to be the&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;strong&gt;&amp;quot;best damn enterprise content manage system on the planet&amp;quot;.&lt;/strong&gt;&lt;/blockquote&gt;
-&lt;p&gt;Now, I've been around the block, so I am not suggesting we must fix
-everything at once. Legacy software can be supported for years and years
-and years (and &lt;a class="reference external" href="http://pypi.python.org/pypi/Zope2"&gt;YEARS&lt;/a&gt;). What I am suggesting is that we need to make a
-very significant effort to &lt;strong&gt;COMPLETELY HIDE&lt;/strong&gt; these implementation
-details to newcomers. I don't want to tell people in IRC to go to
-&lt;strong&gt;portal_skins&lt;/strong&gt; anymore. I want my &amp;quot;OS X Lion release for Plone&amp;quot;,
-please (sans Vista overtones.) :-)&lt;/p&gt;
-&lt;p&gt;So how do we get there? Well, in the case of portal_skins there is talk
-of decommissioning &lt;strong&gt;portal_view_customizations,&lt;/strong&gt; which was supposed
-to be the &amp;quot;new portal_skins&amp;quot; as I understand it. But since half of our
-templates are still in CMF skin layers, &lt;em&gt;and&lt;/em&gt; because this feature was
-not technically well received (i.e. it needs &lt;em&gt;more&lt;/em&gt; features and
-development), &lt;em&gt;and&lt;/em&gt; because &lt;strong&gt;portal_resources&lt;/strong&gt; came along around the
-same time as &lt;a class="reference external" href="http://pypi.python.org/pypi/plone.app.theming"&gt;plone.app.theming&lt;/a&gt;, folks are considering removing
-portal_view_customizations. I have no strong opinion about it (other
-than I hate the name, too long) and I trust the Framework Team to handle
-it. What I do care about is that whatever remains in the ZMI be very
-clearly designated as either &amp;quot;new style&amp;quot; or &amp;quot;old style&amp;quot;. We can't get
-away from the ZMI yet, but portal tools do have title attributes so
-let's use them.&lt;/p&gt;
-&lt;p&gt;Now, we can't ditch &lt;strong&gt;portal_skins&lt;/strong&gt; just yet, and who knows what will
-happen with &lt;strong&gt;portal_view_customizations&lt;/strong&gt;, but the *minute* we know
-some technology is out of date, we should reveal it in the user
-interface (even in the ZMI user interface). E.g.:&lt;/p&gt;
-&lt;dl class="docutils"&gt;
-&lt;dt&gt;&lt;a href="#id3"&gt;&lt;span class="problematic" id="id4"&gt;`|image2|`_&lt;/span&gt;&lt;/a&gt;&lt;/dt&gt;
-&lt;dd&gt;Curiously, the attribute that holds this string is lowercase &amp;quot;title&amp;quot;
+&lt;p&gt;Now, I've been around the block, so I am not suggesting we must fix everything at once. Legacy software can be supported for years and years and years (and &lt;a class="reference external" href="http://pypi.python.org/pypi/Zope2"&gt;YEARS&lt;/a&gt;). What I am suggesting is that we need to make a very significant effort to &lt;strong&gt;COMPLETELY HIDE&lt;/strong&gt; these implementation details to newcomers. I don't want to tell people in IRC to go to &lt;strong&gt;portal_skins&lt;/strong&gt; anymore. I want my &amp;quot;OS X Lion release for Plone&amp;quot;, please (sans Vista overtones.) :-)&lt;/p&gt;
+&lt;p&gt;So how do we get there? Well, in the case of portal_skins there is talk of decommissioning &lt;strong&gt;portal_view_customizations,&lt;/strong&gt; which was supposed to be the &amp;quot;new portal_skins&amp;quot; as I understand it. But since half of our templates are still in CMF skin layers, &lt;em&gt;and&lt;/em&gt; because this feature was not technically well received (i.e. it needs &lt;em&gt;more&lt;/em&gt; features and development), &lt;em&gt;and&lt;/em&gt; because &lt;strong&gt;portal_resources&lt;/strong&gt; came along around the same time as &lt;a class="reference external" href="http://pypi.python.org/pypi/plone.app.theming"&gt;plone.app.theming&lt;/a&gt;, folks are considering removing portal_view_customizations. I have no strong opinion about it (other than I hate the name, too long) and I trust the Framework Team to handle it. What I do care about is that whatever remains in the ZMI be very clearly designated as either &amp;quot;new style&amp;quot; or &amp;quot;old style&amp;quot;. We can't get away from the ZMI yet, but portal tools do have title attributes so let's use them.&lt;/p&gt;
+&lt;p&gt;Now, we can't ditch &lt;strong&gt;portal_skins&lt;/strong&gt; just yet, and who knows what will happen with &lt;strong&gt;portal_view_customizations&lt;/strong&gt;, but the *minute* we know some technology is out of date, we should reveal it in the user interface (even in the ZMI user interface). E.g.:&lt;/p&gt;
+&lt;blockquote&gt;
+Curiously, the attribute that holds this string is lowercase &amp;quot;title&amp;quot;
 (I'd expect camel case Description, though I'm not entirely sure why
-I expect that.)&lt;/dd&gt;
-&lt;/dl&gt;
-&lt;p&gt;Hanno Schlichting has made some great progress recently with enhancing
-the ZMI for Plone users, especially with regard to&lt;em&gt;file-system vs.
-through-the-web&lt;/em&gt; development, and &lt;em&gt;through-the-plone vs. through-the-zmi
-configuration&lt;/em&gt;, e.g.:&lt;/p&gt;
-&lt;p&gt;&lt;a href="#id5"&gt;&lt;span class="problematic" id="id6"&gt;`|image3|`_&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+I expect that.)&lt;/blockquote&gt;
+&lt;p&gt;Hanno Schlichting has made some great progress recently with enhancing the ZMI for Plone users, especially with regard to&lt;em&gt;file-system vs.  through-the-web&lt;/em&gt; development, and &lt;em&gt;through-the-plone vs. through-the-zmi configuration&lt;/em&gt;.&lt;/p&gt;
 &lt;p&gt;I love this trend, and would like to see more of it!&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="secrets-revealed"&gt;
 &lt;h2&gt;Secrets revealed&lt;/h2&gt;
-&lt;p&gt;Anyway, I've been dancing around the secrets to be revealed in this blog
-post because it is fun to play with the future. And it's important to
-work hard toward achieving it. But enough of that, here is what you need
-to know today.&lt;/p&gt;
+&lt;p&gt;Anyway, I've been dancing around the secrets to be revealed in this blog post because it is fun to play with the future. And it's important to work hard toward achieving it. But enough of that, here is what you need to know today.&lt;/p&gt;
 &lt;p&gt;Like I said, I customized the contact form.&lt;/p&gt;
 &lt;div class="section" id="old-style-vs-new-style"&gt;
 &lt;h3&gt;Old style vs. new style&lt;/h3&gt;
-&lt;p&gt;Back in the &amp;quot;old days&amp;quot; you had to create a CMF skin layer and put a copy
-of the template in a directory on the file system, configured as a File
-System Directory View. &lt;em&gt;Everything&lt;/em&gt; used to be customized via skin
-layers.&lt;/p&gt;
-&lt;p&gt;Now-a-days, we have z3c.jbot. Though a bit of a hack², it does exactly
-what you'd expect, almost exactly how you'd expect it to. It &lt;a class="reference external" href="https://github.com/aclark4life/aclark_net_website"&gt;doesn't
-even require a Python package&lt;/a&gt;. By convention though, folks typically
-do put z3c.jbot template customizations in Python packages.&lt;/p&gt;
+&lt;p&gt;Back in the &amp;quot;old days&amp;quot; you had to create a CMF skin layer and put a copy of the template in a directory on the file system, configured as a File System Directory View. &lt;em&gt;Everything&lt;/em&gt; used to be customized via skin layers.&lt;/p&gt;
+&lt;p&gt;Now-a-days, we have z3c.jbot. Though a bit of a hack², it does exactly what you'd expect, almost exactly how you'd expect it to. It &lt;a class="reference external" href="https://github.com/aclark4life/aclark_net_website"&gt;doesn't even require a Python package&lt;/a&gt;. By convention though, folks typically do put z3c.jbot template customizations in Python packages.&lt;/p&gt;
 &lt;p&gt;This requires a few steps.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="step-1-create-a-python-package"&gt;
 &lt;h3&gt;Step 1: Create a Python package&lt;/h3&gt;
-&lt;p&gt;First, a Python package. This is relatively simple, so I'm not going to
-skip-and-point-you-somewhere-else just yet, I'm going to explain first.
+&lt;p&gt;First, a Python package. This is relatively simple, so I'm not going to skip-and-point-you-somewhere-else just yet, I'm going to explain first.
 The &lt;a class="reference external" href="https://gist.github.com/1123090"&gt;gist of it&lt;/a&gt; is this:&lt;/p&gt;
 &lt;pre class="literal-block"&gt;
 $ mkdir -p my.package/my/package
@@ -3015,17 +2917,11 @@ from pkg_resources import declare_namespace
 declare_namespace(__name__)
 EOF
 &lt;/pre&gt;
-&lt;p&gt;Alternatively, use &lt;a class="reference external" href="http://pypi.python.org/pypi/ZopeSkel"&gt;ZopeSkel&lt;/a&gt; to generate all this boilerplate code for
-you. It does a much better, and more complete job than what I have done
-here. The important thing is that you &lt;em&gt;understand what is going on&lt;/em&gt;.&lt;/p&gt;
-&lt;p&gt;In the case of aclark.net, our Python package is called
-&lt;a class="reference external" href="https://github.com/ACLARKNET/aclark_net_website/tree/master/src/plonetheme.aclarknet"&gt;plonetheme.aclarknet&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Alternatively, use &lt;a class="reference external" href="http://pypi.python.org/pypi/ZopeSkel"&gt;ZopeSkel&lt;/a&gt; to generate all this boilerplate code for you. It does a much better, and more complete job than what I have done here. The important thing is that you &lt;em&gt;understand what is going on&lt;/em&gt;. In the case of aclark.net, our Python package is called &lt;a class="reference external" href="https://github.com/ACLARKNET/aclark_net_website/tree/master/src/plonetheme.aclarknet"&gt;plonetheme.aclarknet&lt;/a&gt;.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="step-2-add-template-overrides"&gt;
 &lt;h3&gt;Step 2: Add template overrides&lt;/h3&gt;
-&lt;p&gt;Now that we have a Python package we can start customizing Plone. By
-convention, we&amp;nbsp; create a &amp;quot;templates&amp;quot; directory inside the namespaced
-package e.g.:&lt;/p&gt;
+&lt;p&gt;Now that we have a Python package we can start customizing Plone. By convention, we&amp;nbsp; create a &amp;quot;templates&amp;quot; directory inside the namespaced package e.g.:&lt;/p&gt;
 &lt;pre class="literal-block"&gt;
 $ mkdir my.package/my/package/templates
 &lt;/pre&gt;
@@ -3033,39 +2929,26 @@ $ mkdir my.package/my/package/templates
 &lt;ul class="simple"&gt;
 &lt;li&gt;&lt;a class="reference external" href="https://github.com/ACLARKNET/aclark_net_website/tree/master/src/plonetheme.aclarknet/plonetheme/aclarknet/templates"&gt;https://github.com/ACLARKNET/aclark_net_website/tree/master/src/plonetheme.aclarknet/plonetheme/aclarknet/templates&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Because of the way z3c.jbot works, in the &amp;quot;templates&amp;quot; directory, we add
-files with names that correspond to the Python module we want to
-customize. E.g.&lt;/p&gt;
+&lt;p&gt;Because of the way z3c.jbot works, in the &amp;quot;templates&amp;quot; directory, we add files with names that correspond to the Python module we want to customize. E.g.&lt;/p&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;&lt;a class="reference external" href="https://github.com/ACLARKNET/aclark_net_website/blob/master/src/plonetheme.aclarknet/plonetheme/aclarknet/templates/Products.CMFPlone.skins.plone_templates.contact-info.cpt"&gt;https://github.com/ACLARKNET/aclark_net_website/blob/master/src/plonetheme.aclarknet/plonetheme/aclarknet/templates/Products.CMFPlone.skins.plone_templates.contact-info.cpt&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;(For some reason, github thinks that file is binary, so &lt;a class="reference external" href="http://dpaste.com/589529/"&gt;here are the
-contents&lt;/a&gt;.)&lt;/p&gt;
-&lt;p&gt;Now, this is the amazing part: in addition to templates in views,
-viewlets and portlets, we can customize any &lt;a class="reference external" href="http://old.zope.org/Products/CMF/"&gt;CMF&lt;/a&gt; object! E.g. the
-&lt;a class="reference external" href="http://pypi.python.org/pypi/RestrictedPython"&gt;RestrictedPython&lt;/a&gt; (more technology anyone?) CMFFormController
-validation script used to validate our contact form:&lt;/p&gt;
+&lt;p&gt;(For some reason, github thinks that file is binary, so &lt;a class="reference external" href="http://dpaste.com/589529/"&gt;here are the contents&lt;/a&gt;.)&lt;/p&gt;
+&lt;p&gt;Now, this is the amazing part: in addition to templates in views, viewlets and portlets, we can customize any &lt;a class="reference external" href="http://old.zope.org/Products/CMF/"&gt;CMF&lt;/a&gt; object! E.g. the &lt;a class="reference external" href="http://pypi.python.org/pypi/RestrictedPython"&gt;RestrictedPython&lt;/a&gt; (more technology anyone?) CMFFormController validation script used to validate our contact form:&lt;/p&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;&lt;a class="reference external" href="https://github.com/ACLARKNET/aclark_net_website/blob/master/src/plonetheme.aclarknet/plonetheme/aclarknet/templates/Products.CMFPlone.skins.plone_form_scripts.validate_site_feedback.vpy"&gt;https://github.com/ACLARKNET/aclark_net_website/blob/master/src/plonetheme.aclarknet/plonetheme/aclarknet/templates/Products.CMFPlone.skins.plone_form_scripts.validate_site_feedback.vpy&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;That brings us to adding recaptcha, but first let us finish configuring
-template overrides.&lt;/p&gt;
+&lt;p&gt;That brings us to adding recaptcha, but first let us finish configuring template overrides.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="step-3-configure-template-overrides"&gt;
 &lt;h3&gt;Step 3: Configure template overrides&lt;/h3&gt;
-&lt;p&gt;Now that we have customized Plone templates, we can configure Plone to
-use our customizations.&lt;/p&gt;
-&lt;p&gt;This is done via a technology you may have heard of: &lt;a class="reference external" href="http://plone.org/documentation/manual/theme-reference/buildingblocks/components/wiring"&gt;ZCML&lt;/a&gt;. Using
-ZCML, we can tell Plone (or jbot in this case) to use the templates in
-our &amp;quot;templates&amp;quot; directory.&lt;/p&gt;
-&lt;p&gt;The ZCML we are going to use is placed in the &amp;quot;top level&amp;quot; configure.zcml
-file in our package. That means we need a top level configure.zcml file:&lt;/p&gt;
+&lt;p&gt;Now that we have customized Plone templates, we can configure Plone to use our customizations.&lt;/p&gt;
+&lt;p&gt;This is done via a technology you may have heard of: &lt;a class="reference external" href="http://plone.org/documentation/manual/theme-reference/buildingblocks/components/wiring"&gt;ZCML&lt;/a&gt;. Using ZCML, we can tell Plone (or jbot in this case) to use the templates in our &amp;quot;templates&amp;quot; directory.&lt;/p&gt;
+&lt;p&gt;The ZCML we are going to use is placed in the &amp;quot;top level&amp;quot; configure.zcml file in our package. That means we need a top level configure.zcml file:&lt;/p&gt;
 &lt;pre class="literal-block"&gt;
 $ touch my.package/my/package/configure.zcml
 &lt;/pre&gt;
-&lt;p&gt;Next we add ZCML to &amp;quot;configure our application&amp;quot;. Note in addition to the
-ZCML used to configure jbot, there is ZCML for Diazo and ZCML to hold
-our &lt;a class="reference external" href="http://blog.aclark.net/2011/06/20/plone-secrets-episode-1-%e2%80%94-site-actions-contact-link/"&gt;Genericsetup customizations:&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Next we add ZCML to &amp;quot;configure our application&amp;quot;. Note in addition to the ZCML used to configure jbot, there is ZCML for Diazo and ZCML to hold our &lt;a class="reference external" href="http://blog.aclark.net/2011/06/20/plone-secrets-episode-1-%e2%80%94-site-actions-contact-link/"&gt;Genericsetup customizations:&lt;/a&gt;&lt;/p&gt;
 &lt;pre class="literal-block"&gt;
 &amp;lt;configure
     xmlns:browser=&amp;quot;http://namespaces.zope.org/browser&amp;quot;
@@ -3085,24 +2968,12 @@ our &lt;a class="reference external" href="http://blog.aclark.net/2011/06/20/plo
 &lt;ul class="simple"&gt;
 &lt;li&gt;&lt;a class="reference external" href="https://github.com/ACLARKNET/aclark_net_website/blob/master/src/plonetheme.aclarknet/plonetheme/aclarknet/configure.zcml"&gt;https://github.com/ACLARKNET/aclark_net_website/blob/master/src/plonetheme.aclarknet/plonetheme/aclarknet/configure.zcml&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;In order to see what is really going on, check out this diagram:&lt;/p&gt;
-&lt;p&gt;&lt;a href="#id7"&gt;&lt;span class="problematic" id="id8"&gt;`|image4|`_&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;You can see that everything inside the &amp;lt;configure&amp;gt;&amp;lt;/configure&amp;gt; tag(s) is
-associated with an XML namespace. If you don't add the appropriate
-namespace inside the &amp;lt;configure&amp;gt; tag, your configuration will fail
-spectacularly (because without the proper XML namespace configured,
-there is no code loaded to handle your configuration.)&lt;/p&gt;
+&lt;p&gt;You can see that everything inside the &amp;lt;configure&amp;gt;&amp;lt;/configure&amp;gt; tag(s) is associated with an XML namespace. If you don't add the appropriate namespace inside the &amp;lt;configure&amp;gt; tag, your configuration will fail spectacularly (because without the proper XML namespace configured, there is no code loaded to handle your configuration.)&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="step-4-add-recaptcha"&gt;
 &lt;h3&gt;Step 4: Add recaptcha&lt;/h3&gt;
-&lt;p&gt;Now, finally, we get to the exciting part. We have customized our
-contact form, but we are receiving a fair amount of spam due to
-spammers' ability to automate form submission. To foil the spammers, we
-want to add a captcha form that will hopefully require that an actual
-human to fill out the form.&lt;/p&gt;
-&lt;p&gt;Thanks to David Glick and Groundwire, we have &lt;a class="reference external" href="http://pypi.python.org/pypi/collective.recaptcha"&gt;collective.recaptcha&lt;/a&gt;
-which provides an integration of &lt;a class="reference external" href="http://www.google.com/recaptcha"&gt;Google's Recaptcha service&lt;/a&gt; into
-Plone.&lt;/p&gt;
+&lt;p&gt;Now, finally, we get to the exciting part. We have customized our contact form, but we are receiving a fair amount of spam due to spammers' ability to automate form submission. To foil the spammers, we want to add a captcha form that will hopefully require that an actual human to fill out the form.&lt;/p&gt;
+&lt;p&gt;Thanks to David Glick and Groundwire, we have &lt;a class="reference external" href="http://pypi.python.org/pypi/collective.recaptcha"&gt;collective.recaptcha&lt;/a&gt; which provides an integration of &lt;a class="reference external" href="http://www.google.com/recaptcha"&gt;Google's Recaptcha service&lt;/a&gt; into Plone.&lt;/p&gt;
 &lt;p&gt;In order to use it, first we add the package to our buildout, e.g.:&lt;/p&gt;
 &lt;pre class="literal-block"&gt;
 …
@@ -3122,14 +2993,9 @@ zcml = collective.recaptcha
 &lt;li&gt;&lt;a class="reference external" href="https://raw.github.com/ACLARKNET/aclark_net_website/master/buildout.cfg"&gt;https://raw.github.com/ACLARKNET/aclark_net_website/master/buildout.cfg&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Now run buildout and restart Plone.&lt;/p&gt;
-&lt;p&gt;With collective.recaptcha installed via buildout, you should now be able
-to open &lt;a class="reference external" href="http://yoursite:8080/Plone/&amp;#64;&amp;#64;recaptcha-settings"&gt;http://yoursite:8080/Plone/&amp;#64;&amp;#64;recaptcha-settings&lt;/a&gt; to configure
-Recaptcha:&lt;/p&gt;
-&lt;p&gt;&lt;a href="#id9"&gt;&lt;span class="problematic" id="id10"&gt;`|image5|`_&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;(To get a public and private key, you can sign up for recaptcha here:
-&lt;a class="reference external" href="http://www.google.com/recaptcha"&gt;http://www.google.com/recaptcha&lt;/a&gt;)&lt;/p&gt;
-&lt;p&gt;Lastly, make the appropriate changes to the contact form and validation
-script. E.g. &lt;a class="reference external" href="http://dpaste.com/589529/"&gt;include the captcha image:&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;With collective.recaptcha installed via buildout, you should now be able to open &lt;a class="reference external" href="http://yoursite:8080/Plone/&amp;#64;&amp;#64;recaptcha-settings"&gt;http://yoursite:8080/Plone/&amp;#64;&amp;#64;recaptcha-settings&lt;/a&gt; to configure Recaptcha.&lt;/p&gt;
+&lt;p&gt;(To get a public and private key, you can sign up for recaptcha here: &lt;a class="reference external" href="http://www.google.com/recaptcha"&gt;http://www.google.com/recaptcha&lt;/a&gt;)&lt;/p&gt;
+&lt;p&gt;Lastly, make the appropriate changes to the contact form and validation script. E.g. &lt;a class="reference external" href="http://dpaste.com/589529/"&gt;include the captcha image:&lt;/a&gt;&lt;/p&gt;
 &lt;pre class="literal-block"&gt;
 …
 &amp;lt;tal:block tal:replace=&amp;quot;structure
@@ -3152,31 +3018,9 @@ script. E.g. &lt;a class="reference external" href="http://dpaste.com/589529/"&g
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="section" id="notes"&gt;
-&lt;h2&gt;&amp;nbsp;Notes&lt;/h2&gt;
-&lt;p&gt;¹ I'm pushing &amp;quot;reasonable&amp;quot; limits here for argument's sake. For those
-who know Plone already, a lot of what might seem impossible to newcomers
-is &amp;quot;reasonable&amp;quot; for them. No flames please. Unless you absolutely must.
-;-)&lt;/p&gt;
-&lt;p&gt;² I hear people call it that, though I don't know the details. I assume
-it &amp;quot;monkey patches&amp;quot; which template to use at render-time.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="system-messages section"&gt;
-&lt;h2&gt;Docutils System Messages&lt;/h2&gt;
-&lt;div class="system-message" id="id1"&gt;
-&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/plone-secrets-episode-3-collective-recaptcha-installation.rst&lt;/tt&gt;, line 12); &lt;em&gt;&lt;a href="#id2"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
-Unknown target name: &amp;quot;|image0|&amp;quot;.&lt;/div&gt;
-&lt;div class="system-message" id="id3"&gt;
-&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/plone-secrets-episode-3-collective-recaptcha-installation.rst&lt;/tt&gt;, line 90); &lt;em&gt;&lt;a href="#id4"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
-Unknown target name: &amp;quot;|image2|&amp;quot;.&lt;/div&gt;
-&lt;div class="system-message" id="id5"&gt;
-&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/plone-secrets-episode-3-collective-recaptcha-installation.rst&lt;/tt&gt;, line 97); &lt;em&gt;&lt;a href="#id6"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
-Unknown target name: &amp;quot;|image3|&amp;quot;.&lt;/div&gt;
-&lt;div class="system-message" id="id7"&gt;
-&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/plone-secrets-episode-3-collective-recaptcha-installation.rst&lt;/tt&gt;, line 249); &lt;em&gt;&lt;a href="#id8"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
-Unknown target name: &amp;quot;|image4|&amp;quot;.&lt;/div&gt;
-&lt;div class="system-message" id="id9"&gt;
-&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/plone-secrets-episode-3-collective-recaptcha-installation.rst&lt;/tt&gt;, line 298); &lt;em&gt;&lt;a href="#id10"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
-Unknown target name: &amp;quot;|image5|&amp;quot;.&lt;/div&gt;
+&lt;h2&gt;Notes&lt;/h2&gt;
+&lt;p&gt;¹ I'm pushing &amp;quot;reasonable&amp;quot; limits here for argument's sake. For those who know Plone already, a lot of what might seem impossible to newcomers is &amp;quot;reasonable&amp;quot; for them. No flames please. Unless you absolutely must.  ;-)&lt;/p&gt;
+&lt;p&gt;² I hear people call it that, though I don't know the details. I assume it &amp;quot;monkey patches&amp;quot; which template to use at render-time.&lt;/p&gt;
 &lt;/div&gt;
 </summary><category term="Plone"></category></entry><entry><title>Plone secrets: Episode 2 - Collective Python buildout</title><link href="http://blog.aclark.net//2011/07/06/plone-secrets-episode-2-collective-python-buildout/" rel="alternate"></link><updated>2011-07-06T12:45:00-04:00</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2011-07-06:/2011/07/06/plone-secrets-episode-2-collective-python-buildout/</id><summary type="html">&lt;p&gt;You know who uses the (Plone) Collective Python buildout? Me neither, because we don't have any good statistics on its use (that I know of).  If it were a Python package, we could at least &lt;a class="reference external" href="http://blog.aclark.net/2011/06/16/youre-so-vain-so-why-not-use-vanity/"&gt;count the number of times it has been downloaded&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;You know who should use it? Everyone.&lt;/p&gt;
@@ -6247,40 +6091,26 @@ eggs =
 Unknown target name: &amp;quot;|image0|&amp;quot;.&lt;/div&gt;
 &lt;/div&gt;
 </summary><category term="Plone"></category></entry><entry><title>Naked Plone Theme</title><link href="http://blog.aclark.net//2008/11/19/naked-plone-theme/" rel="alternate"></link><updated>2008-11-19T10:30:00-05:00</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2008-11-19:/2008/11/19/naked-plone-theme/</id><summary type="html">&lt;p&gt;I've needed this for quite some time, but I'm just getting around to shipping it. In addition to making it easy to 'turn off' a lot of default Plone css, js, etc., this product (discreetly) adds one of my all time favorite tweaks, the 'Advanced Setup' site action. (Limi, Martin, and Joel Burton will remember this one from 'back in the day' ;-) The action is disabled by default, but you can enable it by clicking 'visible' in portal_actions -&amp;gt; site actions. It simply adds a 'placeful' (string:manage_main) link to the ZMI, so you can access it easily, wherever you happen to be on the site.&lt;/p&gt;
-</summary><category term="Plone"></category></entry><entry><title>Products.todo 0.1</title><link href="http://blog.aclark.net//2008/11/13/productstodo-01/" rel="alternate"></link><updated>2008-11-13T08:07:00-05:00</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2008-11-13:/2008/11/13/productstodo-01/</id><summary type="html">&lt;p&gt;&lt;a href="#id1"&gt;&lt;span class="problematic" id="id2"&gt;`|image0|`_&lt;/span&gt;&lt;/a&gt;I needed a project to jump start my return to Plone after
-spending months organizing &lt;a class="reference external" href="http://plone.org/2008"&gt;Plone Conference 2008&lt;/a&gt;, and I had the idea
-that I wanted to, very quickly, see a product's development cycle
-through from start to finish, including:&lt;/p&gt;
+</summary><category term="Plone"></category></entry><entry><title>Products.todo 0.1</title><link href="http://blog.aclark.net//2008/11/13/productstodo-01/" rel="alternate"></link><updated>2008-11-13T08:07:00-05:00</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2008-11-13:/2008/11/13/productstodo-01/</id><summary type="html">&lt;p&gt;I needed a project to jump start my return to Plone after spending months organizing &lt;a class="reference external" href="http://plone.org/2008"&gt;Plone Conference 2008&lt;/a&gt;, and I had the idea that I wanted to, very quickly, see a product's development cycle through from start to finish, including:&lt;/p&gt;
 &lt;ol class="arabic simple"&gt;
 &lt;li&gt;Generating boilerplate buildout and product code with paster.&lt;/li&gt;
 &lt;li&gt;Develop some simple functionality for Plone.&lt;/li&gt;
 &lt;li&gt;Releasing to pypi.&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;Repeat steps 2 and 3 as needed or desired. That product is Products.todo
-(&lt;a class="reference external" href="http://pypi.python.org/pypi/Products.todo/"&gt;http://pypi.python.org/pypi/Products.todo/&lt;/a&gt;)&lt;/p&gt;
+&lt;p&gt;Repeat steps 2 and 3 as needed or desired. That product is Products.todo (&lt;a class="reference external" href="http://pypi.python.org/pypi/Products.todo/"&gt;http://pypi.python.org/pypi/Products.todo/&lt;/a&gt;)&lt;/p&gt;
 &lt;p&gt;I also wanted to:&lt;/p&gt;
 &lt;ul class="simple"&gt;
-&lt;li&gt;Include the buildout in the product so I could easily add buildbot (a
-la Tarek).&lt;/li&gt;
+&lt;li&gt;Include the buildout in the product so I could easily add buildbot (a la Tarek).&lt;/li&gt;
 &lt;li&gt;Write some tests for this code so I could practice TDD.&lt;/li&gt;
-&lt;li&gt;Release this product to new.plone.org, so we can finish the plone.org
-upgrade.&lt;/li&gt;
+&lt;li&gt;Release this product to new.plone.org, so we can finish the plone.org upgrade.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;I'm off to a good start I think as, while it took me a couple days (more
-than I expected), the product is now on pypi. (Thanks to
-&lt;a class="reference external" href="irc://irc.freenode.net#plone"&gt;irc://irc.freenode.net#plone&lt;/a&gt; and the product-developers list for the
-help!)&lt;/p&gt;
+&lt;p&gt;I'm off to a good start I think as, while it took me a couple days (more than I expected), the product is now on pypi. (Thanks to &lt;a class="reference external" href="irc://irc.freenode.net#plone"&gt;irc://irc.freenode.net#plone&lt;/a&gt; and the product-developers list for the help!)&lt;/p&gt;
 &lt;p&gt;Next steps:&lt;/p&gt;
 &lt;ul class="simple"&gt;
-&lt;li&gt;Get some feedback on the code. While this is a simple product, it was
-not as simple as I would have hoped to implement, and there are more
-features I would like to add.&lt;/li&gt;
+&lt;li&gt;Get some feedback on the code. While this is a simple product, it was not as simple as I would have hoped to implement, and there are more features I would like to add.&lt;/li&gt;
 &lt;li&gt;Edit my .pypirc and add new.plone.org and test a release.&lt;/li&gt;
 &lt;li&gt;Add buildbot.&lt;/li&gt;
-&lt;li&gt;Write some tests. I need some help here. How do you test a simple
-product like this? I understand that if you test the ability to add
-an item to a folder you are testing the framework not the product. So
-maybe I need to focus on testing just the features I add...&lt;/li&gt;
+&lt;li&gt;Write some tests. I need some help here. How do you test a simple product like this? I understand that if you test the ability to add an item to a folder you are testing the framework not the product. So maybe I need to focus on testing just the features I add...&lt;/li&gt;
 &lt;li&gt;Enjoy doing this in the future when plone.org supports pypi ;-)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;strong&gt;Update (11/15/2008):&lt;/strong&gt;&lt;/p&gt;
@@ -6289,12 +6119,6 @@ maybe I need to focus on testing just the features I add...&lt;/li&gt;
 &lt;li&gt;0.2 version on PyPI&lt;/li&gt;
 &lt;li&gt;Thanks for the comments everyone!&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class="system-messages section"&gt;
-&lt;h2&gt;Docutils System Messages&lt;/h2&gt;
-&lt;div class="system-message" id="id1"&gt;
-&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/products-todo-0-1.rst&lt;/tt&gt;, line 6); &lt;em&gt;&lt;a href="#id2"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
-Unknown target name: &amp;quot;|image0|&amp;quot;.&lt;/div&gt;
-&lt;/div&gt;
 </summary><category term="Plone"></category></entry><entry><title>September 2008 is the month of Plone.org</title><link href="http://blog.aclark.net//2008/09/02/september-2008-is-the-month-of-ploneorg/" rel="alternate"></link><updated>2008-09-02T17:15:00-04:00</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2008-09-02:/2008/09/02/september-2008-is-the-month-of-ploneorg/</id><summary type="html">&lt;p&gt;&lt;a class="reference external" href="http://plone.org/2008"&gt;Plone Conference 2008&lt;/a&gt; is fast approaching and in order to avoid
 embarrassment, disappointment, and a huge public outcry, I'd like to
 kick off &lt;em&gt;&amp;quot;September 2008: The Month Of Plone.org&amp;quot;&lt;/em&gt; (cue: daunting

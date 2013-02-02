@@ -47,38 +47,24 @@
                 By <a class="url fn" href="../../../../../author/aclark.html">aclark</a>
         </address>
         <p>In <a href="../../../../../category/blog.html">Blog</a>. </p>
-<p>tags: <a href="../../../../../tag/plone.html">Plone</a></p></footer><!-- /.post-info -->      <p><em>This just in from the production department: use Varnish. (And please
-forgive the heavily meme-laden approach to describing these techniques
-:-).)</em></p>
+<p>tags: <a href="../../../../../tag/plone.html">Plone</a></p></footer><!-- /.post-info -->      <p><em>This just in from the production department: use Varnish. (And please forgive the heavily meme-laden approach to describing these techniques :-).)</em></p>
 <div class="section" id="cache-all-the-hosts">
 <h2>Cache ALL the hosts</h2>
-<p><a href="#id1"><span class="problematic" id="id2">`|image0|`_</span></a>Our ability to use Varnish in production is no secret by
-now, or at least it shouldn't be. What is often less clear is exactly
-how to use it. One way I like[1], is to run Varnish on your public IP
-port 80 and make Apache listen on your private IP port 80. Then proxy
-from Varnish to Apache and enjoy easy caching goodness on all your
-virtual hosts in Apache.</p>
+<p>Our ability to use Varnish in production is no secret by now, or at least it shouldn't be. What is often less clear is exactly how to use it. One way I like[1], is to run Varnish on your public IP port 80 and make Apache listen on your private IP port 80. Then proxy from Varnish to Apache and enjoy easy caching goodness on all your virtual hosts in Apache.</p>
 </div>
 <div class="section" id="configuration">
 <h2>Configuration</h2>
-<p>This should require less than five minutes of down time to implement.
-First, configure the appropriate settings. (Well, first install Apache
-and Varnish if you haven't already: `aptitude install varnish apache2`
-on Ubuntu Linux[0].)</p>
+<p>This should require less than five minutes of down time to implement. First, configure the appropriate settings. (Well, first install Apache and Varnish if you haven't already: `aptitude install varnish apache2` on Ubuntu Linux[0].)</p>
 <div class="section" id="varnish">
 <h3>Varnish</h3>
-<p>To modify the listen IP address and port, we typically edit a file like
-<em>/etc/default/varnish</em> (in Ubuntu). However you do it, configure the
-equivalent of the following on your system:</p>
+<p>To modify the listen IP address and port, we typically edit a file like <em>/etc/default/varnish</em> (in Ubuntu). However you do it, configure the equivalent of the following on your system:</p>
 <pre class="literal-block">
 DAEMON_OPTS=&quot;-a 174.143.252.11:80
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -T localhost:6082
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -f /etc/varnish/default.vcl
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -s malloc,256m&quot;
 </pre>
-<p>This environment variable is then passed to <em>varnishd</em> on the command
-line. Next, pass traffic to Apache like so (in
-<em>/etc/varnish/default.vcl</em> on Ubuntu):</p>
+<p>This environment variable is then passed to <em>varnishd</em> on the command line. Next, pass traffic to Apache like so (in <em>/etc/varnish/default.vcl</em> on Ubuntu):</p>
 <pre class="literal-block">
 backend default {
  .host = &quot;127.0.0.1&quot;;
@@ -86,14 +72,11 @@ backend default {
  }
 </pre>
 <p>Now on to Apache.</p>
-<p><strong>*Please note that the syntax above is for Varnish 3.x and the syntax
-has (annoyingly) changed from 2.x to 3.x.*</strong></p>
+<p><strong>*Please note that the syntax above is for Varnish 3.x and the syntax has (annoyingly) changed from 2.x to 3.x.*</strong></p>
 </div>
 <div class="section" id="apache">
 <h3>Apache</h3>
-<p>The Apache part is a bit simpler. You just need to change the listen
-port (on Ubuntu this is done in <em>/etc/apache2/ports.conf</em>), typically
-from something like:</p>
+<p>The Apache part is a bit simpler. You just need to change the listen port (on Ubuntu this is done in <em>/etc/apache2/ports.conf</em>), typically from something like:</p>
 <pre class="literal-block">
 Listen *:80
 </pre>
@@ -105,11 +88,7 @@ Listen 127.0.0.1:80
 </div>
 <div class="section" id="restart-all-the-services">
 <h2>Restart ALL the services</h2>
-<p>Now restart both services. If all goes well you shouldn't notice any
-difference, except better performance, and when you make a website
-change and need to clear the cache[2]. For this, I rely on telnetting to
-the varnish port and issuing the `ban.url` command (formerly
-`url.purge` in 2.x):</p>
+<p>Now restart both services. If all goes well you shouldn't notice any difference, except better performance, and when you make a website change and need to clear the cache[2]. For this, I rely on telnetting to the varnish port and issuing the `ban.url` command (formerly `url.purge` in 2.x):</p>
 <pre class="literal-block">
 $ telnet localhost 6082
 Trying 127.0.0.1...
@@ -126,16 +105,11 @@ Type 'quit' to close CLI session.ban.url /
 </div>
 <div class="section" id="cache-all-the-disks">
 <h2>Cache ALL the disks</h2>
-<p>This site has Varnish and Apache configured as described in this
-article. It also has disk caching in Apache enabled, thanks to Elizabeth
-Leddy's article:</p>
+<p>This site has Varnish and Apache configured as described in this article. It also has disk caching in Apache enabled, thanks to Elizabeth Leddy's article:</p>
 <ul class="simple">
 <li><a class="reference external" href="http://plonechix.blogspot.com/2011/08/10-minute-caching-with-apache.html">http://plonechix.blogspot.com/2011/08/10-minute-caching-with-apache.html</a></li>
 </ul>
-<p>As a result, it's <strong>PEPPY AS THE DICKENS™</strong> on a 512MB &quot;slice&quot; (Cloud
-server) from Rackspace Cloud. And now you know yet another &quot;Plone
-secret&quot;. Now go make your Plone sites faster, and let me know how it
-goes in the comments section below.</p>
+<p>As a result, it's <strong>PEPPY AS THE DICKENS™</strong> on a 512MB &quot;slice&quot; (Cloud server) from Rackspace Cloud. And now you know yet another &quot;Plone secret&quot;. Now go make your Plone sites faster, and let me know how it goes in the comments section below.</p>
 </div>
 <div class="section" id="notes">
 <h2>Notes</h2>
@@ -145,12 +119,6 @@ Plone; I found it odd at the time but years later it makes perfect
 sense.</p>
 <p>[2] Ideally you'd configure this in p.a.caching, but I've not been able
 to stomach this yet.</p>
-</div>
-<div class="system-messages section">
-<h2>Docutils System Messages</h2>
-<div class="system-message" id="id1">
-<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">/Users/aclark/Developer/blog/content/plone-secrets-episode-4-varnish-in-front.rst</tt>, line 13); <em><a href="#id2">backlink</a></em></p>
-Unknown target name: &quot;|image0|&quot;.</div>
 </div>
 
     </div><!-- /.entry-content -->
