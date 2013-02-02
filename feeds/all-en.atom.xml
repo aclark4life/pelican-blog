@@ -3357,44 +3357,24 @@ buildout&lt;/a&gt;.&lt;/p&gt;
 &lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/plone-secrets-episode-2-collective-python-buildout.rst&lt;/tt&gt;, line 23); &lt;em&gt;&lt;a href="#id2"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 Unknown target name: &amp;quot;|image0|&amp;quot;.&lt;/div&gt;
 &lt;/div&gt;
-</summary><category term="Plone"></category><category term="Python"></category></entry><entry><title>Plone secrets: Episode 1 — Site actions contact link</title><link href="http://blog.aclark.net//2011/06/20/plone-secrets-episode-1-site-actions-contact-link/" rel="alternate"></link><updated>2011-06-20T12:31:00-04:00</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2011-06-20:/2011/06/20/plone-secrets-episode-1-site-actions-contact-link/</id><summary type="html">&lt;p&gt;Today I am introducing a new category of blog entry called &lt;strong&gt;Plone
-secrets&lt;/strong&gt;.&lt;/p&gt;
-&lt;p&gt;The goal is to describe a set of developer/integrator techniques that
-are extremely valuable, but completely non-obvious to newcomers.&lt;/p&gt;
-&lt;p&gt;The first episode, called: &lt;strong&gt;Site actions contact link&lt;/strong&gt;, is really just
-a technique that involves the Zope Management Interface, Plone
-interface, file system, Diazo, and quite possibly a few other
-technologies. This is no secret, but certainly convoluted. Noticeably
-absent is anything Python-related, unless you count the
-`plonetheme.aclarknet` namespace package.&lt;/p&gt;
-&lt;p&gt;We begin by pointing your attention to the new &amp;quot;Contact us today!&amp;quot; link
-on aclark.net.&lt;/p&gt;
-&lt;p&gt;&lt;a href="#id1"&gt;&lt;span class="problematic" id="id2"&gt;`|image0|`_&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;This is a gratuitous rip off of any Plone firm's website that has
-contact info in the upper right of their site (e.g.
-&lt;a class="reference external" href="http://sixfeetup.com"&gt;http://sixfeetup.com&lt;/a&gt;).&lt;/p&gt;
-&lt;p&gt;I knew I wanted to do &amp;quot;my version&amp;quot; of adding contact info to the upper
-right, and I think I've seen someone use this exact technique somewhere
-else (I would credit them if I could remember.)&lt;/p&gt;
-&lt;p&gt;Long story short: Plone 4's sunburst theme has a nice JavaScript drop
-down menu for the personal tools menu. As long as I was willing to give
-up a link to the login form (which I don't like displaying on public
-sites anyway), I could use this JavaScript menu to quickly and easily
-provide a link to my contact form.&lt;/p&gt;
+</summary><category term="Plone"></category><category term="Python"></category></entry><entry><title>Plone secrets: Episode 1 — Site actions contact link</title><link href="http://blog.aclark.net//2011/06/20/plone-secrets-episode-1-site-actions-contact-link/" rel="alternate"></link><updated>2011-06-20T12:31:00-04:00</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2011-06-20:/2011/06/20/plone-secrets-episode-1-site-actions-contact-link/</id><summary type="html">&lt;p&gt;Today I am introducing a new category of blog entry called &lt;strong&gt;Plone secrets&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;The goal is to describe a set of developer/integrator techniques that are extremely valuable, but completely non-obvious to newcomers.&lt;/p&gt;
+&lt;p&gt;The first episode, called: &lt;strong&gt;Site actions contact link&lt;/strong&gt;, is really just a technique that involves the Zope Management Interface, Plone interface, file system, Diazo, and quite possibly a few other technologies. This is no secret, but certainly convoluted. Noticeably absent is anything Python-related, unless you count the `plonetheme.aclarknet` namespace package.&lt;/p&gt;
+&lt;p&gt;We begin by pointing your attention to the new &amp;quot;Contact us today!&amp;quot; link on aclark.net.&lt;/p&gt;
+&lt;p&gt;This is a gratuitous rip off of any Plone firm's website that has contact info in the upper right of their site (e.g.  &lt;a class="reference external" href="http://sixfeetup.com"&gt;http://sixfeetup.com&lt;/a&gt;).&lt;/p&gt;
+&lt;p&gt;I knew I wanted to do &amp;quot;my version&amp;quot; of adding contact info to the upper right, and I think I've seen someone use this exact technique somewhere else (I would credit them if I could remember.)&lt;/p&gt;
+&lt;p&gt;Long story short: Plone 4's sunburst theme has a nice JavaScript drop down menu for the personal tools menu. As long as I was willing to give up a link to the login form (which I don't like displaying on public sites anyway), I could use this JavaScript menu to quickly and easily provide a link to my contact form.&lt;/p&gt;
 &lt;p&gt;It &amp;quot;only&amp;quot; required the following:&lt;/p&gt;
 &lt;div class="section" id="step-1"&gt;
 &lt;h2&gt;Step 1&lt;/h2&gt;
 &lt;ul class="simple"&gt;
-&lt;li&gt;Get the personal tools menu to show up in my site. This was
-accomplished via the following Diazo rule:&lt;/li&gt;
+&lt;li&gt;Get the personal tools menu to show up in my site. This was accomplished via the following Diazo rule:&lt;/li&gt;
 &lt;/ul&gt;
 &lt;pre class="literal-block"&gt;
 &amp;lt;prepend content='//*[&amp;#64;id=&amp;quot;portal-personaltools&amp;quot;]'
      theme='//*[&amp;#64;id=&amp;quot;search&amp;quot;]' /&amp;gt;
 &lt;/pre&gt;
-&lt;p&gt;Note also that I am using the early-supported XPath syntax, but the more
-friendly CSS syntax is supported now too. See &lt;a class="reference external" href="http://diazo.org"&gt;http://diazo.org&lt;/a&gt; for
-more information.&lt;/p&gt;
+&lt;p&gt;Note also that I am using the early-supported XPath syntax, but the more friendly CSS syntax is supported now too. See &lt;a class="reference external" href="http://diazo.org"&gt;http://diazo.org&lt;/a&gt; for more information.&lt;/p&gt;
 &lt;p&gt;For the full set of Diazo rules for this site, see here:&lt;/p&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;Plone:
@@ -3405,34 +3385,18 @@ more information.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="step-2"&gt;
 &lt;h2&gt;Step 2&lt;/h2&gt;
-&lt;p&gt;Next, we need to create and display only the &amp;quot;Contact us today!&amp;quot; link,
-which also involves disabling the &amp;quot;Log in&amp;quot; link. These tricks can be
-performed in the Zope Management Interface via the portal_actions tool.&lt;/p&gt;
-&lt;p&gt;First, browse to `Site Setup -&amp;gt; Zope Management Interface -&amp;gt;
-portal_actions -&amp;gt; user` and create a `contact` action:&lt;/p&gt;
-&lt;p&gt;&lt;a href="#id3"&gt;&lt;span class="problematic" id="id4"&gt;`|image1|`_&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Fill in the appropriate fields and click `Save changes`:&lt;/p&gt;
-&lt;p&gt;&lt;a href="#id5"&gt;&lt;span class="problematic" id="id6"&gt;`|image2|`_&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Finally, hide the `Log in` action by unchecking `Visible` and
-clicking `Save changes`:&lt;/p&gt;
-&lt;p&gt;&lt;a href="#id7"&gt;&lt;span class="problematic" id="id8"&gt;`|image3|`_&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Next, we need to create and display only the &amp;quot;Contact us today!&amp;quot; link, which also involves disabling the &amp;quot;Log in&amp;quot; link. These tricks can be performed in the Zope Management Interface via the portal_actions tool.&lt;/p&gt;
+&lt;p&gt;First, browse to `Site Setup -&amp;gt; Zope Management Interface -&amp;gt; portal_actions -&amp;gt; user` and create a `contact` action.&lt;/p&gt;
+&lt;p&gt;Fill in the appropriate fields and click `Save changes`.&lt;/p&gt;
+&lt;p&gt;Finally, hide the `Log in` action by unchecking `Visible` and clicking `Save changes`.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="step-3"&gt;
 &lt;h2&gt;Step 3&lt;/h2&gt;
-&lt;p&gt;Lastly and most importantly, persist your work on the file system
-outside of the database. You don't want to be forced to recreate this
+&lt;p&gt;Lastly and most importantly, persist your work on the file system outside of the database. You don't want to be forced to recreate this
 site action ever again through the web.&lt;/p&gt;
-&lt;p&gt;This involves exporting the action via portal setup, and adding it to
-your package's GenericSetup profile. Browse to `Site Setup -&amp;gt; Zope
-Management Interface -&amp;gt; portal_setup -&amp;gt; Export. Check the `Action
-providers` step:&lt;/p&gt;
-&lt;p&gt;&lt;a href="#id9"&gt;&lt;span class="problematic" id="id10"&gt;`|image4|`_&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Then scroll all the way down to bottom and click `Export selected
-steps`:&lt;/p&gt;
-&lt;p&gt;&lt;a href="#id11"&gt;&lt;span class="problematic" id="id12"&gt;`|image5|`_&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;This will give you a tarred/gzipped file that when extracted will give
-you an `actions.xml` file. Edit this file to include only the action
-you created, like so:&lt;/p&gt;
+&lt;p&gt;This involves exporting the action via portal setup, and adding it to your package's GenericSetup profile. Browse to `Site Setup -&amp;gt; Zope Management Interface -&amp;gt; portal_setup -&amp;gt; Export. Check the `Action providers` step.&lt;/p&gt;
+&lt;p&gt;Then scroll all the way down to bottom and click `Export selected steps`.&lt;/p&gt;
+&lt;p&gt;This will give you a tarred/gzipped file that when extracted will give you an `actions.xml` file. Edit this file to include only the action you created, like so:&lt;/p&gt;
 &lt;pre class="literal-block"&gt;
 &amp;lt;?xml version=&amp;quot;1.0&amp;quot;?&amp;gt; &amp;lt;/object&amp;gt;
 &amp;lt;/object&amp;gt;
@@ -3441,8 +3405,7 @@ you created, like so:&lt;/p&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;&lt;a class="reference external" href="https://github.com/ACLARKNET/aclark_net_website/blob/master/src/plonetheme.aclarknet/plonetheme/aclarknet/profiles/default/actions.xml"&gt;https://github.com/ACLARKNET/aclark_net_website/blob/master/src/plonetheme.aclarknet/plonetheme/aclarknet/profiles/default/actions.xml&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;You also have to register a default profile in your package with ZCML
-(more technology!), like so:&lt;/p&gt;
+&lt;p&gt;You also have to register a default profile in your package with ZCML (more technology!), like so:&lt;/p&gt;
 &lt;pre class="literal-block"&gt;
 &amp;lt;genericsetup:registerProfile
  name=&amp;quot;default&amp;quot;
@@ -3459,11 +3422,7 @@ you created, like so:&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="step-4"&gt;
 &lt;h2&gt;Step 4&lt;/h2&gt;
-&lt;p&gt;Style the results. This is more like Step 3.5, but still important.
-Because we are doing Diazo theming, styling is easy. It's just a matter
-of editing the style sheet on the file system like you would expect to
-do in any web project. Of course, you need to know a bit about CSS and
-the CSS ids that Plone uses:&lt;/p&gt;
+&lt;p&gt;Style the results. This is more like Step 3.5, but still important.  Because we are doing Diazo theming, styling is easy. It's just a matter of editing the style sheet on the file system like you would expect to do in any web project. Of course, you need to know a bit about CSS and the CSS ids that Plone uses:&lt;/p&gt;
 &lt;pre class="literal-block"&gt;
 #personaltools-contact {
 &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;color: #AA001F;
@@ -3480,57 +3439,12 @@ the CSS ids that Plone uses:&lt;/p&gt;
 &lt;li&gt;&lt;a class="reference external" href="https://github.com/ACLARKNET/aclark_net_website/blob/master/src/plonetheme.aclarknet/plonetheme/aclarknet/theme/aclarknet/static/css/plone.css#L519"&gt;https://github.com/ACLARKNET/aclark_net_website/blob/master/src/plonetheme.aclarknet/plonetheme/aclarknet/theme/aclarknet/static/css/plone.css#L519&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;And of course, these styles apply to the public facing site.&lt;/p&gt;
-&lt;p&gt;&lt;a href="#id13"&gt;&lt;span class="problematic" id="id14"&gt;`|image6|`_&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="results"&gt;
 &lt;h2&gt;Results&lt;/h2&gt;
-&lt;p&gt;On a new Plone site, the option to install this customization will look
-like so:&lt;/p&gt;
-&lt;p&gt;&lt;a href="#id15"&gt;&lt;span class="problematic" id="id16"&gt;`|image7|`_&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;And the action will look like this, when you are logged in (else you
-will see only the &amp;quot;Contact us today!&amp;quot; link):&lt;/p&gt;
-&lt;p&gt;&lt;a href="#id17"&gt;&lt;span class="problematic" id="id18"&gt;`|image8|`_&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;That's it!&lt;/p&gt;
-&lt;p&gt;I hope this post captures the essence of why I think many folks may be
-intimidated by Plone: in more cases than not, one must understand way
-too many technologies in order to get the job done. I hope to continue
-to demystify Plone through a series of &amp;quot;Plone secrets&amp;quot; posts, and
-ultimately I think the Plone project hopes to resolve these issues once
-and for all, however long that takes.&lt;/p&gt;
-&lt;p&gt;I will speculate that long term Plone will move away from Zope 2, and
-everything from the Zope Management Interface that was useful will be
-recreated in Plone (i.e. ported). Or rather, that is what I would like
-to see happen.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="system-messages section"&gt;
-&lt;h2&gt;Docutils System Messages&lt;/h2&gt;
-&lt;div class="system-message" id="id1"&gt;
-&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/plone-secrets-episode-1-site-actions-contact-link.rst&lt;/tt&gt;, line 22); &lt;em&gt;&lt;a href="#id2"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
-Unknown target name: &amp;quot;|image0|&amp;quot;.&lt;/div&gt;
-&lt;div class="system-message" id="id3"&gt;
-&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/plone-secrets-episode-1-site-actions-contact-link.rst&lt;/tt&gt;, line 72); &lt;em&gt;&lt;a href="#id4"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
-Unknown target name: &amp;quot;|image1|&amp;quot;.&lt;/div&gt;
-&lt;div class="system-message" id="id5"&gt;
-&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/plone-secrets-episode-1-site-actions-contact-link.rst&lt;/tt&gt;, line 76); &lt;em&gt;&lt;a href="#id6"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
-Unknown target name: &amp;quot;|image2|&amp;quot;.&lt;/div&gt;
-&lt;div class="system-message" id="id7"&gt;
-&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/plone-secrets-episode-1-site-actions-contact-link.rst&lt;/tt&gt;, line 81); &lt;em&gt;&lt;a href="#id8"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
-Unknown target name: &amp;quot;|image3|&amp;quot;.&lt;/div&gt;
-&lt;div class="system-message" id="id9"&gt;
-&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/plone-secrets-episode-1-site-actions-contact-link.rst&lt;/tt&gt;, line 95); &lt;em&gt;&lt;a href="#id10"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
-Unknown target name: &amp;quot;|image4|&amp;quot;.&lt;/div&gt;
-&lt;div class="system-message" id="id11"&gt;
-&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/plone-secrets-episode-1-site-actions-contact-link.rst&lt;/tt&gt;, line 100); &lt;em&gt;&lt;a href="#id12"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
-Unknown target name: &amp;quot;|image5|&amp;quot;.&lt;/div&gt;
-&lt;div class="system-message" id="id13"&gt;
-&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/plone-secrets-episode-1-site-actions-contact-link.rst&lt;/tt&gt;, line 163); &lt;em&gt;&lt;a href="#id14"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
-Unknown target name: &amp;quot;|image6|&amp;quot;.&lt;/div&gt;
-&lt;div class="system-message" id="id15"&gt;
-&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/plone-secrets-episode-1-site-actions-contact-link.rst&lt;/tt&gt;, line 171); &lt;em&gt;&lt;a href="#id16"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
-Unknown target name: &amp;quot;|image7|&amp;quot;.&lt;/div&gt;
-&lt;div class="system-message" id="id17"&gt;
-&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/plone-secrets-episode-1-site-actions-contact-link.rst&lt;/tt&gt;, line 176); &lt;em&gt;&lt;a href="#id18"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
-Unknown target name: &amp;quot;|image8|&amp;quot;.&lt;/div&gt;
+&lt;p&gt;I hope this post captures the essence of why I think many folks may be intimidated by Plone: in more cases than not, one must understand way too many technologies in order to get the job done. I hope to continue to demystify Plone through a series of &amp;quot;Plone secrets&amp;quot; posts, and ultimately I think the Plone project hopes to resolve these issues once and for all, however long that takes.&lt;/p&gt;
+&lt;p&gt;I will speculate that long term Plone will move away from Zope 2, and everything from the Zope Management Interface that was useful will be recreated in Plone (i.e. ported). Or rather, that is what I would like to see happen.&lt;/p&gt;
 &lt;/div&gt;
 </summary><category term="Plone"></category></entry><entry><title>You&amp;#039;re so vain, so why not use Vanity?</title><link href="http://blog.aclark.net//2011/06/16/you039re-so-vain-so-why-not-use-vanity/" rel="alternate"></link><updated>2011-06-16T12:01:00-04:00</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2011-06-16:/2011/06/16/you039re-so-vain-so-why-not-use-vanity/</id><summary type="html">&lt;p&gt;A few months ago I created a package called &lt;strong&gt;Vanity&lt;/strong&gt;[0] that
 provides easy access to package download statistics from &lt;strong&gt;PyPI&lt;/strong&gt;. You

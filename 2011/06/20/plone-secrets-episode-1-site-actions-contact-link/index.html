@@ -47,44 +47,24 @@
                 By <a class="url fn" href="../../../../../author/aclark.html">aclark</a>
         </address>
         <p>In <a href="../../../../../category/blog.html">Blog</a>. </p>
-<p>tags: <a href="../../../../../tag/plone.html">Plone</a></p></footer><!-- /.post-info -->      <p>Today I am introducing a new category of blog entry called <strong>Plone
-secrets</strong>.</p>
-<p>The goal is to describe a set of developer/integrator techniques that
-are extremely valuable, but completely non-obvious to newcomers.</p>
-<p>The first episode, called: <strong>Site actions contact link</strong>, is really just
-a technique that involves the Zope Management Interface, Plone
-interface, file system, Diazo, and quite possibly a few other
-technologies. This is no secret, but certainly convoluted. Noticeably
-absent is anything Python-related, unless you count the
-`plonetheme.aclarknet` namespace package.</p>
-<p>We begin by pointing your attention to the new &quot;Contact us today!&quot; link
-on aclark.net.</p>
-<p><a href="#id1"><span class="problematic" id="id2">`|image0|`_</span></a></p>
-<p>This is a gratuitous rip off of any Plone firm's website that has
-contact info in the upper right of their site (e.g.
-<a class="reference external" href="http://sixfeetup.com">http://sixfeetup.com</a>).</p>
-<p>I knew I wanted to do &quot;my version&quot; of adding contact info to the upper
-right, and I think I've seen someone use this exact technique somewhere
-else (I would credit them if I could remember.)</p>
-<p>Long story short: Plone 4's sunburst theme has a nice JavaScript drop
-down menu for the personal tools menu. As long as I was willing to give
-up a link to the login form (which I don't like displaying on public
-sites anyway), I could use this JavaScript menu to quickly and easily
-provide a link to my contact form.</p>
+<p>tags: <a href="../../../../../tag/plone.html">Plone</a></p></footer><!-- /.post-info -->      <p>Today I am introducing a new category of blog entry called <strong>Plone secrets</strong>.</p>
+<p>The goal is to describe a set of developer/integrator techniques that are extremely valuable, but completely non-obvious to newcomers.</p>
+<p>The first episode, called: <strong>Site actions contact link</strong>, is really just a technique that involves the Zope Management Interface, Plone interface, file system, Diazo, and quite possibly a few other technologies. This is no secret, but certainly convoluted. Noticeably absent is anything Python-related, unless you count the `plonetheme.aclarknet` namespace package.</p>
+<p>We begin by pointing your attention to the new &quot;Contact us today!&quot; link on aclark.net.</p>
+<p>This is a gratuitous rip off of any Plone firm's website that has contact info in the upper right of their site (e.g.  <a class="reference external" href="http://sixfeetup.com">http://sixfeetup.com</a>).</p>
+<p>I knew I wanted to do &quot;my version&quot; of adding contact info to the upper right, and I think I've seen someone use this exact technique somewhere else (I would credit them if I could remember.)</p>
+<p>Long story short: Plone 4's sunburst theme has a nice JavaScript drop down menu for the personal tools menu. As long as I was willing to give up a link to the login form (which I don't like displaying on public sites anyway), I could use this JavaScript menu to quickly and easily provide a link to my contact form.</p>
 <p>It &quot;only&quot; required the following:</p>
 <div class="section" id="step-1">
 <h2>Step 1</h2>
 <ul class="simple">
-<li>Get the personal tools menu to show up in my site. This was
-accomplished via the following Diazo rule:</li>
+<li>Get the personal tools menu to show up in my site. This was accomplished via the following Diazo rule:</li>
 </ul>
 <pre class="literal-block">
 &lt;prepend content='//*[&#64;id=&quot;portal-personaltools&quot;]'
      theme='//*[&#64;id=&quot;search&quot;]' /&gt;
 </pre>
-<p>Note also that I am using the early-supported XPath syntax, but the more
-friendly CSS syntax is supported now too. See <a class="reference external" href="http://diazo.org">http://diazo.org</a> for
-more information.</p>
+<p>Note also that I am using the early-supported XPath syntax, but the more friendly CSS syntax is supported now too. See <a class="reference external" href="http://diazo.org">http://diazo.org</a> for more information.</p>
 <p>For the full set of Diazo rules for this site, see here:</p>
 <ul class="simple">
 <li>Plone:
@@ -95,34 +75,18 @@ more information.</p>
 </div>
 <div class="section" id="step-2">
 <h2>Step 2</h2>
-<p>Next, we need to create and display only the &quot;Contact us today!&quot; link,
-which also involves disabling the &quot;Log in&quot; link. These tricks can be
-performed in the Zope Management Interface via the portal_actions tool.</p>
-<p>First, browse to `Site Setup -&gt; Zope Management Interface -&gt;
-portal_actions -&gt; user` and create a `contact` action:</p>
-<p><a href="#id3"><span class="problematic" id="id4">`|image1|`_</span></a></p>
-<p>Fill in the appropriate fields and click `Save changes`:</p>
-<p><a href="#id5"><span class="problematic" id="id6">`|image2|`_</span></a></p>
-<p>Finally, hide the `Log in` action by unchecking `Visible` and
-clicking `Save changes`:</p>
-<p><a href="#id7"><span class="problematic" id="id8">`|image3|`_</span></a></p>
+<p>Next, we need to create and display only the &quot;Contact us today!&quot; link, which also involves disabling the &quot;Log in&quot; link. These tricks can be performed in the Zope Management Interface via the portal_actions tool.</p>
+<p>First, browse to `Site Setup -&gt; Zope Management Interface -&gt; portal_actions -&gt; user` and create a `contact` action.</p>
+<p>Fill in the appropriate fields and click `Save changes`.</p>
+<p>Finally, hide the `Log in` action by unchecking `Visible` and clicking `Save changes`.</p>
 </div>
 <div class="section" id="step-3">
 <h2>Step 3</h2>
-<p>Lastly and most importantly, persist your work on the file system
-outside of the database. You don't want to be forced to recreate this
+<p>Lastly and most importantly, persist your work on the file system outside of the database. You don't want to be forced to recreate this
 site action ever again through the web.</p>
-<p>This involves exporting the action via portal setup, and adding it to
-your package's GenericSetup profile. Browse to `Site Setup -&gt; Zope
-Management Interface -&gt; portal_setup -&gt; Export. Check the `Action
-providers` step:</p>
-<p><a href="#id9"><span class="problematic" id="id10">`|image4|`_</span></a></p>
-<p>Then scroll all the way down to bottom and click `Export selected
-steps`:</p>
-<p><a href="#id11"><span class="problematic" id="id12">`|image5|`_</span></a></p>
-<p>This will give you a tarred/gzipped file that when extracted will give
-you an `actions.xml` file. Edit this file to include only the action
-you created, like so:</p>
+<p>This involves exporting the action via portal setup, and adding it to your package's GenericSetup profile. Browse to `Site Setup -&gt; Zope Management Interface -&gt; portal_setup -&gt; Export. Check the `Action providers` step.</p>
+<p>Then scroll all the way down to bottom and click `Export selected steps`.</p>
+<p>This will give you a tarred/gzipped file that when extracted will give you an `actions.xml` file. Edit this file to include only the action you created, like so:</p>
 <pre class="literal-block">
 &lt;?xml version=&quot;1.0&quot;?&gt; &lt;/object&gt;
 &lt;/object&gt;
@@ -131,8 +95,7 @@ you created, like so:</p>
 <ul class="simple">
 <li><a class="reference external" href="https://github.com/ACLARKNET/aclark_net_website/blob/master/src/plonetheme.aclarknet/plonetheme/aclarknet/profiles/default/actions.xml">https://github.com/ACLARKNET/aclark_net_website/blob/master/src/plonetheme.aclarknet/plonetheme/aclarknet/profiles/default/actions.xml</a></li>
 </ul>
-<p>You also have to register a default profile in your package with ZCML
-(more technology!), like so:</p>
+<p>You also have to register a default profile in your package with ZCML (more technology!), like so:</p>
 <pre class="literal-block">
 &lt;genericsetup:registerProfile
  name=&quot;default&quot;
@@ -149,11 +112,7 @@ you created, like so:</p>
 </div>
 <div class="section" id="step-4">
 <h2>Step 4</h2>
-<p>Style the results. This is more like Step 3.5, but still important.
-Because we are doing Diazo theming, styling is easy. It's just a matter
-of editing the style sheet on the file system like you would expect to
-do in any web project. Of course, you need to know a bit about CSS and
-the CSS ids that Plone uses:</p>
+<p>Style the results. This is more like Step 3.5, but still important.  Because we are doing Diazo theming, styling is easy. It's just a matter of editing the style sheet on the file system like you would expect to do in any web project. Of course, you need to know a bit about CSS and the CSS ids that Plone uses:</p>
 <pre class="literal-block">
 #personaltools-contact {
 &nbsp;&nbsp;&nbsp;&nbsp;color: #AA001F;
@@ -170,57 +129,12 @@ the CSS ids that Plone uses:</p>
 <li><a class="reference external" href="https://github.com/ACLARKNET/aclark_net_website/blob/master/src/plonetheme.aclarknet/plonetheme/aclarknet/theme/aclarknet/static/css/plone.css#L519">https://github.com/ACLARKNET/aclark_net_website/blob/master/src/plonetheme.aclarknet/plonetheme/aclarknet/theme/aclarknet/static/css/plone.css#L519</a></li>
 </ul>
 <p>And of course, these styles apply to the public facing site.</p>
-<p><a href="#id13"><span class="problematic" id="id14">`|image6|`_</span></a></p>
 </div>
 <div class="section" id="results">
 <h2>Results</h2>
-<p>On a new Plone site, the option to install this customization will look
-like so:</p>
-<p><a href="#id15"><span class="problematic" id="id16">`|image7|`_</span></a></p>
-<p>And the action will look like this, when you are logged in (else you
-will see only the &quot;Contact us today!&quot; link):</p>
-<p><a href="#id17"><span class="problematic" id="id18">`|image8|`_</span></a></p>
 <p>That's it!</p>
-<p>I hope this post captures the essence of why I think many folks may be
-intimidated by Plone: in more cases than not, one must understand way
-too many technologies in order to get the job done. I hope to continue
-to demystify Plone through a series of &quot;Plone secrets&quot; posts, and
-ultimately I think the Plone project hopes to resolve these issues once
-and for all, however long that takes.</p>
-<p>I will speculate that long term Plone will move away from Zope 2, and
-everything from the Zope Management Interface that was useful will be
-recreated in Plone (i.e. ported). Or rather, that is what I would like
-to see happen.</p>
-</div>
-<div class="system-messages section">
-<h2>Docutils System Messages</h2>
-<div class="system-message" id="id1">
-<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">/Users/aclark/Developer/blog/content/plone-secrets-episode-1-site-actions-contact-link.rst</tt>, line 22); <em><a href="#id2">backlink</a></em></p>
-Unknown target name: &quot;|image0|&quot;.</div>
-<div class="system-message" id="id3">
-<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">/Users/aclark/Developer/blog/content/plone-secrets-episode-1-site-actions-contact-link.rst</tt>, line 72); <em><a href="#id4">backlink</a></em></p>
-Unknown target name: &quot;|image1|&quot;.</div>
-<div class="system-message" id="id5">
-<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">/Users/aclark/Developer/blog/content/plone-secrets-episode-1-site-actions-contact-link.rst</tt>, line 76); <em><a href="#id6">backlink</a></em></p>
-Unknown target name: &quot;|image2|&quot;.</div>
-<div class="system-message" id="id7">
-<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">/Users/aclark/Developer/blog/content/plone-secrets-episode-1-site-actions-contact-link.rst</tt>, line 81); <em><a href="#id8">backlink</a></em></p>
-Unknown target name: &quot;|image3|&quot;.</div>
-<div class="system-message" id="id9">
-<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">/Users/aclark/Developer/blog/content/plone-secrets-episode-1-site-actions-contact-link.rst</tt>, line 95); <em><a href="#id10">backlink</a></em></p>
-Unknown target name: &quot;|image4|&quot;.</div>
-<div class="system-message" id="id11">
-<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">/Users/aclark/Developer/blog/content/plone-secrets-episode-1-site-actions-contact-link.rst</tt>, line 100); <em><a href="#id12">backlink</a></em></p>
-Unknown target name: &quot;|image5|&quot;.</div>
-<div class="system-message" id="id13">
-<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">/Users/aclark/Developer/blog/content/plone-secrets-episode-1-site-actions-contact-link.rst</tt>, line 163); <em><a href="#id14">backlink</a></em></p>
-Unknown target name: &quot;|image6|&quot;.</div>
-<div class="system-message" id="id15">
-<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">/Users/aclark/Developer/blog/content/plone-secrets-episode-1-site-actions-contact-link.rst</tt>, line 171); <em><a href="#id16">backlink</a></em></p>
-Unknown target name: &quot;|image7|&quot;.</div>
-<div class="system-message" id="id17">
-<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">/Users/aclark/Developer/blog/content/plone-secrets-episode-1-site-actions-contact-link.rst</tt>, line 176); <em><a href="#id18">backlink</a></em></p>
-Unknown target name: &quot;|image8|&quot;.</div>
+<p>I hope this post captures the essence of why I think many folks may be intimidated by Plone: in more cases than not, one must understand way too many technologies in order to get the job done. I hope to continue to demystify Plone through a series of &quot;Plone secrets&quot; posts, and ultimately I think the Plone project hopes to resolve these issues once and for all, however long that takes.</p>
+<p>I will speculate that long term Plone will move away from Zope 2, and everything from the Zope Management Interface that was useful will be recreated in Plone (i.e. ported). Or rather, that is what I would like to see happen.</p>
 </div>
 
     </div><!-- /.entry-content -->
