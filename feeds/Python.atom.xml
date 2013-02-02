@@ -1488,44 +1488,26 @@ Unknown target name: &amp;quot;|image1|&amp;quot;.&lt;/div&gt;
 &lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/plone-first-class-python-citizen.rst&lt;/tt&gt;, line 58); &lt;em&gt;&lt;a href="#id6"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 Unknown target name: &amp;quot;|image2|&amp;quot;.&lt;/div&gt;
 &lt;/div&gt;
-</summary><category term="Plone"></category><category term="Python"></category></entry><entry><title>Pillow: one year later</title><link href="http://blog.aclark.net//2011/10/14/pillow-one-year-later/" rel="alternate"></link><updated>2011-10-14T13:11:00-04:00</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2011-10-14:/2011/10/14/pillow-one-year-later/</id><summary type="html">&lt;p&gt;&lt;em&gt;For anyone unfamiliar with Pillow, it is the &amp;quot;friendly PIL fork&amp;quot;: a
-fork of PIL that aims to remain a good citizen in the PIL community
-through its actions.&lt;/em&gt;&lt;/p&gt;
+</summary><category term="Plone"></category><category term="Python"></category></entry><entry><title>Pillow: one year later</title><link href="http://blog.aclark.net//2011/10/14/pillow-one-year-later/" rel="alternate"></link><updated>2011-10-14T13:11:00-04:00</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2011-10-14:/2011/10/14/pillow-one-year-later/</id><summary type="html">&lt;p&gt;&lt;em&gt;For anyone unfamiliar with Pillow, it is the &amp;quot;friendly PIL fork&amp;quot;: a fork of PIL that aims to remain a good citizen in the PIL community through its actions.&lt;/em&gt;&lt;/p&gt;
 &lt;div class="section" id="warm-and-fluffy-history"&gt;
 &lt;h2&gt;Warm and fluffy history&lt;/h2&gt;
-&lt;p&gt;&lt;a href="#id1"&gt;&lt;span class="problematic" id="id2"&gt;`|image0|\ Pillow`_&lt;/span&gt;&lt;/a&gt; 1.0 was released on 2010-07-31, a little over a year
-later came Pillow 1.7.5 which features:&lt;/p&gt;
+&lt;p&gt;Pillow 1.0 was released on 2010-07-31, a little over a year later came Pillow 1.7.5 which features:&lt;/p&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;Many packaging fixes (mostly to support dependency libraries)&lt;/li&gt;
 &lt;li&gt;Windows binaries&lt;/li&gt;
 &lt;li&gt;Over 13K downloads&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Pillow is used in Plone's &lt;a class="reference external" href="http://launchpad.net/plone/4.1/4.1.2/+download/Plone-4.1.2-UnifiedInstaller.tgz"&gt;UnifiedInstaller&lt;/a&gt;, and I know &lt;a class="reference external" href="https://github.com/collective/Pillow/commit/8a282c9ea4382045822ca4fc15e586ebd2f7ace7"&gt;folks from
-the Django community&lt;/a&gt;are using it.&lt;/p&gt;
+&lt;p&gt;Pillow is used in Plone's &lt;a class="reference external" href="http://launchpad.net/plone/4.1/4.1.2/+download/Plone-4.1.2-UnifiedInstaller.tgz"&gt;UnifiedInstaller&lt;/a&gt;, and I know &lt;a class="reference external" href="https://github.com/collective/Pillow/commit/8a282c9ea4382045822ca4fc15e586ebd2f7ace7"&gt;folks from the Django community&lt;/a&gt;are using it.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="future-creature-comforts"&gt;
 &lt;h2&gt;Future creature comforts&lt;/h2&gt;
-&lt;p&gt;All in all, a mild success. So what's next? &lt;strong&gt;More of the same&lt;/strong&gt;. To
-&lt;a class="reference external" href="http://stackoverflow.com/questions/2485295/the-problem-with-installing-pil-using-virtualenv-or-buildout/7770547#7770547"&gt;quote myself from a recent Stack Overflow answer&lt;/a&gt;:&lt;/p&gt;
+&lt;p&gt;All in all, a mild success. So what's next? &lt;strong&gt;More of the same&lt;/strong&gt;. To &lt;a class="reference external" href="http://stackoverflow.com/questions/2485295/the-problem-with-installing-pil-using-virtualenv-or-buildout/7770547#7770547"&gt;quote myself from a recent Stack Overflow answer&lt;/a&gt;:&lt;/p&gt;
 &lt;blockquote&gt;
-If PIL ever does exactly what Pillow does, then the fork will die.
-Until that happens, we have Pillow.&lt;/blockquote&gt;
+If PIL ever does exactly what Pillow does, then the fork will die. Until that happens, we have Pillow.&lt;/blockquote&gt;
 &lt;/div&gt;
 &lt;div class="section" id="bottom-line-accommodations"&gt;
 &lt;h2&gt;Bottom line accommodations&lt;/h2&gt;
-&lt;p&gt;This may never happen of course, which is part of the reason for the
-fork. You can't force someone to maintain software for you. But in the
-open source world you can grab the bull by the horns (take the lead) and
-try to make things better. Even better: if your project and community
-are healthy and functioning properly, your success or failure will be
-determined by the folks in the community (as it should be). In this
-case, the Plone and Python communities have spoken clearly.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="system-messages section"&gt;
-&lt;h2&gt;Docutils System Messages&lt;/h2&gt;
-&lt;div class="system-message" id="id1"&gt;
-&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/pillow-one-year-later.rst&lt;/tt&gt;, line 13); &lt;em&gt;&lt;a href="#id2"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
-Unknown target name: &amp;quot;|image0|pillow&amp;quot;.&lt;/div&gt;
+&lt;p&gt;This may never happen of course, which is part of the reason for the fork. You can't force someone to maintain software for you. But in the open source world you can grab the bull by the horns (take the lead) and try to make things better. Even better: if your project and community are healthy and functioning properly, your success or failure will be determined by the folks in the community (as it should be). In this case, the Plone and Python communities have spoken clearly.&lt;/p&gt;
 &lt;/div&gt;
 </summary><category term="Plone"></category><category term="Python"></category></entry><entry><title>Vagrant, Puppet and Mozilla, oh my!</title><link href="http://blog.aclark.net//2011/10/03/vagrant-puppet-and-mozilla-oh-my/" rel="alternate"></link><updated>2011-10-03T17:25:00-04:00</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2011-10-03:/2011/10/03/vagrant-puppet-and-mozilla-oh-my/</id><summary type="html">&lt;p&gt;&lt;em&gt;Warning: This post is only loosely Python related and not at all Plone
 related, but I thought folks might enjoy hearing about Vagrant and
