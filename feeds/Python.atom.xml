@@ -1,5 +1,314 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Alex Clark - Python Web Developer</title><link href="http://blog.aclark.net/" rel="alternate"></link><link href="http://blog.aclark.net/feeds/Python.atom.xml" rel="self"></link><id>http://blog.aclark.net/</id><updated>2013-01-31T13:00:00-05:00</updated><entry><title>Please Help Me Do Open Source Work</title><link href="http://blog.aclark.net//2013/01/31/please-help-me-do-open-source-work/" rel="alternate"></link><updated>2013-01-31T13:00:00-05:00</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2013-01-31:/2013/01/31/please-help-me-do-open-source-work/</id><summary type="html">&lt;p&gt;&lt;em&gt;From my 'mid-life-crisis' series of blog entries :-)&lt;/em&gt;&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Alex Clark - Python Web Developer</title><link href="http://blog.aclark.net/" rel="alternate"></link><link href="http://blog.aclark.net/feeds/Python.atom.xml" rel="self"></link><id>http://blog.aclark.net/</id><updated>2013-02-08T12:00:00-05:00</updated><entry><title>I love checkoutmanager and dotfiles</title><link href="http://blog.aclark.net//2013/02/08/i-love-checkoutmanager-and-dotfiles/" rel="alternate"></link><updated>2013-02-08T12:00:00-05:00</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2013-02-08:/2013/02/08/i-love-checkoutmanager-and-dotfiles/</id><summary type="html">&lt;p&gt;&lt;em&gt;An ode to my OS X development workstation setup&lt;/em&gt; &lt;a class="footnote-reference" href="#id11" id="id1"&gt;[1]&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;I am big on setting up my development environment, and enjoying the environment I work in. And I'm very thankful to the folks who make my life easier, including the authors of:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://www.ohloh.net/p/python/contributors/summary"&gt;Python&lt;/a&gt;: Python Core Developers&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://pypi.python.org/pypi/dotfiles"&gt;dotfiles&lt;/a&gt;: Jon Bernard&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://pypi.python.org/pypi/checkoutmanager"&gt;checkoutmanager&lt;/a&gt;: Reinout Van Rees&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I also love &lt;strong&gt;repetition&lt;/strong&gt;. So picture if you will, a new &lt;strong&gt;Macbook Air or Pro&lt;/strong&gt; ready to serve as my development workstation. I like to perform, and study, the steps required to turn a new laptop in to my development workstation. So here we go. In this article, I will walk through the steps required to turn a new machine in to my developer workstation. Do follow along!&lt;/p&gt;
+&lt;div class="section" id="shell"&gt;
+&lt;h2&gt;Shell&lt;/h2&gt;
+&lt;p&gt;One of the first things I do on a new system is change my shell to &lt;strong&gt;Zsh&lt;/strong&gt; in &lt;tt class="docutils literal"&gt;System Preferences &lt;span class="pre"&gt;-&amp;gt;&lt;/span&gt; Users &amp;amp; Groups &lt;span class="pre"&gt;-&amp;gt;&lt;/span&gt; Current User &lt;span class="pre"&gt;-&amp;gt;&lt;/span&gt; Right Click &lt;span class="pre"&gt;-&amp;gt;&lt;/span&gt; Advanced &lt;span class="pre"&gt;Options...&lt;/span&gt;&lt;/tt&gt;. Don't forget to &lt;tt class="docutils literal"&gt;Click the lock to make changes&lt;/tt&gt; first.&lt;/p&gt;
+&lt;img alt="https://raw.github.com/ACLARKNET/aclarknet.github.com/master/images/zsh.png" src="https://raw.github.com/ACLARKNET/aclarknet.github.com/master/images/zsh.png" /&gt;
+&lt;div class="section" id="zsh"&gt;
+&lt;h3&gt;Zsh&lt;/h3&gt;
+&lt;p&gt;Why &lt;strong&gt;Zsh&lt;/strong&gt;? One of my favorite features is &lt;strong&gt;shared history between open sessions&lt;/strong&gt;. So I can run a command in one window, and then run the same command from another window by fetching it from the history (with CTRL-R).&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="xcode"&gt;
+&lt;h2&gt;XCode&lt;/h2&gt;
+&lt;p&gt;After I take possession of my new laptop (running &lt;strong&gt;Mountain Lion&lt;/strong&gt;, the newest OS X at the time of this writing), I head to the App Store to download XCode. &lt;a class="footnote-reference" href="#id12" id="id2"&gt;[2]&lt;/a&gt; Among many other things, XCode gives me the GNU C Compiler and allows me to type &amp;quot;gcc&amp;quot; in my &lt;tt class="docutils literal"&gt;Applications &lt;span class="pre"&gt;-&amp;gt;&lt;/span&gt; Utilities &lt;span class="pre"&gt;-&amp;gt;&lt;/span&gt; Terminal&lt;/tt&gt;.&lt;/p&gt;
+&lt;img alt="https://raw.github.com/ACLARKNET/aclarknet.github.com/master/images/gcc.png" src="https://raw.github.com/ACLARKNET/aclarknet.github.com/master/images/gcc.png" /&gt;
+&lt;/div&gt;
+&lt;div class="section" id="id3"&gt;
+&lt;h2&gt;Python&lt;/h2&gt;
+&lt;img alt="https://raw.github.com/ACLARKNET/aclarknet.github.com/master/images/homebrew.png" src="https://raw.github.com/ACLARKNET/aclarknet.github.com/master/images/homebrew.png" /&gt;
+&lt;p&gt;Now I need a Python interpreter &lt;a class="footnote-reference" href="#id13" id="id4"&gt;[3]&lt;/a&gt;. For development I use the &lt;a class="reference external" href="https://github.com/collective/buildout.python"&gt;Collective Python Buildout&lt;/a&gt; but I also enjoy using &lt;a class="reference external" href="http://mxcl.github.com/homebrew/"&gt;Homebrew's&lt;/a&gt; Python 2.7. I use Homebrew for a variety of other things too (e.g. mobile-shell AKA mosh) so here we go:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+$ ruby -e &amp;quot;$(curl -fsSL https://raw.github.com/mxcl/homebrew/go)&amp;quot;
+&lt;/pre&gt;
+&lt;p&gt;… follow instructions …&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+$ brew install python
+&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div class="section" id="git"&gt;
+&lt;h2&gt;Git&lt;/h2&gt;
+&lt;p&gt;I think OS X (or XCode) includes git, but just in case:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+$ brew install git
+&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div class="section" id="id5"&gt;
+&lt;h2&gt;Dotfiles&lt;/h2&gt;
+&lt;p&gt;At this point, I can begin to get serious about turning this new machine in to my developer workstation. And that means: &lt;strong&gt;installing my private ssh key&lt;/strong&gt; so I can check out code without typing a password, of course. Normally this would be tedious, but with git and dotfiles it's not so bad. This is what I do from my home directory:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+$ git clone https://super_secret_url/dotfiles.git Dotfiles
+&lt;/pre&gt;
+&lt;p&gt;I use https which requires a password for the first time only. Then I edit &lt;tt class="docutils literal"&gt;&lt;span class="pre"&gt;Dotfiles/.git/config&lt;/span&gt;&lt;/tt&gt; and change the repository URL to &lt;tt class="docutils literal"&gt;git&amp;#64;super_secret_url/dotfiles.git&lt;/tt&gt;. So every subsequent pull and push will require no password. And to &amp;quot;install&amp;quot; these dotfiles, I do &lt;a class="footnote-reference" href="#id16" id="id6"&gt;[6]&lt;/a&gt;:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+$ pip install dotfiles
+$ dotfiles -s --force
+&lt;/pre&gt;
+&lt;div class="section" id="distribute-pip"&gt;
+&lt;h3&gt;Distribute &amp;amp; Pip&lt;/h3&gt;
+&lt;p&gt;Homebrew's Python includes pip, but even if it didn't:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+$ curl -O http://python-distribute.org/distribute_setup.py
+$ /usr/local/bin/python distribute_setup.py
+$ {easy_install, pip install} dotfiles
+&lt;/pre&gt;
+&lt;p&gt;In other words, you can always install Distribute &lt;a class="footnote-reference" href="#id14" id="id7"&gt;[4]&lt;/a&gt;. After which you can use &lt;tt class="docutils literal"&gt;easy_install&lt;/tt&gt; or &lt;tt class="docutils literal"&gt;pip&lt;/tt&gt; to install dotfiles. (You can read up on the differences. TL;DR: neither is &amp;quot;better&amp;quot; or &amp;quot;worse&amp;quot;, it's just a question of which tradeoffs you are willing to make. I tend to use pip just because it's newer and I like its requirements.txt feature, but easy_install is still very well supported as part of the Distribute project.)&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="id8"&gt;
+&lt;h2&gt;Checkoutmanager&lt;/h2&gt;
+&lt;p&gt;Now I need some things to develop. Since I work on a bunch of different projects, I need a way to keep track of what should be checked out at any given time. So I do this &lt;a class="footnote-reference" href="#id15" id="id9"&gt;[5]&lt;/a&gt;:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+$ pip install checkoutmanager
+$ checkoutmanager co
+&lt;/pre&gt;
+&lt;p&gt;This creates and populates my &lt;tt class="docutils literal"&gt;~/Developer&lt;/tt&gt; directory with code. And it &amp;quot;just works&amp;quot; because I keep a &lt;tt class="docutils literal"&gt;.checkoutmanager.cfg&lt;/tt&gt; in my Dotfiles repository. It currently looks like this:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+[aclark]
+basedir = /Users/aclark/Developer/aclark
+checkouts =
+    git&amp;#64;github.com:aclark4life/aclark4life.github.com.git resume
+    git&amp;#64;github.com:aclark4life/desktops.git
+    git&amp;#64;github.com:aclark4life/hireme.git
+    git&amp;#64;github.com:aclark4life/projects.git
+    git&amp;#64;github.com:aclark4life/reinstall.git
+    git&amp;#64;github.com:ACLARKNET/tweets.git
+    git&amp;#64;github.com:aclark4life/usesthis.git
+vcs = git
+
+[alt]
+basedir = /Users/aclark/Developer/alt
+checkouts =
+    git&amp;#64;github.com:alt-aclark-net/alt-aclark-net.github.com.git
+    git&amp;#64;github.com:alt-aclark-net/dexter.git
+    git&amp;#64;github.com:alt-aclark-net/headstraight.git
+vcs = git
+
+[buildout]
+basedir = /Users/aclark/Developer/buildout
+checkouts =
+    git&amp;#64;github.com:collective/buildout.bootstrap.git
+    git&amp;#64;github.com:buildout/buildout.git
+    git&amp;#64;github.com:buildout/buildout.github.com.git
+vcs = git
+
+[distribute]
+basedir = /Users/aclark/Developer
+checkouts = ssh://hg&amp;#64;bitbucket.org/tarek/distribute
+vcs = hg
+
+[clients]
+basedir = /Users/aclark/Developer
+checkouts =
+; Bunch o client repos
+vcs = git
+
+[clients-hg]
+basedir = /Users/aclark/Developer
+checkouts =
+; Bunch o client repos
+vcs = hg
+
+[dcpython]
+basedir = /Users/aclark/Developer/dcpython
+checkouts =
+    git&amp;#64;github.com:DCPython/dcpython.github.com.git
+    git&amp;#64;github.com:DCPython/pyramid-tutorials.git
+vcs = git
+
+[misc]
+basedir = /Users/aclark/Developer
+checkouts =
+    git&amp;#64;github.com:ACLARKNET/aclarknet.github.com.git blog
+    git&amp;#64;github.com:ACLARKNET/new_style.git
+    git&amp;#64;github.com:aclark4life/binfiles.git
+;    git&amp;#64;github.com:aclark4life/pyramid_python_3.git
+    git&amp;#64;github.com:aclark4life/vanity.git
+    git&amp;#64;github.com:aclark4life/zope2-heroku.git
+    git&amp;#64;github.com:aclark4life/zope2_bootstrap.git
+    git&amp;#64;github.com:codekoala/django-axes.git
+    git&amp;#64;github.com:collective/buildout.python
+vcs = git
+
+[pillow]
+basedir = /Users/aclark/Developer/pillow
+checkouts =
+    git&amp;#64;github.com:python-imaging/Pillow.git
+    git&amp;#64;github.com:python-imaging/python-imaging.github.com.git
+vcs = git
+
+[plethorasociety]
+basedir = /Users/aclark/Developer/plethorasociety
+checkouts =
+    git&amp;#64;github.com:plethorasociety/plethorasociety.github.com.git
+vcs = git
+
+[plone]
+basedir = /Users/aclark/Developer/plone
+checkouts =
+    git&amp;#64;github.com:aclark4life/Plone-Debug-Assistant.git
+    git&amp;#64;github.com:aclark4life/collective.recipe.bluebream.git
+    git&amp;#64;github.com:aclark4life/event_days_indexer.git
+    git&amp;#64;github.com:aclark4life/hello_plone.git
+    git&amp;#64;github.com:aclark4life/mr_migrator_demo.git
+    git&amp;#64;github.com:aclark4life/parse2plone.git
+    git&amp;#64;github.com:aclark4life/plone_1_fun.git
+    git&amp;#64;github.com:aclark4life/plone_addon_upgrade.git
+    git&amp;#64;github.com:aclark4life/plone_guide.git
+    git&amp;#64;github.com:aclark4life/plone_workflow_events.git
+    git&amp;#64;github.com:aclark4life/schemaextender-facetednav-demo.git
+    git&amp;#64;github.com:aclark4life/silly_content_import.git
+    git&amp;#64;github.com:aclark4life/transmogrify.extract.git
+    git&amp;#64;github.com:aclark4life/transmogrify.regexp.git
+    git&amp;#64;github.com:aclark4life/viewlets_dont_suck.git
+    git&amp;#64;github.com:aclark4life/wordpress2plone.git
+    git&amp;#64;github.com:collective/Products.AttachmentField.git
+    git&amp;#64;github.com:collective/Products.CalendarX.git
+    git&amp;#64;github.com:collective/Products.EventRegistration.git
+    git&amp;#64;github.com:collective/Products.PloneSoftwareCenter.git
+    git&amp;#64;github.com:collective/Products.ifQuotes.git
+    git&amp;#64;github.com:collective/Products.naked_plone.git
+    git&amp;#64;github.com:collective/buildout.plonetest.git
+    git&amp;#64;github.com:collective/collective.contacts.git
+    git&amp;#64;github.com:collective/collective.controlpanel.edit_css.git
+    git&amp;#64;github.com:collective/collective.developermanual.git
+    git&amp;#64;github.com:collective/collective.formtoy.git
+    git&amp;#64;github.com:collective/collective.github.com.git
+    git&amp;#64;github.com:collective/collective.googleanalytics.git
+    git&amp;#64;github.com:collective/collective.package.git
+    git&amp;#64;github.com:collective/collective.project.git
+    git&amp;#64;github.com:collective/collective.recaptcha.git
+    git&amp;#64;github.com:collective/collective.recipe.grp.git
+    git&amp;#64;github.com:collective/collective.recipe.rsync.git
+    git&amp;#64;github.com:collective/collective.rip.git
+    git&amp;#64;github.com:collective/collective.stats.git
+    git&amp;#64;github.com:collective/funnelweb.git
+    git&amp;#64;github.com:collective/github-collective.git
+    git&amp;#64;github.com:collective/mr.migrator.git
+    git&amp;#64;github.com:collective/plonecom-buildout.git
+    git&amp;#64;github.com:collective/plonecom.theme.git
+    git&amp;#64;github.com:collective/plonetheme.coolblue.git
+    git&amp;#64;github.com:collective/plonetheme.freshpick.git
+    git&amp;#64;github.com:collective/plonetheme.grungeera.git
+    git&amp;#64;github.com:collective/plonetheme.keepitsimple.git
+    git&amp;#64;github.com:collective/plonetheme.unilluminated.git
+    git&amp;#64;github.com:collective/transmogrify.filesystem.git
+    git&amp;#64;github.com:plone/Installers-OS-X.git
+    git&amp;#64;github.com:plone/Products.PloneOrg.git
+    git&amp;#64;github.com:plone/admin-docs.git
+    git&amp;#64;github.com:plone/buildout.coredev.git
+    git&amp;#64;github.com:plone/planet.plone.org.git
+    git&amp;#64;github.com:plone/plone.api.git
+    git&amp;#64;github.com:plone/plone.github.com.git
+    git&amp;#64;github.com:plone/ploneorg.admin.git
+    git&amp;#64;github.com:plone/plonetheme.ploneorg.git
+vcs = git
+
+[pythonpackages]
+basedir = /Users/aclark/Developer/pythonpackages
+checkouts =
+    git&amp;#64;github.com:aclark4life/buildout-apache-mysql.git
+    git&amp;#64;github.com:aclark4life/buildout-munin.git
+    git&amp;#64;github.com:aclark4life/buildout-mysql.git
+    git&amp;#64;github.com:aclark4life/buildout-nginx.git
+    git&amp;#64;github.com:aclark4life/buildout-plone-haproxy.git
+    git&amp;#64;github.com:aclark4life/buildout-plone-varnish.git
+    git&amp;#64;github.com:aclark4life/buildout-zenoss.git
+    git&amp;#64;bitbucket.org:pythonpackages/pythonpackages.com.git vanity_app
+    git&amp;#64;github.com:pythonpackages/buildout-apache-modwsgi.git
+    git&amp;#64;github.com:pythonpackages/buildout-bluebream.git
+    git&amp;#64;github.com:pythonpackages/buildout-django.git
+    git&amp;#64;github.com:pythonpackages/buildout-jenkins.git
+    git&amp;#64;github.com:pythonpackages/buildout-plone-getpaid.git
+    git&amp;#64;github.com:pythonpackages/buildout-plone.git
+    git&amp;#64;github.com:pythonpackages/buildout-wordpress.git
+    git&amp;#64;github.com:pythonpackages/buildout-zope2.git
+    git&amp;#64;github.com:pythonpackages/experimental.pythonpackages.git
+    git&amp;#64;github.com:pythonpackages/github-services.git pythonpackages-github-services
+    git&amp;#64;github.com:pythonpackages/pyramidpypi.git pythonpackages-index
+    git&amp;#64;github.com:pythonpackages/pythonpackages-blog.git
+    git&amp;#64;github.com:pythonpackages/pythonpackages-docs.git
+    git&amp;#64;github.com:pythonpackages/pythonpackages-graphs.git
+    git&amp;#64;github.com:pythonpackages/pythonpackages-paste.git
+    git&amp;#64;github.com:pythonpackages/pythonpackages-scaffolds.git
+    git&amp;#64;github.com:pythonpackages/pythonpackages.sendpickedversions.git
+    git&amp;#64;github.com:pythonpackages/pythonpackages-whiskers.git
+    git&amp;#64;github.com:pythonpackages/pythonpackages.git
+vcs = git
+
+[toys]
+basedir = /Users/aclark/Developer/toys
+checkouts =
+    git&amp;#64;github.com:aclark4life/basic_pyramid_zodb.git
+    git&amp;#64;github.com:aclark4life/github_repos_cloner.git
+    git&amp;#64;github.com:aclark4life/other.git
+    git&amp;#64;github.com:aclark4life/python_study.git
+    git&amp;#64;github.com:aclark4life/django-hello.git
+vcs = git
+&lt;/pre&gt;
+&lt;p&gt;Now it's time to bootstrap the Collective Python Buildout, which gives me &lt;strong&gt;all versions of Python, ever&lt;/strong&gt; &lt;a class="footnote-reference" href="#id17" id="id10"&gt;[7]&lt;/a&gt;. And off we go:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+$ cd Developer/buildout.python
+$ python bootstrap.py
+&lt;/pre&gt;
+&lt;p&gt;Finally, there is some PATH configuration required to make all of this seemless. The Collective Python Buildout gets installed in /opt while brew's stuff is in /usr/local. My PATH config currently looks like this:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+export PATH=/usr/local/bin:/usr/local/sbin:/opt/local/bin:/Users/aclark/Developer/buildout.python/python-2.7/bin:$PATH
+export PATH=~/Developer/binfiles:/usr/local/share/npm/bin:$PATH
+&lt;/pre&gt;
+&lt;p&gt;With the above configuration, I default to the Python 2.7 in the Collective Python Buildout. That means that is the &amp;quot;python&amp;quot; or &amp;quot;virtualenv&amp;quot; I get when I typoe those commands. I use the full path or expanded binary name when I need them e.g. /usr/local/bin/python or python3.3.&lt;/p&gt;
+&lt;p&gt;That's it! I hope you will check out dotfiles and checkoutmanager for all your development needs.&lt;/p&gt;
+&lt;table class="docutils footnote" frame="void" id="id11" rules="none"&gt;
+&lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
+&lt;tbody valign="top"&gt;
+&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#id1"&gt;[1]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Not really an ode: &lt;a class="reference external" href="http://en.wikipedia.org/wiki/Ode"&gt;http://en.wikipedia.org/wiki/Ode&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;table class="docutils footnote" frame="void" id="id12" rules="none"&gt;
+&lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
+&lt;tbody valign="top"&gt;
+&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#id2"&gt;[2]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;I know about Kenneth Reitz's XCode Command line Tools only, but if I recall correctly there is some &amp;quot;gotcha&amp;quot; that has bitten me more than once if I use that instead of the full XCode. I wish I could remember what it was now, but it's not coming to me. If it works for you though, great!&lt;/td&gt;&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;table class="docutils footnote" frame="void" id="id13" rules="none"&gt;
+&lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
+&lt;tbody valign="top"&gt;
+&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#id4"&gt;[3]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;I know about the system Python, and for small things like checkoutmanager and dotfiles I don't mind using it. But there is merit in avoiding it because Apple treats it like &amp;quot;their&amp;quot; Python and makes decisions for you that you may prefer to make yourself. E.g. I believe they use a crippled version of the readline library.&lt;/td&gt;&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;table class="docutils footnote" frame="void" id="id14" rules="none"&gt;
+&lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
+&lt;tbody valign="top"&gt;
+&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#id7"&gt;[4]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Distribute is a more actively maintained fork of the venerable setuptools library (which itself is built on top of the Python standard library's distutils). Are we having fun yet?&lt;/td&gt;&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;table class="docutils footnote" frame="void" id="id15" rules="none"&gt;
+&lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
+&lt;tbody valign="top"&gt;
+&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#id9"&gt;[5]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;I also alias checkoutmanager to cm :-)&lt;/td&gt;&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;table class="docutils footnote" frame="void" id="id16" rules="none"&gt;
+&lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
+&lt;tbody valign="top"&gt;
+&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#id6"&gt;[6]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;I force because I want to replace the newly created .ssh dir with the one I keep in my Dotfiles repository.&lt;/td&gt;&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;table class="docutils footnote" frame="void" id="id17" rules="none"&gt;
+&lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
+&lt;tbody valign="top"&gt;
+&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#id10"&gt;[7]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Well, 2.4 through 3.3 at last count.&lt;/td&gt;&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+</summary><category term="Django"></category><category term="Mozilla"></category><category term="Plone"></category><category term="Python"></category></entry><entry><title>Please Help Me Do Open Source Work</title><link href="http://blog.aclark.net//2013/01/31/please-help-me-do-open-source-work/" rel="alternate"></link><updated>2013-01-31T13:00:00-05:00</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2013-01-31:/2013/01/31/please-help-me-do-open-source-work/</id><summary type="html">&lt;p&gt;&lt;em&gt;From my 'mid-life-crisis' series of blog entries :-)&lt;/em&gt;&lt;/p&gt;
 &lt;img alt="https://raw.github.com/ACLARKNET/aclarknet.github.com/master/images/open-source-work.png" src="https://raw.github.com/ACLARKNET/aclarknet.github.com/master/images/open-source-work.png" /&gt;
 &lt;div class="section" id="open-source-work"&gt;
 &lt;h2&gt;Open Source Work&lt;/h2&gt;
