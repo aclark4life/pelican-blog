@@ -51,7 +51,7 @@ $ git clone https://super_secret_url/dotfiles.git Dotfiles
 $ pip install dotfiles
 $ dotfiles -s --force
 &lt;/pre&gt;
-&lt;p&gt;Note the dotfiles command finds my dotfiles in the default directory &amp;quot;Dotfiles&amp;quot; and create symbolic links to them.&lt;/p&gt;
+&lt;p&gt;Note: the dotfiles command finds my dotfiles in the default directory &amp;quot;Dotfiles&amp;quot; and create symbolic links to them.&lt;/p&gt;
 &lt;div class="section" id="distribute-pip"&gt;
 &lt;h3&gt;Distribute &amp;amp; Pip&lt;/h3&gt;
 &lt;p&gt;Homebrew's Python includes pip, but even if it didn't:&lt;/p&gt;
