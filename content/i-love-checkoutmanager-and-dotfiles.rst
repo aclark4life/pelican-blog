@@ -67,6 +67,8 @@ I use https which requires a password for the first time only. Then I edit ``Dot
     $ pip install dotfiles
     $ dotfiles -s --force
 
+Note the dotfiles command finds my dotfiles in the default directory "Dotfiles" and create symbolic links to them.
+
 Distribute & Pip
 ~~~~~~~~~~~~~~~~
 
