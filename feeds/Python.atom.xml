@@ -264,7 +264,7 @@ $ python bootstrap.py
 export PATH=/usr/local/bin:/usr/local/sbin:/opt/local/bin:/Users/aclark/Developer/buildout.python/python-2.7/bin:$PATH
 export PATH=~/Developer/binfiles:/usr/local/share/npm/bin:$PATH
 &lt;/pre&gt;
-&lt;p&gt;With the above configuration, I default to the Python 2.7 in the Collective Python Buildout. That means that is the &amp;quot;python&amp;quot; or &amp;quot;virtualenv&amp;quot; I get when I typoe those commands. I use the full path or expanded binary name when I need them e.g. /usr/local/bin/python or python3.3.&lt;/p&gt;
+&lt;p&gt;With the above configuration, I default to the Python 2.7 in the Collective Python Buildout. That means that is the &amp;quot;python&amp;quot; or &amp;quot;virtualenv&amp;quot; I get when I type those commands. I use the full path or expanded binary name when I need them e.g. /usr/local/bin/python or python3.3.&lt;/p&gt;
 &lt;p&gt;That's it! I hope you will check out dotfiles and checkoutmanager for all your development needs.&lt;/p&gt;
 &lt;table class="docutils footnote" frame="void" id="id11" rules="none"&gt;
 &lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;

@@ -282,7 +282,7 @@ Finally, there is some PATH configuration required to make all of this seemless.
     export PATH=/usr/local/bin:/usr/local/sbin:/opt/local/bin:/Users/aclark/Developer/buildout.python/python-2.7/bin:$PATH
     export PATH=~/Developer/binfiles:/usr/local/share/npm/bin:$PATH
 
-With the above configuration, I default to the Python 2.7 in the Collective Python Buildout. That means that is the "python" or "virtualenv" I get when I typoe those commands. I use the full path or expanded binary name when I need them e.g. /usr/local/bin/python or python3.3.
+With the above configuration, I default to the Python 2.7 in the Collective Python Buildout. That means that is the "python" or "virtualenv" I get when I type those commands. I use the full path or expanded binary name when I need them e.g. /usr/local/bin/python or python3.3.
 
 That's it! I hope you will check out dotfiles and checkoutmanager for all your development needs.
 
