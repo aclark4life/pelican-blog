@@ -55,6 +55,10 @@ I think OS X (or XCode) includes git, but just in case::
 
     $ brew install git
 
+Which reminds me, don't forget that installing the command line utilities in Mountain Lion's XCode requires an additional step in ``Preferences -> Downloads -> Command Line Tools -> Install``:
+
+.. image:: https://raw.github.com/ACLARKNET/aclarknet.github.com/master/images/command-line-utils.png
+
 Dotfiles
 --------
 
