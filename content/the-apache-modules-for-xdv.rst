@@ -3,8 +3,6 @@ The Apache modules for XDV
 :date: 2010-07-12 08:25
 :tags: Plone
 
-`|http://beakersblog.files.wordpress.com/2010/02/consolidation.jpg|`_
-
 I was recently tasked with consolidating our various **business services** (website, software repository, mailing lists, ldap, etc.) on to a single virtual machine (ostensibly to save money, although it didn't quite work out that way). The Apache modules for XDV presented themselves as an attractive technique to use, in helping me achieve my goals.
 
 Background

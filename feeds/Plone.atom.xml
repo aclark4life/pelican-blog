@@ -4360,8 +4360,7 @@ reinstalling everything (from the internet). I just drag back
 applications from my Time Capsule (also note, I purposefully do not
 allow Time Machine to restore my home directory, because that feels
 &amp;quot;dirty&amp;quot; to me).&lt;/p&gt;
-</summary><category term="Plone"></category></entry><entry><title>The Apache modules for XDV</title><link href="http://blog.aclark.net//2010/07/12/the-apache-modules-for-xdv/" rel="alternate"></link><updated>2010-07-12T08:25:00-04:00</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2010-07-12:/2010/07/12/the-apache-modules-for-xdv/</id><summary type="html">&lt;p&gt;&lt;a href="#id1"&gt;&lt;span class="problematic" id="id2"&gt;`|http://beakersblog.files.wordpress.com/2010/02/consolidation.jpg|`_&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;I was recently tasked with consolidating our various &lt;strong&gt;business services&lt;/strong&gt; (website, software repository, mailing lists, ldap, etc.) on to a single virtual machine (ostensibly to save money, although it didn't quite work out that way). The Apache modules for XDV presented themselves as an attractive technique to use, in helping me achieve my goals.&lt;/p&gt;
+</summary><category term="Plone"></category></entry><entry><title>The Apache modules for XDV</title><link href="http://blog.aclark.net//2010/07/12/the-apache-modules-for-xdv/" rel="alternate"></link><updated>2010-07-12T08:25:00-04:00</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2010-07-12:/2010/07/12/the-apache-modules-for-xdv/</id><summary type="html">&lt;p&gt;I was recently tasked with consolidating our various &lt;strong&gt;business services&lt;/strong&gt; (website, software repository, mailing lists, ldap, etc.) on to a single virtual machine (ostensibly to save money, although it didn't quite work out that way). The Apache modules for XDV presented themselves as an attractive technique to use, in helping me achieve my goals.&lt;/p&gt;
 &lt;div class="section" id="background"&gt;
 &lt;h2&gt;Background&lt;/h2&gt;
 &lt;p&gt;Previously, I had been blissfully running &lt;a class="reference external" href="http://aclark.net"&gt;http://aclark.net&lt;/a&gt; with NGINX, Plone 4 trunk, and XDV on a small virtual machine and absolutely loving it.&lt;/p&gt;
@@ -4555,12 +4554,6 @@ command =
 update-command = ${:command}
 &lt;/pre&gt;
 &lt;p&gt;You can check out the rest of the buildout &lt;a class="reference external" href="http://svn.aclark.net/trac/public/browser/buildout/aclark/apache-xdv/trunk"&gt;here&lt;/a&gt; (themed with XDV :-)). And if you enjoy this post, please feel free to pick up a copy of &lt;a class="reference external" href="http://aclark.net"&gt;Plone 3.3 Site Administration&lt;/a&gt; from PACKT Publishing, due out any day now (I am expecting to review pre-finals this week some time).&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="system-messages section"&gt;
-&lt;h2&gt;Docutils System Messages&lt;/h2&gt;
-&lt;div class="system-message" id="id1"&gt;
-&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/the-apache-modules-for-xdv.rst&lt;/tt&gt;, line 6); &lt;em&gt;&lt;a href="#id2"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
-Unknown target name: &amp;quot;|http://beakersblog.files.wordpress.com/2010/02/consolidation.jpg|&amp;quot;.&lt;/div&gt;
 &lt;/div&gt;
 </summary><category term="Plone"></category></entry><entry><title>Blood, sweat, tears… and a new Plone book!</title><link href="http://blog.aclark.net//2010/03/30/blood-sweat-tears-and-a-new-plone-book/" rel="alternate"></link><updated>2010-03-30T18:15:00-04:00</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2010-03-30:/2010/03/30/blood-sweat-tears-and-a-new-plone-book/</id><summary type="html">&lt;p&gt;Well, no blood yet. But certainly sweat and tears! If &lt;a class="reference external" href="http://plone.org/events/conferences/seattle-2006"&gt;Plone Conference
 2006&lt;/a&gt; was my inspiration for &lt;a class="reference external" href="http://plone.org/2008"&gt;Plone Conference 2008&lt;/a&gt;, then
