@@ -10,7 +10,7 @@
 &lt;div class="section" id="shell"&gt;
 &lt;h2&gt;Shell&lt;/h2&gt;
 &lt;p&gt;One of the first things I do on a new system is change my shell to &lt;strong&gt;Zsh&lt;/strong&gt; in &lt;tt class="docutils literal"&gt;System Preferences &lt;span class="pre"&gt;-&amp;gt;&lt;/span&gt; Users &amp;amp; Groups &lt;span class="pre"&gt;-&amp;gt;&lt;/span&gt; Current User &lt;span class="pre"&gt;-&amp;gt;&lt;/span&gt; Right Click &lt;span class="pre"&gt;-&amp;gt;&lt;/span&gt; Advanced &lt;span class="pre"&gt;Options...&lt;/span&gt;&lt;/tt&gt;. Don't forget to &lt;tt class="docutils literal"&gt;Click the lock to make changes&lt;/tt&gt; first.&lt;/p&gt;
-&lt;img alt="https://raw.github.com/ACLARKNET/aclarknet.github.com/master/images/zsh.png" src="https://raw.github.com/ACLARKNET/aclarknet.github.com/master/images/zsh.png" /&gt;
+&lt;img alt="images/zsh.png" src="images/zsh.png" /&gt;
 &lt;div class="section" id="zsh"&gt;
 &lt;h3&gt;Zsh&lt;/h3&gt;
 &lt;p&gt;Why &lt;strong&gt;Zsh&lt;/strong&gt;? One of my favorite features is &lt;strong&gt;shared history between open sessions&lt;/strong&gt;. So I can run a command in one window, and then run the same command from another window by fetching it from the history (with CTRL-R).&lt;/p&gt;
@@ -19,11 +19,11 @@
 &lt;div class="section" id="xcode"&gt;
 &lt;h2&gt;XCode&lt;/h2&gt;
 &lt;p&gt;After I take possession of my new laptop (running &lt;strong&gt;Mountain Lion&lt;/strong&gt;, the newest OS X at the time of this writing), I head to the App Store to download XCode. &lt;a class="footnote-reference" href="#id12" id="id2"&gt;[2]&lt;/a&gt; Among many other things, XCode gives me the GNU C Compiler and allows me to type &amp;quot;gcc&amp;quot; in my &lt;tt class="docutils literal"&gt;Applications &lt;span class="pre"&gt;-&amp;gt;&lt;/span&gt; Utilities &lt;span class="pre"&gt;-&amp;gt;&lt;/span&gt; Terminal&lt;/tt&gt;.&lt;/p&gt;
-&lt;img alt="https://raw.github.com/ACLARKNET/aclarknet.github.com/master/images/gcc.png" src="https://raw.github.com/ACLARKNET/aclarknet.github.com/master/images/gcc.png" /&gt;
+&lt;img alt="images/gcc.png" src="images/gcc.png" /&gt;
 &lt;/div&gt;
 &lt;div class="section" id="id3"&gt;
 &lt;h2&gt;Python&lt;/h2&gt;
-&lt;img alt="https://raw.github.com/ACLARKNET/aclarknet.github.com/master/images/homebrew.png" src="https://raw.github.com/ACLARKNET/aclarknet.github.com/master/images/homebrew.png" /&gt;
+&lt;img alt="images/homebrew.png" src="images/homebrew.png" /&gt;
 &lt;p&gt;Now I need a Python interpreter &lt;a class="footnote-reference" href="#id13" id="id4"&gt;[3]&lt;/a&gt;. For development I use the &lt;a class="reference external" href="https://github.com/collective/buildout.python"&gt;Collective Python Buildout&lt;/a&gt; but I also enjoy using &lt;a class="reference external" href="http://mxcl.github.com/homebrew/"&gt;Homebrew's&lt;/a&gt; Python 2.7. I use Homebrew for a variety of other things too (e.g. mobile-shell AKA mosh) so here we go:&lt;/p&gt;
 &lt;pre class="literal-block"&gt;
 $ ruby -e &amp;quot;$(curl -fsSL https://raw.github.com/mxcl/homebrew/go)&amp;quot;
@@ -40,7 +40,7 @@ $ brew install python
 $ brew install git
 &lt;/pre&gt;
 &lt;p&gt;Which reminds me, don't forget that installing the command line utilities in Mountain Lion's XCode requires an additional step in &lt;tt class="docutils literal"&gt;Preferences &lt;span class="pre"&gt;-&amp;gt;&lt;/span&gt; Downloads &lt;span class="pre"&gt;-&amp;gt;&lt;/span&gt; Command Line Tools &lt;span class="pre"&gt;-&amp;gt;&lt;/span&gt; Install&lt;/tt&gt;:&lt;/p&gt;
-&lt;img alt="https://raw.github.com/ACLARKNET/aclarknet.github.com/master/images/command-line-utils.png" src="https://raw.github.com/ACLARKNET/aclarknet.github.com/master/images/command-line-utils.png" /&gt;
+&lt;img alt="images/command-line-utils.png" src="images/command-line-utils.png" /&gt;
 &lt;/div&gt;
 &lt;div class="section" id="id5"&gt;
 &lt;h2&gt;Dotfiles&lt;/h2&gt;
@@ -312,7 +312,7 @@ export PATH=~/Developer/binfiles:/usr/local/share/npm/bin:$PATH
 &lt;/table&gt;
 &lt;/div&gt;
 </summary><category term="Django"></category><category term="Mozilla"></category><category term="Plone"></category><category term="Python"></category></entry><entry><title>Please Help Me Do Open Source Work</title><link href="http://blog.aclark.net//2013/01/31/please-help-me-do-open-source-work/" rel="alternate"></link><updated>2013-01-31T13:00:00-05:00</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2013-01-31:/2013/01/31/please-help-me-do-open-source-work/</id><summary type="html">&lt;p&gt;&lt;em&gt;From my 'mid-life-crisis' series of blog entries :-)&lt;/em&gt;&lt;/p&gt;
-&lt;img alt="https://raw.github.com/ACLARKNET/aclarknet.github.com/master/images/open-source-work.png" src="https://raw.github.com/ACLARKNET/aclarknet.github.com/master/images/open-source-work.png" /&gt;
+&lt;img alt="images/open-source-work.png" src="images/open-source-work.png" /&gt;
 &lt;div class="section" id="open-source-work"&gt;
 &lt;h2&gt;Open Source Work&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;Open Source Work&lt;/strong&gt; has paid my bills for a long time. Starting with &lt;a class="reference external" href="http://plone.org"&gt;Plone&lt;/a&gt; in the early 2000s, to &lt;a class="reference external" href="http://djangoproject.com"&gt;Django&lt;/a&gt; in the early 2010s, to now. And for this, I am very grateful. To be clear: it's not exactly the &lt;em&gt;Open Source Work&lt;/em&gt; that has paid my bills, it's the consulting work I've been able to secure as a result of my dedication and devotion to open source software and communities. Which is great! (Even more clear: my dedication and devotion to open source software and communities has made learning new skills fun. And those skills have paid my bills for the past 8 years.)&lt;/p&gt;
@@ -331,7 +331,7 @@ export PATH=~/Developer/binfiles:/usr/local/share/npm/bin:$PATH
 src="https://www.gittip.com/assets/widgets/0002.js"&gt;
 &lt;/script&gt;&lt;/div&gt;
 </summary><category term="Django"></category><category term="Mozilla"></category><category term="Plone"></category><category term="Python"></category></entry><entry><title>Python 3 Porting</title><link href="http://blog.aclark.net//2013/01/10/python-3-porting/" rel="alternate"></link><updated>2013-01-10T19:15:00-05:00</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2013-01-10:/2013/01/10/python-3-porting/</id><summary type="html">&lt;p&gt;&lt;em&gt;The 3 in 2013 is for Python 3&lt;/em&gt;&lt;/p&gt;
-&lt;img alt="https://raw.github.com/ACLARKNET/aclarknet.github.com/master/images/python-3-port.jpg" src="https://raw.github.com/ACLARKNET/aclarknet.github.com/master/images/python-3-port.jpg" /&gt;
+&lt;img alt="images/python-3-port.jpg" src="images/python-3-port.jpg" /&gt;
 &lt;p&gt;I tend to like projects that everyone else &lt;strong&gt;hates&lt;/strong&gt;, e.g.:&lt;/p&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;Removing persistent Python objects associated with missing classes in ZODB.&lt;/li&gt;
@@ -365,7 +365,7 @@ src="https://www.gittip.com/assets/widgets/0002.js"&gt;
 &lt;/ul&gt;
 &lt;p&gt;Thank you!&lt;/p&gt;
 </summary><category term="Python"></category></entry><entry><title>Introducing The Plone Kitty</title><link href="http://blog.aclark.net//2013/01/09/introducing-the-plone-kitty/" rel="alternate"></link><updated>2013-01-09T12:15:00-05:00</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2013-01-09:/2013/01/09/introducing-the-plone-kitty/</id><summary type="html">&lt;p&gt;&lt;em&gt;Actually: re-introducing the Plone Kitty from Plone 1!&lt;/em&gt;&lt;/p&gt;
-&lt;img alt="https://raw.github.com/ACLARKNET/aclarknet.github.com/master/images/plone-kitty.png" src="https://raw.github.com/ACLARKNET/aclarknet.github.com/master/images/plone-kitty.png" /&gt;
+&lt;img alt="images/plone-kitty.png" src="images/plone-kitty.png" /&gt;
 &lt;p&gt;&lt;em&gt;Plone Kitty&lt;/em&gt; is the name of a theme (then called &amp;quot;skin&amp;quot;) that shipped with the earliest versions of &lt;a class="reference external" href="http://plone.org"&gt;Plone&lt;/a&gt; (1.1 in the image above). This was a simpler time when the web was new, and everything was possible!&lt;/p&gt;
 &lt;p&gt;Today, we know that the &lt;strong&gt;web is hard&lt;/strong&gt;. While everything is still possible, building the web requires a tremendous amount of hard work. But it doesn't have to be all drudgery. There is still quite a bit of fun to be had building the web, if you know where to look (in addition to all the unavoidable hard work).&lt;/p&gt;
 &lt;p&gt;Enter: Plone. Both the web and Plone have changed drastically since The Plone Kitty once prowled the internet. And while the Plone Kitty is all but extinct, Plone lives on; continously modernizing itself to keep up with the fast pace of today's modern web.&lt;/p&gt;
@@ -374,7 +374,7 @@ src="https://www.gittip.com/assets/widgets/0002.js"&gt;
 If you used Plone &amp;quot;back in the day&amp;quot; (early 2000s), please add a comment below about your experiences then. If you are new to Plone or just curious about it now, please add a comment below about your initial impressions.
 &lt;/pre&gt;
 &lt;p&gt;So if you'd like to add &lt;strong&gt;your bit of nostalgia&lt;/strong&gt;, or first impressions of Plone, &lt;a class="reference external" href="http://plone-1-fun.herokuapp.com/#disqus"&gt;please do so here&lt;/a&gt;. I appreciate any and all comments.&lt;/p&gt;
-</summary><category term="Plone"></category><category term="Python"></category></entry><entry><title>New Year's Python Meme 2012</title><link href="http://blog.aclark.net//2012/12/29/new-years-python-meme-2012/" rel="alternate"></link><updated>2012-12-29T15:30:00-05:00</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2012-12-29:/2012/12/29/new-years-python-meme-2012/</id><summary type="html">&lt;img alt="https://raw.github.com/ACLARKNET/aclarknet.github.com/master/images/tarek-meme-reminder.png" src="https://raw.github.com/ACLARKNET/aclarknet.github.com/master/images/tarek-meme-reminder.png" /&gt;
+</summary><category term="Plone"></category><category term="Python"></category></entry><entry><title>New Year's Python Meme 2012</title><link href="http://blog.aclark.net//2012/12/29/new-years-python-meme-2012/" rel="alternate"></link><updated>2012-12-29T15:30:00-05:00</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2012-12-29:/2012/12/29/new-years-python-meme-2012/</id><summary type="html">&lt;img alt="images/tarek-meme-reminder.png" src="images/tarek-meme-reminder.png" /&gt;
 &lt;p&gt;&lt;em&gt;This is my entry for Tarek Ziadé's New Year's Python Meme, a tradition I have come to enjoy. Both to reflect on the current year and look back on previous years. So here it is.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;I did this in &lt;a class="reference external" href="http://blog.aclark.net/2009/12/31/new-years-python-meme/"&gt;2009&lt;/a&gt; &amp;amp; &lt;a class="reference external" href="http://blog.aclark.net/2011/12/21/new-years-python-meme-2011/"&gt;2011&lt;/a&gt;. Let's try it again.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;1. What’s the coolest Python application, framework or library you have discovered in 2012?&lt;/strong&gt;&lt;/p&gt;
@@ -427,7 +427,7 @@ Implicit namespace packages are one honking great idea -- let's do more of those
 &lt;div class="section" id="what"&gt;
 &lt;h2&gt;What&lt;/h2&gt;
 &lt;p&gt;Recently with a tweet, I announced the start of a new personal project:&lt;/p&gt;
-&lt;img alt="https://raw.github.com/ACLARKNET/aclarknet.github.com/master/images/tweet.png" src="https://raw.github.com/ACLARKNET/aclarknet.github.com/master/images/tweet.png" /&gt;
+&lt;img alt="images/tweet.png" src="images/tweet.png" /&gt;
 &lt;/div&gt;
 &lt;div class="section" id="when"&gt;
 &lt;h2&gt;When&lt;/h2&gt;
@@ -444,7 +444,7 @@ Implicit namespace packages are one honking great idea -- let's do more of those
 &lt;div class="section" id="how"&gt;
 &lt;h2&gt;How&lt;/h2&gt;
 &lt;p&gt;I think a lot about what other people think about Plone, so I decided this book will feature comments from the general public in it. E.g.:&lt;/p&gt;
-&lt;img alt="https://raw.github.com/ACLARKNET/aclarknet.github.com/master/images/comments.png" src="https://raw.github.com/ACLARKNET/aclarknet.github.com/master/images/comments.png" /&gt;
+&lt;img alt="images/comments.png" src="images/comments.png" /&gt;
 &lt;/div&gt;
 &lt;div class="section" id="how-much"&gt;
 &lt;h2&gt;How much?&lt;/h2&gt;
@@ -592,7 +592,7 @@ $ bin/django-admin.py runserver --settings=hello.settings
         width="48pt" height="20pt"&gt;&lt;/iframe&gt;&lt;p&gt;&amp;lt;3&lt;/p&gt;
 &lt;/div&gt;
 </summary><category term="Django"></category><category term="Python"></category></entry><entry><title>Gittip, Misunderstood</title><link href="http://blog.aclark.net//2012/10/19/gittip-misunderstood/" rel="alternate"></link><updated>2012-10-19T03:00:00-04:00</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2012-10-19:/2012/10/19/gittip-misunderstood/</id><summary type="html">&lt;p&gt;People do not understand gittip. Or, they do not understand how I use it. Worse, they &lt;strong&gt;think&lt;/strong&gt; they understand it &lt;a class="footnote-reference" href="#id2" id="id1"&gt;[1]&lt;/a&gt;. So much so, some choose to comment about it publicly.&lt;/p&gt;
-&lt;img alt="https://raw.github.com/ACLARKNET/aclarknet.github.com/master/images/condescend.jpg" src="https://raw.github.com/ACLARKNET/aclarknet.github.com/master/images/condescend.jpg" /&gt;
+&lt;img alt="images/condescend.jpg" src="images/condescend.jpg" /&gt;
 &lt;p&gt;Remember &lt;a class="reference external" href="http://blog.aclark.net/gittip-is-the-future.html"&gt;gittip is the future&lt;/a&gt;? Someone commented:&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&amp;quot;Nobody likes a beggar.&amp;quot;&lt;/p&gt;
@@ -635,7 +635,7 @@ $ bin/django-admin.py runserver --settings=hello.settings
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;/div&gt;
-</summary><category term="Mozilla"></category><category term="Plone"></category><category term="Python"></category></entry><entry><title>Why I Criticize The Plone Foundation Board</title><link href="http://blog.aclark.net//2012/10/17/why-i-criticize-the-plone-foundation-board/" rel="alternate"></link><updated>2012-10-17T20:00:00-04:00</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2012-10-17:/2012/10/17/why-i-criticize-the-plone-foundation-board/</id><summary type="html">&lt;img alt="https://raw.github.com/ACLARKNET/aclarknet.github.com/master/images/aclark-conf.jpg" src="https://raw.github.com/ACLARKNET/aclarknet.github.com/master/images/aclark-conf.jpg" /&gt;
+</summary><category term="Mozilla"></category><category term="Plone"></category><category term="Python"></category></entry><entry><title>Why I Criticize The Plone Foundation Board</title><link href="http://blog.aclark.net//2012/10/17/why-i-criticize-the-plone-foundation-board/" rel="alternate"></link><updated>2012-10-17T20:00:00-04:00</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2012-10-17:/2012/10/17/why-i-criticize-the-plone-foundation-board/</id><summary type="html">&lt;img alt="images/aclark-conf.jpg" src="images/aclark-conf.jpg" /&gt;
 &lt;p&gt;TL;DR: Because I care.&lt;/p&gt;
 &lt;p&gt;As some of you can probably relate to, I've had my fair share of disagreements with the Plone Foundation Board over the years. The good news is, for the most part, it (just like the community) is staffed with &lt;strong&gt;very reasonable people&lt;/strong&gt; who if you push them on an issue, will acknowledge that there are always competing viewpoints to any issue you can think of.&lt;/p&gt;
 &lt;div class="section" id="the-fallacy-of-false-cause"&gt;
@@ -662,7 +662,7 @@ $ bin/django-admin.py runserver --settings=hello.settings
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;/div&gt;
-</summary><category term="Mozilla"></category><category term="Python"></category><category term="Plone"></category></entry><entry><title>Top 3 "favorite" logical fallacies</title><link href="http://blog.aclark.net//2012/10/17/top-3-favorite-logical-fallacies/" rel="alternate"></link><updated>2012-10-17T02:00:00-04:00</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2012-10-17:/2012/10/17/top-3-favorite-logical-fallacies/</id><summary type="html">&lt;img alt="https://raw.github.com/ACLARKNET/aclarknet.github.com/master/images/y-u-no-agree.jpg" src="https://raw.github.com/ACLARKNET/aclarknet.github.com/master/images/y-u-no-agree.jpg" /&gt;
+</summary><category term="Mozilla"></category><category term="Python"></category><category term="Plone"></category></entry><entry><title>Top 3 "favorite" logical fallacies</title><link href="http://blog.aclark.net//2012/10/17/top-3-favorite-logical-fallacies/" rel="alternate"></link><updated>2012-10-17T02:00:00-04:00</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2012-10-17:/2012/10/17/top-3-favorite-logical-fallacies/</id><summary type="html">&lt;img alt="images/y-u-no-agree.jpg" src="images/y-u-no-agree.jpg" /&gt;
 &lt;p&gt;I love to debate issues. The more complex, the better. I have no formal training in &lt;a class="reference external" href="http://en.wikipedia.org/wiki/Debate"&gt;debate&lt;/a&gt;, but I wish I did. It may have better prepared me to face different personality types with varying degree of communication skill. You don't have to watch the 2012 U.S. Presidential Debates to know that people will say things that are &lt;strong&gt;BATSHIT CRAZY&lt;/strong&gt; to make their point. I've done it myself. That's why we need rules to formalize our discussions, because it's hard to stay on point.&lt;/p&gt;
 &lt;div class="section" id="fallacy"&gt;
 &lt;h2&gt;Fallacy&lt;/h2&gt;
@@ -709,7 +709,7 @@ $ bin/django-admin.py runserver --settings=hello.settings
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;/div&gt;
-</summary><category term="Mozilla"></category><category term="Python"></category><category term="Plone"></category></entry><entry><title>Looking for projects</title><link href="http://blog.aclark.net//2012/10/04/looking-for-projects/" rel="alternate"></link><updated>2012-10-04T10:30:00-04:00</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2012-10-04:/2012/10/04/looking-for-projects/</id><summary type="html">&lt;img alt="https://raw.github.com/ACLARKNET/aclarknet.github.com/master/images/use_python.jpg" src="https://raw.github.com/ACLARKNET/aclarknet.github.com/master/images/use_python.jpg" /&gt;
+</summary><category term="Mozilla"></category><category term="Python"></category><category term="Plone"></category></entry><entry><title>Looking for projects</title><link href="http://blog.aclark.net//2012/10/04/looking-for-projects/" rel="alternate"></link><updated>2012-10-04T10:30:00-04:00</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2012-10-04:/2012/10/04/looking-for-projects/</id><summary type="html">&lt;img alt="images/use_python.jpg" src="images/use_python.jpg" /&gt;
 &lt;p&gt;With &lt;a class="reference external" href="http://blog.aclark.net/2012/09/28/pythonpackages-com-one-year-later/"&gt;pythonpackages.com winding down&lt;/a&gt;, I am now actively seeking projects for Q4 2012 and beyond. I am good at:&lt;/p&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;Deploying Plone sites: &lt;a class="reference external" href="http://blog.aclark.net/2012/10/03/plone-4-3-alpha-1-in-production/"&gt;http://blog.aclark.net/2012/10/03/plone-4-3-alpha-1-in-production/&lt;/a&gt;&lt;/li&gt;
@@ -730,24 +730,24 @@ $ bin/django-admin.py runserver --settings=hello.settings
 &lt;li&gt;The ability to release a package with &lt;cite&gt;git push&lt;/cite&gt; (by adding the service: &lt;a class="reference external" href="https://github.com/github/github-services/blob/master/services/pythonpackages.rb"&gt;https://github.com/github/github-services/blob/master/services/pythonpackages.rb&lt;/a&gt;)&lt;/li&gt;
 &lt;li&gt;The ability to &amp;quot;manage packages&amp;quot; (see image below)&lt;/li&gt;
 &lt;/ul&gt;
-&lt;img alt="https://raw.github.com/ACLARKNET/aclarknet.github.com/master/images/manage-packages.png" src="https://raw.github.com/ACLARKNET/aclarknet.github.com/master/images/manage-packages.png" /&gt;
+&lt;img alt="images/manage-packages.png" src="images/manage-packages.png" /&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;The ability to &amp;quot;manage organizations&amp;quot; (see image below)&lt;/li&gt;
 &lt;/ul&gt;
-&lt;img alt="https://raw.github.com/ACLARKNET/aclarknet.github.com/master/images/manage-organizations.png" src="https://raw.github.com/ACLARKNET/aclarknet.github.com/master/images/manage-organizations.png" /&gt;
+&lt;img alt="images/manage-organizations.png" src="images/manage-organizations.png" /&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;The &lt;a class="reference external" href="http://docs.pythonpackages.com/en/latest/create-package.html#create-packages"&gt;ability to create packages through the web&lt;/a&gt; (i.e. from the web browser to GitHub, whereas normally you'd run PasteScript in your Terminal).&lt;/li&gt;
 &lt;/ul&gt;
-&lt;img alt="https://raw.github.com/ACLARKNET/aclarknet.github.com/master/images/create-new-package.png" src="https://raw.github.com/ACLARKNET/aclarknet.github.com/master/images/create-new-package.png" /&gt;
+&lt;img alt="images/create-new-package.png" src="images/create-new-package.png" /&gt;
 &lt;p&gt;And a few more logistical features that are cool:&lt;/p&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;The ability to pay with a credit card (via Stripe)&lt;/li&gt;
 &lt;/ul&gt;
-&lt;img alt="https://raw.github.com/ACLARKNET/aclarknet.github.com/master/images/pay-with-stripe.png" src="https://raw.github.com/ACLARKNET/aclarknet.github.com/master/images/pay-with-stripe.png" /&gt;
+&lt;img alt="images/pay-with-stripe.png" src="images/pay-with-stripe.png" /&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;The ability to oauth against PyPI:&lt;/li&gt;
 &lt;/ul&gt;
-&lt;img alt="https://raw.github.com/ACLARKNET/aclarknet.github.com/master/images/pypi-oauth.png" src="https://raw.github.com/ACLARKNET/aclarknet.github.com/master/images/pypi-oauth.png" /&gt;
+&lt;img alt="images/pypi-oauth.png" src="images/pypi-oauth.png" /&gt;
 &lt;p&gt;Still, we have only scratched the surface of what could potentially be provided to the Python community. Future plans include:&lt;/p&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;The ability to easily &lt;a class="reference external" href="https://bitbucket.org/pythonpackages/pythonpackages.com/issue/28/build-windows-installers"&gt;build Windows installers&lt;/a&gt; for your Python software.&lt;/li&gt;
@@ -836,7 +836,7 @@ Gittip is a system for funding people who build free culture. The core is small 
 &lt;/ul&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;Why? If for no other reason, because it comes from a member of the Python community: Chad Whitacre of &lt;a class="reference external" href="http://aspen.io"&gt;http://aspen.io&lt;/a&gt; fame. And the Python community has become near and dear to me, second only to my-one-true-open-source-love: Plone. So I want to see open source developers, particularly Python developers, succeed.&lt;/p&gt;
-&lt;img alt="http://blog.aclark.net/images/gittip.png" src="http://blog.aclark.net/images/gittip.png" /&gt;
+&lt;img alt="images/gittip.png" src="images/gittip.png" /&gt;
 &lt;p&gt;And succeed they will, with gittip. Some particularly impressive results so far:&lt;/p&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;Chad Whitacre, the founder, is making almost $160 per week: &lt;a class="reference external" href="https://www.gittip.com/whit537/"&gt;https://www.gittip.com/whit537/&lt;/a&gt;&lt;/li&gt;
@@ -866,7 +866,7 @@ Gittip is a system for funding people who build free culture. The core is small 
 &lt;/table&gt;
 </summary><category term="Mozilla"></category><category term="Plone"></category><category term="Python"></category></entry><entry><title>Yes, this blog is now powered by Pelican</title><link href="http://blog.aclark.net//2012/09/21/yes-this-blog-is-now-powered-by-pelican/" rel="alternate"></link><updated>2012-09-21T15:30:00-04:00</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2012-09-21:/2012/09/21/yes-this-blog-is-now-powered-by-pelican/</id><summary type="html">&lt;p&gt;As an open source &amp;quot;Plone guy&amp;quot;, I'm always prepared to defend and explain my choice to &lt;strong&gt;not&lt;/strong&gt; use Plone for blogging. A couple years ago, I started using Wordpress in order to learn its feature set. I enjoyed my time with it, but after moving to wordpress.com for &amp;quot;trouble free&amp;quot; hosting, I found I couldn't control my category feeds the way I wanted; the honeymoon was over.&lt;/p&gt;
 &lt;p&gt;This was a giant let down, because I was hoping to avoid putting any time in to my blogging infrastructure. For weeks I did nothing. I poked at various options: Pelican, Plone, Tumblr, others. Eventually, I found my way back to Pelican and now I'm happy again.&lt;/p&gt;
-&lt;img alt="http://blog.aclark.net/images/pelican.png" src="http://blog.aclark.net/images/pelican.png" /&gt;
+&lt;img alt="images/pelican.png" src="images/pelican.png" /&gt;
 &lt;p&gt;Pelican is a static blog generator, as you may have heard. So &lt;strong&gt;one big advantage&lt;/strong&gt; is:&lt;/p&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;You can host it for free, or close to free on any number of free or cheap static website hosting services! (I'm using GitHub Pages)&lt;/li&gt;
@@ -966,7 +966,6 @@ software with just a few clicks.&lt;/em&gt;&lt;/p&gt;
 &lt;div class="section" id="pyformance-0-2"&gt;
 &lt;h2&gt;pyformance 0.2&lt;/h2&gt;
 &lt;p&gt;pythonpackages.com recently processed it's first official release via the &lt;a class="reference external" href="http://blog.aclark.net/pythonpackagescom-new-github-service-quotgit-push-to-releasequot.html"&gt;new GitHub Service&lt;/a&gt;.&lt;/p&gt;
-&lt;img alt="http://aclark4life.files.wordpress.com/2012/08/screen-shot-2012-08-13-at-9-00-05-am.png?w=300" src="http://aclark4life.files.wordpress.com/2012/08/screen-shot-2012-08-13-at-9-00-05-am.png?w=300" /&gt;
 &lt;p&gt;As such, we are celebrating the release of &lt;a class="reference external" href="https://github.com/omergertel/pyformance"&gt;pyformance&lt;/a&gt; 0.2! According to the author &lt;a class="reference external" href="https://twitter.com/omergertel"&gt;Omer Gertel&lt;/a&gt;:&lt;/p&gt;
 &lt;pre class="literal-block"&gt;
 It's a straight forward port of Coda Hale's fantastic metrics
@@ -987,7 +986,6 @@ He explains some of the math behind the package.)
 software with just a few clicks.&lt;/em&gt;&lt;/p&gt;
 &lt;div class="section" id="pythonpackages-github-service"&gt;
 &lt;h2&gt;PythonPackages GitHub Service&lt;/h2&gt;
-&lt;img alt="http://aclark4life.files.wordpress.com/2012/08/screen-shot-2012-08-10-at-1-32-09-am.png?w=300" class="align-center" src="http://aclark4life.files.wordpress.com/2012/08/screen-shot-2012-08-10-at-1-32-09-am.png?w=300" /&gt;
 &lt;p&gt;There is a new &lt;a class="reference external" href="https://github.com/github/github-services"&gt;GitHub Service&lt;/a&gt; available for pythonpackages.com that&amp;nbsp;allows you to release Python packages from GitHub to the Python Package Index, simply by pushing a commit message that begins with &amp;quot;Release&amp;quot; e.g.:&lt;/p&gt;
 &lt;pre class="literal-block"&gt;
 $ git commit -a -m &amp;quot;Release 1.0&amp;quot;; git push
@@ -1004,78 +1002,26 @@ $ git commit -a -m &amp;quot;Release 1.0&amp;quot;; git push
 &lt;p&gt;Now you can git push to release! If you have any trouble, please &lt;a class="reference external" href="https://bitbucket.org/pythonpackages/pythonpackages.com/issues/new"&gt;open a ticket&lt;/a&gt;. These instructions will live permanently here:&amp;nbsp;&lt;a class="reference external" href="http://docs.pythonpackages.com/en/latest/github-service.html"&gt;http://docs.pythonpackages.com/en/latest/github-service.html&lt;/a&gt;.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-</summary><category term="Python"></category></entry><entry><title>pythonpackages.com: Using PyPI&amp;#039;s OAuth1 support to register and upload packages</title><link href="http://blog.aclark.net//2012/08/07/pythonpackagescom-using-pypi039s-oauth1-support-to-register-and-upload-packages/" rel="alternate"></link><updated>2012-08-07T05:16:00-04:00</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2012-08-07:/2012/08/07/pythonpackagescom-using-pypi039s-oauth1-support-to-register-and-upload-packages/</id><summary type="html">&lt;p&gt;&lt;strong&gt;*TL;DR&lt;/strong&gt; PyPI has OAuth1 support; pythonpackages.com uses it to send
-your GitHub repos to PyPI.* Thanks in very large part to &lt;a class="reference external" href="https://twitter.com/r1chardj0n3s"&gt;Richard
-Jones&lt;/a&gt;, the Python Package Index now has support for registering and
-uploading packages via OAuth1. And using his &lt;a class="reference external" href="https://gist.github.com/0d46c48b230e61e18479"&gt;sample code&lt;/a&gt; I was able
-to take advantage of it on pythonpackages.com. The result is a fairly
-&lt;strong&gt;elegant approach to releasing packages&lt;/strong&gt; sans dirty hacks (I had been
-asking users for their username and password, then storing them in an
-encrypted session cookies so I could send them to PyPI.) Here's how it
-works now.&lt;/p&gt;
+</summary><category term="Python"></category></entry><entry><title>pythonpackages.com: Using PyPI&amp;#039;s OAuth1 support to register and upload packages</title><link href="http://blog.aclark.net//2012/08/07/pythonpackagescom-using-pypi039s-oauth1-support-to-register-and-upload-packages/" rel="alternate"></link><updated>2012-08-07T05:16:00-04:00</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2012-08-07:/2012/08/07/pythonpackagescom-using-pypi039s-oauth1-support-to-register-and-upload-packages/</id><summary type="html">&lt;p&gt;&lt;strong&gt;*TL;DR&lt;/strong&gt; PyPI has OAuth1 support; pythonpackages.com uses it to send your GitHub repos to PyPI.* Thanks in very large part to &lt;a class="reference external" href="https://twitter.com/r1chardj0n3s"&gt;Richard Jones&lt;/a&gt;, the Python Package Index now has support for registering and uploading packages via OAuth1. And using his &lt;a class="reference external" href="https://gist.github.com/0d46c48b230e61e18479"&gt;sample code&lt;/a&gt; I was able to take advantage of it on pythonpackages.com. The result is a fairly &lt;strong&gt;elegant approach to releasing packages&lt;/strong&gt; sans dirty hacks (I had been asking users for their username and password, then storing them in an encrypted session cookies so I could send them to PyPI.) Here's how it works now.&lt;/p&gt;
 &lt;div class="section" id="sign-in-with-github"&gt;
 &lt;h2&gt;Sign In With GitHub&lt;/h2&gt;
-&lt;p&gt;GitHub provides an easy way to let folks sign in to pythonpackages.com
-with their APIv3. I was able to code the OAuth dance using only the
-requests library (HT Kenneth Reitz). This was working as of late 2011.
-&lt;a href="#id1"&gt;&lt;span class="problematic" id="id2"&gt;`|image0|`_&lt;/span&gt;&lt;/a&gt; &lt;a href="#id3"&gt;&lt;span class="problematic" id="id4"&gt;`|image1|`_&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;GitHub provides an easy way to let folks sign in to pythonpackages.com with their APIv3. I was able to code the OAuth dance using only the requests library (HT Kenneth Reitz). This was working as of late 2011.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="select-a-package"&gt;
 &lt;h2&gt;Select a package&lt;/h2&gt;
-&lt;p&gt;Once you are signed in, you can select a package. Selected packages can
-perform various actions, one of which is &lt;strong&gt;Tag and Release&lt;/strong&gt;.
-&lt;a href="#id5"&gt;&lt;span class="problematic" id="id6"&gt;`|image2|`_&lt;/span&gt;&lt;/a&gt; As soon as you select Tag and Release, you are required to
-authenticate with PyPI.&lt;/p&gt;
+&lt;p&gt;Once you are signed in, you can select a package. Selected packages can perform various actions, one of which is &lt;strong&gt;Tag and Release&lt;/strong&gt;.  As soon as you select Tag and Release, you are required to authenticate with PyPI.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="strikeout-enter-your-pypi-credentials"&gt;
 &lt;h2&gt;[STRIKEOUT:Enter your PyPI credentials]&lt;/h2&gt;
-&lt;p&gt;In order to get the beta out the door, a dirty hack was added to allow
-users to enter their PyPI credentials. Credentials were saved in an
-encrypted session cookie, then written out to .pypirc before calling
-`python setup.py upload`. Really terrible. This was shipped in early
-July 2012 and is thankfully no longer necessary (though it is &lt;a class="reference external" href="http://docs.pythonpackages.com/en/latest/security.html#github-credentials"&gt;still
-necessary to push the initial commit to GitHub.&lt;/a&gt;)&lt;/p&gt;
+&lt;p&gt;In order to get the beta out the door, a dirty hack was added to allow users to enter their PyPI credentials. Credentials were saved in an encrypted session cookie, then written out to .pypirc before calling `python setup.py upload`. Really terrible. This was shipped in early July 2012 and is thankfully no longer necessary (though it is &lt;a class="reference external" href="http://docs.pythonpackages.com/en/latest/security.html#github-credentials"&gt;still necessary to push the initial commit to GitHub.&lt;/a&gt;)&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="authorize-pythonpackages-com"&gt;
 &lt;h2&gt;Authorize pythonpackages.com&lt;/h2&gt;
-&lt;p&gt;Now authorization can happen elegantly via OAuth1. First, sign in to
-PyPI. Then authorize pythonpackages.com to act on your behalf. Lastly,
-profit (register and upload your package). &lt;a href="#id7"&gt;&lt;span class="problematic" id="id8"&gt;`|image3|`_&lt;/span&gt;&lt;/a&gt; &lt;a href="#id9"&gt;&lt;span class="problematic" id="id10"&gt;`|image4|`_&lt;/span&gt;&lt;/a&gt;
-&lt;a href="#id11"&gt;&lt;span class="problematic" id="id12"&gt;`|image5|`_&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Now authorization can happen elegantly via OAuth1. First, sign in to PyPI. Then authorize pythonpackages.com to act on your behalf. Lastly, profit (register and upload your package).&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="register-and-upload-your-package"&gt;
 &lt;h2&gt;Register and upload your package&lt;/h2&gt;
-&lt;p&gt;At this point you are free to tag and release. &lt;a href="#id13"&gt;&lt;span class="problematic" id="id14"&gt;`|image6|`_&lt;/span&gt;&lt;/a&gt; &lt;a href="#id15"&gt;&lt;span class="problematic" id="id16"&gt;`|image7|`_&lt;/span&gt;&lt;/a&gt;
-I am really excited about this. I began fantasizing about it almost a
-year ago and after several false starts (pypissh, openid, avoidance) it
-is now a reality. If you have a minute, please &lt;a class="reference external" href="https://pythonpackages.com/signup"&gt;give it a try&lt;/a&gt;.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="system-messages section"&gt;
-&lt;h2&gt;Docutils System Messages&lt;/h2&gt;
-&lt;div class="system-message" id="id1"&gt;
-&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/pythonpackages-com-using-pypis-oauth1-support-to-register-and-upload-packages.rst&lt;/tt&gt;, line 19); &lt;em&gt;&lt;a href="#id2"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
-Unknown target name: &amp;quot;|image0|&amp;quot;.&lt;/div&gt;
-&lt;div class="system-message" id="id3"&gt;
-&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/pythonpackages-com-using-pypis-oauth1-support-to-register-and-upload-packages.rst&lt;/tt&gt;, line 19); &lt;em&gt;&lt;a href="#id4"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
-Unknown target name: &amp;quot;|image1|&amp;quot;.&lt;/div&gt;
-&lt;div class="system-message" id="id5"&gt;
-&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/pythonpackages-com-using-pypis-oauth1-support-to-register-and-upload-packages.rst&lt;/tt&gt;, line 27); &lt;em&gt;&lt;a href="#id6"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
-Unknown target name: &amp;quot;|image2|&amp;quot;.&lt;/div&gt;
-&lt;div class="system-message" id="id7"&gt;
-&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/pythonpackages-com-using-pypis-oauth1-support-to-register-and-upload-packages.rst&lt;/tt&gt;, line 45); &lt;em&gt;&lt;a href="#id8"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
-Unknown target name: &amp;quot;|image3|&amp;quot;.&lt;/div&gt;
-&lt;div class="system-message" id="id9"&gt;
-&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/pythonpackages-com-using-pypis-oauth1-support-to-register-and-upload-packages.rst&lt;/tt&gt;, line 45); &lt;em&gt;&lt;a href="#id10"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
-Unknown target name: &amp;quot;|image4|&amp;quot;.&lt;/div&gt;
-&lt;div class="system-message" id="id11"&gt;
-&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/pythonpackages-com-using-pypis-oauth1-support-to-register-and-upload-packages.rst&lt;/tt&gt;, line 45); &lt;em&gt;&lt;a href="#id12"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
-Unknown target name: &amp;quot;|image5|&amp;quot;.&lt;/div&gt;
-&lt;div class="system-message" id="id13"&gt;
-&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/pythonpackages-com-using-pypis-oauth1-support-to-register-and-upload-packages.rst&lt;/tt&gt;, line 53); &lt;em&gt;&lt;a href="#id14"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
-Unknown target name: &amp;quot;|image6|&amp;quot;.&lt;/div&gt;
-&lt;div class="system-message" id="id15"&gt;
-&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/pythonpackages-com-using-pypis-oauth1-support-to-register-and-upload-packages.rst&lt;/tt&gt;, line 53); &lt;em&gt;&lt;a href="#id16"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
-Unknown target name: &amp;quot;|image7|&amp;quot;.&lt;/div&gt;
+&lt;p&gt;At this point you are free to tag and release. I am really excited about this. I began fantasizing about it almost a year ago and after several false starts (pypissh, openid, avoidance) it is now a reality. If you have a minute, please &lt;a class="reference external" href="https://pythonpackages.com/signup"&gt;give it a try&lt;/a&gt;.&lt;/p&gt;
 &lt;/div&gt;
 </summary><category term="Plone"></category><category term="Python"></category></entry><entry><title>Building Windows Installers In The Cloud</title><link href="http://blog.aclark.net//2012/08/01/building-windows-installers-in-the-cloud/" rel="alternate"></link><updated>2012-08-01T22:19:00-04:00</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2012-08-01:/2012/08/01/building-windows-installers-in-the-cloud/</id><summary type="html">&lt;p&gt;With pythonpackages.com, I want to solve real problems for people today. So here's a proof of concept for building Windows installers quickly and easily &amp;quot;in the cloud&amp;quot; (i.e. without a Windows machine local). This article is mostly about the back end, as the front end is &lt;a class="reference external" href="http://docs.pythonpackages.com/en/latest/introduction.html"&gt;already documented&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;TL;DR: We're moving from proof-of-concept phase to useful-service phase. If you find the demo interesting and want to help build something great, please consider purchasing one of&lt;/em&gt; &lt;a class="reference external" href="http://pythonpackages.com/plans"&gt;our current plans&lt;/a&gt;.&lt;/p&gt;
@@ -1270,130 +1216,43 @@ IRC).&lt;/p&gt;
 &lt;p&gt;But wait, there's more. Paid plans (which have not been deployed yet) get access to GitHub organizations, whose repositories can then be &amp;quot;slotted&amp;quot; like normal. If you'd like to get started using the site, check out the &lt;a class="reference external" href="http://docs.pythonpackages.com/en/latest/crashcourse.html"&gt;crash course&lt;/a&gt;.&lt;/p&gt;
 &lt;/div&gt;
 </summary><category term="Mozilla"></category><category term="Plone"></category><category term="Python"></category></entry><entry><title>Zope2 Bootstrap</title><link href="http://blog.aclark.net//2012/06/12/zope2-bootstrap/" rel="alternate"></link><updated>2012-06-12T10:27:00-04:00</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2012-06-12:/2012/06/12/zope2-bootstrap/</id><summary type="html">&lt;p&gt;&lt;em&gt;Bootstrap all the things, including Zope2.&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a class="reference external" href="http://pypi.python.org/pypi/zope2_bootstrap"&gt;zope2_bootstrap&lt;/a&gt; is a new Python package that &lt;a class="reference external" href="http://pypi.python.org/pypi/collective.monkeypatcher"&gt;monkey patches&lt;/a&gt; Zope2
-in order to:&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external" href="http://pypi.python.org/pypi/zope2_bootstrap"&gt;zope2_bootstrap&lt;/a&gt; is a new Python package that &lt;a class="reference external" href="http://pypi.python.org/pypi/collective.monkeypatcher"&gt;monkey patches&lt;/a&gt; Zope2 in order to:&lt;/p&gt;
 &lt;ul class="simple"&gt;
-&lt;li&gt;Replace &lt;a class="reference external" href="http://zope3.pov.lt/trac/browser/Zope/trunk/src/App/dtml/manage_page_style.css.dtml"&gt;manage_page_styles.css.dtml&lt;/a&gt; styles with &lt;a class="reference external" href="http://twitter.github.com/bootstrap/base-css.html"&gt;Twitter
-Bootstrap&lt;/a&gt; styles.&lt;/li&gt;
+&lt;li&gt;Replace &lt;a class="reference external" href="http://zope3.pov.lt/trac/browser/Zope/trunk/src/App/dtml/manage_page_style.css.dtml"&gt;manage_page_styles.css.dtml&lt;/a&gt; styles with &lt;a class="reference external" href="http://twitter.github.com/bootstrap/base-css.html"&gt;Twitter Bootstrap&lt;/a&gt; styles.&lt;/li&gt;
 &lt;li&gt;Adds CSS classes to &lt;a class="reference external" href="http://zope3.pov.lt/trac/browser/Zope/trunk/src/OFS/dtml/main.dtml"&gt;main&lt;/a&gt; and/or &lt;a class="reference external" href="http://zope3.pov.lt/trac/browser/Products.ExternalEditor/trunk/Products/ExternalEditor/manage_main.dtml"&gt;manage_main&lt;/a&gt; tables.&lt;/li&gt;
-&lt;li&gt;Inserts a Plone logo (if Plone is installed) above
-&lt;a class="reference external" href="http://zope3.pov.lt/trac/browser/Products.ExternalEditor/trunk/Products/ExternalEditor/manage_tabs.dtml"&gt;manage_tabs.dtml&lt;/a&gt; tabs (h/t:
-&lt;a class="reference external" href="https://github.com/plone/Products.CMFPlone/blob/master/Products/CMFPlone/patches/addzmiplonesite.py"&gt;https://github.com/plone/Products.CMFPlone/blob/master/Products/CMFPlone/patches/addzmiplonesite.py&lt;/a&gt;).&lt;/li&gt;
-&lt;li&gt;Inserts a ZMI warning (if Plone is installed) below
-&lt;a class="reference external" href="http://zope3.pov.lt/trac/browser/Products.ExternalEditor/trunk/Products/ExternalEditor/manage_tabs.dtml"&gt;manage_tabs.dtml&lt;/a&gt; tabs.&lt;/li&gt;
+&lt;li&gt;Inserts a Plone logo (if Plone is installed) above &lt;a class="reference external" href="http://zope3.pov.lt/trac/browser/Products.ExternalEditor/trunk/Products/ExternalEditor/manage_tabs.dtml"&gt;manage_tabs.dtml&lt;/a&gt; tabs (h/t: &lt;a class="reference external" href="https://github.com/plone/Products.CMFPlone/blob/master/Products/CMFPlone/patches/addzmiplonesite.py"&gt;https://github.com/plone/Products.CMFPlone/blob/master/Products/CMFPlone/patches/addzmiplonesite.py&lt;/a&gt;).&lt;/li&gt;
+&lt;li&gt;Inserts a ZMI warning (if Plone is installed) below &lt;a class="reference external" href="http://zope3.pov.lt/trac/browser/Products.ExternalEditor/trunk/Products/ExternalEditor/manage_tabs.dtml"&gt;manage_tabs.dtml&lt;/a&gt; tabs.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;a href="#id2"&gt;&lt;span class="problematic" id="id3"&gt;`|image0|`_&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="#id4"&gt;&lt;span class="problematic" id="id5"&gt;`|image1|`_&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;In the next version, I'll try to import &lt;a class="reference external" href="http://twitter.github.com/bootstrap/javascript.html"&gt;Twitter Bootstrap JavaScript&lt;/a&gt;
-for even more goodness. Enjoy, and give feedback in the comments, or
-&lt;a class="reference external" href="https://github.com/aclark4life/zope2_bootstrap/issues"&gt;here&lt;/a&gt;.&lt;/p&gt;
-&lt;div class="system-messages section"&gt;
-&lt;h2&gt;Docutils System Messages&lt;/h2&gt;
-&lt;div class="system-message" id="id2"&gt;
-&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/zope2-bootstrap.rst&lt;/tt&gt;, line 20); &lt;em&gt;&lt;a href="#id3"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
-Unknown target name: &amp;quot;|image0|&amp;quot;.&lt;/div&gt;
-&lt;div class="system-message" id="id4"&gt;
-&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/zope2-bootstrap.rst&lt;/tt&gt;, line 22); &lt;em&gt;&lt;a href="#id5"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
-Unknown target name: &amp;quot;|image1|&amp;quot;.&lt;/div&gt;
-&lt;/div&gt;
+&lt;p&gt;In the next version, I'll try to import &lt;a class="reference external" href="http://twitter.github.com/bootstrap/javascript.html"&gt;Twitter Bootstrap JavaScript&lt;/a&gt; for even more goodness. Enjoy, and give feedback in the comments, or &lt;a class="reference external" href="https://github.com/aclark4life/zope2_bootstrap/issues"&gt;here&lt;/a&gt;.&lt;/p&gt;
 </summary><category term="Plone"></category><category term="Python"></category></entry><entry><title>A simple printer of nested lists</title><link href="http://blog.aclark.net//2012/05/23/a-simple-printer-of-nested-lists/" rel="alternate"></link><updated>2012-05-23T22:58:00-04:00</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2012-05-23:/2012/05/23/a-simple-printer-of-nested-lists/</id><summary type="html">&lt;p&gt;&lt;em&gt;A rant&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;Do you ever get the urge to kill? How many of us cringe whenever we see
-these words? Lately I've been spending a lot of time developing
-&lt;a class="reference external" href="http://pythonpackages.com"&gt;pythonpackages.com&lt;/a&gt;, (now running on heroku!) during which time I see
-a lot of these kinds of packages being released:&lt;/p&gt;
-&lt;p&gt;&lt;a class="reference external" href="http://aclark4life.files.wordpress.com/2012/05/screen-shot-2012-05-23-at-9-41-32-pm.png"&gt;|image0|&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;I kid about the killing part, but seriously: &lt;strong&gt;this is a problem&lt;/strong&gt;.
-Fortunately for us, our PyPI overloads see fit to occasionally remove
-these packages, and for this I am grateful. I love seeing this:&lt;/p&gt;
-&lt;p&gt;&lt;a class="reference external" href="http://aclark4life.files.wordpress.com/2012/05/screen-shot-2012-05-23-at-9-57-43-pm.png"&gt;|image1|&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;I mean it makes me &lt;em&gt;dance-around-the-room&lt;/em&gt; happy! Ahem. But are they
-really all gone? Close enough. A quick &lt;a class="reference external" href="https://crate.io/?q=a+simple+printer+of+nested+lists"&gt;crate.io search&lt;/a&gt; now shows only
-2 packages instead of 4 pages of results:&lt;/p&gt;
-&lt;p&gt;&lt;a class="reference external" href="http://aclark4life.files.wordpress.com/2012/05/screen-shot-2012-05-23-at-10-04-46-pm.png"&gt;|image2|&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Hallelujah! But is this the best we can do? I know that some
-well-meaning person wrote a book containing the example that is leading
-some poor, misguided souls to spam PyPI (if only the author listed the
-test site instead: &lt;a class="reference external" href="http://testpypi.python.org/pypi"&gt;http://testpypi.python.org/pypi&lt;/a&gt;). And I have to
-assume that this was just some terrible mistake. But do we all have to
-live with this mistake?&lt;/p&gt;
-&lt;p&gt;I'm asking because I honestly don't know the answer. I remember when I
-started pythonpackages.com, the &lt;a class="reference external" href="http://pythonpackages.com/package/deliverance"&gt;Deliverance&lt;/a&gt; documentation was being
-updated something like every 5 minutes (kidding again, but it was
-frequent enough to be annoying). After grousing about it in public, it
-stopped happening!&lt;/p&gt;
-&lt;p&gt;I wonder if some good natured grousing about our friends (read: enemies)
-the &lt;em&gt;simple printers of nested lists&lt;/em&gt; will do the same?&lt;/p&gt;
+&lt;p&gt;Do you ever get the urge to kill? How many of us cringe whenever we see these words? Lately I've been spending a lot of time developing &lt;a class="reference external" href="http://pythonpackages.com"&gt;pythonpackages.com&lt;/a&gt;, (now running on heroku!) during which time I see a lot of these kinds of packages being released.&lt;/p&gt;
+&lt;p&gt;I kid about the killing part, but seriously: &lt;strong&gt;this is a problem&lt;/strong&gt;.  Fortunately for us, our PyPI overloads see fit to occasionally remove these packages, and for this I am grateful.&lt;/p&gt;
+&lt;p&gt;I mean it makes me &lt;em&gt;dance-around-the-room&lt;/em&gt; happy! Ahem. But are they really all gone? Close enough. A quick &lt;a class="reference external" href="https://crate.io/?q=a+simple+printer+of+nested+lists"&gt;crate.io search&lt;/a&gt; now shows only 2 packages instead of 4 pages of results.&lt;/p&gt;
+&lt;p&gt;Hallelujah! But is this the best we can do? I know that some well-meaning person wrote a book containing the example that is leading some poor, misguided souls to spam PyPI (if only the author listed the test site instead: &lt;a class="reference external" href="http://testpypi.python.org/pypi"&gt;http://testpypi.python.org/pypi&lt;/a&gt;). And I have to assume that this was just some terrible mistake. But do we all have to live with this mistake?&lt;/p&gt;
+&lt;p&gt;I'm asking because I honestly don't know the answer. I remember when I started pythonpackages.com, the &lt;a class="reference external" href="http://pythonpackages.com/package/deliverance"&gt;Deliverance&lt;/a&gt; documentation was being updated something like every 5 minutes (kidding again, but it was frequent enough to be annoying). After grousing about it in public, it stopped happening!&lt;/p&gt;
+&lt;p&gt;I wonder if some good natured grousing about our friends (read: enemies) the &lt;em&gt;simple printers of nested lists&lt;/em&gt; will do the same?&lt;/p&gt;
 </summary><category term="Plone"></category><category term="Python"></category></entry><entry><title>Adam Yauch has passed</title><link href="http://blog.aclark.net//2012/05/11/adam-yauch-has-passed/" rel="alternate"></link><updated>2012-05-11T09:58:00-04:00</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2012-05-11:/2012/05/11/adam-yauch-has-passed/</id><summary type="html">&lt;p&gt;&lt;em&gt;And why it matters to tech people, like me&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;(I hope my tech colleagues will indulge my thoughts on the recent
-passing of Beastie Boy Adam Yauch.)&lt;/p&gt;
-&lt;p&gt;TL;DR: I &amp;lt;3 the Beastie Boys and will miss Adam Yauch; and I suspect
-many others in the tech world do, and will, too&lt;/p&gt;
+&lt;p&gt;(I hope my tech colleagues will indulge my thoughts on the recent passing of Beastie Boy Adam Yauch.)&lt;/p&gt;
+&lt;p&gt;TL;DR: I &amp;lt;3 the Beastie Boys and will miss Adam Yauch; and I suspect many others in the tech world do, and will, too&lt;/p&gt;
 &lt;div class="section" id="where-i-came-from"&gt;
 &lt;h2&gt;Where I came from&lt;/h2&gt;
-&lt;p&gt;For as long as I can remember, I've been trying to emulate my heroes. It
-started with pop music in the 80s and artists like Michael Jackson,
-Madonna, and of course the Beastie Boys. While I was obsessed with
-Michael Jackson back then, I don't recall trying too hard to emulate the
-Beastie Boys… until the 90s.&lt;/p&gt;
-&lt;p&gt;In the early 90s, I was just out of high school (where I discovered Led
-Zeppelin, Pink Floyd, Beatles, Stones etc), was working full time at
-Chili's, and had no serious plans for college. I was really into music,
-but didn't have the social skills required to participate in any
-meaningful activities, like playing in a band.&lt;/p&gt;
+&lt;p&gt;For as long as I can remember, I've been trying to emulate my heroes. It started with pop music in the 80s and artists like Michael Jackson, Madonna, and of course the Beastie Boys. While I was obsessed with Michael Jackson back then, I don't recall trying too hard to emulate the Beastie Boys… until the 90s.&lt;/p&gt;
+&lt;p&gt;In the early 90s, I was just out of high school (where I discovered Led Zeppelin, Pink Floyd, Beatles, Stones etc), was working full time at Chili's, and had no serious plans for college. I was really into music, but didn't have the social skills required to participate in any meaningful activities, like playing in a band.&lt;/p&gt;
 &lt;p&gt;But I loved music.&lt;/p&gt;
-&lt;p&gt;I listened to Nirvana, Beastie Boys, and any number of other pop, rock
-and rap acts of the 90s. I went to rock shows at the 8x10 in Baltimore
-and 9:30 club in DC. I went to festivals like the HFSistival and
-Lollapalooza. Throughout the decade, I formulated my thoughts on how I
-would, one day, start a band.&lt;/p&gt;
-&lt;p&gt;To say the Beastie Boys were inspirational to me during this time period
-would be a colossal understatement (remember the first time you saw the
-&amp;quot;So Watcha Want?&amp;quot; video?) While I wholly identified with the
-angst-ridden music of Nirvana, I also equally identified with the good
-natured spirit of, and dope-ass-jams from, the Beastie Boys: three guys
-producing kick ass music with, among other instruments, a &amp;quot;bullshit mic,
-made out of plastic&amp;quot;. Most importantly: they never took themselves too
-seriously. They made great music, but they were also just like you and
-me. They made you feel like you could do it, too.&lt;/p&gt;
-&lt;p&gt;In the late 90s and early to mid 2000s, I finally got a chance to play
-music. I started a band, played some shows, recorded a few albums, and
-had a lot of fun. Most importantly: I proved to myself I could do it.
-The shows I put on with my band were awesome; they were true rock shows:
-those in which the audience responded positively, viscerally. There is
-no better feeling in the world than that type of self-expression.&lt;/p&gt;
-&lt;p&gt;&lt;a class="reference external" href="http://aclark4life.files.wordpress.com/2012/05/img_0391.jpg"&gt;|image0|&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;I listened to Nirvana, Beastie Boys, and any number of other pop, rock and rap acts of the 90s. I went to rock shows at the 8x10 in Baltimore and 9:30 club in DC. I went to festivals like the HFSistival and Lollapalooza. Throughout the decade, I formulated my thoughts on how I would, one day, start a band.&lt;/p&gt;
+&lt;p&gt;To say the Beastie Boys were inspirational to me during this time period would be a colossal understatement (remember the first time you saw the &amp;quot;So Watcha Want?&amp;quot; video?) While I wholly identified with the angst-ridden music of Nirvana, I also equally identified with the good natured spirit of, and dope-ass-jams from, the Beastie Boys: three guys producing kick ass music with, among other instruments, a &amp;quot;bullshit mic, made out of plastic&amp;quot;. Most importantly: they never took themselves too seriously. They made great music, but they were also just like you and me. They made you feel like you could do it, too.&lt;/p&gt;
+&lt;p&gt;In the late 90s and early to mid 2000s, I finally got a chance to play music. I started a band, played some shows, recorded a few albums, and had a lot of fun. Most importantly: I proved to myself I could do it.  The shows I put on with my band were awesome; they were true rock shows: those in which the audience responded positively, viscerally. There is no better feeling in the world than that type of self-expression.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="who-i-am-now"&gt;
 &lt;h2&gt;Who I am now&lt;/h2&gt;
-&lt;p&gt;Eventually the band imploded, and I found a new obsession: technology. I
-have always been obsessed with tech, but never focused on it exclusively
-until the mid to late 2000s. Now I have a new set of heroes to emulate,
-and many new things to prove to myself I can do. Maybe I'll even play
-music again one day, but if I don't, I know that I accomplished, on some
-level, what I set out to do. And that is a great feeling.&lt;/p&gt;
+&lt;p&gt;Eventually the band imploded, and I found a new obsession: technology. I have always been obsessed with tech, but never focused on it exclusively until the mid to late 2000s. Now I have a new set of heroes to emulate, and many new things to prove to myself I can do. Maybe I'll even play music again one day, but if I don't, I know that I accomplished, on some level, what I set out to do. And that is a great feeling.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="where-we-are-all-headed"&gt;
 &lt;h2&gt;Where we are all headed&lt;/h2&gt;
-&lt;p&gt;We are all headed forward, now, without Adam Yauch to inspire us anew.
-This sucks more than words can express; but it is, alas, a part of life.
-Without death to make life precious, there would be no joy in living. We
-all only have a short period of time in life to accomplish our goals, so
-it is important that we spend time trying to do so. (And if your goals
-include helping other people, bonus points from Adam.)&lt;/p&gt;
-&lt;p&gt;I cannot thank Adam Yauch (MCA), Adam Horovitz (Ad-Rock), and Mike D
-enough; for providing me with all the inspiration I needed, when I
-needed it, to live my life; it has made all the difference. I know that
-Ad-Rock and Mike D will continue to live their lives; and whether that
-includes performing as &amp;quot;Beastie Boys&amp;quot; or not, does not matter to me; I
-will still be watching, waiting to be inspired again. And to Adam Yauch
-who has rapped, joked, snowboarded, and philanthropized his way through
-all our lives: thank you for the inspiration; I use it every day, and
-I'll never forget it was &lt;em&gt;you&lt;/em&gt; and your closest two brothers Ad-Rock and
-Mike D who gave it to me.&lt;/p&gt;
+&lt;p&gt;We are all headed forward, now, without Adam Yauch to inspire us anew.  This sucks more than words can express; but it is, alas, a part of life.  Without death to make life precious, there would be no joy in living. We all only have a short period of time in life to accomplish our goals, so it is important that we spend time trying to do so. (And if your goals include helping other people, bonus points from Adam.)&lt;/p&gt;
+&lt;p&gt;I cannot thank Adam Yauch (MCA), Adam Horovitz (Ad-Rock), and Mike D enough; for providing me with all the inspiration I needed, when I needed it, to live my life; it has made all the difference. I know that Ad-Rock and Mike D will continue to live their lives; and whether that includes performing as &amp;quot;Beastie Boys&amp;quot; or not, does not matter to me; I will still be watching, waiting to be inspired again. And to Adam Yauch who has rapped, joked, snowboarded, and philanthropized his way through all our lives: thank you for the inspiration; I use it every day, and I'll never forget it was &lt;em&gt;you&lt;/em&gt; and your closest two brothers Ad-Rock and Mike D who gave it to me.&lt;/p&gt;
 &lt;/div&gt;
-</summary><category term="Mozilla"></category><category term="Plone"></category><category term="Python"></category></entry><entry><title>test-plone tmp</title><link href="http://blog.aclark.net//2012/04/04/test-plone-tmp/" rel="alternate"></link><updated>2012-04-04T14:14:00-04:00</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2012-04-04:/2012/04/04/test-plone-tmp/</id><summary type="html">&lt;p&gt;Since Day 1 with Plone circa 2004, I've always taken pride in and
-greatly enjoyed refining my development environment. It's been stable
-for a while now (&amp;gt; 1 year or so) so I thought I'd share.&lt;/p&gt;
+</summary><category term="Mozilla"></category><category term="Plone"></category><category term="Python"></category></entry><entry><title>test-plone tmp</title><link href="http://blog.aclark.net//2012/04/04/test-plone-tmp/" rel="alternate"></link><updated>2012-04-04T14:14:00-04:00</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2012-04-04:/2012/04/04/test-plone-tmp/</id><summary type="html">&lt;p&gt;Since Day 1 with Plone circa 2004, I've always taken pride in and greatly enjoyed refining my development environment. It's been stable for a while now (&amp;gt; 1 year or so) so I thought I'd share.&lt;/p&gt;
 &lt;div class="section" id="operating-system"&gt;
 &lt;h2&gt;Operating system&lt;/h2&gt;
 &lt;p&gt;Mac OS X Latest (Lion, at the time of this writing)&lt;/p&gt;
@@ -1423,27 +1282,32 @@ for a while now (&amp;gt; 1 year or so) so I thought I'd share.&lt;/p&gt;
 &lt;div class="section" id="additional-tools"&gt;
 &lt;h2&gt;Additional tools&lt;/h2&gt;
 &lt;p&gt;A &lt;a class="reference external" href="https://github.com/aclark4life/binfiles/blob/master/test-plone"&gt;shell script to run virtualenv, buildout, etc&lt;/a&gt;:&lt;/p&gt;
-&lt;/p&gt;&lt;p&gt;[bash] #!/bin/sh if ! [ -n &amp;quot;$1&amp;quot; ] then echo &amp;quot;Usage:nn$0 &amp;lt;dir&amp;gt;n&amp;quot; exit 1
+&lt;pre class="literal-block"&gt;
+[bash] #!/bin/sh if ! [ -n &amp;quot;$1&amp;quot; ] then echo &amp;quot;Usage:nn$0 &amp;lt;dir&amp;gt;n&amp;quot; exit 1
 fi if ! [ -d $1 ] then mkdir $1 fi cd $1 virtualenv-2.7 . bin/pip
 install zc.buildout bin/buildout init cat &amp;lt;&amp;lt; EOF &amp;gt; buildout.cfg
 [buildout] extends =
 http://build.pythonpackages.com/buildout/plone/4.2.x-dev EOF
 bin/buildout bin/plone start sleep 4 echo &amp;quot;Adding Plone site...&amp;quot; curl -d
 form.submitted:boolean=&amp;quot;True&amp;quot;
-http://admin:admin&amp;#64;localhost:8080/&amp;#64;&amp;#64;plone-addsite?site_id=Plone
-bin/plone stop bin/plone fg [/bash]&lt;/p&gt;
+http://admin:admin&amp;#64;localhost:8080/&amp;#64;&amp;#64;plone-addsite?site\_id=Plone
+bin/plone stop bin/plone fg [/bash]
+&lt;/pre&gt;
 &lt;p&gt;A &lt;a class="reference external" href="https://github.com/aclark4life/binfiles/blob/master/tmp"&gt;Python script to create temporary directories&lt;/a&gt;:&lt;/p&gt;
-&lt;p&gt;[python] #!/usr/bin/env python&lt;/p&gt;
-&lt;p&gt;import os import tempfile print os.path.abspath(tempfile.mkdtemp())
-[/python]&lt;/p&gt;
-&lt;p&gt;&lt;p&gt;A default buildout config file:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+[python] #!/usr/bin/env python
+
+import os import tempfile print os.path.abspath(tempfile.mkdtemp())
+[/python]
+&lt;/pre&gt;
+&lt;p&gt;A default buildout config file:&lt;/p&gt;
 &lt;pre class="literal-block"&gt;
 [buildout]
 eggs-directory = /Users/aclark/Developer/eggs-directory
 download-cache = /Users/aclark/Developer/download-cache
 extends-cache = /Users/aclark/Developer/extends-cache
 &lt;/pre&gt;
-&lt;/p&gt;&lt;/div&gt;
+&lt;/div&gt;
 &lt;div class="section" id="workflow"&gt;
 &lt;h2&gt;Workflow&lt;/h2&gt;
 &lt;p&gt;My typical workflow looks like this:&lt;/p&gt;
@@ -1452,16 +1316,8 @@ extends-cache = /Users/aclark/Developer/extends-cache
 &lt;li&gt;Hear question and get inspired to run Plone&lt;/li&gt;
 &lt;li&gt;Run: &lt;strong&gt;$ test-plone `tmp`&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;a class="reference external" href="https://gist.github.com/2304317"&gt;~ 1 minute later&lt;/a&gt; I'm browsing &lt;strong&gt;http://localhost:8080/Plone&lt;/strong&gt; and can
-install add-ons, check ZMI settings, etc.&lt;/p&gt;
-&lt;/p&gt;&lt;p&gt;&lt;a href="#id1"&gt;&lt;span class="problematic" id="id2"&gt;`|image0|`_&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external" href="https://gist.github.com/2304317"&gt;~ 1 minute later&lt;/a&gt; I'm browsing &lt;strong&gt;http://localhost:8080/Plone&lt;/strong&gt; and can install add-ons, check ZMI settings, etc.&lt;/p&gt;
 &lt;p&gt;Enjoy.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="system-messages section"&gt;
-&lt;h2&gt;Docutils System Messages&lt;/h2&gt;
-&lt;div class="system-message" id="id1"&gt;
-&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/test-plone-tmp.rst&lt;/tt&gt;, line 98); &lt;em&gt;&lt;a href="#id2"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
-Unknown target name: &amp;quot;|image0|&amp;quot;.&lt;/div&gt;
 &lt;/div&gt;
 </summary><category term="Plone"></category><category term="Python"></category></entry><entry><title>New vanity release</title><link href="http://blog.aclark.net//2012/01/30/new-vanity-release/" rel="alternate"></link><updated>2012-01-30T09:52:00-05:00</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2012-01-30:/2012/01/30/new-vanity-release/</id><summary type="html">&lt;p&gt;With all the Python &lt;a class="reference external" href="http://crate.io/"&gt;stats&lt;/a&gt; &lt;a class="reference external" href="http://python3wos.appspot.com/"&gt;goodness&lt;/a&gt; going on recently, I got
 inspired to make a new &lt;a class="reference external" href="http://pythonpackages.com/info/vanity"&gt;vanity&lt;/a&gt; release. This release features the
@@ -1624,22 +1480,12 @@ Package `pyramid` has been downloaded 97,222 times!
 &lt;/pre&gt;
 &lt;p&gt;Enjoy the new release.&lt;/p&gt;
 &lt;/div&gt;
-</summary><category term="Plone"></category><category term="Python"></category></entry><entry><title>Hello Plone theming</title><link href="http://blog.aclark.net//2012/01/25/hello-plone-theming/" rel="alternate"></link><updated>2012-01-25T00:15:00-05:00</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2012-01-25:/2012/01/25/hello-plone-theming/</id><summary type="html">&lt;p&gt;In this post, we introduce a new tutorial aimed at bridging the gap
-between the &lt;strong&gt;incredibly easy to use and enormously powerful Diazo
-theming engine for Plone&lt;/strong&gt;, and bootstrapping your first new theme. You
-do not need to have any Python skills whatsoever to perform these tasks.
-New Plone themes are:&lt;/p&gt;
+</summary><category term="Plone"></category><category term="Python"></category></entry><entry><title>Hello Plone theming</title><link href="http://blog.aclark.net//2012/01/25/hello-plone-theming/" rel="alternate"></link><updated>2012-01-25T00:15:00-05:00</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2012-01-25:/2012/01/25/hello-plone-theming/</id><summary type="html">&lt;p&gt;In this post, we introduce a new tutorial aimed at bridging the gap between the &lt;strong&gt;incredibly easy to use and enormously powerful Diazo theming engine for Plone&lt;/strong&gt;, and bootstrapping your first new theme. You do not need to have any Python skills whatsoever to perform these tasks. New Plone themes are:&lt;/p&gt;
 &lt;ul class="simple"&gt;
-&lt;li&gt;HTML/CSS/JavaScript/images (Sound familiar? You don't need to know
-any Plone to understand this part.)&lt;/li&gt;
-&lt;li&gt;A set of rules that map your HTML/CSS/JavaScript/images to Plone
-content. (This part is Diazo-specific; and while Diazo is not part of
-Plone, integration is provided by a Python package called
-plone.app.theming.)&lt;/li&gt;
+&lt;li&gt;HTML/CSS/JavaScript/images (Sound familiar? You don't need to know any Plone to understand this part.)&lt;/li&gt;
+&lt;li&gt;A set of rules that map your HTML/CSS/JavaScript/images to Plone content. (This part is Diazo-specific; and while Diazo is not part of Plone, integration is provided by a Python package called plone.app.theming.)&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;The Diazo rules can get complex, but it's very easy to get your first
-rule done and working and then off you go. You may find this &lt;a class="reference external" href="http://readthedocs.org/docs/pythonpackages-docs/en/latest/features/examples/ex8-diazo.html"&gt;new
-tutorial on pythonpackages.com&lt;/a&gt;. Enjoy, and get busy theming Plone.&lt;/p&gt;
+&lt;p&gt;The Diazo rules can get complex, but it's very easy to get your first rule done and working and then off you go. You may find this &lt;a class="reference external" href="http://readthedocs.org/docs/pythonpackages-docs/en/latest/features/examples/ex8-diazo.html"&gt;new tutorial on pythonpackages.com&lt;/a&gt;. Enjoy, and get busy theming Plone.&lt;/p&gt;
 </summary><category term="Plone"></category><category term="Python"></category></entry><entry><title>New Year's Python Meme 2011</title><link href="http://blog.aclark.net//2011/12/21/new-years-python-meme-2011/" rel="alternate"></link><updated>2011-12-21T13:11:00-05:00</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2011-12-21:/2011/12/21/new-years-python-meme-2011/</id><summary type="html">&lt;p&gt;My response to &lt;a class="reference external" href="http://blog.ziade.org/2011/12/20/new-year039s-python-meme-2011/"&gt;http://blog.ziade.org/2011/12/20/new-year039s-python-meme-2011/&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;It was fun &lt;a class="reference external" href="http://blog.aclark.net/2009/12/31/new-years-python-meme/"&gt;answering in 2009&lt;/a&gt;, so I thought I'd play again.&lt;/p&gt;
 &lt;div class="section" id="whats-the-coolest-python-application-framework-or-library-you-have-discovered-in-2011"&gt;
@@ -1744,48 +1590,21 @@ If PIL ever does exactly what Pillow does, then the fork will die. Until that ha
 &lt;h2&gt;Bottom line accommodations&lt;/h2&gt;
 &lt;p&gt;This may never happen of course, which is part of the reason for the fork. You can't force someone to maintain software for you. But in the open source world you can grab the bull by the horns (take the lead) and try to make things better. Even better: if your project and community are healthy and functioning properly, your success or failure will be determined by the folks in the community (as it should be). In this case, the Plone and Python communities have spoken clearly.&lt;/p&gt;
 &lt;/div&gt;
-</summary><category term="Plone"></category><category term="Python"></category></entry><entry><title>Vagrant, Puppet and Mozilla, oh my!</title><link href="http://blog.aclark.net//2011/10/03/vagrant-puppet-and-mozilla-oh-my/" rel="alternate"></link><updated>2011-10-03T17:25:00-04:00</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2011-10-03:/2011/10/03/vagrant-puppet-and-mozilla-oh-my/</id><summary type="html">&lt;p&gt;&lt;em&gt;Warning: This post is only loosely Python related and not at all Plone
-related, but I thought folks might enjoy hearing about Vagrant and
-Puppet because these tools may help you do your Plone and Python jobs
-better.&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;For the past couple weeks I've been working on creating a virtual
-machine to bootstrap a kitsune environment. Kitsune is the Django site
-that powers support.mozilla.com. I've now reached what I call the &lt;strong&gt;2nd
-milestone&lt;/strong&gt;.&lt;/p&gt;
+</summary><category term="Plone"></category><category term="Python"></category></entry><entry><title>Vagrant, Puppet and Mozilla, oh my!</title><link href="http://blog.aclark.net//2011/10/03/vagrant-puppet-and-mozilla-oh-my/" rel="alternate"></link><updated>2011-10-03T17:25:00-04:00</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2011-10-03:/2011/10/03/vagrant-puppet-and-mozilla-oh-my/</id><summary type="html">&lt;p&gt;&lt;em&gt;Warning: This post is only loosely Python related and not at all Plone related, but I thought folks might enjoy hearing about Vagrant and Puppet because these tools may help you do your Plone and Python jobs better.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;For the past couple weeks I've been working on creating a virtual machine to bootstrap a kitsune environment. Kitsune is the Django site that powers support.mozilla.com. I've now reached what I call the &lt;strong&gt;2nd milestone&lt;/strong&gt;.&lt;/p&gt;
 &lt;div class="section" id="milestones"&gt;
 &lt;h2&gt;Milestones&lt;/h2&gt;
 &lt;p&gt;The milestones are as follows:&lt;/p&gt;
 &lt;ol class="arabic simple"&gt;
-&lt;li&gt;Get the VM running to the point where one can type &lt;strong&gt;./manage.py&lt;/strong&gt;
-and receive the help output (and not a traceback). This sounds
-trivial but there is actually a lot of work involved to get to this
-point. Namely, figuring out how to make &lt;a class="reference external" href="http://puppetlabs.com/"&gt;Puppet&lt;/a&gt; execute each of the
-required steps successfully, together. (You would expect to be able
-to just define the steps in order, but those with this expectation
-will be disappointed. I assume Puppet has their reasons, and they are
-probably even good ones. :-))&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Get the VM running to the point where one can open
-http://33.33.33.10:8000 from the host to see kitsune running. Once
-step #1 is done, this is actually easier than it sounds because I'm
-&amp;quot;cheating&amp;quot;. Test data has been imported and a syncdb has been run,
-but I'm using supervisor to manage the runserver process (for now).&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;Get the VM running like it does in production. This will involve
-configuring &lt;strong&gt;Apache&lt;/strong&gt;and &lt;strong&gt;mod_wsgi&lt;/strong&gt; as well as resolving any
-issues that remain with the app. I'll rely on the kitsune team to
-help with this, as I'm still learning the app. This is the &amp;quot;exciting&amp;quot;
-part for me because I get to learn something new. While Vagrant and
-Puppet are also new to me, I consider these technologies part of my
-&amp;quot;past life&amp;quot; (as a system administrator) and Django sites part of my
-&amp;quot;future life&amp;quot; (as a web developer).&lt;/li&gt;
+&lt;li&gt;Get the VM running to the point where one can type &lt;strong&gt;./manage.py&lt;/strong&gt; and receive the help output (and not a traceback). This sounds trivial but there is actually a lot of work involved to get to this point. Namely, figuring out how to make &lt;a class="reference external" href="http://puppetlabs.com/"&gt;Puppet&lt;/a&gt; execute each of the required steps successfully, together. (You would expect to be able to just define the steps in order, but those with this expectation will be disappointed. I assume Puppet has their reasons, and they are probably even good ones. :-))&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Get the VM running to the point where one can open http://33.33.33.10:8000 from the host to see kitsune running. Once step #1 is done, this is actually easier than it sounds because I'm &amp;quot;cheating&amp;quot;. Test data has been imported and a syncdb has been run, but I'm using supervisor to manage the runserver process (for now).&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Get the VM running like it does in production. This will involve configuring &lt;strong&gt;Apache&lt;/strong&gt;and &lt;strong&gt;mod_wsgi&lt;/strong&gt; as well as resolving any issues that remain with the app. I'll rely on the kitsune team to help with this, as I'm still learning the app. This is the &amp;quot;exciting&amp;quot; part for me because I get to learn something new. While Vagrant and Puppet are also new to me, I consider these technologies part of my &amp;quot;past life&amp;quot; (as a system administrator) and Django sites part of my &amp;quot;future life&amp;quot; (as a web developer).&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;Now about the technologies.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="vagrant"&gt;
 &lt;h2&gt;Vagrant&lt;/h2&gt;
-&lt;p&gt;I had heard of &lt;a class="reference external" href="http://vagrantup.com/"&gt;Vagrant&lt;/a&gt; before, but never tried it. I am now sorry I
-waited so long because the &amp;quot;cool factor&amp;quot; is very high. It requires that
-&lt;a class="reference external" href="https://www.virtualbox.org/"&gt;Virtualbox&lt;/a&gt; be installed, which I also danced around for too long
-before committing (being a former Parallels user).&lt;/p&gt;
+&lt;p&gt;I had heard of &lt;a class="reference external" href="http://vagrantup.com/"&gt;Vagrant&lt;/a&gt; before, but never tried it. I am now sorry I waited so long because the &amp;quot;cool factor&amp;quot; is very high. It requires that &lt;a class="reference external" href="https://www.virtualbox.org/"&gt;Virtualbox&lt;/a&gt; be installed, which I also danced around for too long before committing (being a former Parallels user).&lt;/p&gt;
 &lt;p&gt;On OS X Lion[1], installing Vagrant is simply a matter of:&lt;/p&gt;
 &lt;pre class="literal-block"&gt;
 $ gem install vagrant
@@ -1794,33 +1613,15 @@ $ gem install vagrant
 &lt;pre class="literal-block"&gt;
 $ vagrant init
 &lt;/pre&gt;
-&lt;p&gt;inside some revision-controlled directory and you have the beginnings of
-a virtual machine you can share with the masses. This is how
-&lt;a class="reference external" href="https://github.com/aclark4life/kitsune-vagrant"&gt;kitsune-vagrant&lt;/a&gt; was born. Hopefully this shared virtual machine will
-eventually make some new developer's life much easier.&lt;/p&gt;
-&lt;p&gt;We now arrive at a fork in the road; though Vagrant makes it easy to
-follow both paths: Chef or Puppet (it supports both). I don't recall
-what made me choose Puppet over Chef, but it might have been that the
-&lt;a class="reference external" href="https://github.com/rhelmer/socorro-vagrant"&gt;Socorro folks were using it already&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Once you decide on Puppet (and assuming you do), it's pretty easy to
-figure out that your next move is to create a manifest file for Puppet
-to apply[2].&lt;/p&gt;
+&lt;p&gt;inside some revision-controlled directory and you have the beginnings of a virtual machine you can share with the masses. This is how &lt;a class="reference external" href="https://github.com/aclark4life/kitsune-vagrant"&gt;kitsune-vagrant&lt;/a&gt; was born. Hopefully this shared virtual machine will eventually make some new developer's life much easier.&lt;/p&gt;
+&lt;p&gt;We now arrive at a fork in the road; though Vagrant makes it easy to follow both paths: Chef or Puppet (it supports both). I don't recall what made me choose Puppet over Chef, but it might have been that the &lt;a class="reference external" href="https://github.com/rhelmer/socorro-vagrant"&gt;Socorro folks were using it already&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Once you decide on Puppet (and assuming you do), it's pretty easy to figure out that your next move is to create a manifest file for Puppet to apply[2].&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="puppet"&gt;
 &lt;h2&gt;Puppet&lt;/h2&gt;
-&lt;p&gt;My knowledge of Puppet is currently quite limited. Specifically, I only
-know how to create a manifest file. (Vagrant does the rest!) I imagine
-there is much more to Puppet, especially with regard to doing actual
-configuration management on production servers. But I have not explored
-any of that yet.&lt;/p&gt;
-&lt;p&gt;However, I did learn quite a bit about Puppet just from writing the
-manifest. The first most important thing I learned is this: &lt;strong&gt;Puppet is
-in charge&lt;/strong&gt;. It does things the way it wants to and you need to follow
-its rules. The first and biggest challenge is to achieve a linear
-execution of tasks.&lt;/p&gt;
-&lt;p&gt;You cannot write rules in order and hope for the best. This will fail
-spectacularly when something executes before something else was supposed
-to. The way around this is via `require =&amp;gt;` statements.&lt;/p&gt;
+&lt;p&gt;My knowledge of Puppet is currently quite limited. Specifically, I only know how to create a manifest file. (Vagrant does the rest!) I imagine there is much more to Puppet, especially with regard to doing actual configuration management on production servers. But I have not explored any of that yet.&lt;/p&gt;
+&lt;p&gt;However, I did learn quite a bit about Puppet just from writing the manifest. The first most important thing I learned is this: &lt;strong&gt;Puppet is in charge&lt;/strong&gt;. It does things the way it wants to and you need to follow its rules. The first and biggest challenge is to achieve a linear execution of tasks.&lt;/p&gt;
+&lt;p&gt;You cannot write rules in order and hope for the best. This will fail spectacularly when something executes before something else was supposed to. The way around this is via `require =&amp;gt;` statements.&lt;/p&gt;
 &lt;p&gt;A grep through kitsune.pp reveals:&lt;/p&gt;
 &lt;pre class="literal-block"&gt;
 require =&amp;gt; Exec['git_clone'],
@@ -1839,44 +1640,23 @@ require =&amp;gt; Exec['supervisor_stop'],
 &lt;/pre&gt;
 &lt;p&gt;This roughly translates to the following workflow logic:&lt;/p&gt;
 &lt;ul class="simple"&gt;
-&lt;li&gt;Ensure that `aptitude -y update; aptitude -y upgrade` have been run
-before you try to install the list of packages we require.&lt;/li&gt;
-&lt;li&gt;Ensure the list of packages we require is installed before we
-checkout the code.&lt;/li&gt;
-&lt;li&gt;Ensure the code has been checked out (and pip install / git submodule
-have been run) before you try to syncdb and run the application.&lt;/li&gt;
+&lt;li&gt;Ensure that `aptitude -y update; aptitude -y upgrade` have been run before you try to install the list of packages we require.&lt;/li&gt;
+&lt;li&gt;Ensure the list of packages we require is installed before we checkout the code.&lt;/li&gt;
+&lt;li&gt;Ensure the code has been checked out (and pip install / git submodule have been run) before you try to syncdb and run the application.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;There is a bit more to it, but with that knowledge you should be able to
-&lt;a class="reference external" href="https://github.com/aclark4life/kitsune-vagrant/blob/master/manifests/kitsune.pp"&gt;read and understand kitsune.pp in full&lt;/a&gt;. I learned most of the
-remaining required puppeteering from this
-site:&lt;a class="reference external" href="http://www.puppetcookbook.com/"&gt;http://www.puppetcookbook.com/&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;There is a bit more to it, but with that knowledge you should be able to &lt;a class="reference external" href="https://github.com/aclark4life/kitsune-vagrant/blob/master/manifests/kitsune.pp"&gt;read and understand kitsune.pp in full&lt;/a&gt;. I learned most of the remaining required puppeteering from this site:&lt;a class="reference external" href="http://www.puppetcookbook.com/"&gt;http://www.puppetcookbook.com/&lt;/a&gt;.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="mozilla"&gt;
 &lt;h2&gt;Mozilla&lt;/h2&gt;
-&lt;p&gt;Oh my! This Mozilla work is a ton of fun[3]; I attribute this in part
-due to the structure of their organization: I was invited immediately to
-collaborate in IRC with the kitsune team and as a result, we all have
-something to show for it[4].&lt;/p&gt;
-&lt;p&gt;&lt;a href="#id3"&gt;&lt;span class="problematic" id="id4"&gt;`|image0|`_&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Next I will be working on the 3rd milestone! Hope to finish by the end
+&lt;p&gt;Oh my! This Mozilla work is a ton of fun[3]; I attribute this in part due to the structure of their organization: I was invited immediately to collaborate in IRC with the kitsune team and as a result, we all have something to show for it[4]. Next I will be working on the 3rd milestone! Hope to finish by the end
 of this week.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="notes"&gt;
 &lt;h2&gt;Notes&lt;/h2&gt;
-&lt;p&gt;[1] This did not work on Snow Leopard, because `gem` is too old.
-However if you `brew install ruby` and try again, it should work.&lt;/p&gt;
+&lt;p&gt;[1] This did not work on Snow Leopard, because `gem` is too old.  However if you `brew install ruby` and try again, it should work.&lt;/p&gt;
 &lt;p&gt;[2] I didn't bother to investigate Chef, but I am curious about it.&lt;/p&gt;
 &lt;p&gt;[3] And I hope this is only the beginning.&lt;/p&gt;
-&lt;p&gt;[4] I hope to get a Mozilla gig but even if I don't, being able to do
-this type of work is very rewarding (which is why you will often hear
-people in open source say that to get paid for the type of work they do
-is a dream come true :-)).&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="system-messages section"&gt;
-&lt;h2&gt;Docutils System Messages&lt;/h2&gt;
-&lt;div class="system-message" id="id3"&gt;
-&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/aclark/Developer/blog/content/vagrant-puppet-and-mozilla-oh-my.rst&lt;/tt&gt;, line 138); &lt;em&gt;&lt;a href="#id4"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
-Unknown target name: &amp;quot;|image0|&amp;quot;.&lt;/div&gt;
+&lt;p&gt;[4] I hope to get a Mozilla gig but even if I don't, being able to do this type of work is very rewarding (which is why you will often hear people in open source say that to get paid for the type of work they do is a dream come true :-)).&lt;/p&gt;
 &lt;/div&gt;
 </summary><category term="Mozilla"></category><category term="Plone"></category><category term="Python"></category></entry><entry><title>Mozilla and PyPI</title><link href="http://blog.aclark.net//2011/09/22/mozilla-and-pypi/" rel="alternate"></link><updated>2011-09-22T12:03:00-04:00</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2011-09-22:/2011/09/22/mozilla-and-pypi/</id><summary type="html">&lt;p&gt;The &lt;a class="reference external" href="http://blog.aclark.net/in-defense-of-pypi"&gt;last time I wrote about PyPI&lt;/a&gt; some folks mistook the subject to be &lt;a class="reference external" href="http://pypy.org/"&gt;PyPy&lt;/a&gt;, so let me be clear: this article is about the &lt;a class="reference external" href="http://pypi.python.org/pypi"&gt;Python Packaging Index&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;I recently began doing some volunteer work for Mozilla[1], working on a &lt;a class="reference external" href="https://github.com/aclark4life/kitsune-vagrant"&gt;virtual machine setup&lt;/a&gt; to make kitsune development easier (kitsune is the code name for the Django site that powers &lt;a class="reference external" href="http://support.mozilla.com"&gt;support.mozilla.com&lt;/a&gt;).&lt;/p&gt;
@@ -2532,7 +2312,7 @@ packages to PyPI. If it doesn't, please let me know why in the comments.&lt;/p&g
 &lt;/p&gt;&lt;p&gt;&lt;em&gt;Did you enjoy reading this article? If so, please consider `helping me
 help Plone`_.&lt;/em&gt;&lt;/p&gt;
 &lt;/div&gt;
-</summary><category term="Plone"></category><category term="Python"></category></entry><entry><title>New Year’s Python Meme</title><link href="http://blog.aclark.net//2009/12/31/new-years-python-meme/" rel="alternate"></link><updated>2009-12-31T18:22:00-05:00</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2009-12-31:/2009/12/31/new-years-python-meme/</id><summary type="html">&lt;img alt="https://raw.github.com/ACLARKNET/aclarknet.github.com/master/images/lenin_packaging.png" src="https://raw.github.com/ACLARKNET/aclarknet.github.com/master/images/lenin_packaging.png" style="width: 100%;" /&gt;
+</summary><category term="Plone"></category><category term="Python"></category></entry><entry><title>New Year’s Python Meme</title><link href="http://blog.aclark.net//2009/12/31/new-years-python-meme/" rel="alternate"></link><updated>2009-12-31T18:22:00-05:00</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2009-12-31:/2009/12/31/new-years-python-meme/</id><summary type="html">&lt;img alt="images/lenin_packaging.png" src="images/lenin_packaging.png" style="width: 100%;" /&gt;
 &lt;div class="section" id="whats-the-coolest-python-application-framework-or-library-you-have-discovered-in-2009"&gt;
 &lt;h2&gt;What’s the coolest Python application, framework or library you have discovered in 2009?&lt;/h2&gt;
 &lt;p&gt;That would be &lt;a class="reference external" href="http://zenoss.org"&gt;Zenoss&lt;/a&gt;. I'm very impressed with the application as well as the community, which is awesome. They remind me a lot of the Plone community; I think the two can learn a lot from each other.&lt;/p&gt;

@@ -47,15 +47,9 @@
                 By <a class="url fn" href="../../../../../author/aclark.html">aclark</a>
         </address>
         <p>In <a href="../../../../../category/blog.html">Blog</a>. </p>
-<p>tags: <a href="../../../../../tag/plone.html">Plone</a></p></footer><!-- /.post-info -->      <p>By now, most of us are familiar with XDV and how awesome it is for
-theming Plone (or any website). You should also be aware that XDV has
-been renamed to <strong>Diazo</strong>, and collective.xdv is now called
-<strong>plone.app.theming</strong>.</p>
-<p>But let us not forget the humble &quot;old style&quot; theme just yet! Sometimes
-they come in very handy, and may even be preferable in some cases
-depending on what you are trying to accomplish.</p>
-<p>I just gave <strong>plonetheme</strong>.* a quick spin and thought I'd share the
-process and results with anyone that might find it useful.</p>
+<p>tags: <a href="../../../../../tag/plone.html">Plone</a></p></footer><!-- /.post-info -->      <p>By now, most of us are familiar with XDV and how awesome it is for theming Plone (or any website). You should also be aware that XDV has been renamed to <strong>Diazo</strong>, and collective.xdv is now called <strong>plone.app.theming</strong>.</p>
+<p>But let us not forget the humble &quot;old style&quot; theme just yet! Sometimes they come in very handy, and may even be preferable in some cases depending on what you are trying to accomplish.</p>
+<p>I just gave <strong>plonetheme</strong>.* a quick spin and thought I'd share the process and results with anyone that might find it useful.</p>
 <div class="section" id="step-1">
 <h2>Step 1</h2>
 <p>Get a list of all the <strong>plonetheme</strong> packages on PyPI:</p>
@@ -158,66 +152,47 @@ eggs =# Deps that the themes should have added
 </div>
 <div class="section" id="conclusion">
 <h2>Conclusion</h2>
-<p>The whole effort (including writing the blog post) took only an hour or
-two, for whatever that is worth (not including the actual theme review,
-unfortunately!). I find the results interesting and I thought you might
-too.</p>
+<p>The whole effort (including writing the blog post) took only an hour or two, for whatever that is worth (not including the actual theme review, unfortunately!). I find the results interesting and I thought you might too.</p>
 <div class="section" id="process">
 <h3>Process</h3>
 <div class="section" id="dependencies">
 <h4>Dependencies</h4>
-<p>You'll notice in the <strong>[theme]</strong> section, comments about various
-packages that were not included with all of the various themes.</p>
-<p>As far as I can tell, it is in the best interest of &quot;old style&quot; theme
-developers to specify these packages in their setup.py files with the
-install_requires parameter!</p>
-<p>OK, it's actually in my best interest because then I have to do less
-work, but you get the idea.</p>
+<p>You'll notice in the <strong>[theme]</strong> section, comments about various packages that were not included with all of the various themes.</p>
+<p>As far as I can tell, it is in the best interest of &quot;old style&quot; theme developers to specify these packages in their setup.py files with the install_requires parameter!</p>
+<p>OK, it's actually in my best interest because then I have to do less work, but you get the idea.</p>
 </div>
 <div class="section" id="broken-or-missing-packages">
 <h4>Broken or missing packages</h4>
-<p>The <strong>plonetheme</strong>.* packages that are just commented out (without an
-XXX note) did not make it past the bin/buildout step (for whatever
-reason, usually a broken package).</p>
+<p>The <strong>plonetheme</strong>.* packages that are just commented out (without an XXX note) did not make it past the bin/buildout step (for whatever reason, usually a broken package).</p>
 </div>
 </div>
 <div class="section" id="themes">
 <h3>Themes</h3>
-<p>My favorite theme (right after plonetheme.aclark_twitter, that is) is…
-nevermind! I wanted to report on that but I still have to go through all
-the themes! (By installing each one at a time, testing, then
-uninstalling before moving to the next one.)</p>
+<p>My favorite theme (right after plonetheme.aclark_twitter, that is) is… nevermind! I wanted to report on that but I still have to go through all the themes! (By installing each one at a time, testing, then uninstalling before moving to the next one.)</p>
 </div>
 <div class="section" id="packaging">
 <h3>Packaging</h3>
-<p>Just my opinion, but if you are adding functionality to Plone, it's
-probably not (just) a theme. So I would separate that functionality from
-your <strong>plonetheme</strong>.* code.</p>
+<p>Just my opinion, but if you are adding functionality to Plone, it's probably not (just) a theme. So I would separate that functionality from your <strong>plonetheme</strong>.* code.</p>
 </div>
 <div class="section" id="problems">
 <h3>Problems</h3>
 <div class="section" id="jbot-modifies-default-plone-theme">
 <h4>jbot modifies default Plone theme?</h4>
-<p>I've noticed this before in both Plone Classic and now Sunburst when
-jbot is installed. No idea what the actual cause is:</p>
+<p>I've noticed this before in both Plone Classic and now Sunburst when jbot is installed. No idea what the actual cause is:</p>
 </div>
 </div>
 <div class="section" id="disclaimer">
 <h3>Disclaimer</h3>
 <div class="section" id="designed-for-plone-4">
 <h4>Designed for Plone 4?</h4>
-<p>Before you say it (I know you are thinking it), I know not all of these
-themes are designed to work with Plone 4. I dont' have a good answer
-about how to approach that problem (I just know that when looking for
-themes, I don't really care. I just &quot;want it to work&quot;.)</p>
+<p>Before you say it (I know you are thinking it), I know not all of these themes are designed to work with Plone 4. I dont' have a good answer about how to approach that problem (I just know that when looking for themes, I don't really care. I just &quot;want it to work&quot;.)</p>
 </div>
 <div class="section" id="bug-report-please">
 <h4>Bug report please?</h4>
 <p>I know, I know. I should open a ticket for the jbot thing.</p>
 <p>And now off to play!</p>
 <p>P.S. I will report on the install process in the comments.</p>
-<p>So far, <em>Andreas</em> installed, worked, and looked nice while <em>Bluegray
-Theme 1.0.0b2</em> required a ZMI undo ;-)</p>
+<p>So far, <em>Andreas</em> installed, worked, and looked nice while <em>Bluegray Theme 1.0.0b2</em> required a ZMI undo ;-)</p>
 </div>
 </div>
 </div>

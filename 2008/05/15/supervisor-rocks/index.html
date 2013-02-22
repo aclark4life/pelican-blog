@@ -47,10 +47,8 @@
                 By <a class="url fn" href="../../../../../author/aclark.html">aclark</a>
         </address>
         <p>In <a href="../../../../../category/blog.html">Blog</a>. </p>
-<p>tags: <a href="../../../../../tag/plone.html">Plone</a></p></footer><!-- /.post-info -->      <p><a href="#id1"><span class="problematic" id="id2">`|image0|`_</span></a>(This is essentially a reiteration of <a class="reference external" href="http://blog.delaguardia.com.mx/index.php?op=ViewArticle&amp;articleId=106&amp;blogId=1">Carlos' previous
-blog entry</a>. :-))</p>
-<p>It just occurred to me that we should probably be using <a class="reference external" href="http://supervisord.org">Supervisor</a>
-all over the place in our buildouts. Here's why:</p>
+<p>tags: <a href="../../../../../tag/plone.html">Plone</a></p></footer><!-- /.post-info -->      <p>(This is essentially a reiteration of <a class="reference external" href="http://blog.delaguardia.com.mx/index.php?op=ViewArticle&amp;articleId=106&amp;blogId=1">Carlos' previous blog entry</a>. :-))</p>
+<p>It just occurred to me that we should probably be using <a class="reference external" href="http://supervisord.org">Supervisor</a> all over the place in our buildouts. Here's why:</p>
 <ul class="simple">
 <li>Starting and stopping Zope and ZEO separately is no fun.</li>
 <li>Using Supervisor is easy and fun.</li>
@@ -60,18 +58,22 @@ all over the place in our buildouts. Here's why:</p>
 <li>Add a part to your buildout.cfg file (this is the fun part):</li>
 </ul>
 <pre class="literal-block">
-parts =...supervisor...[supervisor]recipe = zc.recipe.eggegg = supervisor
+parts =
+    ...
+    supervisor
+    ...
+
+[supervisor]
+recipe = zc.recipe.egg
+egg = supervisor
 </pre>
 <ul class="simple">
-<li>Create a configuration file (this is not as fun; we need a recipe for
-this!) in your buildout called etc/supervisord.conf and add the
-following (cargo-cult style):</li>
+<li>Create a configuration file (this is not as fun; we need a recipe for this!) in your buildout called etc/supervisord.conf and add the following (cargo-cult style):</li>
 </ul>
 <pre class="literal-block">
 [inet_http_server]port=127.0.0.1:9999#username=admin#password=admin[supervisord]logfile=%(here)s/../var/log/supervisord.loglogfile_maxbytes=50MBlogfile_backups=10loglevel=infopidfile=%(here)s/../var/supervisord.pidnodaemon=false[rpcinterface:supervisor]supervisor.rpcinterface_factory =     supervisor.rpcinterface:make_main_rpcinterface[supervisorctl]serverurl=http://127.0.0.1:9999[program:zeo]command = %(here)s/../parts/zeo/bin/runzeopriority = 10[program:zope]command = %(here)s/../parts/instance/bin/runzopepriority = 20redirect_stderr = true
 </pre>
-<p>(Uncomment the admin lines if you want to password protect your
-supervisor.)</p>
+<p>(Uncomment the admin lines if you want to password protect your supervisor.)</p>
 <p>That's it! Now you can run buildout as normal:</p>
 <pre class="literal-block">
 bin/buildout
@@ -85,15 +87,12 @@ same time (for fun and profit):</p>
 <pre class="literal-block">
 bin/supervisorctl start allbin/supervisorctl stop all
 </pre>
-<p>You even get a nice web interface for free:</p>
-<p><a href="#id3"><span class="problematic" id="id4">`|Supervisor rocks!|`_</span></a></p>
-<p>How cool is that? Incidentally, one thing I have always found confusing
-is how to stop supervisord:</p>
+<p>You even get a nice web interface for free.</p>
+<p>How cool is that? Incidentally, one thing I have always found confusing is how to stop supervisord:</p>
 <pre class="literal-block">
 bin/supervisorctl shutdown
 </pre>
-<p>So as you can see I'm happy about this, but what would make me even
-happier is:</p>
+<p>So as you can see I'm happy about this, but what would make me even happier is:</p>
 <ul class="simple">
 <li>A buildout recipe that generates a supervisord.conf file 'on the fly'
 (i.e. when buildout runs).</li>
@@ -103,20 +102,8 @@ between plone_hosting and plone3_buildout?).</li>
 <li>A port of Supervisor to Windows (/me ducks).</li>
 </ul>
 <p>Thoughts?</p>
-<p>Thanks Chris McDonough of <a class="reference external" href="http://agendaless.com/">Agendaless Consulting</a> and Mike Naberezny of
-<a class="reference external" href="http://maintainable.com/">Maintainable Software,</a> plus <a class="reference external" href="http://supervisord.org/contributors/">contributors</a> for creating/maintaining
-Supervisor and making my job easier :-)</p>
-<p>(And thanks Chris and Carlos for the example configuration files <a class="reference external" href="http://svn.repoze.org/buildouts/repoze.zope2/trunk/etc/supervisord.conf">here</a>
-and <a class="reference external" href="http://svn.repoze.org/buildouts/repoze.zope2/trunk/etc/supervisord.conf">here</a>.)</p>
-<div class="system-messages section">
-<h2>Docutils System Messages</h2>
-<div class="system-message" id="id1">
-<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">/Users/aclark/Developer/blog/content/supervisor-rocks.rst</tt>, line 6); <em><a href="#id2">backlink</a></em></p>
-Unknown target name: &quot;|image0|&quot;.</div>
-<div class="system-message" id="id3">
-<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">/Users/aclark/Developer/blog/content/supervisor-rocks.rst</tt>, line 55); <em><a href="#id4">backlink</a></em></p>
-Unknown target name: &quot;|supervisor rocks!|&quot;.</div>
-</div>
+<p>Thanks Chris McDonough of <a class="reference external" href="http://agendaless.com/">Agendaless Consulting</a> and Mike Naberezny of <a class="reference external" href="http://maintainable.com/">Maintainable Software,</a> plus <a class="reference external" href="http://supervisord.org/contributors/">contributors</a> for creating/maintaining Supervisor and making my job easier :-)</p>
+<p>(And thanks Chris and Carlos for the example configuration files <a class="reference external" href="http://svn.repoze.org/buildouts/repoze.zope2/trunk/etc/supervisord.conf">here</a> and <a class="reference external" href="http://svn.repoze.org/buildouts/repoze.zope2/trunk/etc/supervisord.conf">here</a>.)</p>
 
     </div><!-- /.entry-content -->
         <div class="comments">

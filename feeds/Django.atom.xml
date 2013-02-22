@@ -10,7 +10,7 @@
 &lt;div class="section" id="shell"&gt;
 &lt;h2&gt;Shell&lt;/h2&gt;
 &lt;p&gt;One of the first things I do on a new system is change my shell to &lt;strong&gt;Zsh&lt;/strong&gt; in &lt;tt class="docutils literal"&gt;System Preferences &lt;span class="pre"&gt;-&amp;gt;&lt;/span&gt; Users &amp;amp; Groups &lt;span class="pre"&gt;-&amp;gt;&lt;/span&gt; Current User &lt;span class="pre"&gt;-&amp;gt;&lt;/span&gt; Right Click &lt;span class="pre"&gt;-&amp;gt;&lt;/span&gt; Advanced &lt;span class="pre"&gt;Options...&lt;/span&gt;&lt;/tt&gt;. Don't forget to &lt;tt class="docutils literal"&gt;Click the lock to make changes&lt;/tt&gt; first.&lt;/p&gt;
-&lt;img alt="https://raw.github.com/ACLARKNET/aclarknet.github.com/master/images/zsh.png" src="https://raw.github.com/ACLARKNET/aclarknet.github.com/master/images/zsh.png" /&gt;
+&lt;img alt="images/zsh.png" src="images/zsh.png" /&gt;
 &lt;div class="section" id="zsh"&gt;
 &lt;h3&gt;Zsh&lt;/h3&gt;
 &lt;p&gt;Why &lt;strong&gt;Zsh&lt;/strong&gt;? One of my favorite features is &lt;strong&gt;shared history between open sessions&lt;/strong&gt;. So I can run a command in one window, and then run the same command from another window by fetching it from the history (with CTRL-R).&lt;/p&gt;
@@ -19,11 +19,11 @@
 &lt;div class="section" id="xcode"&gt;
 &lt;h2&gt;XCode&lt;/h2&gt;
 &lt;p&gt;After I take possession of my new laptop (running &lt;strong&gt;Mountain Lion&lt;/strong&gt;, the newest OS X at the time of this writing), I head to the App Store to download XCode. &lt;a class="footnote-reference" href="#id12" id="id2"&gt;[2]&lt;/a&gt; Among many other things, XCode gives me the GNU C Compiler and allows me to type &amp;quot;gcc&amp;quot; in my &lt;tt class="docutils literal"&gt;Applications &lt;span class="pre"&gt;-&amp;gt;&lt;/span&gt; Utilities &lt;span class="pre"&gt;-&amp;gt;&lt;/span&gt; Terminal&lt;/tt&gt;.&lt;/p&gt;
-&lt;img alt="https://raw.github.com/ACLARKNET/aclarknet.github.com/master/images/gcc.png" src="https://raw.github.com/ACLARKNET/aclarknet.github.com/master/images/gcc.png" /&gt;
+&lt;img alt="images/gcc.png" src="images/gcc.png" /&gt;
 &lt;/div&gt;
 &lt;div class="section" id="id3"&gt;
 &lt;h2&gt;Python&lt;/h2&gt;
-&lt;img alt="https://raw.github.com/ACLARKNET/aclarknet.github.com/master/images/homebrew.png" src="https://raw.github.com/ACLARKNET/aclarknet.github.com/master/images/homebrew.png" /&gt;
+&lt;img alt="images/homebrew.png" src="images/homebrew.png" /&gt;
 &lt;p&gt;Now I need a Python interpreter &lt;a class="footnote-reference" href="#id13" id="id4"&gt;[3]&lt;/a&gt;. For development I use the &lt;a class="reference external" href="https://github.com/collective/buildout.python"&gt;Collective Python Buildout&lt;/a&gt; but I also enjoy using &lt;a class="reference external" href="http://mxcl.github.com/homebrew/"&gt;Homebrew's&lt;/a&gt; Python 2.7. I use Homebrew for a variety of other things too (e.g. mobile-shell AKA mosh) so here we go:&lt;/p&gt;
 &lt;pre class="literal-block"&gt;
 $ ruby -e &amp;quot;$(curl -fsSL https://raw.github.com/mxcl/homebrew/go)&amp;quot;
@@ -40,7 +40,7 @@ $ brew install python
 $ brew install git
 &lt;/pre&gt;
 &lt;p&gt;Which reminds me, don't forget that installing the command line utilities in Mountain Lion's XCode requires an additional step in &lt;tt class="docutils literal"&gt;Preferences &lt;span class="pre"&gt;-&amp;gt;&lt;/span&gt; Downloads &lt;span class="pre"&gt;-&amp;gt;&lt;/span&gt; Command Line Tools &lt;span class="pre"&gt;-&amp;gt;&lt;/span&gt; Install&lt;/tt&gt;:&lt;/p&gt;
-&lt;img alt="https://raw.github.com/ACLARKNET/aclarknet.github.com/master/images/command-line-utils.png" src="https://raw.github.com/ACLARKNET/aclarknet.github.com/master/images/command-line-utils.png" /&gt;
+&lt;img alt="images/command-line-utils.png" src="images/command-line-utils.png" /&gt;
 &lt;/div&gt;
 &lt;div class="section" id="id5"&gt;
 &lt;h2&gt;Dotfiles&lt;/h2&gt;
@@ -312,7 +312,7 @@ export PATH=~/Developer/binfiles:/usr/local/share/npm/bin:$PATH
 &lt;/table&gt;
 &lt;/div&gt;
 </summary><category term="Django"></category><category term="Mozilla"></category><category term="Plone"></category><category term="Python"></category></entry><entry><title>Please Help Me Do Open Source Work</title><link href="http://blog.aclark.net//2013/01/31/please-help-me-do-open-source-work/" rel="alternate"></link><updated>2013-01-31T13:00:00-05:00</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2013-01-31:/2013/01/31/please-help-me-do-open-source-work/</id><summary type="html">&lt;p&gt;&lt;em&gt;From my 'mid-life-crisis' series of blog entries :-)&lt;/em&gt;&lt;/p&gt;
-&lt;img alt="https://raw.github.com/ACLARKNET/aclarknet.github.com/master/images/open-source-work.png" src="https://raw.github.com/ACLARKNET/aclarknet.github.com/master/images/open-source-work.png" /&gt;
+&lt;img alt="images/open-source-work.png" src="images/open-source-work.png" /&gt;
 &lt;div class="section" id="open-source-work"&gt;
 &lt;h2&gt;Open Source Work&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;Open Source Work&lt;/strong&gt; has paid my bills for a long time. Starting with &lt;a class="reference external" href="http://plone.org"&gt;Plone&lt;/a&gt; in the early 2000s, to &lt;a class="reference external" href="http://djangoproject.com"&gt;Django&lt;/a&gt; in the early 2010s, to now. And for this, I am very grateful. To be clear: it's not exactly the &lt;em&gt;Open Source Work&lt;/em&gt; that has paid my bills, it's the consulting work I've been able to secure as a result of my dedication and devotion to open source software and communities. Which is great! (Even more clear: my dedication and devotion to open source software and communities has made learning new skills fun. And those skills have paid my bills for the past 8 years.)&lt;/p&gt;
@@ -331,7 +331,7 @@ export PATH=~/Developer/binfiles:/usr/local/share/npm/bin:$PATH
 src="https://www.gittip.com/assets/widgets/0002.js"&gt;
 &lt;/script&gt;&lt;/div&gt;
 </summary><category term="Django"></category><category term="Mozilla"></category><category term="Plone"></category><category term="Python"></category></entry><entry><title>Python 3 Porting</title><link href="http://blog.aclark.net//2013/01/10/python-3-porting/" rel="alternate"></link><updated>2013-01-10T19:15:00-05:00</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2013-01-10:/2013/01/10/python-3-porting/</id><summary type="html">&lt;p&gt;&lt;em&gt;The 3 in 2013 is for Python 3&lt;/em&gt;&lt;/p&gt;
-&lt;img alt="https://raw.github.com/ACLARKNET/aclarknet.github.com/master/images/python-3-port.jpg" src="https://raw.github.com/ACLARKNET/aclarknet.github.com/master/images/python-3-port.jpg" /&gt;
+&lt;img alt="images/python-3-port.jpg" src="images/python-3-port.jpg" /&gt;
 &lt;p&gt;I tend to like projects that everyone else &lt;strong&gt;hates&lt;/strong&gt;, e.g.:&lt;/p&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;Removing persistent Python objects associated with missing classes in ZODB.&lt;/li&gt;
@@ -353,7 +353,7 @@ src="https://www.gittip.com/assets/widgets/0002.js"&gt;
 &lt;/ul&gt;
 &lt;p&gt;So, there is no time like the present to &lt;strong&gt;take a serious look at Python 3&lt;/strong&gt;.&lt;/p&gt;
 &lt;/div&gt;
-</summary><category term="Django"></category><category term="Mozilla"></category><category term="Plone"></category><category term="Python"></category></entry><entry><title>New Year's Python Meme 2012</title><link href="http://blog.aclark.net//2012/12/29/new-years-python-meme-2012/" rel="alternate"></link><updated>2012-12-29T15:30:00-05:00</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2012-12-29:/2012/12/29/new-years-python-meme-2012/</id><summary type="html">&lt;img alt="https://raw.github.com/ACLARKNET/aclarknet.github.com/master/images/tarek-meme-reminder.png" src="https://raw.github.com/ACLARKNET/aclarknet.github.com/master/images/tarek-meme-reminder.png" /&gt;
+</summary><category term="Django"></category><category term="Mozilla"></category><category term="Plone"></category><category term="Python"></category></entry><entry><title>New Year's Python Meme 2012</title><link href="http://blog.aclark.net//2012/12/29/new-years-python-meme-2012/" rel="alternate"></link><updated>2012-12-29T15:30:00-05:00</updated><author><name>aclark</name></author><id>tag:blog.aclark.net,2012-12-29:/2012/12/29/new-years-python-meme-2012/</id><summary type="html">&lt;img alt="images/tarek-meme-reminder.png" src="images/tarek-meme-reminder.png" /&gt;
 &lt;p&gt;&lt;em&gt;This is my entry for Tarek Ziadé's New Year's Python Meme, a tradition I have come to enjoy. Both to reflect on the current year and look back on previous years. So here it is.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;I did this in &lt;a class="reference external" href="http://blog.aclark.net/2009/12/31/new-years-python-meme/"&gt;2009&lt;/a&gt; &amp;amp; &lt;a class="reference external" href="http://blog.aclark.net/2011/12/21/new-years-python-meme-2011/"&gt;2011&lt;/a&gt;. Let's try it again.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;1. What’s the coolest Python application, framework or library you have discovered in 2012?&lt;/strong&gt;&lt;/p&gt;

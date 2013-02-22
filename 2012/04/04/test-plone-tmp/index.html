@@ -47,9 +47,7 @@
                 By <a class="url fn" href="../../../../../author/aclark.html">aclark</a>
         </address>
         <p>In <a href="../../../../../category/blog.html">Blog</a>. </p>
-<p>tags: <a href="../../../../../tag/plone.html">Plone</a><a href="../../../../../tag/python.html">Python</a></p></footer><!-- /.post-info -->      <p>Since Day 1 with Plone circa 2004, I've always taken pride in and
-greatly enjoyed refining my development environment. It's been stable
-for a while now (&gt; 1 year or so) so I thought I'd share.</p>
+<p>tags: <a href="../../../../../tag/plone.html">Plone</a><a href="../../../../../tag/python.html">Python</a></p></footer><!-- /.post-info -->      <p>Since Day 1 with Plone circa 2004, I've always taken pride in and greatly enjoyed refining my development environment. It's been stable for a while now (&gt; 1 year or so) so I thought I'd share.</p>
 <div class="section" id="operating-system">
 <h2>Operating system</h2>
 <p>Mac OS X Latest (Lion, at the time of this writing)</p>
@@ -79,27 +77,32 @@ for a while now (&gt; 1 year or so) so I thought I'd share.</p>
 <div class="section" id="additional-tools">
 <h2>Additional tools</h2>
 <p>A <a class="reference external" href="https://github.com/aclark4life/binfiles/blob/master/test-plone">shell script to run virtualenv, buildout, etc</a>:</p>
-</p><p>[bash] #!/bin/sh if ! [ -n &quot;$1&quot; ] then echo &quot;Usage:nn$0 &lt;dir&gt;n&quot; exit 1
+<pre class="literal-block">
+[bash] #!/bin/sh if ! [ -n &quot;$1&quot; ] then echo &quot;Usage:nn$0 &lt;dir&gt;n&quot; exit 1
 fi if ! [ -d $1 ] then mkdir $1 fi cd $1 virtualenv-2.7 . bin/pip
 install zc.buildout bin/buildout init cat &lt;&lt; EOF &gt; buildout.cfg
 [buildout] extends =
 http://build.pythonpackages.com/buildout/plone/4.2.x-dev EOF
 bin/buildout bin/plone start sleep 4 echo &quot;Adding Plone site...&quot; curl -d
 form.submitted:boolean=&quot;True&quot;
-http://admin:admin&#64;localhost:8080/&#64;&#64;plone-addsite?site_id=Plone
-bin/plone stop bin/plone fg [/bash]</p>
+http://admin:admin&#64;localhost:8080/&#64;&#64;plone-addsite?site\_id=Plone
+bin/plone stop bin/plone fg [/bash]
+</pre>
 <p>A <a class="reference external" href="https://github.com/aclark4life/binfiles/blob/master/tmp">Python script to create temporary directories</a>:</p>
-<p>[python] #!/usr/bin/env python</p>
-<p>import os import tempfile print os.path.abspath(tempfile.mkdtemp())
-[/python]</p>
-<p><p>A default buildout config file:</p>
+<pre class="literal-block">
+[python] #!/usr/bin/env python
+
+import os import tempfile print os.path.abspath(tempfile.mkdtemp())
+[/python]
+</pre>
+<p>A default buildout config file:</p>
 <pre class="literal-block">
 [buildout]
 eggs-directory = /Users/aclark/Developer/eggs-directory
 download-cache = /Users/aclark/Developer/download-cache
 extends-cache = /Users/aclark/Developer/extends-cache
 </pre>
-</p></div>
+</div>
 <div class="section" id="workflow">
 <h2>Workflow</h2>
 <p>My typical workflow looks like this:</p>
@@ -108,16 +111,8 @@ extends-cache = /Users/aclark/Developer/extends-cache
 <li>Hear question and get inspired to run Plone</li>
 <li>Run: <strong>$ test-plone `tmp`</strong></li>
 </ul>
-<p><a class="reference external" href="https://gist.github.com/2304317">~ 1 minute later</a> I'm browsing <strong>http://localhost:8080/Plone</strong> and can
-install add-ons, check ZMI settings, etc.</p>
-</p><p><a href="#id1"><span class="problematic" id="id2">`|image0|`_</span></a></p>
+<p><a class="reference external" href="https://gist.github.com/2304317">~ 1 minute later</a> I'm browsing <strong>http://localhost:8080/Plone</strong> and can install add-ons, check ZMI settings, etc.</p>
 <p>Enjoy.</p>
-</div>
-<div class="system-messages section">
-<h2>Docutils System Messages</h2>
-<div class="system-message" id="id1">
-<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">/Users/aclark/Developer/blog/content/test-plone-tmp.rst</tt>, line 98); <em><a href="#id2">backlink</a></em></p>
-Unknown target name: &quot;|image0|&quot;.</div>
 </div>
 
     </div><!-- /.entry-content -->

@@ -47,52 +47,31 @@
                 By <a class="url fn" href="../../../../../author/aclark.html">aclark</a>
         </address>
         <p>In <a href="../../../../../category/blog.html">Blog</a>. </p>
-<p>tags: <a href="../../../../../tag/plone.html">Plone</a></p></footer><!-- /.post-info -->      <p>A long time ago (several years ago, or more) one of my first Plone jobs
-was importing content from the file system (put there by another CMS) to
-a client's Plone 2.5 website (see: <a class="reference external" href="http://blip.tv/file/761624/">http://blip.tv/file/761624/</a>).</p>
-<p>Some time later (last year or so) the client decided they wanted to
-scoop up even more content from the file system (we only grabbed the
-last few years prior to launch!)</p>
-<p>Unfortunately, the old migration code was truly a horror. So I've been
-having a hard time making myself run it again (I was just learning
-Python at the time.)</p>
+<p>tags: <a href="../../../../../tag/plone.html">Plone</a></p></footer><!-- /.post-info -->      <p>A long time ago (several years ago, or more) one of my first Plone jobs was importing content from the file system (put there by another CMS) to a client's Plone 2.5 website (see: <a class="reference external" href="http://blip.tv/file/761624/">http://blip.tv/file/761624/</a>).</p>
+<p>Some time later (last year or so) the client decided they wanted to scoop up even more content from the file system (we only grabbed the last few years prior to launch!)</p>
+<p>Unfortunately, the old migration code was truly a horror. So I've been having a hard time making myself run it again (I was just learning Python at the time.)</p>
 <div class="section" id="about-charm">
 <h2>About charm</h2>
-<p>This is where <em>charm</em> comes in; formerly <a class="reference external" href="http://pypi.python.org/pypi/mr.importer">mr.importer</a>, formerly
-<a class="reference external" href="http://pypi.python.org/pypi/parse2plone">parse2plone</a>. Get it? The third time is a… I had the &quot;big idea&quot; to
-rewrite, then open source the code I wrote for the client.
-Unfortunately, the rewrite became a horror too.</p>
-</p><p>First, it was not well received amongst the more reusable approaches
-based on <a class="reference external" href="http://pypi.python.org/pypi/collective.transmogrifier">collective.transmogrifier</a>, and rightfully so. While it was
-unpleasant to be told I was heading in the wrong direction, it was
-<strong>*even more*</strong> unpleasant to find out &quot;they&quot; were right. :-)</p>
-<p>Second, as &quot;they&quot; predicted, I got to the point where I couldn't read or
-maintain it any more (and I <strong>*just*</strong> wrote it).</p>
-<p>So, I decided to revert to a version which had much fewer configuration
-options, because making it configurable became a huge distraction.
-What's left is:</p>
+<p>This is where <em>charm</em> comes in; formerly <a class="reference external" href="http://pypi.python.org/pypi/mr.importer">mr.importer</a>, formerly <a class="reference external" href="http://pypi.python.org/pypi/parse2plone">parse2plone</a>. Get it? The third time is a… I had the &quot;big idea&quot; to rewrite, then open source the code I wrote for the client.  Unfortunately, the rewrite became a horror too.</p>
+<p>First, it was not well received amongst the more reusable approaches based on <a class="reference external" href="http://pypi.python.org/pypi/collective.transmogrifier">collective.transmogrifier</a>, and rightfully so. While it was unpleasant to be told I was heading in the wrong direction, it was <strong>*even more*</strong> unpleasant to find out &quot;they&quot; were right. :-)</p>
+<p>Second, as &quot;they&quot; predicted, I got to the point where I couldn't read or maintain it any more (and I <strong>*just*</strong> wrote it).</p>
+<p>So, I decided to revert to a version which had much fewer configuration options, because making it configurable became a huge distraction. What's left is:</p>
 <ul class="simple">
-<li>The code is &quot;readable&quot;, for some value of readable (PEP8/pyflakes
-compliant) and it's in a single module: <a class="reference external" href="https://github.com/collective/charm/blob/master/charm.py">charm.py</a>.</li>
-<li>The concept is &quot;simple&quot;, for some value of simple; it's a recipe that
-creates a script for you, that you run via:</li>
+<li>The code is &quot;readable&quot;, for some value of readable (PEP8/pyflakes compliant) and it's in a single module: <a class="reference external" href="https://github.com/collective/charm/blob/master/charm.py">charm.py</a>.</li>
+<li>The concept is &quot;simple&quot;, for some value of simple; it's a recipe that creates a script for you, that you run via:</li>
 </ul>
 <pre class="literal-block">
 $ bin/plone run bin/charm /path/to/files
 </pre>
 <ul class="simple">
-<li>The results are &quot;impressive&quot; for some value of impressive; it imports
-content from the file system into Plone:</li>
+<li>The results are &quot;impressive&quot; for some value of impressive; it imports content from the file system into Plone:</li>
 </ul>
 <pre class="literal-block">
 2011-03-21 11:51:20,302 - charm - INFO - Imported 19 folders,
 1 images, 20 pages, and 2 files.
 </pre>
 <ul class="simple">
-<li>It won't crash (!), for some value of &quot;keeps going&quot;; it tries to do
-try/except on operations more likely to fail&nbsp; e.g. create_parts (via
---ignore-errors). This aims to ensure you at least get some content
-in your site post-execution.</li>
+<li>It won't crash (!), for some value of &quot;keeps going&quot;; it tries to do try/except on operations more likely to fail&nbsp; e.g. create_parts (via --ignore-errors). This aims to ensure you at least get some content in your site post-execution.</li>
 </ul>
 <pre class="literal-block">
 $ bin/plone run bin/charm html --ignore-errors
@@ -109,8 +88,7 @@ $ bin/plone run bin/charm html --ignore-errors
 619&nbsp;&nbsp;&nbsp; 34%&nbsp;&nbsp; charm&nbsp;&nbsp; (/Users/aclark/Developer/charm/charm.py)
 </pre>
 <ul class="simple">
-<li>Has &quot;cool&quot; features, for some value of cool. Most notably, the
-&quot;collapse&quot; feature (AKA &quot;slugify&quot;):</li>
+<li>Has &quot;cool&quot; features, for some value of cool. Most notably, the &quot;collapse&quot; feature (AKA &quot;slugify&quot;):</li>
 </ul>
 <pre class="literal-block">
 $ bin/plone run bin/charm html --collapse
@@ -124,32 +102,23 @@ $ bin/plone run bin/charm html --collapse
                           inside parent folder '/Plone'
 </pre>
 <ul class="simple">
-<li>And the &quot;publish&quot; feature to optionally publish content after
-creation:</li>
+<li>And the &quot;publish&quot; feature to optionally publish content after creation:</li>
 </ul>
 <pre class="literal-block">
 $ bin/plone run bin/charm html --collapse --publish
 ...
 2011-03-22 07:13:29,008 - charm - INFO - publishing page 'test-collapse-20110101.html'
 </pre>
-<p>And a few more things, but as you can see we are quickly approaching the
-point where more functionality does not necessarily mean better
-software. It's hard to build something complex AND make it easy to use,
-which is why I am moving on.</p>
+<p>And a few more things, but as you can see we are quickly approaching the point where more functionality does not necessarily mean better software. It's hard to build something complex AND make it easy to use, which is why I am moving on.</p>
 </div>
 <div class="section" id="charming-demo">
 <h2>Charming demo</h2>
-<p>In writing this blog entry and releasing charm 1.0b4 I wanted to make
-sure to demonstrate how it works, so here is a screencast. This is how I
-envision content importing should work in Plone (or at least this is how
-I envision a &quot;simple&quot; way it could work.)</p>
-</p></div>
+<p>In writing this blog entry and releasing charm 1.0b4 I wanted to make sure to demonstrate how it works, so here is a screencast. This is how I envision content importing should work in Plone (or at least this is how I envision a &quot;simple&quot; way it could work.)</p>
+</div>
 <div class="section" id="after-charm">
 <h2>After charm</h2>
-<p>After I began writing <em>charm</em>, I began to collaborate with Dylan Jay on
-funnelweb and beyond (e.g. <a class="reference external" href="https://github.com/collective/mr.migrator">mr.migrator</a>). And I am now more determined
-than ever to write reusable code.</p>
-</p></div>
+<p>After I began writing <em>charm</em>, I began to collaborate with Dylan Jay on funnelweb and beyond (e.g. <a class="reference external" href="https://github.com/collective/mr.migrator">mr.migrator</a>). And I am now more determined than ever to write reusable code.</p>
+</div>
 
     </div><!-- /.entry-content -->
         <div class="comments">

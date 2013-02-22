@@ -47,69 +47,30 @@
                 By <a class="url fn" href="../../../../../author/aclark.html">aclark</a>
         </address>
         <p>In <a href="../../../../../category/blog.html">Blog</a>. </p>
-<p>tags: <a href="../../../../../tag/plone.html">Plone</a></p></footer><!-- /.post-info -->      <p>Believe it or not, there are still Plone 2.1 sites in production. (And
-1.0 sites too, for that matter. Just look for the tell-tale '/help'
-sign, e.g. <a class="reference external" href="http://www.zope.org/help">http://www.zope.org/help</a>, if you suspect Plone 1).</p>
-<p>I know, because I just <a class="reference external" href="http://harryroseman.com">deployed one</a> (a cool artist's site if you have
-a couple hours to kill…). But I didn't do it the &quot;old way&quot; with Zope 2
-instances created by hand on clunky physical servers, I used <a class="reference external" href="http://pypi.python.org/pypi/zc.buildout">Buildout</a>
-and the <a class="reference external" href="http://rackspacecloud.com">Cloud</a>.</p>
+<p>tags: <a href="../../../../../tag/plone.html">Plone</a></p></footer><!-- /.post-info -->      <p>Believe it or not, there are still Plone 2.1 sites in production. (And 1.0 sites too, for that matter. Just look for the tell-tale '/help' sign, e.g. <a class="reference external" href="http://www.zope.org/help">http://www.zope.org/help</a>, if you suspect Plone 1).</p>
+<p>I know, because I just <a class="reference external" href="http://harryroseman.com">deployed one</a> (a cool artist's site if you have a couple hours to kill…). But I didn't do it the &quot;old way&quot; with Zope 2 instances created by hand on clunky physical servers, I used <a class="reference external" href="http://pypi.python.org/pypi/zc.buildout">Buildout</a> and the <a class="reference external" href="http://rackspacecloud.com">Cloud</a>.</p>
 <div class="section" id="aside-1">
 <h2>Aside #1</h2>
-<p>As an aside: it was really bothering me lately that you couldn't
-(easily) find older Plone releases at <a class="reference external" href="http://sourceforge.net/projects/plone/">SourceForge</a>. This is by design
-to avoid confusion, but still confusing. So when I needed the most
-recent 2.1.x tarball I decided to scratch my itch and fix the &quot;problem&quot;.
-I started gathering the <a class="reference external" href="http://downloads.sourceforge.net/project/plone/OldFiles/Plone-2.1.4.tar.gz">hard to find</a> releases and putting them
-<a class="reference external" href="http://dist.plone.org/archive/">here</a>. OK… so I only gathered one release (2.1.4), but I swear I had
-good intentions. If you'd like to see any additional releases &quot;moved&quot; to
-dist.plone.org, please let me know in the comments.</p>
+<p>As an aside: it was really bothering me lately that you couldn't (easily) find older Plone releases at <a class="reference external" href="http://sourceforge.net/projects/plone/">SourceForge</a>. This is by design to avoid confusion, but still confusing. So when I needed the most recent 2.1.x tarball I decided to scratch my itch and fix the &quot;problem&quot;.  I started gathering the <a class="reference external" href="http://downloads.sourceforge.net/project/plone/OldFiles/Plone-2.1.4.tar.gz">hard to find</a> releases and putting them <a class="reference external" href="http://dist.plone.org/archive/">here</a>. OK… so I only gathered one release (2.1.4), but I swear I had good intentions. If you'd like to see any additional releases &quot;moved&quot; to dist.plone.org, please let me know in the comments.</p>
 </div>
 <div class="section" id="aside-2">
 <h2>Aside #2</h2>
-<p>Another aside: I should mention here the advent of a tool that promises
-to simplify deployment of Python-based web applications to the cloud (or
-supported service, which technically does not have to be &quot;cloud-based&quot;)
-via the use of APIs (in particular, the <a class="reference external" href="http://rackspacecloud.com">Rackspace Cloud</a> API, which is
-the only one supported so far): <a class="reference external" href="http://cloudsilverlining.org">Silver Lining</a>! The idea of using this
-tool got me so excited, I spent some time experimenting with setting up
-a new host with it (and purchasing their service). But when I realized
-it was not quite ready for production (i.e. &quot;<a class="reference external" href="http://cloudsilverlining.org/#who-should-use-silver-lining">if you want to use Silver
-Lining, Silver Lining is not for you</a>&quot; :-)), I ended up using the
-Rackspace Cloud <strong>web interface</strong>.</p>
-<p>I was so impressed with it:</p>
-<p><a href="#id1"><span class="problematic" id="id2">`|image0|`_</span></a></p>
-<p>I literally moved all of my (granted, relatively small number of client
-sites) to their service within a matter of 1-2 months. Now, I know what
-you are thinking, and I do intend to explore other services (in fact, I
-have tried <a class="reference external" href="http://www.slicehost.com/">Slicehost</a> and it was OK), but this service made my life so
-much easier I wanted to mention some of its key features:</p>
+<p>Another aside: I should mention here the advent of a tool that promises to simplify deployment of Python-based web applications to the cloud (or supported service, which technically does not have to be &quot;cloud-based&quot;) via the use of APIs (in particular, the <a class="reference external" href="http://rackspacecloud.com">Rackspace Cloud</a> API, which is the only one supported so far): <a class="reference external" href="http://cloudsilverlining.org">Silver Lining</a>! The idea of using this tool got me so excited, I spent some time experimenting with setting up a new host with it (and purchasing their service). But when I realized it was not quite ready for production (i.e. &quot;<a class="reference external" href="http://cloudsilverlining.org/#who-should-use-silver-lining">if you want to use Silver Lining, Silver Lining is not for you</a>&quot; :-)), I ended up using the Rackspace Cloud <strong>web interface</strong>.</p>
+<p>I was so impressed with it.</p>
+<p>I literally moved all of my (granted, relatively small number of client sites) to their service within a matter of 1-2 months. Now, I know what you are thinking, and I do intend to explore other services (in fact, I have tried <a class="reference external" href="http://www.slicehost.com/">Slicehost</a> and it was OK), but this service made my life so much easier I wanted to mention some of its key features:</p>
 <ul class="simple">
-<li>&quot;On the fly&quot; requisitioning. You can add/remove hosts anytime and you
-only pay for the time they are up.</li>
-<li>&quot;On the fly&quot; resizing of hosts. In my testing and real world
-experience, the resizing (e.g. move from a host with 256MB RAM and
-10GB disk to 500MB RAM and 20GB disk) was painless (literally only
-cost a few minutes of downtime).</li>
-<li>The potential for all of this to be done remotely via a command line
-tool like Silver Lining.</li>
+<li>&quot;On the fly&quot; requisitioning. You can add/remove hosts anytime and you only pay for the time they are up.</li>
+<li>&quot;On the fly&quot; resizing of hosts. In my testing and real world experience, the resizing (e.g. move from a host with 256MB RAM and 10GB disk to 500MB RAM and 20GB disk) was painless (literally only cost a few minutes of downtime).</li>
+<li>The potential for all of this to be done remotely via a command line tool like Silver Lining.</li>
 </ul>
 </div>
 <div class="section" id="aside-3">
 <h2>Aside #3</h2>
-<p>A third and final aside: the status quo of WSGI support for Plone. Since
-<a class="reference external" href="http://cloudsilverlining.org/#the-application">Zope 2 is not supported</a> by Silver Lining, the key to deploying Plone
-sites with it is currently to use <a class="reference external" href="http://repoze.org/quickstart.html#repoze.zope2">repoze.zope2</a>. <a class="reference external" href="http://jazkarta.com">Nate Aune</a> has
-recently made some progress with this, and more work is scheduled
-for<a class="reference external" href="http://weblion.psu.edu/events/plone-symposium-east-2010">Plone Symposium East</a>. My latest swipe at WSGI-Plone is here:
-<a class="reference external" href="http://svn.aclark.net/svn/public/buildout/plone/branches/3.x-wsgi/">http://svn.aclark.net/svn/public/buildout/plone/branches/3.x-wsgi/</a></p>
+<p>A third and final aside: the status quo of WSGI support for Plone. Since <a class="reference external" href="http://cloudsilverlining.org/#the-application">Zope 2 is not supported</a> by Silver Lining, the key to deploying Plone sites with it is currently to use <a class="reference external" href="http://repoze.org/quickstart.html#repoze.zope2">repoze.zope2</a>. <a class="reference external" href="http://jazkarta.com">Nate Aune</a> has recently made some progress with this, and more work is scheduled for<a class="reference external" href="http://weblion.psu.edu/events/plone-symposium-east-2010">Plone Symposium East</a>. My latest swipe at WSGI-Plone is here: <a class="reference external" href="http://svn.aclark.net/svn/public/buildout/plone/branches/3.x-wsgi/">http://svn.aclark.net/svn/public/buildout/plone/branches/3.x-wsgi/</a></p>
 </div>
 <div class="section" id="the-actual-point">
 <h2>The actual point</h2>
-<p>And finally, to the point of this blog entry! I have created a generic
-Plone 2.1 buildout for anyone interested. You can find it
-here:<a class="reference external" href="http://svn.aclark.net/svn/public/buildout/plone/branches/2.1.x/">http://svn.aclark.net/svn/public/buildout/plone/branches/2.1.x/</a>.
-Using it is simple, as described in the <a class="reference external" href="http://svn.aclark.net/svn/public/buildout/plone/branches/2.1.x/README.txt">README.txt</a>:</p>
+<p>And finally, to the point of this blog entry! I have created a generic Plone 2.1 buildout for anyone interested. You can find it here:<a class="reference external" href="http://svn.aclark.net/svn/public/buildout/plone/branches/2.1.x/">http://svn.aclark.net/svn/public/buildout/plone/branches/2.1.x/</a>.  Using it is simple, as described in the <a class="reference external" href="http://svn.aclark.net/svn/public/buildout/plone/branches/2.1.x/README.txt">README.txt</a>:</p>
 <pre class="literal-block">
 $ svn export http://svn.aclark.net/svn/public/buildout/plone/branches/2.1.x/ plone
 $ cd plone
@@ -117,19 +78,7 @@ $ python2.4 bootstrap.py
 $ bin/buildout
 $ bin/instance fg
 </pre>
-<p>Since Plone 2.1 community support has expired for this release, and
-since Plone 2.1 shipped with Python 2.3 (if I recall correctly), this is
-definitely &quot;unsupported use of Plone&quot;. But when you need it, you need
-it. I have yet to experience any issues related to the Python version,
-for whatever that is worth (possibly due to the fact that Plone 2.1
-originally shipped with Python 2.3 and Zope 2.7, then Zope 2.8 came
-along which worked with Python 2.4. Just a guess).</p>
-</div>
-<div class="system-messages section">
-<h2>Docutils System Messages</h2>
-<div class="system-message" id="id1">
-<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">/Users/aclark/Developer/blog/content/using-buildout-to-deploy-a-plone-2-1-site-to-the-cloud.rst</tt>, line 43); <em><a href="#id2">backlink</a></em></p>
-Unknown target name: &quot;|image0|&quot;.</div>
+<p>Since Plone 2.1 community support has expired for this release, and since Plone 2.1 shipped with Python 2.3 (if I recall correctly), this is definitely &quot;unsupported use of Plone&quot;. But when you need it, you need it. I have yet to experience any issues related to the Python version, for whatever that is worth (possibly due to the fact that Plone 2.1 originally shipped with Python 2.3 and Zope 2.7, then Zope 2.8 came along which worked with Python 2.4. Just a guess).</p>
 </div>
 
     </div><!-- /.entry-content -->
