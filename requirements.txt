@@ -1,1 +1,1 @@
-pelican==3.0.1
+pelican==2.8.1
