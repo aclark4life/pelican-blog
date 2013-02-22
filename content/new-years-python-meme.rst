@@ -4,7 +4,7 @@ New Year’s Python Meme
 :date: 2009-12-31 18:22
 :tags: Python
 
-.. image:: https://raw.github.com/ACLARKNET/aclarknet.github.com/master/images/lenin_packaging.png 
+.. image:: images/lenin_packaging.png 
   :width: 100%
 
 What’s the coolest Python application, framework or library you have discovered in 2009?

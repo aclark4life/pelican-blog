@@ -6,7 +6,7 @@ Python 3 Porting
 
 *The 3 in 2013 is for Python 3*
 
-.. image:: https://raw.github.com/ACLARKNET/aclarknet.github.com/master/images/python-3-port.jpg
+.. image:: images/python-3-port.jpg
 
 I tend to like projects that everyone else **hates**, e.g.:
 

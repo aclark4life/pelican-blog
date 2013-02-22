@@ -5,58 +5,28 @@ The Apache modules for XDV
 
 `|http://beakersblog.files.wordpress.com/2010/02/consolidation.jpg|`_
 
-I was recently tasked with consolidating our various **business
-services** (website, software repository, mailing lists, ldap, etc.) on
-to a single virtual machine (ostensibly to save money, although it
-didn't quite work out that way). The Apache modules for XDV presented
-themselves as an attractive technique to use, in helping me achieve my
-goals.
+I was recently tasked with consolidating our various **business services** (website, software repository, mailing lists, ldap, etc.) on to a single virtual machine (ostensibly to save money, although it didn't quite work out that way). The Apache modules for XDV presented themselves as an attractive technique to use, in helping me achieve my goals.
 
 Background
 ----------
 
-Previously, I had been blissfully running http://aclark.net with NGINX,
-Plone 4 trunk, and XDV on a small virtual machine and absolutely loving
-it.
+Previously, I had been blissfully running http://aclark.net with NGINX, Plone 4 trunk, and XDV on a small virtual machine and absolutely loving it.
 
-Additionally, I had separate virtual machines for my Wordpress blog
-(blog.aclark.net) and Subversion software repository (svn.aclark.net).
-The isolation of these services made them easy to manage and still
-relatively cheap to run them all.
+Additionally, I had separate virtual machines for my Wordpress blog (blog.aclark.net) and Subversion software repository (svn.aclark.net).  The isolation of these services made them easy to manage and still relatively cheap to run them all.
 
-And in fact, I have come to rely heavily on the ability to (1.) rapidly
-create a virtual machine, (2.) install a bunch of vendor packages that
-Just Work™, and (3.) build out whatever was left i.e. whatever could not
-be easily installed via OS vendor packages. This usually translates
-loosely into "I use Buildout for my Plone sites, and an OS vendor
-package installer for everything else".
+And in fact, I have come to rely heavily on the ability to (1.) rapidly create a virtual machine, (2.) install a bunch of vendor packages that Just Work™, and (3.) build out whatever was left i.e. whatever could not be easily installed via OS vendor packages. This usually translates loosely into "I use Buildout for my Plone sites, and an OS vendor package installer for everything else".
 
-That said, even though I already knew the hazards of trying to cram too
-many services on to a single "shared" host, and didn't really want to do
-that dance again, it seemed reasonable at the time to at least try and
-consolidate them on to a single virtual machine (it sounds crazy in
-hindsight).
+That said, even though I already knew the hazards of trying to cram too many services on to a single "shared" host, and didn't really want to do that dance again, it seemed reasonable at the time to at least try and consolidate them on to a single virtual machine (it sounds crazy in hindsight).
 
 First choice: NGINX
 ~~~~~~~~~~~~~~~~~~~
 
-Like I said earlier, the forked version of NGINX available on the
-`HTML-XSLT website`_ is an absolute pleasure to use. But when I pondered
-consolidating services I knew it would not be easy, and maybe even
-impossible to run Wordpress behind NGINX.
+Like I said earlier, the forked version of NGINX available on the `HTML-XSLT website`_ is an absolute pleasure to use. But when I pondered consolidating services I knew it would not be easy, and maybe even impossible to run Wordpress behind NGINX.
 
 Second choice: Apache
 ~~~~~~~~~~~~~~~~~~~~~
 
-So I thought to myself, "I know, I'll just switch to the Apache modules
-for XDV" and that will solve my PHP/Plone "integration" problems for the
-time being. (Another way to solve them would be to use the `XDV
-middleware`_ along with `Zope 2.13`_'s WSGI support; I will be trying
-that next.)
-
-.. raw:: html
-
-   </p>
+So I thought to myself, "I know, I'll just switch to the Apache modules for XDV" and that will solve my PHP/Plone "integration" problems for the time being. (Another way to solve them would be to use the `XDV middleware`_ along with `Zope 2.13`_'s WSGI support; I will be trying that next.)
 
 But not so fast.
 
@@ -68,93 +38,33 @@ Of course, things don't always go as planned.
 First problem
 ~~~~~~~~~~~~~
 
-The Apache modules for XDV do not work exactly "as advertised" on any of
-the "modern" OS platforms I tried (Debian, various Ubuntus, and Arch
-Linux). They compile fine against the operating system's Apache, but do
-not run properly. See `this thread`_ on the Deliverance mailing list
-(and I challenge anyone reading this to correct me! :-D)
+The Apache modules for XDV do not work exactly "as advertised" on any of the "modern" OS platforms I tried (Debian, various Ubuntus, and Arch Linux). They compile fine against the operating system's Apache, but do not run properly. See `this thread`_ on the Deliverance mailing list (and I challenge anyone reading this to correct me! :-D)
 
-.. raw:: html
-
-   </p>
-
-"Fine," I thought, I'll just create a buildout to deploy everything. I
-`wrote a book`_ about deploying Plone websites with Buildout. This
-should be easy, right?
+"Fine," I thought, I'll just create a buildout to deploy everything. I `wrote a book`_ about deploying Plone websites with Buildout. This should be easy, right?
 
 Wrong.
 
 Second problem
 ~~~~~~~~~~~~~~
 
-It's hard to create such a buildout for a variety of reasons, but most
-noticeably in my mind is the "library soup" you may encounter on any
-modern system. For example, I started off by trying to include all the
-dependencies in the buildout. But I ended up leaving things out, like
-libxml2 and libxslt relying instead on the operating system vendor
-packages. Because even though I tried desperately to tell every other
-dependency about the included libxml2 and libxslt2, I still ended up
-with an annoying "missing symbols" error at the end (meaning I likely
-missed a compiler flag along the way).
+It's hard to create such a buildout for a variety of reasons, but most noticeably in my mind is the "library soup" you may encounter on any modern system. For example, I started off by trying to include all the dependencies in the buildout. But I ended up leaving things out, like libxml2 and libxslt relying instead on the operating system vendor packages. Because even though I tried desperately to tell every other dependency about the included libxml2 and libxslt2, I still ended up with an annoying "missing symbols" error at the end (meaning I likely missed a compiler flag along the way).
 
-.. raw:: html
+These errors can be very frustrating, and even worse: **sporadic**.  Sometimes you may inadvertently add or remove a system dependency during the build process. So you could be relying on a system package and not even know it until later when it is too late (i.e. when you are enjoying some unplanned and unexpected down time).
 
-   </p>
-
-These errors can be very frustrating, and even worse: **sporadic**.
-Sometimes you may inadvertently add or remove a system dependency during
-the build process. So you could be relying on a system package and not
-even know it until later when it is too late (i.e. when you are enjoying
-some unplanned and unexpected down time).
-
-So there I went again. It took several days I didn't really have, and
-the results were not what I expected, but I'm still somewhat happy with
-them. Now, I want to share this buildout particularly with folks
-considering using the Apache modules for XDV
-(`http://code.google.com/p/html-xslt/`_). Because while it would be much
-easier if the Apache modules Just Worked™ with OS vendor packages, in
-the event that they don't (which is what I experienced) folks may find
-this buildout helpful. (That, and Jon Stahl requested it on Facebook
-:-D).
+So there I went again. It took several days I didn't really have, and the results were not what I expected, but I'm still somewhat happy with them. Now, I want to share this buildout particularly with folks considering using the Apache modules for XDV (`http://code.google.com/p/html-xslt/`_). Because while it would be much easier if the Apache modules Just Worked™ with OS vendor packages, in the event that they don't (which is what I experienced) folks may find this buildout helpful. (That, and Jon Stahl requested it on Facebook :-D).
 
 Conclusion
 ----------
 
-Anyway, I'm quite happy with the buildout and I am sharing it in hopes
-that it will move the Apache/XDV story forward.
+Anyway, I'm quite happy with the buildout and I am sharing it in hopes that it will move the Apache/XDV story forward.
 
-.. raw:: html
+In addition to compiling Apache with mod\_depends and mod\_transform, it includes Subversion, Trac, mod\_wsgi, PHP and Wordpress. As I mentioned earlier, it is not really my preference to cram all this stuff in to one buildout, but as long as it is reliable and consistent, I don't mind it too much. It also handles the theme compilation for a variety of services, which is accomplished via a command recipe that executes calls to *bin/xdvcompiler*.
 
-   </p>
+Incidentally, I have no particular allegiance to, or dislike of Apache: more like a love/hate relationship; it can be very useful in a variety of situations, while at the same time confounding. But regardless, I would like to see the Apache XDV modules be able to deliver the same rock solid performance as the NGINX fork.
 
-In addition to compiling Apache with mod\_depends and mod\_transform, it
-includes Subversion, Trac, mod\_wsgi, PHP and Wordpress. As I mentioned
-earlier, it is not really my preference to cram all this stuff in to one
-buildout, but as long as it is reliable and consistent, I don't mind it
-too much. It also handles the theme compilation for a variety of
-services, which is accomplished via a command recipe that executes calls
-to *bin/xdvcompiler*.
+Kudos to Laurence Rowe (et al.) for the Apache modules! I hope this blog entry will facilitate a push to get people using them with their *operating system vendor's Apache packages*, which may inspire Laurence to continue developing them, and most importantly to fix bugs ;-).
 
-Incidentally, I have no particular allegiance to, or dislike of Apache:
-more like a love/hate relationship; it can be very useful in a variety
-of situations, while at the same time confounding. But regardless, I
-would like to see the Apache XDV modules be able to deliver the same
-rock solid performance as the NGINX fork.
-
-Kudos to Laurence Rowe (et al.) for the Apache modules! I hope this blog
-entry will facilitate a push to get people using them with their
-*operating system vendor's Apache packages*, which may inspire Laurence
-to continue developing them, and most importantly to fix bugs ;-).
-
-.. raw:: html
-
-   <p>
-
-Normally, I like to factor out the reusable bits first, but this
-buildout is presented in it's entirety as I am using it (minus some
-customer bits), for whatever that is worth. Here is a look at the "main"
-buildout.cfg file, most of which should be self-explanatory. Click
-around this site to see the results:
+Normally, I like to factor out the reusable bits first, but this buildout is presented in it's entirety as I am using it (minus some customer bits), for whatever that is worth. Here is a look at the "main" buildout.cfg file, most of which should be self-explanatory. Click around this site to see the results:
 
 ::
 
@@ -310,16 +220,8 @@ around this site to see the results:
      --output=${buildout:directory}/etc/theme-blog.xsl
     update-command = ${:command}
 
-You can check out the rest of the buildout `here`_ (themed with XDV
-:-)). And if you enjoy this post, please feel free to pick up a copy of
-`Plone 3.3 Site Administration`_ from PACKT Publishing, due out any day
-now (I am expecting to review pre-finals this week some time).
+You can check out the rest of the buildout `here`_ (themed with XDV :-)). And if you enjoy this post, please feel free to pick up a copy of `Plone 3.3 Site Administration`_ from PACKT Publishing, due out any day now (I am expecting to review pre-finals this week some time).
 
-.. raw:: html
-
-   </p>
-
-.. _|image1|: http://blog.aclark.net/wp-content/uploads/2010/07/consolidation.jpg
 .. _HTML-XSLT website: http://code.google.com/p/html-xslt/
 .. _XDV middleware: http://pypi.python.org/pypi/dv.xdvserver
 .. _Zope 2.13: http://pypi.python.org/pypi/Zope2/2.13.0a1
@@ -328,6 +230,3 @@ now (I am expecting to review pre-finals this week some time).
 .. _`http://code.google.com/p/html-xslt/`: http://code.google.com/p/html-xslt/
 .. _here: http://svn.aclark.net/trac/public/browser/buildout/aclark/apache-xdv/trunk
 .. _Plone 3.3 Site Administration: http://aclark.net
-
-.. |http://beakersblog.files.wordpress.com/2010/02/consolidation.jpg| image:: http://blog.aclark.net/wp-content/uploads/2010/07/consolidation.jpg
-.. |image1| image:: http://blog.aclark.net/wp-content/uploads/2010/07/consolidation.jpg

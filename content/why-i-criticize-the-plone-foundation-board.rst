@@ -4,7 +4,7 @@ Why I Criticize The Plone Foundation Board
 :date: 2012-10-17 20:00
 :tags: Mozilla, Python, Plone
 
-.. image:: https://raw.github.com/ACLARKNET/aclarknet.github.com/master/images/aclark-conf.jpg
+.. image:: images/aclark-conf.jpg
 
 TL;DR: Because I care.
 

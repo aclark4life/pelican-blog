@@ -9,9 +9,6 @@ software with just a few clicks.*
 PythonPackages GitHub Service
 =============================
 
-.. image:: http://aclark4life.files.wordpress.com/2012/08/screen-shot-2012-08-10-at-1-32-09-am.png?w=300
-    :align: center
-
 There is a new `GitHub Service`_ available for pythonpackages.com that allows you to release Python packages from GitHub to the Python Package Index, simply by pushing a commit message that begins with "Release" e.g.:
 
 ::

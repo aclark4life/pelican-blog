@@ -182,7 +182,6 @@ Notes
 
 .. _count the number of times it has been downloaded: http://blog.aclark.net/2011/06/16/youre-so-vain-so-why-not-use-vanity/
 .. _log: http://goo.gl/BJw33
-.. _|image1|: http://aclark4life.files.wordpress.com/2011/06/screen-shot-2011-06-29-at-1-27-12-pm.png
 .. _Collective: http://dev.plone.org/collective
 .. _Collective Python buildout: http://svn.plone.org/svn/collective/buildout/python
 .. _fschulze: http://twitter.com/fschulze

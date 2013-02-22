@@ -23,7 +23,7 @@ First let me cover what I **ABSOLUTELY LOVE** about this book.
 buildout:eggs
 ~~~~~~~~~~~~~
 
-.. image:: https://raw.github.com/ACLARKNET/aclarknet.github.com/master/images/buildout.png
+.. image:: images/buildout.png
 
 Aspeli correctly addresses one of my biggest pet peeves (concerns) about what I believe to be an **ANTI-PATTERN** in almost every Plone buildout: buildout:eggs (referring to the eggs parameter of the buildout section; it does not exist, other than as a convenient variable setting).
 
@@ -32,7 +32,7 @@ If you know me, you know I've spoken about this before and whilst I've moved on 
 Add-ons
 ~~~~~~~
 
-.. image:: https://raw.github.com/ACLARKNET/aclarknet.github.com/master/images/addons.png
+.. image:: images/addons.png
 
 Did you see? You might have missed it. No mention of **Products** WHAT-SO-EVER. "Product" was a term that Zope2 used for Python libraries that enhanced the functionality of Zope2, and it stuck. Now, it should die in favor of a term everyone else in the world is familiar with (in this context): add-on. Well played, Aspeli. Well played.
 

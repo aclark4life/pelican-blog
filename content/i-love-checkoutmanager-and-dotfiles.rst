@@ -18,7 +18,7 @@ Shell
 
 One of the first things I do on a new system is change my shell to **Zsh** in ``System Preferences -> Users & Groups -> Current User -> Right Click -> Advanced Options...``. Don't forget to ``Click the lock to make changes`` first.
 
-.. image:: https://raw.github.com/ACLARKNET/aclarknet.github.com/master/images/zsh.png
+.. image:: images/zsh.png
 
 Zsh
 ~~~
@@ -30,12 +30,12 @@ XCode
 
 After I take possession of my new laptop (running **Mountain Lion**, the newest OS X at the time of this writing), I head to the App Store to download XCode. [2]_ Among many other things, XCode gives me the GNU C Compiler and allows me to type "gcc" in my ``Applications -> Utilities -> Terminal``.
 
-.. image:: https://raw.github.com/ACLARKNET/aclarknet.github.com/master/images/gcc.png
+.. image:: images/gcc.png
 
 Python
 ------
 
-.. image:: https://raw.github.com/ACLARKNET/aclarknet.github.com/master/images/homebrew.png
+.. image:: images/homebrew.png
 
 Now I need a Python interpreter [3]_. For development I use the `Collective Python Buildout <https://github.com/collective/buildout.python>`_ but I also enjoy using `Homebrew's <http://mxcl.github.com/homebrew/>`_ Python 2.7. I use Homebrew for a variety of other things too (e.g. mobile-shell AKA mosh) so here we go::
 
@@ -57,7 +57,7 @@ I think OS X (or XCode) includes git, but just in case::
 
 Which reminds me, don't forget that installing the command line utilities in Mountain Lion's XCode requires an additional step in ``Preferences -> Downloads -> Command Line Tools -> Install``:
 
-.. image:: https://raw.github.com/ACLARKNET/aclarknet.github.com/master/images/command-line-utils.png
+.. image:: images/command-line-utils.png
 
 Dotfiles
 --------

@@ -4,7 +4,7 @@ New Year's Python Meme 2012
 :date: 2012-12-29 15:30
 :tags: Django, Mozilla, Plone, Python
 
-.. image:: https://raw.github.com/ACLARKNET/aclarknet.github.com/master/images/tarek-meme-reminder.png
+.. image:: images/tarek-meme-reminder.png
 
 *This is my entry for Tarek Ziadé's New Year's Python Meme, a tradition I have come to enjoy. Both to reflect on the current year and look back on previous years. So here it is.*
 

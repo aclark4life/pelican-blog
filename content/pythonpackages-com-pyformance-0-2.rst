@@ -11,8 +11,6 @@ pyformance 0.2
 
 pythonpackages.com recently processed it's first official release via the `new GitHub Service`_.
 
-.. image:: http://aclark4life.files.wordpress.com/2012/08/screen-shot-2012-08-13-at-9-00-05-am.png?w=300
-
 As such, we are celebrating the release of `pyformance`_ 0.2! According to the author `Omer Gertel`_::
 
     It's a straight forward port of Coda Hale's fantastic metrics

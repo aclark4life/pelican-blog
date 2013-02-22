@@ -16,7 +16,6 @@ And finally, a huge thanks to everyone for your support. I continue to be amazed
 So without further ado, please head over to `http://ploneconf2008.eventbrite.com`_ to secure your place at the conference, and help the planning team move forward. See you all in DC!
 
 .. _`http://ploneconf2008.eventbrite.com/`: http://ploneconf2008.eventbrite.com/
-.. _|image1|: http://aclark4life.files.wordpress.com/2008/07/ploneconf.png
 .. _Plone Conference: http://plone.org/events/conference/2008-washington-dc
 .. _`http://ploneconf2008.eventbrite.com`: http://ploneconf2008.eventbrite.com
 .. _Plone Conference 2008: http://plone.org/events/conferences/2008-washington-dc

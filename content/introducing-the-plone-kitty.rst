@@ -6,7 +6,7 @@ Introducing The Plone Kitty
 
 *Actually: re-introducing the Plone Kitty from Plone 1!*
 
-.. image:: https://raw.github.com/ACLARKNET/aclarknet.github.com/master/images/plone-kitty.png
+.. image:: images/plone-kitty.png
 
 *Plone Kitty* is the name of a theme (then called "skin") that shipped with the earliest versions of `Plone <http://plone.org>`_ (1.1 in the image above). This was a simpler time when the web was new, and everything was possible!
 

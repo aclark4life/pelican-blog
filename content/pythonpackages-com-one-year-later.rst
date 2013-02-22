@@ -16,25 +16,25 @@ As of the launch of the beta site 3 months ago, there are some actually-useful f
 - The ability to release a package with `git push` (by adding the service: https://github.com/github/github-services/blob/master/services/pythonpackages.rb)
 - The ability to "manage packages" (see image below)
 
-.. image:: https://raw.github.com/ACLARKNET/aclarknet.github.com/master/images/manage-packages.png
+.. image:: images/manage-packages.png
 
 - The ability to "manage organizations" (see image below)
 
-.. image:: https://raw.github.com/ACLARKNET/aclarknet.github.com/master/images/manage-organizations.png
+.. image:: images/manage-organizations.png
 
 - The `ability to create packages through the web`_ (i.e. from the web browser to GitHub, whereas normally you'd run PasteScript in your Terminal).
 
-.. image:: https://raw.github.com/ACLARKNET/aclarknet.github.com/master/images/create-new-package.png
+.. image:: images/create-new-package.png
 
 And a few more logistical features that are cool:
 
 - The ability to pay with a credit card (via Stripe)
 
-.. image:: https://raw.github.com/ACLARKNET/aclarknet.github.com/master/images/pay-with-stripe.png
+.. image:: images/pay-with-stripe.png
 
 - The ability to oauth against PyPI:
 
-.. image:: https://raw.github.com/ACLARKNET/aclarknet.github.com/master/images/pypi-oauth.png
+.. image:: images/pypi-oauth.png
 
 Still, we have only scratched the surface of what could potentially be provided to the Python community. Future plans include:
 

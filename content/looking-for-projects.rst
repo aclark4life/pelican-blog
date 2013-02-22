@@ -3,7 +3,7 @@ Looking for projects
 :date: 2012-10-04 10:30
 :tags: Plone, Python, Mozilla
 
-.. image:: https://raw.github.com/ACLARKNET/aclarknet.github.com/master/images/use_python.jpg
+.. image:: images/use_python.jpg
 
 With `pythonpackages.com winding down`_, I am now actively seeking projects for Q4 2012 and beyond. I am good at:
 

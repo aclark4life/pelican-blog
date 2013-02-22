@@ -7,7 +7,7 @@ As an open source "Plone guy", I'm always prepared to defend and explain my choi
 
 This was a giant let down, because I was hoping to avoid putting any time in to my blogging infrastructure. For weeks I did nothing. I poked at various options: Pelican, Plone, Tumblr, others. Eventually, I found my way back to Pelican and now I'm happy again.
 
-.. image:: http://blog.aclark.net/images/pelican.png
+.. image:: images/pelican.png
 
 Pelican is a static blog generator, as you may have heard. So **one big advantage** is:
 

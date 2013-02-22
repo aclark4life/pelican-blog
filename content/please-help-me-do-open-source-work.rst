@@ -6,7 +6,7 @@ Please Help Me Do Open Source Work
 
 *From my 'mid-life-crisis' series of blog entries :-)*
 
-.. image:: https://raw.github.com/ACLARKNET/aclarknet.github.com/master/images/open-source-work.png
+.. image:: images/open-source-work.png
 
 Open Source Work
 ----------------

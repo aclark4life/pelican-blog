@@ -343,7 +343,7 @@ Customize templates
 
 As you may have noticed above I use ``z3c.jbot`` to customize various Plone templates.
 
-.. image:: https://raw.github.com/ACLARKNET/aclarknet.github.com/master/images/custom-templates.png
+.. image:: images/custom-templates.png
 
 Add content
 -----------
@@ -361,14 +361,14 @@ Use Sunburst theme for content editing
 If you are Diazo-savvy, you may notice I completely ignore styling the content editing interface. Instead I rely on the unthemed [2]_ site for content editing.
 
 
-.. image:: https://raw.github.com/ACLARKNET/aclarknet.github.com/master/images/edit-ui.png
+.. image:: images/edit-ui.png
 
 Use Diazo theme for public facing view
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Of course, visitors to http://aclark.net see the Diazo theme.
 
-.. image:: https://raw.github.com/ACLARKNET/aclarknet.github.com/master/images/diazo-theme.png
+.. image:: images/diazo-theme.png
 
 I'm hoping that the Plone team can unify the content editing experience again in Plone 5, possibly via simplifying the "old style" templates such that it's easier to map them to custom Diazo themes.
 
@@ -385,7 +385,7 @@ Plone 4.3a1 is remarkably stable. The TinyMCE UI is a bit rough, and the sitemap
 The ``All content`` view is awesome
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. image:: https://raw.github.com/ACLARKNET/aclarknet.github.com/master/images/all-content.png
+.. image:: images/all-content.png
 
 Contributed by Laurence Rowe for Plone 4, I use the ``All content`` view in two places:
 

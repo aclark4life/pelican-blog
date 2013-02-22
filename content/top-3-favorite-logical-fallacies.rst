@@ -4,7 +4,7 @@ Top 3 "favorite" logical fallacies
 :date: 2012-10-17 02:00 
 :tags: Mozilla, Python, Plone
 
-.. image:: https://raw.github.com/ACLARKNET/aclarknet.github.com/master/images/y-u-no-agree.jpg
+.. image:: images/y-u-no-agree.jpg
 
 I love to debate issues. The more complex, the better. I have no formal training in `debate`_, but I wish I did. It may have better prepared me to face different personality types with varying degree of communication skill. You don't have to watch the 2012 U.S. Presidential Debates to know that people will say things that are **BATSHIT CRAZY** to make their point. I've done it myself. That's why we need rules to formalize our discussions, because it's hard to stay on point.
 

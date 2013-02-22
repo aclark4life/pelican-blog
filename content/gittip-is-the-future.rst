@@ -17,7 +17,7 @@ I love this idea! In particular, because it speaks to me more than other similar
 
 Why? If for no other reason, because it comes from a member of the Python community: Chad Whitacre of http://aspen.io fame. And the Python community has become near and dear to me, second only to my-one-true-open-source-love: Plone. So I want to see open source developers, particularly Python developers, succeed.
 
-.. image:: http://blog.aclark.net/images/gittip.png
+.. image:: images/gittip.png
 
 And succeed they will, with gittip. Some particularly impressive results so far: 
 
