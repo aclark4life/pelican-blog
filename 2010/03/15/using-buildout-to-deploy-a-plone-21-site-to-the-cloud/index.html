@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Alex Clark - Python Web Developer & Musician, Django, Pillow, Python and more!">
+
+        <link rel="alternate"  href="http://blog.aclark.net/feeds/all.atom.xml" type="application/atom+xml" title="Alex Clark - Python Web Developer & Musician Full Atom Feed"/>
+
+        <title>Using Buildout to deploy a Plone 2.1 site to the cloud // Alex Clark - Python Web Developer & Musician // Django, Pillow, Python and more!</title>
+
+    <link href="https://github.com/pythonpackages/pythonpackages/blob/master/favicon.ico?raw=true" rel="icon">
+
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.3.0/pure-min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="http://blog.aclark.net/theme/css/pure.css">
+    <link rel="stylesheet" href="http://blog.aclark.net/theme/css/pygments.css">
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/fitvids/1.0.1/jquery.fitvids.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".content").fitVids();
+        });
+    </script>
+
+    <script type="text/javascript" src="http://blog.aclark.net/tipuesearch/tipuesearch_set.js"></script>
+    <script type="text/javascript" src="http://blog.aclark.net/tipuesearch/tipuesearch_content.js"></script>
+    <link rel="stylesheet" type="text/css" href="http://blog.aclark.net/tipuesearch/tipuesearch.css">
+    <script type="text/javascript" src="http://blog.aclark.net/tipuesearch/tipuesearch.js"></script>
+
+</head>
+
+<body>
+    <div class="pure-g-r" id="layout">
+        <div class="sidebar pure-u">
+            <div class="cover-img" style="background-image: url('http://aclark.net/static/background.jpg')">
+                <div class="cover-body">
+                    <header class="header">
+                        <hgroup>
+                            <img class="avatar" src="http://www.gravatar.com/avatar/6170000a01c67c6ba1e2d4bd87701bae.png">
+                            <h1 class="brand-main"><a href="http://blog.aclark.net">Alex Clark - Python Web Developer & Musician</a></h1>
+                            <p class="tagline">Django, Pillow, Python and more!</p>
+                                <p class="social">
+                                    <a href="https://github.com/aclark4life/">
+                                        <i class="fa fa-github fa-3x"></i>
+                                    </a>
+                                    <a href="https://www.gittip.com/aclark4life">
+                                        <i class="fa fa-gittip fa-3x"></i>
+                                    </a>
+                                    <a href="https://twitter.com/aclark4life">
+                                        <i class="fa fa-twitter-square fa-3x"></i>
+                                    </a>
+                                </p>
+                        </hgroup>
+                    </header>
+                </div>
+            </div>
+        </div>
+        <div id="search" style="letter-spacing: 1px">
+            <form action="http://blog.aclark.net">
+                <input type="text" name="q" id="tipue_search_input" autocomplete="off" required>
+            </form>
+            <div id="tipue_search_content" style="padding-left: 55px"></div>
+        </div>
+    <div class="pure-u">
+        <div class="content">
+            <section class="post">
+                <header class="post-header">
+                    <h1>Using Buildout to deploy a Plone 2.1 site to the cloud</h1>
+                        <p class="post-meta">
+                            // under                                 <a class="post-category" href="http://blog.aclark.net/tag/plone.html">Plone</a>
+                        </p>
+                </header>
+            </section>
+            <p>Believe it or not, there are still Plone 2.1 sites in production. (And 1.0 sites too, for that matter. Just look for the tell-tale '/help' sign, e.g. <a class="reference external" href="http://www.zope.org/help">http://www.zope.org/help</a>, if you suspect Plone 1).</p>
+<p>I know, because I just <a class="reference external" href="http://harryroseman.com">deployed one</a> (a cool artist's site if you have a couple hours to kill…). But I didn't do it the &quot;old way&quot; with Zope 2 instances created by hand on clunky physical servers, I used <a class="reference external" href="http://pypi.python.org/pypi/zc.buildout">Buildout</a> and the <a class="reference external" href="http://rackspacecloud.com">Cloud</a>.</p>
+<div class="section" id="aside-1">
+<h2>Aside #1</h2>
+<p>As an aside: it was really bothering me lately that you couldn't (easily) find older Plone releases at <a class="reference external" href="http://sourceforge.net/projects/plone/">SourceForge</a>. This is by design to avoid confusion, but still confusing. So when I needed the most recent 2.1.x tarball I decided to scratch my itch and fix the &quot;problem&quot;.  I started gathering the <a class="reference external" href="http://downloads.sourceforge.net/project/plone/OldFiles/Plone-2.1.4.tar.gz">hard to find</a> releases and putting them <a class="reference external" href="http://dist.plone.org/archive/">here</a>. OK… so I only gathered one release (2.1.4), but I swear I had good intentions. If you'd like to see any additional releases &quot;moved&quot; to dist.plone.org, please let me know in the comments.</p>
+</div>
+<div class="section" id="aside-2">
+<h2>Aside #2</h2>
+<p>Another aside: I should mention here the advent of a tool that promises to simplify deployment of Python-based web applications to the cloud (or supported service, which technically does not have to be &quot;cloud-based&quot;) via the use of APIs (in particular, the <a class="reference external" href="http://rackspacecloud.com">Rackspace Cloud</a> API, which is the only one supported so far): <a class="reference external" href="http://cloudsilverlining.org">Silver Lining</a>! The idea of using this tool got me so excited, I spent some time experimenting with setting up a new host with it (and purchasing their service). But when I realized it was not quite ready for production (i.e. &quot;<a class="reference external" href="http://cloudsilverlining.org/#who-should-use-silver-lining">if you want to use Silver Lining, Silver Lining is not for you</a>&quot; :-)), I ended up using the Rackspace Cloud <strong>web interface</strong>.</p>
+<p>I was so impressed with it.</p>
+<p>I literally moved all of my (granted, relatively small number of client sites) to their service within a matter of 1-2 months. Now, I know what you are thinking, and I do intend to explore other services (in fact, I have tried <a class="reference external" href="http://www.slicehost.com/">Slicehost</a> and it was OK), but this service made my life so much easier I wanted to mention some of its key features:</p>
+<ul class="simple">
+<li>&quot;On the fly&quot; requisitioning. You can add/remove hosts anytime and you only pay for the time they are up.</li>
+<li>&quot;On the fly&quot; resizing of hosts. In my testing and real world experience, the resizing (e.g. move from a host with 256MB RAM and 10GB disk to 500MB RAM and 20GB disk) was painless (literally only cost a few minutes of downtime).</li>
+<li>The potential for all of this to be done remotely via a command line tool like Silver Lining.</li>
+</ul>
+</div>
+<div class="section" id="aside-3">
+<h2>Aside #3</h2>
+<p>A third and final aside: the status quo of WSGI support for Plone. Since <a class="reference external" href="http://cloudsilverlining.org/#the-application">Zope 2 is not supported</a> by Silver Lining, the key to deploying Plone sites with it is currently to use <a class="reference external" href="http://repoze.org/quickstart.html#repoze.zope2">repoze.zope2</a>. <a class="reference external" href="http://jazkarta.com">Nate Aune</a> has recently made some progress with this, and more work is scheduled for<a class="reference external" href="http://weblion.psu.edu/events/plone-symposium-east-2010">Plone Symposium East</a>. My latest swipe at WSGI-Plone is here: <a class="reference external" href="http://svn.aclark.net/svn/public/buildout/plone/branches/3.x-wsgi/">http://svn.aclark.net/svn/public/buildout/plone/branches/3.x-wsgi/</a></p>
+</div>
+<div class="section" id="the-actual-point">
+<h2>The actual point</h2>
+<p>And finally, to the point of this blog entry! I have created a generic Plone 2.1 buildout for anyone interested. You can find it here:<a class="reference external" href="http://svn.aclark.net/svn/public/buildout/plone/branches/2.1.x/">http://svn.aclark.net/svn/public/buildout/plone/branches/2.1.x/</a>.  Using it is simple, as described in the <a class="reference external" href="http://svn.aclark.net/svn/public/buildout/plone/branches/2.1.x/README.txt">README.txt</a>:</p>
+<pre class="literal-block">
+$ svn export http://svn.aclark.net/svn/public/buildout/plone/branches/2.1.x/ plone
+$ cd plone
+$ python2.4 bootstrap.py
+$ bin/buildout
+$ bin/instance fg
+</pre>
+<p>Since Plone 2.1 community support has expired for this release, and since Plone 2.1 shipped with Python 2.3 (if I recall correctly), this is definitely &quot;unsupported use of Plone&quot;. But when you need it, you need it. I have yet to experience any issues related to the Python version, for whatever that is worth (possibly due to the fact that Plone 2.1 originally shipped with Python 2.3 and Zope 2.7, then Zope 2.8 came along which worked with Python 2.4. Just a guess).</p>
+</div>
+
+            <a href="#" class="go-top">Go Top</a>
+    <div class="comments">
+        <div id="disqus_thread"></div>
+        <script type="text/javascript">
+            /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+            var disqus_shortname = "aclark-blog"; // required: replace example with your forum shortname
+
+            /* * * DON'T EDIT BELOW THIS LINE * * */
+            (function() {
+                var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </div>
+<footer class="footer">
+    <p>&copy; Alex Clark &ndash;
+        Built with <a href="https://github.com/PurePelicanTheme/pure-single">Pure Theme</a>
+        for <a href="http://blog.getpelican.com/">Pelican</a>
+    </p>
+</footer>        </div>
+    </div>
+    </div>
+    <script>
+        var $top = $('.go-top');
+
+        // Show or hide the sticky footer button
+        $(window).scroll(function() {
+            if ($(this).scrollTop() > 200) {
+                $top.fadeIn(200);
+            } else {
+                $top.fadeOut(200);
+            }
+        });
+
+        // Animate the scroll to top
+        $top.click(function(event) {
+            event.preventDefault();
+            $('html, body').animate({scrollTop: 0}, 300);
+        })
+
+        // Makes sure that the href="#" attached to the <a> elements
+        // don't scroll you back up the page.
+        $('body').on('click', 'a[href="#"]', function(event) {
+            event.preventDefault();
+        });
+    </script>
+    <script type="text/javascript">
+        var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+        document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+        try {
+            var pageTracker = _gat._getTracker("UA-34988446-1");
+            pageTracker._trackPageview();
+            } catch(err) {}
+    </script>
+
+
+    <script>
+    $(document).ready(function() {
+         $('#tipue_search_input').tipuesearch({
+              'show': 6,
+              'mode': 'json',
+              'contentLocation': 'tipuesearch_content.json'
+         });
+    });
+    </script>
+
+</body>
+</html>

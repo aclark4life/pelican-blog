@@ -1,0 +1,739 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Alex Clark - Python Web Developer &amp; Musician</title><link href="http://blog.aclark.net/" rel="alternate"></link><link href="http://blog.aclark.net/feeds/django.atom.xml" rel="self"></link><id>http://blog.aclark.net/</id><updated>2014-07-05T11:15:00-04:00</updated><entry><title>Pillow 2-5-0 is out!</title><link href="http://blog.aclark.net/2014/07/05/pillow-2-5-0-is-out/" rel="alternate"></link><updated>2014-07-05T11:15:00-04:00</updated><author><name>Alex Clark</name></author><id>tag:blog.aclark.net,2014-07-05:2014/07/05/pillow-2-5-0-is-out/</id><summary type="html">&lt;p&gt;&lt;strong&gt;Pillow is the &amp;quot;friendly&amp;quot; PIL fork by Alex Clark and Contributors. PIL is the Python Imaging Library by Fredrik Lundh and Contributors&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Since Pillow 2.0 the Pillow Team has adopted a quarterly release cycle; as such, Pillow 2.5.0 is out! Here's what's new in this release:&lt;/p&gt;
+&lt;div class="section" id="id1"&gt;
+&lt;h2&gt;2.5.0 (2014-07-01)&lt;/h2&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;Imagedraw rewrite
+[terseus, wiredfool]&lt;/li&gt;
+&lt;li&gt;Add support for multithreaded test execution
+[wiredfool]&lt;/li&gt;
+&lt;li&gt;Prevent shell injection #748
+[mbrown1413, wiredfool]&lt;/li&gt;
+&lt;li&gt;Support for Resolution in BMP files #734
+[gcq]&lt;/li&gt;
+&lt;li&gt;Fix error in setup.py for Python 3
+[matthew-brett]&lt;/li&gt;
+&lt;li&gt;Pyroma fix and add Python 3.4 to setup metadata #742
+[wirefool]&lt;/li&gt;
+&lt;li&gt;Top level flake8 fixes #741
+[aclark]&lt;/li&gt;
+&lt;li&gt;Remove obsolete Animated Raster Graphics (ARG) support
+[hugovk]&lt;/li&gt;
+&lt;li&gt;Fix test_imagedraw failures #727
+[cgohlke]&lt;/li&gt;
+&lt;li&gt;Fix AttributeError: class Image has no attribute 'DEBUG' #726
+[cgohlke]&lt;/li&gt;
+&lt;li&gt;Fix msvc warning: 'inline' : macro redefinition #725
+[cgohlke]&lt;/li&gt;
+&lt;li&gt;Cleanup #654
+[dvska, hugovk, wiredfool]&lt;/li&gt;
+&lt;li&gt;16-bit monochrome support for JPEG2000
+[videan42]&lt;/li&gt;
+&lt;li&gt;Fixed ImagePalette.save
+[brightpisces]&lt;/li&gt;
+&lt;li&gt;Support JPEG qtables
+[csinchok]&lt;/li&gt;
+&lt;li&gt;Add binary morphology addon
+[dov, wiredfool]&lt;/li&gt;
+&lt;li&gt;Decompression bomb protection
+[hugovk]&lt;/li&gt;
+&lt;li&gt;Put images in a single directory
+[hugovk]&lt;/li&gt;
+&lt;li&gt;Support OpenJpeg 2.1
+[al45tair]&lt;/li&gt;
+&lt;li&gt;Remove unistd.h #include for all platforms
+[wiredfool]&lt;/li&gt;
+&lt;li&gt;Use unittest for tests
+[hugovk]&lt;/li&gt;
+&lt;li&gt;ImageCms fixes
+[hugovk]&lt;/li&gt;
+&lt;li&gt;Added more ImageDraw tests
+[hugovk]&lt;/li&gt;
+&lt;li&gt;Added tests for Spider files
+[hugovk]&lt;/li&gt;
+&lt;li&gt;Use libtiff to write any compressed tiff files
+[wiredfool]&lt;/li&gt;
+&lt;li&gt;Support for pickling Image objects
+[hugovk]&lt;/li&gt;
+&lt;li&gt;Fixed resolution handling for EPS thumbnails
+[eliempje]&lt;/li&gt;
+&lt;li&gt;Fixed rendering of some binary EPS files (Issue #302)
+[eliempje]&lt;/li&gt;
+&lt;li&gt;Rename variables not to use built-in function names
+[hugovk]&lt;/li&gt;
+&lt;li&gt;Ignore junk JPEG markers
+[hugovk]&lt;/li&gt;
+&lt;li&gt;Change default interpolation for Image.thumbnail to Image.ANTIALIAS
+[hugovk]&lt;/li&gt;
+&lt;li&gt;Add tests and fixes for saving PDFs
+[hugovk]&lt;/li&gt;
+&lt;li&gt;Remove transparency resource after P-&amp;gt;RGBA conversion
+[hugovk]&lt;/li&gt;
+&lt;li&gt;Clean up preprocessor cruft for Windows
+[CounterPillow]&lt;/li&gt;
+&lt;li&gt;Adjust Homebrew freetype detection logic
+[jacknagel]&lt;/li&gt;
+&lt;li&gt;Added Image.close, context manager support.
+[wiredfool]&lt;/li&gt;
+&lt;li&gt;Added support for 16 bit PGM files.
+[wiredfool]&lt;/li&gt;
+&lt;li&gt;Updated OleFileIO to version 0.30 from upstream
+[hugovk]&lt;/li&gt;
+&lt;li&gt;Added support for additional TIFF floating point format
+[Hijackal]&lt;/li&gt;
+&lt;li&gt;Have the tempfile use a suffix with a dot
+[wiredfool]&lt;/li&gt;
+&lt;li&gt;Fix variable name used for transparency manipulations
+[nijel]&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="section" id="acknowledgements"&gt;
+&lt;h2&gt;Acknowledgements&lt;/h2&gt;
+&lt;p&gt;With every release, there are notable contributions I must acknowledge:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;Thanks to Stephen Johnson for contributing &lt;a class="reference external" href="http://pillow.readthedocs.org"&gt;http://pillow.readthedocs.org&lt;/a&gt;, we continue to rely on &amp;amp; extend this resource.&lt;/li&gt;
+&lt;li&gt;Thanks to Christopher Gohlke for producing Windows Egg, Exe, and Wheel distributions.&lt;/li&gt;
+&lt;li&gt;Thanks to Matthew Brett for producing OS X Wheels (for the first time ever!)&lt;/li&gt;
+&lt;li&gt;Thanks to Eric Soroos for his contributions and serving as &amp;quot;Pillow Man #2&amp;quot; (2nd in command).&lt;/li&gt;
+&lt;li&gt;Welcome to Hugo VK who has joined the Pillow Team &amp;amp; contributed significantly to this release.&lt;/li&gt;
+&lt;li&gt;Thanks to all the remaining unnamed contributors! We appreciate every commit.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Enjoy Pillow 2.5.0 &amp;amp; please report issues here: &lt;a class="reference external" href="https://github.com/python-imaging/Pillow/issues"&gt;https://github.com/python-imaging/Pillow/issues&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+</summary><category term="Django"></category><category term="Mozilla"></category><category term="Plone"></category><category term="Python"></category></entry><entry><title>Matplotlib Plotting Cookbook Review</title><link href="http://blog.aclark.net/2014/05/19/matplotlib-plotting-cookbook-review/" rel="alternate"></link><updated>2014-05-19T14:00:00-04:00</updated><author><name>Alex Clark</name></author><id>tag:blog.aclark.net,2014-05-19:2014/05/19/matplotlib-plotting-cookbook-review/</id><summary type="html">&lt;p&gt;&lt;em&gt;I was given a copy of&lt;/em&gt; &lt;a class="reference external" href="http://www.packtpub.com/matplotlib-plotting-cookbook/book"&gt;Matplotlib Plotting Cookbook by Alexandre Devert&lt;/a&gt; &lt;em&gt;and asked to review it. Thanks PACKT!&lt;/em&gt; &lt;em&gt;Here is my review.&lt;/em&gt;&lt;/p&gt;
+&lt;div class="section" id="preface"&gt;
+&lt;h2&gt;Preface&lt;/h2&gt;
+&lt;p&gt;But first, I'll mention I've worked on two projects recently that involved rendering matplotlib graphs directly to the browser i.e. via content-type: image/png. This is fun! It's particularly enjoyable when you are trying to avoid performing the task &amp;quot;the right way&amp;quot;, which is arguably outputting JSON to some JavaScript graphing library e.g. &lt;a class="reference external" href="http://www.highcharts.com/"&gt;Highcharts&lt;/a&gt;. The dependencies are heavy i.e. pip install numpy, etc. but not &lt;em&gt;that&lt;/em&gt; heavy and once they are installed, &lt;strong&gt;your web application can output graphs rivaling those produced by JavaScript, all written in Python&lt;/strong&gt; &lt;a class="footnote-reference" href="#id2" id="id1"&gt;[1]&lt;/a&gt;. Highly recommended!&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="chapter-1"&gt;
+&lt;h2&gt;Chapter 1&lt;/h2&gt;
+&lt;p&gt;I think the code examples in Chapter 1 alone are worth the price of admission. Here is a video of me walking through the Chapter 1 code examples:&lt;/p&gt;
+&lt;iframe width="420" height="315" src="//www.youtube.com/embed/YOFHkszsdR8" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;&lt;p&gt;You'll notice the typical fare here: bar, line and pie graphs along with some more complex boxplot, histogram, horizontal bar, scatter and triangle graphs, all in various colors. For reference, here are the excerpted commands called to produce these graphs:&lt;/p&gt;
+&lt;script src="https://gist.github.com/aclark4life/0f9e61f2d62a67c31346.js"&gt;&lt;/script&gt;&lt;/div&gt;
+&lt;div class="section" id="chapter-2"&gt;
+&lt;h2&gt;Chapter 2&lt;/h2&gt;
+&lt;p&gt;Chapter 2 is all about customization e.g. via matplotlibrc. Here is a video of me walking through the Chapter 2 code examples:&lt;/p&gt;
+&lt;iframe width="420" height="315" src="//www.youtube.com/embed/BzGv1soDaRU" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;&lt;p&gt;For reference, here is the sample matplotlibrc included with the matplotlib distribution (lib/python2.7/site-packages/matplotlib/mpl-data/matplotlibrc):&lt;/p&gt;
+&lt;script src="https://gist.github.com/aclark4life/71c1edf815bd61aae8a9.js"&gt;&lt;/script&gt;&lt;p&gt;As you can see, there are a lot of knobs you can turn here.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="chapter-3"&gt;
+&lt;h2&gt;Chapter 3&lt;/h2&gt;
+&lt;p&gt;Chapter 3 is all about &amp;quot;annotations&amp;quot;. Here is a video of me walking through the Chapter 3 code examples:&lt;/p&gt;
+&lt;iframe width="420" height="315" src="//www.youtube.com/embed/994vecwODaI" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;&lt;p&gt;&amp;quot;Annotations&amp;quot; includes related topics such as adding shapes and controlling tick spacing and labeling.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="chapter-4"&gt;
+&lt;h2&gt;Chapter 4&lt;/h2&gt;
+&lt;p&gt;Chapter 4 is all about &amp;quot;working with figures&amp;quot;. Here is a video of me walking through the Chapter 4 code examples:&lt;/p&gt;
+&lt;iframe width="420" height="315" src="//www.youtube.com/embed/Q6PFBSxkOc4" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;&lt;p&gt;&amp;quot;Working with figures&amp;quot; includes obvious topics like &lt;tt class="docutils literal"&gt;subplot&lt;/tt&gt; and less obvious topics like setting the aspect ratio.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="chapter-5"&gt;
+&lt;h2&gt;Chapter 5&lt;/h2&gt;
+&lt;p&gt;Chapter 5 is all about &amp;quot;working with file output&amp;quot;. For reference, here are some of the images produced by the examples in this chapter (I wrote &lt;tt class="docutils literal"&gt;jpg&lt;/tt&gt; files instead of &lt;tt class="docutils literal"&gt;png&lt;/tt&gt; files due to a problem with my libpng: &lt;a class="reference external" href="https://www.google.com/#q=RuntimeError%3A+Could+not+create+write+struct&amp;amp;safe=off"&gt;RuntimeError: Could not create write struct&lt;/a&gt;.)&lt;/p&gt;
+&lt;img alt="alternate text" src="http://blog.aclark.net/images/sinc1.jpg" /&gt;
+&lt;img alt="alternate text" src="http://blog.aclark.net/images/sinc3.jpg" /&gt;
+&lt;p&gt;Also covered in this chapter is &lt;a class="reference external" href="http://blog.aclark.net/images/sinc.pdf"&gt;pdf output&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="chapter-6"&gt;
+&lt;h2&gt;Chapter 6&lt;/h2&gt;
+&lt;p&gt;Chapter 6 is all about &amp;quot;working with maps&amp;quot;.&lt;/p&gt;
+&lt;iframe width="420" height="315" src="//www.youtube.com/embed/gKnR7IfNSsI" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;&lt;p&gt;This chapter also introduces the &lt;a class="reference external" href="http://matplotlib.org/1.3.1/users/image_tutorial.html"&gt;imshow command&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="chapter-7"&gt;
+&lt;h2&gt;Chapter 7&lt;/h2&gt;
+&lt;p&gt;Chapter 7 is all about &amp;quot;working with 3D figures&amp;quot;.&lt;/p&gt;
+&lt;iframe width="420" height="315" src="//www.youtube.com/embed/7YFGHG62L5U" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;&lt;p&gt;For reference, here are the excerpted commands called to produce these graphs:&lt;/p&gt;
+&lt;script src="https://gist.github.com/aclark4life/6f7f3fd18ec4c7795028.js"&gt;&lt;/script&gt;&lt;/div&gt;
+&lt;div class="section" id="chapter-8"&gt;
+&lt;h2&gt;Chapter 8&lt;/h2&gt;
+&lt;p&gt;Chapter 8 is all about working with the &amp;quot;user interface&amp;quot; interactively.&lt;/p&gt;
+&lt;iframe width="420" height="315" src="//www.youtube.com/embed/k6984I_YGo4" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;&lt;p&gt;Additionally, all of the popular graphical windowing environments are discussed: Tkinter, wxWidgets, GTK, Pyglet (three out of four of which I was able to install; GTK 2 vs GTK 3 &lt;a class="reference external" href="https://www.google.com/#q=from+gi.repository+import+Gtk&amp;amp;safe=off"&gt;confused me and I ran out of time debugging it&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="conclusion"&gt;
+&lt;h2&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;Overall I enjoyed this book and would &lt;a class="reference external" href="http://www.packtpub.com/matplotlib-plotting-cookbook/book"&gt;recommend buying it&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;(&lt;em&gt;You should probably&lt;/em&gt; &lt;a class="reference external" href="http://aclark.net"&gt;hire me&lt;/a&gt; &lt;em&gt;or&lt;/em&gt; &lt;a class="reference external" href="http://twitter.com/aclark4life"&gt;follow me on Twitter&lt;/a&gt; &lt;em&gt;or both&lt;/em&gt;. &lt;em&gt;And speaking of PACKT, you should definitely&lt;/em&gt; &lt;a class="reference external" href="http://blog.aclark.net/2011/05/10/top-10-reasons-plone-33-site-admin-book-is-still-for-you/"&gt;buy my book too&lt;/a&gt;.)&lt;/p&gt;
+&lt;table class="docutils footnote" frame="void" id="id2" rules="none"&gt;
+&lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
+&lt;tbody valign="top"&gt;
+&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#id1"&gt;[1]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Yes, I'm familiar with &lt;a class="reference external" href="http://bokeh.pydata.org/"&gt;Bokeh&lt;/a&gt;.&lt;/td&gt;&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+</summary><category term="Django"></category><category term="Mozilla"></category><category term="Plone"></category><category term="Python"></category></entry><entry><title>We Pioneer</title><link href="http://blog.aclark.net/2014/05/03/we-pioneer/" rel="alternate"></link><updated>2014-05-03T10:15:00-04:00</updated><author><name>Alex Clark</name></author><id>tag:blog.aclark.net,2014-05-03:2014/05/03/we-pioneer/</id><summary type="html">&lt;img alt="alternate text" src="/images/we-pioneer.jpg" /&gt;
+&lt;p&gt;One of the subjects I find myself thinking about a lot is: Plone (surprise!) In Plone-land, we deliver the &lt;strong&gt;best Python-based CMS money can't buy on top of an aging Zope 2 &amp;quot;application server&amp;quot;&lt;/strong&gt; mixed with newer Zope, Python, and other technologies. In short, this is a challenge.&lt;/p&gt;
+&lt;div class="section" id="diazo"&gt;
+&lt;h2&gt;Diazo&lt;/h2&gt;
+&lt;p&gt;Further to the point, I think about &amp;quot;new tech&amp;quot; vs &amp;quot;old tech&amp;quot; a lot and how to happily marry the two. Here is one concrete example of my thought process. Diazo is the &amp;quot;new theming engine&amp;quot; in Plone which allows folks to perform complex XSLT transformations via a simple XML rule set. It sounds great, and it often is. But something won't let my mind reach the &amp;quot;Ahhhh this is great technology!&amp;quot; point. Instead, I often find myself thinking &amp;quot;This is great technology, BUT…&amp;quot; which I don't want to think when I'm thinking about Plone.&lt;/p&gt;
+&lt;div class="section" id="pioneering"&gt;
+&lt;h3&gt;Pioneering&lt;/h3&gt;
+&lt;p&gt;However I'm beginning to settle on an &amp;quot;acceptable thought process&amp;quot;, to describe how Diazo fits on top of 10 years of legacy Plone technology: it's &lt;strong&gt;pioneering&lt;/strong&gt;. As I have observed over the years, Plone developers have taken great pride in being the &amp;quot;first to market&amp;quot; with cutting edge and useful CMS features other vendors would love to include in their product.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;But are other CMS vendors watching?&lt;/em&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="issues"&gt;
+&lt;h3&gt;Issues&lt;/h3&gt;
+&lt;p&gt;Of issue with Diazo is:&lt;/p&gt;
+&lt;ol class="arabic simple"&gt;
+&lt;li&gt;&lt;strong&gt;Most web developers are familiar with the concept of editing templates to affect output&lt;/strong&gt; (AKA &amp;quot;customization&amp;quot;). When Zope 2 was young, the only place to easily customize templates was within the web application itself, with changes persisted to the ZODB. Then &amp;quot;ZODB dread&amp;quot; &lt;a class="footnote-reference" href="#id3" id="id1"&gt;[1]&lt;/a&gt; happened and folks began to customize templates on the file system with software version control in place. During this time, customizations happened on the file system via the CMF framework built on top of Zope 2. Then Zope 3 happened and folks began to customize templates on the file system with more modern web technology (AKA &amp;quot;pseudo-MVC-like environments&amp;quot;). Then Deliverance &lt;a class="footnote-reference" href="#id4" id="id2"&gt;[2]&lt;/a&gt; happened and folks began to leave the complex stack alone in favor of using XSLT transforms to produce a hybrid output containing both clean, isolated HTML/CSS/JavaScript and Plone content (AKA &amp;quot;lipstick on a pig&amp;quot;).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Plone now has two distinct templating environments&lt;/strong&gt;: the application environment which still has plenty of templates to customize &amp;amp; the theming environment which also has templates to customize. This is both good and bad: it's good when everyone can easily figure out where to customize what they want to customize, and bad when this process breaks down.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Diazo allows for some complex rules to be written&lt;/strong&gt; along with custom XSLT. That power allows folks to produce some truly unwieldy and wholly unmaintainable messes, for lack of a better description. I'm sad to say I've seen many of these in the wild, in just the few short years Diazo has existed.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;div class="section" id="conclusion"&gt;
+&lt;h3&gt;Conclusion&lt;/h3&gt;
+&lt;p&gt;After all this thinking, I've reached the following conclusion(s):&lt;/p&gt;
+&lt;ol class="arabic simple"&gt;
+&lt;li&gt;&lt;strong&gt;The concept of editing templates most web developers are familiar with is still valid in Plone.&lt;/strong&gt; But we must work harder to demonstrate where and how these customizations can occur. With great tools comes great power, but not without significant risk of injury (the so-called &amp;quot;power tool&amp;quot; analogy.)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;We should strive for the appearance of one templating environment.&lt;/strong&gt; The easiest way to do this is to have only one templating environment. Many electronic flames have been burned over the discussion of making Diazo that single environment. In the meantime let's disassemble, polish &amp;amp; reassemble all of our templating environments and put effort in to making the difference between them seemless. (&lt;a class="reference external" href="http://pypi.python.org/pypi/zope2_bootstrap"&gt;zope2_bootstrap&lt;/a&gt; anyone?)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;We should actively discourage complex rules and custom XSLT&lt;/strong&gt;. Of course, these knobs are nice to turn when you need them. But I don't want to read through complex rules and custom XSLT anymore than I want to see inline JavaScript or CSS. (AKA &amp;quot;This is why we can't have nice things.&amp;quot;)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;em&gt;And other CMS vendors should be watching, because Plone 5 is about to drop!&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;(&lt;em&gt;You should probably&lt;/em&gt; &lt;a class="reference external" href="http://aclark.net"&gt;hire me&lt;/a&gt; &lt;em&gt;or&lt;/em&gt; &lt;a class="reference external" href="http://twitter.com/aclark4life"&gt;follow me on Twitter&lt;/a&gt; &lt;em&gt;or both&lt;/em&gt;.)&lt;/p&gt;
+&lt;table class="docutils footnote" frame="void" id="id3" rules="none"&gt;
+&lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
+&lt;tbody valign="top"&gt;
+&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#id1"&gt;[1]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;The fear all your hard work and customizations are trapped inside an unwieldy ZODB, with no easy way to persist or track them elsewhere.&lt;/td&gt;&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;table class="docutils footnote" frame="void" id="id4" rules="none"&gt;
+&lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
+&lt;tbody valign="top"&gt;
+&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#id2"&gt;[2]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Early, pioneering implementation which inspired Diazo.&lt;/td&gt;&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</summary><category term="Django"></category><category term="Plone"></category><category term="Python"></category></entry><entry><title>Bro, do you even Pillow?</title><link href="http://blog.aclark.net/2014/04/07/bro-do-you-even-pillow/" rel="alternate"></link><updated>2014-04-07T20:00:00-04:00</updated><author><name>Alex Clark</name></author><id>tag:blog.aclark.net,2014-04-07:2014/04/07/bro-do-you-even-pillow/</id><summary type="html">&lt;img alt="alternate text" src="/images/bro-do-you-even-pillow.jpg" /&gt;
+&lt;p&gt;&lt;a class="reference external" href="https://github.com/python-imaging/Pillow"&gt;Pillow&lt;/a&gt; is a fork of the Python Imaging Library. Here is an update on the status of the project.&lt;/p&gt;
+&lt;div class="section" id="released"&gt;
+&lt;h2&gt;2.4.0 released&lt;/h2&gt;
+&lt;p&gt;Pillow 2.4.0 is out! Here are the highlights:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;Indexed Transparency handled for conversions between L, RGB, and P modes. Fixes #510 [wiredfool]&lt;/li&gt;
+&lt;li&gt;Conversions enabled from RGBA-&amp;gt;P, Fixes #544 [wiredfool]&lt;/li&gt;
+&lt;li&gt;Improved icns support [al45tair]&lt;/li&gt;
+&lt;li&gt;Fix libtiff leaking open files, fixes #580 [wiredfool]&lt;/li&gt;
+&lt;li&gt;Fixes for Jpeg encoding in Python 3, fixes #577 [wiredfool]&lt;/li&gt;
+&lt;li&gt;Added support for JPEG 2000 [al45tair]&lt;/li&gt;
+&lt;li&gt;Add more detailed error messages to Image.py [larsmans]&lt;/li&gt;
+&lt;li&gt;Avoid conflicting _expand functions in PIL &amp;amp; MINGW, fixes #538 [aclark]&lt;/li&gt;
+&lt;li&gt;Merge from Philippe Lagadec’s OleFileIO_PL fork [vadmium]&lt;/li&gt;
+&lt;li&gt;Fix ImageColor.getcolor [homm]&lt;/li&gt;
+&lt;li&gt;Make ICO files work with the ImageFile.Parser interface, fixes #522 [wiredfool]&lt;/li&gt;
+&lt;li&gt;Handle 32bit compiled python on 64bit architecture [choppsv1]&lt;/li&gt;
+&lt;li&gt;Fix support for characters &amp;gt;128 using .pcf or .pil fonts in Py3k. Fixes #505 [wiredfool]&lt;/li&gt;
+&lt;li&gt;Skip CFFI test earlier if it's not installed [wiredfool]&lt;/li&gt;
+&lt;li&gt;Fixed opening and saving odd sized .pcx files, fixes #523 [wiredfool]&lt;/li&gt;
+&lt;li&gt;Fixed palette handling when converting from mode P-&amp;gt;RGB-&amp;gt;P [d_schmidt]&lt;/li&gt;
+&lt;li&gt;Fixed saving mode P image as a PNG with transparency = palette color 0 [d-schmidt]&lt;/li&gt;
+&lt;li&gt;Improve heuristic used when saving progressive and optimized JPEGs with high quality values [e98cuenc]&lt;/li&gt;
+&lt;li&gt;Fixed DOS with invalid palette size or invalid image size in BMP file [wiredfool]&lt;/li&gt;
+&lt;li&gt;Added support for BMP version 4 and 5 [eddwardo, wiredfool]&lt;/li&gt;
+&lt;li&gt;Fix segfault in getfont when passed a memory resident font [wiredfool]&lt;/li&gt;
+&lt;li&gt;Fix crash on Saving a PNG when icc-profile is None [brutasse]&lt;/li&gt;
+&lt;li&gt;Cffi+Python implementation of the PixelAccess object [wiredfool]&lt;/li&gt;
+&lt;li&gt;PixelAccess returns unsigned ints for I16 mode [wiredfool]&lt;/li&gt;
+&lt;li&gt;Minor patch on booleans + Travis [sciunto]&lt;/li&gt;
+&lt;li&gt;Look in multiarch paths in GNU platforms [pinotree]&lt;/li&gt;
+&lt;li&gt;Add arch support for pcc64, s390, s390x, armv7l, aarch64 [manisandro]&lt;/li&gt;
+&lt;li&gt;Add arch support for ppc [wiredfool]&lt;/li&gt;
+&lt;li&gt;Correctly quote file names for WindowsViewer command [cgohlke]&lt;/li&gt;
+&lt;li&gt;Prefer homebrew freetype over X11 freetype (but still allow both) [dmckeone]&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="section" id="os-x-10-9-2-issues"&gt;
+&lt;h2&gt;OS X 10.9.2 issues&lt;/h2&gt;
+&lt;p&gt;This happened:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://github.com/python-imaging/Pillow/issues/527"&gt;https://github.com/python-imaging/Pillow/issues/527&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="section" id="security-issues"&gt;
+&lt;h2&gt;Security issues&lt;/h2&gt;
+&lt;p&gt;This happened:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://github.com/python-imaging/Pillow/pull/548"&gt;https://github.com/python-imaging/Pillow/pull/548&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="section" id="logo"&gt;
+&lt;h2&gt;Logo&lt;/h2&gt;
+&lt;p&gt;Pillow has a logo thanks to Alastair Houghton:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://github.com/python-imaging/Pillow/issues/575"&gt;https://github.com/python-imaging/Pillow/issues/575&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Keep using and supporting Pillow!&lt;/p&gt;
+&lt;/div&gt;
+</summary><category term="Django"></category><category term="Plone"></category><category term="Python"></category></entry><entry><title>Virtualenv Support Update</title><link href="http://blog.aclark.net/2014/03/19/virtualenv-support-update/" rel="alternate"></link><updated>2014-03-19T17:30:00-04:00</updated><author><name>Alex Clark</name></author><id>tag:blog.aclark.net,2014-03-19:2014/03/19/virtualenv-support-update/</id><summary type="html">&lt;img alt="alternate text" src="/images/virtualenv-support-update.jpg" /&gt;
+&lt;p&gt;This is you: I &lt;strong&gt;use virtualenv all the time and I love it!&lt;/strong&gt; But I hate having to manually upgrade setuptools within my virtualenvs because the &lt;a class="reference external" href="https://pypi.python.org/pypi/setuptools#changes"&gt;PyPA has been so prolific with setuptools releases lately&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Actually this is me, but it may be you too. If this is you, you may be familiar with the following process. If not, you may want to be.&lt;/p&gt;
+&lt;div class="section" id="virtualenv-and-setuptools"&gt;
+&lt;h2&gt;Virtualenv and setuptools&lt;/h2&gt;
+&lt;p&gt;When a virtualenv is created, virtualenv installs setuptools from a local distribution located in &lt;tt class="docutils literal"&gt;&lt;span class="pre"&gt;site-packages/virtualenv_support&lt;/span&gt;&lt;/tt&gt;. If that setuptools is out of date, so is the setuptools in your new virtualenv. To avoid having to manually upgrade setuptools within newly created virtualenvs, you can do this:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+$ cd /usr/local/lib/python2.7/site-packages/virtualenv_support
+$ curl -O https://pypi.python.org/packages/source/s/setuptools/setuptools-3.3.zip
+&lt;/pre&gt;
+&lt;p&gt;Et voila!&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+$ virtualenv .
+New python executable in ./bin/python2.7
+Also creating executable in ./bin/python
+Installing setuptools, pip...done.
+&lt;/pre&gt;
+&lt;pre class="literal-block"&gt;
+$ bin/pip show setuptools
+---
+Name: setuptools
+Version: 3.3
+Location: /private/var/folders/1k/fmmlqcfn5jsbcqrqsw3q_slm0000gn/T/tmpE4vB1l/lib/python2.7/site-packages
+Requires:
+&lt;/pre&gt;
+&lt;p&gt;If you are a Buildout user, this should save you &lt;strong&gt;endless frustration with Buildout attempting to upgrade Setuptools…&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;attempting to upgrade Setuptools…&lt;/p&gt;
+&lt;p&gt;attempting to upgrade Setuptools…&lt;/p&gt;
+&lt;p&gt;attempting to upgrade Setuptools…&lt;/p&gt;
+&lt;/div&gt;
+</summary><category term="Django"></category><category term="Plone"></category><category term="Python"></category></entry><entry><title>Pillow 2-3-0 is out!</title><link href="http://blog.aclark.net/2014/01/01/pillow-2-3-0-is-out/" rel="alternate"></link><updated>2014-01-01T18:30:00-05:00</updated><author><name>Alex Clark</name></author><id>tag:blog.aclark.net,2014-01-01:2014/01/01/pillow-2-3-0-is-out/</id><summary type="html">&lt;p&gt;&lt;strong&gt;Pillow is the &amp;quot;friendly&amp;quot; PIL fork by Alex Clark and Contributors. PIL is the Python Imaging Library by Fredrik Lundh and Contributors&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Since Pillow 2.0, the Pillow Team has adopted a quarterly release cycle; as such, Pillow 2.3.0 has just been released. Here's what's new in this release:&lt;/p&gt;
+&lt;img alt="alternate text" src="/images/one-does-not-simply-make-a-release.jpg" /&gt;
+&lt;div class="section" id="id1"&gt;
+&lt;h2&gt;2.3.0 (2014-01-01)&lt;/h2&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;Stop leaking filename parameter passed to getfont
+[jpharvey]&lt;/li&gt;
+&lt;li&gt;Report availability of LIBTIFF during setup and selftest
+[cgohlke]&lt;/li&gt;
+&lt;li&gt;Fix msvc build error C1189: &amp;quot;No Target Architecture&amp;quot;
+[cgohlke]&lt;/li&gt;
+&lt;li&gt;Fix memory leak in font_getsize
+[wiredfool]&lt;/li&gt;
+&lt;li&gt;Correctly prioritize include and library paths
+[ohanar]&lt;/li&gt;
+&lt;li&gt;Image.point fixes for numpy.array and docs
+[wiredfool]&lt;/li&gt;
+&lt;li&gt;Save the transparency header by default for PNGs
+[wiredfool]&lt;/li&gt;
+&lt;li&gt;Support for PNG tRNS header when converting from RGB-&amp;gt;RGBA
+[wiredfool]&lt;/li&gt;
+&lt;li&gt;PyQT5 Support
+[wiredfool]&lt;/li&gt;
+&lt;li&gt;Updates for saving color tiffs w/compression using libtiff
+[wiredfool]&lt;/li&gt;
+&lt;li&gt;2gigapix image fixes and redux
+[wiredfool]&lt;/li&gt;
+&lt;li&gt;Save arbitrary tags in Tiff image files
+[wiredfool]&lt;/li&gt;
+&lt;li&gt;Quote filenames and title before using on command line
+[tmccombs]&lt;/li&gt;
+&lt;li&gt;Fixed Viewer.show to return properly
+[tmccombs]&lt;/li&gt;
+&lt;li&gt;Documentation fixes
+[wiredfool]&lt;/li&gt;
+&lt;li&gt;Fixed memory leak saving images as webp when webpmux is available
+[cezarsa]&lt;/li&gt;
+&lt;li&gt;Fix compiling with FreeType 2.5.1
+[stromnov]&lt;/li&gt;
+&lt;li&gt;Adds directories for NetBSD.
+[deepy]&lt;/li&gt;
+&lt;li&gt;Support RGBA TIFF with missing ExtraSamples tag
+[cgohlke]&lt;/li&gt;
+&lt;li&gt;Lossless WEBP Support
+[wiredfool]&lt;/li&gt;
+&lt;li&gt;Take compression as an option in the save call for tiffs
+[wiredfool]&lt;/li&gt;
+&lt;li&gt;Add support for saving lossless WebP. Just pass 'lossless=True' to save()
+[liftoff]&lt;/li&gt;
+&lt;li&gt;LCMS support upgraded from version 1 to version 2, fixes #343
+[wiredfool]&lt;/li&gt;
+&lt;li&gt;Added more raw decoder 16 bit pixel formats
+[svanheulen]&lt;/li&gt;
+&lt;li&gt;Document remaining Image* modules listed in PIL handbook
+[irksep]&lt;/li&gt;
+&lt;li&gt;Document ImageEnhance, ImageFile, ImageFilter, ImageFont, ImageGrab, ImageMath, and ImageOps
+[irksep]&lt;/li&gt;
+&lt;li&gt;Port and update docs for Image, ImageChops, ImageColor, and ImageDraw
+[irksep]&lt;/li&gt;
+&lt;li&gt;Move or copy content from README.rst to docs/
+[irksep]&lt;/li&gt;
+&lt;li&gt;Respect CFLAGS/LDFLAGS when searching for headers/libs
+[iElectric]&lt;/li&gt;
+&lt;li&gt;Port PIL Handbook tutorial and appendices
+[irksep]&lt;/li&gt;
+&lt;li&gt;Alpha Premultiplication support for transform and resize
+[wiredfool]&lt;/li&gt;
+&lt;li&gt;Fixes to make Pypy 2.1.0 work on Ubuntu 12.04/64
+[wiredfool]&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Thanks to everyone who contributed fixes to 2.3.0, especially Eric Soroos AKA &amp;quot;wiredfool&amp;quot; who is officially now &amp;quot;Pillow Man #2&amp;quot; &lt;a class="footnote-reference" href="#id3" id="id2"&gt;[1]&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="handbook"&gt;
+&lt;h2&gt;Handbook&lt;/h2&gt;
+&lt;p&gt;Additionally, we've forked the PIL handbook and have included it with our documentation here: &lt;a class="reference external" href="http://pillow.readthedocs.org"&gt;http://pillow.readthedocs.org&lt;/a&gt;. Special thanks to Stephen Johnson AKA &amp;quot;irksep&amp;quot; for working on this.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="distributions"&gt;
+&lt;h2&gt;Distributions&lt;/h2&gt;
+&lt;p&gt;Lastly, I'm very grateful to Christopher Gohlke for producing Windows Egg, Exe, and Wheel distributions to accompany each source release. I suspect Christopher will produce his 2.3.0 distributions any second now at which point I will upload them to PyPI via &lt;a class="reference external" href="https://pypi.python.org/pypi/twine"&gt;twine&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Enjoy Pillow 2.3.0! And please report any issues you find here: &lt;a class="reference external" href="https://github.com/python-imaging/Pillow/issues"&gt;https://github.com/python-imaging/Pillow/issues&lt;/a&gt;&lt;/p&gt;
+&lt;table class="docutils footnote" frame="void" id="id3" rules="none"&gt;
+&lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
+&lt;tbody valign="top"&gt;
+&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#id2"&gt;[1]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;In case I'm hit by a bus, Eric Soroos has the keys.&lt;/td&gt;&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+</summary><category term="Django"></category><category term="Mozilla"></category><category term="Plone"></category><category term="Python"></category></entry><entry><title>New Year's Python Meme 2014</title><link href="http://blog.aclark.net/2013/12/30/new-years-python-meme-2014/" rel="alternate"></link><updated>2013-12-30T14:30:00-05:00</updated><author><name>Alex Clark</name></author><id>tag:blog.aclark.net,2013-12-30:2013/12/30/new-years-python-meme-2014/</id><summary type="html">&lt;p&gt;&lt;strong&gt;Tarek Ziadé's New Year's Python Meme&lt;/strong&gt;&lt;/p&gt;
+&lt;div class="section" id="whats-the-coolest-python-application-framework-or-library-you-discovered-this-year"&gt;
+&lt;h2&gt;What’s the coolest Python application, framework or library you discovered this year?&lt;/h2&gt;
+&lt;p&gt;This year we have a tie between two must-have packaging-related utilities:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://pypi.python.org/pypi/check-manifest"&gt;check-manifest&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://pypi.python.org/pypi/pyroma"&gt;pyroma&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Both of these utilities help you make better Python packages, and I regularly use them in my packages via a Makefile like this:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+test:
+    check-manifest
+    flake8 *.py
+    pyroma
+    python setup.py sdist
+    python setup.py test
+    viewdoc
+&lt;/pre&gt;
+&lt;p&gt;Good times! And better packages.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="what-new-programming-technique-did-you-learn-this-year"&gt;
+&lt;h2&gt;What new programming technique did you learn this year?&lt;/h2&gt;
+&lt;p&gt;I didn't program much in 2013 but when I did, I tried to write tests too. Check out the following projects to see how I did:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://github.com/plock/plock"&gt;Plock&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://github.com/pythonpackages/pythonpackages"&gt;PythonPackages&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="section" id="which-open-source-project-did-you-contribute-to-the-most-this-year-what-did-you-do"&gt;
+&lt;h2&gt;Which open source project did you contribute to the most this year? What did you do?&lt;/h2&gt;
+&lt;p&gt;&lt;a class="reference external" href="https://github.com/python-imaging/Pillow"&gt;Pillow&lt;/a&gt;. Fork author and project lead. Aside from a working PIL, the most exciting thing about Pillow for me is my &lt;a class="reference external" href="https://www.gittip.com/aclark4life/"&gt;Gittip funding&lt;/a&gt; and working with the &lt;a class="reference external" href="https://github.com/python-imaging?tab=members"&gt;Pillow Team&lt;/a&gt; which includes most notably Eric Soroos and Christopher Gohlke.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="which-python-blogs-websites-or-mailing-lists-did-you-read-the-most-this-year"&gt;
+&lt;h2&gt;Which Python blogs, websites, or mailing lists did you read the most this year?&lt;/h2&gt;
+&lt;p&gt;This year I cut back to reading &lt;em&gt;only&lt;/em&gt; the following feeds, consumed via Feedly:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://planet.plone.org"&gt;Planet Plone&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://planet.python.org"&gt;Planet Python&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://dir.gmane.org/gmane.comp.web.zope.plone.devel"&gt;gmane.comp.web.zope.plone.devel&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://dir.gmane.org/gmane.comp.web.zope.plone.user"&gt;gmane.comp.web.zope.plone.user&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="section" id="what-are-the-top-three-things-you-want-to-learn-next-year"&gt;
+&lt;h2&gt;What are the top three things you want to learn next year?&lt;/h2&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://github.com/aclark4life/javascript_goodparts"&gt;JavaScript&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://github.com/aclark4life/javascript_goodparts"&gt;JavaScript&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://github.com/aclark4life/javascript_goodparts"&gt;JavaScript&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="section" id="what-is-the-top-software-application-or-library-you-wish-someone-would-write-next-year"&gt;
+&lt;h2&gt;What is the top software, application or library you wish someone would write next year?&lt;/h2&gt;
+&lt;p&gt;I wish there was some &amp;quot;Python to JavaScript bridge software&amp;quot;. It's not the complexities of JavaScript that keep me from learning it, it's that I don't have any reason to obsess over it. Plone gave me that opportunity with Python, but not JavaScript (yet). Once that happens, I'm sure I'll be as proficient in JavaScript as I am currently in Python (which is enough to get by).&lt;/p&gt;
+&lt;p&gt;Want to participate? Copy/paste/answer the questions below then tweet your entry with the #2014pythonmeme hash tag:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+New Year's Python Meme
+======================
+
+What’s the coolest Python application, framework or library you discovered this year?
+----------------------------------------------------------------------------------------
+What new programming technique did you learn this year?
+----------------------------------------------------------------------------------------
+Which open source project did you contribute to the most this year? What did you do?
+----------------------------------------------------------------------------------------
+Which Python blogs, websites, or mailing lists did you read the most this year?
+----------------------------------------------------------------------------------------
+What are the top three things you want to learn next year?
+----------------------------------------------------------------------------------------
+What is the top software, application or library you wish someone would write next year?
+----------------------------------------------------------------------------------------
+&lt;/pre&gt;
+&lt;/div&gt;
+</summary><category term="Django"></category><category term="Mozilla"></category><category term="Plone"></category><category term="Python"></category></entry><entry><title>Pillow 2.2.1 Released</title><link href="http://blog.aclark.net/2013/10/03/pillow-221-released/" rel="alternate"></link><updated>2013-10-03T08:00:00-04:00</updated><author><name>Alex Clark</name></author><id>tag:blog.aclark.net,2013-10-03:2013/10/03/pillow-221-released/</id><summary type="html">&lt;p&gt;&lt;em&gt;Pillow is the &amp;quot;friendly&amp;quot; PIL fork. PIL is the Python Imaging Library.&lt;/em&gt;&lt;/p&gt;
+&lt;div class="note"&gt;
+&lt;p class="first admonition-title"&gt;Note&lt;/p&gt;
+&lt;p class="last"&gt;An earlier version of this entry was published yesterday with the wrong date. Apologies for any annoyance or confusion.&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;The Pillow 2.2.1 source distribution is &lt;a class="reference external" href="https://pypi.python.org/pypi/Pillow/2.2.1"&gt;now available on PyPI&lt;/a&gt;, featuring over 30 documented bug fixes and enhancements since 2.1.0 was released 3 months ago.&lt;/p&gt;
+&lt;div class="section" id="changelog"&gt;
+&lt;h2&gt;Changelog&lt;/h2&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;Fix &lt;a class="reference external" href="https://github.com/python-imaging/Pillow/issues/254"&gt;#254&lt;/a&gt;: Bug in image transformations resulting from uninitialized memory [nikmolnar]&lt;/li&gt;
+&lt;li&gt;Fix for encoding of b_whitespace, similar to closed issue &lt;a class="reference external" href="https://github.com/python-imaging/Pillow/issues/272"&gt;#272&lt;/a&gt; [mhogg]&lt;/li&gt;
+&lt;li&gt;Fix &lt;a class="reference external" href="https://github.com/python-imaging/Pillow/issues/273"&gt;#273&lt;/a&gt;: Add numpy array interface support for 16 and 32 bit integer modes [cgohlke]&lt;/li&gt;
+&lt;li&gt;Partial fix for &lt;a class="reference external" href="https://github.com/python-imaging/Pillow/issues/290"&gt;#290&lt;/a&gt;: Add preliminary support for TIFF tags. [wiredfool]&lt;/li&gt;
+&lt;li&gt;Fix &lt;a class="reference external" href="https://github.com/python-imaging/Pillow/issues/251"&gt;#251&lt;/a&gt; and &lt;a class="reference external" href="https://github.com/python-imaging/Pillow/issues/326"&gt;#326&lt;/a&gt;: circumvent classification of pngtest_bad.png as malware [cgohlke]&lt;/li&gt;
+&lt;li&gt;Add typedef uint64_t for MSVC. [cgohlke]&lt;/li&gt;
+&lt;li&gt;Fix &lt;a class="reference external" href="https://github.com/python-imaging/Pillow/issues/329"&gt;#329&lt;/a&gt;: setup.py: better support for C_INCLUDE_PATH, LD_RUN_PATH, etc. [nu774]&lt;/li&gt;
+&lt;li&gt;Fix &lt;a class="reference external" href="https://github.com/python-imaging/Pillow/issues/328"&gt;#328&lt;/a&gt;: _imagingcms.c: include windef.h to fix build issue on MSVC [nu774]&lt;/li&gt;
+&lt;li&gt;Automatically discover homebrew include/ and lib/ paths on OSX [donspaulding]&lt;/li&gt;
+&lt;li&gt;Fix bytes which should be bytearray [manisandro]&lt;/li&gt;
+&lt;li&gt;Add respective paths for C_INCLUDE_PATH, LD_RUN_PATH (rpath) to build if specified as environment variables. [seanupton]&lt;/li&gt;
+&lt;li&gt;Fix &lt;a class="reference external" href="https://github.com/python-imaging/Pillow/issues/312"&gt;#312&lt;/a&gt; + gif optimize improvement [d-schmidt]&lt;/li&gt;
+&lt;li&gt;Be more tolerant of tag read failures [ericbuehl]&lt;/li&gt;
+&lt;li&gt;Fix &lt;a class="reference external" href="https://github.com/python-imaging/Pillow/issues/318"&gt;#318&lt;/a&gt;: Catch truncated zTXt errors. [vytisb]&lt;/li&gt;
+&lt;li&gt;Fix IOError when saving progressive JPEGs. [e98cuenc]&lt;/li&gt;
+&lt;li&gt;Add RGBA support to ImageColor [yoavweiss]&lt;/li&gt;
+&lt;li&gt;Fix &lt;a class="reference external" href="https://github.com/python-imaging/Pillow/issues/304"&gt;#304&lt;/a&gt;: test for str, not &amp;quot;utf-8&amp;quot;. [mjpieters]&lt;/li&gt;
+&lt;li&gt;Fix missing import os in _util.py. [mnowotka]&lt;/li&gt;
+&lt;li&gt;Added missing exif tags. [freyes]&lt;/li&gt;
+&lt;li&gt;Fail on all import errors, fixes &lt;a class="reference external" href="https://github.com/python-imaging/Pillow/issues/298"&gt;#298&lt;/a&gt;. [macfreek, wiredfool]&lt;/li&gt;
+&lt;li&gt;Fixed Windows fallback (wasn't using correct file in Windows fonts). [lmollea]&lt;/li&gt;
+&lt;li&gt;Moved ImageFile and ImageFileIO comments to docstrings. [freyes]&lt;/li&gt;
+&lt;li&gt;Restore compatibility with ISO C. [cgohlke]&lt;/li&gt;
+&lt;li&gt;Use correct format character for C int type. [cgohlke]&lt;/li&gt;
+&lt;li&gt;Allocate enough memory to hold pointers in encode.c. [cgohlke]&lt;/li&gt;
+&lt;li&gt;Fix &lt;a class="reference external" href="https://github.com/python-imaging/Pillow/issues/279"&gt;#279&lt;/a&gt;, fillorder double shuffling bug when FillOrder ==2 and decoding using libtiff. [wiredfool]&lt;/li&gt;
+&lt;li&gt;Moved Image module comments to docstrings. [freyes]&lt;/li&gt;
+&lt;li&gt;Add 16-bit TIFF support, fixes &lt;a class="reference external" href="https://github.com/python-imaging/Pillow/issues/274"&gt;#274&lt;/a&gt;. [wiredfool]&lt;/li&gt;
+&lt;li&gt;Ignore high ascii characters in string.whitespace, fixes &lt;a class="reference external" href="https://github.com/python-imaging/Pillow/issues/272"&gt;#272&lt;/a&gt;. [wiredfool]&lt;/li&gt;
+&lt;li&gt;Added clean/build to tox to make it behave like travis. [freyes]&lt;/li&gt;
+&lt;li&gt;Adding support for metadata in webp images. [heynemann]&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="section" id="distributions"&gt;
+&lt;h2&gt;Distributions&lt;/h2&gt;
+&lt;p&gt;In addition to the &lt;a class="reference external" href="https://pypi.python.org/pypi?name=Pillow&amp;amp;version=2.2.1&amp;amp;:action=files"&gt;source distribution&lt;/a&gt;, there are also Python Eggs and Windows Installers available (for 32 and 64 bit) and for the first time ever: Python Wheels! (New built-package format supported by pip.)&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="support"&gt;
+&lt;h2&gt;Support&lt;/h2&gt;
+&lt;p&gt;&lt;a class="reference external" href="https://github.com/python-imaging?tab=members"&gt;The Pillow Team&lt;/a&gt; has really settled in to the groove of making Pillow releases every three months, and I am very proud to be a part it! Special thanks to Eric Soroos and Christopher Gohlke for their invaluable help with Pillow 2.2.1.&lt;/p&gt;
+&lt;p&gt;If you use Pillow professionally, please consider &lt;a class="reference external" href="https://github.com/python-imaging/Pillow#financial"&gt;supporting its development&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+</summary><category term="Django"></category><category term="Python"></category><category term="Plone"></category></entry><entry><title>Pillow 2-1-0 is out!</title><link href="http://blog.aclark.net/2013/07/02/pillow-2-1-0-is-out/" rel="alternate"></link><updated>2013-07-02T00:00:00-04:00</updated><author><name>Alex Clark</name></author><id>tag:blog.aclark.net,2013-07-02:2013/07/02/pillow-2-1-0-is-out/</id><summary type="html">&lt;p&gt;&lt;em&gt;Pillow is a popular fork of PIL by Alex Clark and Contributors. PIL is the Python Imaging Library by Fredrik Lundh and Contributors&lt;/em&gt;&lt;/p&gt;
+&lt;img alt="alternate text" src="https://raw.github.com/ACLARKNET/blog/gh-pages/images/pillow-2.1.0.png" style="width: 75%;" /&gt;
+&lt;p&gt;&lt;a class="reference external" href="https://pypi.python.org/pypi/Pillow/2.1.0"&gt;Pillow 2.1.0 is out!&lt;/a&gt; With this release, the Pillow team has &lt;em&gt;finally&lt;/em&gt; removed support for &amp;quot;import _imaging&amp;quot;, thus completing the move of PIL modules into the PIL namespace &lt;a class="footnote-reference" href="#id3" id="id2"&gt;[1]&lt;/a&gt;. Many thanks to Eric Soroos (AKA wiredfool) who completed the majority of this work. Also a big thanks to Christopher Gohlke and &lt;a class="reference external" href="https://github.com/Arfrever"&gt;Arfrever&lt;/a&gt; both of whom rallied around a push to get the 2.1.0 release out on schedule. And I want to thank everyone else who reported an issue and/or sent a pull request to help make this release the best it could be.&lt;/p&gt;
+&lt;div class="section" id="quarterly-release-cycle"&gt;
+&lt;h2&gt;Quarterly release cycle&lt;/h2&gt;
+&lt;p&gt;After the March 15, 2013 release of Pillow 2.0.0 we decided to adopt a quarterly release cycle. So every three months, as long as the patches keep coming you will see a new Pillow release.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="look-ma-no-official-funding"&gt;
+&lt;h2&gt;Look ma no official funding&lt;/h2&gt;
+&lt;p&gt;Pillow 2.0.0 was an enormous effort, made possible by a generous grant from the Python Software Foundation. But things have stablized quite a bit since then. So much so, that with help from many others I was able to squeeze this release into my normal schedule. However you are always welcome to financially help support Pillow, especially if you are using it in a commercial environment. Committers are encouraged to add their name here if they'd like to receive donations:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://github.com/python-imaging/Pillow/blob/master/README.rst#support"&gt;https://github.com/python-imaging/Pillow/blob/master/README.rst#support&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;And I have personally steered my gittip profile entirely towards Pillow production.&lt;/p&gt;
+&lt;script data-gittip-username="aclark4life"
+src="https://www.gittip.com/assets/widgets/0002.js"&gt;
+&lt;/script&gt;&lt;/div&gt;
+&lt;div class="section" id="go-get-it-now"&gt;
+&lt;h2&gt;Go get it now&lt;/h2&gt;
+&lt;p&gt;Pillow 2.1.0 source and binaries are available on PyPI. Please use, enjoy, and &lt;a class="reference external" href="https://github.com/python-imaging/Pillow/issues?state=open"&gt;report issues&lt;/a&gt;.&lt;/p&gt;
+&lt;table class="docutils footnote" frame="void" id="id3" rules="none"&gt;
+&lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
+&lt;tbody valign="top"&gt;
+&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#id2"&gt;[1]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Which began with the first release of Pillow 1.0 on 2010-07-31 in which support for &amp;quot;import Image&amp;quot; was removed.&lt;/td&gt;&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+</summary><category term="Django"></category><category term="Plone"></category><category term="Python"></category></entry><entry><title>New Pyramid Site</title><link href="http://blog.aclark.net/2013/04/22/new-pyramid-site/" rel="alternate"></link><updated>2013-04-22T12:00:00-04:00</updated><author><name>Alex Clark</name></author><id>tag:blog.aclark.net,2013-04-22:2013/04/22/new-pyramid-site/</id><summary type="html">&lt;img alt="alternate text" src="https://raw.github.com/ACLARKNET/aclarknet/master/screenshot.png" style="width: 98%;" /&gt;
+&lt;p&gt;For the first time in 10 years, &lt;a class="reference external" href="http://aclark.net"&gt;aclark.net&lt;/a&gt; is not powered by Plone. Nothing against Plone: it's still one of the greatest loves of my life (inasmuch as you can love a software and community, as I do).&lt;/p&gt;
+&lt;div class="section" id="why"&gt;
+&lt;h2&gt;Why&lt;/h2&gt;
+&lt;p&gt;This was not the result of a revolutionary plan, rather more of an evolution. It happened like this:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;As soon as Plone 4.3a1 was released (a year ago?) I deployed a new Plone site to aclark.net with it, featuring a &lt;strong&gt;Diazo&lt;/strong&gt; (new Plone theming engine) theme.&lt;/li&gt;
+&lt;li&gt;Around the same time I became obsessed with deploying to Heroku, and also gained an interest in &lt;strong&gt;Python 3&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;A few months ago, I got tired of paying $11/month to host my Plone site so I converted the site to &lt;strong&gt;static HTML&lt;/strong&gt; and moved it to &lt;strong&gt;GitHub pages&lt;/strong&gt;. But the result was flawed because maintenance involved editing duplicate copies of the website content (e.g. both clients.html and clients/foo.html contained the same text describing &amp;quot;foo&amp;quot;).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;So when it came time to do more than a few casual edits, I knew I had to find a new approach. That's when various elements of the Universe conspired to lead me in a new direction.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="how"&gt;
+&lt;h2&gt;How&lt;/h2&gt;
+&lt;div class="section" id="pyramid"&gt;
+&lt;h3&gt;Pyramid&lt;/h3&gt;
+&lt;p&gt;I spent a lot of time (~ 1 year) developing &lt;a class="reference external" href="http://pythonpackages.com"&gt;pythonpackages.com&lt;/a&gt; in Pyramid, but the result was a mess (code-wise). I'm in the process of rewriting and open sourcing it, but it's slow going. So what better way to get started than to do a small-ish site in Pyramid for fun?&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="about-me"&gt;
+&lt;h3&gt;about.me&lt;/h3&gt;
+&lt;p&gt;I also recently gave in and created an &lt;a class="reference external" href="http://about.me/alex.clark"&gt;about.me site&lt;/a&gt;. I was impressed by their content editing features, and my ability to create a page that looked OK using them.&lt;/p&gt;
+&lt;p&gt;In my about.me profile, I used a picture of me and a picture of DC I took in early 2012. When it came time to redo aclark.net I felt like I really wanted to capture the simplicity of the about.me site, so I used the same photo in the background.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="bootstrap"&gt;
+&lt;h3&gt;Bootstrap&lt;/h3&gt;
+&lt;p&gt;Bootstrap is old news at this point, but I really enjoy using it and I particularly like that they have added more example templates. So I combined my background photo with one of &lt;a class="reference external" href="http://twitter.github.io/bootstrap/getting-started.html#examples"&gt;their example templates&lt;/a&gt; and a new site idea was born. As I'm not a particularly talented visual artist, my ability to produce something that looked OK (with code this time) was exciting.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="what"&gt;
+&lt;h2&gt;What&lt;/h2&gt;
+&lt;p&gt;Until I added a contact form, the site was entirely unremarkable. There are views and routes and templates, typical fare for a web framework. Here is the entire &amp;quot;main routine&amp;quot;:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+from pyramid.session import UnencryptedCookieSessionFactoryConfig
+from pyramid.config import Configurator
+from .redir import blog
+from .redir import blog_entry
+from .redir import blog_slash
+from .views import contact
+from .views import default
+import deform_bootstrap
+
+
+def main(global_config, **settings):
+    &amp;quot;&amp;quot;&amp;quot;
+    Oppan wsgi style! Configure and return WSGI application.
+    &amp;quot;&amp;quot;&amp;quot;
+    my_session_factory = UnencryptedCookieSessionFactoryConfig('itsaseekreet')
+    config = Configurator(session_factory=my_session_factory)
+    config.add_route('blog', '/blog')
+    config.add_route('blog_entry', '/blog/{entry:.*}')
+    config.add_route('blog_slash', '/blog/')
+    config.add_route('contact', '/contact')
+    config.add_route('clients', '/clients')
+    config.add_route('projects', '/projects')
+    config.add_route('services', '/services')
+    config.add_route('team', '/team')
+    config.add_route('testimonials', '/testimonials')
+    config.add_route('root', '/')
+    config.add_static_view(
+        'static', 'aclarknet:static', cache_max_age=3600)
+    config.add_view(blog, route_name='blog')
+    config.add_view(blog_entry, route_name='blog_entry')
+    config.add_view(blog_slash, route_name='blog_slash')
+    config.add_view(
+        default,
+        renderer='aclarknet:templates/clients.mak',
+        route_name='clients')
+    config.add_view(
+        contact,
+        renderer='aclarknet:templates/contact.mak',
+        route_name='contact')
+    config.add_view(
+        default,
+        renderer='aclarknet:templates/projects.mak',
+        route_name='projects')
+    config.add_view(
+        default,
+        renderer='aclarknet:templates/root.mak',
+        route_name='root')
+    config.add_view(
+        default,
+        renderer='aclarknet:templates/services.mak',
+        route_name='services')
+    config.add_view(
+        default,
+        renderer='aclarknet:templates/testimonials.mak',
+        route_name='testimonials')
+    config.add_view(
+        default,
+        renderer='aclarknet:templates/team.mak',
+        route_name='team')
+    config.include(deform_bootstrap)
+    return config.make_wsgi_app()
+&lt;/pre&gt;
+&lt;div class="section" id="contact-form"&gt;
+&lt;h3&gt;Contact form&lt;/h3&gt;
+&lt;p&gt;But then I wanted a contact form. Which lead me to wanting an elegant way to send mail via Heroku. Which lead me to discover &lt;a class="reference external" href="http://sendgrid.com/"&gt;SendGrid&lt;/a&gt;. Which lead me create some primitive marketing features I am quite proud of and excited about.&lt;/p&gt;
+&lt;p&gt;I still ended up sending mail &amp;quot;the old way&amp;quot; via GMail. But now I send two mails: one to &lt;a class="reference external" href="mailto:info&amp;#64;aclark.net"&gt;info&amp;#64;aclark.net&lt;/a&gt; to alert our staff about the lead (using GMail). And one to the lead acknowledging their submission (using SendGrid). SendGrid keeps a record of all the leads we've contacted, amongst other &amp;quot;fancy marketing features&amp;quot;. Here's the relevant view code:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+import deform
+import smtplib
+
+from email.mime.text import MIMEText
+
+from .config import FORM_ERROR
+from .config import FORM_SUCCESS
+
+from .config import MIME_ONE_RECIPIENT
+from .config import MIME_ONE_SUBJECT
+from .config import MIME_TWO_MESSAGE
+from .config import MIME_TWO_SUBJECT
+
+from .config import GMAIL_HOSTNAME
+from .config import GMAIL_PASSWORD
+from .config import GMAIL_USERNAME
+
+from .config import SENDGRID_HOSTNAME
+from .config import SENDGRID_PASSWORD
+from .config import SENDGRID_USERNAME
+
+from .forms import ContactFormSchema
+
+
+def contact(request):
+    &amp;quot;&amp;quot;&amp;quot;
+    Create and render deform form containing colander schema. Provide
+    sendgrid integration for marketing.
+    &amp;quot;&amp;quot;&amp;quot;
+    button = deform.Button('Send', css_class='span9 btn-block btn-large')
+    schema = ContactFormSchema().bind(request=request)
+    form = deform.Form(schema, buttons=(button, ))
+    if 'Send' in request.POST:
+        items = request.POST.items()
+        try:
+            appstruct = form.validate(items)
+        except deform.ValidationFailure:
+            return {
+                'form': form.render(),
+                'request': request,
+            }
+        # This is the form contents
+        email = appstruct['email']
+        message = appstruct['message']
+
+        # This is the mail to info&amp;#64;aclark.net
+        mime_document_one = MIMEText(message)
+        mime_document_one['Subject'] = MIME_ONE_SUBJECT
+        mime_document_one['To'] = MIME_ONE_RECIPIENT
+        mime_document_one['From'] = email
+        mime_document_one = mime_document_one.as_string()
+
+        # This is the mail to the new lead
+        mime_document_two = MIMEText(MIME_TWO_MESSAGE)
+        mime_document_two['Subject'] = MIME_TWO_SUBJECT
+        mime_document_two['To'] = email
+        mime_document_two['From'] = MIME_ONE_RECIPIENT
+        mime_document_two = mime_document_two.as_string()
+
+        try:
+            # This is the mail to info&amp;#64;aclark.net
+            smtp_server = smtplib.SMTP(GMAIL_HOSTNAME)
+            smtp_server.starttls()
+            smtp_server.login(GMAIL_USERNAME, GMAIL_PASSWORD)
+            smtp_server.sendmail(email, MIME_ONE_RECIPIENT, mime_document_one)
+            smtp_server.quit()
+
+            # This is the mail to the new lead
+            smtp_server = smtplib.SMTP(SENDGRID_HOSTNAME)
+            smtp_server.starttls()
+            smtp_server.login(SENDGRID_USERNAME, SENDGRID_PASSWORD)
+            smtp_server.sendmail(MIME_ONE_RECIPIENT, email, mime_document_two)
+            smtp_server.quit()
+            request.session.flash(FORM_SUCCESS)
+        except:
+            request.session.flash(FORM_ERROR, 'errors')
+        return {
+            'form': form.render(appstruct={}),
+            'request': request,
+        }
+    return {
+        'form': form.render(),
+        'request': request,
+    }
+
+
+def default(request):
+    &amp;quot;&amp;quot;&amp;quot;
+    This is the default view, to be used with most routes since we do not
+    provide any content editing ability yet. Even then, maybe a default view
+    would still be helpful.
+    &amp;quot;&amp;quot;&amp;quot;
+    return {}
+&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="who-cares"&gt;
+&lt;h2&gt;Who cares&lt;/h2&gt;
+&lt;p&gt;The best thing about all of this being able to run the site &lt;strong&gt;100% for free on Heroku&lt;/strong&gt;. Also:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;Python 3 compat!&lt;/li&gt;
+&lt;li&gt;Free caching via CloudFlare&lt;/li&gt;
+&lt;li&gt;Free ping service from Pingdom keeps the site from &amp;quot;going to sleep&amp;quot; (HT: natea).&lt;/li&gt;
+&lt;li&gt;Updating the site fits my workflow. If I'm the content editor, I don't necessarily need or want to use Plone to edit my content. I can save Plone for my clients, and focus on &lt;strong&gt;what makes them happy&lt;/strong&gt; with their CMS system.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+</summary><category term="Django"></category><category term="Mozilla"></category><category term="Plone"></category><category term="Python"></category></entry></feed>

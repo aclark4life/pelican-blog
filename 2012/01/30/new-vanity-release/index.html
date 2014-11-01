@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Alex Clark - Python Web Developer & Musician, Django, Pillow, Python and more!">
+
+        <link rel="alternate"  href="http://blog.aclark.net/feeds/all.atom.xml" type="application/atom+xml" title="Alex Clark - Python Web Developer & Musician Full Atom Feed"/>
+
+        <title>New vanity release // Alex Clark - Python Web Developer & Musician // Django, Pillow, Python and more!</title>
+
+    <link href="https://github.com/pythonpackages/pythonpackages/blob/master/favicon.ico?raw=true" rel="icon">
+
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.3.0/pure-min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="http://blog.aclark.net/theme/css/pure.css">
+    <link rel="stylesheet" href="http://blog.aclark.net/theme/css/pygments.css">
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/fitvids/1.0.1/jquery.fitvids.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".content").fitVids();
+        });
+    </script>
+
+    <script type="text/javascript" src="http://blog.aclark.net/tipuesearch/tipuesearch_set.js"></script>
+    <script type="text/javascript" src="http://blog.aclark.net/tipuesearch/tipuesearch_content.js"></script>
+    <link rel="stylesheet" type="text/css" href="http://blog.aclark.net/tipuesearch/tipuesearch.css">
+    <script type="text/javascript" src="http://blog.aclark.net/tipuesearch/tipuesearch.js"></script>
+
+</head>
+
+<body>
+    <div class="pure-g-r" id="layout">
+        <div class="sidebar pure-u">
+            <div class="cover-img" style="background-image: url('http://aclark.net/static/background.jpg')">
+                <div class="cover-body">
+                    <header class="header">
+                        <hgroup>
+                            <img class="avatar" src="http://www.gravatar.com/avatar/6170000a01c67c6ba1e2d4bd87701bae.png">
+                            <h1 class="brand-main"><a href="http://blog.aclark.net">Alex Clark - Python Web Developer & Musician</a></h1>
+                            <p class="tagline">Django, Pillow, Python and more!</p>
+                                <p class="social">
+                                    <a href="https://github.com/aclark4life/">
+                                        <i class="fa fa-github fa-3x"></i>
+                                    </a>
+                                    <a href="https://www.gittip.com/aclark4life">
+                                        <i class="fa fa-gittip fa-3x"></i>
+                                    </a>
+                                    <a href="https://twitter.com/aclark4life">
+                                        <i class="fa fa-twitter-square fa-3x"></i>
+                                    </a>
+                                </p>
+                        </hgroup>
+                    </header>
+                </div>
+            </div>
+        </div>
+        <div id="search" style="letter-spacing: 1px">
+            <form action="http://blog.aclark.net">
+                <input type="text" name="q" id="tipue_search_input" autocomplete="off" required>
+            </form>
+            <div id="tipue_search_content" style="padding-left: 55px"></div>
+        </div>
+    <div class="pure-u">
+        <div class="content">
+            <section class="post">
+                <header class="post-header">
+                    <h1>New vanity release</h1>
+                        <p class="post-meta">
+                            // under                                 <a class="post-category" href="http://blog.aclark.net/tag/plone.html">Plone</a>
+                                <a class="post-category" href="http://blog.aclark.net/tag/python.html">Python</a>
+                        </p>
+                </header>
+            </section>
+            <p>With all the Python <a class="reference external" href="http://crate.io/">stats</a> <a class="reference external" href="http://python3wos.appspot.com/">goodness</a> going on recently, I got inspired to make a new <a class="reference external" href="http://pythonpackages.com/info/vanity">vanity</a> release. This release features the ability to display per package download statistics via the `-v` or `--verbose` command line argument.</p>
+<p>Here are some of my favorite results.</p>
+<div class="section" id="vanity">
+<h2>Vanity</h2>
+<pre class="literal-block">
+$ vanity vanity -v
+&nbsp;&nbsp;&nbsp;&nbsp; vanity-1.0.zip&nbsp;&nbsp;&nbsp;&nbsp; 2011-04-14&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 352
+&nbsp;&nbsp; vanity-1.1.0.zip&nbsp;&nbsp;&nbsp;&nbsp; 2011-10-26&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 139
+&nbsp;&nbsp; vanity-1.1.1.zip&nbsp;&nbsp;&nbsp;&nbsp; 2011-10-28&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 114
+&nbsp;&nbsp; vanity-1.1.2.zip&nbsp;&nbsp;&nbsp;&nbsp; 2011-10-28&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 145
+vanity-1.2.0.tar.gz&nbsp;&nbsp;&nbsp;&nbsp; 2012-01-30&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0
+-------------------------------------------
+Package `vanity` has been downloaded 750 times!
+</pre>
+</div>
+<div class="section" id="django">
+<h2>Django</h2>
+<pre class="literal-block">
+$ vanity django -v
+Django-1.1.3.tar.gz&nbsp;&nbsp;&nbsp;&nbsp; 2010-12-23&nbsp;&nbsp;&nbsp; 2,618
+Django-1.1.4.tar.gz&nbsp;&nbsp;&nbsp;&nbsp; 2011-02-09&nbsp;&nbsp;&nbsp; 4,476
+&nbsp; Django-1.2.tar.gz&nbsp;&nbsp;&nbsp;&nbsp; 2010-05-17&nbsp;&nbsp; 15,876
+Django-1.2.1.tar.gz&nbsp;&nbsp;&nbsp;&nbsp; 2010-05-24&nbsp;&nbsp; 65,120
+Django-1.2.2.tar.gz&nbsp;&nbsp;&nbsp;&nbsp; 2010-09-09&nbsp;&nbsp;&nbsp; 2,467
+Django-1.2.3.tar.gz&nbsp;&nbsp;&nbsp;&nbsp; 2010-09-11&nbsp;&nbsp; 73,984
+Django-1.2.4.tar.gz&nbsp;&nbsp;&nbsp;&nbsp; 2010-12-23&nbsp;&nbsp; 49,904
+Django-1.2.5.tar.gz&nbsp;&nbsp;&nbsp;&nbsp; 2011-02-09&nbsp;&nbsp; 63,977
+Django-1.2.6.tar.gz&nbsp;&nbsp;&nbsp;&nbsp; 2011-09-10&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 427
+Django-1.2.7.tar.gz&nbsp;&nbsp;&nbsp;&nbsp; 2011-09-11&nbsp;&nbsp;&nbsp; 6,825
+&nbsp; Django-1.3.tar.gz&nbsp;&nbsp;&nbsp;&nbsp; 2011-03-23&nbsp; 238,504
+Django-1.3.1.tar.gz&nbsp;&nbsp;&nbsp;&nbsp; 2011-09-10&nbsp; 176,054
+-------------------------------------------
+Package `Django` has been downloaded 700,232 times!
+</pre>
+</div>
+<div class="section" id="plone">
+<h2>Plone</h2>
+<pre class="literal-block">
+$ vanity plone -v
+&nbsp;&nbsp;&nbsp;&nbsp; Plone-3.2.zip&nbsp;&nbsp;&nbsp;&nbsp; 2008-12-31&nbsp;&nbsp;&nbsp; 1,690
+&nbsp;&nbsp; Plone-3.2.1.zip&nbsp;&nbsp;&nbsp;&nbsp; 2009-02-04&nbsp;&nbsp;&nbsp; 2,466
+&nbsp;&nbsp; Plone-3.2.2.zip&nbsp;&nbsp;&nbsp;&nbsp; 2009-03-03&nbsp;&nbsp;&nbsp; 4,893
+&nbsp;&nbsp; Plone-3.2.3.zip&nbsp;&nbsp;&nbsp;&nbsp; 2009-06-20&nbsp;&nbsp;&nbsp; 2,731
+&nbsp;&nbsp; Plone-3.2a1.zip&nbsp;&nbsp;&nbsp;&nbsp; 2008-10-10&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 976
+&nbsp; Plone-3.2rc1.zip&nbsp;&nbsp;&nbsp;&nbsp; 2008-12-15&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 758
+&nbsp;&nbsp;&nbsp;&nbsp; Plone-3.3.zip&nbsp;&nbsp;&nbsp;&nbsp; 2009-08-19&nbsp;&nbsp;&nbsp; 4,611
+&nbsp;&nbsp; Plone-3.3.1.zip&nbsp;&nbsp;&nbsp;&nbsp; 2009-09-09&nbsp;&nbsp;&nbsp; 4,148
+Plone-3.3.2.tar.gz&nbsp;&nbsp;&nbsp;&nbsp; 2009-11-03&nbsp;&nbsp;&nbsp; 3,043
+&nbsp;&nbsp; Plone-3.3.3.zip&nbsp;&nbsp;&nbsp;&nbsp; 2009-12-08&nbsp;&nbsp;&nbsp; 1,733
+&nbsp;&nbsp; Plone-3.3.4.zip&nbsp;&nbsp;&nbsp;&nbsp; 2010-01-14&nbsp;&nbsp;&nbsp; 4,906
+&nbsp;&nbsp; Plone-3.3.5.zip&nbsp;&nbsp;&nbsp;&nbsp; 2010-03-03&nbsp;&nbsp; 12,131
+Plone-3.3.6.tar.gz&nbsp;&nbsp;&nbsp;&nbsp; 2011-07-19&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 787
+&nbsp;&nbsp; Plone-3.3b1.zip&nbsp;&nbsp;&nbsp;&nbsp; 2009-03-12&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 940
+&nbsp; Plone-3.3rc1.zip&nbsp;&nbsp;&nbsp;&nbsp; 2009-03-30&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 743
+&nbsp; Plone-3.3rc2.zip&nbsp;&nbsp;&nbsp;&nbsp; 2009-04-05&nbsp;&nbsp;&nbsp; 1,822
+&nbsp; Plone-3.3rc3.zip&nbsp;&nbsp;&nbsp;&nbsp; 2009-05-23&nbsp;&nbsp;&nbsp; 2,036
+&nbsp; Plone-3.3rc4.zip&nbsp;&nbsp;&nbsp;&nbsp; 2009-07-07&nbsp;&nbsp;&nbsp; 2,163
+&nbsp; Plone-3.3rc5.zip&nbsp;&nbsp;&nbsp;&nbsp; 2009-08-01&nbsp;&nbsp;&nbsp; 1,211
+&nbsp;&nbsp;&nbsp;&nbsp; Plone-4.0.zip&nbsp;&nbsp;&nbsp;&nbsp; 2010-08-30&nbsp;&nbsp;&nbsp; 3,659
+&nbsp;&nbsp; Plone-4.0.1.zip&nbsp;&nbsp;&nbsp;&nbsp; 2010-10-04&nbsp;&nbsp;&nbsp; 4,224
+&nbsp;&nbsp; Plone-4.0.2.zip&nbsp;&nbsp;&nbsp;&nbsp; 2010-11-22&nbsp;&nbsp;&nbsp; 4,022
+&nbsp;&nbsp; Plone-4.0.3.zip&nbsp;&nbsp;&nbsp;&nbsp; 2011-01-21&nbsp;&nbsp;&nbsp; 3,339
+&nbsp;&nbsp; Plone-4.0.4.zip&nbsp;&nbsp;&nbsp;&nbsp; 2011-03-01&nbsp;&nbsp;&nbsp; 2,711
+&nbsp;&nbsp; Plone-4.0.5.zip&nbsp;&nbsp;&nbsp;&nbsp; 2011-04-09&nbsp;&nbsp;&nbsp; 3,152
+&nbsp;&nbsp; Plone-4.0.6.zip&nbsp;&nbsp;&nbsp;&nbsp; 2011-05-22&nbsp;&nbsp;&nbsp; 1,469
+&nbsp;&nbsp; Plone-4.0.7.zip&nbsp;&nbsp;&nbsp;&nbsp; 2011-06-06&nbsp;&nbsp;&nbsp; 2,192
+&nbsp;&nbsp; Plone-4.0.8.zip&nbsp;&nbsp;&nbsp;&nbsp; 2011-07-17&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 509
+&nbsp;&nbsp; Plone-4.0.9.zip&nbsp;&nbsp;&nbsp;&nbsp; 2011-07-29&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 958
+&nbsp; Plone-4.0.10.zip&nbsp;&nbsp;&nbsp;&nbsp; 2011-10-12&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 495
+&nbsp;&nbsp; Plone-4.0a1.zip&nbsp;&nbsp;&nbsp;&nbsp; 2009-11-19&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 946
+&nbsp;&nbsp; Plone-4.0a2.zip&nbsp;&nbsp;&nbsp;&nbsp; 2009-12-04&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 921
+&nbsp;&nbsp; Plone-4.0a3.zip&nbsp;&nbsp;&nbsp;&nbsp; 2009-12-21&nbsp;&nbsp;&nbsp; 1,272
+&nbsp;&nbsp; Plone-4.0a4.zip&nbsp;&nbsp;&nbsp;&nbsp; 2010-02-01&nbsp;&nbsp;&nbsp; 1,121
+&nbsp;&nbsp; Plone-4.0a5.zip&nbsp;&nbsp;&nbsp;&nbsp; 2010-02-19&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 850
+&nbsp;&nbsp; Plone-4.0b1.zip&nbsp;&nbsp;&nbsp;&nbsp; 2010-03-09&nbsp;&nbsp;&nbsp; 1,308
+&nbsp;&nbsp; Plone-4.0b2.zip&nbsp;&nbsp;&nbsp;&nbsp; 2010-04-10&nbsp;&nbsp;&nbsp; 1,028
+&nbsp;&nbsp; Plone-4.0b3.zip&nbsp;&nbsp;&nbsp;&nbsp; 2010-05-04&nbsp;&nbsp;&nbsp; 1,722
+&nbsp;&nbsp; Plone-4.0b4.zip&nbsp;&nbsp;&nbsp;&nbsp; 2010-06-13&nbsp;&nbsp;&nbsp; 1,642
+Plone-4.0b5.tar.gz&nbsp;&nbsp;&nbsp;&nbsp; 2010-07-08&nbsp;&nbsp;&nbsp; 1,995
+&nbsp; Plone-4.0rc1.zip&nbsp;&nbsp;&nbsp;&nbsp; 2010-08-06&nbsp;&nbsp;&nbsp; 1,598
+&nbsp;&nbsp;&nbsp;&nbsp; Plone-4.1.zip&nbsp;&nbsp;&nbsp;&nbsp; 2011-07-17&nbsp;&nbsp;&nbsp; 4,479
+Plone-4.1.1.tar.gz&nbsp;&nbsp;&nbsp;&nbsp; 2011-09-21&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 429
+Plone-4.1.2.tar.gz&nbsp;&nbsp;&nbsp;&nbsp; 2011-10-08&nbsp;&nbsp;&nbsp; 2,187
+Plone-4.1.3.tar.gz&nbsp;&nbsp;&nbsp;&nbsp; 2011-11-29&nbsp;&nbsp;&nbsp; 1,883
+&nbsp;&nbsp; Plone-4.1a1.zip&nbsp;&nbsp;&nbsp;&nbsp; 2011-01-21&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 699
+&nbsp;&nbsp; Plone-4.1a2.zip&nbsp;&nbsp;&nbsp;&nbsp; 2011-02-11&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 451
+&nbsp;&nbsp; Plone-4.1a3.zip&nbsp;&nbsp;&nbsp;&nbsp; 2011-02-15&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 680
+&nbsp;&nbsp; Plone-4.1b1.zip&nbsp;&nbsp;&nbsp;&nbsp; 2011-03-08&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 958
+&nbsp;&nbsp; Plone-4.1b2.zip&nbsp;&nbsp;&nbsp;&nbsp; 2011-04-09&nbsp;&nbsp;&nbsp; 1,040
+&nbsp; Plone-4.1rc2.zip&nbsp;&nbsp;&nbsp;&nbsp; 2011-05-22&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 797
+&nbsp; Plone-4.1rc3.zip&nbsp;&nbsp;&nbsp;&nbsp; 2011-06-06&nbsp;&nbsp;&nbsp; 1,329
+&nbsp;&nbsp; Plone-4.2a1.zip&nbsp;&nbsp;&nbsp;&nbsp; 2011-08-10&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 521
+&nbsp;&nbsp; Plone-4.2a2.zip&nbsp;&nbsp;&nbsp;&nbsp; 2011-09-16&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 884
+Plone-4.2b1.tar.gz&nbsp;&nbsp;&nbsp;&nbsp; 2011-12-06&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 619
+------------------------------------------
+Package `Plone` has been downloaded 111,877 times!
+</pre>
+</div>
+<div class="section" id="pyramid">
+<h2>Pyramid</h2>
+<pre class="literal-block">
+$ vanity pyramid -v
+&nbsp;&nbsp; pyramid-1.0.tar.gz&nbsp;&nbsp;&nbsp;&nbsp; 2011-01-31&nbsp;&nbsp; 24,055
+&nbsp;pyramid-1.0.1.tar.gz&nbsp;&nbsp;&nbsp;&nbsp; 2011-08-13&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 460
+&nbsp;pyramid-1.0.2.tar.gz&nbsp;&nbsp;&nbsp;&nbsp; 2011-12-15&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 185
+&nbsp;pyramid-1.0a1.tar.gz&nbsp;&nbsp;&nbsp;&nbsp; 2010-11-05&nbsp;&nbsp;&nbsp; 1,128
+&nbsp;pyramid-1.0a2.tar.gz&nbsp;&nbsp;&nbsp;&nbsp; 2010-11-09&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 952
+&nbsp;pyramid-1.0a3.tar.gz&nbsp;&nbsp;&nbsp;&nbsp; 2010-11-16&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 803
+&nbsp;pyramid-1.0a4.tar.gz&nbsp;&nbsp;&nbsp;&nbsp; 2010-11-21&nbsp;&nbsp;&nbsp; 1,732
+&nbsp;pyramid-1.0a5.tar.gz&nbsp;&nbsp;&nbsp;&nbsp; 2010-12-15&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 639
+&nbsp;pyramid-1.0a6.tar.gz&nbsp;&nbsp;&nbsp;&nbsp; 2010-12-16&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 834
+&nbsp;pyramid-1.0a7.tar.gz&nbsp;&nbsp;&nbsp;&nbsp; 2010-12-20&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 912
+&nbsp;pyramid-1.0a8.tar.gz&nbsp;&nbsp;&nbsp;&nbsp; 2010-12-27&nbsp;&nbsp;&nbsp; 1,233
+&nbsp;pyramid-1.0a9.tar.gz&nbsp;&nbsp;&nbsp;&nbsp; 2011-01-08&nbsp;&nbsp;&nbsp; 1,313
+pyramid-1.0a10.tar.gz&nbsp;&nbsp;&nbsp;&nbsp; 2011-01-18&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 960
+&nbsp;pyramid-1.0b1.tar.gz&nbsp;&nbsp;&nbsp;&nbsp; 2011-01-22&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 871
+&nbsp;pyramid-1.0b2.tar.gz&nbsp;&nbsp;&nbsp;&nbsp; 2011-01-25&nbsp;&nbsp;&nbsp; 1,003
+&nbsp;pyramid-1.0b3.tar.gz&nbsp;&nbsp;&nbsp;&nbsp; 2011-01-28&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 816
+&nbsp;&nbsp; pyramid-1.1.tar.gz&nbsp;&nbsp;&nbsp;&nbsp; 2011-07-22&nbsp;&nbsp;&nbsp; 5,674
+&nbsp;pyramid-1.1.1.tar.gz&nbsp;&nbsp;&nbsp;&nbsp; 2011-08-13&nbsp;&nbsp;&nbsp; 1,057
+&nbsp;pyramid-1.1.2.tar.gz&nbsp;&nbsp;&nbsp;&nbsp; 2011-08-17&nbsp;&nbsp;&nbsp; 1,560
+&nbsp;pyramid-1.1.3.tar.gz&nbsp;&nbsp;&nbsp;&nbsp; 2011-12-15&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 160
+&nbsp;pyramid-1.1a1.tar.gz&nbsp;&nbsp;&nbsp;&nbsp; 2011-06-20&nbsp;&nbsp;&nbsp; 1,146
+&nbsp;pyramid-1.1a2.tar.gz&nbsp;&nbsp;&nbsp;&nbsp; 2011-06-23&nbsp;&nbsp;&nbsp; 1,003
+&nbsp;pyramid-1.1a3.tar.gz&nbsp;&nbsp;&nbsp;&nbsp; 2011-06-26&nbsp;&nbsp;&nbsp; 1,252
+&nbsp;pyramid-1.1a4.tar.gz&nbsp;&nbsp;&nbsp;&nbsp; 2011-07-01&nbsp;&nbsp;&nbsp; 1,517
+&nbsp;pyramid-1.1b1.tar.gz&nbsp;&nbsp;&nbsp;&nbsp; 2011-07-10&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 981
+&nbsp;pyramid-1.1b2.tar.gz&nbsp;&nbsp;&nbsp;&nbsp; 2011-07-13&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 844
+&nbsp;pyramid-1.1b3.tar.gz&nbsp;&nbsp;&nbsp;&nbsp; 2011-07-15&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 742
+&nbsp;pyramid-1.1b4.tar.gz&nbsp;&nbsp;&nbsp;&nbsp; 2011-07-18&nbsp;&nbsp;&nbsp; 1,094
+&nbsp;&nbsp; pyramid-1.2.tar.gz&nbsp;&nbsp;&nbsp;&nbsp; 2011-09-13&nbsp;&nbsp;&nbsp; 6,450
+&nbsp;pyramid-1.2.1.tar.gz&nbsp;&nbsp;&nbsp;&nbsp; 2011-09-28&nbsp;&nbsp; 10,357
+&nbsp;pyramid-1.2.2.tar.gz&nbsp;&nbsp;&nbsp;&nbsp; 2011-11-20&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 322
+&nbsp;pyramid-1.2.3.tar.gz&nbsp;&nbsp;&nbsp;&nbsp; 2011-11-21&nbsp;&nbsp;&nbsp; 3,078
+&nbsp;pyramid-1.2.4.tar.gz&nbsp;&nbsp;&nbsp;&nbsp; 2011-12-06&nbsp;&nbsp;&nbsp; 1,193
+&nbsp;pyramid-1.2.5.tar.gz&nbsp;&nbsp;&nbsp;&nbsp; 2011-12-15&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 555
+&nbsp;pyramid-1.2.6.tar.gz&nbsp;&nbsp;&nbsp;&nbsp; 2012-01-05&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 514
+&nbsp;pyramid-1.2.7.tar.gz&nbsp;&nbsp;&nbsp;&nbsp; 2012-01-20&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 472
+&nbsp;pyramid-1.2a1.tar.gz&nbsp;&nbsp;&nbsp;&nbsp; 2011-08-24&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 907
+&nbsp;pyramid-1.2a2.tar.gz&nbsp;&nbsp;&nbsp;&nbsp; 2011-08-27&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 696
+&nbsp;pyramid-1.2a3.tar.gz&nbsp;&nbsp;&nbsp;&nbsp; 2011-08-29&nbsp;&nbsp;&nbsp; 3,268
+&nbsp;pyramid-1.2a4.tar.gz&nbsp;&nbsp;&nbsp;&nbsp; 2011-09-02&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 593
+&nbsp;pyramid-1.2a5.tar.gz&nbsp;&nbsp;&nbsp;&nbsp; 2011-09-04&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 840
+&nbsp;pyramid-1.2a6.tar.gz&nbsp;&nbsp;&nbsp;&nbsp; 2011-09-07&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 602
+&nbsp;pyramid-1.2b1.tar.gz&nbsp;&nbsp;&nbsp;&nbsp; 2011-09-08&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 493
+&nbsp;pyramid-1.2b2.tar.gz&nbsp;&nbsp;&nbsp;&nbsp; 2011-09-08&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 700
+&nbsp;pyramid-1.2b3.tar.gz&nbsp;&nbsp;&nbsp;&nbsp; 2011-09-11&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 674
+&nbsp;pyramid-1.3a1.tar.gz&nbsp;&nbsp;&nbsp;&nbsp; 2011-12-09&nbsp;&nbsp;&nbsp; 1,264
+&nbsp;pyramid-1.3a2.tar.gz&nbsp;&nbsp;&nbsp;&nbsp; 2011-12-14&nbsp;&nbsp;&nbsp; 1,641
+&nbsp;pyramid-1.3a3.tar.gz&nbsp;&nbsp;&nbsp;&nbsp; 2011-12-21&nbsp;&nbsp;&nbsp; 2,716
+&nbsp;pyramid-1.3a4.tar.gz&nbsp;&nbsp;&nbsp;&nbsp; 2012-01-05&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 675
+&nbsp;pyramid-1.3a5.tar.gz&nbsp;&nbsp;&nbsp;&nbsp; 2012-01-09&nbsp;&nbsp;&nbsp; 2,369
+&nbsp;pyramid-1.3a6.tar.gz&nbsp;&nbsp;&nbsp;&nbsp; 2012-01-20&nbsp;&nbsp;&nbsp; 1,917
+---------------------------------------------
+Package `pyramid` has been downloaded 97,222 times!
+</pre>
+<p>Enjoy the new release.</p>
+</div>
+
+            <a href="#" class="go-top">Go Top</a>
+    <div class="comments">
+        <div id="disqus_thread"></div>
+        <script type="text/javascript">
+            /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+            var disqus_shortname = "aclark-blog"; // required: replace example with your forum shortname
+
+            /* * * DON'T EDIT BELOW THIS LINE * * */
+            (function() {
+                var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </div>
+<footer class="footer">
+    <p>&copy; Alex Clark &ndash;
+        Built with <a href="https://github.com/PurePelicanTheme/pure-single">Pure Theme</a>
+        for <a href="http://blog.getpelican.com/">Pelican</a>
+    </p>
+</footer>        </div>
+    </div>
+    </div>
+    <script>
+        var $top = $('.go-top');
+
+        // Show or hide the sticky footer button
+        $(window).scroll(function() {
+            if ($(this).scrollTop() > 200) {
+                $top.fadeIn(200);
+            } else {
+                $top.fadeOut(200);
+            }
+        });
+
+        // Animate the scroll to top
+        $top.click(function(event) {
+            event.preventDefault();
+            $('html, body').animate({scrollTop: 0}, 300);
+        })
+
+        // Makes sure that the href="#" attached to the <a> elements
+        // don't scroll you back up the page.
+        $('body').on('click', 'a[href="#"]', function(event) {
+            event.preventDefault();
+        });
+    </script>
+    <script type="text/javascript">
+        var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+        document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+        try {
+            var pageTracker = _gat._getTracker("UA-34988446-1");
+            pageTracker._trackPageview();
+            } catch(err) {}
+    </script>
+
+
+    <script>
+    $(document).ready(function() {
+         $('#tipue_search_input').tipuesearch({
+              'show': 6,
+              'mode': 'json',
+              'contentLocation': 'tipuesearch_content.json'
+         });
+    });
+    </script>
+
+</body>
+</html>

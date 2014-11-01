@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Alex Clark - Python Web Developer & Musician, Django, Pillow, Python and more!">
+
+        <link rel="alternate"  href="http://blog.aclark.net/feeds/all.atom.xml" type="application/atom+xml" title="Alex Clark - Python Web Developer & Musician Full Atom Feed"/>
+
+        <title>Matplotlib Plotting Cookbook Review // Alex Clark - Python Web Developer & Musician // Django, Pillow, Python and more!</title>
+
+    <link href="https://github.com/pythonpackages/pythonpackages/blob/master/favicon.ico?raw=true" rel="icon">
+
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.3.0/pure-min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="http://blog.aclark.net/theme/css/pure.css">
+    <link rel="stylesheet" href="http://blog.aclark.net/theme/css/pygments.css">
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/fitvids/1.0.1/jquery.fitvids.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".content").fitVids();
+        });
+    </script>
+
+    <script type="text/javascript" src="http://blog.aclark.net/tipuesearch/tipuesearch_set.js"></script>
+    <script type="text/javascript" src="http://blog.aclark.net/tipuesearch/tipuesearch_content.js"></script>
+    <link rel="stylesheet" type="text/css" href="http://blog.aclark.net/tipuesearch/tipuesearch.css">
+    <script type="text/javascript" src="http://blog.aclark.net/tipuesearch/tipuesearch.js"></script>
+
+</head>
+
+<body>
+    <div class="pure-g-r" id="layout">
+        <div class="sidebar pure-u">
+            <div class="cover-img" style="background-image: url('http://aclark.net/static/background.jpg')">
+                <div class="cover-body">
+                    <header class="header">
+                        <hgroup>
+                            <img class="avatar" src="http://www.gravatar.com/avatar/6170000a01c67c6ba1e2d4bd87701bae.png">
+                            <h1 class="brand-main"><a href="http://blog.aclark.net">Alex Clark - Python Web Developer & Musician</a></h1>
+                            <p class="tagline">Django, Pillow, Python and more!</p>
+                                <p class="social">
+                                    <a href="https://github.com/aclark4life/">
+                                        <i class="fa fa-github fa-3x"></i>
+                                    </a>
+                                    <a href="https://www.gittip.com/aclark4life">
+                                        <i class="fa fa-gittip fa-3x"></i>
+                                    </a>
+                                    <a href="https://twitter.com/aclark4life">
+                                        <i class="fa fa-twitter-square fa-3x"></i>
+                                    </a>
+                                </p>
+                        </hgroup>
+                    </header>
+                </div>
+            </div>
+        </div>
+        <div id="search" style="letter-spacing: 1px">
+            <form action="http://blog.aclark.net">
+                <input type="text" name="q" id="tipue_search_input" autocomplete="off" required>
+            </form>
+            <div id="tipue_search_content" style="padding-left: 55px"></div>
+        </div>
+    <div class="pure-u">
+        <div class="content">
+            <section class="post">
+                <header class="post-header">
+                    <h1>Matplotlib Plotting Cookbook Review</h1>
+                        <p class="post-meta">
+                            // under                                 <a class="post-category" href="http://blog.aclark.net/tag/django.html">Django</a>
+                                <a class="post-category" href="http://blog.aclark.net/tag/mozilla.html">Mozilla</a>
+                                <a class="post-category" href="http://blog.aclark.net/tag/plone.html">Plone</a>
+                                <a class="post-category" href="http://blog.aclark.net/tag/python.html">Python</a>
+                        </p>
+                </header>
+            </section>
+            <p><em>I was given a copy of</em> <a class="reference external" href="http://www.packtpub.com/matplotlib-plotting-cookbook/book">Matplotlib Plotting Cookbook by Alexandre Devert</a> <em>and asked to review it. Thanks PACKT!</em> <em>Here is my review.</em></p>
+<div class="section" id="preface">
+<h2>Preface</h2>
+<p>But first, I'll mention I've worked on two projects recently that involved rendering matplotlib graphs directly to the browser i.e. via content-type: image/png. This is fun! It's particularly enjoyable when you are trying to avoid performing the task &quot;the right way&quot;, which is arguably outputting JSON to some JavaScript graphing library e.g. <a class="reference external" href="http://www.highcharts.com/">Highcharts</a>. The dependencies are heavy i.e. pip install numpy, etc. but not <em>that</em> heavy and once they are installed, <strong>your web application can output graphs rivaling those produced by JavaScript, all written in Python</strong> <a class="footnote-reference" href="#id2" id="id1">[1]</a>. Highly recommended!</p>
+</div>
+<div class="section" id="chapter-1">
+<h2>Chapter 1</h2>
+<p>I think the code examples in Chapter 1 alone are worth the price of admission. Here is a video of me walking through the Chapter 1 code examples:</p>
+<iframe width="420" height="315" src="//www.youtube.com/embed/YOFHkszsdR8" frameborder="0" allowfullscreen></iframe><p>You'll notice the typical fare here: bar, line and pie graphs along with some more complex boxplot, histogram, horizontal bar, scatter and triangle graphs, all in various colors. For reference, here are the excerpted commands called to produce these graphs:</p>
+<script src="https://gist.github.com/aclark4life/0f9e61f2d62a67c31346.js"></script></div>
+<div class="section" id="chapter-2">
+<h2>Chapter 2</h2>
+<p>Chapter 2 is all about customization e.g. via matplotlibrc. Here is a video of me walking through the Chapter 2 code examples:</p>
+<iframe width="420" height="315" src="//www.youtube.com/embed/BzGv1soDaRU" frameborder="0" allowfullscreen></iframe><p>For reference, here is the sample matplotlibrc included with the matplotlib distribution (lib/python2.7/site-packages/matplotlib/mpl-data/matplotlibrc):</p>
+<script src="https://gist.github.com/aclark4life/71c1edf815bd61aae8a9.js"></script><p>As you can see, there are a lot of knobs you can turn here.</p>
+</div>
+<div class="section" id="chapter-3">
+<h2>Chapter 3</h2>
+<p>Chapter 3 is all about &quot;annotations&quot;. Here is a video of me walking through the Chapter 3 code examples:</p>
+<iframe width="420" height="315" src="//www.youtube.com/embed/994vecwODaI" frameborder="0" allowfullscreen></iframe><p>&quot;Annotations&quot; includes related topics such as adding shapes and controlling tick spacing and labeling.</p>
+</div>
+<div class="section" id="chapter-4">
+<h2>Chapter 4</h2>
+<p>Chapter 4 is all about &quot;working with figures&quot;. Here is a video of me walking through the Chapter 4 code examples:</p>
+<iframe width="420" height="315" src="//www.youtube.com/embed/Q6PFBSxkOc4" frameborder="0" allowfullscreen></iframe><p>&quot;Working with figures&quot; includes obvious topics like <tt class="docutils literal">subplot</tt> and less obvious topics like setting the aspect ratio.</p>
+</div>
+<div class="section" id="chapter-5">
+<h2>Chapter 5</h2>
+<p>Chapter 5 is all about &quot;working with file output&quot;. For reference, here are some of the images produced by the examples in this chapter (I wrote <tt class="docutils literal">jpg</tt> files instead of <tt class="docutils literal">png</tt> files due to a problem with my libpng: <a class="reference external" href="https://www.google.com/#q=RuntimeError%3A+Could+not+create+write+struct&amp;safe=off">RuntimeError: Could not create write struct</a>.)</p>
+<img alt="alternate text" src="http://blog.aclark.net/images/sinc1.jpg" />
+<img alt="alternate text" src="http://blog.aclark.net/images/sinc3.jpg" />
+<p>Also covered in this chapter is <a class="reference external" href="http://blog.aclark.net/images/sinc.pdf">pdf output</a>.</p>
+</div>
+<div class="section" id="chapter-6">
+<h2>Chapter 6</h2>
+<p>Chapter 6 is all about &quot;working with maps&quot;.</p>
+<iframe width="420" height="315" src="//www.youtube.com/embed/gKnR7IfNSsI" frameborder="0" allowfullscreen></iframe><p>This chapter also introduces the <a class="reference external" href="http://matplotlib.org/1.3.1/users/image_tutorial.html">imshow command</a>.</p>
+</div>
+<div class="section" id="chapter-7">
+<h2>Chapter 7</h2>
+<p>Chapter 7 is all about &quot;working with 3D figures&quot;.</p>
+<iframe width="420" height="315" src="//www.youtube.com/embed/7YFGHG62L5U" frameborder="0" allowfullscreen></iframe><p>For reference, here are the excerpted commands called to produce these graphs:</p>
+<script src="https://gist.github.com/aclark4life/6f7f3fd18ec4c7795028.js"></script></div>
+<div class="section" id="chapter-8">
+<h2>Chapter 8</h2>
+<p>Chapter 8 is all about working with the &quot;user interface&quot; interactively.</p>
+<iframe width="420" height="315" src="//www.youtube.com/embed/k6984I_YGo4" frameborder="0" allowfullscreen></iframe><p>Additionally, all of the popular graphical windowing environments are discussed: Tkinter, wxWidgets, GTK, Pyglet (three out of four of which I was able to install; GTK 2 vs GTK 3 <a class="reference external" href="https://www.google.com/#q=from+gi.repository+import+Gtk&amp;safe=off">confused me and I ran out of time debugging it</a>.</p>
+</div>
+<div class="section" id="conclusion">
+<h2>Conclusion</h2>
+<p>Overall I enjoyed this book and would <a class="reference external" href="http://www.packtpub.com/matplotlib-plotting-cookbook/book">recommend buying it</a>.</p>
+<p>(<em>You should probably</em> <a class="reference external" href="http://aclark.net">hire me</a> <em>or</em> <a class="reference external" href="http://twitter.com/aclark4life">follow me on Twitter</a> <em>or both</em>. <em>And speaking of PACKT, you should definitely</em> <a class="reference external" href="http://blog.aclark.net/2011/05/10/top-10-reasons-plone-33-site-admin-book-is-still-for-you/">buy my book too</a>.)</p>
+<table class="docutils footnote" frame="void" id="id2" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id1">[1]</a></td><td>Yes, I'm familiar with <a class="reference external" href="http://bokeh.pydata.org/">Bokeh</a>.</td></tr>
+</tbody>
+</table>
+</div>
+
+            <a href="#" class="go-top">Go Top</a>
+    <div class="comments">
+        <div id="disqus_thread"></div>
+        <script type="text/javascript">
+            /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+            var disqus_shortname = "aclark-blog"; // required: replace example with your forum shortname
+
+            /* * * DON'T EDIT BELOW THIS LINE * * */
+            (function() {
+                var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </div>
+<footer class="footer">
+    <p>&copy; Alex Clark &ndash;
+        Built with <a href="https://github.com/PurePelicanTheme/pure-single">Pure Theme</a>
+        for <a href="http://blog.getpelican.com/">Pelican</a>
+    </p>
+</footer>        </div>
+    </div>
+    </div>
+    <script>
+        var $top = $('.go-top');
+
+        // Show or hide the sticky footer button
+        $(window).scroll(function() {
+            if ($(this).scrollTop() > 200) {
+                $top.fadeIn(200);
+            } else {
+                $top.fadeOut(200);
+            }
+        });
+
+        // Animate the scroll to top
+        $top.click(function(event) {
+            event.preventDefault();
+            $('html, body').animate({scrollTop: 0}, 300);
+        })
+
+        // Makes sure that the href="#" attached to the <a> elements
+        // don't scroll you back up the page.
+        $('body').on('click', 'a[href="#"]', function(event) {
+            event.preventDefault();
+        });
+    </script>
+    <script type="text/javascript">
+        var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+        document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+        try {
+            var pageTracker = _gat._getTracker("UA-34988446-1");
+            pageTracker._trackPageview();
+            } catch(err) {}
+    </script>
+
+
+    <script>
+    $(document).ready(function() {
+         $('#tipue_search_input').tipuesearch({
+              'show': 6,
+              'mode': 'json',
+              'contentLocation': 'tipuesearch_content.json'
+         });
+    });
+    </script>
+
+</body>
+</html>

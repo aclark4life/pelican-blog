@@ -1,0 +1,464 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Alex Clark - Python Web Developer & Musician, Django, Pillow, Python and more!">
+
+        <link rel="alternate"  href="http://blog.aclark.net/feeds/all.atom.xml" type="application/atom+xml" title="Alex Clark - Python Web Developer & Musician Full Atom Feed"/>
+
+        <title>I love checkoutmanager and dotfiles // Alex Clark - Python Web Developer & Musician // Django, Pillow, Python and more!</title>
+
+    <link href="https://github.com/pythonpackages/pythonpackages/blob/master/favicon.ico?raw=true" rel="icon">
+
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.3.0/pure-min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="http://blog.aclark.net/theme/css/pure.css">
+    <link rel="stylesheet" href="http://blog.aclark.net/theme/css/pygments.css">
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/fitvids/1.0.1/jquery.fitvids.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".content").fitVids();
+        });
+    </script>
+
+    <script type="text/javascript" src="http://blog.aclark.net/tipuesearch/tipuesearch_set.js"></script>
+    <script type="text/javascript" src="http://blog.aclark.net/tipuesearch/tipuesearch_content.js"></script>
+    <link rel="stylesheet" type="text/css" href="http://blog.aclark.net/tipuesearch/tipuesearch.css">
+    <script type="text/javascript" src="http://blog.aclark.net/tipuesearch/tipuesearch.js"></script>
+
+</head>
+
+<body>
+    <div class="pure-g-r" id="layout">
+        <div class="sidebar pure-u">
+            <div class="cover-img" style="background-image: url('http://aclark.net/static/background.jpg')">
+                <div class="cover-body">
+                    <header class="header">
+                        <hgroup>
+                            <img class="avatar" src="http://www.gravatar.com/avatar/6170000a01c67c6ba1e2d4bd87701bae.png">
+                            <h1 class="brand-main"><a href="http://blog.aclark.net">Alex Clark - Python Web Developer & Musician</a></h1>
+                            <p class="tagline">Django, Pillow, Python and more!</p>
+                                <p class="social">
+                                    <a href="https://github.com/aclark4life/">
+                                        <i class="fa fa-github fa-3x"></i>
+                                    </a>
+                                    <a href="https://www.gittip.com/aclark4life">
+                                        <i class="fa fa-gittip fa-3x"></i>
+                                    </a>
+                                    <a href="https://twitter.com/aclark4life">
+                                        <i class="fa fa-twitter-square fa-3x"></i>
+                                    </a>
+                                </p>
+                        </hgroup>
+                    </header>
+                </div>
+            </div>
+        </div>
+        <div id="search" style="letter-spacing: 1px">
+            <form action="http://blog.aclark.net">
+                <input type="text" name="q" id="tipue_search_input" autocomplete="off" required>
+            </form>
+            <div id="tipue_search_content" style="padding-left: 55px"></div>
+        </div>
+    <div class="pure-u">
+        <div class="content">
+            <section class="post">
+                <header class="post-header">
+                    <h1>I love checkoutmanager and dotfiles</h1>
+                        <p class="post-meta">
+                            // under                                 <a class="post-category" href="http://blog.aclark.net/tag/django.html">Django</a>
+                                <a class="post-category" href="http://blog.aclark.net/tag/mozilla.html">Mozilla</a>
+                                <a class="post-category" href="http://blog.aclark.net/tag/plone.html">Plone</a>
+                                <a class="post-category" href="http://blog.aclark.net/tag/python.html">Python</a>
+                        </p>
+                </header>
+            </section>
+            <p><em>An ode to my OS X development workstation setup</em> <a class="footnote-reference" href="#id11" id="id1">[1]</a></p>
+<p>I am big on setting up my development environment, and enjoying the environment I work in. And I'm very thankful to the folks who make my life easier, including the authors of:</p>
+<ul class="simple">
+<li><a class="reference external" href="http://www.ohloh.net/p/python/contributors/summary">Python</a>: Python Core Developers</li>
+<li><a class="reference external" href="http://pypi.python.org/pypi/dotfiles">dotfiles</a>: Jon Bernard</li>
+<li><a class="reference external" href="http://pypi.python.org/pypi/checkoutmanager">checkoutmanager</a>: Reinout Van Rees</li>
+</ul>
+<p>I also love <strong>repetition</strong>. So picture if you will, a new <strong>Macbook Air or Pro</strong> ready to serve as my development workstation. I like to perform, and study, the steps required to turn a new laptop in to my development workstation. So here we go. In this article, I will walk through the steps required to turn a new machine in to my developer workstation. Do follow along!</p>
+<div class="section" id="shell">
+<h2>Shell</h2>
+<p>One of the first things I do on a new system is change my shell to <strong>Zsh</strong> in <tt class="docutils literal">System Preferences <span class="pre">-&gt;</span> Users &amp; Groups <span class="pre">-&gt;</span> Current User <span class="pre">-&gt;</span> Right Click <span class="pre">-&gt;</span> Advanced <span class="pre">Options...</span></tt>. Don't forget to <tt class="docutils literal">Click the lock to make changes</tt> first.</p>
+<img alt="alternate text" src="https://raw.github.com/ACLARKNET/blog/gh-pages/images/zsh.png" />
+<div class="section" id="zsh">
+<h3>Zsh</h3>
+<p>Why <strong>Zsh</strong>? One of my favorite features is <strong>shared history between open sessions</strong>. So I can run a command in one window, and then run the same command from another window by fetching it from the history (with CTRL-R).</p>
+</div>
+</div>
+<div class="section" id="xcode">
+<h2>XCode</h2>
+<p>After I take possession of my new laptop (running <strong>Mountain Lion</strong>, the newest OS X at the time of this writing), I head to the App Store to download XCode. <a class="footnote-reference" href="#id12" id="id2">[2]</a> Among many other things, XCode gives me the GNU C Compiler and allows me to type &quot;gcc&quot; in my <tt class="docutils literal">Applications <span class="pre">-&gt;</span> Utilities <span class="pre">-&gt;</span> Terminal</tt>.</p>
+<img alt="alternate text" src="https://raw.github.com/ACLARKNET/blog/gh-pages/images/gcc.png" />
+</div>
+<div class="section" id="id3">
+<h2>Python</h2>
+<img alt="alternate text" src="https://raw.github.com/ACLARKNET/blog/gh-pages/images/homebrew.png" />
+<p>Now I need a Python interpreter <a class="footnote-reference" href="#id13" id="id4">[3]</a>. For development I use the <a class="reference external" href="https://github.com/collective/buildout.python">Collective Python Buildout</a> but I also enjoy using <a class="reference external" href="http://mxcl.github.com/homebrew/">Homebrew's</a> Python 2.7. I use Homebrew for a variety of other things too (e.g. mobile-shell AKA mosh) so here we go:</p>
+<pre class="literal-block">
+$ ruby -e &quot;$(curl -fsSL https://raw.github.com/mxcl/homebrew/go)&quot;
+</pre>
+<p>… follow instructions …</p>
+<pre class="literal-block">
+$ brew install python
+</pre>
+</div>
+<div class="section" id="git">
+<h2>Git</h2>
+<p>I think OS X (or XCode) includes git, but just in case:</p>
+<pre class="literal-block">
+$ brew install git
+</pre>
+<p>Which reminds me, don't forget that installing the command line utilities in Mountain Lion's XCode requires an additional step in <tt class="docutils literal">Preferences <span class="pre">-&gt;</span> Downloads <span class="pre">-&gt;</span> Command Line Tools <span class="pre">-&gt;</span> Install</tt>:</p>
+<img alt="alternate text" src="https://raw.github.com/ACLARKNET/blog/gh-pages/images/command-line-utils.png" />
+</div>
+<div class="section" id="id5">
+<h2>Dotfiles</h2>
+<p>At this point, I can begin to get serious about turning this new machine in to my developer workstation. And that means: <strong>installing my private ssh key</strong> so I can check out code without typing a password, of course. Normally this would be tedious, but with git and dotfiles it's not so bad. This is what I do from my home directory:</p>
+<pre class="literal-block">
+$ git clone https://super_secret_url/dotfiles.git Dotfiles
+</pre>
+<p>I use https which requires a password for the first time only. Then I edit <tt class="docutils literal"><span class="pre">Dotfiles/.git/config</span></tt> and change the repository URL to <tt class="docutils literal">git&#64;super_secret_url/dotfiles.git</tt>. So every subsequent pull and push will require no password. And to &quot;install&quot; these dotfiles, I do <a class="footnote-reference" href="#id16" id="id6">[6]</a>:</p>
+<pre class="literal-block">
+$ pip install dotfiles
+$ dotfiles -s --force
+</pre>
+<p>Note: the dotfiles command finds my dotfiles in the default directory &quot;Dotfiles&quot; and create symbolic links to them.</p>
+<div class="section" id="distribute-pip">
+<h3>Distribute &amp; Pip</h3>
+<p>Homebrew's Python includes pip, but even if it didn't:</p>
+<pre class="literal-block">
+$ curl -O http://python-distribute.org/distribute_setup.py
+$ /usr/local/bin/python distribute_setup.py
+$ {easy_install, pip install} dotfiles
+</pre>
+<p>In other words, you can always install Distribute <a class="footnote-reference" href="#id14" id="id7">[4]</a>. After which you can use <tt class="docutils literal">easy_install</tt> or <tt class="docutils literal">pip</tt> to install dotfiles. (You can read up on the differences. TL;DR: neither is &quot;better&quot; or &quot;worse&quot;, it's just a question of which tradeoffs you are willing to make. I tend to use pip just because it's newer and I like its requirements.txt feature, but easy_install is still very well supported as part of the Distribute project.)</p>
+</div>
+</div>
+<div class="section" id="id8">
+<h2>Checkoutmanager</h2>
+<p>Now I need some things to develop. Since I work on a bunch of different projects, I need a way to keep track of what should be checked out at any given time. So I do this <a class="footnote-reference" href="#id15" id="id9">[5]</a>:</p>
+<pre class="literal-block">
+$ pip install checkoutmanager
+$ checkoutmanager co
+</pre>
+<p>This creates and populates my <tt class="docutils literal">~/Developer</tt> directory with code. And it &quot;just works&quot; because I keep a <tt class="docutils literal">.checkoutmanager.cfg</tt> in my Dotfiles repository. It currently looks like this:</p>
+<pre class="literal-block">
+[aclark]
+basedir = /Users/aclark/Developer/aclark
+checkouts =
+    git&#64;github.com:aclark4life/aclark4life.github.com.git resume
+    git&#64;github.com:aclark4life/desktops.git
+    git&#64;github.com:aclark4life/hireme.git
+    git&#64;github.com:aclark4life/projects.git
+    git&#64;github.com:aclark4life/reinstall.git
+    git&#64;github.com:ACLARKNET/tweets.git
+    git&#64;github.com:aclark4life/usesthis.git
+vcs = git
+
+[alt]
+basedir = /Users/aclark/Developer/alt
+checkouts =
+    git&#64;github.com:alt-aclark-net/alt-aclark-net.github.com.git
+    git&#64;github.com:alt-aclark-net/dexter.git
+    git&#64;github.com:alt-aclark-net/headstraight.git
+vcs = git
+
+[buildout]
+basedir = /Users/aclark/Developer/buildout
+checkouts =
+    git&#64;github.com:collective/buildout.bootstrap.git
+    git&#64;github.com:buildout/buildout.git
+    git&#64;github.com:buildout/buildout.github.com.git
+vcs = git
+
+[distribute]
+basedir = /Users/aclark/Developer
+checkouts = ssh://hg&#64;bitbucket.org/tarek/distribute
+vcs = hg
+
+[clients]
+basedir = /Users/aclark/Developer
+checkouts =
+; Bunch o client repos
+vcs = git
+
+[clients-hg]
+basedir = /Users/aclark/Developer
+checkouts =
+; Bunch o client repos
+vcs = hg
+
+[dcpython]
+basedir = /Users/aclark/Developer/dcpython
+checkouts =
+    git&#64;github.com:DCPython/dcpython.github.com.git
+    git&#64;github.com:DCPython/pyramid-tutorials.git
+vcs = git
+
+[misc]
+basedir = /Users/aclark/Developer
+checkouts =
+    git&#64;github.com:ACLARKNET/aclarknet.github.com.git blog
+    git&#64;github.com:ACLARKNET/new_style.git
+    git&#64;github.com:aclark4life/binfiles.git
+;    git&#64;github.com:aclark4life/pyramid_python_3.git
+    git&#64;github.com:aclark4life/vanity.git
+    git&#64;github.com:aclark4life/zope2-heroku.git
+    git&#64;github.com:aclark4life/zope2_bootstrap.git
+    git&#64;github.com:codekoala/django-axes.git
+    git&#64;github.com:collective/buildout.python
+vcs = git
+
+[pillow]
+basedir = /Users/aclark/Developer/pillow
+checkouts =
+    git&#64;github.com:python-imaging/Pillow.git
+    git&#64;github.com:python-imaging/python-imaging.github.com.git
+vcs = git
+
+[plethorasociety]
+basedir = /Users/aclark/Developer/plethorasociety
+checkouts =
+    git&#64;github.com:plethorasociety/plethorasociety.github.com.git
+vcs = git
+
+[plone]
+basedir = /Users/aclark/Developer/plone
+checkouts =
+    git&#64;github.com:aclark4life/Plone-Debug-Assistant.git
+    git&#64;github.com:aclark4life/collective.recipe.bluebream.git
+    git&#64;github.com:aclark4life/event_days_indexer.git
+    git&#64;github.com:aclark4life/hello_plone.git
+    git&#64;github.com:aclark4life/mr_migrator_demo.git
+    git&#64;github.com:aclark4life/parse2plone.git
+    git&#64;github.com:aclark4life/plone_1_fun.git
+    git&#64;github.com:aclark4life/plone_addon_upgrade.git
+    git&#64;github.com:aclark4life/plone_guide.git
+    git&#64;github.com:aclark4life/plone_workflow_events.git
+    git&#64;github.com:aclark4life/schemaextender-facetednav-demo.git
+    git&#64;github.com:aclark4life/silly_content_import.git
+    git&#64;github.com:aclark4life/transmogrify.extract.git
+    git&#64;github.com:aclark4life/transmogrify.regexp.git
+    git&#64;github.com:aclark4life/viewlets_dont_suck.git
+    git&#64;github.com:aclark4life/wordpress2plone.git
+    git&#64;github.com:collective/Products.AttachmentField.git
+    git&#64;github.com:collective/Products.CalendarX.git
+    git&#64;github.com:collective/Products.EventRegistration.git
+    git&#64;github.com:collective/Products.PloneSoftwareCenter.git
+    git&#64;github.com:collective/Products.ifQuotes.git
+    git&#64;github.com:collective/Products.naked_plone.git
+    git&#64;github.com:collective/buildout.plonetest.git
+    git&#64;github.com:collective/collective.contacts.git
+    git&#64;github.com:collective/collective.controlpanel.edit_css.git
+    git&#64;github.com:collective/collective.developermanual.git
+    git&#64;github.com:collective/collective.formtoy.git
+    git&#64;github.com:collective/collective.github.com.git
+    git&#64;github.com:collective/collective.googleanalytics.git
+    git&#64;github.com:collective/collective.package.git
+    git&#64;github.com:collective/collective.project.git
+    git&#64;github.com:collective/collective.recaptcha.git
+    git&#64;github.com:collective/collective.recipe.grp.git
+    git&#64;github.com:collective/collective.recipe.rsync.git
+    git&#64;github.com:collective/collective.rip.git
+    git&#64;github.com:collective/collective.stats.git
+    git&#64;github.com:collective/funnelweb.git
+    git&#64;github.com:collective/github-collective.git
+    git&#64;github.com:collective/mr.migrator.git
+    git&#64;github.com:collective/plonecom-buildout.git
+    git&#64;github.com:collective/plonecom.theme.git
+    git&#64;github.com:collective/plonetheme.coolblue.git
+    git&#64;github.com:collective/plonetheme.freshpick.git
+    git&#64;github.com:collective/plonetheme.grungeera.git
+    git&#64;github.com:collective/plonetheme.keepitsimple.git
+    git&#64;github.com:collective/plonetheme.unilluminated.git
+    git&#64;github.com:collective/transmogrify.filesystem.git
+    git&#64;github.com:plone/Installers-OS-X.git
+    git&#64;github.com:plone/Products.PloneOrg.git
+    git&#64;github.com:plone/admin-docs.git
+    git&#64;github.com:plone/buildout.coredev.git
+    git&#64;github.com:plone/planet.plone.org.git
+    git&#64;github.com:plone/plone.api.git
+    git&#64;github.com:plone/plone.github.com.git
+    git&#64;github.com:plone/ploneorg.admin.git
+    git&#64;github.com:plone/plonetheme.ploneorg.git
+vcs = git
+
+[pythonpackages]
+basedir = /Users/aclark/Developer/pythonpackages
+checkouts =
+    git&#64;github.com:aclark4life/buildout-apache-mysql.git
+    git&#64;github.com:aclark4life/buildout-munin.git
+    git&#64;github.com:aclark4life/buildout-mysql.git
+    git&#64;github.com:aclark4life/buildout-nginx.git
+    git&#64;github.com:aclark4life/buildout-plone-haproxy.git
+    git&#64;github.com:aclark4life/buildout-plone-varnish.git
+    git&#64;github.com:aclark4life/buildout-zenoss.git
+    git&#64;bitbucket.org:pythonpackages/pythonpackages.com.git vanity_app
+    git&#64;github.com:pythonpackages/buildout-apache-modwsgi.git
+    git&#64;github.com:pythonpackages/buildout-bluebream.git
+    git&#64;github.com:pythonpackages/buildout-django.git
+    git&#64;github.com:pythonpackages/buildout-jenkins.git
+    git&#64;github.com:pythonpackages/buildout-plone-getpaid.git
+    git&#64;github.com:pythonpackages/buildout-plone.git
+    git&#64;github.com:pythonpackages/buildout-wordpress.git
+    git&#64;github.com:pythonpackages/buildout-zope2.git
+    git&#64;github.com:pythonpackages/experimental.pythonpackages.git
+    git&#64;github.com:pythonpackages/github-services.git pythonpackages-github-services
+    git&#64;github.com:pythonpackages/pyramidpypi.git pythonpackages-index
+    git&#64;github.com:pythonpackages/pythonpackages-blog.git
+    git&#64;github.com:pythonpackages/pythonpackages-docs.git
+    git&#64;github.com:pythonpackages/pythonpackages-graphs.git
+    git&#64;github.com:pythonpackages/pythonpackages-paste.git
+    git&#64;github.com:pythonpackages/pythonpackages-scaffolds.git
+    git&#64;github.com:pythonpackages/pythonpackages.sendpickedversions.git
+    git&#64;github.com:pythonpackages/pythonpackages-whiskers.git
+    git&#64;github.com:pythonpackages/pythonpackages.git
+vcs = git
+
+[toys]
+basedir = /Users/aclark/Developer/toys
+checkouts =
+    git&#64;github.com:aclark4life/basic_pyramid_zodb.git
+    git&#64;github.com:aclark4life/github_repos_cloner.git
+    git&#64;github.com:aclark4life/other.git
+    git&#64;github.com:aclark4life/python_study.git
+    git&#64;github.com:aclark4life/django-hello.git
+vcs = git
+</pre>
+<p>Now it's time to bootstrap the Collective Python Buildout, which gives me <strong>all versions of Python, ever</strong> <a class="footnote-reference" href="#id17" id="id10">[7]</a>. And off we go:</p>
+<pre class="literal-block">
+$ cd Developer/buildout.python
+$ python bootstrap.py
+</pre>
+<p>Finally, there is some PATH configuration required to make all of this seemless. The Collective Python Buildout gets installed in /opt while brew's stuff is in /usr/local. My PATH config currently looks like this:</p>
+<pre class="literal-block">
+export PATH=/usr/local/bin:/usr/local/sbin:/opt/local/bin:/Users/aclark/Developer/buildout.python/python-2.7/bin:$PATH
+export PATH=~/Developer/binfiles:/usr/local/share/npm/bin:$PATH
+</pre>
+<p>With the above configuration, I default to the Python 2.7 in the Collective Python Buildout. That means that is the &quot;python&quot; or &quot;virtualenv&quot; I get when I type those commands. I use the full path or expanded binary name when I need them e.g. /usr/local/bin/python or python3.3.</p>
+<p>That's it! I hope you will check out dotfiles and checkoutmanager for all your development needs.</p>
+<table class="docutils footnote" frame="void" id="id11" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id1">[1]</a></td><td>Not really an ode: <a class="reference external" href="http://en.wikipedia.org/wiki/Ode">http://en.wikipedia.org/wiki/Ode</a></td></tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="id12" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id2">[2]</a></td><td>I know about Kenneth Reitz's XCode Command line Tools only, but if I recall correctly there is some &quot;gotcha&quot; that has bitten me more than once if I use that instead of the full XCode. I wish I could remember what it was now, but it's not coming to me. If it works for you though, great!</td></tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="id13" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id4">[3]</a></td><td>I know about the system Python, and for small things like checkoutmanager and dotfiles I don't mind using it. But there is merit in avoiding it because Apple treats it like &quot;their&quot; Python and makes decisions for you that you may prefer to make yourself. E.g. I believe they use a crippled version of the readline library.</td></tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="id14" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id7">[4]</a></td><td>Distribute is a more actively maintained fork of the venerable setuptools library (which itself is built on top of the Python standard library's distutils). Are we having fun yet?</td></tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="id15" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id9">[5]</a></td><td>I also alias checkoutmanager to cm :-)</td></tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="id16" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id6">[6]</a></td><td>I force because I want to replace the newly created .ssh dir with the one I keep in my Dotfiles repository.</td></tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="id17" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id10">[7]</a></td><td>Well, 2.4 through 3.3 at last count.</td></tr>
+</tbody>
+</table>
+</div>
+
+            <a href="#" class="go-top">Go Top</a>
+    <div class="comments">
+        <div id="disqus_thread"></div>
+        <script type="text/javascript">
+            /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+            var disqus_shortname = "aclark-blog"; // required: replace example with your forum shortname
+
+            /* * * DON'T EDIT BELOW THIS LINE * * */
+            (function() {
+                var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </div>
+<footer class="footer">
+    <p>&copy; Alex Clark &ndash;
+        Built with <a href="https://github.com/PurePelicanTheme/pure-single">Pure Theme</a>
+        for <a href="http://blog.getpelican.com/">Pelican</a>
+    </p>
+</footer>        </div>
+    </div>
+    </div>
+    <script>
+        var $top = $('.go-top');
+
+        // Show or hide the sticky footer button
+        $(window).scroll(function() {
+            if ($(this).scrollTop() > 200) {
+                $top.fadeIn(200);
+            } else {
+                $top.fadeOut(200);
+            }
+        });
+
+        // Animate the scroll to top
+        $top.click(function(event) {
+            event.preventDefault();
+            $('html, body').animate({scrollTop: 0}, 300);
+        })
+
+        // Makes sure that the href="#" attached to the <a> elements
+        // don't scroll you back up the page.
+        $('body').on('click', 'a[href="#"]', function(event) {
+            event.preventDefault();
+        });
+    </script>
+    <script type="text/javascript">
+        var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+        document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+        try {
+            var pageTracker = _gat._getTracker("UA-34988446-1");
+            pageTracker._trackPageview();
+            } catch(err) {}
+    </script>
+
+
+    <script>
+    $(document).ready(function() {
+         $('#tipue_search_input').tipuesearch({
+              'show': 6,
+              'mode': 'json',
+              'contentLocation': 'tipuesearch_content.json'
+         });
+    });
+    </script>
+
+</body>
+</html>

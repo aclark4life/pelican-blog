@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Alex Clark - Python Web Developer & Musician, Django, Pillow, Python and more!">
+
+        <link rel="alternate"  href="http://blog.aclark.net/feeds/all.atom.xml" type="application/atom+xml" title="Alex Clark - Python Web Developer & Musician Full Atom Feed"/>
+
+        <title>The Plones Templer // Alex Clark - Python Web Developer & Musician // Django, Pillow, Python and more!</title>
+
+    <link href="https://github.com/pythonpackages/pythonpackages/blob/master/favicon.ico?raw=true" rel="icon">
+
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.3.0/pure-min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="http://blog.aclark.net/theme/css/pure.css">
+    <link rel="stylesheet" href="http://blog.aclark.net/theme/css/pygments.css">
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/fitvids/1.0.1/jquery.fitvids.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".content").fitVids();
+        });
+    </script>
+
+    <script type="text/javascript" src="http://blog.aclark.net/tipuesearch/tipuesearch_set.js"></script>
+    <script type="text/javascript" src="http://blog.aclark.net/tipuesearch/tipuesearch_content.js"></script>
+    <link rel="stylesheet" type="text/css" href="http://blog.aclark.net/tipuesearch/tipuesearch.css">
+    <script type="text/javascript" src="http://blog.aclark.net/tipuesearch/tipuesearch.js"></script>
+
+</head>
+
+<body>
+    <div class="pure-g-r" id="layout">
+        <div class="sidebar pure-u">
+            <div class="cover-img" style="background-image: url('http://aclark.net/static/background.jpg')">
+                <div class="cover-body">
+                    <header class="header">
+                        <hgroup>
+                            <img class="avatar" src="http://www.gravatar.com/avatar/6170000a01c67c6ba1e2d4bd87701bae.png">
+                            <h1 class="brand-main"><a href="http://blog.aclark.net">Alex Clark - Python Web Developer & Musician</a></h1>
+                            <p class="tagline">Django, Pillow, Python and more!</p>
+                                <p class="social">
+                                    <a href="https://github.com/aclark4life/">
+                                        <i class="fa fa-github fa-3x"></i>
+                                    </a>
+                                    <a href="https://www.gittip.com/aclark4life">
+                                        <i class="fa fa-gittip fa-3x"></i>
+                                    </a>
+                                    <a href="https://twitter.com/aclark4life">
+                                        <i class="fa fa-twitter-square fa-3x"></i>
+                                    </a>
+                                </p>
+                        </hgroup>
+                    </header>
+                </div>
+            </div>
+        </div>
+        <div id="search" style="letter-spacing: 1px">
+            <form action="http://blog.aclark.net">
+                <input type="text" name="q" id="tipue_search_input" autocomplete="off" required>
+            </form>
+            <div id="tipue_search_content" style="padding-left: 55px"></div>
+        </div>
+    <div class="pure-u">
+        <div class="content">
+            <section class="post">
+                <header class="post-header">
+                    <h1>The Plones Templer</h1>
+                        <p class="post-meta">
+                            // under                                 <a class="post-category" href="http://blog.aclark.net/tag/plone.html">Plone</a>
+                                <a class="post-category" href="http://blog.aclark.net/tag/python.html">Python</a>
+                        </p>
+                </header>
+            </section>
+            <p>(c.f. Knights Templar) I think we have a situation that could use the
+help of the Plone and Python communities at large. It goes something
+like this:</p>
+<ol class="arabic simple">
+<li>About 6 years ago, <a class="reference external" href="http://danielnouri.org/blog/devel/zope/quickstart-with-pastescript.html">Daniel Nouri started the ZopeSkel project</a> to
+provide a Zope project template to <a class="reference external" href="http://pypi.python.org/pypi/PasteScript/1.7.5">PasteScript</a></li>
+<li>Sometime between then and now, the Plone community latched on to the
+ZopeSkel project to include templates for its projects.</li>
+<li>About 3 years ago, as part of the ZopeSkel project, <a class="reference external" href="http://www.coactivate.org/projects/zopeskel-bbq-sprint/project-home">some folks at
+the BBQ</a> sprint built a more user friendly UI on top of PasteScript.
+And some refactoring of the project was planned or occurred, during
+which time the entire project was renamed to &quot;Templer&quot;.</li>
+</ol>
+<p>At present, if you install the latest ZopeSkel (3.0b3) you get:</p>
+<pre class="literal-block">
+$ bin/paster create --list-templates
+Available templates:
+&nbsp; archetype:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; A Plone project that uses Archetypes content types
+&nbsp; basic_buildout:&nbsp;&nbsp;&nbsp; A basic buildout skeleton
+&nbsp; basic_namespace:&nbsp;&nbsp; A basic Python project with a namespace package
+&nbsp; basic_package:&nbsp;&nbsp;&nbsp;&nbsp; A basic setuptools-enabled package
+&nbsp; nested_namespace:&nbsp; A basic Python project with a nested namespace (2 dots in name)
+&nbsp; paste_deploy:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; A web application deployed through paste.deploy
+&nbsp; plone_basic:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; A package for Plone add-ons
+&nbsp; plone_nested:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; A package for Plone add-ons with a nested namespace
+&nbsp; recipe:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; A recipe project for zc.buildout
+&nbsp; zope2_basic:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; A Zope project
+&nbsp; zope2_nested:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; A nested-namespace Zope package
+</pre>
+<p>Looks nice, but some templates are missing. If you install the previous
+stable version (2.21.2), you get this:</p>
+<pre class="literal-block">
+$ bin/paster create --list-templates
+Available templates:
+&nbsp; archetype:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; A Plone project that uses Archetypes content types
+&nbsp; basic_namespace:&nbsp;&nbsp;&nbsp; A basic Python project with a namespace package
+&nbsp; basic_package:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; A basic setuptools-enabled package
+&nbsp; basic_zope:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; A Zope project
+&nbsp; kss_plugin:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; A project for a KSS plugin
+&nbsp; nested_namespace:&nbsp;&nbsp; A basic Python project with a nested namespace (2 dots in name)
+&nbsp; paste_deploy:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; A web application deployed through paste.deploy
+&nbsp; plone:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; A project for Plone add-ons
+&nbsp; plone2.5_buildout:&nbsp; A buildout for Plone 2.5 projects
+&nbsp; plone2.5_theme:&nbsp;&nbsp;&nbsp;&nbsp; A theme for Plone 2.5
+&nbsp; plone2_theme:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; A theme for Plone 2.1
+&nbsp; plone3_buildout:&nbsp;&nbsp;&nbsp; A buildout for Plone 3 installation
+&nbsp; plone3_portlet:&nbsp;&nbsp;&nbsp;&nbsp; A Plone 3 portlet
+&nbsp; plone3_theme:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; A theme for Plone 3
+&nbsp; plone4_buildout:&nbsp;&nbsp;&nbsp; A buildout for Plone 4 developer installation
+&nbsp; plone_app:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; A project for Plone add-ons with a nested namespace (2 dots in name)
+&nbsp; plone_hosting:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Plone hosting: buildout with ZEO and Plone versions below 3.2
+&nbsp; plone_pas:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; A project for a Plone PAS plugin
+&nbsp; recipe:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; A recipe project for zc.buildout
+&nbsp; silva_buildout:&nbsp;&nbsp;&nbsp;&nbsp; A buildout for Silva projects
+</pre>
+<p>Looks a lot better. Additionally, with the previous release (2.21.2) you
+can install zopeskel.dexterity, and &quot;dexterity&quot; will show up in the list
+of available templates (but not so with 3.0b3). So what's left to finish
+the move from ZopeSkel to Templer? I'm told by Chris Ewing (the current
+project lead) that it's mostly a matter of missing imports in various
+Python packages that provide templates to PasteScript. Let's. Finish.
+This. This frustrates me because Paster is a nice system (that provides
+pluggable commands, and code gen from templates). And ZopeSkel was a
+nice system (that provided additional templates and a friendly UI). And
+Templer will be a great system, but it's not there yet. So we need to
+help Chris et. al. get it there ASAP. In addition to the code
+refactoring, they have produced some <a class="reference external" href="http://templer-manual.readthedocs.org/en/latest/index.html">nice documentation available on
+readthedocs.org</a>. If you are interested in helping, please gather
+around the #plone on irc.freenode.net to discuss options (I am aclark on
+IRC).</p>
+
+            <a href="#" class="go-top">Go Top</a>
+    <div class="comments">
+        <div id="disqus_thread"></div>
+        <script type="text/javascript">
+            /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+            var disqus_shortname = "aclark-blog"; // required: replace example with your forum shortname
+
+            /* * * DON'T EDIT BELOW THIS LINE * * */
+            (function() {
+                var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </div>
+<footer class="footer">
+    <p>&copy; Alex Clark &ndash;
+        Built with <a href="https://github.com/PurePelicanTheme/pure-single">Pure Theme</a>
+        for <a href="http://blog.getpelican.com/">Pelican</a>
+    </p>
+</footer>        </div>
+    </div>
+    </div>
+    <script>
+        var $top = $('.go-top');
+
+        // Show or hide the sticky footer button
+        $(window).scroll(function() {
+            if ($(this).scrollTop() > 200) {
+                $top.fadeIn(200);
+            } else {
+                $top.fadeOut(200);
+            }
+        });
+
+        // Animate the scroll to top
+        $top.click(function(event) {
+            event.preventDefault();
+            $('html, body').animate({scrollTop: 0}, 300);
+        })
+
+        // Makes sure that the href="#" attached to the <a> elements
+        // don't scroll you back up the page.
+        $('body').on('click', 'a[href="#"]', function(event) {
+            event.preventDefault();
+        });
+    </script>
+    <script type="text/javascript">
+        var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+        document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+        try {
+            var pageTracker = _gat._getTracker("UA-34988446-1");
+            pageTracker._trackPageview();
+            } catch(err) {}
+    </script>
+
+
+    <script>
+    $(document).ready(function() {
+         $('#tipue_search_input').tipuesearch({
+              'show': 6,
+              'mode': 'json',
+              'contentLocation': 'tipuesearch_content.json'
+         });
+    });
+    </script>
+
+</body>
+</html>

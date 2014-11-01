@@ -1,0 +1,357 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Alex Clark - Python Web Developer & Musician, Django, Pillow, Python and more!">
+
+        <link rel="alternate"  href="http://blog.aclark.net/feeds/all.atom.xml" type="application/atom+xml" title="Alex Clark - Python Web Developer & Musician Full Atom Feed"/>
+
+        <title>New Pyramid Site // Alex Clark - Python Web Developer & Musician // Django, Pillow, Python and more!</title>
+
+    <link href="https://github.com/pythonpackages/pythonpackages/blob/master/favicon.ico?raw=true" rel="icon">
+
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.3.0/pure-min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="http://blog.aclark.net/theme/css/pure.css">
+    <link rel="stylesheet" href="http://blog.aclark.net/theme/css/pygments.css">
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/fitvids/1.0.1/jquery.fitvids.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".content").fitVids();
+        });
+    </script>
+
+    <script type="text/javascript" src="http://blog.aclark.net/tipuesearch/tipuesearch_set.js"></script>
+    <script type="text/javascript" src="http://blog.aclark.net/tipuesearch/tipuesearch_content.js"></script>
+    <link rel="stylesheet" type="text/css" href="http://blog.aclark.net/tipuesearch/tipuesearch.css">
+    <script type="text/javascript" src="http://blog.aclark.net/tipuesearch/tipuesearch.js"></script>
+
+</head>
+
+<body>
+    <div class="pure-g-r" id="layout">
+        <div class="sidebar pure-u">
+            <div class="cover-img" style="background-image: url('http://aclark.net/static/background.jpg')">
+                <div class="cover-body">
+                    <header class="header">
+                        <hgroup>
+                            <img class="avatar" src="http://www.gravatar.com/avatar/6170000a01c67c6ba1e2d4bd87701bae.png">
+                            <h1 class="brand-main"><a href="http://blog.aclark.net">Alex Clark - Python Web Developer & Musician</a></h1>
+                            <p class="tagline">Django, Pillow, Python and more!</p>
+                                <p class="social">
+                                    <a href="https://github.com/aclark4life/">
+                                        <i class="fa fa-github fa-3x"></i>
+                                    </a>
+                                    <a href="https://www.gittip.com/aclark4life">
+                                        <i class="fa fa-gittip fa-3x"></i>
+                                    </a>
+                                    <a href="https://twitter.com/aclark4life">
+                                        <i class="fa fa-twitter-square fa-3x"></i>
+                                    </a>
+                                </p>
+                        </hgroup>
+                    </header>
+                </div>
+            </div>
+        </div>
+        <div id="search" style="letter-spacing: 1px">
+            <form action="http://blog.aclark.net">
+                <input type="text" name="q" id="tipue_search_input" autocomplete="off" required>
+            </form>
+            <div id="tipue_search_content" style="padding-left: 55px"></div>
+        </div>
+    <div class="pure-u">
+        <div class="content">
+            <section class="post">
+                <header class="post-header">
+                    <h1>New Pyramid Site</h1>
+                        <p class="post-meta">
+                            // under                                 <a class="post-category" href="http://blog.aclark.net/tag/django.html">Django</a>
+                                <a class="post-category" href="http://blog.aclark.net/tag/mozilla.html">Mozilla</a>
+                                <a class="post-category" href="http://blog.aclark.net/tag/plone.html">Plone</a>
+                                <a class="post-category" href="http://blog.aclark.net/tag/python.html">Python</a>
+                        </p>
+                </header>
+            </section>
+            <img alt="alternate text" src="https://raw.github.com/ACLARKNET/aclarknet/master/screenshot.png" style="width: 98%;" />
+<p>For the first time in 10 years, <a class="reference external" href="http://aclark.net">aclark.net</a> is not powered by Plone. Nothing against Plone: it's still one of the greatest loves of my life (inasmuch as you can love a software and community, as I do).</p>
+<div class="section" id="why">
+<h2>Why</h2>
+<p>This was not the result of a revolutionary plan, rather more of an evolution. It happened like this:</p>
+<ul class="simple">
+<li>As soon as Plone 4.3a1 was released (a year ago?) I deployed a new Plone site to aclark.net with it, featuring a <strong>Diazo</strong> (new Plone theming engine) theme.</li>
+<li>Around the same time I became obsessed with deploying to Heroku, and also gained an interest in <strong>Python 3</strong>.</li>
+<li>A few months ago, I got tired of paying $11/month to host my Plone site so I converted the site to <strong>static HTML</strong> and moved it to <strong>GitHub pages</strong>. But the result was flawed because maintenance involved editing duplicate copies of the website content (e.g. both clients.html and clients/foo.html contained the same text describing &quot;foo&quot;).</li>
+</ul>
+<p>So when it came time to do more than a few casual edits, I knew I had to find a new approach. That's when various elements of the Universe conspired to lead me in a new direction.</p>
+</div>
+<div class="section" id="how">
+<h2>How</h2>
+<div class="section" id="pyramid">
+<h3>Pyramid</h3>
+<p>I spent a lot of time (~ 1 year) developing <a class="reference external" href="http://pythonpackages.com">pythonpackages.com</a> in Pyramid, but the result was a mess (code-wise). I'm in the process of rewriting and open sourcing it, but it's slow going. So what better way to get started than to do a small-ish site in Pyramid for fun?</p>
+</div>
+<div class="section" id="about-me">
+<h3>about.me</h3>
+<p>I also recently gave in and created an <a class="reference external" href="http://about.me/alex.clark">about.me site</a>. I was impressed by their content editing features, and my ability to create a page that looked OK using them.</p>
+<p>In my about.me profile, I used a picture of me and a picture of DC I took in early 2012. When it came time to redo aclark.net I felt like I really wanted to capture the simplicity of the about.me site, so I used the same photo in the background.</p>
+</div>
+<div class="section" id="bootstrap">
+<h3>Bootstrap</h3>
+<p>Bootstrap is old news at this point, but I really enjoy using it and I particularly like that they have added more example templates. So I combined my background photo with one of <a class="reference external" href="http://twitter.github.io/bootstrap/getting-started.html#examples">their example templates</a> and a new site idea was born. As I'm not a particularly talented visual artist, my ability to produce something that looked OK (with code this time) was exciting.</p>
+</div>
+</div>
+<div class="section" id="what">
+<h2>What</h2>
+<p>Until I added a contact form, the site was entirely unremarkable. There are views and routes and templates, typical fare for a web framework. Here is the entire &quot;main routine&quot;:</p>
+<pre class="literal-block">
+from pyramid.session import UnencryptedCookieSessionFactoryConfig
+from pyramid.config import Configurator
+from .redir import blog
+from .redir import blog_entry
+from .redir import blog_slash
+from .views import contact
+from .views import default
+import deform_bootstrap
+
+
+def main(global_config, **settings):
+    &quot;&quot;&quot;
+    Oppan wsgi style! Configure and return WSGI application.
+    &quot;&quot;&quot;
+    my_session_factory = UnencryptedCookieSessionFactoryConfig('itsaseekreet')
+    config = Configurator(session_factory=my_session_factory)
+    config.add_route('blog', '/blog')
+    config.add_route('blog_entry', '/blog/{entry:.*}')
+    config.add_route('blog_slash', '/blog/')
+    config.add_route('contact', '/contact')
+    config.add_route('clients', '/clients')
+    config.add_route('projects', '/projects')
+    config.add_route('services', '/services')
+    config.add_route('team', '/team')
+    config.add_route('testimonials', '/testimonials')
+    config.add_route('root', '/')
+    config.add_static_view(
+        'static', 'aclarknet:static', cache_max_age=3600)
+    config.add_view(blog, route_name='blog')
+    config.add_view(blog_entry, route_name='blog_entry')
+    config.add_view(blog_slash, route_name='blog_slash')
+    config.add_view(
+        default,
+        renderer='aclarknet:templates/clients.mak',
+        route_name='clients')
+    config.add_view(
+        contact,
+        renderer='aclarknet:templates/contact.mak',
+        route_name='contact')
+    config.add_view(
+        default,
+        renderer='aclarknet:templates/projects.mak',
+        route_name='projects')
+    config.add_view(
+        default,
+        renderer='aclarknet:templates/root.mak',
+        route_name='root')
+    config.add_view(
+        default,
+        renderer='aclarknet:templates/services.mak',
+        route_name='services')
+    config.add_view(
+        default,
+        renderer='aclarknet:templates/testimonials.mak',
+        route_name='testimonials')
+    config.add_view(
+        default,
+        renderer='aclarknet:templates/team.mak',
+        route_name='team')
+    config.include(deform_bootstrap)
+    return config.make_wsgi_app()
+</pre>
+<div class="section" id="contact-form">
+<h3>Contact form</h3>
+<p>But then I wanted a contact form. Which lead me to wanting an elegant way to send mail via Heroku. Which lead me to discover <a class="reference external" href="http://sendgrid.com/">SendGrid</a>. Which lead me create some primitive marketing features I am quite proud of and excited about.</p>
+<p>I still ended up sending mail &quot;the old way&quot; via GMail. But now I send two mails: one to <a class="reference external" href="mailto:info&#64;aclark.net">info&#64;aclark.net</a> to alert our staff about the lead (using GMail). And one to the lead acknowledging their submission (using SendGrid). SendGrid keeps a record of all the leads we've contacted, amongst other &quot;fancy marketing features&quot;. Here's the relevant view code:</p>
+<pre class="literal-block">
+import deform
+import smtplib
+
+from email.mime.text import MIMEText
+
+from .config import FORM_ERROR
+from .config import FORM_SUCCESS
+
+from .config import MIME_ONE_RECIPIENT
+from .config import MIME_ONE_SUBJECT
+from .config import MIME_TWO_MESSAGE
+from .config import MIME_TWO_SUBJECT
+
+from .config import GMAIL_HOSTNAME
+from .config import GMAIL_PASSWORD
+from .config import GMAIL_USERNAME
+
+from .config import SENDGRID_HOSTNAME
+from .config import SENDGRID_PASSWORD
+from .config import SENDGRID_USERNAME
+
+from .forms import ContactFormSchema
+
+
+def contact(request):
+    &quot;&quot;&quot;
+    Create and render deform form containing colander schema. Provide
+    sendgrid integration for marketing.
+    &quot;&quot;&quot;
+    button = deform.Button('Send', css_class='span9 btn-block btn-large')
+    schema = ContactFormSchema().bind(request=request)
+    form = deform.Form(schema, buttons=(button, ))
+    if 'Send' in request.POST:
+        items = request.POST.items()
+        try:
+            appstruct = form.validate(items)
+        except deform.ValidationFailure:
+            return {
+                'form': form.render(),
+                'request': request,
+            }
+        # This is the form contents
+        email = appstruct['email']
+        message = appstruct['message']
+
+        # This is the mail to info&#64;aclark.net
+        mime_document_one = MIMEText(message)
+        mime_document_one['Subject'] = MIME_ONE_SUBJECT
+        mime_document_one['To'] = MIME_ONE_RECIPIENT
+        mime_document_one['From'] = email
+        mime_document_one = mime_document_one.as_string()
+
+        # This is the mail to the new lead
+        mime_document_two = MIMEText(MIME_TWO_MESSAGE)
+        mime_document_two['Subject'] = MIME_TWO_SUBJECT
+        mime_document_two['To'] = email
+        mime_document_two['From'] = MIME_ONE_RECIPIENT
+        mime_document_two = mime_document_two.as_string()
+
+        try:
+            # This is the mail to info&#64;aclark.net
+            smtp_server = smtplib.SMTP(GMAIL_HOSTNAME)
+            smtp_server.starttls()
+            smtp_server.login(GMAIL_USERNAME, GMAIL_PASSWORD)
+            smtp_server.sendmail(email, MIME_ONE_RECIPIENT, mime_document_one)
+            smtp_server.quit()
+
+            # This is the mail to the new lead
+            smtp_server = smtplib.SMTP(SENDGRID_HOSTNAME)
+            smtp_server.starttls()
+            smtp_server.login(SENDGRID_USERNAME, SENDGRID_PASSWORD)
+            smtp_server.sendmail(MIME_ONE_RECIPIENT, email, mime_document_two)
+            smtp_server.quit()
+            request.session.flash(FORM_SUCCESS)
+        except:
+            request.session.flash(FORM_ERROR, 'errors')
+        return {
+            'form': form.render(appstruct={}),
+            'request': request,
+        }
+    return {
+        'form': form.render(),
+        'request': request,
+    }
+
+
+def default(request):
+    &quot;&quot;&quot;
+    This is the default view, to be used with most routes since we do not
+    provide any content editing ability yet. Even then, maybe a default view
+    would still be helpful.
+    &quot;&quot;&quot;
+    return {}
+</pre>
+</div>
+</div>
+<div class="section" id="who-cares">
+<h2>Who cares</h2>
+<p>The best thing about all of this being able to run the site <strong>100% for free on Heroku</strong>. Also:</p>
+<ul class="simple">
+<li>Python 3 compat!</li>
+<li>Free caching via CloudFlare</li>
+<li>Free ping service from Pingdom keeps the site from &quot;going to sleep&quot; (HT: natea).</li>
+<li>Updating the site fits my workflow. If I'm the content editor, I don't necessarily need or want to use Plone to edit my content. I can save Plone for my clients, and focus on <strong>what makes them happy</strong> with their CMS system.</li>
+</ul>
+</div>
+
+            <a href="#" class="go-top">Go Top</a>
+    <div class="comments">
+        <div id="disqus_thread"></div>
+        <script type="text/javascript">
+            /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+            var disqus_shortname = "aclark-blog"; // required: replace example with your forum shortname
+
+            /* * * DON'T EDIT BELOW THIS LINE * * */
+            (function() {
+                var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </div>
+<footer class="footer">
+    <p>&copy; Alex Clark &ndash;
+        Built with <a href="https://github.com/PurePelicanTheme/pure-single">Pure Theme</a>
+        for <a href="http://blog.getpelican.com/">Pelican</a>
+    </p>
+</footer>        </div>
+    </div>
+    </div>
+    <script>
+        var $top = $('.go-top');
+
+        // Show or hide the sticky footer button
+        $(window).scroll(function() {
+            if ($(this).scrollTop() > 200) {
+                $top.fadeIn(200);
+            } else {
+                $top.fadeOut(200);
+            }
+        });
+
+        // Animate the scroll to top
+        $top.click(function(event) {
+            event.preventDefault();
+            $('html, body').animate({scrollTop: 0}, 300);
+        })
+
+        // Makes sure that the href="#" attached to the <a> elements
+        // don't scroll you back up the page.
+        $('body').on('click', 'a[href="#"]', function(event) {
+            event.preventDefault();
+        });
+    </script>
+    <script type="text/javascript">
+        var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+        document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+        try {
+            var pageTracker = _gat._getTracker("UA-34988446-1");
+            pageTracker._trackPageview();
+            } catch(err) {}
+    </script>
+
+
+    <script>
+    $(document).ready(function() {
+         $('#tipue_search_input').tipuesearch({
+              'show': 6,
+              'mode': 'json',
+              'contentLocation': 'tipuesearch_content.json'
+         });
+    });
+    </script>
+
+</body>
+</html>

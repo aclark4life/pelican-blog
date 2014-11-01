@@ -1,0 +1,531 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Alex Clark - Python Web Developer & Musician, Django, Pillow, Python and more!">
+
+        <link rel="alternate"  href="http://blog.aclark.net/feeds/all.atom.xml" type="application/atom+xml" title="Alex Clark - Python Web Developer & Musician Full Atom Feed"/>
+
+        <title>Plone 4-3 Alpha 1 In Production // Alex Clark - Python Web Developer & Musician // Django, Pillow, Python and more!</title>
+
+    <link href="https://github.com/pythonpackages/pythonpackages/blob/master/favicon.ico?raw=true" rel="icon">
+
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.3.0/pure-min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="http://blog.aclark.net/theme/css/pure.css">
+    <link rel="stylesheet" href="http://blog.aclark.net/theme/css/pygments.css">
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/fitvids/1.0.1/jquery.fitvids.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".content").fitVids();
+        });
+    </script>
+
+    <script type="text/javascript" src="http://blog.aclark.net/tipuesearch/tipuesearch_set.js"></script>
+    <script type="text/javascript" src="http://blog.aclark.net/tipuesearch/tipuesearch_content.js"></script>
+    <link rel="stylesheet" type="text/css" href="http://blog.aclark.net/tipuesearch/tipuesearch.css">
+    <script type="text/javascript" src="http://blog.aclark.net/tipuesearch/tipuesearch.js"></script>
+
+</head>
+
+<body>
+    <div class="pure-g-r" id="layout">
+        <div class="sidebar pure-u">
+            <div class="cover-img" style="background-image: url('http://aclark.net/static/background.jpg')">
+                <div class="cover-body">
+                    <header class="header">
+                        <hgroup>
+                            <img class="avatar" src="http://www.gravatar.com/avatar/6170000a01c67c6ba1e2d4bd87701bae.png">
+                            <h1 class="brand-main"><a href="http://blog.aclark.net">Alex Clark - Python Web Developer & Musician</a></h1>
+                            <p class="tagline">Django, Pillow, Python and more!</p>
+                                <p class="social">
+                                    <a href="https://github.com/aclark4life/">
+                                        <i class="fa fa-github fa-3x"></i>
+                                    </a>
+                                    <a href="https://www.gittip.com/aclark4life">
+                                        <i class="fa fa-gittip fa-3x"></i>
+                                    </a>
+                                    <a href="https://twitter.com/aclark4life">
+                                        <i class="fa fa-twitter-square fa-3x"></i>
+                                    </a>
+                                </p>
+                        </hgroup>
+                    </header>
+                </div>
+            </div>
+        </div>
+        <div id="search" style="letter-spacing: 1px">
+            <form action="http://blog.aclark.net">
+                <input type="text" name="q" id="tipue_search_input" autocomplete="off" required>
+            </form>
+            <div id="tipue_search_content" style="padding-left: 55px"></div>
+        </div>
+    <div class="pure-u">
+        <div class="content">
+            <section class="post">
+                <header class="post-header">
+                    <h1>Plone 4-3 Alpha 1 In Production</h1>
+                        <p class="post-meta">
+                            // under                                 <a class="post-category" href="http://blog.aclark.net/tag/plone.html">Plone</a>
+                        </p>
+                </header>
+            </section>
+            <p>I love upgrading Plone. Given the choice between an afternoon in the sun and upgrading Plone… OK I'd probably pick the sun, but it'd be close.</p>
+<div class="section" id="always-upgrading">
+<h2>Always upgrading?</h2>
+<p>I would love to see the trend of continuous integration make its way all the way to deployment, so that one day our Plone sites are getting new code as soon as it's released. Until then, it's nice to know that Plone's upgrade procedure is fairly predictable and stable, if not entirely straightforward <a class="footnote-reference" href="#id4" id="id1">[1]</a>.</p>
+</div>
+<div class="section" id="how-do-i-upgrade">
+<h2>How do I upgrade?</h2>
+<p>Unfortunately we <em>still</em> get asked this question in IRC. The TLDR (short) explanation is as follows. Got an old Plone? Here's what you should do:</p>
+<ul class="simple">
+<li>Don't touch it! Leave it alone. It's probably doing something important.</li>
+<li>Install the latest Plone somewhere that is not the location of your current site. Maybe not even on the same machine.</li>
+<li>Copy the production Data.fs file (usually in var/ somewhere) and any blobs you may have (Plone 4 or greater) to the new installation.</li>
+<li>Restart Plone in the foreground (bin/instance fg). If it starts, great! If it doesn't, look for missing add-ons and add their newest-Plone counterparts (this is usually where all the real work happens). Can't find the latest version? Try contacting the author. Stuck? Try Plone support (<a class="reference external" href="http://plone.org/support">http://plone.org/support</a>) or hire a consultant (e.g. <a class="reference external" href="http://aclark.net">http://aclark.net</a>). Otherwise, continue.</li>
+<li>Once your add-ons are in place, start the site in the foreground and give the ZMI a poke (stay out of Plone). Look for broken objects. If you find some, repeat the previous step. Otherwise, continue.</li>
+<li>Once the ZMI looks good, trigger the migration with the Dry Run checkbox selected. See what you get. If it completes, do it for real. If it doesn't, open a ticket on <a class="reference external" href="http://dev.plone.org">http://dev.plone.org</a> so we can track the kinds of issues that folks are encountering in the wild. At this point if you are stuck, try to get help from the support forums (<a class="reference external" href="http://plone.org/support">http://plone.org/support</a>) or hire a consultant (e.g. <a class="reference external" href="http://aclark.net">http://aclark.net</a>). Otherwise, you are almost done!</li>
+<li>Run the upgrade for real i.e. with the Dry Run checkbox unselected. When it finishes (it could take a while depending on the size of your site) check Plone. If everything looks OK, rejoice! If not, don't worry. Check: <tt class="docutils literal">Site Setup <span class="pre">-&gt;</span> ZMI <span class="pre">-&gt;</span> portal_skins <span class="pre">-&gt;</span> custom</tt>. If there is anything inside the custom folder, rename the custom folder to <tt class="docutils literal">custom_X_X</tt> where <tt class="docutils literal">X_X</tt> equals the previous Plone version e.g. <tt class="docutils literal">custom_3_3</tt>. Or, rename it to whatever you like. Or delete it if you don't care about any in-database customizations that have been made. You probably should care, but maybe you don't. Now check Plone again. If everything looks OK, you are done! If not… well you really should be done by now. So if not, please email me: <a class="reference external" href="mailto:aclark&#64;aclark.net">aclark&#64;aclark.net</a> and I will try to help.</li>
+</ul>
+<p>That's still a lot to swallow for a summary. The key point is this: <strong>test the upgrade away from the production site. Don't put yourself in an unpleasant situation you can easily avoid</strong>. Once everything works as expected, make a copy of your Data.fs and perform the upgrade on the production site (by editing the buildout.cfg if you know how, or just make the new Plone installation the production site. Need help? Please feel free to email me: <a class="reference external" href="mailto:aclark&#64;aclark.net">aclark&#64;aclark.net</a> to discuss professional assistance.)</p>
+</div>
+<div class="section" id="how-did-i-upgrade">
+<h2>How did I upgrade?</h2>
+<p>Anyway, the point of this blog entry is to cover the recent upgrade of <a class="reference external" href="http://aclark.net">http://aclark.net</a> to Plone 4.3a1, and the bliss that ensued. Plone 4.3 has lots of goodness in it, most notably the new theme editor from Martin Aspeli. Whilst I haven't fully explored its possibilites, I definitely liked seeing it in place; it's an impressive piece of work and I suspect will be very useful to lots of folks. So here is a brief summary of my upgrade steps, which took about 2-3 days.</p>
+<div class="section" id="create-a-new-empty-repo">
+<h3>Create a new empty repo</h3>
+<p>I started with a public repo in my personal GitHub account, then forked it to my organization for showcasing:</p>
+<ul class="simple">
+<li><a class="reference external" href="https://github.com/ACLARKNET/new_style">https://github.com/ACLARKNET/new_style</a></li>
+</ul>
+</div>
+<div class="section" id="add-the-buildout">
+<h3>Add the buildout</h3>
+<p>Yes, we are still married to Buildout for even the simplest deployments :-/. So in order to make this easy for myself and others, I maintain buildouts for every version of Plone under the <a class="reference external" href="http://pythonpackages.com">http://pythonpackages.com</a> umbrella. I typically start like this from within the checked out repo:</p>
+<div class="highlight"><pre><span class="nv">$ </span>virtualenv .
+<span class="nv">$ </span>bin/pip install zc.buildout
+<span class="nv">$ </span>bin/buildout init
+</pre></div>
+<p>I then <tt class="docutils literal">extend</tt> the desired base configuration (<tt class="docutils literal"><span class="pre">4.3.x-dev</span></tt> in this case) and add additional customizations as needed.</p>
+<div class="highlight"><pre><span class="k">[buildout]</span>
+<span class="na">extends</span> <span class="o">=</span> <span class="s">http://pythonpackages.com/buildout/plone/4.3.x-dev</span>
+
+<span class="k">[plone]</span>
+<span class="na">eggs +</span><span class="o">=</span><span class="s"></span>
+<span class="s">    z3c.jbot</span>
+<span class="s">    ZODB3</span>
+<span class="na">scripts</span> <span class="o">=</span> <span class="s">ZODB3</span>
+<span class="na">resources</span> <span class="o">=</span> <span class="s">${buildout:directory}/resources</span>
+<span class="na">zcml-additional</span> <span class="o">=</span>
+<span class="c1"># XXX Can this be done with p.r.zope2instance yet?</span>
+    <span class="err">&lt;configure</span>
+        <span class="na">xmlns:browser</span><span class="o">=</span><span class="s">&quot;http://namespaces.zope.org/browser&quot;</span>
+<span class="s">        &gt;</span>
+<span class="s">        &lt;include package=&quot;z3c.jbot&quot; file=&quot;meta.zcml&quot; /&gt;</span>
+<span class="s">        &lt;browser:jbot directory=&quot;${buildout:directory}/templates&quot; /&gt;</span>
+<span class="s">    &lt;/configure&gt;</span>
+
+<span class="k">[versions]</span>
+<span class="na">Cheetah</span> <span class="o">=</span> <span class="s">2.2.1</span>
+<span class="na">Pillow</span> <span class="o">=</span> <span class="s">1.7.7</span>
+<span class="na">Products.DocFinderTab</span> <span class="o">=</span> <span class="s">1.0.5</span>
+<span class="na">Products.FSDump</span> <span class="o">=</span> <span class="s">0.9.5</span>
+<span class="na">collective.recipe.supervisor</span> <span class="o">=</span> <span class="s">0.17</span>
+<span class="na">gdata</span> <span class="o">=</span> <span class="s">2.0.17</span>
+<span class="na">meld3</span> <span class="o">=</span> <span class="s">0.6.9</span>
+<span class="na">plone.app.debugtoolbar</span> <span class="o">=</span> <span class="s">1.0a2</span>
+<span class="na">supervisor</span> <span class="o">=</span> <span class="s">3.0b1</span>
+<span class="na">z3c.jbot</span> <span class="o">=</span> <span class="s">0.7.1</span>
+<span class="na">zope2-bootstrap</span> <span class="o">=</span> <span class="s">0.0.7</span>
+</pre></div>
+</div>
+<div class="section" id="develop-the-diazo-theme">
+<h3>Develop the Diazo theme</h3>
+<p>With Diazo, Python packaging is optional. And the <tt class="docutils literal">resources</tt> parameter available from <tt class="docutils literal">plone.recipe.zope2instance</tt> makes it easy to start theming without a Python package. I started with a bootstrap template:</p>
+<div class="highlight"><pre><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">&quot;en&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;head&gt;</span>
+    <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">&quot;utf-8&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;title&gt;</span>Bootstrap, from Twitter<span class="nt">&lt;/title&gt;</span>
+    <span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">&quot;viewport&quot;</span> <span class="na">content=</span><span class="s">&quot;width=device-width, initial-scale=1.0&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">&quot;description&quot;</span> <span class="na">content=</span><span class="s">&quot;&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">&quot;author&quot;</span> <span class="na">content=</span><span class="s">&quot;&quot;</span><span class="nt">&gt;</span>
+
+    <span class="c">&lt;!-- Le styles --&gt;</span>
+    <span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">&quot;/++theme++static/css/bootstrap.css&quot;</span> <span class="na">rel=</span><span class="s">&quot;stylesheet&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">&quot;/++theme++static/css/new_style.css&quot;</span> <span class="na">rel=</span><span class="s">&quot;stylesheet&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">&#39;http://fonts.googleapis.com/css?family=Oswald&#39;</span> <span class="na">rel=</span><span class="s">&#39;stylesheet&#39;</span> <span class="na">type=</span><span class="s">&#39;text/css&#39;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;style </span><span class="na">type=</span><span class="s">&quot;text/css&quot;</span><span class="nt">&gt;</span>
+      <span class="nt">body</span> <span class="p">{</span>
+        <span class="k">padding-top</span><span class="o">:</span> <span class="m">60px</span><span class="p">;</span>
+        <span class="k">padding-bottom</span><span class="o">:</span> <span class="m">40px</span><span class="p">;</span>
+      <span class="p">}</span>
+    <span class="nt">&lt;/style&gt;</span>
+
+    <span class="c">&lt;!-- Le HTML5 shim, for IE6-8 support of HTML5 elements --&gt;</span>
+    <span class="c">&lt;!--[if lt IE 9]&gt;</span>
+<span class="c">      &lt;script src=&quot;http://html5shim.googlecode.com/svn/trunk/html5.js&quot;&gt;&lt;/script&gt;</span>
+<span class="c">    &lt;![endif]--&gt;</span>
+
+    <span class="c">&lt;!-- Le fav and touch icons --&gt;</span>
+    <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">&quot;shortcut icon&quot;</span> <span class="na">href=</span><span class="s">&quot;/++theme++static/img/favicon.ico&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">&quot;apple-touch-icon-precomposed&quot;</span> <span class="na">sizes=</span><span class="s">&quot;144x144&quot;</span> <span class="na">href=</span><span class="s">&quot;/++theme++static/ico/apple-touch-icon-144-precomposed.png&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">&quot;apple-touch-icon-precomposed&quot;</span> <span class="na">sizes=</span><span class="s">&quot;114x114&quot;</span> <span class="na">href=</span><span class="s">&quot;/++theme++static/ico/apple-touch-icon-114-precomposed.png&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">&quot;apple-touch-icon-precomposed&quot;</span> <span class="na">sizes=</span><span class="s">&quot;72x72&quot;</span> <span class="na">href=</span><span class="s">&quot;/++theme++static/ico/apple-touch-icon-72-precomposed.png&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">&quot;apple-touch-icon-precomposed&quot;</span> <span class="na">href=</span><span class="s">&quot;/++theme++static/ico/apple-touch-icon-57-precomposed.png&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;script </span><span class="na">type=</span><span class="s">&quot;text/javascript&quot;</span><span class="nt">&gt;</span>
+
+      <span class="kd">var</span> <span class="nx">_gaq</span> <span class="o">=</span> <span class="nx">_gaq</span> <span class="o">||</span> <span class="p">[];</span>
+      <span class="nx">_gaq</span><span class="p">.</span><span class="nx">push</span><span class="p">([</span><span class="s1">&#39;_setAccount&#39;</span><span class="p">,</span> <span class="s1">&#39;UA-35125830-1&#39;</span><span class="p">]);</span>
+      <span class="nx">_gaq</span><span class="p">.</span><span class="nx">push</span><span class="p">([</span><span class="s1">&#39;_trackPageview&#39;</span><span class="p">]);</span>
+
+      <span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+        <span class="kd">var</span> <span class="nx">ga</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s1">&#39;script&#39;</span><span class="p">);</span> <span class="nx">ga</span><span class="p">.</span><span class="nx">type</span> <span class="o">=</span> <span class="s1">&#39;text/javascript&#39;</span><span class="p">;</span> <span class="nx">ga</span><span class="p">.</span><span class="nx">async</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
+        <span class="nx">ga</span><span class="p">.</span><span class="nx">src</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;https:&#39;</span> <span class="o">==</span> <span class="nb">document</span><span class="p">.</span><span class="nx">location</span><span class="p">.</span><span class="nx">protocol</span> <span class="o">?</span> <span class="s1">&#39;https://ssl&#39;</span> <span class="o">:</span> <span class="s1">&#39;http://www&#39;</span><span class="p">)</span> <span class="o">+</span> <span class="s1">&#39;.google-analytics.com/ga.js&#39;</span><span class="p">;</span>
+        <span class="kd">var</span> <span class="nx">s</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementsByTagName</span><span class="p">(</span><span class="s1">&#39;script&#39;</span><span class="p">)[</span><span class="mi">0</span><span class="p">];</span> <span class="nx">s</span><span class="p">.</span><span class="nx">parentNode</span><span class="p">.</span><span class="nx">insertBefore</span><span class="p">(</span><span class="nx">ga</span><span class="p">,</span> <span class="nx">s</span><span class="p">);</span>
+      <span class="p">})();</span>
+
+    <span class="nt">&lt;/script&gt;</span>
+  <span class="nt">&lt;/head&gt;</span>
+
+  <span class="nt">&lt;body&gt;</span>
+
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;navbar navbar-inverse navbar-fixed-top&quot;</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;navbar-inner&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;container&quot;</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;btn btn-navbar&quot;</span> <span class="na">data-toggle=</span><span class="s">&quot;collapse&quot;</span> <span class="na">data-target=</span><span class="s">&quot;.nav-collapse&quot;</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;icon-bar&quot;</span><span class="nt">&gt;&lt;/span&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;icon-bar&quot;</span><span class="nt">&gt;&lt;/span&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;icon-bar&quot;</span><span class="nt">&gt;&lt;/span&gt;</span>
+          <span class="nt">&lt;/a&gt;</span>
+          <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;brand&quot;</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span><span class="nt">&gt;</span>Project name<span class="nt">&lt;/a&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;nav-collapse collapse&quot;</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">&quot;nav&quot;</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">&quot;active&quot;</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span><span class="nt">&gt;</span>Home<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+              <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;#about&quot;</span><span class="nt">&gt;</span>About<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+              <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;#contact&quot;</span><span class="nt">&gt;</span>Contact<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+              <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">&quot;dropdown&quot;</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span> <span class="na">class=</span><span class="s">&quot;dropdown-toggle&quot;</span> <span class="na">data-toggle=</span><span class="s">&quot;dropdown&quot;</span><span class="nt">&gt;</span>Dropdown <span class="nt">&lt;b</span> <span class="na">class=</span><span class="s">&quot;caret&quot;</span><span class="nt">&gt;&lt;/b&gt;&lt;/a&gt;</span>
+                <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">&quot;dropdown-menu&quot;</span><span class="nt">&gt;</span>
+                  <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span><span class="nt">&gt;</span>Action<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+                  <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span><span class="nt">&gt;</span>Another action<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+                  <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span><span class="nt">&gt;</span>Something else here<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+                  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">&quot;divider&quot;</span><span class="nt">&gt;&lt;/li&gt;</span>
+                  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">&quot;nav-header&quot;</span><span class="nt">&gt;</span>Nav header<span class="nt">&lt;/li&gt;</span>
+                  <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span><span class="nt">&gt;</span>Separated link<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+                  <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span><span class="nt">&gt;</span>One more separated link<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+                <span class="nt">&lt;/ul&gt;</span>
+              <span class="nt">&lt;/li&gt;</span>
+            <span class="nt">&lt;/ul&gt;</span>
+          <span class="nt">&lt;/div&gt;</span><span class="c">&lt;!--/.nav-collapse --&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;container&quot;</span><span class="nt">&gt;</span>
+
+      <span class="c">&lt;!-- Main hero unit for a primary marketing message or call to action --&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;hero-unit&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;h1&gt;</span>Hello, world!<span class="nt">&lt;/h1&gt;</span>
+        <span class="nt">&lt;p&gt;</span>This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more unique.<span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;p&gt;&lt;a</span> <span class="na">class=</span><span class="s">&quot;btn btn-primary btn-large&quot;</span><span class="nt">&gt;</span>Learn more <span class="ni">&amp;raquo;</span><span class="nt">&lt;/a&gt;&lt;/p&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+
+      <span class="c">&lt;!-- Example row of columns --&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;row&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;span6 col1&quot;</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;h2&gt;</span>Heading<span class="nt">&lt;/h2&gt;</span>
+          <span class="nt">&lt;p&gt;</span>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. <span class="nt">&lt;/p&gt;</span>
+          <span class="nt">&lt;p&gt;&lt;a</span> <span class="na">class=</span><span class="s">&quot;btn&quot;</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span><span class="nt">&gt;</span>View details <span class="ni">&amp;raquo;</span><span class="nt">&lt;/a&gt;&lt;/p&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;span6 col2&quot;</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;h2&gt;</span>Heading<span class="nt">&lt;/h2&gt;</span>
+          <span class="nt">&lt;p&gt;</span>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. <span class="nt">&lt;/p&gt;</span>
+          <span class="nt">&lt;p&gt;&lt;a</span> <span class="na">class=</span><span class="s">&quot;btn&quot;</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span><span class="nt">&gt;</span>View details <span class="ni">&amp;raquo;</span><span class="nt">&lt;/a&gt;&lt;/p&gt;</span>
+       <span class="nt">&lt;/div&gt;</span>
+
+      <span class="nt">&lt;hr&gt;</span>
+
+      <span class="nt">&lt;footer&gt;</span>
+        <span class="nt">&lt;p&gt;</span><span class="ni">&amp;copy;</span> Company 2012<span class="nt">&lt;/p&gt;</span>
+      <span class="nt">&lt;/footer&gt;</span>
+
+    <span class="nt">&lt;/div&gt;</span> <span class="c">&lt;!-- /container --&gt;</span>
+
+    <span class="c">&lt;!-- Le javascript</span>
+<span class="c">    ================================================== --&gt;</span>
+    <span class="c">&lt;!-- Placed at the end of the document so the pages load faster --&gt;</span>
+    <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">&quot;/++theme++static/js/jquery.js&quot;</span><span class="nt">&gt;&lt;/script&gt;</span>
+    <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">&quot;/++theme++static/js/bootstrap.min.js&quot;</span><span class="nt">&gt;&lt;/script&gt;</span>
+    <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">&quot;http://platform.twitter.com/widgets.js&quot;</span> <span class="na">type=</span><span class="s">&quot;text/javascript&quot;</span><span class="nt">&gt;&lt;/script&gt;</span>
+    <span class="nt">&lt;script </span><span class="na">type=</span><span class="s">&quot;text/javascript&quot;</span><span class="nt">&gt;</span>
+        <span class="nx">$</span><span class="p">(</span><span class="nb">document</span><span class="p">).</span><span class="nx">ready</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+            <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;a.lightbox&#39;</span><span class="p">).</span><span class="nx">lightBox</span><span class="p">();</span>
+            <span class="nx">$</span><span class="p">(</span><span class="s2">&quot;.client&quot;</span><span class="p">).</span><span class="nx">collapse</span><span class="p">()</span>
+            <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;.carousel&#39;</span><span class="p">).</span><span class="nx">carousel</span><span class="p">({</span>
+                <span class="nx">interval</span><span class="o">:</span> <span class="mi">10000</span><span class="p">,</span>
+            <span class="p">}</span>
+            <span class="p">)</span>
+        <span class="p">});</span>
+    <span class="nt">&lt;/script&gt;</span>
+  <span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</pre></div>
+<p>Then added some Diazo rules:</p>
+<div class="highlight"><pre><span class="nt">&lt;rules</span>
+    <span class="na">xmlns=</span><span class="s">&quot;http://namespaces.plone.org/diazo&quot;</span>
+    <span class="na">xmlns:css=</span><span class="s">&quot;http://namespaces.plone.org/diazo/css&quot;</span>
+    <span class="na">xmlns:xsl=</span><span class="s">&quot;http://www.w3.org/1999/XSL/Transform&quot;</span><span class="nt">&gt;</span>
+
+    <span class="nt">&lt;append</span> <span class="na">css:content=</span><span class="s">&quot;#category&quot;</span> <span class="na">css:theme=</span><span class="s">&quot;.hero-unit&quot;</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;before</span> <span class="na">content=</span><span class="s">&#39;/html/head/title&#39;</span> <span class="na">theme=</span><span class="s">&#39;/html/head/title&#39;</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;theme</span> <span class="na">href=</span><span class="s">&quot;index.html&quot;</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;replace</span> <span class="na">css:content=</span><span class="s">&quot;.nav&quot;</span> <span class="na">css:theme=</span><span class="s">&quot;.nav&quot;</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;replace</span> <span class="na">css:content=</span><span class="s">&quot;#content&quot;</span> <span class="na">css:theme-children=</span><span class="s">&quot;.hero-unit&quot;</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;replace</span> <span class="na">css:content=</span><span class="s">&quot;#portal-column-one&quot;</span> <span class="na">css:theme-children=</span><span class="s">&quot;.col1&quot;</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;replace</span> <span class="na">css:content=</span><span class="s">&quot;#portal-column-two&quot;</span> <span class="na">css:theme-children=</span><span class="s">&quot;.col2&quot;</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;replace</span> <span class="na">css:content=</span><span class="s">&quot;footer&quot;</span> <span class="na">css:theme=</span><span class="s">&quot;footer&quot;</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;replace</span> <span class="na">css:content=</span><span class="s">&quot;#portal-logo&quot;</span> <span class="na">css:theme=</span><span class="s">&quot;.brand&quot;</span> <span class="nt">/&gt;</span>
+
+<span class="nt">&lt;/rules&gt;</span>
+</pre></div>
+<p>Then styled to fit with CSS:</p>
+<div class="highlight"><pre><span class="nf">#about</span> <span class="p">{</span>
+    <span class="k">padding-top</span><span class="o">:</span> <span class="m">9px</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.alex</span> <span class="p">{</span>
+    <span class="k">border-bottom</span><span class="o">:</span> <span class="m">1px</span> <span class="k">solid</span> <span class="m">#FAFAFA</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">body</span> <span class="p">{</span>
+    <span class="k">background</span><span class="o">:</span> <span class="sx">url(&quot;/++theme++static/img/aclark-net-background.png&quot;)</span> <span class="k">repeat-x</span><span class="p">;</span>
+    <span class="k">background-color</span><span class="o">:</span> <span class="nb">black</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.brand</span> <span class="p">{</span>
+    <span class="k">color</span><span class="o">:</span> <span class="m">#FAFAFA</span> <span class="cp">!important</span><span class="p">;</span>
+    <span class="k">font-family</span><span class="o">:</span> <span class="n">Georgia</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.brand</span> <span class="nc">.alpha</span> <span class="p">{</span>
+    <span class="k">font-size</span><span class="o">:</span> <span class="m">360</span><span class="o">%</span><span class="p">;</span>
+    <span class="k">font-style</span><span class="o">:</span> <span class="k">italic</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.brand</span> <span class="nc">.name</span> <span class="p">{</span>
+    <span class="k">font-size</span><span class="o">:</span> <span class="m">50px</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.carousel-inner</span> <span class="p">{</span>
+    <span class="k">border-bottom</span><span class="o">:</span> <span class="m">1px</span> <span class="k">solid</span> <span class="m">#CCC</span><span class="p">;</span>
+    <span class="k">padding-bottom</span><span class="o">:</span> <span class="m">2em</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nf">#content</span> <span class="p">{</span>
+    <span class="k">color</span><span class="o">:</span> <span class="m">#FAFAFA</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.description</span> <span class="p">{</span>
+    <span class="k">font-size</span><span class="o">:</span> <span class="m">125</span><span class="o">%</span><span class="p">;</span>
+    <span class="k">margin</span><span class="o">:</span> <span class="m">1em</span> <span class="m">0</span> <span class="m">1em</span> <span class="m">0</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.documentDescription</span> <span class="p">{</span>
+    <span class="k">font-size</span><span class="o">:</span> <span class="m">125</span><span class="o">%</span><span class="p">;</span>
+    <span class="k">margin</span><span class="o">:</span> <span class="m">1em</span> <span class="m">0</span> <span class="m">1em</span> <span class="m">0</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">dt</span> <span class="p">{</span>
+    <span class="k">margin</span><span class="o">:</span> <span class="m">1em</span> <span class="m">0</span> <span class="m">1em</span> <span class="m">0</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nf">#facebook</span> <span class="p">{</span>
+    <span class="k">padding-top</span><span class="o">:</span> <span class="m">1px</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">footer</span> <span class="p">{</span>
+    <span class="k">border-top</span><span class="o">:</span> <span class="m">1px</span> <span class="k">solid</span> <span class="m">#999999</span><span class="p">;</span>
+    <span class="k">color</span><span class="o">:</span> <span class="m">#999999</span><span class="p">;</span>
+    <span class="k">margin-top</span><span class="o">:</span> <span class="m">600px</span><span class="p">;</span>
+    <span class="k">width</span><span class="o">:</span> <span class="m">100</span><span class="o">%</span><span class="p">;</span>
+    <span class="k">padding-top</span><span class="o">:</span> <span class="m">1em</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">footer</span> <span class="nt">li</span> <span class="p">{</span>
+    <span class="k">list-style-type</span><span class="o">:</span> <span class="k">none</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.hero-unit</span> <span class="p">{</span>
+    <span class="k">background</span><span class="o">:</span> <span class="nb">black</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">hr</span> <span class="p">{</span>
+    <span class="k">border</span><span class="o">:</span> <span class="k">none</span><span class="p">;</span>
+    <span class="k">background-color</span><span class="o">:</span> <span class="m">#CCC</span><span class="p">;</span>
+    <span class="k">color</span><span class="o">:</span> <span class="m">#CCC</span><span class="p">;</span>
+    <span class="k">height</span><span class="o">:</span> <span class="m">1px</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.image-left</span> <span class="p">{</span>
+    <span class="k">float</span><span class="o">:</span> <span class="k">left</span><span class="p">;</span>
+    <span class="k">margin</span><span class="o">:</span> <span class="m">0</span> <span class="m">1em</span> <span class="m">0</span> <span class="m">0</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.navbar-inner</span> <span class="p">{</span>
+    <span class="k">background</span><span class="o">:</span> <span class="m">#AA001F</span> <span class="cp">!important</span><span class="p">;</span>
+    <span class="k">height</span><span class="o">:</span> <span class="m">50px</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.portletHeader</span> <span class="p">{</span>
+    <span class="k">font-size</span><span class="o">:</span> <span class="m">125</span><span class="o">%</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nf">#portal-column-one</span> <span class="p">{</span>
+    <span class="k">color</span><span class="o">:</span> <span class="m">#FAFAFA</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nf">#portal-column-two</span> <span class="p">{</span>
+    <span class="k">color</span><span class="o">:</span> <span class="m">#FAFAFA</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.team-member</span> <span class="p">{</span>
+    <span class="k">border-bottom</span><span class="o">:</span> <span class="m">1px</span> <span class="k">solid</span> <span class="m">#FAFAFA</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.service</span> <span class="p">{</span>
+    <span class="k">padding</span><span class="o">:</span> <span class="m">30px</span> <span class="m">0</span> <span class="m">30px</span> <span class="m">0</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nf">#twitter</span> <span class="p">{</span>
+    <span class="k">padding-top</span><span class="o">:</span> <span class="m">15px</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="customize-templates">
+<h2>Customize templates</h2>
+<p>As you may have noticed above I use <tt class="docutils literal">z3c.jbot</tt> to customize various Plone templates.</p>
+<img alt="alternate text" src="https://raw.github.com/ACLARKNET/blog/gh-pages/images/custom-templates.png" />
+</div>
+<div class="section" id="add-content">
+<h2>Add content</h2>
+<p>I then cut/pasted all my content from the old site to the new site. This is a lot of work, but I like mimicking the experience of someone non-tech-savvy using Plone for the first time.</p>
+</div>
+<div class="section" id="what-s-left">
+<h2>What's left?</h2>
+<p>I am very happy with this upgrade, but of course it's not perfect.</p>
+<div class="section" id="use-sunburst-theme-for-content-editing">
+<h3>Use Sunburst theme for content editing</h3>
+<p>If you are Diazo-savvy, you may notice I completely ignore styling the content editing interface. Instead I rely on the unthemed <a class="footnote-reference" href="#id5" id="id2">[2]</a> site for content editing.</p>
+<img alt="alternate text" src="https://raw.github.com/ACLARKNET/blog/gh-pages/images/edit-ui.png" />
+</div>
+<div class="section" id="use-diazo-theme-for-public-facing-view">
+<h3>Use Diazo theme for public facing view</h3>
+<p>Of course, visitors to <a class="reference external" href="http://aclark.net">http://aclark.net</a> see the Diazo theme.</p>
+<img alt="alternate text" src="images/diazo-theme.png" />
+<p>I'm hoping that the Plone team can unify the content editing experience again in Plone 5, possibly via simplifying the &quot;old style&quot; templates such that it's easier to map them to custom Diazo themes.</p>
+</div>
+</div>
+<div class="section" id="hightlights">
+<h2>Hightlights</h2>
+<p>Lastly, I'll cover some of the remaining highlights.</p>
+<div class="section" id="it-works">
+<h3>It works!</h3>
+<p>Plone 4.3a1 is remarkably stable. The TinyMCE UI is a bit rough, and the sitemap is broken <a class="footnote-reference" href="#id6" id="id3">[3]</a>, but it works.</p>
+</div>
+<div class="section" id="the-all-content-view-is-awesome">
+<h3>The <tt class="docutils literal">All content</tt> view is awesome</h3>
+<img alt="alternate text" src="images/all-content.png" />
+<p>Contributed by Laurence Rowe for Plone 4, I use the <tt class="docutils literal">All content</tt> view in two places:</p>
+<ul class="simple">
+<li><a class="reference external" href="http://aclark.net/services">http://aclark.net/services</a></li>
+<li><a class="reference external" href="http://aclark.net/team">http://aclark.net/team</a></li>
+</ul>
+<p>I love the ability to easily aggregate the contents of pages within a folder.</p>
+</div>
+<div class="section" id="my-deployment-is-awesome">
+<h3>My deployment is awesome</h3>
+<p>I'm really happy with the following trick I used this time around:</p>
+<ul class="simple">
+<li>Content is stored in Data.fs (of course) which I've checked into a private repo on bitbucket, and save nightly with an automated commit and push. I'm able to present the site buildout and theme to the public but keep the Data.fs private via git submodules.</li>
+</ul>
+<p>Prior to this, the entire site was stored in a private repo on bitbucket. And finally:</p>
+<ul class="simple">
+<li>If you load the site, you'll notice the images (configured as static resources) are a bit laggy. I'm a big fan of of CloudFlare and current user via pythonpackages.com, so I'll probably be configuring aclark.net to use it soon too. Once that is done, the site should be lightning fast instead of just really fast.</li>
+</ul>
+<p>Like this article and/or my open source work in general? Please <a class="reference external" href="http://gittip.com/aclark4life">consider supporting me on gittip</a>.</p>
+<table class="docutils footnote" frame="void" id="id4" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id1">[1]</a></td><td>Some ideas for improving upgrades: 1.) optionally rename portal_skins/custom during the upgrade process. 2.) Include suggestions in the form copy to stage the upgrade away from the current production site. 3.) Report on availability of add-ons compatible with latest version of Plone.</td></tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="id5" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id2">[2]</a></td><td>Unthemed meaning un-diazo-themed. The content UI is themed with the Sunburst theme &quot;the old way&quot;.</td></tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="id6" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id3">[3]</a></td><td><a class="reference external" href="https://dev.plone.org/ticket/13178">https://dev.plone.org/ticket/13178</a></td></tr>
+</tbody>
+</table>
+</div>
+</div>
+
+            <a href="#" class="go-top">Go Top</a>
+    <div class="comments">
+        <div id="disqus_thread"></div>
+        <script type="text/javascript">
+            /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+            var disqus_shortname = "aclark-blog"; // required: replace example with your forum shortname
+
+            /* * * DON'T EDIT BELOW THIS LINE * * */
+            (function() {
+                var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </div>
+<footer class="footer">
+    <p>&copy; Alex Clark &ndash;
+        Built with <a href="https://github.com/PurePelicanTheme/pure-single">Pure Theme</a>
+        for <a href="http://blog.getpelican.com/">Pelican</a>
+    </p>
+</footer>        </div>
+    </div>
+    </div>
+    <script>
+        var $top = $('.go-top');
+
+        // Show or hide the sticky footer button
+        $(window).scroll(function() {
+            if ($(this).scrollTop() > 200) {
+                $top.fadeIn(200);
+            } else {
+                $top.fadeOut(200);
+            }
+        });
+
+        // Animate the scroll to top
+        $top.click(function(event) {
+            event.preventDefault();
+            $('html, body').animate({scrollTop: 0}, 300);
+        })
+
+        // Makes sure that the href="#" attached to the <a> elements
+        // don't scroll you back up the page.
+        $('body').on('click', 'a[href="#"]', function(event) {
+            event.preventDefault();
+        });
+    </script>
+    <script type="text/javascript">
+        var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+        document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+        try {
+            var pageTracker = _gat._getTracker("UA-34988446-1");
+            pageTracker._trackPageview();
+            } catch(err) {}
+    </script>
+
+
+    <script>
+    $(document).ready(function() {
+         $('#tipue_search_input').tipuesearch({
+              'show': 6,
+              'mode': 'json',
+              'contentLocation': 'tipuesearch_content.json'
+         });
+    });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Alex Clark - Python Web Developer & Musician, Django, Pillow, Python and more!">
+
+        <link rel="alternate"  href="http://blog.aclark.net/feeds/all.atom.xml" type="application/atom+xml" title="Alex Clark - Python Web Developer & Musician Full Atom Feed"/>
+
+        <title>pythonpackages-com one year later // Alex Clark - Python Web Developer & Musician // Django, Pillow, Python and more!</title>
+
+    <link href="https://github.com/pythonpackages/pythonpackages/blob/master/favicon.ico?raw=true" rel="icon">
+
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.3.0/pure-min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="http://blog.aclark.net/theme/css/pure.css">
+    <link rel="stylesheet" href="http://blog.aclark.net/theme/css/pygments.css">
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/fitvids/1.0.1/jquery.fitvids.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".content").fitVids();
+        });
+    </script>
+
+    <script type="text/javascript" src="http://blog.aclark.net/tipuesearch/tipuesearch_set.js"></script>
+    <script type="text/javascript" src="http://blog.aclark.net/tipuesearch/tipuesearch_content.js"></script>
+    <link rel="stylesheet" type="text/css" href="http://blog.aclark.net/tipuesearch/tipuesearch.css">
+    <script type="text/javascript" src="http://blog.aclark.net/tipuesearch/tipuesearch.js"></script>
+
+</head>
+
+<body>
+    <div class="pure-g-r" id="layout">
+        <div class="sidebar pure-u">
+            <div class="cover-img" style="background-image: url('http://aclark.net/static/background.jpg')">
+                <div class="cover-body">
+                    <header class="header">
+                        <hgroup>
+                            <img class="avatar" src="http://www.gravatar.com/avatar/6170000a01c67c6ba1e2d4bd87701bae.png">
+                            <h1 class="brand-main"><a href="http://blog.aclark.net">Alex Clark - Python Web Developer & Musician</a></h1>
+                            <p class="tagline">Django, Pillow, Python and more!</p>
+                                <p class="social">
+                                    <a href="https://github.com/aclark4life/">
+                                        <i class="fa fa-github fa-3x"></i>
+                                    </a>
+                                    <a href="https://www.gittip.com/aclark4life">
+                                        <i class="fa fa-gittip fa-3x"></i>
+                                    </a>
+                                    <a href="https://twitter.com/aclark4life">
+                                        <i class="fa fa-twitter-square fa-3x"></i>
+                                    </a>
+                                </p>
+                        </hgroup>
+                    </header>
+                </div>
+            </div>
+        </div>
+        <div id="search" style="letter-spacing: 1px">
+            <form action="http://blog.aclark.net">
+                <input type="text" name="q" id="tipue_search_input" autocomplete="off" required>
+            </form>
+            <div id="tipue_search_content" style="padding-left: 55px"></div>
+        </div>
+    <div class="pure-u">
+        <div class="content">
+            <section class="post">
+                <header class="post-header">
+                    <h1>pythonpackages-com one year later</h1>
+                        <p class="post-meta">
+                            // under                                 <a class="post-category" href="http://blog.aclark.net/tag/plone.html">Plone</a>
+                                <a class="post-category" href="http://blog.aclark.net/tag/python.html">Python</a>
+                        </p>
+                </header>
+            </section>
+            <p>We are rolling up on the <strong>one year anniversary</strong> of pythonpackages.com (in October). This is an exciting milestone (for me at least) because I've had a tremendous amount of fun building the site, not to mention how much I learned about GitHub, PyPI, Pyramid, Stripe, Redis, Bootstrap, and more.</p>
+<p>We are hovering around 200 signups which I'm quite proud of. But in terms of <strong>possible-financial-success</strong> i.e. the potential of converting some of those sign ups in to actual customers I'd feel better if we were at 2,000 or higher.</p>
+<div class="section" id="what-happened">
+<h2>What happened?</h2>
+<p>As of the launch of the beta site 3 months ago, there are some actually-useful features available:</p>
+<ul class="simple">
+<li>The <a class="reference external" href="http://docs.pythonpackages.com/en/latest/introduction.html#introduction">ability to release a package from GitHub to PyPI</a> without a terminal (i.e. in the web browser).</li>
+<li>The ability to release a package with <cite>git push</cite> (by adding the service: <a class="reference external" href="https://github.com/github/github-services/blob/master/services/pythonpackages.rb">https://github.com/github/github-services/blob/master/services/pythonpackages.rb</a>)</li>
+<li>The ability to &quot;manage packages&quot; (see image below)</li>
+</ul>
+<img alt="alternate text" src="https://raw.github.com/ACLARKNET/blog/gh-pages/images/manage-packages.png" />
+<ul class="simple">
+<li>The ability to &quot;manage organizations&quot; (see image below)</li>
+</ul>
+<img alt="alternate text" src="https://raw.github.com/ACLARKNET/blog/gh-pages/images/manage-organizations.png" />
+<ul class="simple">
+<li>The <a class="reference external" href="http://docs.pythonpackages.com/en/latest/create-package.html#create-packages">ability to create packages through the web</a> (i.e. from the web browser to GitHub, whereas normally you'd run PasteScript in your Terminal).</li>
+</ul>
+<img alt="alternate text" src="https://raw.github.com/ACLARKNET/blog/gh-pages/images/create-new-package.png" />
+<p>And a few more logistical features that are cool:</p>
+<ul class="simple">
+<li>The ability to pay with a credit card (via Stripe)</li>
+</ul>
+<img alt="alternate text" src="https://raw.github.com/ACLARKNET/blog/gh-pages/images/pay-with-stripe.png" />
+<ul class="simple">
+<li>The ability to oauth against PyPI:</li>
+</ul>
+<img alt="alternate text" src="https://raw.github.com/ACLARKNET/blog/gh-pages/images/pypi-oauth.png" />
+<p>Still, we have only scratched the surface of what could potentially be provided to the Python community. Future plans include:</p>
+<ul class="simple">
+<li>The ability to easily <a class="reference external" href="https://bitbucket.org/pythonpackages/pythonpackages.com/issue/28/build-windows-installers">build Windows installers</a> for your Python software.</li>
+<li><a class="reference external" href="https://bitbucket.org/pythonpackages/pythonpackages.com/issue/27/support-bitbucket-and-other-dvcs-services">Support for other services</a> e.g. bitbucket.</li>
+<li><a class="reference external" href="https://bitbucket.org/pythonpackages/pythonpackages.com/issue/29/add-git-branch-support">Support git branches</a> i.e. for releasing from a branch.</li>
+</ul>
+<p>In summary, this is a great start to building &quot;github style&quot; automation for Python packaging but there is much more work to be done.</p>
+</div>
+<div class="section" id="what-now">
+<h2>What now?</h2>
+<p>I am in the process of winding down the 3 month &quot;beta 1&quot; period. The &quot;beta 2&quot; period (from now until the end of the year) will likely include:</p>
+<ul class="simple">
+<li>Adding MailChimp integration to make it easier to email subscribers.</li>
+<li>Turn off SSL to save $20/month.</li>
+<li>Write tests and open source the application.</li>
+</ul>
+</div>
+<div class="section" id="what-can-you-do-to-help">
+<h2>What can you do to help?</h2>
+<p>If you believe in the ideas behind pythonpackages.com (primarily: eliminating the need to think about packaging at all; e.g. through task automation, and process improvement behind the scenes; i.e. supporting new technology like distutils2/packaging, wheel, et al.; in order to present a seemless packaging story to developer-consumers.) then the best thing you can do is to purchase a paid plan:</p>
+<ul class="simple">
+<li><a class="reference external" href="http://pythonpackages.com/plans">http://pythonpackages.com/plans</a></li>
+</ul>
+<p>The second best thing you can do is support me on gittip:</p>
+<ul class="simple">
+<li><a class="reference external" href="https://gittip.com/aclark4life">https://gittip.com/aclark4life</a></li>
+</ul>
+<p>These funds will go towards covering hosting costs until such time as the service can pay for itself. I am also asking folks who appreciate my open source work in general to consider a gittip donation. If you cannot help financially, you can still use the free plan to release packages! Please try it out and <a class="reference external" href="https://bitbucket.org/pythonpackages/pythonpackages.com/issues/new">give feedback</a>. (The paid plans get you access to more package slots, so you don't have to swap out the free slot, and organizations, so you can release packages from organization repos).</p>
+<p>Thanks for considering!</p>
+</div>
+
+            <a href="#" class="go-top">Go Top</a>
+    <div class="comments">
+        <div id="disqus_thread"></div>
+        <script type="text/javascript">
+            /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+            var disqus_shortname = "aclark-blog"; // required: replace example with your forum shortname
+
+            /* * * DON'T EDIT BELOW THIS LINE * * */
+            (function() {
+                var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </div>
+<footer class="footer">
+    <p>&copy; Alex Clark &ndash;
+        Built with <a href="https://github.com/PurePelicanTheme/pure-single">Pure Theme</a>
+        for <a href="http://blog.getpelican.com/">Pelican</a>
+    </p>
+</footer>        </div>
+    </div>
+    </div>
+    <script>
+        var $top = $('.go-top');
+
+        // Show or hide the sticky footer button
+        $(window).scroll(function() {
+            if ($(this).scrollTop() > 200) {
+                $top.fadeIn(200);
+            } else {
+                $top.fadeOut(200);
+            }
+        });
+
+        // Animate the scroll to top
+        $top.click(function(event) {
+            event.preventDefault();
+            $('html, body').animate({scrollTop: 0}, 300);
+        })
+
+        // Makes sure that the href="#" attached to the <a> elements
+        // don't scroll you back up the page.
+        $('body').on('click', 'a[href="#"]', function(event) {
+            event.preventDefault();
+        });
+    </script>
+    <script type="text/javascript">
+        var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+        document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+        try {
+            var pageTracker = _gat._getTracker("UA-34988446-1");
+            pageTracker._trackPageview();
+            } catch(err) {}
+    </script>
+
+
+    <script>
+    $(document).ready(function() {
+         $('#tipue_search_input').tipuesearch({
+              'show': 6,
+              'mode': 'json',
+              'contentLocation': 'tipuesearch_content.json'
+         });
+    });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,362 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Alex Clark - Python Web Developer & Musician, Django, Pillow, Python and more!">
+
+        <link rel="alternate"  href="http://blog.aclark.net/feeds/all.atom.xml" type="application/atom+xml" title="Alex Clark - Python Web Developer & Musician Full Atom Feed"/>
+
+        <title>Diazo themes revisited // Alex Clark - Python Web Developer & Musician // Django, Pillow, Python and more!</title>
+
+    <link href="https://github.com/pythonpackages/pythonpackages/blob/master/favicon.ico?raw=true" rel="icon">
+
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.3.0/pure-min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="http://blog.aclark.net/theme/css/pure.css">
+    <link rel="stylesheet" href="http://blog.aclark.net/theme/css/pygments.css">
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/fitvids/1.0.1/jquery.fitvids.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".content").fitVids();
+        });
+    </script>
+
+    <script type="text/javascript" src="http://blog.aclark.net/tipuesearch/tipuesearch_set.js"></script>
+    <script type="text/javascript" src="http://blog.aclark.net/tipuesearch/tipuesearch_content.js"></script>
+    <link rel="stylesheet" type="text/css" href="http://blog.aclark.net/tipuesearch/tipuesearch.css">
+    <script type="text/javascript" src="http://blog.aclark.net/tipuesearch/tipuesearch.js"></script>
+
+</head>
+
+<body>
+    <div class="pure-g-r" id="layout">
+        <div class="sidebar pure-u">
+            <div class="cover-img" style="background-image: url('http://aclark.net/static/background.jpg')">
+                <div class="cover-body">
+                    <header class="header">
+                        <hgroup>
+                            <img class="avatar" src="http://www.gravatar.com/avatar/6170000a01c67c6ba1e2d4bd87701bae.png">
+                            <h1 class="brand-main"><a href="http://blog.aclark.net">Alex Clark - Python Web Developer & Musician</a></h1>
+                            <p class="tagline">Django, Pillow, Python and more!</p>
+                                <p class="social">
+                                    <a href="https://github.com/aclark4life/">
+                                        <i class="fa fa-github fa-3x"></i>
+                                    </a>
+                                    <a href="https://www.gittip.com/aclark4life">
+                                        <i class="fa fa-gittip fa-3x"></i>
+                                    </a>
+                                    <a href="https://twitter.com/aclark4life">
+                                        <i class="fa fa-twitter-square fa-3x"></i>
+                                    </a>
+                                </p>
+                        </hgroup>
+                    </header>
+                </div>
+            </div>
+        </div>
+        <div id="search" style="letter-spacing: 1px">
+            <form action="http://blog.aclark.net">
+                <input type="text" name="q" id="tipue_search_input" autocomplete="off" required>
+            </form>
+            <div id="tipue_search_content" style="padding-left: 55px"></div>
+        </div>
+    <div class="pure-u">
+        <div class="content">
+            <section class="post">
+                <header class="post-header">
+                    <h1>Diazo themes revisited</h1>
+                        <p class="post-meta">
+                            // under                                 <a class="post-category" href="http://blog.aclark.net/tag/plone.html">Plone</a>
+                        </p>
+                </header>
+            </section>
+            <p>With Diazo theming on the rise (going in to 4.3 core) I'd like to take a look at the Diazo theming ecosystem again. For that matter, since I know that some folks will never commit to Diazo, I'd like to take a look at the entire Plone theming ecosystem.</p>
+<div class="section" id="what-are-themes">
+<h2>What are themes?</h2>
+<p>Themes control the way the site looks. For the scope of this post, at least, I don't care about &quot;views&quot;, &quot;viewlets&quot;, &quot;portlets&quot;, &quot;tiles&quot;, etc. In fact, I'm not sure I ever want to mix &quot;templating&quot; (for lack of a better word) with theming. There is a bit of discussion going on right now amongst the core developers regarding how to make it easier for themers to associate their template code with application code. And while I fully support this discussion, at present the bottom line is:</p>
+<ul class="simple">
+<li>&quot;Old style&quot;<a class="footnote-reference" href="#id3" id="id1">[1]</a> theming is still a valid way to control the look and feel of a Plone system.</li>
+<li>&quot;New style&quot; (Diazo) theming is a great way to isolote the complexity of the stack and get HTML/CSS/JavaScript folks going quickly (especially in 4.3a1 with the new theme editor!)</li>
+</ul>
+</div>
+<div class="section" id="where-are-themes">
+<h2>Where are themes?</h2>
+<p>In short: all over the place. Why is that? Because we are in the middle of several fluctuating &quot;best practice&quot; approaches that have fluctuated over the past half decade or so:</p>
+<ul class="simple">
+<li>Plone developers should release their Plone add-ons <a class="footnote-reference" href="#id4" id="id2">[2]</a> to PyPI!</li>
+<li>Plone developers should release their Plone add-ons to plone.org (in addition to PyPI)!</li>
+<li>Plone developers should release their Diazo themes as zip archives (i.e. no Python package)!</li>
+</ul>
+<p>Hence, the need for this post to clarify the status quo.</p>
+</div>
+<div class="section" id="what-should-i-do">
+<h2>What should I do?</h2>
+<p>Everyone should form their own opinion based on the information in this post and act accordingly or however they see fit. If we can all agree on an approach, great! If not, here's what I'm doing.</p>
+<div class="section" id="what-am-i-doing">
+<h3>What am I doing?</h3>
+<p>While I have a large interest in seeing plone.org work well (and am also in the middle of helping to cat herd a plone.com marketing site effort), I have given up on plone.org as a reliable, consistent source for add-ons (in favor of PyPI). This abandonment is perhaps only temporary, but in any event for now: if it's on PyPI, it's good enough for me. Also to close the loop on Diazo zip themes, while I fully support this approach I don't use it myself much.</p>
+</div>
+<div class="section" id="what-is-the-point">
+<h3>What is the point?</h3>
+<p>All of this brings me to the actual point of this post which is to take a quick look at the Plone themeing landscape in order to spur more Diazo theme development (or old style theming, if that is your thing). Quickly, using pip to search PyPI by package namespace I see:</p>
+<p><strong>88 plonetheme themes</strong>:</p>
+<pre class="literal-block">
+plonetheme.Bangalore      - An installable theme for Plone 3
+plonetheme.GreenEarthTheme3_0 - An installable theme for Plone 3
+plonetheme.ReOrg          - Theme that reorganizes screen real-estate abd gives plone a fresh look
+plonetheme.aclark_twitter - Complete silliness: make your Plone site look like Alex Clark's Twitter profile.
+plonetheme.andreas01      - An installable theme for Plone 3.0.
+plonetheme.andreas02      -
+plonetheme.aqueouslight   - An installable Diazo theme for Plone 4.1
+plonetheme.bananaleaf     - An installable Diazo theme for Plone 4.1
+plonetheme.basic          - An easily customizable theme for Plone 4
+plonetheme.blueblog       - An installable theme for Plone 3.0
+plonetheme.bluegray       - An installable theme for Plone
+plonetheme.bootstrap      - bootstrap css integration
+plonetheme.broadcaster    - An installable theme for Plone 3.0
+plonetheme.bronzecube     - An installable theme for Plone 3
+plonetheme.burned         - An installable Diazo theme for Plone 4.1
+plonetheme.classic        - The classic Plone 3 default theme.
+plonetheme.cleantheme     - An installable theme for Plone 3.0
+plonetheme.codapress      - An installable Diazo theme for Plone 4.1
+plonetheme.colorcontext   - Total CSS rebuild and color themed sections
+plonetheme.colorfulworld  - An installable theme for Plone 4
+plonetheme.coolblue       - An installable Diazo theme for Plone 4.1
+plonetheme.corporatemale  - An elastic layout presentation suitable for a corporate business.
+plonetheme.criticas       - An installable theme for Plone 3.0
+plonetheme.cultureCab     - An installable theme for Plone 3
+plonetheme.darkened       - An installable Diazo theme for Plone 4.1
+plonetheme.delicious2     - An installable theme for Plone 3.0
+plonetheme.discovery      - An installable Diazo theme for Plone 4.1
+plonetheme.drupal         - Get all the power of Drupal for Plone ;)
+plonetheme.earthlingtwo   - An installable Diazo theme for Plone 4.1
+plonetheme.elemental      - Elemental Plone 4 Theme
+plonetheme.equipoteih     - An installable theme for Plone 3.0
+plonetheme.essay          -
+plonetheme.evergreen      - An installable Diazo theme for Plone 4.1
+plonetheme.ewb_case       - A Plone 4 theme for EWB Case
+plonetheme.flowerbuds     - UNKNOWN
+plonetheme.freshpick      - An installable Diazo theme for Plone 4.1
+plonetheme.fui            - A Plone 3.0 theme for FUI
+plonetheme.gemstone       - Arcsin's Gemstone web design for Plone4
+plonetheme.gov            - An installable theme for Plone 4
+plonetheme.greencommunity - An installable theme for Plone 3.0.
+plonetheme.grungeera      - An installable Diazo theme for Plone 4.1
+plonetheme.hamnavoe       - An installable theme for Plone 3.0
+plonetheme.html5_hotpink  - Diazo theme for Plone
+plonetheme.inbusiness     - An installable theme for Plone 3.0
+plonetheme.intk           - An installable theme for Plone 3
+plonetheme.intkBase       - An installable theme for Plone 4
+plonetheme.jsjamba        - An installable theme for Plone 4
+plonetheme.keepitsimple   - An installable theme for Plone 4, fluid 3-column theme, minimalistic and light colored design
+plonetheme.laboral        - An installable theme for Plone 4
+plonetheme.labs           - An installable theme for Plone
+plonetheme.leavesdew      - An installable Diazo theme for Plone 4.1
+plonetheme.level2         - An installable theme for Plone 3.0
+plonetheme.lithium        - An installable theme for Plone 3.0
+plonetheme.mimbo          - An installable theme for Plone 3.0 based on the Mimbo theme by Darren Hoyt
+plonetheme.minimalist     - An installable theme for Plone 3.0
+plonetheme.mvob           - An installable Plone4 theme
+plonetheme.nautica05      - An installable theme for Plone 3.x
+plonetheme.netsightintranet - A clean, intranet theme for Plone 3.0
+plonetheme.nonzero        - A theme for Plone 3 based on the Nonzero design by NodeThirtyThree
+plonetheme.notredame      - Theme for Plone 3 with color scheme based on new Plone Logo
+plonetheme.overlappedtabs - A theme for plone 3.x with overlapping tabs
+plonetheme.p2             - An installable theme for Plone 3.0
+plonetheme.peerstheme     - An installable theme for Plone 3.0
+plonetheme.ploneorg       - Plone.org theme
+plonetheme.pollination    - Pollination Theme
+plonetheme.porseleinplaats - An installable theme for Plone 3
+plonetheme.portaltwodotoh - An elastic lounded corners.
+plonetheme.pyar           - A PyAr theme for Plone 3.x
+plonetheme.python         -
+plonetheme.rcom           - An installable theme for Plone 3.0.
+plonetheme.redmusic       - An installable Diazo theme for Plone 4.1
+plonetheme.relic          - An installable theme for Plone 3.0.
+plonetheme.responsive1140 - A responsive theme for Plone
+plonetheme.responsivetheme - An installable theme for Plone 4 that uses a fluid grid system
+plonetheme.sait2009       - SAIT-2009 installable Plone theme
+plonetheme.simplicity     - An installable theme for Plone 3.0
+plonetheme.solemnity      - An installable theme for Plone 3.0 based on the solemnity theme by Six Shooter Media.
+plonetheme.stylized       - An installable theme for Plone 3.0 based on the stylized theme by NodeThirtyThree.
+plonetheme.subordinate    - An installable theme for Plone 3.0
+plonetheme.sunburst       - The default theme for Plone 4.
+plonetheme.terrafirma     - An installable theme for Plone 3.0
+plonetheme.tidyblog       - An installable theme for Plone 3.0
+plonetheme.transition     - An installable Diazo theme for Plone 4.1
+plonetheme.twinapex       - Twinapex Theme is a theming product for Plone to give your site a professional corporate look
+plonetheme.unilluminated  - An installable Diazo theme for Plone 4.1
+plonetheme.wmoWonen       - An installable theme for Plone 4
+plonetheme.woodexperience - An installable Diazo theme for Plone 4.1
+plonetheme.xtheme         - An installable theme for Plone
+</pre>
+<p><strong>1 diazotheme theme</strong>:</p>
+<pre class="literal-block">
+diazotheme.bootstrap      - Plone theme based on Twitter's Bootstrap CSS
+</pre>
+<p><strong>5 Products themes</strong>:</p>
+<pre class="literal-block">
+Products.Andreas09Theme   - An example theme for Plone 3.0
+Products.HSCustom         - The HSCustom theme was originally created for my band's website.
+Products.naked_plone      - An installable theme for Plone 3.0 that does little but override default public stylesheets with empty ones.
+Products.NuPlone          - A new theme for Plone 3.0
+Products.PloneTableless   - Plone Tableless provides a completly tableless version of the Plone Default theme
+</pre>
+<p><strong>60 other themes (WTF?!)</strong>:</p>
+<pre class="literal-block">
+alterootheme.busycity     - Free City Plone 3.0 Theme
+alterootheme.intensesimplicity - A Plone 3.0 Theme based on a free template by David Uliana
+alterootheme.lazydays     - A Theme for Plone 3.0 based on OpenWebDesign.org Lazy Days theme
+atrealtheme.algol         - An installable theme for Plone 3.0
+atrealtheme.gienah        - An installable theme for Plone 3.0
+beyondskins.ploneday.site - Installable Plone 3 theme for World Plone Day
+beyondskins.ploneday.site2009 - Installable Plone 3 theme developed to promote World Plone Day 2009 (April 22nd)
+beyondskins.ploneday.site2010 - World Plone Day 2010 theme.
+beyondskins.ploneday.site2011 - World Plone Day 2011 theme.
+beyondskins.pyconbrasil2008 - Plone Theme developed by Simples Consultoria
+beyondskins.pythonbrasil.site - This product is a installable Plone 3 Theme developed by Simples Consultoria for use in Python Brasil [7] Conference web site.
+collective.fastview       - View and viewlet helper modules for Plone theme and five.grok developers
+collective.jqueryuithememanager - JQueryUI theme manager for Plone
+collective.lesscss        - This package allow theme developers to add LESS stylesheets into a Plone site.
+collective.phantasy       - dynamic theme for Plone
+collective.responsivetheme - A responsive theme based on sunburst for Plone 4
+collective.shinythings    - Jazz up your Plone theme
+collective.threecolorstheme - A Phantasy theme variation for Plone, with 3 dynamic colors
+cooking.theme             - This is plone theme created from css/html ready design.
+dgsanco.plone3theme       - Plone3 Theme for DG Sanco
+freearch.theme            - Free Arch Theme for Plone
+gameprog.theme            - An installable theme for Plone 3.0
+gomobile.templates        - Project templates creating Web and Mobile themes for Plone
+heddex.cityportal         - Installable theme for Plone
+heddex.greenfield         - An installable theme for Plone 4
+heddex.tranquility        - An installable visual theme for Plone 3
+ilrt.migrationtool        - A site migration tool for Plone that uses the site's theme egg version releases
+iscorpio.themes.redmaple  - iscorpio readmaple Plone 3 theme
+ityou.bluetheme           - An installable theme for Plone 4
+jalon.theme               - An installable theme for Plone 3
+jalonedit.theme           - JalonEdit Theme for PLONE 4
+medialog.kuliadentheme    - An installable theme for Plone 3.0
+medialog.roundskin        - An installable theme for Plone 3
+medialog.subskins         - An installable theme and theming tool for Plone 4
+medialog.subskinsiii      - An installable theme for Plone 3.0
+plone.app.themeeditor     - Theme Editor for Plone, Customize your theme resources
+plone.theme               - Tools for managing themes in CMF and Plone sites
+quintagroup.sunrain.policy - extension for SunRain Plone theme
+quintagroup.theme.estatelite - Free Diazo Theme for Plone 4.1
+quintagroup.theme.lite    - Free Diazo Theme for Plone 4.1
+quintagroup.theme.schools - Free Diazo theme for Plone 4.2
+quintagroup.theme.sunrain - Free Diazo Theme for Plone 4.2
+quintagroup.theme.techlight - Free diazo theme for Plone 4.1
+quintagroup.theme.whiteblack - Free Diazo Theme for Plone 4.1
+quintagroup.themetemplate - Quintagroup theme template for Plone 3 with nested namespace
+raptus.theme.plonebartop  - move the plone-bar on the top
+raptus.theme.ploneformgen - set standard theme for ploneformgen
+redomino.css3theme        - A responsive (and mobile) theme for Plone 4 (based on sunburst)
+sc.paster.theme           - Produto de tema para o portal Plone (skin).
+semicinternet.theme.cambrils - A free Plone theme from SEMIC Internet for Plone 4
+soniatheme                - An installable theme for Plone 3.0
+themetweaker.themeswitcher - A product for switching themes in Plone.
+uofl.dztheme.simplesite   - A Diazo theme for Plone 4 and UofL Simple Left-Nav Sites
+uvsq.theme                - An installable theme for Plone 3
+v2.theme                  - An installable theme for Plone 4
+webcouturier.city.theme   - Plone visual theme
+webcouturier.icompany.theme - Plone theme in blue/green colors
+xdvtheme.inventions       - A xdvtheme for Plone
+xdvtheme.sparkling        - An xdv Theme for Plone
+zettwerk.ui               - Adding jquery.ui's themeroller to plone 4 for easy theme customization.
+</pre>
+<p>That last one is a surprise, and that's a total of <strong>154 themes for Plone on PyPI</strong> (assuming I didn't miss any which I probably did). If we had the man power, all of these themes could be made to work with the latest Plone and work with either old style or new style technology. So if we can't do that (which is a hugely ambitious goal) let's at least try to come close!</p>
+<p>Do you like this post, and/or appreciate my open source work? Help build the commons by gittiping me: <a class="reference external" href="https://www.gittip.com/aclark4life/">https://www.gittip.com/aclark4life/</a>.</p>
+<iframe style="border: 0; margin: 0; padding: 0;"
+    src="https://www.gittip.com/aclark4life/widget.html"
+    width="48pt" height="20pt"></iframe><table class="docutils footnote" frame="void" id="id3" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id1">[1]</a></td><td>It's getting harder to define what &quot;old style&quot; theming is. For this blog entry, old style theming is some form of customizing the main_template in Plone (I'm ignoring the fact that macros called by main_template are customizable, for now). If we could (consistently, in a core supported way) get newer ways to do that (e.g. browser views instead of CMF skin layers) then &quot;old style&quot; would become &quot;newer style&quot;. It wouldn't become &quot;new style&quot; because Diazo technology is &quot;newer&quot; than browser view technology. Get it? I think my point is this: in addition to seeing Diazo help with isolating the complexity of the stack, I'd like to see the underlying technology modernized. Give me something that looks and feels like &quot;old style&quot; theming (i.e. putting templates in CMF skin layers) but that is built on modern technology (i.e. the ZCA).</td></tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="id4" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id2">[2]</a></td><td>&lt;rant&gt; Have I mentioned today yet that I hate the term &quot;product&quot;? when it's used to refer to a Plone add-on? It's 2012 people. Zope 2 products died last decade. :-p :-) &lt;/rant&gt;</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+
+            <a href="#" class="go-top">Go Top</a>
+    <div class="comments">
+        <div id="disqus_thread"></div>
+        <script type="text/javascript">
+            /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+            var disqus_shortname = "aclark-blog"; // required: replace example with your forum shortname
+
+            /* * * DON'T EDIT BELOW THIS LINE * * */
+            (function() {
+                var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </div>
+<footer class="footer">
+    <p>&copy; Alex Clark &ndash;
+        Built with <a href="https://github.com/PurePelicanTheme/pure-single">Pure Theme</a>
+        for <a href="http://blog.getpelican.com/">Pelican</a>
+    </p>
+</footer>        </div>
+    </div>
+    </div>
+    <script>
+        var $top = $('.go-top');
+
+        // Show or hide the sticky footer button
+        $(window).scroll(function() {
+            if ($(this).scrollTop() > 200) {
+                $top.fadeIn(200);
+            } else {
+                $top.fadeOut(200);
+            }
+        });
+
+        // Animate the scroll to top
+        $top.click(function(event) {
+            event.preventDefault();
+            $('html, body').animate({scrollTop: 0}, 300);
+        })
+
+        // Makes sure that the href="#" attached to the <a> elements
+        // don't scroll you back up the page.
+        $('body').on('click', 'a[href="#"]', function(event) {
+            event.preventDefault();
+        });
+    </script>
+    <script type="text/javascript">
+        var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+        document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+        try {
+            var pageTracker = _gat._getTracker("UA-34988446-1");
+            pageTracker._trackPageview();
+            } catch(err) {}
+    </script>
+
+
+    <script>
+    $(document).ready(function() {
+         $('#tipue_search_input').tipuesearch({
+              'show': 6,
+              'mode': 'json',
+              'contentLocation': 'tipuesearch_content.json'
+         });
+    });
+    </script>
+
+</body>
+</html>

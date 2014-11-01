@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Alex Clark - Python Web Developer & Musician, Django, Pillow, Python and more!">
+
+        <link rel="alternate"  href="http://blog.aclark.net/feeds/all.atom.xml" type="application/atom+xml" title="Alex Clark - Python Web Developer & Musician Full Atom Feed"/>
+
+        <title>Plone: First class Python citizen // Alex Clark - Python Web Developer & Musician // Django, Pillow, Python and more!</title>
+
+    <link href="https://github.com/pythonpackages/pythonpackages/blob/master/favicon.ico?raw=true" rel="icon">
+
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.3.0/pure-min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="http://blog.aclark.net/theme/css/pure.css">
+    <link rel="stylesheet" href="http://blog.aclark.net/theme/css/pygments.css">
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/fitvids/1.0.1/jquery.fitvids.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".content").fitVids();
+        });
+    </script>
+
+    <script type="text/javascript" src="http://blog.aclark.net/tipuesearch/tipuesearch_set.js"></script>
+    <script type="text/javascript" src="http://blog.aclark.net/tipuesearch/tipuesearch_content.js"></script>
+    <link rel="stylesheet" type="text/css" href="http://blog.aclark.net/tipuesearch/tipuesearch.css">
+    <script type="text/javascript" src="http://blog.aclark.net/tipuesearch/tipuesearch.js"></script>
+
+</head>
+
+<body>
+    <div class="pure-g-r" id="layout">
+        <div class="sidebar pure-u">
+            <div class="cover-img" style="background-image: url('http://aclark.net/static/background.jpg')">
+                <div class="cover-body">
+                    <header class="header">
+                        <hgroup>
+                            <img class="avatar" src="http://www.gravatar.com/avatar/6170000a01c67c6ba1e2d4bd87701bae.png">
+                            <h1 class="brand-main"><a href="http://blog.aclark.net">Alex Clark - Python Web Developer & Musician</a></h1>
+                            <p class="tagline">Django, Pillow, Python and more!</p>
+                                <p class="social">
+                                    <a href="https://github.com/aclark4life/">
+                                        <i class="fa fa-github fa-3x"></i>
+                                    </a>
+                                    <a href="https://www.gittip.com/aclark4life">
+                                        <i class="fa fa-gittip fa-3x"></i>
+                                    </a>
+                                    <a href="https://twitter.com/aclark4life">
+                                        <i class="fa fa-twitter-square fa-3x"></i>
+                                    </a>
+                                </p>
+                        </hgroup>
+                    </header>
+                </div>
+            </div>
+        </div>
+        <div id="search" style="letter-spacing: 1px">
+            <form action="http://blog.aclark.net">
+                <input type="text" name="q" id="tipue_search_input" autocomplete="off" required>
+            </form>
+            <div id="tipue_search_content" style="padding-left: 55px"></div>
+        </div>
+    <div class="pure-u">
+        <div class="content">
+            <section class="post">
+                <header class="post-header">
+                    <h1>Plone: First class Python citizen</h1>
+                        <p class="post-meta">
+                            // under                                 <a class="post-category" href="http://blog.aclark.net/tag/plone.html">Plone</a>
+                                <a class="post-category" href="http://blog.aclark.net/tag/python.html">Python</a>
+                        </p>
+                </header>
+            </section>
+            <p><em>The Plone community and software fit nicely within the larger Python ecosystem. Here's why.</em></p>
+<p>For almost as long as I have been involved in the <a class="reference external" href="http://plone.org">Plone</a> project, I've been interested in Plone's role in the Python ecosystem. Today as I look across the current landscape, I'm proud to announce a new milestone the Plone community can take pride in. But the change didn't happen overnight, so first let's take a quick look back.</p>
+<div class="section" id="pypi-support-in-psc">
+<h2>PyPI support in PSC</h2>
+<p>Circa 2008, Tarek Ziadé and others finished the PyPI integration branch of PloneSoftwareCenter started by Sidnei Da Silva 2 years before.</p>
+<p>This was a big step towards the &quot;Pythonification&quot; of Plone, mainly because Plone packages could now be published on plone.org in the same way Python packages are published to the Python Package Index: via &quot;python setup.py upload&quot;. In fact if you are publishing Plone packages, it is recommended that you release to <em>both</em> PyPI and plone.org simultaneously. This ensures your package is visible to the most number of potential users. And you can use <a class="reference external" href="http://pypi.python.org/pypi/jarn.mkrelease">mkrelease</a> to automate the process.</p>
+</div>
+<div class="section" id="collective-docs-at-rtd">
+<h2>Collective docs at RTD</h2>
+<p>Just when you thought things couldn't get more exciting in Python land, along came <a class="reference external" href="http://readthedocs.org/">readthedocs.org</a> (a Django Dash production, IIRC). And to <a class="reference external" href="https://github.com/collective/collective.developermanual/commit/4dc34d113b1a62064c83f3c431acc7d8deb42f1a">join the fun in July 2011</a>, I moved Mikko Ohtamaa's awesome <strong>Plone Community Managed Developer Manual</strong> to the <a class="reference external" href="http://github.com/collective">Github collective</a> and configured the RTD <a class="reference external" href="https://github.com/blog/41-service-integration">service hook</a>.</p>
+<p>This means that whenever anyone commits a change to the developer manual, within a few minutes a new Sphinx build <a class="reference external" href="http://collective-docs.readthedocs.org/en/latest/index.html">gets published</a>. It was so easy to set this up, I wish I had done it sooner.</p>
+<p>So you can that see over the years, we have been working ourselves into a frenzy of Python goodness! And last week, it got even better.</p>
+</div>
+<div class="section" id="introducing-plone-packages">
+<h2>Introducing: Plone packages!</h2>
+<p>Thanks to the good folks at <a class="reference external" href="http://www.cartwheelweb.com/">Cartwheel Web</a>, makers of the fine <a class="reference external" href="http://opencomparison.org/">Open Comparison</a> service, Plone now has its very own <a class="reference external" href="http://plone.opencomparison.org">grid comparison website</a>! (<a class="reference external" href="http://djangopackages.com">Djangopackages.com</a> was first, followed by <a class="reference external" href="http://pyramid.opencomparison.org">pyramid.opencomparison.org</a>.)</p>
+<p>This is a site where folks can add packages hosted elsewhere (e.g. svn, github, pypi), vote on them, and add grid comparisons to compare similarly-featured add-ons, frameworks, and other related software.  Grids are the killer feature of this site, and personally I've been waiting to use them to answer questions like:</p>
+<blockquote>
+<p><strong>Q: What's the best blogging add-on for Plone?</strong></p>
+<p><strong>A: http://plone.opencomparison.org/grids/g/weblogs/</strong></p>
+</blockquote>
+<p>The content is entirely user driven (TTW only) so please head over to <a class="reference external" href="http://plone.opencomparison.org">plone.opencomparison.org</a>, login with your github ID, and start adding packages! And while you are at it, please report any issues you find here: <a class="reference external" href="https://github.com/opencomparison/opencomparison/issues">https://github.com/opencomparison/opencomparison/issues</a>. Lastly, let's all tweet a big thanks to <a class="reference external" href="https://twitter.com/#!/pydanny">&#64;pydanny</a>and <a class="reference external" href="https://twitter.com/#!/audreyr">&#64;audreyr</a> for their hard work and generosity!</p>
+</div>
+
+            <a href="#" class="go-top">Go Top</a>
+    <div class="comments">
+        <div id="disqus_thread"></div>
+        <script type="text/javascript">
+            /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+            var disqus_shortname = "aclark-blog"; // required: replace example with your forum shortname
+
+            /* * * DON'T EDIT BELOW THIS LINE * * */
+            (function() {
+                var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </div>
+<footer class="footer">
+    <p>&copy; Alex Clark &ndash;
+        Built with <a href="https://github.com/PurePelicanTheme/pure-single">Pure Theme</a>
+        for <a href="http://blog.getpelican.com/">Pelican</a>
+    </p>
+</footer>        </div>
+    </div>
+    </div>
+    <script>
+        var $top = $('.go-top');
+
+        // Show or hide the sticky footer button
+        $(window).scroll(function() {
+            if ($(this).scrollTop() > 200) {
+                $top.fadeIn(200);
+            } else {
+                $top.fadeOut(200);
+            }
+        });
+
+        // Animate the scroll to top
+        $top.click(function(event) {
+            event.preventDefault();
+            $('html, body').animate({scrollTop: 0}, 300);
+        })
+
+        // Makes sure that the href="#" attached to the <a> elements
+        // don't scroll you back up the page.
+        $('body').on('click', 'a[href="#"]', function(event) {
+            event.preventDefault();
+        });
+    </script>
+    <script type="text/javascript">
+        var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+        document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+        try {
+            var pageTracker = _gat._getTracker("UA-34988446-1");
+            pageTracker._trackPageview();
+            } catch(err) {}
+    </script>
+
+
+    <script>
+    $(document).ready(function() {
+         $('#tipue_search_input').tipuesearch({
+              'show': 6,
+              'mode': 'json',
+              'contentLocation': 'tipuesearch_content.json'
+         });
+    });
+    </script>
+
+</body>
+</html>

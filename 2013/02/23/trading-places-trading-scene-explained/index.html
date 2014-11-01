@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Alex Clark - Python Web Developer & Musician, Django, Pillow, Python and more!">
+
+        <link rel="alternate"  href="http://blog.aclark.net/feeds/all.atom.xml" type="application/atom+xml" title="Alex Clark - Python Web Developer & Musician Full Atom Feed"/>
+
+        <title>Trading Places Trading Scene Explained // Alex Clark - Python Web Developer & Musician // Django, Pillow, Python and more!</title>
+
+    <link href="https://github.com/pythonpackages/pythonpackages/blob/master/favicon.ico?raw=true" rel="icon">
+
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.3.0/pure-min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="http://blog.aclark.net/theme/css/pure.css">
+    <link rel="stylesheet" href="http://blog.aclark.net/theme/css/pygments.css">
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/fitvids/1.0.1/jquery.fitvids.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".content").fitVids();
+        });
+    </script>
+
+    <script type="text/javascript" src="http://blog.aclark.net/tipuesearch/tipuesearch_set.js"></script>
+    <script type="text/javascript" src="http://blog.aclark.net/tipuesearch/tipuesearch_content.js"></script>
+    <link rel="stylesheet" type="text/css" href="http://blog.aclark.net/tipuesearch/tipuesearch.css">
+    <script type="text/javascript" src="http://blog.aclark.net/tipuesearch/tipuesearch.js"></script>
+
+</head>
+
+<body>
+    <div class="pure-g-r" id="layout">
+        <div class="sidebar pure-u">
+            <div class="cover-img" style="background-image: url('http://aclark.net/static/background.jpg')">
+                <div class="cover-body">
+                    <header class="header">
+                        <hgroup>
+                            <img class="avatar" src="http://www.gravatar.com/avatar/6170000a01c67c6ba1e2d4bd87701bae.png">
+                            <h1 class="brand-main"><a href="http://blog.aclark.net">Alex Clark - Python Web Developer & Musician</a></h1>
+                            <p class="tagline">Django, Pillow, Python and more!</p>
+                                <p class="social">
+                                    <a href="https://github.com/aclark4life/">
+                                        <i class="fa fa-github fa-3x"></i>
+                                    </a>
+                                    <a href="https://www.gittip.com/aclark4life">
+                                        <i class="fa fa-gittip fa-3x"></i>
+                                    </a>
+                                    <a href="https://twitter.com/aclark4life">
+                                        <i class="fa fa-twitter-square fa-3x"></i>
+                                    </a>
+                                </p>
+                        </hgroup>
+                    </header>
+                </div>
+            </div>
+        </div>
+        <div id="search" style="letter-spacing: 1px">
+            <form action="http://blog.aclark.net">
+                <input type="text" name="q" id="tipue_search_input" autocomplete="off" required>
+            </form>
+            <div id="tipue_search_content" style="padding-left: 55px"></div>
+        </div>
+    <div class="pure-u">
+        <div class="content">
+            <section class="post">
+                <header class="post-header">
+                    <h1>Trading Places Trading Scene Explained</h1>
+                        <p class="post-meta">
+                            // under                         </p>
+                </header>
+            </section>
+            <p>Every time I watch the movie <a class="reference external" href="http://www.imdb.com/title/tt0086465">Trading Places</a>, I have to search the internet for an explanation of the climactic commodities trading scene. It usually takes me about 20 minutes to (re-)understand it, then another 10 minutes to explain it to my wife. Although there are <a class="reference external" href="http://www.wisebread.com/explaining-the-climax-scene-of-trading-places">plenty</a> <a class="reference external" href="http://www.popmodal.com/video/1277/Trading-Places-Final-Exchange-Scene-amp-Explanation">of</a> <a class="reference external" href="http://www.dangerouslogic.com/trading_places.html">great</a> <a class="reference external" href="http://justurbanism.com/2011/03/26/how_the_trading_places_final_scene_works/">answers</a> available, none of them really &quot;speak&quot; to me; so I decided to write my own. The goal for me is to be able to (re-)read my explanation and understand it enough to explain to someone else in less than 5 minutes.</p>
+<p>This scene is tricky for non-stockbrokers to understand because you need to know a lot about trading, and you also need to know some important plot details. Rather than continue to look everything up on the internet each time, I figured I'd write this blog entry instead.</p>
+<div class="section" id="important-plot-detail-1">
+<h2>Important Plot Detail #1</h2>
+<p>The Crop Reports, real and fake. In the movie, the Dukes plan to cheat. But the &quot;good guys&quot; (Valentine and Winthrope) foil them by replacing their stolen, ill-gotten crop report with a fake. This allows the &quot;good guys&quot; to win. To understand the reverse-swindle, you must understand the crop reports (real and fake) and the market repercussions of each:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="38%" />
+<col width="31%" />
+<col width="31%" />
+</colgroup>
+<tbody valign="top">
+<tr><td>&nbsp;</td>
+<td><strong>Report</strong>
+<strong>(FAKE)</strong></td>
+<td><strong>Report</strong>
+<strong>(REAL)</strong></td>
+</tr>
+<tr><td><strong>Weather</strong></td>
+<td>BAD</td>
+<td>GOOD</td>
+</tr>
+<tr><td><strong>Harvest</strong>
+<strong>(i.e. #</strong>
+<strong>oranges)</strong></td>
+<td>LOW</td>
+<td>HIGH</td>
+</tr>
+<tr><td><strong>Prices</strong></td>
+<td>HIGH</td>
+<td>LOW</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="important-plot-detail-2">
+<h2>Important Plot Detail #2</h2>
+<p>Remember, the Dukes plan to cheat AKA <a class="reference external" href="http://en.wikipedia.org/wiki/Cornering_the_market">&quot;corner the market&quot;</a>. And as <a class="reference external" href="http://www.dangerouslogic.com/trading_places.html">Chris Carter</a> says:</p>
+<blockquote>
+The (Duke's) agent wants to own as many contracts as possible before the crop report is revealed, since (he thinks) once it is, the price will go up and he can sell at a profit. Trading begins with a price of 102 cents per pound, which translates into $15,300 per contract. Once everyone sees that the Dukes' agent is trying to corner the market, they all want a piece of it, forcing the price up since more people are buying than selling.</blockquote>
+<p>I'll repeat that last part: when trading opens before the true crop report is revealed <strong>more people are buying than selling.</strong></p>
+</div>
+<div class="section" id="important-plot-detail-3">
+<h2>Important Plot Detail #3</h2>
+<p>The &quot;good guys&quot; know the truth i.e. that the current buying trend is based on the Duke's actions which are based on false information. That brings us to another important point: the &quot;good guys&quot; realize an opportunity to <a class="reference external" href="http://en.wikipedia.org/wiki/Short_%28finance%29">&quot;sell short&quot;</a>. Or as <a class="reference external" href="http://www.dangerouslogic.com/trading_places.html">Chris Carter</a> puts it:</p>
+<blockquote>
+They are betting they will be able to buy the contracts later at a lower price so they come out making money but not holding any contracts at the end of trading.</blockquote>
+</div>
+<div class="section" id="light-bulb">
+<h2>Light bulb</h2>
+<p>Ding! Ding! Ding! So after all this, here's what's really happening: <strong>the &quot;good guys&quot; successfully carry out a short sale, with the help of the &quot;bad guys&quot; who are trying to corner the market but acting on false information</strong>. Or as <a class="reference external" href="http://www.dangerouslogic.com/trading_places.html">Chris Carter</a> puts it, after the real crop report is published:</p>
+<blockquote>
+They (the &quot;good guys&quot;) need to buy--a lot--to zero their position, and the crowd is more than willing to oblige.</blockquote>
+<p>Finally, the &quot;good guys&quot; are able to buy enough to contracts to fulfill the number of &quot;short&quot; sales they made. And they are able to purchase them for much less then they made the &quot;short&quot; sales for. Profit!</p>
+<p><strong>Does it make sense now? If not, let me know in the comments.</strong></p>
+</div>
+
+            <a href="#" class="go-top">Go Top</a>
+    <div class="comments">
+        <div id="disqus_thread"></div>
+        <script type="text/javascript">
+            /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+            var disqus_shortname = "aclark-blog"; // required: replace example with your forum shortname
+
+            /* * * DON'T EDIT BELOW THIS LINE * * */
+            (function() {
+                var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </div>
+<footer class="footer">
+    <p>&copy; Alex Clark &ndash;
+        Built with <a href="https://github.com/PurePelicanTheme/pure-single">Pure Theme</a>
+        for <a href="http://blog.getpelican.com/">Pelican</a>
+    </p>
+</footer>        </div>
+    </div>
+    </div>
+    <script>
+        var $top = $('.go-top');
+
+        // Show or hide the sticky footer button
+        $(window).scroll(function() {
+            if ($(this).scrollTop() > 200) {
+                $top.fadeIn(200);
+            } else {
+                $top.fadeOut(200);
+            }
+        });
+
+        // Animate the scroll to top
+        $top.click(function(event) {
+            event.preventDefault();
+            $('html, body').animate({scrollTop: 0}, 300);
+        })
+
+        // Makes sure that the href="#" attached to the <a> elements
+        // don't scroll you back up the page.
+        $('body').on('click', 'a[href="#"]', function(event) {
+            event.preventDefault();
+        });
+    </script>
+    <script type="text/javascript">
+        var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+        document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+        try {
+            var pageTracker = _gat._getTracker("UA-34988446-1");
+            pageTracker._trackPageview();
+            } catch(err) {}
+    </script>
+
+
+    <script>
+    $(document).ready(function() {
+         $('#tipue_search_input').tipuesearch({
+              'show': 6,
+              'mode': 'json',
+              'contentLocation': 'tipuesearch_content.json'
+         });
+    });
+    </script>
+
+</body>
+</html>

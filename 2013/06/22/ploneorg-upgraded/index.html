@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Alex Clark - Python Web Developer & Musician, Django, Pillow, Python and more!">
+
+        <link rel="alternate"  href="http://blog.aclark.net/feeds/all.atom.xml" type="application/atom+xml" title="Alex Clark - Python Web Developer & Musician Full Atom Feed"/>
+
+        <title>Plone.org upgraded // Alex Clark - Python Web Developer & Musician // Django, Pillow, Python and more!</title>
+
+    <link href="https://github.com/pythonpackages/pythonpackages/blob/master/favicon.ico?raw=true" rel="icon">
+
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.3.0/pure-min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="http://blog.aclark.net/theme/css/pure.css">
+    <link rel="stylesheet" href="http://blog.aclark.net/theme/css/pygments.css">
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/fitvids/1.0.1/jquery.fitvids.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".content").fitVids();
+        });
+    </script>
+
+    <script type="text/javascript" src="http://blog.aclark.net/tipuesearch/tipuesearch_set.js"></script>
+    <script type="text/javascript" src="http://blog.aclark.net/tipuesearch/tipuesearch_content.js"></script>
+    <link rel="stylesheet" type="text/css" href="http://blog.aclark.net/tipuesearch/tipuesearch.css">
+    <script type="text/javascript" src="http://blog.aclark.net/tipuesearch/tipuesearch.js"></script>
+
+</head>
+
+<body>
+    <div class="pure-g-r" id="layout">
+        <div class="sidebar pure-u">
+            <div class="cover-img" style="background-image: url('http://aclark.net/static/background.jpg')">
+                <div class="cover-body">
+                    <header class="header">
+                        <hgroup>
+                            <img class="avatar" src="http://www.gravatar.com/avatar/6170000a01c67c6ba1e2d4bd87701bae.png">
+                            <h1 class="brand-main"><a href="http://blog.aclark.net">Alex Clark - Python Web Developer & Musician</a></h1>
+                            <p class="tagline">Django, Pillow, Python and more!</p>
+                                <p class="social">
+                                    <a href="https://github.com/aclark4life/">
+                                        <i class="fa fa-github fa-3x"></i>
+                                    </a>
+                                    <a href="https://www.gittip.com/aclark4life">
+                                        <i class="fa fa-gittip fa-3x"></i>
+                                    </a>
+                                    <a href="https://twitter.com/aclark4life">
+                                        <i class="fa fa-twitter-square fa-3x"></i>
+                                    </a>
+                                </p>
+                        </hgroup>
+                    </header>
+                </div>
+            </div>
+        </div>
+        <div id="search" style="letter-spacing: 1px">
+            <form action="http://blog.aclark.net">
+                <input type="text" name="q" id="tipue_search_input" autocomplete="off" required>
+            </form>
+            <div id="tipue_search_content" style="padding-left: 55px"></div>
+        </div>
+    <div class="pure-u">
+        <div class="content">
+            <section class="post">
+                <header class="post-header">
+                    <h1>Plone.org upgraded</h1>
+                        <p class="post-meta">
+                            // under                                 <a class="post-category" href="http://blog.aclark.net/tag/plone.html">Plone</a>
+                                <a class="post-category" href="http://blog.aclark.net/tag/python.html">Python</a>
+                        </p>
+                </header>
+            </section>
+            <p>Recently at the behest of Liz Leddy, I <a class="reference external" href="https://github.com/plone/Products.PloneOrg/commit/b04105f7c9cacf3880c12effba5ffe261d4b5163">upgraded plone.org from Plone 4.2 to Plone 4.3</a>. It's been a while since I had the pleasure, so I thought I'd make some notes: for myself, the AI Team and anyone else interested in the process.</p>
+<div class="section" id="background">
+<h2>Background</h2>
+<ol class="arabic simple">
+<li>Plone.org is one of the <strong>oldest Plone sites in existence</strong>, having been launched circa Plone 1 and upgraded in place ever since.</li>
+<li>It functions remarkably well, given #1.</li>
+<li>It's not without its issues, but all of them are manageable —&nbsp;for some value of manageable.</li>
+<li>It's often very time consuming to work on.</li>
+</ol>
+</div>
+<div class="section" id="pre-process">
+<h2>Pre-Process</h2>
+<ol class="arabic">
+<li><p class="first">The first step is always to get a local copy:</p>
+<pre class="literal-block">
+$ git clone git&#64;github.com:plone/Products.PloneOrg.git
+$ cd Products.PloneOrg
+$ cp buildout.cfg.in buildout.cfg
+</pre>
+</li>
+<li><p class="first">Edit <tt class="docutils literal">buildout.cfg</tt> to extend the <tt class="docutils literal">database.cfg</tt>:</p>
+<pre class="literal-block">
+[buildout]
+# Rename to buildout.cfg and uncomment one of the profiles below
+extends =
+
+# Plone only, unthemed
+#    conf/develop.cfg
+
+# Copy data local (with plone.org account)
+    conf/database.cfg
+
+# Production (for use on plone.org server)
+#    conf/production.cfg
+
+# Staging (for use on plone.org server)
+# and Deployment (for use by Jenkins, admins and developers),
+#   fabric can be added to any of primary configurations
+
+#    conf/staging.cfg
+#    conf/fabric.cfg
+
+# Developer Database Drop; makes developer-friendly copies
+# of plone.org's content.
+#    conf/devdrop.cfg
+</pre>
+</li>
+<li><p class="first">Bootstrap and run Buildout:</p>
+<pre class="literal-block">
+$ virtualenv-2.7 .
+$ bin/pip install zc.buildout
+$ bin/buildout
+</pre>
+</li>
+<li><p class="first">Make the appropriate configuration changes i.e. change <tt class="docutils literal">extends</tt> from 4.2 to 4.3:</p>
+<pre class="literal-block">
+[buildout]
+develop = .
+extends =
+    http://dist.plone.org/release/4.3.1/versions.cfg
+    versions.cfg
+    sources.cfg
+extensions =
+#    buildout.dumppickedversions
+    buildout.threatlevel
+    mr.developer
+
+versions = versions
+sources-dir = sources
+eggs =
+    Pillow
+    Products.PloneOrg
+    Products.PloneHotfix20130618
+
+# get us a user and group variable
+[env]
+recipe = gocept.recipe.env
+[grp]
+recipe = collective.recipe.grp
+</pre>
+</li>
+<li><p class="first">Run the upgrade locally. With plone.org data this takes about 45 minutes to an hour <a class="footnote-reference" href="#id2" id="id1">[1]</a>.</p>
+</li>
+</ol>
+<img alt="alternate text" src="https://raw.github.com/ACLARKNET/blog/gh-pages/images/upgrade.png" />
+<ol class="arabic simple">
+<li>If the upgrade succeeds, you are ready to launch. If it fails, fix the errors before proceeding.</li>
+</ol>
+</div>
+<div class="section" id="process">
+<h2>Process</h2>
+<p>We know from upgrading locally that the process will take about 45 minutes to an hour, so you should <strong>allocate about 2 hours to do the upgrade</strong>.</p>
+<ol class="arabic simple">
+<li>Announce the upgrade: preferably a week or two in advance. The plone-developers and plone-users lists are probably sufficient, but you can create a plone.org news item too if you are feeling extra-ambitious. I only had a small window to perform this maintenance, so I skipped this step and proceeded directly to the next one.</li>
+<li>Add a status message to plone.org to indicate a maintenance window is in progress. I chose to customize the <tt class="docutils literal">main_template</tt> to accomplish this, but ideally we'd have some functionality in Plone that allowed site administrators to easily configure status messages.</li>
+</ol>
+<img alt="alternate text" src="https://raw.github.com/ACLARKNET/blog/gh-pages/images/upgrade-message.png" />
+<ol class="arabic simple">
+<li>Disable logins. Since the upgrade takes a long time, we don't want content being edited during this process. I chose to use David Glick's technique of disabling PAS. I moved the ldap authentication plugin to the Active Plugin list, thus disabling PAS such that only ZODB users could login. But ideally we'd have some feature in Plone to allow site administrators to disable logins.</li>
+</ol>
+<img alt="alternate text" src="https://raw.github.com/ACLARKNET/blog/gh-pages/images/pas.png" />
+<ol class="arabic">
+<li><p class="first">Run the upgrade. I forgot to mention earlier something very important: <strong>On plone.org, you can't access Zope from the internet.</strong> And you can't run the upgrade without accessing Zope. Hence run the following command to access the server, then access Plone via <tt class="docutils literal"><span class="pre">http://localhost:8080</span></tt>:</p>
+<pre class="literal-block">
+$ ssh -L 8080:10.57.0.107:5011 direct.plone.org
+</pre>
+</li>
+<li><p class="first">After the upgrade finishes, click around to make sure you didn't break anything. In my case, I broke something — I normally move <tt class="docutils literal">portal_skins/custom</tt> out of the way before upgrading, but this time I forgot. And when I experienced minor JavaScript issues, I forgot to examine custom; which currently looks like this:</p>
+</li>
+</ol>
+<img alt="alternate text" src="https://raw.github.com/ACLARKNET/blog/gh-pages/images/custom.png" />
+<p>Even if I had remembered, I didn't want to spend the next few hours examining database customizations. Fortunately, before I realized I had forgotten to check custom, I emailed the plone-developers list —&nbsp;and Nathan Van Gheem to the rescue! He fixed some JavaScript in custom, then I cleared the cache(s). Ideally Plone would report on database customizations during the upgrade process: to indicate the potential for breakage and encourage the site administrator to round-trip those customizations back to the file system.</p>
+</div>
+<div class="section" id="conclusion">
+<h2>Conclusion</h2>
+<p>That's it! I hope this helps folks wrap their head around the plone.org upgrade process. A few closing thoughts:</p>
+<ul class="simple">
+<li>With Cloudflare in front, we probably don't need Varnish anymore.</li>
+<li>Leaving a note in <tt class="docutils literal">portal_skins/custom</tt> to encourage folks to &quot;please keep this area clean&quot; — does not work.</li>
+<li>plone.com anyone? I don't know the future of plone.org and I have mixed feelings about it: on the one hand, I'm proud to help maintain such an old and venerable system. On the other hand, I think plone.org should be retired in a way similar to old.zope.org. What do you think?</li>
+</ul>
+<table class="docutils footnote" frame="void" id="id2" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id1">[1]</a></td><td>It shouldn't take this long. See: <a class="reference external" href="https://github.com/plone/Products.PloneOrg/commit/b04105f7c9cacf3880c12effba5ffe261d4b5163#commitcomment-3384259">https://github.com/plone/Products.PloneOrg/commit/b04105f7c9cacf3880c12effba5ffe261d4b5163#commitcomment-3384259</a> for a discussion about this issue.</td></tr>
+</tbody>
+</table>
+</div>
+
+            <a href="#" class="go-top">Go Top</a>
+    <div class="comments">
+        <div id="disqus_thread"></div>
+        <script type="text/javascript">
+            /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+            var disqus_shortname = "aclark-blog"; // required: replace example with your forum shortname
+
+            /* * * DON'T EDIT BELOW THIS LINE * * */
+            (function() {
+                var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </div>
+<footer class="footer">
+    <p>&copy; Alex Clark &ndash;
+        Built with <a href="https://github.com/PurePelicanTheme/pure-single">Pure Theme</a>
+        for <a href="http://blog.getpelican.com/">Pelican</a>
+    </p>
+</footer>        </div>
+    </div>
+    </div>
+    <script>
+        var $top = $('.go-top');
+
+        // Show or hide the sticky footer button
+        $(window).scroll(function() {
+            if ($(this).scrollTop() > 200) {
+                $top.fadeIn(200);
+            } else {
+                $top.fadeOut(200);
+            }
+        });
+
+        // Animate the scroll to top
+        $top.click(function(event) {
+            event.preventDefault();
+            $('html, body').animate({scrollTop: 0}, 300);
+        })
+
+        // Makes sure that the href="#" attached to the <a> elements
+        // don't scroll you back up the page.
+        $('body').on('click', 'a[href="#"]', function(event) {
+            event.preventDefault();
+        });
+    </script>
+    <script type="text/javascript">
+        var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+        document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+        try {
+            var pageTracker = _gat._getTracker("UA-34988446-1");
+            pageTracker._trackPageview();
+            } catch(err) {}
+    </script>
+
+
+    <script>
+    $(document).ready(function() {
+         $('#tipue_search_input').tipuesearch({
+              'show': 6,
+              'mode': 'json',
+              'contentLocation': 'tipuesearch_content.json'
+         });
+    });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Alex Clark - Python Web Developer & Musician, Django, Pillow, Python and more!">
+
+        <link rel="alternate"  href="http://blog.aclark.net/feeds/all.atom.xml" type="application/atom+xml" title="Alex Clark - Python Web Developer & Musician Full Atom Feed"/>
+
+        <title>"New" Plone theming has arrived // Alex Clark - Python Web Developer & Musician // Django, Pillow, Python and more!</title>
+
+    <link href="https://github.com/pythonpackages/pythonpackages/blob/master/favicon.ico?raw=true" rel="icon">
+
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.3.0/pure-min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="http://blog.aclark.net/theme/css/pure.css">
+    <link rel="stylesheet" href="http://blog.aclark.net/theme/css/pygments.css">
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/fitvids/1.0.1/jquery.fitvids.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".content").fitVids();
+        });
+    </script>
+
+    <script type="text/javascript" src="http://blog.aclark.net/tipuesearch/tipuesearch_set.js"></script>
+    <script type="text/javascript" src="http://blog.aclark.net/tipuesearch/tipuesearch_content.js"></script>
+    <link rel="stylesheet" type="text/css" href="http://blog.aclark.net/tipuesearch/tipuesearch.css">
+    <script type="text/javascript" src="http://blog.aclark.net/tipuesearch/tipuesearch.js"></script>
+
+</head>
+
+<body>
+    <div class="pure-g-r" id="layout">
+        <div class="sidebar pure-u">
+            <div class="cover-img" style="background-image: url('http://aclark.net/static/background.jpg')">
+                <div class="cover-body">
+                    <header class="header">
+                        <hgroup>
+                            <img class="avatar" src="http://www.gravatar.com/avatar/6170000a01c67c6ba1e2d4bd87701bae.png">
+                            <h1 class="brand-main"><a href="http://blog.aclark.net">Alex Clark - Python Web Developer & Musician</a></h1>
+                            <p class="tagline">Django, Pillow, Python and more!</p>
+                                <p class="social">
+                                    <a href="https://github.com/aclark4life/">
+                                        <i class="fa fa-github fa-3x"></i>
+                                    </a>
+                                    <a href="https://www.gittip.com/aclark4life">
+                                        <i class="fa fa-gittip fa-3x"></i>
+                                    </a>
+                                    <a href="https://twitter.com/aclark4life">
+                                        <i class="fa fa-twitter-square fa-3x"></i>
+                                    </a>
+                                </p>
+                        </hgroup>
+                    </header>
+                </div>
+            </div>
+        </div>
+        <div id="search" style="letter-spacing: 1px">
+            <form action="http://blog.aclark.net">
+                <input type="text" name="q" id="tipue_search_input" autocomplete="off" required>
+            </form>
+            <div id="tipue_search_content" style="padding-left: 55px"></div>
+        </div>
+    <div class="pure-u">
+        <div class="content">
+            <section class="post">
+                <header class="post-header">
+                    <h1>&quot;New&quot; Plone theming has arrived</h1>
+                        <p class="post-meta">
+                            // under                                 <a class="post-category" href="http://blog.aclark.net/tag/plone.html">Plone</a>
+                        </p>
+                </header>
+            </section>
+            <p><strong>Edit2:</strong>Enfold/Ploud.net looking for theme developers, see Alan Runyan's comment below.</p>
+<p><strong>Edit</strong>: Laurence Rowe made new Diazo and plone.app.theming releases so the <a class="reference external" href="https://github.com/aclark4life/plonetheme.unilluminated/blob/master/unilluminated.zip?raw=true">zip file</a>now works! Thanks Laurence.</p>
+<p>Due to the new Diazo theming features now available, I am very excited about the recent release of <a class="reference external" href="http://pypi.python.org/pypi/Plone/4.1rc2">Plone 4.1rc2</a> and <a class="reference external" href="http://pypi.python.org/pypi/plone.app.theming/1.0b2">plone.app.theming 1.0b2</a>. So much so, I created a couple themes (in just a few hours) to demonstrate my <a class="reference external" href="http://en.wikipedia.org/wiki/Rapture">rapture [1]</a>:</p>
+<ul class="simple">
+<li>(released)
+<a class="reference external" href="http://pypi.python.org/pypi/plonetheme.unilluminated/0.1.0">http://pypi.python.org/pypi/plonetheme.unilluminated/0.1.0</a></li>
+<li>(unreleased) <a class="reference external" href="https://github.com/aclark4life/plonetheme.coolblue">https://github.com/aclark4life/plonetheme.coolblue</a></li>
+</ul>
+<p>Granted, these aren't entirely &quot;finished&quot; (e.g. lots of CSS improvements are needed) but it is truly impressive how much you can do with so little effort (thanks to the hard work of the Diazo team, Plone team, and of course the theme designers themselves).</p>
+<p>The best part has got to be the <a class="reference external" href="http://pypi.python.org/pypi/plone.app.theming/1.0b2#zip-file-format">zip file packaging features</a> in plone.app.theming (provided by <a class="reference external" href="http://pypi.python.org/pypi/plone.resource/1.0b2">plone.resource</a>). While I did have a bit of trouble getting <a class="reference external" href="https://github.com/aclark4life/plonetheme.unilluminated/blob/master/plonetheme/unilluminated/theme/unilluminated.zip">my zip file</a> to work, I suspect I'll get that issue resolved this week (I don't think I was able to import any zipped themes, even the ones from p.a.theming tests).</p>
+<div class="section" id="suprise-i-like-it">
+<h2>Suprise! I like it</h2>
+<p>What I am most surprised about is how much I like this approach:</p>
+<ul class="simple">
+<li>Developers can easily distribute themes in Python packages, and pay a much smaller &quot;theming tax&quot; with new style Diazo theming.</li>
+<li>They can also optionally choose to distribute Diazo themes as zip files for easy public consumption (although I can't think of any
+good, automated way to publish just the zip files.)</li>
+<li>If I am not mistaken the contents of a zipped theme can be loaded <a class="reference external" href="https://github.com/aclark4life/plonetheme.unilluminated/blob/master/plonetheme/unilluminated/configure.zcml">quite elegantly</a>, without changing their contents, via a <a class="reference external" href="https://github.com/aclark4life/plonetheme.unilluminated/">Python
+package</a>.</li>
+</ul>
+<p>So, let us now commence the spamming of PyPI and the <a class="reference external" href="http://plone.org/products">Plone.org downloads section</a> with &quot;fun&quot; easy-to-install (read: no buildout) Plone themes! [2]</p>
+</div>
+<div class="section" id="disclaimer">
+<h2>Disclaimer</h2>
+<p>These are my experiences with relatively new Plone technologies. If I've made a mistake or if your experiences are different, please let me know in the comments.</p>
+<p>[1] Please forgive gratuitous belated rapture humor.</p>
+<p>[2] Before you get upset over any suggested spamming, I only mean to suggest that the ability to distribute a theme as a zip file lowers the bar to Plone adoption tremendously. Personally (and tentatively, since I'm not even sure if everything is meant to work the way I currently expect it to), I plan to include a zipped archive of any theme I distribute as a Python package because it is so easy to do so (or hopefully will be very soon). But how the community chooses to capitalize on this new-found ability remains to be seen.</p>
+</div>
+
+            <a href="#" class="go-top">Go Top</a>
+    <div class="comments">
+        <div id="disqus_thread"></div>
+        <script type="text/javascript">
+            /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+            var disqus_shortname = "aclark-blog"; // required: replace example with your forum shortname
+
+            /* * * DON'T EDIT BELOW THIS LINE * * */
+            (function() {
+                var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </div>
+<footer class="footer">
+    <p>&copy; Alex Clark &ndash;
+        Built with <a href="https://github.com/PurePelicanTheme/pure-single">Pure Theme</a>
+        for <a href="http://blog.getpelican.com/">Pelican</a>
+    </p>
+</footer>        </div>
+    </div>
+    </div>
+    <script>
+        var $top = $('.go-top');
+
+        // Show or hide the sticky footer button
+        $(window).scroll(function() {
+            if ($(this).scrollTop() > 200) {
+                $top.fadeIn(200);
+            } else {
+                $top.fadeOut(200);
+            }
+        });
+
+        // Animate the scroll to top
+        $top.click(function(event) {
+            event.preventDefault();
+            $('html, body').animate({scrollTop: 0}, 300);
+        })
+
+        // Makes sure that the href="#" attached to the <a> elements
+        // don't scroll you back up the page.
+        $('body').on('click', 'a[href="#"]', function(event) {
+            event.preventDefault();
+        });
+    </script>
+    <script type="text/javascript">
+        var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+        document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+        try {
+            var pageTracker = _gat._getTracker("UA-34988446-1");
+            pageTracker._trackPageview();
+            } catch(err) {}
+    </script>
+
+
+    <script>
+    $(document).ready(function() {
+         $('#tipue_search_input').tipuesearch({
+              'show': 6,
+              'mode': 'json',
+              'contentLocation': 'tipuesearch_content.json'
+         });
+    });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Alex Clark - Python Web Developer & Musician, Django, Pillow, Python and more!">
+
+        <link rel="alternate"  href="http://blog.aclark.net/feeds/all.atom.xml" type="application/atom+xml" title="Alex Clark - Python Web Developer & Musician Full Atom Feed"/>
+
+        <title>Built with Plone, Powered by GitHub Pages // Alex Clark - Python Web Developer & Musician // Django, Pillow, Python and more!</title>
+
+    <link href="https://github.com/pythonpackages/pythonpackages/blob/master/favicon.ico?raw=true" rel="icon">
+
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.3.0/pure-min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="http://blog.aclark.net/theme/css/pure.css">
+    <link rel="stylesheet" href="http://blog.aclark.net/theme/css/pygments.css">
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/fitvids/1.0.1/jquery.fitvids.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".content").fitVids();
+        });
+    </script>
+
+    <script type="text/javascript" src="http://blog.aclark.net/tipuesearch/tipuesearch_set.js"></script>
+    <script type="text/javascript" src="http://blog.aclark.net/tipuesearch/tipuesearch_content.js"></script>
+    <link rel="stylesheet" type="text/css" href="http://blog.aclark.net/tipuesearch/tipuesearch.css">
+    <script type="text/javascript" src="http://blog.aclark.net/tipuesearch/tipuesearch.js"></script>
+
+</head>
+
+<body>
+    <div class="pure-g-r" id="layout">
+        <div class="sidebar pure-u">
+            <div class="cover-img" style="background-image: url('http://aclark.net/static/background.jpg')">
+                <div class="cover-body">
+                    <header class="header">
+                        <hgroup>
+                            <img class="avatar" src="http://www.gravatar.com/avatar/6170000a01c67c6ba1e2d4bd87701bae.png">
+                            <h1 class="brand-main"><a href="http://blog.aclark.net">Alex Clark - Python Web Developer & Musician</a></h1>
+                            <p class="tagline">Django, Pillow, Python and more!</p>
+                                <p class="social">
+                                    <a href="https://github.com/aclark4life/">
+                                        <i class="fa fa-github fa-3x"></i>
+                                    </a>
+                                    <a href="https://www.gittip.com/aclark4life">
+                                        <i class="fa fa-gittip fa-3x"></i>
+                                    </a>
+                                    <a href="https://twitter.com/aclark4life">
+                                        <i class="fa fa-twitter-square fa-3x"></i>
+                                    </a>
+                                </p>
+                        </hgroup>
+                    </header>
+                </div>
+            </div>
+        </div>
+        <div id="search" style="letter-spacing: 1px">
+            <form action="http://blog.aclark.net">
+                <input type="text" name="q" id="tipue_search_input" autocomplete="off" required>
+            </form>
+            <div id="tipue_search_content" style="padding-left: 55px"></div>
+        </div>
+    <div class="pure-u">
+        <div class="content">
+            <section class="post">
+                <header class="post-header">
+                    <h1>Built with Plone, Powered by GitHub Pages</h1>
+                        <p class="post-meta">
+                            // under                                 <a class="post-category" href="http://blog.aclark.net/tag/plone.html">Plone</a>
+                        </p>
+                </header>
+            </section>
+            <p>Is Plone the next great static website generator? Probably not, but it definitely could be</p>
+<p>I am always looking for ways to improve, streamline and otherwise hack my e-life. And this post is about all of the above.
+<a class="reference external" href="https://raw.github.com/ACLARKNET/blog/gh-pages/images/httrack.png">https://raw.github.com/ACLARKNET/blog/gh-pages/images/httrack.png</a>
+Plone in the cloud</p>
+<p>Plone is still too &quot;heavy&quot; to easily run &quot;in the cloud&quot; (except via <a class="reference external" href="http://ploud.com">http://ploud.com</a>, HT), but it's getting there. In particular, I find this effort by David Bain very inspiring:</p>
+<blockquote>
+<a class="reference external" href="https://github.com/pigeonflight/stack-python-plone">https://github.com/pigeonflight/stack-python-plone</a></blockquote>
+<p>And based on my experiments and research on Heroku:</p>
+<blockquote>
+<a class="reference external" href="https://github.com/aclark4life/zope2-heroku">https://github.com/aclark4life/zope2-heroku</a></blockquote>
+<p>The only &quot;real&quot; remaining issue seems to be packaging; we need this PLIP to happen sooner, rather than later:</p>
+<blockquote>
+<a class="reference external" href="https://dev.plone.org/ticket/13283">https://dev.plone.org/ticket/13283</a></blockquote>
+<p>Cheating</p>
+<p>In the meantime, one way you can cheat is to export the contents of your Plone site with httrack then host the results for free on GitHub Pages (i.e. &quot;the cloud&quot;)</p>
+<p>This process if far from perfect [1], but in a pinch it can work. And it recently worked very well for me so I thought I'd share. See:</p>
+<blockquote>
+<a class="reference external" href="http://aclark.net">http://aclark.net</a>
+<a class="reference external" href="https://github.com/ACLARKNET/aclarknet.github.com">https://github.com/ACLARKNET/aclarknet.github.com</a></blockquote>
+<p>These links are my website, and GitHub Pages repository respectively. The website was created with Plone (<a class="reference external" href="https://github.com/ACLARKNET/new_style">https://github.com/ACLARKNET/new_style</a>) then exported via httrack, then uploaded to GitHub Pages (to the gh-pages branch of any repo except &lt;{org,user}&gt;&gt;.github.com repos).
+[1] httrack got &quot;stuck&quot; on my &#64;&#64;search links, and I've got a lot of duplicate content now. Fortunately I don't mind editing lots and lots of text files :-).
+Conclusion</p>
+<p>In doing this, I was able to turn off my $11/month &quot;website and IRC server&quot; which makes the CFO happy. And in a year or so with Plone 5, hopefully I'll be able to return to the cloud and edit content &quot;live&quot; again.</p>
+<p>What do you think about Plone as a static site generator and/or Plone in the cloud? Let me know in the comments below.</p>
+
+            <a href="#" class="go-top">Go Top</a>
+    <div class="comments">
+        <div id="disqus_thread"></div>
+        <script type="text/javascript">
+            /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+            var disqus_shortname = "aclark-blog"; // required: replace example with your forum shortname
+
+            /* * * DON'T EDIT BELOW THIS LINE * * */
+            (function() {
+                var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </div>
+<footer class="footer">
+    <p>&copy; Alex Clark &ndash;
+        Built with <a href="https://github.com/PurePelicanTheme/pure-single">Pure Theme</a>
+        for <a href="http://blog.getpelican.com/">Pelican</a>
+    </p>
+</footer>        </div>
+    </div>
+    </div>
+    <script>
+        var $top = $('.go-top');
+
+        // Show or hide the sticky footer button
+        $(window).scroll(function() {
+            if ($(this).scrollTop() > 200) {
+                $top.fadeIn(200);
+            } else {
+                $top.fadeOut(200);
+            }
+        });
+
+        // Animate the scroll to top
+        $top.click(function(event) {
+            event.preventDefault();
+            $('html, body').animate({scrollTop: 0}, 300);
+        })
+
+        // Makes sure that the href="#" attached to the <a> elements
+        // don't scroll you back up the page.
+        $('body').on('click', 'a[href="#"]', function(event) {
+            event.preventDefault();
+        });
+    </script>
+    <script type="text/javascript">
+        var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+        document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+        try {
+            var pageTracker = _gat._getTracker("UA-34988446-1");
+            pageTracker._trackPageview();
+            } catch(err) {}
+    </script>
+
+
+    <script>
+    $(document).ready(function() {
+         $('#tipue_search_input').tipuesearch({
+              'show': 6,
+              'mode': 'json',
+              'contentLocation': 'tipuesearch_content.json'
+         });
+    });
+    </script>
+
+</body>
+</html>

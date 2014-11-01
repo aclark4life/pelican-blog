@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Alex Clark - Python Web Developer & Musician, Django, Pillow, Python and more!">
+
+        <link rel="alternate"  href="http://blog.aclark.net/feeds/all.atom.xml" type="application/atom+xml" title="Alex Clark - Python Web Developer & Musician Full Atom Feed"/>
+
+        <title>Top 10 reasons Plone 3.3 Site Admin book is still for you // Alex Clark - Python Web Developer & Musician // Django, Pillow, Python and more!</title>
+
+    <link href="https://github.com/pythonpackages/pythonpackages/blob/master/favicon.ico?raw=true" rel="icon">
+
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.3.0/pure-min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="http://blog.aclark.net/theme/css/pure.css">
+    <link rel="stylesheet" href="http://blog.aclark.net/theme/css/pygments.css">
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/fitvids/1.0.1/jquery.fitvids.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".content").fitVids();
+        });
+    </script>
+
+    <script type="text/javascript" src="http://blog.aclark.net/tipuesearch/tipuesearch_set.js"></script>
+    <script type="text/javascript" src="http://blog.aclark.net/tipuesearch/tipuesearch_content.js"></script>
+    <link rel="stylesheet" type="text/css" href="http://blog.aclark.net/tipuesearch/tipuesearch.css">
+    <script type="text/javascript" src="http://blog.aclark.net/tipuesearch/tipuesearch.js"></script>
+
+</head>
+
+<body>
+    <div class="pure-g-r" id="layout">
+        <div class="sidebar pure-u">
+            <div class="cover-img" style="background-image: url('http://aclark.net/static/background.jpg')">
+                <div class="cover-body">
+                    <header class="header">
+                        <hgroup>
+                            <img class="avatar" src="http://www.gravatar.com/avatar/6170000a01c67c6ba1e2d4bd87701bae.png">
+                            <h1 class="brand-main"><a href="http://blog.aclark.net">Alex Clark - Python Web Developer & Musician</a></h1>
+                            <p class="tagline">Django, Pillow, Python and more!</p>
+                                <p class="social">
+                                    <a href="https://github.com/aclark4life/">
+                                        <i class="fa fa-github fa-3x"></i>
+                                    </a>
+                                    <a href="https://www.gittip.com/aclark4life">
+                                        <i class="fa fa-gittip fa-3x"></i>
+                                    </a>
+                                    <a href="https://twitter.com/aclark4life">
+                                        <i class="fa fa-twitter-square fa-3x"></i>
+                                    </a>
+                                </p>
+                        </hgroup>
+                    </header>
+                </div>
+            </div>
+        </div>
+        <div id="search" style="letter-spacing: 1px">
+            <form action="http://blog.aclark.net">
+                <input type="text" name="q" id="tipue_search_input" autocomplete="off" required>
+            </form>
+            <div id="tipue_search_content" style="padding-left: 55px"></div>
+        </div>
+    <div class="pure-u">
+        <div class="content">
+            <section class="post">
+                <header class="post-header">
+                    <h1>Top 10 reasons Plone 3.3 Site Admin book is still for you</h1>
+                        <p class="post-meta">
+                            // under                                 <a class="post-category" href="http://blog.aclark.net/tag/plone.html">Plone</a>
+                                <a class="post-category" href="http://blog.aclark.net/tag/python.html">Python</a>
+                        </p>
+                </header>
+            </section>
+            <p>About a year ago, I was frantically trying to finish <a class="reference external" href="http://aclark.net/book">Plone 3.3 Site Administration</a> in time to teach it at Plone Symposium East 2010 at Penn State University as well as publish it. I remember staying up all night to finish &amp; submit the final drafts then driving 4 hours to Penn State, then teaching for 8 hours before I was finally able to crash (but not before consuming a large and delicious cheeseburger and a Yuengling from the <a class="reference external" href="http://www.nittanylioninn.psu.edu/">Nittany Lion Inn</a> room service, yum).</p>
+<p>The class went well and everyone seemed happy with the results and I am very grateful to PSU for the opportunity. I remember struggling to get some Windows users up to speed, so this year I've decided to &quot;require&quot; students to install Plone before the class via the <a class="reference external" href="http://plone.org/products/plone/releases/4.0.5">appropriate installer for their platform</a>. Most &quot;site admin-ing&quot; we do will be &quot;ad hoc&quot; preferably on top of a stand-alone Python installation. But we can refer to the installer-based Plone as needed and in fact the installer-based Plone is all some folks will ever need or want.</p>
+<div class="section" id="the-list">
+<h2>The list</h2>
+<p>Anyway, this post is about this year's class taught from the same material but updated to account for any changes that have occurred since the book was first published. Most importantly, it addresses the release of Plone 4 in the context of the book title &quot;Plone 3.3 Site Administration&quot;. So without further ado, why &quot;Plone 3.3 Site Administration&quot; is still for you:</p>
+<ol class="arabic simple">
+<li><strong>The version reference in the title is mostly meaningless</strong>.  <a class="reference external" href="http://www.packtpub.com">PACKT</a> insist on incorporating a software version number into the title of their books. I would have called it: &quot;Plone Site Administration&quot;, or &quot;Buildout for Plone&quot;.</li>
+<li><strong>The book teaches valuable *techniques*, using Plone 3.3 as an example</strong>. Most, if not all of the techniques still apply today i.e. w/Plone 4.0.x and Plone 4.1.x. They will likely continue to apply as long as Plone continues to rely on <a class="reference external" href="http://pypi.python.org/pypi/zc.buildout">zc.buildout</a>.</li>
+<li><strong>Plone makes it relatively easy to upgrade</strong> by providing <a class="reference external" href="http://dist.plone.org/release/4.1b2/versions.cfg">version numbers</a> for all of the packages it requires. In many cases an upgrade simply involves referring to a newer list of package versions. In the case of upgrading from Plone 3.3.x to Plone 4.0.x, the [zope2] section goes away because Zope2 became an egg. (Compare <a class="reference external" href="http://raw.github.com/plock/pins/master/plone-3-3">this buildout</a> with <a class="reference external" href="http://raw.github.com/plock/pins/master/plone-4-0">this one</a>.) Also Plone 4 buildouts should be bootstrapped with Python 2.6 instead of Python 2.4 as was required by Plone 3.</li>
+<li><strong>Python tools &quot;goodness&quot;</strong>. This book goes to great lengths to demonstrate how Plone fits &quot;naturally&quot; on top of the Python software stack. It also includes information about non-Plone-specific Python-related technologies like <a class="reference external" href="http://packages.python.org/setuptools/">Setuptools</a> and <a class="reference external" href="http://pypi.python.org/pypi/pip">pip</a>. This in theory makes Plone more approachable to &quot;regular&quot; Python folk.</li>
+<li><strong>The Python buildout</strong>. One of the most useful things the Plone community has to offer the Python community at large is the <a class="reference external" href="https://github.com/collective/buildout.python">Python buildout</a>. If you do development that requires multiple versions of Python e.g. Plone 3.3.x/4.0.x you could do worse than to rely on this buildout to provide them multiple versions quickly and easily. The book dances around the subject, but the point is: use it.</li>
+<li><strong>Cross-platform</strong>. This book goes to great lengths to demonstrate the Plone installation process on three popular operating systems: Mac OS X, Ubuntu Linux, and Windows. The point is to show off how similar the process is across platforms because Python does all the hard work, and of course to deal with the cases where it is not similar e.g. it's &quot;hard&quot; to compile <a class="reference external" href="http://python.org/download/windows/">Python on Windows</a>.</li>
+<li><strong>Add-ons</strong>! A lot of the value of Plone comes from the ability to customize it to fit your needs. If that customization has already been done by some other member of the community, even better. This is one of the core essences of the Plone community: everyone working hard to contribute to the available pool of add-ons, and then <a class="reference external" href="http://plone.org/products">sharing the results</a>. This book aims to make you better at evaluating the myriad of options you may be presented with when you need to <a class="reference external" href="http://pypi.python.org/pypi">find and install an add-on</a>.</li>
+<li><strong>Upgrades</strong>! The final chapter of the book holds your hand and walks you through an upgrade from Plone 3.3.x to Plone 4.0.x. It doesn't contain anything you can't find at <a class="reference external" href="http://plone.org/upgrade">http://plone.org/upgrade</a> (in fact it contains much less information), but in the context of a book full of buildout configuration file examples, it should feel more like a natural step than an intimidating process.</li>
+<li><strong>Security</strong>! The book covers how to deal with security patches, <em>not</em> in the common case of when a hotfix is released as a Zope 2 Product or Python egg, but in the <a class="reference external" href="http://raw.github.com/plock/pins/master/plone-2-1">somewhat more obscure case</a> where a newer (non-egg) Zope2 release replaces an older one with a vulnerability. The modern equivalent would be a Plone release post-security-hotfix release. Such releases simply contain a newer KGS listing package versions that contain the appropriate fixes.  This &quot;old school&quot; example is included to give readers as broad a perspective as possible, so that they may better handle anything they may come across in the wild.</li>
+<li><strong>All the boring stuff too</strong>. This book also walks you through the remaining &quot;hot&quot; topics not covered yet in this list, all from a heavy zc.buildout configuration management perspective: site basics e.g. customizing navigation, appearance (AKA theming, strictly &quot;old style&quot; sorry), administration e.g. mail settings, ldap, deployment and maintenance e.g. automating database backups and packing, and optimization e.g. load balancing, supervisor, and <a class="reference external" href="http://pypi.python.org/pypi/munin.plone">munin graphs</a>!</li>
+</ol>
+<p>That's it!</p>
+</div>
+<div class="section" id="the-training">
+<h2>The training</h2>
+<p>Sound even the <em>slightest</em> bit interesting? And/or are these things you <em>need</em> to know about Plone for your job? If so, then you or your employees will not want to miss my one day class next week at the <a class="reference external" href="http://weblion.psu.edu/symposium">Plone Symposium East 2011</a>. In case you or your employees are interested, you can sign up here (separate from the symposium):</p>
+<ul class="simple">
+<li><a class="reference external" href="http://aclark.net/services">http://aclark.net/services</a></li>
+</ul>
+<p>Hope to see you there.</p>
+</div>
+<div class="section" id="the-service">
+<h2>The service</h2>
+<div class="section" id="baas-buildout-as-a-service">
+<h3>BaaS (Buildout as a Service)</h3>
+<p>(Yes, I am serious)</p>
+<p>And finally for whatever it is worth, many of the lessons learned from writing the book from the author's perspective ended up here:</p>
+<ul class="simple">
+<li><a class="reference external" href="https://github.com/plock/pins">https://github.com/plock/pins</a></li>
+</ul>
+<p>That is to say: buildouts are frequently changing in response to what is going on in the Python package ecosystem around them even though their primary goal is to maintain stability and/or to only change when you want to change. When a change like a security fix or configuration change comes along, the author pushes changes out to the dist server than deploys the dist server changes to production.</p>
+</div>
+</div>
+
+            <a href="#" class="go-top">Go Top</a>
+    <div class="comments">
+        <div id="disqus_thread"></div>
+        <script type="text/javascript">
+            /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+            var disqus_shortname = "aclark-blog"; // required: replace example with your forum shortname
+
+            /* * * DON'T EDIT BELOW THIS LINE * * */
+            (function() {
+                var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </div>
+<footer class="footer">
+    <p>&copy; Alex Clark &ndash;
+        Built with <a href="https://github.com/PurePelicanTheme/pure-single">Pure Theme</a>
+        for <a href="http://blog.getpelican.com/">Pelican</a>
+    </p>
+</footer>        </div>
+    </div>
+    </div>
+    <script>
+        var $top = $('.go-top');
+
+        // Show or hide the sticky footer button
+        $(window).scroll(function() {
+            if ($(this).scrollTop() > 200) {
+                $top.fadeIn(200);
+            } else {
+                $top.fadeOut(200);
+            }
+        });
+
+        // Animate the scroll to top
+        $top.click(function(event) {
+            event.preventDefault();
+            $('html, body').animate({scrollTop: 0}, 300);
+        })
+
+        // Makes sure that the href="#" attached to the <a> elements
+        // don't scroll you back up the page.
+        $('body').on('click', 'a[href="#"]', function(event) {
+            event.preventDefault();
+        });
+    </script>
+    <script type="text/javascript">
+        var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+        document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+        try {
+            var pageTracker = _gat._getTracker("UA-34988446-1");
+            pageTracker._trackPageview();
+            } catch(err) {}
+    </script>
+
+
+    <script>
+    $(document).ready(function() {
+         $('#tipue_search_input').tipuesearch({
+              'show': 6,
+              'mode': 'json',
+              'contentLocation': 'tipuesearch_content.json'
+         });
+    });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,969 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Alex Clark - Python Web Developer &amp; Musician</title><link href="http://blog.aclark.net/" rel="alternate"></link><link href="http://blog.aclark.net/feeds/alex-clark.atom.xml" rel="self"></link><id>http://blog.aclark.net/</id><updated>2014-10-02T14:30:00-04:00</updated><entry><title>Pillow Runs Itself!</title><link href="http://blog.aclark.net/2014/10/02/pillow-runs-itself/" rel="alternate"></link><updated>2014-10-02T14:30:00-04:00</updated><author><name>Alex Clark</name></author><id>tag:blog.aclark.net,2014-10-02:2014/10/02/pillow-runs-itself/</id><summary type="html">&lt;p&gt;&lt;strong&gt;As of Pillow 2.6.0, the Pillow project almost completely runs itself!&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Of course when I say &amp;quot;runs itself&amp;quot; I mean &amp;quot;runs without me&amp;quot;, which is what &lt;strong&gt;every open source project lead hopes for&lt;/strong&gt;. For the first time ever, I was able to:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;Turn off GitHub Watching until two weeks before the release.&lt;/li&gt;
+&lt;li&gt;Not run &lt;cite&gt;setup.py upload&lt;/cite&gt; or &lt;cite&gt;twine upload&lt;/cite&gt; myself.&lt;/li&gt;
+&lt;li&gt;Watch in awe as Pillow Men #s 2 &amp;amp; 3 did all the work. [1]&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Kudos to these gentlemen for making my life easier and for continuing to provide the Python community with a featureful, modern &amp;amp; secure Python Imaging Library. Additionally &lt;strong&gt;thanks to all the contributors from all over the world&lt;/strong&gt; who continue to develop and improve Pillow. I used to keep a list, but now there are &lt;a class="reference external" href="https://github.com/python-pillow/Pillow/graphs/contributors"&gt;too many to keep track of&lt;/a&gt;. Oh and lastly, &lt;a class="reference external" href="https://twitter.com/wiredfool/status/517382632267841536"&gt;2.6.0 is out&lt;/a&gt;! Enjoy the release &amp;amp; please &lt;a class="reference external" href="https://github.com/python-pillow/Pillow/issues"&gt;report issues here&lt;/a&gt;.&lt;/p&gt;
+&lt;table class="docutils footnote" frame="void" id="id1" rules="none"&gt;
+&lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
+&lt;tbody valign="top"&gt;
+&lt;tr&gt;&lt;td class="label"&gt;[1]&lt;/td&gt;&lt;td&gt;&lt;a class="reference external" href="https://twitter.com/wiredfool"&gt;Eric Soroos&lt;/a&gt; &amp;amp; &lt;a class="reference external" href="https://twitter.com/hugovk"&gt;Hugo&lt;/a&gt; respectively. Additional thanks to Christoph Gohlke for &lt;a class="reference external" href="https://pypi.python.org/pypi/Pillow/2.6.0#downloads"&gt;Windows Eggs, Exes, Wheels&lt;/a&gt;, Matthew Brett for &lt;a class="reference external" href="https://github.com/python-pillow/Pillow/issues/766"&gt;OS X Wheels&lt;/a&gt;, and Steve Johnson for &lt;a class="reference external" href="https://github.com/python-pillow/Pillow/issues/769"&gt;Sphinx Documentation&lt;/a&gt;.&lt;/td&gt;&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;P.S. New theme! Thanks &lt;a class="reference external" href="http://purepelican.com/"&gt;Pure Pelican Theme&lt;/a&gt;.&lt;/p&gt;
+</summary><category term="Mozilla"></category><category term="Plone"></category><category term="Python"></category></entry><entry><title>Pillow 2-5-0 is out!</title><link href="http://blog.aclark.net/2014/07/05/pillow-2-5-0-is-out/" rel="alternate"></link><updated>2014-07-05T11:15:00-04:00</updated><author><name>Alex Clark</name></author><id>tag:blog.aclark.net,2014-07-05:2014/07/05/pillow-2-5-0-is-out/</id><summary type="html">&lt;p&gt;&lt;strong&gt;Pillow is the &amp;quot;friendly&amp;quot; PIL fork by Alex Clark and Contributors. PIL is the Python Imaging Library by Fredrik Lundh and Contributors&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Since Pillow 2.0 the Pillow Team has adopted a quarterly release cycle; as such, Pillow 2.5.0 is out! Here's what's new in this release:&lt;/p&gt;
+&lt;div class="section" id="id1"&gt;
+&lt;h2&gt;2.5.0 (2014-07-01)&lt;/h2&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;Imagedraw rewrite
+[terseus, wiredfool]&lt;/li&gt;
+&lt;li&gt;Add support for multithreaded test execution
+[wiredfool]&lt;/li&gt;
+&lt;li&gt;Prevent shell injection #748
+[mbrown1413, wiredfool]&lt;/li&gt;
+&lt;li&gt;Support for Resolution in BMP files #734
+[gcq]&lt;/li&gt;
+&lt;li&gt;Fix error in setup.py for Python 3
+[matthew-brett]&lt;/li&gt;
+&lt;li&gt;Pyroma fix and add Python 3.4 to setup metadata #742
+[wirefool]&lt;/li&gt;
+&lt;li&gt;Top level flake8 fixes #741
+[aclark]&lt;/li&gt;
+&lt;li&gt;Remove obsolete Animated Raster Graphics (ARG) support
+[hugovk]&lt;/li&gt;
+&lt;li&gt;Fix test_imagedraw failures #727
+[cgohlke]&lt;/li&gt;
+&lt;li&gt;Fix AttributeError: class Image has no attribute 'DEBUG' #726
+[cgohlke]&lt;/li&gt;
+&lt;li&gt;Fix msvc warning: 'inline' : macro redefinition #725
+[cgohlke]&lt;/li&gt;
+&lt;li&gt;Cleanup #654
+[dvska, hugovk, wiredfool]&lt;/li&gt;
+&lt;li&gt;16-bit monochrome support for JPEG2000
+[videan42]&lt;/li&gt;
+&lt;li&gt;Fixed ImagePalette.save
+[brightpisces]&lt;/li&gt;
+&lt;li&gt;Support JPEG qtables
+[csinchok]&lt;/li&gt;
+&lt;li&gt;Add binary morphology addon
+[dov, wiredfool]&lt;/li&gt;
+&lt;li&gt;Decompression bomb protection
+[hugovk]&lt;/li&gt;
+&lt;li&gt;Put images in a single directory
+[hugovk]&lt;/li&gt;
+&lt;li&gt;Support OpenJpeg 2.1
+[al45tair]&lt;/li&gt;
+&lt;li&gt;Remove unistd.h #include for all platforms
+[wiredfool]&lt;/li&gt;
+&lt;li&gt;Use unittest for tests
+[hugovk]&lt;/li&gt;
+&lt;li&gt;ImageCms fixes
+[hugovk]&lt;/li&gt;
+&lt;li&gt;Added more ImageDraw tests
+[hugovk]&lt;/li&gt;
+&lt;li&gt;Added tests for Spider files
+[hugovk]&lt;/li&gt;
+&lt;li&gt;Use libtiff to write any compressed tiff files
+[wiredfool]&lt;/li&gt;
+&lt;li&gt;Support for pickling Image objects
+[hugovk]&lt;/li&gt;
+&lt;li&gt;Fixed resolution handling for EPS thumbnails
+[eliempje]&lt;/li&gt;
+&lt;li&gt;Fixed rendering of some binary EPS files (Issue #302)
+[eliempje]&lt;/li&gt;
+&lt;li&gt;Rename variables not to use built-in function names
+[hugovk]&lt;/li&gt;
+&lt;li&gt;Ignore junk JPEG markers
+[hugovk]&lt;/li&gt;
+&lt;li&gt;Change default interpolation for Image.thumbnail to Image.ANTIALIAS
+[hugovk]&lt;/li&gt;
+&lt;li&gt;Add tests and fixes for saving PDFs
+[hugovk]&lt;/li&gt;
+&lt;li&gt;Remove transparency resource after P-&amp;gt;RGBA conversion
+[hugovk]&lt;/li&gt;
+&lt;li&gt;Clean up preprocessor cruft for Windows
+[CounterPillow]&lt;/li&gt;
+&lt;li&gt;Adjust Homebrew freetype detection logic
+[jacknagel]&lt;/li&gt;
+&lt;li&gt;Added Image.close, context manager support.
+[wiredfool]&lt;/li&gt;
+&lt;li&gt;Added support for 16 bit PGM files.
+[wiredfool]&lt;/li&gt;
+&lt;li&gt;Updated OleFileIO to version 0.30 from upstream
+[hugovk]&lt;/li&gt;
+&lt;li&gt;Added support for additional TIFF floating point format
+[Hijackal]&lt;/li&gt;
+&lt;li&gt;Have the tempfile use a suffix with a dot
+[wiredfool]&lt;/li&gt;
+&lt;li&gt;Fix variable name used for transparency manipulations
+[nijel]&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="section" id="acknowledgements"&gt;
+&lt;h2&gt;Acknowledgements&lt;/h2&gt;
+&lt;p&gt;With every release, there are notable contributions I must acknowledge:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;Thanks to Stephen Johnson for contributing &lt;a class="reference external" href="http://pillow.readthedocs.org"&gt;http://pillow.readthedocs.org&lt;/a&gt;, we continue to rely on &amp;amp; extend this resource.&lt;/li&gt;
+&lt;li&gt;Thanks to Christopher Gohlke for producing Windows Egg, Exe, and Wheel distributions.&lt;/li&gt;
+&lt;li&gt;Thanks to Matthew Brett for producing OS X Wheels (for the first time ever!)&lt;/li&gt;
+&lt;li&gt;Thanks to Eric Soroos for his contributions and serving as &amp;quot;Pillow Man #2&amp;quot; (2nd in command).&lt;/li&gt;
+&lt;li&gt;Welcome to Hugo VK who has joined the Pillow Team &amp;amp; contributed significantly to this release.&lt;/li&gt;
+&lt;li&gt;Thanks to all the remaining unnamed contributors! We appreciate every commit.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Enjoy Pillow 2.5.0 &amp;amp; please report issues here: &lt;a class="reference external" href="https://github.com/python-imaging/Pillow/issues"&gt;https://github.com/python-imaging/Pillow/issues&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+</summary><category term="Django"></category><category term="Mozilla"></category><category term="Plone"></category><category term="Python"></category></entry><entry><title>Plone 5 Alpha 2 is here!</title><link href="http://blog.aclark.net/2014/06/18/plone-5-alpha-2-is-here/" rel="alternate"></link><updated>2014-06-18T08:00:00-04:00</updated><author><name>Alex Clark</name></author><id>tag:blog.aclark.net,2014-06-18:2014/06/18/plone-5-alpha-2-is-here/</id><summary type="html">&lt;p&gt;&lt;em&gt;This post is long overdue since Plone 5 alpha 2 was released on 2014-04-20! It is also too short. I may do a followup blog entry to review more features, depending on how well this one is received. I also want to talk more about Plock.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;When Plone 4 alpha 1 was released, I was so excited I immediately &lt;a class="reference external" href="http://blog.aclark.net/2012/10/03/plone-4-3-alpha-1-in-production/"&gt;ran it in production&lt;/a&gt;. Now-a-days I use &lt;a class="reference external" href="http://blog.aclark.net/2013/04/22/new-pyramid-site/"&gt;Pyramid for aclark.net&lt;/a&gt; but I still get excited about new Plone releases.&lt;/p&gt;
+&lt;p&gt;As such, I finally got around to testing the latest Plone 5 alpha with &lt;a class="reference external" href="http://blog.aclark.net/2014/03/20/introducing-plock-pins/"&gt;my deployment stack&lt;/a&gt; and the results were very impressive, so I thought I'd share.&lt;/p&gt;
+&lt;div class="section" id="hosted-configuration"&gt;
+&lt;h2&gt;Hosted configuration&lt;/h2&gt;
+&lt;p&gt;Because of the &amp;quot;muscle memory&amp;quot; I've built up over the years doing this, I always install Plone in development and production via my &lt;a class="reference external" href="https://github.com/plock/pins"&gt;hosted configuration files&lt;/a&gt;. If you are not a developer you may instead prefer the &lt;a class="reference external" href="http://plone.org/products/plone/releases/5.0"&gt;Unified Installer, VirtualBox/Vagrant installer or OS X Lion/Mountain Lion/Mavericks Binary Installer&lt;/a&gt; otherwise follow along &lt;a class="footnote-reference" href="#id2" id="id1"&gt;[1]&lt;/a&gt;:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+$ pip install tmp virtualenv
+$ cd `tmp`
+$ virtualenv .
+$ bin/pip install zc.buildout
+$ bin/buildout init
+&lt;/pre&gt;
+&lt;p&gt;Edit &lt;tt class="docutils literal"&gt;buildout.cfg&lt;/tt&gt; to contain:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+[buildout]
+extends = https://raw.github.com/plock/pins/master/plone-5-0
+&lt;/pre&gt;
+&lt;p&gt;Run Buildout and start Plone:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+$ bin/buildout
+$ bin/plone fg
+&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div class="section" id="create-plone-site"&gt;
+&lt;h2&gt;Create Plone Site&lt;/h2&gt;
+&lt;p&gt;The first thing you will notice is the improved &amp;quot;Create a Plone Site&amp;quot; page which now includes a timezone configuration option:&lt;/p&gt;
+&lt;img alt="Plone 5" src="/images/plone-5-screen-0.png" /&gt;
+&lt;/div&gt;
+&lt;div class="section" id="barceloneta-theme"&gt;
+&lt;h2&gt;Barceloneta Theme&lt;/h2&gt;
+&lt;p&gt;I selected the &lt;tt class="docutils literal"&gt;US/Eastern&lt;/tt&gt; timezone and clicked &lt;tt class="docutils literal"&gt;Create Plone Site&lt;/tt&gt;, shortly after which I was greeted with a beautiful new Plone 5 site in all its open source glory. Immediately you will notice a new theme and toolbar:&lt;/p&gt;
+&lt;img alt="Plone 5" src="/images/plone-5-screen-1.png" /&gt;
+&lt;/div&gt;
+&lt;div class="section" id="plone-toolbar"&gt;
+&lt;h2&gt;Plone Toolbar&lt;/h2&gt;
+&lt;p&gt;Here is a quick tour of the new toolbar.&lt;/p&gt;
+&lt;img alt="Plone 5" src="/images/plone-5-screen-1.png" /&gt;
+&lt;div class="section" id="folder-contents"&gt;
+&lt;h3&gt;Folder contents&lt;/h3&gt;
+&lt;img alt="Plone 5" src="/images/plone-5-screen-2.png" /&gt;
+&lt;/div&gt;
+&lt;div class="section" id="edit-button"&gt;
+&lt;h3&gt;Edit button&lt;/h3&gt;
+&lt;img alt="Plone 5" src="/images/plone-5-screen-3.png" /&gt;
+&lt;/div&gt;
+&lt;div class="section" id="sharing-settings"&gt;
+&lt;h3&gt;Sharing settings&lt;/h3&gt;
+&lt;img alt="Plone 5" src="/images/plone-5-screen-4.png" /&gt;
+&lt;/div&gt;
+&lt;div class="section" id="workflow-settings"&gt;
+&lt;h3&gt;Workflow settings&lt;/h3&gt;
+&lt;img alt="Plone 5" src="/images/plone-5-screen-5.png" /&gt;
+&lt;/div&gt;
+&lt;div class="section" id="add-content"&gt;
+&lt;h3&gt;Add content&lt;/h3&gt;
+&lt;img alt="Plone 5" src="/images/plone-5-screen-6.png" /&gt;
+&lt;/div&gt;
+&lt;div class="section" id="layout-settings"&gt;
+&lt;h3&gt;Layout settings&lt;/h3&gt;
+&lt;img alt="Plone 5" src="/images/plone-5-screen-7.png" /&gt;
+&lt;/div&gt;
+&lt;div class="section" id="user-menu"&gt;
+&lt;h3&gt;User menu&lt;/h3&gt;
+&lt;img alt="Plone 5" src="/images/plone-5-screen-8.png" /&gt;
+&lt;p&gt;Love it! Of all these, only the eye icon didn't function as expected. Not sure what it's supposed to do but I assume it's not done yet. Additionally, I wish the small Plone logo in the toolbar navigated &amp;quot;home&amp;quot; like the portal logo. Or maybe it will close the toolbar? Oh, the possibilities!&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="thanks"&gt;
+&lt;h2&gt;Thanks&lt;/h2&gt;
+&lt;p&gt;Many thanks to everyone who has worked hard to make Plone 5 a reality.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;You should probably&lt;/em&gt; &lt;a class="reference external" href="http://aclark.net"&gt;hire me&lt;/a&gt; &lt;em&gt;or&lt;/em&gt; &lt;a class="reference external" href="http://twitter.com/aclark4life"&gt;follow me on Twitter&lt;/a&gt; &lt;em&gt;or both&lt;/em&gt;.&lt;/p&gt;
+&lt;table class="docutils footnote" frame="void" id="id2" rules="none"&gt;
+&lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
+&lt;tbody valign="top"&gt;
+&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#id1"&gt;[1]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;And please try &lt;a class="reference external" href="http://plock.github.io"&gt;Plock&lt;/a&gt; which automates all of these steps e.g. &lt;tt class="docutils literal"&gt;pip install plock; plock .;bin/plone fg&lt;/tt&gt; Once Plone (4) is installed, update the extends parameter in &lt;tt class="docutils literal"&gt;buildout.cfg&lt;/tt&gt; to &lt;tt class="docutils literal"&gt;&lt;span class="pre"&gt;https://raw.github.com/plock/pins/master/plone-5-0&lt;/span&gt;&lt;/tt&gt; and rerun Buildout.&lt;/td&gt;&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+</summary><category term="Plone"></category><category term="Python"></category></entry><entry><title>I love collective-recipe-plonesite!</title><link href="http://blog.aclark.net/2014/06/02/i-love-collective-recipe-plonesite/" rel="alternate"></link><updated>2014-06-02T18:15:00-04:00</updated><author><name>Alex Clark</name></author><id>tag:blog.aclark.net,2014-06-02:2014/06/02/i-love-collective-recipe-plonesite/</id><summary type="html">&lt;p&gt;Whenever I answer tech support questions, I usually begin with a clean slate, e.g.:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+$ pip install tmp virtualenv
+$ cd `tmp`
+$ virtualenv .
+$ bin/pip install zc.buildout
+$ bin/buildout init
+&lt;/pre&gt;
+&lt;p&gt;Then I edit &lt;tt class="docutils literal"&gt;buildout.cfg&lt;/tt&gt; to look like this:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+[buildout]
+extends = https://raw.github.com/plock/pins/master/plone-4-3
+&lt;/pre&gt;
+&lt;p&gt;Then I run Buildout:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+$ bin/buildout
+&lt;/pre&gt;
+&lt;p&gt;And because my &lt;tt class="docutils literal"&gt;.buildout/default.cfg&lt;/tt&gt; file looks like this:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+[buildout]
+eggs-directory = /Users/aclark/Developer/eggs-directory
+download-cache = /Users/aclark/Developer/download-cache
+extends-cache = /Users/aclark/Developer/extends-cache
+&lt;/pre&gt;
+&lt;p&gt;, the entire process only takes a few seconds (except for when I &lt;a class="reference external" href="http://blog.aclark.net/2014/03/19/virtualenv-support-update/"&gt;run into trouble with setuptools&lt;/a&gt;. I should probably start doing &lt;tt class="docutils literal"&gt;virtualenv &lt;span class="pre"&gt;--no-setuptools&lt;/span&gt;&lt;/tt&gt;. Perhaps this can be made default?)&lt;/p&gt;
+&lt;p&gt;If I'm in the mood to search the source code, I add the following:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+[buildout]
+extends =
+    https://raw.github.com/plock/pins/master/plone-4-3
+    https://raw.github.com/plock/pins/master/dev
+&lt;/pre&gt;
+&lt;p&gt;Then I run Buildout, after which I can easily search in &lt;tt class="docutils literal"&gt;parts/omelette&lt;/tt&gt;.&lt;/p&gt;
+&lt;div class="section" id="plone-site-debug"&gt;
+&lt;h2&gt;Plone site debug&lt;/h2&gt;
+&lt;p&gt;Anyway, sometimes instead of running Plone through-the-web I want to run a debug prompt instead. All that is required is:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+$ bin/plone debug
+&lt;/pre&gt;
+&lt;p&gt;However at this point there is no Plone site object in the database. One could easily create a Plone site through-the-web, but why bother when &lt;a class="reference external" href="https://pypi.python.org/pypi/collective.recipe.plonesite"&gt;collective.recipe.plonesite&lt;/a&gt; exists:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+[buildout]
+extends =
+    https://raw.github.com/plock/pins/master/plone-4-3
+    https://raw.github.com/plock/pins/master/dev
+parts += plonesite
+
+[plonesite]
+recipe = collective.recipe.plonesite
+instance = plone
+&lt;/pre&gt;
+&lt;p&gt;After running Buildout, now I can examine the Plone site:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+$ bin/plone debug
+Starting debugger (the name &amp;quot;app&amp;quot; is bound to the top-level Zope object)
+
+&amp;gt;&amp;gt;&amp;gt; app.Plone.
+Display all 864 possibilities? (y or n)
+app.Plone.COPY(                                                 app.Plone.hasObject__roles__
+app.Plone.COPY__roles__                                         app.Plone.hasProperty(
+app.Plone.Contributors(                                         app.Plone.hasProperty__roles__
+app.Plone.Contributors__roles__                                 app.Plone.has_local_roles(
+app.Plone.CreationDate(                                         app.Plone.has_order_support
+app.Plone.CreationDate__roles__                                 app.Plone.http__etag(
+app.Plone.Creator(                                              app.Plone.http__parseMatchList(
+app.Plone.Creator__roles__                                      app.Plone.http__processMatchHeaders(
+app.Plone.DELETE(                                               app.Plone.http__refreshEtag(
+app.Plone.DELETE__roles__                                       app.Plone.icon
+app.Plone.Date(                                                 app.Plone.icon__roles__
+app.Plone.Date__roles__                                         app.Plone.id
+app.Plone.Description(                                          app.Plone.indexObject(
+app.Plone.Description__roles__                                  app.Plone.invokeFactory(
+app.Plone.EffectiveDate(                                        app.Plone.invokeFactory__roles__
+app.Plone.EffectiveDate__roles__                                app.Plone.isAnObjectManager
+app.Plone.ExpirationDate(                                       app.Plone.isEffective(
+app.Plone.ExpirationDate__roles__                               app.Plone.isEffective__roles__
+app.Plone.Format(                                               app.Plone.isPrincipiaFolderish
+app.Plone.Format__roles__                                       app.Plone.isTopLevelPrincipiaApplicationObject
+app.Plone.HEAD(                                                 app.Plone.items(
+app.Plone.HEAD__roles__                                         app.Plone.items__roles__
+app.Plone.HTTPCache                                             app.Plone.keys(
+app.Plone.Identifier(                                           app.Plone.keys__roles__
+app.Plone.Identifier__roles__                                   app.Plone.language
+app.Plone.LOCK(                                                 app.Plone.listContributors(
+app.Plone.LOCK__roles__                                         app.Plone.listContributors__roles__
+app.Plone.Language(                                             app.Plone.listCreators(
+app.Plone.Language__roles__                                     app.Plone.listCreators__roles__
+app.Plone.MKCOL(                                                app.Plone.listDAVObjects(
+app.Plone.MKCOL_handler(                                        app.Plone.listDAVObjects__roles__
+app.Plone.MOVE(                                                 app.Plone.listFolderContents(
+app.Plone.MOVE__roles__                                         app.Plone.listFolderContents__roles__
+app.Plone.MailHost                                              app.Plone.list_imports(
+app.Plone.ModificationDate(                                     app.Plone.manage(
+app.Plone.ModificationDate__roles__                             app.Plone.manage_CopyContainerAllItems(
+app.Plone.OPTIONS(                                              app.Plone.manage_CopyContainerAllItems__roles__
+app.Plone.OPTIONS__roles__                                      app.Plone.manage_CopyContainerFirstItem(
+app.Plone.PROPFIND(                                             app.Plone.manage_CopyContainerFirstItem__roles__
+app.Plone.PROPFIND__roles__                                     app.Plone.manage_DAVget(
+app.Plone.PROPPATCH(                                            app.Plone.manage_DAVget__roles__
+app.Plone.PROPPATCH__roles__                                    app.Plone.manage_FTPlist(
+app.Plone.PUT(                                                  app.Plone.manage_FTPlist__roles__
+app.Plone.PUT_factory(                                          app.Plone.manage_FTPstat(
+app.Plone.PrincipiaFind(                                        app.Plone.manage_FTPstat__roles__
+app.Plone.PrincipiaFind__roles__                                app.Plone.manage_UndoForm(
+app.Plone.Publisher(                                            app.Plone.manage_UndoForm__roles__
+app.Plone.Publisher__roles__                                    app.Plone.manage__roles__
+app.Plone.RAMCache                                              app.Plone.manage_access(
+app.Plone.REQUEST                                               app.Plone.manage_access__roles__
+app.Plone.ResourceRegistryCache                                 app.Plone.manage_acquiredForm(
+app.Plone.Rights(                                               app.Plone.manage_acquiredForm__roles__
+app.Plone.Rights__roles__                                       app.Plone.manage_acquiredPermissions(
+app.Plone.SQLConnectionIDs(                                     app.Plone.manage_acquiredPermissions__roles__
+app.Plone.SQLConnectionIDs__roles__                             app.Plone.manage_addDTMLDocument(
+app.Plone.SiteRootAdd(                                          app.Plone.manage_addDTMLDocument__roles__
+app.Plone.SiteRootAdd__roles__                                  app.Plone.manage_addDTMLMethod(
+app.Plone.Subject(                                              app.Plone.manage_addDTMLMethod__roles__
+app.Plone.Subject__roles__                                      app.Plone.manage_addDocument(
+app.Plone.TRACE(                                                app.Plone.manage_addDocument__roles__
+app.Plone.TRACE__roles__                                        app.Plone.manage_addFile(
+app.Plone.Title(                                                app.Plone.manage_addFile__roles__
+app.Plone.Title__roles__                                        app.Plone.manage_addFolder(
+app.Plone.Type(                                                 app.Plone.manage_addFolder__roles__
+app.Plone.Type__roles__                                         app.Plone.manage_addImage(
+app.Plone.UNLOCK(                                               app.Plone.manage_addImage__roles__
+app.Plone.UNLOCK__roles__                                       app.Plone.manage_addLocalRoles(
+app.Plone.ZQueryIds(                                            app.Plone.manage_addLocalRoles__roles__
+app.Plone.ZQueryIds__roles__                                    app.Plone.manage_addOrderedFolder(
+app.Plone.ZopeFind(                                             app.Plone.manage_addOrderedFolder__roles__
+app.Plone.ZopeFindAndApply(                                     app.Plone.manage_addPortalFolder(
+app.Plone.ZopeFindAndApply__roles__                             app.Plone.manage_addPortalFolder__roles__
+app.Plone.ZopeFind__roles__                                     app.Plone.manage_addProduct
+app.Plone._ATContentTypes__Add_Document_Permission              app.Plone.manage_addProperty(
+app.Plone._ATContentTypes__Add_Event_Permission                 app.Plone.manage_addProperty__roles__
+app.Plone._ATContentTypes__Add_File_Permission                  app.Plone.manage_addSiteRoot(
+app.Plone._ATContentTypes__Add_Folder_Permission                app.Plone.manage_addSiteRootForm(
+app.Plone._ATContentTypes__Add_Image_Permission                 app.Plone.manage_addSiteRootForm__roles__
+app.Plone._ATContentTypes__Add_Link_Permission                  app.Plone.manage_addSiteRoot__roles__
+app.Plone._ATContentTypes__Add_News_Item_Permission             app.Plone.manage_addUserFolder(
+app.Plone._Access_arbitrary_user_session_data_Permission        app.Plone.manage_addUserFolder__roles__
+app.Plone._Access_contents_information_Permission               app.Plone.manage_afterAdd(
+app.Plone._Access_inactive_portal_content_Permission            app.Plone.manage_afterAdd__roles__
+app.Plone._Access_session_data_Permission                       app.Plone.manage_afterClone(
+app.Plone._Add_portal_content_Permission                        app.Plone.manage_afterClone__roles__
+app.Plone._Add_portal_events_Permission                         app.Plone.manage_beforeDelete(
+app.Plone._Add_portal_folders_Permission                        app.Plone.manage_beforeDelete__roles__
+app.Plone._Add_portal_member_Permission                         app.Plone.manage_changeOwnershipType(
+app.Plone._Allow_sendto_Permission                              app.Plone.manage_changeOwnershipType__roles__
+app.Plone._CMFEditions__Access_previous_versions_Permission     app.Plone.manage_changePermissions(
+app.Plone._CMFEditions__Apply_version_control_Permission        app.Plone.manage_changePermissions__roles__
+app.Plone._CMFEditions__Checkout_to_location_Permission         app.Plone.manage_changeProperties(
+app.Plone._CMFEditions__Revert_to_previous_versions_Permission  app.Plone.manage_changeProperties__roles__
+app.Plone._CMFEditions__Save_new_version_Permission             app.Plone.manage_changePropertyTypes(
+app.Plone._Change_local_roles_Permission                        app.Plone.manage_changePropertyTypes__roles__
+app.Plone._Change_portal_events_Permission                      app.Plone.manage_clone(
+app.Plone._Content_rules__Manage_rules_Permission               app.Plone.manage_clone__roles__
+app.Plone._Copy_or_Move_Permission                              app.Plone.manage_copyObjects(
+app.Plone._DefaultDublinCoreImpl__CEILING_DATE                  app.Plone.manage_copyObjects__roles__
+app.Plone._DefaultDublinCoreImpl__FLOOR_DATE                    app.Plone.manage_copyright(
+app.Plone._Delete_objects_Permission                            app.Plone.manage_copyright__roles__
+app.Plone._FTP_access_Permission                                app.Plone.manage_cutObjects(
+app.Plone._List_folder_contents_Permission                      app.Plone.manage_cutObjects__roles__
+app.Plone._List_portal_members_Permission                       app.Plone.manage_defined_roles(
+app.Plone._List_undoable_changes_Permission                     app.Plone.manage_defined_roles__roles__
+app.Plone._Mail_forgotten_password_Permission                   app.Plone.manage_delLocalRoles(
+app.Plone._Manage_properties_Permission                         app.Plone.manage_delLocalRoles__roles__
+app.Plone._Modify_portal_content_Permission                     app.Plone.manage_delObjects(
+app.Plone._Modify_view_template_Permission                      app.Plone.manage_delObjects__roles__
+app.Plone._Portlets__Manage_own_portlets_Permission             app.Plone.manage_delProperties(
+app.Plone._Portlets__Manage_portlets_Permission                 app.Plone.manage_delProperties__roles__
+app.Plone._Portlets__View_dashboard_Permission                  app.Plone.manage_editLocalRoles(
+app.Plone._Reply_to_item_Permission                             app.Plone.manage_editLocalRoles__roles__
+app.Plone._Request_review_Permission                            app.Plone.manage_editMetadata(
+app.Plone._Review_comments_Permission                           app.Plone.manage_editMetadata__roles__
+app.Plone._Review_portal_content_Permission                     app.Plone.manage_editProperties(
+app.Plone._Search_ZCatalog_Permission                           app.Plone.manage_editProperties__roles__
+app.Plone._Set_own_password_Permission                          app.Plone.manage_editRoles(
+app.Plone._Set_own_properties_Permission                        app.Plone.manage_editRoles__roles__
+app.Plone._Undo_changes_Permission                              app.Plone.manage_editedDialog(
+app.Plone._Use_Database_Methods_Permission                      app.Plone.manage_editedDialog__roles__
+app.Plone._Use_external_editor_Permission                       app.Plone.manage_exportObject(
+app.Plone._Use_mailhost_services_Permission                     app.Plone.manage_exportObject__roles__
+app.Plone._Use_version_control_Permission                       app.Plone.manage_findAdv(
+app.Plone._View_Groups_Permission                               app.Plone.manage_findAdv__roles__
+app.Plone._View_History_Permission                              app.Plone.manage_findForm(
+app.Plone._View_Permission                                      app.Plone.manage_findForm__roles__
+app.Plone._View_management_screens_Permission                   app.Plone.manage_findFrame(
+app.Plone._WebDAV_Lock_items_Permission                         app.Plone.manage_findFrame__roles__
+app.Plone._WebDAV_Unlock_items_Permission                       app.Plone.manage_findResult(
+app.Plone._WebDAV_access_Permission                             app.Plone.manage_findResult__roles__
+app.Plone.__ZCacheManager_ids__                                 app.Plone.manage_fixupOwnershipAfterAdd(
+app.Plone.__ac_local_roles__                                    app.Plone.manage_fixupOwnershipAfterAdd__roles__
+app.Plone.__ac_permissions__                                    app.Plone.manage_form_title(
+app.Plone.__ac_roles__                                          app.Plone.manage_form_title__roles__
+app.Plone.__allow_access_to_unprotected_subobjects__            app.Plone.manage_getPermissionMapping(
+app.Plone.__allow_groups__(                                     app.Plone.manage_getPermissionMapping__roles__
+app.Plone.__before_publishing_traverse__(                       app.Plone.manage_getUserRolesAndPermissions(
+app.Plone.__before_traverse__                                   app.Plone.manage_getUserRolesAndPermissions__roles__
+app.Plone.__browser_default__(                                  app.Plone.manage_hasId(
+app.Plone.__call__(                                             app.Plone.manage_hasId__roles__
+app.Plone.__call____roles__                                     app.Plone.manage_importExportForm(
+app.Plone.__class__(                                            app.Plone.manage_importExportForm__roles__
+app.Plone.__class_init__(                                       app.Plone.manage_importObject(
+app.Plone.__contains__(                                         app.Plone.manage_importObject__roles__
+app.Plone.__dav_collection__                                    app.Plone.manage_index_main(
+app.Plone.__dav_resource__                                      app.Plone.manage_index_main__roles__
+app.Plone.__delattr__(                                          app.Plone.manage_listLocalRoles(
+app.Plone.__delitem__(                                          app.Plone.manage_listLocalRoles__roles__
+app.Plone.__dict__                                              app.Plone.manage_main(
+app.Plone.__doc__                                               app.Plone.manage_main__roles__
+app.Plone.__error_log__                                         app.Plone.manage_menu(
+app.Plone.__format__(                                           app.Plone.manage_menu__roles__
+app.Plone.__getattr__(                                          app.Plone.manage_metadata(
+app.Plone.__getattribute__(                                     app.Plone.manage_metadata__roles__
+app.Plone.__getitem__(                                          app.Plone.manage_move_objects_down(
+app.Plone.__getstate__(                                         app.Plone.manage_move_objects_down__roles__
+app.Plone.__hash__(                                             app.Plone.manage_move_objects_to_bottom(
+app.Plone.__http_methods__                                      app.Plone.manage_move_objects_to_bottom__roles__
+app.Plone.__implemented__(                                      app.Plone.manage_move_objects_to_top(
+app.Plone.__init__(                                             app.Plone.manage_move_objects_to_top__roles__
+app.Plone.__iter__(                                             app.Plone.manage_move_objects_up(
+app.Plone.__len__(                                              app.Plone.manage_move_objects_up__roles__
+app.Plone.__module__                                            app.Plone.manage_options
+app.Plone.__name__                                              app.Plone.manage_owner(
+app.Plone.__new__(                                              app.Plone.manage_owner__roles__
+app.Plone.__nonzero__(                                          app.Plone.manage_page_footer(
+app.Plone.__of__(                                               app.Plone.manage_page_footer__roles__
+app.Plone.__old_manage_FTPlist(                                 app.Plone.manage_page_header(
+app.Plone.__propsets__                                          app.Plone.manage_page_header__roles__
+app.Plone.__providedBy__(                                       app.Plone.manage_page_style.css(
+app.Plone.__provides__(                                         app.Plone.manage_page_style.css__roles__
+app.Plone.__reduce__(                                           app.Plone.manage_pasteObjects(
+app.Plone.__reduce_ex__(                                        app.Plone.manage_pasteObjects__roles__
+app.Plone.__replaceable__                                       app.Plone.manage_permission(
+app.Plone.__repr__(                                             app.Plone.manage_permissionForm(
+app.Plone.__roles__                                             app.Plone.manage_permissionForm__roles__
+app.Plone.__setattr__(                                          app.Plone.manage_permission__roles__
+app.Plone.__setitem__(                                          app.Plone.manage_propertiesForm(
+app.Plone.__setstate__(                                         app.Plone.manage_propertiesForm__roles__
+app.Plone.__sizeof__(                                           app.Plone.manage_propertyTypeForm(
+app.Plone.__str__(                                              app.Plone.manage_propertyTypeForm__roles__
+app.Plone.__subclasshook__(                                     app.Plone.manage_renameForm(
+app.Plone.__weakref__                                           app.Plone.manage_renameForm__roles__
+app.Plone._addRole(                                             app.Plone.manage_renameObject(
+app.Plone._at_fti_meta_type                                     app.Plone.manage_renameObject__roles__
+app.Plone._canCopy(                                             app.Plone.manage_renameObjects(
+app.Plone._checkId(                                             app.Plone.manage_renameObjects__roles__
+app.Plone._components                                           app.Plone.manage_reportUserPermissions(
+app.Plone._datify(                                              app.Plone.manage_reportUserPermissions__roles__
+app.Plone._datify__roles__                                      app.Plone.manage_role(
+app.Plone._default_sort_key                                     app.Plone.manage_roleForm(
+app.Plone._default_sort_reverse                                 app.Plone.manage_roleForm__roles__
+app.Plone._delOb(                                               app.Plone.manage_role__roles__
+app.Plone._delObject(                                           app.Plone.manage_setLocalRoles(
+app.Plone._delPropValue(                                        app.Plone.manage_setLocalRoles__roles__
+app.Plone._delProperty(                                         app.Plone.manage_setPermissionMapping(
+app.Plone._delRoles(                                            app.Plone.manage_setPermissionMapping__roles__
+app.Plone._deleteOwnershipAfterAdd(                             app.Plone.manage_set_default_sorting(
+app.Plone._editMetadata(                                        app.Plone.manage_set_default_sorting__roles__
+app.Plone._editMetadata__roles__                                app.Plone.manage_tabs(
+app.Plone._filteredItems(                                       app.Plone.manage_tabs__roles__
+app.Plone._getCopy(                                             app.Plone.manage_takeOwnership(
+app.Plone._getImportPaths(                                      app.Plone.manage_takeOwnership__roles__
+app.Plone._getOb(                                               app.Plone.manage_top_frame(
+app.Plone._getPortalTypeName(                                   app.Plone.manage_top_frame__roles__
+app.Plone._getUNIQUE(                                           app.Plone.manage_undo_transactions(
+app.Plone._get_id(                                              app.Plone.manage_undo_transactions__roles__
+app.Plone._get_request_var_or_attr(                             app.Plone.manage_workspace(
+app.Plone._has_user_defined_role(                               app.Plone.manage_workspace__roles__
+app.Plone._importObjectFromFile(                                app.Plone.manage_zmi_logout(
+app.Plone._isBeingUsedAsAMethod(                                app.Plone.manage_zmi_logout__roles__
+app.Plone._manage_editedDialog(                                 app.Plone.manage_zmi_prefs(
+app.Plone._normal_manage_access(                                app.Plone.manage_zmi_prefs__roles__
+app.Plone._notifyOfCopyTo(                                      app.Plone.management_page_charset
+app.Plone._objects                                              app.Plone.meta_type
+app.Plone._old_filtered_manage_options(                         app.Plone.meta_types
+app.Plone._owner                                                app.Plone.mimetypes_registry(
+app.Plone._p_activate(                                          app.Plone.modification_date
+app.Plone._p_changed                                            app.Plone.modified(
+app.Plone._p_deactivate(                                        app.Plone.modified__roles__
+app.Plone._p_delattr(                                           app.Plone.moveObject(
+app.Plone._p_estimated_size                                     app.Plone.moveObjectToPosition(
+app.Plone._p_getattr(                                           app.Plone.moveObjectToPosition__roles__
+app.Plone._p_invalidate(                                        app.Plone.moveObject__roles__
+app.Plone._p_jar                                                app.Plone.moveObjectsByDelta(
+app.Plone._p_mtime                                              app.Plone.moveObjectsByDelta__roles__
+app.Plone._p_oid                                                app.Plone.moveObjectsDown(
+app.Plone._p_serial                                             app.Plone.moveObjectsDown__roles__
+app.Plone._p_setattr(                                           app.Plone.moveObjectsToBottom(
+app.Plone._p_state                                              app.Plone.moveObjectsToBottom__roles__
+app.Plone._plone_app_collection__Add_Collection_Permission      app.Plone.moveObjectsToTop(
+app.Plone._postCopy(                                            app.Plone.moveObjectsToTop__roles__
+app.Plone._properties                                           app.Plone.moveObjectsUp(
+app.Plone._propertyMap(                                         app.Plone.moveObjectsUp__roles__
+app.Plone._reserved_names                                       app.Plone.notifyModified(
+app.Plone._setId(                                               app.Plone.notifyModified__roles__
+app.Plone._setOb(                                               app.Plone.objectIds(
+app.Plone._setObject(                                           app.Plone.objectIds__roles__
+app.Plone._setPortalTypeName(                                   app.Plone.objectIds_d(
+app.Plone._setPropValue(                                        app.Plone.objectIds_d__roles__
+app.Plone._setProperty(                                         app.Plone.objectItems(
+app.Plone._setRoles(                                            app.Plone.objectItems__roles__
+app.Plone._subobject_permissions(                               app.Plone.objectItems_d(
+app.Plone._updateProperty(                                      app.Plone.objectItems_d__roles__
+app.Plone._verifyObjectPaste(                                   app.Plone.objectMap(
+app.Plone._wrapperCheck(                                        app.Plone.objectMap_d(
+app.Plone.absolute_url(                                         app.Plone.objectMap_d__roles__
+app.Plone.absolute_url__roles__                                 app.Plone.objectValues(
+app.Plone.absolute_url_path(                                    app.Plone.objectValues__roles__
+app.Plone.absolute_url_path__roles__                            app.Plone.objectValues_d(
+app.Plone.ac_inherited_permissions(                             app.Plone.objectValues_d__roles__
+app.Plone.ac_inherited_permissions__roles__                     app.Plone.opaqueIds(
+app.Plone.access_debug_info(                                    app.Plone.opaqueIds__roles__
+app.Plone.access_debug_info__roles__                            app.Plone.opaqueItems(
+app.Plone.aclAChecked                                           app.Plone.opaqueItems__roles__
+app.Plone.aclEChecked                                           app.Plone.opaqueValues(
+app.Plone.aclPChecked                                           app.Plone.opaqueValues__roles__
+app.Plone.acl_users(                                            app.Plone.orderObjects(
+app.Plone.acquiredRolesAreUsedBy(                               app.Plone.orderObjects__roles__
+app.Plone.acquiredRolesAreUsedBy__roles__                       app.Plone.owner_info(
+app.Plone.addCreator(                                           app.Plone.owner_info__roles__
+app.Plone.addCreator__roles__                                   app.Plone.permission_settings(
+app.Plone.addDTMLDocument(                                      app.Plone.permission_settings__roles__
+app.Plone.addDTMLDocument__roles__                              app.Plone.permissionsOfRole(
+app.Plone.addDTMLMethod(                                        app.Plone.permissionsOfRole__roles__
+app.Plone.addDTMLMethod__roles__                                app.Plone.plone_utils
+app.Plone.aliases                                               app.Plone.portal_actionicons(
+app.Plone.all_meta_types(                                       app.Plone.portal_actions
+app.Plone.allowedContentTypes(                                  app.Plone.portal_archivist
+app.Plone.allowedContentTypes__roles__                          app.Plone.portal_atct
+app.Plone.analyseDocumentation(                                 app.Plone.portal_calendar
+app.Plone.analyseDocumentation__roles__                         app.Plone.portal_catalog(
+app.Plone.archetype_tool                                        app.Plone.portal_controlpanel
+app.Plone.availableLanguages(                                   app.Plone.portal_css
+app.Plone.availableLanguages__roles__                           app.Plone.portal_diff
+app.Plone.bobobase_modification_time(                           app.Plone.portal_discussion
+app.Plone.caching_policy_manager                                app.Plone.portal_factory(
+app.Plone.canSetDefaultPage(                                    app.Plone.portal_form_controller(
+app.Plone.canSetDefaultPage__roles__                            app.Plone.portal_groupdata
+app.Plone.canSetLayout(                                         app.Plone.portal_groups
+app.Plone.canSetLayout__roles__                                 app.Plone.portal_historiesstorage
+app.Plone.cb_dataItems(                                         app.Plone.portal_historyidhandler
+app.Plone.cb_dataValid(                                         app.Plone.portal_interface
+app.Plone.cb_isCopyable(                                        app.Plone.portal_javascripts
+app.Plone.cb_isMoveable(                                        app.Plone.portal_languages(
+app.Plone.cb_userHasCopyOrMovePermission(                       app.Plone.portal_memberdata
+app.Plone.changeOwnership(                                      app.Plone.portal_membership
+app.Plone.changeOwnership__roles__                              app.Plone.portal_metadata
+app.Plone.changeSkin(                                           app.Plone.portal_migration
+app.Plone.changeSkin__roles__                                   app.Plone.portal_modifier
+app.Plone.checkIdAvailable(                                     app.Plone.portal_password_reset
+app.Plone.checkIdAvailable__roles__                             app.Plone.portal_properties
+app.Plone.clearCurrentSkin(                                     app.Plone.portal_purgepolicy
+app.Plone.clearCurrentSkin__roles__                             app.Plone.portal_quickinstaller
+app.Plone.contentIds(                                           app.Plone.portal_referencefactories
+app.Plone.contentIds__roles__                                   app.Plone.portal_registration
+app.Plone.contentItems(                                         app.Plone.portal_registry
+app.Plone.contentItems__roles__                                 app.Plone.portal_repository
+app.Plone.contentValues(                                        app.Plone.portal_setup
+app.Plone.contentValues__roles__                                app.Plone.portal_skins
+app.Plone.content_type(                                         app.Plone.portal_tinymce
+app.Plone.content_type_registry                                 app.Plone.portal_transforms(
+app.Plone.contributors                                          app.Plone.portal_type
+app.Plone.created(                                              app.Plone.portal_types
+app.Plone.created__roles__                                      app.Plone.portal_uidannotation(
+app.Plone.creation_date                                         app.Plone.portal_uidgenerator(
+app.Plone.creators                                              app.Plone.portal_uidhandler
+app.Plone.dav__init(                                            app.Plone.portal_undo
+app.Plone.dav__simpleifhandler(                                 app.Plone.portal_url(
+app.Plone.dav__validate(                                        app.Plone.portal_view_customizations
+app.Plone.decodeFolderFilter(                                   app.Plone.portal_workflow
+app.Plone.decodeFolderFilter__roles__                           app.Plone.possible_permissions(
+app.Plone.defaultView(                                          app.Plone.propdict(
+app.Plone.defaultView__roles__                                  app.Plone.propdict__roles__
+app.Plone.default_view                                          app.Plone.propertyDescription(
+app.Plone.description                                           app.Plone.propertyDescription__roles__
+app.Plone.edit(                                                 app.Plone.propertyIds(
+app.Plone.editMetadata(                                         app.Plone.propertyIds__roles__
+app.Plone.editMetadata__roles__                                 app.Plone.propertyItems(
+app.Plone.edit__roles__                                         app.Plone.propertyItems__roles__
+app.Plone.effective(                                            app.Plone.propertyLabel(
+app.Plone.effective__roles__                                    app.Plone.propertyLabel__roles__
+app.Plone.effective_date                                        app.Plone.propertyMap(
+app.Plone.email_charset                                         app.Plone.propertyMap__roles__
+app.Plone.email_from_address                                    app.Plone.propertyValues(
+app.Plone.email_from_name                                       app.Plone.propertyValues__roles__
+app.Plone.enable_permalink                                      app.Plone.propertysheets
+app.Plone.encodeFolderFilter(                                   app.Plone.raise_standardErrorMessage(
+app.Plone.encodeFolderFilter__roles__                           app.Plone.reference_catalog(
+app.Plone.error_log                                             app.Plone.reindexObject(
+app.Plone.expiration_date                                       app.Plone.reindexObjectSecurity(
+app.Plone.expires(                                              app.Plone.restrictedTraverse(
+app.Plone.expires__roles__                                      app.Plone.restrictedTraverse__roles__
+app.Plone.externalEditLink_(                                    app.Plone.rights
+app.Plone.externalEdit_                                         app.Plone.rolesOfPermission(
+app.Plone.filtered_manage_options(                              app.Plone.rolesOfPermission__roles__
+app.Plone.filtered_manage_options__roles__                      app.Plone.selectable_views
+app.Plone.filtered_meta_types(                                  app.Plone.selectedRoles
+app.Plone.folderlistingFolderContents(                          app.Plone.setContributors(
+app.Plone.folderlistingFolderContents__roles__                  app.Plone.setContributors__roles__
+app.Plone.format                                                app.Plone.setCreators(
+app.Plone.get(                                                  app.Plone.setCreators__roles__
+app.Plone.getActionInfo(                                        app.Plone.setDefaultPage(
+app.Plone.getActionInfo__roles__                                app.Plone.setDefaultPage__roles__
+app.Plone.getAttribute(                                         app.Plone.setDefaultSorting(
+app.Plone.getAttributeNode(                                     app.Plone.setDefaultSorting__roles__
+app.Plone.getAttributeNode__roles__                             app.Plone.setDescription(
+app.Plone.getAttribute__roles__                                 app.Plone.setDescription__roles__
+app.Plone.getAttributes(                                        app.Plone.setEffectiveDate(
+app.Plone.getAttributes__roles__                                app.Plone.setEffectiveDate__roles__
+app.Plone.getAvailableLayouts(                                  app.Plone.setExpirationDate(
+app.Plone.getAvailableLayouts__roles__                          app.Plone.setExpirationDate__roles__
+app.Plone.getCMFObjectsSubsetIds(                               app.Plone.setFormat(
+app.Plone.getChildNodes(                                        app.Plone.setFormat__roles__
+app.Plone.getChildNodes__roles__                                app.Plone.setLanguage(
+app.Plone.getCurrentSkinName(                                   app.Plone.setLanguage__roles__
+app.Plone.getCurrentSkinName__roles__                           app.Plone.setLayout(
+app.Plone.getDefaultLayout(                                     app.Plone.setLayout__roles__
+app.Plone.getDefaultLayout__roles__                             app.Plone.setModificationDate(
+app.Plone.getDefaultPage(                                       app.Plone.setModificationDate__roles__
+app.Plone.getDefaultPage__roles__                               app.Plone.setRights(
+app.Plone.getDefaultSorting(                                    app.Plone.setRights__roles__
+app.Plone.getDefaultSorting__roles__                            app.Plone.setSiteManager(
+app.Plone.getElementsByTagName(                                 app.Plone.setSiteManager__roles__
+app.Plone.getElementsByTagName__roles__                         app.Plone.setSubject(
+app.Plone.getFirstChild(                                        app.Plone.setSubject__roles__
+app.Plone.getFirstChild__roles__                                app.Plone.setTitle(
+app.Plone.getIcon(                                              app.Plone.setTitle__roles__
+app.Plone.getIconURL(                                           app.Plone.setupCurrentSkin(
+app.Plone.getIconURL__roles__                                   app.Plone.setupCurrentSkin__roles__
+app.Plone.getIcon__roles__                                      app.Plone.showDocumentation(
+app.Plone.getId(                                                app.Plone.showDocumentation__roles__
+app.Plone.getId__roles__                                        app.Plone.smallRolesWidget
+app.Plone.getIdsSubset(                                         app.Plone.subject
+app.Plone.getIdsSubset__roles__                                 app.Plone.superValues(
+app.Plone.getLastChild(                                         app.Plone.superValues__roles__
+app.Plone.getLastChild__roles__                                 app.Plone.suppl_views
+app.Plone.getLayout(                                            app.Plone.tabs_path_default(
+app.Plone.getLayout__roles__                                    app.Plone.tabs_path_info(
+app.Plone.getMetadataHeaders(                                   app.Plone.this(
+app.Plone.getMetadataHeaders__roles__                           app.Plone.title
+app.Plone.getNextSibling(                                       app.Plone.title_and_id(
+app.Plone.getNextSibling__roles__                               app.Plone.title_or_id(
+app.Plone.getNodeName(                                          app.Plone.tpURL(
+app.Plone.getNodeName__roles__                                  app.Plone.tpValues(
+app.Plone.getNodeType(                                          app.Plone.tpValues__roles__
+app.Plone.getNodeValue(                                         app.Plone.translation_service
+app.Plone.getNodeValue__roles__                                 app.Plone.uid_catalog(
+app.Plone.getObjectPosition(                                    app.Plone.undoable_transactions(
+app.Plone.getObjectPosition__roles__                            app.Plone.undoable_transactions__roles__
+app.Plone.getOwner(                                             app.Plone.unindexObject(
+app.Plone.getOwnerDocument(                                     app.Plone.unrestrictedTraverse(
+app.Plone.getOwnerDocument__roles__                             app.Plone.unrestrictedTraverse__roles__
+app.Plone.getOwnerTuple(                                        app.Plone.userCanTakeOwnership(
+app.Plone.getOwnerTuple__roles__                                app.Plone.userdefined_roles(
+app.Plone.getOwner__roles__                                     app.Plone.userdefined_roles__roles__
+app.Plone.getParentNode(                                        app.Plone.users_with_local_role(
+app.Plone.getParentNode__roles__                                app.Plone.validClipData(
+app.Plone.getPhysicalPath(                                      app.Plone.validRoles(
+app.Plone.getPhysicalPath__roles__                              app.Plone.valid_property_id(
+app.Plone.getPhysicalRoot(                                      app.Plone.valid_property_id__roles__
+app.Plone.getPhysicalRoot__roles__                              app.Plone.valid_roles(
+app.Plone.getPortalTypeName(                                    app.Plone.validate_email
+app.Plone.getPortalTypeName__roles__                            app.Plone.validate_roles(
+app.Plone.getPreviousSibling(                                   app.Plone.values(
+app.Plone.getPreviousSibling__roles__                           app.Plone.values__roles__
+app.Plone.getProperty(                                          app.Plone.view(
+app.Plone.getPropertyType(                                      app.Plone.virtual_url_path(
+app.Plone.getPropertyType__roles__                              app.Plone.virtual_url_path__roles__
+app.Plone.getProperty__roles__                                  app.Plone.wl_clearLocks(
+app.Plone.getSiteManager(                                       app.Plone.wl_clearLocks__roles__
+app.Plone.getSiteManager__roles__                               app.Plone.wl_delLock(
+app.Plone.getSkin(                                              app.Plone.wl_delLock__roles__
+app.Plone.getSkinNameFromRequest(                               app.Plone.wl_getLock(
+app.Plone.getSkinNameFromRequest__roles__                       app.Plone.wl_getLock__roles__
+app.Plone.getSkin__roles__                                      app.Plone.wl_hasLock(
+app.Plone.getSkinsFolderName(                                   app.Plone.wl_isLocked(
+app.Plone.getSkinsFolderName__roles__                           app.Plone.wl_isLockedByUser__roles__
+app.Plone.getTagName(                                           app.Plone.wl_isLocked__roles__
+app.Plone.getTagName__roles__                                   app.Plone.wl_lockItems(
+app.Plone.getTypeInfo(                                          app.Plone.wl_lockItems__roles__
+app.Plone.getTypeInfo__roles__                                  app.Plone.wl_lockTokens(
+app.Plone.getWrappedOwner(                                      app.Plone.wl_lockTokens__roles__
+app.Plone.getWrappedOwner__roles__                              app.Plone.wl_lockValues(
+app.Plone.get__roles__                                          app.Plone.wl_lockValues__roles__
+app.Plone.get_local_roles(                                      app.Plone.wl_lockmapping(
+app.Plone.get_local_roles_for_userid(                           app.Plone.wl_lockmapping__roles__
+app.Plone.get_valid_userids(                                    app.Plone.wl_setLock(
+app.Plone.hasChildNodes(                                        app.Plone.wl_setLock__roles__
+app.Plone.hasChildNodes__roles__                                app.Plone.zope_quick_start(
+app.Plone.hasObject(                                            app.Plone.zope_quick_start__roles__
+&lt;/pre&gt;
+&lt;p&gt;(&lt;em&gt;You should probably&lt;/em&gt; &lt;a class="reference external" href="http://aclark.net"&gt;hire me&lt;/a&gt; &lt;em&gt;or&lt;/em&gt; &lt;a class="reference external" href="http://twitter.com/aclark4life"&gt;follow me on Twitter&lt;/a&gt; &lt;em&gt;or both&lt;/em&gt;.)&lt;/p&gt;
+&lt;/div&gt;
+</summary><category term="Plone"></category><category term="Python"></category></entry><entry><title>Matplotlib Plotting Cookbook Review</title><link href="http://blog.aclark.net/2014/05/19/matplotlib-plotting-cookbook-review/" rel="alternate"></link><updated>2014-05-19T14:00:00-04:00</updated><author><name>Alex Clark</name></author><id>tag:blog.aclark.net,2014-05-19:2014/05/19/matplotlib-plotting-cookbook-review/</id><summary type="html">&lt;p&gt;&lt;em&gt;I was given a copy of&lt;/em&gt; &lt;a class="reference external" href="http://www.packtpub.com/matplotlib-plotting-cookbook/book"&gt;Matplotlib Plotting Cookbook by Alexandre Devert&lt;/a&gt; &lt;em&gt;and asked to review it. Thanks PACKT!&lt;/em&gt; &lt;em&gt;Here is my review.&lt;/em&gt;&lt;/p&gt;
+&lt;div class="section" id="preface"&gt;
+&lt;h2&gt;Preface&lt;/h2&gt;
+&lt;p&gt;But first, I'll mention I've worked on two projects recently that involved rendering matplotlib graphs directly to the browser i.e. via content-type: image/png. This is fun! It's particularly enjoyable when you are trying to avoid performing the task &amp;quot;the right way&amp;quot;, which is arguably outputting JSON to some JavaScript graphing library e.g. &lt;a class="reference external" href="http://www.highcharts.com/"&gt;Highcharts&lt;/a&gt;. The dependencies are heavy i.e. pip install numpy, etc. but not &lt;em&gt;that&lt;/em&gt; heavy and once they are installed, &lt;strong&gt;your web application can output graphs rivaling those produced by JavaScript, all written in Python&lt;/strong&gt; &lt;a class="footnote-reference" href="#id2" id="id1"&gt;[1]&lt;/a&gt;. Highly recommended!&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="chapter-1"&gt;
+&lt;h2&gt;Chapter 1&lt;/h2&gt;
+&lt;p&gt;I think the code examples in Chapter 1 alone are worth the price of admission. Here is a video of me walking through the Chapter 1 code examples:&lt;/p&gt;
+&lt;iframe width="420" height="315" src="//www.youtube.com/embed/YOFHkszsdR8" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;&lt;p&gt;You'll notice the typical fare here: bar, line and pie graphs along with some more complex boxplot, histogram, horizontal bar, scatter and triangle graphs, all in various colors. For reference, here are the excerpted commands called to produce these graphs:&lt;/p&gt;
+&lt;script src="https://gist.github.com/aclark4life/0f9e61f2d62a67c31346.js"&gt;&lt;/script&gt;&lt;/div&gt;
+&lt;div class="section" id="chapter-2"&gt;
+&lt;h2&gt;Chapter 2&lt;/h2&gt;
+&lt;p&gt;Chapter 2 is all about customization e.g. via matplotlibrc. Here is a video of me walking through the Chapter 2 code examples:&lt;/p&gt;
+&lt;iframe width="420" height="315" src="//www.youtube.com/embed/BzGv1soDaRU" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;&lt;p&gt;For reference, here is the sample matplotlibrc included with the matplotlib distribution (lib/python2.7/site-packages/matplotlib/mpl-data/matplotlibrc):&lt;/p&gt;
+&lt;script src="https://gist.github.com/aclark4life/71c1edf815bd61aae8a9.js"&gt;&lt;/script&gt;&lt;p&gt;As you can see, there are a lot of knobs you can turn here.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="chapter-3"&gt;
+&lt;h2&gt;Chapter 3&lt;/h2&gt;
+&lt;p&gt;Chapter 3 is all about &amp;quot;annotations&amp;quot;. Here is a video of me walking through the Chapter 3 code examples:&lt;/p&gt;
+&lt;iframe width="420" height="315" src="//www.youtube.com/embed/994vecwODaI" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;&lt;p&gt;&amp;quot;Annotations&amp;quot; includes related topics such as adding shapes and controlling tick spacing and labeling.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="chapter-4"&gt;
+&lt;h2&gt;Chapter 4&lt;/h2&gt;
+&lt;p&gt;Chapter 4 is all about &amp;quot;working with figures&amp;quot;. Here is a video of me walking through the Chapter 4 code examples:&lt;/p&gt;
+&lt;iframe width="420" height="315" src="//www.youtube.com/embed/Q6PFBSxkOc4" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;&lt;p&gt;&amp;quot;Working with figures&amp;quot; includes obvious topics like &lt;tt class="docutils literal"&gt;subplot&lt;/tt&gt; and less obvious topics like setting the aspect ratio.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="chapter-5"&gt;
+&lt;h2&gt;Chapter 5&lt;/h2&gt;
+&lt;p&gt;Chapter 5 is all about &amp;quot;working with file output&amp;quot;. For reference, here are some of the images produced by the examples in this chapter (I wrote &lt;tt class="docutils literal"&gt;jpg&lt;/tt&gt; files instead of &lt;tt class="docutils literal"&gt;png&lt;/tt&gt; files due to a problem with my libpng: &lt;a class="reference external" href="https://www.google.com/#q=RuntimeError%3A+Could+not+create+write+struct&amp;amp;safe=off"&gt;RuntimeError: Could not create write struct&lt;/a&gt;.)&lt;/p&gt;
+&lt;img alt="alternate text" src="http://blog.aclark.net/images/sinc1.jpg" /&gt;
+&lt;img alt="alternate text" src="http://blog.aclark.net/images/sinc3.jpg" /&gt;
+&lt;p&gt;Also covered in this chapter is &lt;a class="reference external" href="http://blog.aclark.net/images/sinc.pdf"&gt;pdf output&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="chapter-6"&gt;
+&lt;h2&gt;Chapter 6&lt;/h2&gt;
+&lt;p&gt;Chapter 6 is all about &amp;quot;working with maps&amp;quot;.&lt;/p&gt;
+&lt;iframe width="420" height="315" src="//www.youtube.com/embed/gKnR7IfNSsI" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;&lt;p&gt;This chapter also introduces the &lt;a class="reference external" href="http://matplotlib.org/1.3.1/users/image_tutorial.html"&gt;imshow command&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="chapter-7"&gt;
+&lt;h2&gt;Chapter 7&lt;/h2&gt;
+&lt;p&gt;Chapter 7 is all about &amp;quot;working with 3D figures&amp;quot;.&lt;/p&gt;
+&lt;iframe width="420" height="315" src="//www.youtube.com/embed/7YFGHG62L5U" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;&lt;p&gt;For reference, here are the excerpted commands called to produce these graphs:&lt;/p&gt;
+&lt;script src="https://gist.github.com/aclark4life/6f7f3fd18ec4c7795028.js"&gt;&lt;/script&gt;&lt;/div&gt;
+&lt;div class="section" id="chapter-8"&gt;
+&lt;h2&gt;Chapter 8&lt;/h2&gt;
+&lt;p&gt;Chapter 8 is all about working with the &amp;quot;user interface&amp;quot; interactively.&lt;/p&gt;
+&lt;iframe width="420" height="315" src="//www.youtube.com/embed/k6984I_YGo4" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;&lt;p&gt;Additionally, all of the popular graphical windowing environments are discussed: Tkinter, wxWidgets, GTK, Pyglet (three out of four of which I was able to install; GTK 2 vs GTK 3 &lt;a class="reference external" href="https://www.google.com/#q=from+gi.repository+import+Gtk&amp;amp;safe=off"&gt;confused me and I ran out of time debugging it&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="conclusion"&gt;
+&lt;h2&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;Overall I enjoyed this book and would &lt;a class="reference external" href="http://www.packtpub.com/matplotlib-plotting-cookbook/book"&gt;recommend buying it&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;(&lt;em&gt;You should probably&lt;/em&gt; &lt;a class="reference external" href="http://aclark.net"&gt;hire me&lt;/a&gt; &lt;em&gt;or&lt;/em&gt; &lt;a class="reference external" href="http://twitter.com/aclark4life"&gt;follow me on Twitter&lt;/a&gt; &lt;em&gt;or both&lt;/em&gt;. &lt;em&gt;And speaking of PACKT, you should definitely&lt;/em&gt; &lt;a class="reference external" href="http://blog.aclark.net/2011/05/10/top-10-reasons-plone-33-site-admin-book-is-still-for-you/"&gt;buy my book too&lt;/a&gt;.)&lt;/p&gt;
+&lt;table class="docutils footnote" frame="void" id="id2" rules="none"&gt;
+&lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
+&lt;tbody valign="top"&gt;
+&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#id1"&gt;[1]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Yes, I'm familiar with &lt;a class="reference external" href="http://bokeh.pydata.org/"&gt;Bokeh&lt;/a&gt;.&lt;/td&gt;&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+</summary><category term="Django"></category><category term="Mozilla"></category><category term="Plone"></category><category term="Python"></category></entry><entry><title>We Pioneer</title><link href="http://blog.aclark.net/2014/05/03/we-pioneer/" rel="alternate"></link><updated>2014-05-03T10:15:00-04:00</updated><author><name>Alex Clark</name></author><id>tag:blog.aclark.net,2014-05-03:2014/05/03/we-pioneer/</id><summary type="html">&lt;img alt="alternate text" src="/images/we-pioneer.jpg" /&gt;
+&lt;p&gt;One of the subjects I find myself thinking about a lot is: Plone (surprise!) In Plone-land, we deliver the &lt;strong&gt;best Python-based CMS money can't buy on top of an aging Zope 2 &amp;quot;application server&amp;quot;&lt;/strong&gt; mixed with newer Zope, Python, and other technologies. In short, this is a challenge.&lt;/p&gt;
+&lt;div class="section" id="diazo"&gt;
+&lt;h2&gt;Diazo&lt;/h2&gt;
+&lt;p&gt;Further to the point, I think about &amp;quot;new tech&amp;quot; vs &amp;quot;old tech&amp;quot; a lot and how to happily marry the two. Here is one concrete example of my thought process. Diazo is the &amp;quot;new theming engine&amp;quot; in Plone which allows folks to perform complex XSLT transformations via a simple XML rule set. It sounds great, and it often is. But something won't let my mind reach the &amp;quot;Ahhhh this is great technology!&amp;quot; point. Instead, I often find myself thinking &amp;quot;This is great technology, BUT…&amp;quot; which I don't want to think when I'm thinking about Plone.&lt;/p&gt;
+&lt;div class="section" id="pioneering"&gt;
+&lt;h3&gt;Pioneering&lt;/h3&gt;
+&lt;p&gt;However I'm beginning to settle on an &amp;quot;acceptable thought process&amp;quot;, to describe how Diazo fits on top of 10 years of legacy Plone technology: it's &lt;strong&gt;pioneering&lt;/strong&gt;. As I have observed over the years, Plone developers have taken great pride in being the &amp;quot;first to market&amp;quot; with cutting edge and useful CMS features other vendors would love to include in their product.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;But are other CMS vendors watching?&lt;/em&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="issues"&gt;
+&lt;h3&gt;Issues&lt;/h3&gt;
+&lt;p&gt;Of issue with Diazo is:&lt;/p&gt;
+&lt;ol class="arabic simple"&gt;
+&lt;li&gt;&lt;strong&gt;Most web developers are familiar with the concept of editing templates to affect output&lt;/strong&gt; (AKA &amp;quot;customization&amp;quot;). When Zope 2 was young, the only place to easily customize templates was within the web application itself, with changes persisted to the ZODB. Then &amp;quot;ZODB dread&amp;quot; &lt;a class="footnote-reference" href="#id3" id="id1"&gt;[1]&lt;/a&gt; happened and folks began to customize templates on the file system with software version control in place. During this time, customizations happened on the file system via the CMF framework built on top of Zope 2. Then Zope 3 happened and folks began to customize templates on the file system with more modern web technology (AKA &amp;quot;pseudo-MVC-like environments&amp;quot;). Then Deliverance &lt;a class="footnote-reference" href="#id4" id="id2"&gt;[2]&lt;/a&gt; happened and folks began to leave the complex stack alone in favor of using XSLT transforms to produce a hybrid output containing both clean, isolated HTML/CSS/JavaScript and Plone content (AKA &amp;quot;lipstick on a pig&amp;quot;).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Plone now has two distinct templating environments&lt;/strong&gt;: the application environment which still has plenty of templates to customize &amp;amp; the theming environment which also has templates to customize. This is both good and bad: it's good when everyone can easily figure out where to customize what they want to customize, and bad when this process breaks down.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Diazo allows for some complex rules to be written&lt;/strong&gt; along with custom XSLT. That power allows folks to produce some truly unwieldy and wholly unmaintainable messes, for lack of a better description. I'm sad to say I've seen many of these in the wild, in just the few short years Diazo has existed.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;div class="section" id="conclusion"&gt;
+&lt;h3&gt;Conclusion&lt;/h3&gt;
+&lt;p&gt;After all this thinking, I've reached the following conclusion(s):&lt;/p&gt;
+&lt;ol class="arabic simple"&gt;
+&lt;li&gt;&lt;strong&gt;The concept of editing templates most web developers are familiar with is still valid in Plone.&lt;/strong&gt; But we must work harder to demonstrate where and how these customizations can occur. With great tools comes great power, but not without significant risk of injury (the so-called &amp;quot;power tool&amp;quot; analogy.)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;We should strive for the appearance of one templating environment.&lt;/strong&gt; The easiest way to do this is to have only one templating environment. Many electronic flames have been burned over the discussion of making Diazo that single environment. In the meantime let's disassemble, polish &amp;amp; reassemble all of our templating environments and put effort in to making the difference between them seemless. (&lt;a class="reference external" href="http://pypi.python.org/pypi/zope2_bootstrap"&gt;zope2_bootstrap&lt;/a&gt; anyone?)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;We should actively discourage complex rules and custom XSLT&lt;/strong&gt;. Of course, these knobs are nice to turn when you need them. But I don't want to read through complex rules and custom XSLT anymore than I want to see inline JavaScript or CSS. (AKA &amp;quot;This is why we can't have nice things.&amp;quot;)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;em&gt;And other CMS vendors should be watching, because Plone 5 is about to drop!&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;(&lt;em&gt;You should probably&lt;/em&gt; &lt;a class="reference external" href="http://aclark.net"&gt;hire me&lt;/a&gt; &lt;em&gt;or&lt;/em&gt; &lt;a class="reference external" href="http://twitter.com/aclark4life"&gt;follow me on Twitter&lt;/a&gt; &lt;em&gt;or both&lt;/em&gt;.)&lt;/p&gt;
+&lt;table class="docutils footnote" frame="void" id="id3" rules="none"&gt;
+&lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
+&lt;tbody valign="top"&gt;
+&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#id1"&gt;[1]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;The fear all your hard work and customizations are trapped inside an unwieldy ZODB, with no easy way to persist or track them elsewhere.&lt;/td&gt;&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;table class="docutils footnote" frame="void" id="id4" rules="none"&gt;
+&lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
+&lt;tbody valign="top"&gt;
+&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#id2"&gt;[2]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Early, pioneering implementation which inspired Diazo.&lt;/td&gt;&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</summary><category term="Django"></category><category term="Plone"></category><category term="Python"></category></entry><entry><title>Bro, do you even Pillow?</title><link href="http://blog.aclark.net/2014/04/07/bro-do-you-even-pillow/" rel="alternate"></link><updated>2014-04-07T20:00:00-04:00</updated><author><name>Alex Clark</name></author><id>tag:blog.aclark.net,2014-04-07:2014/04/07/bro-do-you-even-pillow/</id><summary type="html">&lt;img alt="alternate text" src="/images/bro-do-you-even-pillow.jpg" /&gt;
+&lt;p&gt;&lt;a class="reference external" href="https://github.com/python-imaging/Pillow"&gt;Pillow&lt;/a&gt; is a fork of the Python Imaging Library. Here is an update on the status of the project.&lt;/p&gt;
+&lt;div class="section" id="released"&gt;
+&lt;h2&gt;2.4.0 released&lt;/h2&gt;
+&lt;p&gt;Pillow 2.4.0 is out! Here are the highlights:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;Indexed Transparency handled for conversions between L, RGB, and P modes. Fixes #510 [wiredfool]&lt;/li&gt;
+&lt;li&gt;Conversions enabled from RGBA-&amp;gt;P, Fixes #544 [wiredfool]&lt;/li&gt;
+&lt;li&gt;Improved icns support [al45tair]&lt;/li&gt;
+&lt;li&gt;Fix libtiff leaking open files, fixes #580 [wiredfool]&lt;/li&gt;
+&lt;li&gt;Fixes for Jpeg encoding in Python 3, fixes #577 [wiredfool]&lt;/li&gt;
+&lt;li&gt;Added support for JPEG 2000 [al45tair]&lt;/li&gt;
+&lt;li&gt;Add more detailed error messages to Image.py [larsmans]&lt;/li&gt;
+&lt;li&gt;Avoid conflicting _expand functions in PIL &amp;amp; MINGW, fixes #538 [aclark]&lt;/li&gt;
+&lt;li&gt;Merge from Philippe Lagadec’s OleFileIO_PL fork [vadmium]&lt;/li&gt;
+&lt;li&gt;Fix ImageColor.getcolor [homm]&lt;/li&gt;
+&lt;li&gt;Make ICO files work with the ImageFile.Parser interface, fixes #522 [wiredfool]&lt;/li&gt;
+&lt;li&gt;Handle 32bit compiled python on 64bit architecture [choppsv1]&lt;/li&gt;
+&lt;li&gt;Fix support for characters &amp;gt;128 using .pcf or .pil fonts in Py3k. Fixes #505 [wiredfool]&lt;/li&gt;
+&lt;li&gt;Skip CFFI test earlier if it's not installed [wiredfool]&lt;/li&gt;
+&lt;li&gt;Fixed opening and saving odd sized .pcx files, fixes #523 [wiredfool]&lt;/li&gt;
+&lt;li&gt;Fixed palette handling when converting from mode P-&amp;gt;RGB-&amp;gt;P [d_schmidt]&lt;/li&gt;
+&lt;li&gt;Fixed saving mode P image as a PNG with transparency = palette color 0 [d-schmidt]&lt;/li&gt;
+&lt;li&gt;Improve heuristic used when saving progressive and optimized JPEGs with high quality values [e98cuenc]&lt;/li&gt;
+&lt;li&gt;Fixed DOS with invalid palette size or invalid image size in BMP file [wiredfool]&lt;/li&gt;
+&lt;li&gt;Added support for BMP version 4 and 5 [eddwardo, wiredfool]&lt;/li&gt;
+&lt;li&gt;Fix segfault in getfont when passed a memory resident font [wiredfool]&lt;/li&gt;
+&lt;li&gt;Fix crash on Saving a PNG when icc-profile is None [brutasse]&lt;/li&gt;
+&lt;li&gt;Cffi+Python implementation of the PixelAccess object [wiredfool]&lt;/li&gt;
+&lt;li&gt;PixelAccess returns unsigned ints for I16 mode [wiredfool]&lt;/li&gt;
+&lt;li&gt;Minor patch on booleans + Travis [sciunto]&lt;/li&gt;
+&lt;li&gt;Look in multiarch paths in GNU platforms [pinotree]&lt;/li&gt;
+&lt;li&gt;Add arch support for pcc64, s390, s390x, armv7l, aarch64 [manisandro]&lt;/li&gt;
+&lt;li&gt;Add arch support for ppc [wiredfool]&lt;/li&gt;
+&lt;li&gt;Correctly quote file names for WindowsViewer command [cgohlke]&lt;/li&gt;
+&lt;li&gt;Prefer homebrew freetype over X11 freetype (but still allow both) [dmckeone]&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="section" id="os-x-10-9-2-issues"&gt;
+&lt;h2&gt;OS X 10.9.2 issues&lt;/h2&gt;
+&lt;p&gt;This happened:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://github.com/python-imaging/Pillow/issues/527"&gt;https://github.com/python-imaging/Pillow/issues/527&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="section" id="security-issues"&gt;
+&lt;h2&gt;Security issues&lt;/h2&gt;
+&lt;p&gt;This happened:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://github.com/python-imaging/Pillow/pull/548"&gt;https://github.com/python-imaging/Pillow/pull/548&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="section" id="logo"&gt;
+&lt;h2&gt;Logo&lt;/h2&gt;
+&lt;p&gt;Pillow has a logo thanks to Alastair Houghton:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://github.com/python-imaging/Pillow/issues/575"&gt;https://github.com/python-imaging/Pillow/issues/575&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Keep using and supporting Pillow!&lt;/p&gt;
+&lt;/div&gt;
+</summary><category term="Django"></category><category term="Plone"></category><category term="Python"></category></entry><entry><title>Introducing Plock Pins</title><link href="http://blog.aclark.net/2014/03/20/introducing-plock-pins/" rel="alternate"></link><updated>2014-03-20T21:15:00-04:00</updated><author><name>Alex Clark</name></author><id>tag:blog.aclark.net,2014-03-20:2014/03/20/introducing-plock-pins/</id><summary type="html">&lt;img alt="alternate text" src="/images/buildout-all-the-plones.jpg" /&gt;
+&lt;pre class="literal-block"&gt;
+&amp;quot;Plock Pins are the greatest thing to happen to Plone since Buildout&amp;quot;
+
+                                                        — Alex Clark
+&lt;/pre&gt;
+&lt;p&gt;Plock Pins are the final incarnation of a collection of Plone Buildouts I've been developing since 2010. They attempt to make it easy to install Plone with only Python installed &lt;a class="footnote-reference" href="#id3" id="id1"&gt;[1]&lt;/a&gt;. Installing Plone with Plock Pins looks like this:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+$ virtualenv-2.7 .
+$ bin/pip install zc.buildout
+$ bin/buildout init
+&lt;/pre&gt;
+&lt;p&gt;Now edit your &lt;tt class="docutils literal"&gt;buildout.cfg&lt;/tt&gt; to include a link to the Plock Pins:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+[buildout]
+extends = https://raw.github.com/plock/pins/master/plone-4-3
+&lt;/pre&gt;
+&lt;p&gt;Then run Buildout:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+$ bin/buildout
+&lt;/pre&gt;
+&lt;p&gt;Followed by the following command to start Plone:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+$ bin/plone fg
+&lt;/pre&gt;
+&lt;p&gt;That's it! This technique should work for all versions of Plone all the way back to Plone 1.1. If it doesn't, please let me know here:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://github.com/plock/pins/issues"&gt;https://github.com/plock/pins/issues&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Finally, here is a list of all available Plock Pins you can extend &lt;a class="footnote-reference" href="#id4" id="id2"&gt;[2]&lt;/a&gt;:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://raw.github.com/plock/pins/master/plone-4-3"&gt;https://raw.github.com/plock/pins/master/plone-4-3&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://raw.github.com/plock/pins/master/plone-4-2"&gt;https://raw.github.com/plock/pins/master/plone-4-2&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://raw.github.com/plock/pins/master/plone-4-1"&gt;https://raw.github.com/plock/pins/master/plone-4-1&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://raw.github.com/plock/pins/master/plone-4-0"&gt;https://raw.github.com/plock/pins/master/plone-4-0&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://raw.github.com/plock/pins/master/plone-3-3"&gt;https://raw.github.com/plock/pins/master/plone-3-3&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://raw.github.com/plock/pins/master/plone-3-2"&gt;https://raw.github.com/plock/pins/master/plone-3-2&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://raw.github.com/plock/pins/master/plone-3-1"&gt;https://raw.github.com/plock/pins/master/plone-3-1&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://raw.github.com/plock/pins/master/plone-3-0"&gt;https://raw.github.com/plock/pins/master/plone-3-0&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://raw.github.com/plock/pins/master/plone-2-5"&gt;https://raw.github.com/plock/pins/master/plone-2-5&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://raw.github.com/plock/pins/master/plone-2-1"&gt;https://raw.github.com/plock/pins/master/plone-2-1&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://raw.github.com/plock/pins/master/plone-1-1"&gt;https://raw.github.com/plock/pins/master/plone-1-1&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;table class="docutils footnote" frame="void" id="id3" rules="none"&gt;
+&lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
+&lt;tbody valign="top"&gt;
+&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#id1"&gt;[1]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;In future versions of Python 3.x, the Pip installer will be included as part of the core software. This will lessen the burden for users attempting to install packages from PyPI. In 2.x, one must install Setuptools and/or Pip before attempting to do so.&lt;/td&gt;&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;table class="docutils footnote" frame="void" id="id4" rules="none"&gt;
+&lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
+&lt;tbody valign="top"&gt;
+&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#id2"&gt;[2]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Remember to use Python 2.4 for &amp;lt; Plone 4&lt;/td&gt;&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</summary><category term="Plone"></category><category term="Python"></category></entry><entry><title>Virtualenv Support Update</title><link href="http://blog.aclark.net/2014/03/19/virtualenv-support-update/" rel="alternate"></link><updated>2014-03-19T17:30:00-04:00</updated><author><name>Alex Clark</name></author><id>tag:blog.aclark.net,2014-03-19:2014/03/19/virtualenv-support-update/</id><summary type="html">&lt;img alt="alternate text" src="/images/virtualenv-support-update.jpg" /&gt;
+&lt;p&gt;This is you: I &lt;strong&gt;use virtualenv all the time and I love it!&lt;/strong&gt; But I hate having to manually upgrade setuptools within my virtualenvs because the &lt;a class="reference external" href="https://pypi.python.org/pypi/setuptools#changes"&gt;PyPA has been so prolific with setuptools releases lately&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Actually this is me, but it may be you too. If this is you, you may be familiar with the following process. If not, you may want to be.&lt;/p&gt;
+&lt;div class="section" id="virtualenv-and-setuptools"&gt;
+&lt;h2&gt;Virtualenv and setuptools&lt;/h2&gt;
+&lt;p&gt;When a virtualenv is created, virtualenv installs setuptools from a local distribution located in &lt;tt class="docutils literal"&gt;&lt;span class="pre"&gt;site-packages/virtualenv_support&lt;/span&gt;&lt;/tt&gt;. If that setuptools is out of date, so is the setuptools in your new virtualenv. To avoid having to manually upgrade setuptools within newly created virtualenvs, you can do this:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+$ cd /usr/local/lib/python2.7/site-packages/virtualenv_support
+$ curl -O https://pypi.python.org/packages/source/s/setuptools/setuptools-3.3.zip
+&lt;/pre&gt;
+&lt;p&gt;Et voila!&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+$ virtualenv .
+New python executable in ./bin/python2.7
+Also creating executable in ./bin/python
+Installing setuptools, pip...done.
+&lt;/pre&gt;
+&lt;pre class="literal-block"&gt;
+$ bin/pip show setuptools
+---
+Name: setuptools
+Version: 3.3
+Location: /private/var/folders/1k/fmmlqcfn5jsbcqrqsw3q_slm0000gn/T/tmpE4vB1l/lib/python2.7/site-packages
+Requires:
+&lt;/pre&gt;
+&lt;p&gt;If you are a Buildout user, this should save you &lt;strong&gt;endless frustration with Buildout attempting to upgrade Setuptools…&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;attempting to upgrade Setuptools…&lt;/p&gt;
+&lt;p&gt;attempting to upgrade Setuptools…&lt;/p&gt;
+&lt;p&gt;attempting to upgrade Setuptools…&lt;/p&gt;
+&lt;/div&gt;
+</summary><category term="Django"></category><category term="Plone"></category><category term="Python"></category></entry><entry><title>Hello Plone Updated</title><link href="http://blog.aclark.net/2014/01/11/hello-plone-updated/" rel="alternate"></link><updated>2014-01-11T12:30:00-05:00</updated><author><name>Alex Clark</name></author><id>tag:blog.aclark.net,2014-01-11:2014/01/11/hello-plone-updated/</id><summary type="html">&lt;img alt="alternate text" src="images/hello-plone-updated.jpg" /&gt;
+&lt;p&gt;Over two years ago I wrote a blog entry called &lt;a class="reference external" href="http://blog.aclark.net/2011/08/20/hello-plone/"&gt;&amp;quot;Hello, Plone!&amp;quot;&lt;/a&gt;. I've just updated it in order to:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;Change the wording&lt;/li&gt;
+&lt;li&gt;Update the links&lt;/li&gt;
+&lt;li&gt;Add some comments&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="section" id="what-s-changed"&gt;
+&lt;h2&gt;What's changed?&lt;/h2&gt;
+&lt;p&gt;As change in technology is constant, you can expect a few details to differ between then and now. Though I generally don't like the term &amp;quot;best practice&amp;quot; I do like to write about &amp;quot;how I do it now&amp;quot; vs &amp;quot;how I did it then&amp;quot;.&lt;/p&gt;
+&lt;div class="section" id="buildout"&gt;
+&lt;h3&gt;Buildout&lt;/h3&gt;
+&lt;p&gt;Since &amp;quot;Hello, Plone!&amp;quot; was published Buildout 2.0.0 was released and &lt;strong&gt;Buildout has given up on attempting to provide module isolation&lt;/strong&gt; in the same way Virtualenv that does. Why? Virtualenv does it better. So if you want to isolate your development from a larger Python installation, use Virtualenv. I routinely use both Buildout and Virtualenv.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="buildout-hosting"&gt;
+&lt;h3&gt;Buildout hosting&lt;/h3&gt;
+&lt;p&gt;Ever since I wrote &lt;a class="reference external" href="http://www.packtpub.com/plone-33-site-administration/book"&gt;Plone 3.3 Site Administration&lt;/a&gt; I've been maintaining a collection of buildouts. Most recently, I've moved them to a project called &lt;a class="reference external" href="http://plock.github.io"&gt;Plock&lt;/a&gt;. You can also find a bunch of archived buildouts here: &lt;a class="reference external" href="https://github.com/buildouts"&gt;https://github.com/buildouts&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="zopeskel"&gt;
+&lt;h3&gt;ZopeSkel&lt;/h3&gt;
+&lt;p&gt;For folks new to Plone and Python development, it's often helpful to use a code generator to get started developing. The original &lt;tt class="docutils literal"&gt;hello_plone&lt;/tt&gt; included some ZopeSkel instructions. In this round, I've opted to include manual instructions instead e.g.:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+$ mkdir -p my.app/my/app
+$ touch my.app/my/app/__init__.py
+$ touch my.app/my/__init__.py
+$ touch my.app/my/app/configure.zcml
+&lt;/pre&gt;
+&lt;p&gt;Why? Generally speaking, I now prefer to educate folks about Python packaging more so than code generation.&lt;/p&gt;
+&lt;p&gt;Check out the new old post here: &lt;a class="reference external" href="http://blog.aclark.net/2011/08/20/hello-plone/"&gt;http://blog.aclark.net/2011/08/20/hello-plone/&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</summary><category term="Plone"></category><category term="Python"></category></entry></feed>

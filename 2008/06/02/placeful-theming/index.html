@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Alex Clark - Python Web Developer & Musician, Django, Pillow, Python and more!">
+
+        <link rel="alternate"  href="http://blog.aclark.net/feeds/all.atom.xml" type="application/atom+xml" title="Alex Clark - Python Web Developer & Musician Full Atom Feed"/>
+
+        <title>Placeful Theming // Alex Clark - Python Web Developer & Musician // Django, Pillow, Python and more!</title>
+
+    <link href="https://github.com/pythonpackages/pythonpackages/blob/master/favicon.ico?raw=true" rel="icon">
+
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.3.0/pure-min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="http://blog.aclark.net/theme/css/pure.css">
+    <link rel="stylesheet" href="http://blog.aclark.net/theme/css/pygments.css">
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/fitvids/1.0.1/jquery.fitvids.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".content").fitVids();
+        });
+    </script>
+
+    <script type="text/javascript" src="http://blog.aclark.net/tipuesearch/tipuesearch_set.js"></script>
+    <script type="text/javascript" src="http://blog.aclark.net/tipuesearch/tipuesearch_content.js"></script>
+    <link rel="stylesheet" type="text/css" href="http://blog.aclark.net/tipuesearch/tipuesearch.css">
+    <script type="text/javascript" src="http://blog.aclark.net/tipuesearch/tipuesearch.js"></script>
+
+</head>
+
+<body>
+    <div class="pure-g-r" id="layout">
+        <div class="sidebar pure-u">
+            <div class="cover-img" style="background-image: url('http://aclark.net/static/background.jpg')">
+                <div class="cover-body">
+                    <header class="header">
+                        <hgroup>
+                            <img class="avatar" src="http://www.gravatar.com/avatar/6170000a01c67c6ba1e2d4bd87701bae.png">
+                            <h1 class="brand-main"><a href="http://blog.aclark.net">Alex Clark - Python Web Developer & Musician</a></h1>
+                            <p class="tagline">Django, Pillow, Python and more!</p>
+                                <p class="social">
+                                    <a href="https://github.com/aclark4life/">
+                                        <i class="fa fa-github fa-3x"></i>
+                                    </a>
+                                    <a href="https://www.gittip.com/aclark4life">
+                                        <i class="fa fa-gittip fa-3x"></i>
+                                    </a>
+                                    <a href="https://twitter.com/aclark4life">
+                                        <i class="fa fa-twitter-square fa-3x"></i>
+                                    </a>
+                                </p>
+                        </hgroup>
+                    </header>
+                </div>
+            </div>
+        </div>
+        <div id="search" style="letter-spacing: 1px">
+            <form action="http://blog.aclark.net">
+                <input type="text" name="q" id="tipue_search_input" autocomplete="off" required>
+            </form>
+            <div id="tipue_search_content" style="padding-left: 55px"></div>
+        </div>
+    <div class="pure-u">
+        <div class="content">
+            <section class="post">
+                <header class="post-header">
+                    <h1>Placeful Theming</h1>
+                        <p class="post-meta">
+                            // under                                 <a class="post-category" href="http://blog.aclark.net/tag/plone.html">Plone</a>
+                        </p>
+                </header>
+            </section>
+            <p>I had to do a bit of placeful theming lately and I thought I would share the techniques I used (thanks davisagli, jonbaldievieso, vedawms). Let's say you have a Plone 3 site, and for some location /foo/bar/baz, you want 'baz' and everything below it to look different. I made this change through the web because I was in a hurry, but the same can be done in filesystem code.</p>
+<p>The steps are:</p>
+<div class="section" id="override-getsectionfromurl-navigate-to-portal-skins-plone-scripts-getsectionfromurl-and-customize">
+<h2>1. Override getSectionFromURL (navigate to portal_skins/plone_scripts/getSectionFromURL and customize)</h2>
+<p>Normally, this bit of code returns the section id for whatever section you are in. So if your site has three top level folders A, B, C, getSectionURL returns section-A when you are inside of A, section-B when you are inside of B, and so on. However, when you are inside of a sub-section, e.g. /A/news-items-folder, it *still* returns the section id, in this case section-A. The override makes getSectionURL return the sub-section, e.g. /A/news-items-folder, or /foo/bar/baz.</p>
+<pre class="literal-block">
+# Courtesy of jonb at onenw.org# getSectionFromURLcontentPath = context.portal_url.getRelativeContentPath(context)if not contentPath:    return Noneelse:    s = ''    sectionId = ''    for pathItem in contentPath:        sectionId += pathItem + '-'        s += 'section-' + sectionId[:-1] + ' '    return s[:-1]
+</pre>
+</div>
+<div class="section" id="override-plone-logo-navigate-to-portal-view-customizations-zope-interface-interface-plone-logo-and-customize">
+<h2>2. Override plone.logo (navigate to /portal_view_customizations/zope.interface.interface-plone.logo and customize)</h2>
+<p>For some reason (good or not, I don't know) Plone includes an image tag in the html code it uses to generate the Plone logo. This means that it will always output something like:</p>
+<pre class="literal-block">
+img src=&quot;logo.jpg&quot;
+</pre>
+<p>which is a problem if you want to placefully replace the logo because there is no easy way to do it (perhaps you could use some trick to return a different image file with the same file name).</p>
+<p>Plone ships with:</p>
+<pre class="literal-block">
+&lt;a metal:define-macro=&quot;portal_logo&quot;   id=&quot;portal-logo&quot;   accesskey=&quot;1&quot;   tal:attributes=&quot;href view/navigation_root_url&quot;   i18n:domain=&quot;plone&quot;&gt;    &lt;img src=&quot;logo.jpg&quot; alt=&quot;&quot;         tal:replace=&quot;structure view/logo_tag&quot; /&gt;&lt;/a&gt;
+</pre>
+<p>Replace that with:</p>
+<pre class="literal-block">
+&lt;div metal:define-macro=&quot;portal_logo&quot; id=&quot;portal-logo&quot;&gt;    &lt;a accesskey=&quot;1&quot;       tal:attributes=&quot;href view/navigation_root_url&quot;       i18n:domain=&quot;plone&quot;&gt;&lt;/a&gt;&lt;/div&gt;
+</pre>
+</div>
+<div class="section" id="add-css-navigate-to-portal-skins-plone-styles-plonecustom-css-and-customize">
+<h2>3. Add CSS (Navigate to /portal_skins/plone_styles/ploneCustom.css and customize)</h2>
+<p>Next, add in some CSS to make use of the previous two changes:</p>
+<pre class="literal-block">
+body.section-foo-bar-baz {    background-image: url(gradient.png);}.section-foo-bar-baz #portal-globalnav li a {    border: 0px;    background: #0066CC;    color: white;    font-size: 110%;    font-face: bold;}.section-foo-bar-baz #portal-globalnav {    background: #0066CC;    padding: 0.25em;}.section-foo-bar-baz #portal-breadcrumbs,.section-foo-bar-baz #portal-personaltools {    background: white;}.section-foo-bar-baz #portal-top {     background: white;}.section-foo-bar-baz #portal-logo {     margin: 1em;    background-image: url(ama_logo.gif);    background-repeat: no-repeat;}.section-foo-bar-baz #visual-portal-wrapper {     background: white;    margin: auto;    width: 883px;    position: relative;}.section-foo-bar-baz body {     background-image: url(gradient.png);    background-repeat: repeat;}#portal-logo {     margin: 1em;    background-image: url(logo.jpg);    background-repeat: no-repeat;}#portal-logo a {     display: block;    width: 650px;    height: 80px;}
+</pre>
+<p>I hope this helps someone get started with placeful theming.</p>
+</div>
+
+            <a href="#" class="go-top">Go Top</a>
+    <div class="comments">
+        <div id="disqus_thread"></div>
+        <script type="text/javascript">
+            /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+            var disqus_shortname = "aclark-blog"; // required: replace example with your forum shortname
+
+            /* * * DON'T EDIT BELOW THIS LINE * * */
+            (function() {
+                var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </div>
+<footer class="footer">
+    <p>&copy; Alex Clark &ndash;
+        Built with <a href="https://github.com/PurePelicanTheme/pure-single">Pure Theme</a>
+        for <a href="http://blog.getpelican.com/">Pelican</a>
+    </p>
+</footer>        </div>
+    </div>
+    </div>
+    <script>
+        var $top = $('.go-top');
+
+        // Show or hide the sticky footer button
+        $(window).scroll(function() {
+            if ($(this).scrollTop() > 200) {
+                $top.fadeIn(200);
+            } else {
+                $top.fadeOut(200);
+            }
+        });
+
+        // Animate the scroll to top
+        $top.click(function(event) {
+            event.preventDefault();
+            $('html, body').animate({scrollTop: 0}, 300);
+        })
+
+        // Makes sure that the href="#" attached to the <a> elements
+        // don't scroll you back up the page.
+        $('body').on('click', 'a[href="#"]', function(event) {
+            event.preventDefault();
+        });
+    </script>
+    <script type="text/javascript">
+        var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+        document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+        try {
+            var pageTracker = _gat._getTracker("UA-34988446-1");
+            pageTracker._trackPageview();
+            } catch(err) {}
+    </script>
+
+
+    <script>
+    $(document).ready(function() {
+         $('#tipue_search_input').tipuesearch({
+              'show': 6,
+              'mode': 'json',
+              'contentLocation': 'tipuesearch_content.json'
+         });
+    });
+    </script>
+
+</body>
+</html>

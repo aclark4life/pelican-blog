@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Alex Clark - Python Web Developer & Musician, Django, Pillow, Python and more!">
+
+        <link rel="alternate"  href="http://blog.aclark.net/feeds/all.atom.xml" type="application/atom+xml" title="Alex Clark - Python Web Developer & Musician Full Atom Feed"/>
+
+        <title>Hostout rules // Alex Clark - Python Web Developer & Musician // Django, Pillow, Python and more!</title>
+
+    <link href="https://github.com/pythonpackages/pythonpackages/blob/master/favicon.ico?raw=true" rel="icon">
+
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.3.0/pure-min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="http://blog.aclark.net/theme/css/pure.css">
+    <link rel="stylesheet" href="http://blog.aclark.net/theme/css/pygments.css">
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/fitvids/1.0.1/jquery.fitvids.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".content").fitVids();
+        });
+    </script>
+
+    <script type="text/javascript" src="http://blog.aclark.net/tipuesearch/tipuesearch_set.js"></script>
+    <script type="text/javascript" src="http://blog.aclark.net/tipuesearch/tipuesearch_content.js"></script>
+    <link rel="stylesheet" type="text/css" href="http://blog.aclark.net/tipuesearch/tipuesearch.css">
+    <script type="text/javascript" src="http://blog.aclark.net/tipuesearch/tipuesearch.js"></script>
+
+</head>
+
+<body>
+    <div class="pure-g-r" id="layout">
+        <div class="sidebar pure-u">
+            <div class="cover-img" style="background-image: url('http://aclark.net/static/background.jpg')">
+                <div class="cover-body">
+                    <header class="header">
+                        <hgroup>
+                            <img class="avatar" src="http://www.gravatar.com/avatar/6170000a01c67c6ba1e2d4bd87701bae.png">
+                            <h1 class="brand-main"><a href="http://blog.aclark.net">Alex Clark - Python Web Developer & Musician</a></h1>
+                            <p class="tagline">Django, Pillow, Python and more!</p>
+                                <p class="social">
+                                    <a href="https://github.com/aclark4life/">
+                                        <i class="fa fa-github fa-3x"></i>
+                                    </a>
+                                    <a href="https://www.gittip.com/aclark4life">
+                                        <i class="fa fa-gittip fa-3x"></i>
+                                    </a>
+                                    <a href="https://twitter.com/aclark4life">
+                                        <i class="fa fa-twitter-square fa-3x"></i>
+                                    </a>
+                                </p>
+                        </hgroup>
+                    </header>
+                </div>
+            </div>
+        </div>
+        <div id="search" style="letter-spacing: 1px">
+            <form action="http://blog.aclark.net">
+                <input type="text" name="q" id="tipue_search_input" autocomplete="off" required>
+            </form>
+            <div id="tipue_search_content" style="padding-left: 55px"></div>
+        </div>
+    <div class="pure-u">
+        <div class="content">
+            <section class="post">
+                <header class="post-header">
+                    <h1>Hostout rules</h1>
+                        <p class="post-meta">
+                            // under                                 <a class="post-category" href="http://blog.aclark.net/tag/plone.html">Plone</a>
+                        </p>
+                </header>
+            </section>
+            <p><em>As in &quot;dominates&quot;, not a &quot;list of rules&quot; :-)</em></p>
+<p>I spent a long time avoiding <a class="reference external" href="http://pypi.python.org/pypi/collective.hostout">collective.hostout</a> for reasons I will
+call &quot;technical stylistic differences&quot; with the author Dylan Jay.</p>
+<p>But then I grew up (and in cases of Plone growth like this, I usually
+end up crediting the probably-much-younger-than-me-in-years,
+but-certainly-much-more-possessive-of-sage-like-wisdom-than-me-Martin-Aspeli;
+and this time is certainly no exception. So thanks Martin!)</p>
+<p>As it turns out, Hostout (as I like to call it now, because we are on a
+first name basis) is awesome! Let me break down the awesomeness for you.</p>
+<div class="section" id="buildout">
+<h2>Buildout</h2>
+<p>It starts with Buildout. I won't bore you with the details of why
+Buildout is awesome, but I will mention one key feature:</p>
+<ul class="simple">
+<li>INI-style configuration, y'all.</li>
+</ul>
+<p>Sometimes you just want to specify something like:</p>
+<pre class="literal-block">
+[foo]
+bar = baz
+</pre>
+<p>and be done. I am not making this up folks. There is something about
+INI-style configuration that transcends time and space, and reaches
+across partisan-aisles to bring folks together in a &quot;let's just get this
+done&quot; sort of way. Of course not everyone likes them, but if you are a
+technical person and don't like them, I guarantee you at least
+understand them and can see why they might be appropriate in some cases
+over another technology.</p>
+<p>Anyway, back to the awesomeness.</p>
+</div>
+<div class="section" id="fabric">
+<h2>Fabric</h2>
+<p>Fabric is awesome! I won't bore you with the details of why Fabric is
+awesome. But I will mention one key feature:</p>
+<ul class="simple">
+<li>SSH, people. SSH.</li>
+</ul>
+<p>Sometimes you just want to type:</p>
+<pre class="literal-block">
+$ fab -H foo.com bar
+</pre>
+<p>and be done. Fabric lets you execute the Python code you wrote in a
+function called &quot;bar&quot;, inside a (local) file called fabfile.py, on a
+(remote) host called foo.com. All with the touch of a button, so to
+speak. That is to say, you create a local fabfile.py file, and Fabric
+runs the code remotely for you on any number of hosts you give it.
+Brilliant.</p>
+<p>Now, what could be better than these two technologies? These two
+technologies <em>together</em>, that's what. (See where I am going with this?)
+And what could be better than joining these two technologies? Joining
+them with <em>absolutely no effort required on your part whatsoever</em>,
+that's what.</p>
+<p>I have a long history of touting software that makes my job (and life)
+easier, and Hostout fits right in with that tradition. I'm just sorry it
+took me this long to try it out.</p>
+</div>
+<div class="section" id="hostout">
+<h2>Hostout</h2>
+<p>As compelling as it is to write &quot;pure Python&quot; in fab files, and it is,
+sometimes you just want to be done. And Hostout helps you get there. I
+will explain in a minute, but first a slight detour.</p>
+<div class="section" id="back-story">
+<h3>Back story</h3>
+<p>I recently blogged about the relaunch of this website <a class="reference external" href="http://blog.aclark.net/2011/01/19/new-website-for-2011/">here</a>. Shortly
+after the launch, I realized I needed a quick and easy way to deploy my
+staging site to production. I pitched the idea of a utility called
+&quot;mr.pusher&quot; to accomplish this task to Dylan, with the caveat that I was
+interested in making it work with Hostout.</p>
+<p>As it turns out, between Hostout and a recipe I created years ago called
+<a class="reference external" href="http://pypi.python.org/pypi/collective.recipe.rsync">collective.recipe.rsync</a>, &quot;mr.pusher&quot; almost already existed. Now back
+to the story.</p>
+</div>
+<div class="section" id="fabric-integration-made-easy">
+<h3>Fabric integration made easy</h3>
+<p>Since I knew I wanted to be able to execute a &quot;push&quot; command remotely, I
+figured I would finally get acclimated with Hostout.</p>
+<p>After a small wrestling match in my head with the docs, I came up with
+<a class="reference external" href="https://github.com/aclark4life/aclark_net_website/blob/master/buildout.cfg#L64">this</a>:</p>
+<pre class="literal-block">
+# Hostout makes Fabric integration easy
+[staging]
+recipe = collective.hostout
+host = aclark.net
+path = /srv/staging[production]
+recipe = collective.hostout
+host = aclark.net
+path = /srv/aclark_net_website
+</pre>
+<p>At this point (after running buildout) I was able to perform such great
+feats of remote administration (on my already-deployed-sans-hostout
+sites) as:</p>
+<pre class="literal-block">
+$ bin/hostout staging run git pull
+$ bin/hostout staging run bin/buildout -c staging.cfg
+</pre>
+<p>Armed with this ability, I added the following to my <a class="reference external" href="https://github.com/aclark4life/aclark_net_website/blob/master/staging.cfg">staging.cfg:</a></p>
+<pre class="literal-block">
+# Create scripts to deploy staging data to production.
+# Be VERY careful with this. You could easily overwrite your
+# live production data if you either forget to use the script
+# option, or accidentally run the bin/rsync-filestorage-to-production
+# script without stopping the production site first.
+[filestorage-to-production]
+recipe = collective.recipe.rsync
+source = var/filestorage/Data.fs
+target = ../aclark_net_website/var/filestorage/Data.fs
+script = true[blobstorage-to-production]
+recipe = collective.recipe.rsync
+source = var/blobstorage/
+target = ../aclark_net_website/var/blobstorage/
+script = true
+</pre>
+<p>The result was two scripts I could use to &quot;push&quot; staging to production,
+but only after stopping the production site first:</p>
+<pre class="literal-block">
+$ bin/hostout production run bin/supervisorctl shutdown
+$ bin/hostout staging run bin/rsync-filestorage-to-production
+$ bin/hostout staging run bin/rsync-blobstorage-to-production
+$ bin/hostout production run bin/supervisord
+</pre>
+<p>And we're deployed! This technique is particularly elegant when used in
+combination with a<a class="reference external" href="https://github.com/aclark4life/aclark_net_website/blob/master/apache.conf">custom 503</a>.</p>
+</div>
+<div class="section" id="conclusion">
+<h3>Conclusion</h3>
+<p>I really like this setup, and I really appreciate what Hostout gets me
+&quot;for free&quot;; I didn't have to create a fabfile.py, I just configured my
+staging and production host parameters in buildout.cfg and off I went.</p>
+<p>Of course, there is always room for improvement. The next most logical
+step for me would be to add cloud integration. If I could provision a
+new Rackspace cloud server via buildout, and then host-it-out, I think
+the future will have arrived. And since that is exactly what
+<a class="reference external" href="http://pypi.python.org/pypi/hostout.cloud">hostout.cloud</a> appears to do, welcome to the future!</p>
+<p>Alex Clark (January 2011)</p>
+<p><em>Did you enjoy reading this article? Please consider `helping me help
+Plone in February 2011`_.</em></p>
+</div>
+</div>
+
+            <a href="#" class="go-top">Go Top</a>
+    <div class="comments">
+        <div id="disqus_thread"></div>
+        <script type="text/javascript">
+            /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+            var disqus_shortname = "aclark-blog"; // required: replace example with your forum shortname
+
+            /* * * DON'T EDIT BELOW THIS LINE * * */
+            (function() {
+                var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </div>
+<footer class="footer">
+    <p>&copy; Alex Clark &ndash;
+        Built with <a href="https://github.com/PurePelicanTheme/pure-single">Pure Theme</a>
+        for <a href="http://blog.getpelican.com/">Pelican</a>
+    </p>
+</footer>        </div>
+    </div>
+    </div>
+    <script>
+        var $top = $('.go-top');
+
+        // Show or hide the sticky footer button
+        $(window).scroll(function() {
+            if ($(this).scrollTop() > 200) {
+                $top.fadeIn(200);
+            } else {
+                $top.fadeOut(200);
+            }
+        });
+
+        // Animate the scroll to top
+        $top.click(function(event) {
+            event.preventDefault();
+            $('html, body').animate({scrollTop: 0}, 300);
+        })
+
+        // Makes sure that the href="#" attached to the <a> elements
+        // don't scroll you back up the page.
+        $('body').on('click', 'a[href="#"]', function(event) {
+            event.preventDefault();
+        });
+    </script>
+    <script type="text/javascript">
+        var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+        document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+        try {
+            var pageTracker = _gat._getTracker("UA-34988446-1");
+            pageTracker._trackPageview();
+            } catch(err) {}
+    </script>
+
+
+    <script>
+    $(document).ready(function() {
+         $('#tipue_search_input').tipuesearch({
+              'show': 6,
+              'mode': 'json',
+              'contentLocation': 'tipuesearch_content.json'
+         });
+    });
+    </script>
+
+</body>
+</html>
