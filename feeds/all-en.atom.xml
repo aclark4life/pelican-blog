@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Alex Clark - Python Web Developer &amp; Musician</title><link href="http://blog.aclark.net/" rel="alternate"></link><link href="http://blog.aclark.net/feeds/all-en.atom.xml" rel="self"></link><id>http://blog.aclark.net/</id><updated>2014-10-02T14:30:00-04:00</updated><entry><title>Pillow Runs Itself!</title><link href="http://blog.aclark.net/2014/10/02/pillow-runs-itself/" rel="alternate"></link><updated>2014-10-02T14:30:00-04:00</updated><author><name>Alex Clark</name></author><id>tag:blog.aclark.net,2014-10-02:2014/10/02/pillow-runs-itself/</id><summary type="html">&lt;p&gt;&lt;strong&gt;As of Pillow 2.6.0, the Pillow project almost completely runs itself!&lt;/strong&gt;&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Alex Clark - Python Web Developer &amp; Musician</title><link href="http://blog.aclark.net/" rel="alternate"></link><link href="http://blog.aclark.net/feeds/all-en.atom.xml" rel="self"></link><id>http://blog.aclark.net/</id><updated>2015-01-05T14:56:26-05:00</updated><entry><title>Packt is having a sale</title><link href="http://blog.aclark.net/2015/01/05/packt-is-having-a-sale/" rel="alternate"></link><updated>2015-01-05T14:56:26-05:00</updated><author><name>Alex Clark</name></author><id>tag:blog.aclark.net,2015-01-05:2015/01/05/packt-is-having-a-sale/</id><summary type="html">&lt;img alt="" src="/images/packt-5.png" /&gt;
+&lt;p&gt;Happy new year!&lt;/p&gt;
+&lt;p&gt;For those who haven't heard, PACKT is having a $5 &amp;quot;bonanza&amp;quot;. Pick up some $5 Python books while you can! E.g.:&lt;/p&gt;
+&lt;img alt="" src="/images/packt-pop.png" /&gt;
+&lt;p&gt;Sale ends tomorrow.&lt;/p&gt;
+</summary><category term="Plone"></category><category term="Python"></category></entry><entry><title>Pillow Runs Itself!</title><link href="http://blog.aclark.net/2014/10/02/pillow-runs-itself/" rel="alternate"></link><updated>2014-10-02T14:30:00-04:00</updated><author><name>Alex Clark</name></author><id>tag:blog.aclark.net,2014-10-02:2014/10/02/pillow-runs-itself/</id><summary type="html">&lt;p&gt;&lt;strong&gt;As of Pillow 2.6.0, the Pillow project almost completely runs itself!&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Of course when I say &amp;quot;runs itself&amp;quot; I mean &amp;quot;runs without me&amp;quot;, which is what &lt;strong&gt;every open source project lead hopes for&lt;/strong&gt;. For the first time ever, I was able to:&lt;/p&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;Turn off GitHub Watching until two weeks before the release.&lt;/li&gt;
@@ -935,35 +940,4 @@ Requires:
 &lt;p&gt;attempting to upgrade Setuptools…&lt;/p&gt;
 &lt;p&gt;attempting to upgrade Setuptools…&lt;/p&gt;
 &lt;/div&gt;
-</summary><category term="Django"></category><category term="Plone"></category><category term="Python"></category></entry><entry><title>Hello Plone Updated</title><link href="http://blog.aclark.net/2014/01/11/hello-plone-updated/" rel="alternate"></link><updated>2014-01-11T12:30:00-05:00</updated><author><name>Alex Clark</name></author><id>tag:blog.aclark.net,2014-01-11:2014/01/11/hello-plone-updated/</id><summary type="html">&lt;img alt="alternate text" src="images/hello-plone-updated.jpg" /&gt;
-&lt;p&gt;Over two years ago I wrote a blog entry called &lt;a class="reference external" href="http://blog.aclark.net/2011/08/20/hello-plone/"&gt;&amp;quot;Hello, Plone!&amp;quot;&lt;/a&gt;. I've just updated it in order to:&lt;/p&gt;
-&lt;ul class="simple"&gt;
-&lt;li&gt;Change the wording&lt;/li&gt;
-&lt;li&gt;Update the links&lt;/li&gt;
-&lt;li&gt;Add some comments&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class="section" id="what-s-changed"&gt;
-&lt;h2&gt;What's changed?&lt;/h2&gt;
-&lt;p&gt;As change in technology is constant, you can expect a few details to differ between then and now. Though I generally don't like the term &amp;quot;best practice&amp;quot; I do like to write about &amp;quot;how I do it now&amp;quot; vs &amp;quot;how I did it then&amp;quot;.&lt;/p&gt;
-&lt;div class="section" id="buildout"&gt;
-&lt;h3&gt;Buildout&lt;/h3&gt;
-&lt;p&gt;Since &amp;quot;Hello, Plone!&amp;quot; was published Buildout 2.0.0 was released and &lt;strong&gt;Buildout has given up on attempting to provide module isolation&lt;/strong&gt; in the same way Virtualenv that does. Why? Virtualenv does it better. So if you want to isolate your development from a larger Python installation, use Virtualenv. I routinely use both Buildout and Virtualenv.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="section" id="buildout-hosting"&gt;
-&lt;h3&gt;Buildout hosting&lt;/h3&gt;
-&lt;p&gt;Ever since I wrote &lt;a class="reference external" href="http://www.packtpub.com/plone-33-site-administration/book"&gt;Plone 3.3 Site Administration&lt;/a&gt; I've been maintaining a collection of buildouts. Most recently, I've moved them to a project called &lt;a class="reference external" href="http://plock.github.io"&gt;Plock&lt;/a&gt;. You can also find a bunch of archived buildouts here: &lt;a class="reference external" href="https://github.com/buildouts"&gt;https://github.com/buildouts&lt;/a&gt;.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="section" id="zopeskel"&gt;
-&lt;h3&gt;ZopeSkel&lt;/h3&gt;
-&lt;p&gt;For folks new to Plone and Python development, it's often helpful to use a code generator to get started developing. The original &lt;tt class="docutils literal"&gt;hello_plone&lt;/tt&gt; included some ZopeSkel instructions. In this round, I've opted to include manual instructions instead e.g.:&lt;/p&gt;
-&lt;pre class="literal-block"&gt;
-$ mkdir -p my.app/my/app
-$ touch my.app/my/app/__init__.py
-$ touch my.app/my/__init__.py
-$ touch my.app/my/app/configure.zcml
-&lt;/pre&gt;
-&lt;p&gt;Why? Generally speaking, I now prefer to educate folks about Python packaging more so than code generation.&lt;/p&gt;
-&lt;p&gt;Check out the new old post here: &lt;a class="reference external" href="http://blog.aclark.net/2011/08/20/hello-plone/"&gt;http://blog.aclark.net/2011/08/20/hello-plone/&lt;/a&gt;.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-</summary><category term="Plone"></category><category term="Python"></category></entry></feed>
+</summary><category term="Django"></category><category term="Plone"></category><category term="Python"></category></entry></feed>

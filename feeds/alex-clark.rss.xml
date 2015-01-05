@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Alex Clark - Python Web Developer &amp; Musician</title><link>http://blog.aclark.net/</link><description></description><atom:link href="http://blog.aclark.net/feeds/alex-clark.rss.xml" rel="self"></atom:link><lastBuildDate>Thu, 02 Oct 2014 14:30:00 -0400</lastBuildDate><item><title>Pillow Runs Itself!</title><link>http://blog.aclark.net/2014/10/02/pillow-runs-itself/</link><description>&lt;p&gt;&lt;strong&gt;As of Pillow 2.6.0, the Pillow project almost completely runs itself!&lt;/strong&gt;&lt;/p&gt;
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Alex Clark - Python Web Developer &amp; Musician</title><link>http://blog.aclark.net/</link><description></description><atom:link href="http://blog.aclark.net/feeds/alex-clark.rss.xml" rel="self"></atom:link><lastBuildDate>Mon, 05 Jan 2015 14:56:26 -0500</lastBuildDate><item><title>Packt is having a sale</title><link>http://blog.aclark.net/2015/01/05/packt-is-having-a-sale/</link><description>&lt;img alt="" src="/images/packt-5.png" /&gt;
+&lt;p&gt;Happy new year!&lt;/p&gt;
+&lt;p&gt;For those who haven't heard, PACKT is having a $5 &amp;quot;bonanza&amp;quot;. Pick up some $5 Python books while you can! E.g.:&lt;/p&gt;
+&lt;img alt="" src="/images/packt-pop.png" /&gt;
+&lt;p&gt;Sale ends tomorrow.&lt;/p&gt;
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Alex Clark</dc:creator><pubDate>Mon, 05 Jan 2015 14:56:26 -0500</pubDate><guid>tag:blog.aclark.net,2015-01-05:2015/01/05/packt-is-having-a-sale/</guid><category>Plone</category><category>Python</category></item><item><title>Pillow Runs Itself!</title><link>http://blog.aclark.net/2014/10/02/pillow-runs-itself/</link><description>&lt;p&gt;&lt;strong&gt;As of Pillow 2.6.0, the Pillow project almost completely runs itself!&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Of course when I say &amp;quot;runs itself&amp;quot; I mean &amp;quot;runs without me&amp;quot;, which is what &lt;strong&gt;every open source project lead hopes for&lt;/strong&gt;. For the first time ever, I was able to:&lt;/p&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;Turn off GitHub Watching until two weeks before the release.&lt;/li&gt;
@@ -935,35 +940,4 @@ Requires:
 &lt;p&gt;attempting to upgrade Setuptools…&lt;/p&gt;
 &lt;p&gt;attempting to upgrade Setuptools…&lt;/p&gt;
 &lt;/div&gt;
-</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Alex Clark</dc:creator><pubDate>Wed, 19 Mar 2014 17:30:00 -0400</pubDate><guid>tag:blog.aclark.net,2014-03-19:2014/03/19/virtualenv-support-update/</guid><category>Django</category><category>Plone</category><category>Python</category></item><item><title>Hello Plone Updated</title><link>http://blog.aclark.net/2014/01/11/hello-plone-updated/</link><description>&lt;img alt="alternate text" src="images/hello-plone-updated.jpg" /&gt;
-&lt;p&gt;Over two years ago I wrote a blog entry called &lt;a class="reference external" href="http://blog.aclark.net/2011/08/20/hello-plone/"&gt;&amp;quot;Hello, Plone!&amp;quot;&lt;/a&gt;. I've just updated it in order to:&lt;/p&gt;
-&lt;ul class="simple"&gt;
-&lt;li&gt;Change the wording&lt;/li&gt;
-&lt;li&gt;Update the links&lt;/li&gt;
-&lt;li&gt;Add some comments&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class="section" id="what-s-changed"&gt;
-&lt;h2&gt;What's changed?&lt;/h2&gt;
-&lt;p&gt;As change in technology is constant, you can expect a few details to differ between then and now. Though I generally don't like the term &amp;quot;best practice&amp;quot; I do like to write about &amp;quot;how I do it now&amp;quot; vs &amp;quot;how I did it then&amp;quot;.&lt;/p&gt;
-&lt;div class="section" id="buildout"&gt;
-&lt;h3&gt;Buildout&lt;/h3&gt;
-&lt;p&gt;Since &amp;quot;Hello, Plone!&amp;quot; was published Buildout 2.0.0 was released and &lt;strong&gt;Buildout has given up on attempting to provide module isolation&lt;/strong&gt; in the same way Virtualenv that does. Why? Virtualenv does it better. So if you want to isolate your development from a larger Python installation, use Virtualenv. I routinely use both Buildout and Virtualenv.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="section" id="buildout-hosting"&gt;
-&lt;h3&gt;Buildout hosting&lt;/h3&gt;
-&lt;p&gt;Ever since I wrote &lt;a class="reference external" href="http://www.packtpub.com/plone-33-site-administration/book"&gt;Plone 3.3 Site Administration&lt;/a&gt; I've been maintaining a collection of buildouts. Most recently, I've moved them to a project called &lt;a class="reference external" href="http://plock.github.io"&gt;Plock&lt;/a&gt;. You can also find a bunch of archived buildouts here: &lt;a class="reference external" href="https://github.com/buildouts"&gt;https://github.com/buildouts&lt;/a&gt;.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="section" id="zopeskel"&gt;
-&lt;h3&gt;ZopeSkel&lt;/h3&gt;
-&lt;p&gt;For folks new to Plone and Python development, it's often helpful to use a code generator to get started developing. The original &lt;tt class="docutils literal"&gt;hello_plone&lt;/tt&gt; included some ZopeSkel instructions. In this round, I've opted to include manual instructions instead e.g.:&lt;/p&gt;
-&lt;pre class="literal-block"&gt;
-$ mkdir -p my.app/my/app
-$ touch my.app/my/app/__init__.py
-$ touch my.app/my/__init__.py
-$ touch my.app/my/app/configure.zcml
-&lt;/pre&gt;
-&lt;p&gt;Why? Generally speaking, I now prefer to educate folks about Python packaging more so than code generation.&lt;/p&gt;
-&lt;p&gt;Check out the new old post here: &lt;a class="reference external" href="http://blog.aclark.net/2011/08/20/hello-plone/"&gt;http://blog.aclark.net/2011/08/20/hello-plone/&lt;/a&gt;.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Alex Clark</dc:creator><pubDate>Sat, 11 Jan 2014 12:30:00 -0500</pubDate><guid>tag:blog.aclark.net,2014-01-11:2014/01/11/hello-plone-updated/</guid><category>Plone</category><category>Python</category></item></channel></rss>
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Alex Clark</dc:creator><pubDate>Wed, 19 Mar 2014 17:30:00 -0400</pubDate><guid>tag:blog.aclark.net,2014-03-19:2014/03/19/virtualenv-support-update/</guid><category>Django</category><category>Plone</category><category>Python</category></item></channel></rss>

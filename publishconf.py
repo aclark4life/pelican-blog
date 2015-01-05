@@ -14,7 +14,7 @@ FEED_MAX_ITEMS = 10
 GITHUB_URL = 'https://github.com/aclark4life/blog'
 GOOGLE_ANALYTICS = 'UA-34988446-1'
 PROFILE_IMG_URL = 'http://www.gravatar.com/avatar/6170000a01c67c6ba1e2d4bd87701bae.png'
-PLUGIN_PATHS = ['/Users/aclark/Developer/aclark/pelican-plugins']
+PLUGIN_PATHS = ['/Users/alexclark/Developer/aclark/pelican-plugins']
 PLUGINS = ['sitemap', 'tipue_search']
 SITEMAP = {
     'format': 'xml',
@@ -29,6 +29,6 @@ SOCIAL = (
 TAGLINE = u'Django, Pillow, Python and more!'
 TAG_FEED_ATOM = 'feeds/%s.atom.xml'
 TAG_FEED_RSS = None
-THEME = '/Users/aclark/Developer/aclark/pure-single/'
+THEME = '/Users/alexclark/Developer/aclark/pure-single/'
 TIMEZONE = 'US/Eastern'
 TWITTER_USERNAME = 'aclark4life'
