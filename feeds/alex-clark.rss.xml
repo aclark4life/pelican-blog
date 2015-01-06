@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Alex Clark - Python Web Developer &amp; Musician</title><link>http://blog.aclark.net/</link><description></description><atom:link href="http://blog.aclark.net/feeds/alex-clark.rss.xml" rel="self"></atom:link><lastBuildDate>Mon, 05 Jan 2015 14:56:26 -0500</lastBuildDate><item><title>Packt is having a sale</title><link>http://blog.aclark.net/2015/01/05/packt-is-having-a-sale/</link><description>&lt;img alt="Packt is having a sale!" src="/images/packt-5.png" /&gt;
 &lt;p&gt;Happy new year!&lt;/p&gt;
-&lt;p&gt;For those who haven't heard, PACKT is having a $5 &amp;quot;bonanza&amp;quot;. Pick up some $5 Python books while you can! E.g.:&lt;/p&gt;
+&lt;p&gt;For those who haven't heard, PACKT is having a $5 &amp;quot;bonanza&amp;quot;. &lt;a class="reference external" href="https://www.packtpub.com/packt5dollar/?utm_source=rochelld&amp;amp;utm_medium=referral&amp;amp;utm_campaign=5D2014"&gt;Pick up some $5 Python books&lt;/a&gt; while you can! E.g.:&lt;/p&gt;
 &lt;img alt="Popular Python titles" src="/images/packt-pop.png" /&gt;
-&lt;p&gt;Sale ends tomorrow.&lt;/p&gt;
+&lt;p&gt;Sale ends tomorrow, &lt;a class="reference external" href="https://www.packtpub.com/packt5dollar/?utm_source=rochelld&amp;amp;utm_medium=referral&amp;amp;utm_campaign=5D2014"&gt;check it out&lt;/a&gt;!&lt;/p&gt;
 </description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Alex Clark</dc:creator><pubDate>Mon, 05 Jan 2015 14:56:26 -0500</pubDate><guid>tag:blog.aclark.net,2015-01-05:2015/01/05/packt-is-having-a-sale/</guid><category>Plone</category><category>Python</category></item><item><title>Pillow Runs Itself!</title><link>http://blog.aclark.net/2014/10/02/pillow-runs-itself/</link><description>&lt;p&gt;&lt;strong&gt;As of Pillow 2.6.0, the Pillow project almost completely runs itself!&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Of course when I say &amp;quot;runs itself&amp;quot; I mean &amp;quot;runs without me&amp;quot;, which is what &lt;strong&gt;every open source project lead hopes for&lt;/strong&gt;. For the first time ever, I was able to:&lt;/p&gt;
 &lt;ul class="simple"&gt;

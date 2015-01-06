@@ -14,4 +14,4 @@ For those who haven't heard, PACKT is having a $5 "bonanza". `Pick up some $5 Py
 .. image:: /images/packt-pop.png
   :alt: Popular Python titles
 
-Sale ends tomorrow.
+Sale ends tomorrow, `check it out <https://www.packtpub.com/packt5dollar/?utm_source=rochelld&utm_medium=referral&utm_campaign=5D2014>`_!
