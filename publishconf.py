@@ -22,10 +22,10 @@ SITEMAP = {
 SITENAME = u'Alex Clark - Python Web Developer & Musician'
 SITEURL = 'http://blog.aclark.net'
 SOCIAL = (
-    ('user', 'https://about.me/alex.clark/'),
-    ('github', 'https://github.com/aclark4life/'),
+    ('github', 'https://github.com/aclark4life'),
     ('gittip', 'https://www.gittip.com/aclark4life'),
     ('twitter-square', 'https://twitter.com/aclark4life'),
+    ('user', 'https://about.me/alex.clark'),
 )
 TAGLINE = u'Django, Plone, Pyramid and more!'
 TAG_FEED_ATOM = 'feeds/%s.atom.xml'
