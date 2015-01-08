@@ -22,6 +22,7 @@ SITEMAP = {
 SITENAME = u'Alex Clark - Python Web Developer & Musician'
 SITEURL = 'http://blog.aclark.net'
 SOCIAL = (
+    ('aboutme', 'https://about.me/alex.clark/'),
     ('github', 'https://github.com/aclark4life/'),
     ('gittip', 'https://www.gittip.com/aclark4life'),
     ('twitter-square', 'https://twitter.com/aclark4life'),
