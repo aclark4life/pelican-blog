@@ -2,9 +2,9 @@ New Django Website
 ==================
 
 :tags: Plone, Python
-:date: Sat Jan 10 18:14:36 EST 2015
+:date: Sun Jan 11 09:48:24 EST 2015
 
-*After a series of Django gigs recently, I had the urge to redevelop our company website in Django; I am very happy with the results.*
+*After a series of Django gigs in 2014, I had the urge to redevelop our company website in Django; I am very happy with the results. This overview is roughly in order of development from start to finish*.
 
 .. image:: /images/aclarknet-django.png
     :alt: Website front page
@@ -14,8 +14,8 @@ Same theme, different backend
 
 The Pyramid version of aclark.net was almost two years old and needed an overhaul. Django appeared attractive because:
 
-- I know Django, but I don't know enough Django. Like with Pyramid and Plone before, much Django was learned during the process of developing this site over the course of one month.
-- There was no "content" with the previous (Pyramid) site. The idea of putting my "content" in Django models appealed to me.
+- I know Django, but I don't know enough Django. Like with Pyramid and Plone before, I learned a lot of Django while developing this site over the last few weeks.
+- There was no "content" with the previous (Pyramid) site. The idea of putting my "content" in Django models was appealing to me.
 - The new `Django project <https://djangoproject.com>`_ website is awesome! An awesome website makes me want to build another awesome website with an awesome web framework. Awesome.
 
 I hate code generators
@@ -36,7 +36,7 @@ I even pushed to Heroku with the sqlite database checked in, until I was ready t
 Bootstrap all the things
 ------------------------
 
-Sure Bootstrap is ubiquitious now, but it remains attractive nonetheless. One of the first tasks I performed was add ``django-bootstrapped`` to my ``INSTALLED_APPS`` [3]_.
+Sure Bootstrap is ubiquitious now, but it remains attractive nonetheless. One of the first tasks I performed was add ``django-admin-bootstrapped`` to my ``INSTALLED_APPS`` [3]_.
 
 And because it's 2015, I Bower-installed Bootstrap and Fontawesome for my theme development.
 
@@ -58,15 +58,13 @@ Lately I've gotten into the habit of using good-ol' Make to automate various tas
 Add-ons, Apps, Eggs, Distributions, Packages, Products, Wheels
 --------------------------------------------------------------
 
-I am literally annoyed by the figurative abomination that is Python packaging terminology. It makes sense though, because:
+I am *literally* annoyed by the *figurative* abomination that is Python packaging terminology. The proliferation of terms is understandable though because of the many layers of *technology*, each with its own *terminology*, that may or may not overlap:
 
-- Python-the-language includes terminology applied to itself.
-- Python-the-community debates the terminology to apply to the language.
-- Software written in Python defines its own terminology, unrelated to Python-the-language but may be overlapping.
-- Software communities debate terminology to apply to their software.
-- There are hundreds of software communities built on top of Python software, so there is bound to be some confusion, discrepancies, overlap, etc.
+- The Python language
+- Various packaging frameworks
+- Software written in Python
 
-All of that was so I could tell you I pip-installed the following::
+And all of that was so I could tell you I pip-installed the following::
 
     Django
     Pillow
@@ -78,10 +76,17 @@ All of that was so I could tell you I pip-installed the following::
     psycopg2
     -e aclarknet
 
+Buildout, Conda, easy_install, pip
+----------------------------------
+
+On a related subject, why do I have a `setup.py <https://github.com/ACLARKNET/aclarknet-django/blob/master/aclarknet/setup.py>`_? I get the feeling that Django projects in the wild sometimes use one, and sometimes don't. And the Django documentation `doesn't even mention setup.py <https://docs.djangoproject.com/search/?q=setup.py&release=11>`_. So why do I have one?
+
+In short, because I wanted my project and app in the ``sys.path``. I have a similar feeling that when Django projects/apps/etc don't have setup.py files, they are manipulating sys.path manually to include themselves.
+
 .. [1] ``django-admin startproject aclarknet; cd aclarknet/aclarknet; django-admin startapp aclarknet``
 
 .. [2] Granted, the perceived heaviness is much worse than the *actual* burden of "real" database setup which is admittedly fairly trivial: ``brew install postgres``.
 
 .. [3] The Django admin without Bootstrap reminds me of the ZMI without Bootstrap, which `I also don't like <https://pypi.python.org/pypi/zope2_bootstrap>`_.
 
-.. [4] Embarrassingly, I create the tabs with ``s/    /\t/`` because my tabstop is set to 4 spaces.
+.. [4] Embarrassingly, I create the tabs with ``s/    /\t/`` because my tabstop is set to 4 spaces. Maybe I should be change my tabstop setting each time instead?
