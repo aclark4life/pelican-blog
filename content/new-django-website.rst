@@ -105,7 +105,7 @@ Overall
 
 Overall, this was a great experience. As such, I'm now considering another `pythonpackages.com <http://pythonpackages.com>`_ reboot with Django; to further exercise my Django chops and fullfill the packaging-automation-vision I've had since late 2011. 
 
-*Please let me know your reaction to my experiences in the comments!*
+*Please let me know your reaction to my experiences in the comments.*
 
 .. [1] ``django-admin startproject aclarknet; cd aclarknet/aclarknet; django-admin startapp aclarknet``
 
