@@ -22,12 +22,14 @@ SITEMAP = {
 SITENAME = u'Alex Clark - Python Web Developer & Musician'
 SITEURL = 'http://blog.aclark.net'
 SOCIAL = (
+    ('home', 'http://aclark.net'),
     ('github', 'https://github.com/aclark4life'),
     ('gittip', 'https://www.gittip.com/aclark4life'),
+    ('music', 'http://band.aclark.net'),
     ('twitter-square', 'https://twitter.com/aclark4life'),
     ('user', 'https://about.me/alex.clark'),
 )
-TAGLINE = u'Django, Plone, Pyramid and more!'
+TAGLINE = u'Django, Pillow, Plone, Pyramid and more!'
 TAG_FEED_ATOM = 'feeds/%s.atom.xml'
 TAG_FEED_RSS = None
 THEME = '/Users/alexclark/Developer/aclark/pure-single/'

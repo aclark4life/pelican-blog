@@ -2,9 +2,9 @@ New Django Website
 ==================
 
 :tags: Plone, Python
-:date: Sun Jan 11 09:48:24 EST 2015
+:date: Sun Jan 11 18:44:48 EST 2015
 
-*After a series of Django gigs in 2014, I had the urge to redevelop our company website in Django; I am very happy with the results. This overview is roughly in order of development from start to finish*.
+*After a series of Django gigs in 2014, I had the urge to redevelop our company website in Django; I am very happy with the results. This overview is roughly in order of development from start to finish. And since I am a "packaging guy", I will take this opportunity to comment on miscellaneous packaging issues too*.
 
 .. image:: /images/aclarknet-django.png
     :alt: Website front page
@@ -64,7 +64,7 @@ I am *literally* annoyed by the *figurative* abomination that is Python packagin
 - Various packaging frameworks
 - Software written in Python
 
-And all of that was so I could tell you I pip-installed the following::
+And all of that was just so I could tell you I pip-installed the following::
 
     Django
     Pillow
@@ -79,9 +79,33 @@ And all of that was so I could tell you I pip-installed the following::
 Buildout, Conda, easy_install, pip
 ----------------------------------
 
-On a related subject, why do I have a `setup.py <https://github.com/ACLARKNET/aclarknet-django/blob/master/aclarknet/setup.py>`_? I get the feeling that Django projects in the wild sometimes use one, and sometimes don't. And the Django documentation `doesn't even mention setup.py <https://docs.djangoproject.com/search/?q=setup.py&release=11>`_. So why do I have one?
+On a related subject, why do I have a `setup.py <https://github.com/ACLARKNET/aclarknet-django/blob/master/aclarknet/setup.py>`_? I get the feeling that Django projects in the wild sometimes have one and sometimes don't. And the Django documentation `has only a few mentions of setup.py <https://docs.djangoproject.com/search/?q=setup+py&release=11>`_. So why do I have one?
 
-In short, because I wanted my project and app in the ``sys.path``. I have a similar feeling that when Django projects/apps/etc don't have setup.py files, they are manipulating sys.path manually to include themselves.
+In short, because I want my code in ``sys.path``. I have another feeling that when Django projects/apps/etc don't have setup.py files, they are somehow manipulating sys.path manually to include themselves. There is `slightly more mentioning of sys.path <https://docs.djangoproject.com/search/?q=sys+path&release=11>`_ in Django's documentation, at least.
+
+Anyway, I use setup.py because I'm familiar with setuptools.
+
+Contact Form
+------------
+
+Enough packaging rants, back to the rest of the Django story.
+
+Every business website needs a contact form, right? And contact forms are tedious and boring to create, right? Yes and yes. That's why I thought using ``django-contact-form`` would be a good idea. Unfortunately I ran into an issue I couldn't easily work around, so I gave up and `made my own <https://github.com/ACLARKNET/aclarknet-django/blob/master/aclarknet/aclarknet/aclarknet/views.py#L32>`_ [5]_.
+
+ORM I really on my own? 
+-----------------------
+
+.. image:: /images/aclark-tweet.png
+    :alt: Tweet
+
+That's right. After adding an ``ImageField`` I expected the image to be stored in the database and not the file system, and I'm not ashamed. Since that was not the case, I ended up using ``django-cumulus`` [6]_.
+
+Overall
+-------
+
+Overall, this was a great experience. As such, I'm now considering another `pythonpackages.com <http://pythonpackages.com>`_ reboot with Django; to further exercise my Django chops and fullfill the packaging-automation-vision I've had since late 2011. 
+
+*Please let me know your reaction to my experiences in the comments!*
 
 .. [1] ``django-admin startproject aclarknet; cd aclarknet/aclarknet; django-admin startapp aclarknet``
 
@@ -89,4 +113,8 @@ In short, because I wanted my project and app in the ``sys.path``. I have a simi
 
 .. [3] The Django admin without Bootstrap reminds me of the ZMI without Bootstrap, which `I also don't like <https://pypi.python.org/pypi/zope2_bootstrap>`_.
 
-.. [4] Embarrassingly, I create the tabs with ``s/    /\t/`` because my tabstop is set to 4 spaces. Maybe I should be change my tabstop setting each time instead?
+.. [4] Embarrassingly, I create the tabs with ``s/    /\t/`` because my tabstop is set to 4 spaces. Maybe I should be change my tabstop setting each time?
+
+.. [5] Something to do with Sendgrid integration, certainly not django-contact-form's fault!
+
+.. [6] Which is another story. First I tried ``django-storages`` only to discover Rackspace Cloud Files support moved to cumulus (or started in cumulus and moved back?) Then ``django-cumulus`` *almost* worked but not quite. Rackspace Cloud Files returned a URL but upload failed. So I manually uploaded all the files to Rackspace Cloud Files as a workaround.
