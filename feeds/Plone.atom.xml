@@ -77,7 +77,7 @@ psycopg2
 &lt;/div&gt;
 &lt;div class="section" id="orm-i-really-on-my-own"&gt;
 &lt;h2&gt;ORM I really on my own?&lt;/h2&gt;
-&lt;img alt="Tweet" src="/images/aclark-tweet.png" /&gt;
+&lt;a class="reference external image-reference" href="https://twitter.com/aclark4life/status/552626214008274944"&gt;&lt;img alt="Tweet" src="/images/aclark-tweet.png" /&gt;&lt;/a&gt;
 &lt;p&gt;That's right. After adding an &lt;tt class="docutils literal"&gt;ImageField&lt;/tt&gt; I expected the image to be stored in the database and not the file system, and I'm not ashamed. Since that was not the case, I ended up using &lt;tt class="docutils literal"&gt;&lt;span class="pre"&gt;django-cumulus&lt;/span&gt;&lt;/tt&gt; &lt;a class="footnote-reference" href="#id12" id="id6"&gt;[6]&lt;/a&gt;.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="overall"&gt;

@@ -97,6 +97,7 @@ ORM I really on my own?
 
 .. image:: /images/aclark-tweet.png
     :alt: Tweet
+    :target: https://twitter.com/aclark4life/status/552626214008274944
 
 That's right. After adding an ``ImageField`` I expected the image to be stored in the database and not the file system, and I'm not ashamed. Since that was not the case, I ended up using ``django-cumulus`` [6]_.
 
