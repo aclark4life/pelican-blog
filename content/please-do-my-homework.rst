@@ -9,7 +9,7 @@ Reminiscent of `this phenomenon <http://blog.aclark.net/2012/05/23/a-simple-prin
 .. image:: /images/homework1.png
     :alt: Question #1
 
-In principal, and putting aside `/r/learnpython <http://www.reddit.com/r/learnpython>`_, I have no problem with Redditors asking questions on /r/Python that are better suited to /r/learnpython. E.g.
+In principle, and putting aside `/r/learnpython <http://www.reddit.com/r/learnpython>`_, I have no problem with Redditors asking questions on /r/Python that are better suited to /r/learnpython. E.g.
 
 .. image:: /images/homework2.png
     :alt: Question #2
@@ -38,6 +38,6 @@ So now I feel compelled to try and discourage such posts and **encourage more me
 
 In the real world, you cannot say to your friends and/or coworkers::
 
-    My boss is such a jerk. If you could just give me a working of example of how to do my job, that would be awesome! Lolz.
+    My boss is such a jerk. If you could just give me a working example of how to do my job, that would be awesome! Lolz.
 
 So please, /r/Python, let's **start asking more meaningful questions**. And if there is anything I can do to help, please let me know.

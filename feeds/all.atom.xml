@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom"><title>Alex Clark - Python Web Developer &amp; Musician</title><link href="http://blog.aclark.net/" rel="alternate"></link><link href="http://blog.aclark.net/feeds/all.atom.xml" rel="self"></link><id>http://blog.aclark.net/</id><updated>2015-02-10T22:19:44-05:00</updated><entry><title>Please do my homework</title><link href="http://blog.aclark.net/2015/02/10/please-do-my-homework/" rel="alternate"></link><updated>2015-02-10T22:19:44-05:00</updated><author><name>Alex Clark</name></author><id>tag:blog.aclark.net,2015-02-10:2015/02/10/please-do-my-homework/</id><summary type="html">&lt;p&gt;Reminiscent of &lt;a class="reference external" href="http://blog.aclark.net/2012/05/23/a-simple-printer-of-nested-lists/"&gt;this phenomenon&lt;/a&gt;, I'm slowly being driven insane by Redditors asking &lt;a class="reference external" href="http://www.reddit.com/r/Python"&gt;/r/Python&lt;/a&gt; to do their homework for them. E.g.&lt;/p&gt;
 &lt;img alt="Question #1" src="/images/homework1.png" /&gt;
-&lt;p&gt;In principal, and putting aside &lt;a class="reference external" href="http://www.reddit.com/r/learnpython"&gt;/r/learnpython&lt;/a&gt;, I have no problem with Redditors asking questions on /r/Python that are better suited to /r/learnpython. E.g.&lt;/p&gt;
+&lt;p&gt;In principle, and putting aside &lt;a class="reference external" href="http://www.reddit.com/r/learnpython"&gt;/r/learnpython&lt;/a&gt;, I have no problem with Redditors asking questions on /r/Python that are better suited to /r/learnpython. E.g.&lt;/p&gt;
 &lt;img alt="Question #2" src="/images/homework2.png" /&gt;
 &lt;p&gt;But there is something about the current proliferation of homework questions on /r/Python that I find offensive.&lt;/p&gt;
 &lt;img alt="Question #3" src="/images/homework3.png" /&gt;
@@ -14,7 +14,7 @@
 &lt;img alt="Question #6" src="/images/homework6.png" /&gt;
 &lt;p&gt;In the real world, you cannot say to your friends and/or coworkers:&lt;/p&gt;
 &lt;pre class="literal-block"&gt;
-My boss is such a jerk. If you could just give me a working of example of how to do my job, that would be awesome! Lolz.
+My boss is such a jerk. If you could just give me a working example of how to do my job, that would be awesome! Lolz.
 &lt;/pre&gt;
 &lt;p&gt;So please, /r/Python, let's &lt;strong&gt;start asking more meaningful questions&lt;/strong&gt;. And if there is anything I can do to help, please let me know.&lt;/p&gt;
 </summary><category term="Python"></category></entry><entry><title>New Django Website</title><link href="http://blog.aclark.net/2015/01/11/new-django-website/" rel="alternate"></link><updated>2015-01-11T18:44:48-05:00</updated><author><name>Alex Clark</name></author><id>tag:blog.aclark.net,2015-01-11:2015/01/11/new-django-website/</id><summary type="html">&lt;p&gt;&lt;em&gt;After a series of Django gigs in 2014, I had the urge to redevelop our company website in Django; I am very happy with the results. This overview is roughly in order of development from start to finish. And since I am a &amp;quot;packaging guy&amp;quot;, I will take this opportunity to comment on miscellaneous packaging issues too&lt;/em&gt;.&lt;/p&gt;
