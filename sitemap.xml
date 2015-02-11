@@ -5,29 +5,36 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>http://blog.aclark.net/</loc>
-<lastmod>2015-01-11T19:38:48-00:00</lastmod>
+<lastmod>2015-02-10T22:20:42-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>http://blog.aclark.net/archives.html</loc>
-<lastmod>2015-01-11T19:38:48-00:00</lastmod>
+<lastmod>2015-02-10T22:20:42-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>http://blog.aclark.net/tags.html</loc>
-<lastmod>2015-01-11T19:38:48-00:00</lastmod>
+<lastmod>2015-02-10T22:20:42-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>http://blog.aclark.net/categories.html</loc>
-<lastmod>2015-01-11T19:38:48-00:00</lastmod>
+<lastmod>2015-02-10T22:20:42-00:00</lastmod>
 <changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>http://blog.aclark.net/2015/02/10/please-do-my-homework/</loc>
+<lastmod>2015-02-10T22:19:44-05:00</lastmod>
+<changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
@@ -1027,14 +1034,14 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>http://blog.aclark.net/category/blog.html</loc>
-<lastmod>2015-01-11T18:44:48-04:56</lastmod>
+<lastmod>2015-02-10T22:19:44-04:56</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>http://blog.aclark.net/tag/python.html</loc>
-<lastmod>2015-01-11T18:44:48-04:56</lastmod>
+<lastmod>2015-02-10T22:19:44-04:56</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -1069,7 +1076,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>http://blog.aclark.net/author/alex-clark.html</loc>
-<lastmod>2015-01-11T18:44:48-04:56</lastmod>
+<lastmod>2015-02-10T22:19:44-04:56</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
