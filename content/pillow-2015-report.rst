@@ -4,6 +4,8 @@ Pillow 2015 Report
 :date: Sat Apr  4 21:31:48 EDT 2015
 :tags: Plone, Python
 
+.. image:: /images/pillow-2015-report.png
+
 Pillow Fighter #2 Eric Soroos had some time constraints recently so I managed the Pillow 2.8 release. While preparing the release I also reviewed and made improvements to the entire project, including:
 
 - Issues
@@ -14,7 +16,7 @@ Pillow Fighter #2 Eric Soroos had some time constraints recently so I managed th
 The state of the Pillow
 -----------------------
 
-July of 2015 will mark Pillow's 5th anniversary and as of 2015, PIL is 20 years old. In early 2015, the state of the Pillow is good! Here are some statistics:
+July of 2015 will mark Pillow's 5th anniversary and as of 2015, PIL is 20 years old. In early 2015, the state of the Pillow is good. Here are some statistics:
 
 - Over 5.5 million PyPI downloads.
 
@@ -53,6 +55,11 @@ Pillow's documentation is now sizeable, a large part of which was forked from th
 - https://github.com/python-pillow/Pillow/blob/master/CONTRIBUTING.md
 - https://github.com/python-pillow/Pillow/blob/master/RELEASING.md
 - http://pillow.readthedocs.org/installation.html
+
+Website
+-------
+
+Finally, the website received some much needed attention.
 
 .. raw:: html
 
