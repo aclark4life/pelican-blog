@@ -59,7 +59,7 @@ Pillow's documentation is now sizeable, a large part of which was forked from th
 Website
 -------
 
-Finally, the website received some much needed attention. We're currently using a theme provided by GitHub Pages, and minimal effort is invested to maintain it but we may be `interested in building a new one <https://github.com/python-pillow/Pillow/issues/1180>`_.
+Finally, the website received some much needed attention. We're currently using a theme provided by GitHub Pages, and minimal effort is invested to maintain it, but we may be `interested in building a new one <https://github.com/python-pillow/Pillow/issues/1180>`_.
 
 Notes
 -----
