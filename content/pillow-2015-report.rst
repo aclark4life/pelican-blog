@@ -21,7 +21,7 @@ Pillow Fighter #2 Eric Soroos had some time constraints recently so I managed th
 
 July of 2015 will mark Pillow's 5th anniversary and as of 2015, PIL is 20 years old. In early 2015, the state of the Pillow is good. Here are some statistics:
 
-- Over `5.5 million PyPI downloads <https://pypi.python.org/pypi/vanity`_.
+- Over `5.5 million PyPI downloads <https://pypi.python.org/pypi/vanity>`_.
 
   - About 36 distributions uploaded with each release, including Windows Eggs/Exes/Wheels, OS X Wheels and source distributions.
 
