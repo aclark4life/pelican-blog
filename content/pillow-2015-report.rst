@@ -25,8 +25,8 @@ July of 2015 will mark Pillow's 5th anniversary and as of 2015, PIL is 20 years 
 
   - About `36 distributions <https://pypi.python.org/pypi/Pillow/2.8.1#downloads>`_ uploaded with each release, including Windows Eggs/Exes/Wheels, OS X Wheels and source distributions.
 
-- 4 core developers AKA Pillow Fighters, including the recently added Alexander Karpinsky (AKA 'homm').
-- 100 total committers.
+- 4 core contributors AKA Pillow Fighters, including the recently added Alexander Karpinsky (AKA 'homm').
+- Over `130 total contributors <https://github.com/python-pillow/Pillow/graphs/contributors>`_.
 - 66 open issues (431 closed).
 - 12 open pull requests (672 closed).
 
