@@ -36,7 +36,7 @@ What is the complexity I mention above? Briefly, with as few loaded statements a
 
 - **Buildout** technologies e.g. setuptools, console scripts, recipes, extensions, etc. You can't easily build Plone without them, so we may as well declare them as dependencies.
 
-- **Plone** technologies. Plone was originally known as a "skin for CMF" but has become much more than that. 
+- **Plone** technologies. Plone was originally known as a "skin for CMF" but has become much more than that.
 
     - **Archetypes** Legacy content type framework.
 
@@ -109,13 +109,68 @@ Start using Plone:
 Next steps with Plock
 ---------------------
 
+Plock is more than just a way to install the latest stable version of Plone quickly and easily. It's also a way to find and install Plone add-ons quickly and easily. And a way to install almost any version of Plone, including the upcoming Plone 5 release.
+
 Installing Add-ons
 ~~~~~~~~~~~~~~~~~~
+
+Step #1
++++++++
+
+List all Plone-related packages on PyPI:: 
+
+    $ plock -l
+    1) 73.unlockItems                           - A small tool for unlocking web_dav locked item in a plone portal.
+    2) actionbar.panel                          - Provides a (old) facebook style action panel at the bottom of your  Plone site
+    3) adi.init                                 - Deletes Plone's default contents        
+    4) adi.samplecontent                        - Deletes Plone's default content and adds some sample content
+    5) adi.slickstyle                           - A slick style for Plone portals, easily extendable for your own styles.
+    6) affinitic.simplecookiecuttr              - Basic integration of jquery.cookiecuttr.js for Plone 3
+    7) anthill.querytool                        - GUI for AdvancedQuery with some extensions - searching the easy way for Plone
+    8) anthill.skinner                          - Skinning for plone made easy            
+    9) anz.dashboard                            - Plone netvibes like dashboard implementation
+    10) anz.ijabbar                              - Integrate iJab(an open source XMPP web chat client recommended by xmpp.org) to your plone site.
+    …
+    1,352) zopeskel.diazotheme                      - Paster templates for Plone Diazo theme package
+    1,353) zopeskel.niteoweb                        - Paster templates for standard NiteoWeb Plone projects
+    1,354) zopyx.ecardsng                           - An ECard implementation for Plone       
+    1,355) zopyx.existdb                            - Plone-ExistDB integration               
+    1,356) zopyx.ipsumplone                         - Lorem ipsum text and image demo content for Plone
+    1,357) zopyx.multieventcalendar                 - A multi-event calendar for Plone 3.X    
+    1,358) zopyx.plone.cassandra                    - Show all assigned local roles within a subtree for any Plone 4 site
+    1,359) zopyx.plone.migration                    - Export/import scripts for migration Plone 2+3 to Plone 4
+    1,360) zopyx.smartprintng.plone                 - Produce & Publisher server integration with Plone
+    1,361) zopyx.together                           - Plone integration with together.js      
+
+Step #2
++++++++
+
+Pick a few interesting things and install them::
+
+    $ plock plone -i "Products.PloneFormGen collective.plonetruegallery eea.facetednavigation"
+    Creating virtualenv... (plone)
+    Installing buildout...
+    Downloading installer (https://launchpad.net/plone/4.3/4.3.4/+download/Plone-4.3.4-r1-UnifiedInstaller.tgz)
+    Unpacking installer...
+    Unpacking cache...
+    Installing eggs...
+    Installing cmmi & dist...
+    Configuring cache...
+    Installing addons...
+    - https://pypi.python.org/pypi/Products.PloneFormGen
+    - https://pypi.python.org/pypi/collective.plonetruegallery
+    - https://pypi.python.org/pypi/eea.facetednavigation
+    Running buildout...
+    Done, now run:
+      plone/bin/plone fg
+
+.. warning::
+
+    Plock currently only supports the initial creation of ``buildout.cfg``, so if you have already run ``plock`` once and you want to install add-ons you'll have to use ``-f`` to overwrite ``buildout.cfg``.
 
 Upgrading Plone
 ~~~~~~~~~~~~~~~
 
-Plock is more than just a way to install the latest stable version of Plone with add-ons quickly and easily. It's also a way to install almost any version of Plone, including the upcoming Plone 5 release.
 
 Step #1
 +++++++
@@ -125,7 +180,7 @@ Realize Plock has created a ``buildout.cfg`` file you can edit.
 Step #2
 +++++++
 
-Also realize Plock hosts `Buildout configuration files called Pins <https://github.com/plock/pins>`_.
+Also realize Plock hosts `Buildout configuration files called Pins <https://github.com/plock/pins>`_ you can ``extend`` from your local ``buildout.cfg`` [10]_.
 
 Step #3
 +++++++
@@ -155,6 +210,18 @@ Enjoy the Plone 5 running man:
     :alt: Plock Screen 5
     :align: center
 
+TL;DR
+-----
+
+Cut and paste me into a terminal::
+
+    pip install plock; plock plone; plone/bin/plone fg
+
+Now open http://localhost:8080
+
+Footnotes
+---------
+
 .. [1] Whether or not dealing with that complexity is "worth it" I will not address here. Suffice it to say people still use and care about Plone and with Plone 5 coming "real soon now" there is some excitement building.
 
 .. [2] He probably made it many times, and rightfully so.
@@ -169,4 +236,11 @@ Enjoy the Plone 5 running man:
 
 .. [8] I've also `covered <http://blog.aclark.net/2013/07/19/introducing-plock/>`_ `Plock <http://blog.aclark.net/2013/07/29/whats-new-as-of-plock-0-1-2/>`_ `before <http://blog.aclark.net/2013/12/29/introducing-plock-again/>`_ `here <http://blog.aclark.net/2014/03/20/introducing-plock-pins/>`_.
 
-.. [9] As someone familiar with Python already, because that is the market I like to serve.
+.. [9] As someone familiar with Python and a UNIX shell already, because that is the market I like to serve.
+
+.. [10] Yes, there is a security and/or reliability issue with doing this; you are trading security and reliability for convenience.
+
+.. raw:: html
+
+    <br />
+    <script data-gratipay-username="aclark4life" src="//grtp.co/v1.js"></script>
