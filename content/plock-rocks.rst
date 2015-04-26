@@ -1,7 +1,7 @@
 Plock Rocks
 ===========
 
-:date: Sun Apr 26 11:37:21 EDT 2015
+:date: Sun Apr 26 18:10:00 EDT 2015
 :tags: Plone, Python
 
 .. image:: /images/plock-meme.png
@@ -49,7 +49,7 @@ In total, if you ``pip install Plone`` over 200 Python packages are installed [5
 What is Plock, really? 
 --------------------------------
 
-OK now it's time to explain Plock. Plock is a thing:
+OK now it's time to explain Plock. Plock is something:
 
 - you **install from PyPI** via ``pip install plock``. "Pip installs packages. Plock installs Plone."
 - you use to **install Plone** without having to know about tarballs or Buildout.
@@ -63,12 +63,12 @@ First steps with Plock
 Step #1
 ~~~~~~~
 
-The first step with Plock [9]_ is a light bulb moment: "I've heard that Plone is the ultimate open source enterprise CMS and I'd love to try it!" But you aren't willing to download a compressed archive and run the installer nor are you willing to ``pip install zc.buildout`` and figure the rest out for yourself. Enter Plock.
+The first step with Plock [9]_ is that light bulb moment when you say to yourself: "I've heard that Plone is the ultimate open source enterprise CMS and I'd love to try it!" But you aren't willing to download a compressed archive and run the installer nor are you willing to ``pip install zc.buildout`` and figure the rest out for yourself. Enter Plock.
 
 Step #2
 ~~~~~~~
 
-The second step with Plock is knowing it exists and you can install it with: ``pip install plock``.
+The second step with Plock is knowing that it exists you can install it with: ``pip install plock``.
 
 Step #3
 ~~~~~~~
@@ -88,7 +88,7 @@ The third step with Plock is using it to install Plone::
     Done, now run:
       plone/bin/plone fg
 
-Now Plock's work is done; visit the following URL: ``http:://localhost:8080`` and you should see:
+Now Plock's work is done; visit the following URL: http:://localhost:8080 and you should see:
 
 .. image:: /images/plock-screen-1.png
     :alt: Plock Screen 1
@@ -109,7 +109,7 @@ Start using Plone:
 Next steps with Plock
 ---------------------
 
-Plock is more than just a way to install the latest stable version of Plone quickly and easily. It's also a way to find and install Plone add-ons quickly and easily. And a way to install almost any version of Plone, including the upcoming Plone 5 release.
+Plock is more than just a way to install the latest stable version of Plone quickly and easily. It's also a way to find and install Plone add-ons quickly and easily, and a way to install almost any version of Plone including the upcoming Plone 5 release.
 
 Installing Add-ons
 ~~~~~~~~~~~~~~~~~~
@@ -145,6 +145,10 @@ List all Plone-related packages on PyPI::
 Step #2
 +++++++
 
+.. note::
+
+    Plock currently only supports the initial creation of ``buildout.cfg``, so if you have already run ``plock`` once and you want to install add-ons you'll have to use ``-f`` to overwrite ``buildout.cfg``.
+
 Pick a few interesting things and install them::
 
     $ plock plone -i "Products.PloneFormGen collective.plonetruegallery eea.facetednavigation"
@@ -164,9 +168,10 @@ Pick a few interesting things and install them::
     Done, now run:
       plone/bin/plone fg
 
-.. warning::
+Now you should see your add-ons available in Plone:
 
-    Plock currently only supports the initial creation of ``buildout.cfg``, so if you have already run ``plock`` once and you want to install add-ons you'll have to use ``-f`` to overwrite ``buildout.cfg``.
+.. image:: /images/plock-screen-6.png
+    :alt: Plock Screen 6
 
 Upgrading Plone
 ~~~~~~~~~~~~~~~
@@ -175,12 +180,12 @@ Upgrading Plone
 Step #1
 +++++++
 
-Realize Plock has created a ``buildout.cfg`` file you can edit.
+Realize Plock has created a ``buildout.cfg`` file you can edit with a text editor.
 
 Step #2
 +++++++
 
-Also realize Plock hosts `Buildout configuration files called Pins <https://github.com/plock/pins>`_ you can ``extend`` from your local ``buildout.cfg`` [10]_.
+Also realize Plock hosts `Buildout configuration files called Pins <https://github.com/plock/pins>`_ you can ``extend`` from your local ``buildout.cfg`` file [10]_.
 
 Step #3
 +++++++
@@ -213,11 +218,13 @@ Enjoy the Plone 5 running man:
 TL;DR
 -----
 
-Cut and paste me into a terminal::
+Cut and paste this into a terminal::
 
     pip install plock; plock plone; plone/bin/plone fg
 
-Now open http://localhost:8080
+Now open http://localhost:8080 and happy Ploning.
+
+*Plock 0.3.0 is out! Install with* ``pip install plock`` *and report issues here:* https://github.com/plock/plock/issues.
 
 Footnotes
 ---------
@@ -238,7 +245,7 @@ Footnotes
 
 .. [9] As someone familiar with Python and a UNIX shell already, because that is the market I like to serve.
 
-.. [10] Yes, there is a security and/or reliability issue with doing this; you are trading security and reliability for convenience.
+.. [10] Yes, there is a security and/or reliability issue with doing this; you are clearly trading security and reliability for convenience.
 
 .. raw:: html
 

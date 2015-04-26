@@ -1,5 +1,252 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Alex Clark - Python Web Developer &amp; Musician</title><link href="http://blog.aclark.net/" rel="alternate"></link><link href="http://blog.aclark.net/feeds/alex-clark.atom.xml" rel="self"></link><id>http://blog.aclark.net/</id><updated>2015-04-05T18:50:50-04:00</updated><entry><title>Pillow 2015 Report</title><link href="http://blog.aclark.net/2015/04/05/pillow-2015-report/" rel="alternate"></link><updated>2015-04-05T18:50:50-04:00</updated><author><name>Alex Clark</name></author><id>tag:blog.aclark.net,2015-04-05:2015/04/05/pillow-2015-report/</id><summary type="html">&lt;img alt="Most interesting man" src="/images/pillow-2015-report.png" /&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Alex Clark - Python Web Developer &amp; Musician</title><link href="http://blog.aclark.net/" rel="alternate"></link><link href="http://blog.aclark.net/feeds/alex-clark.atom.xml" rel="self"></link><id>http://blog.aclark.net/</id><updated>2015-04-26T18:10:00-04:00</updated><entry><title>Plock Rocks</title><link href="http://blog.aclark.net/2015/04/26/plock-rocks/" rel="alternate"></link><updated>2015-04-26T18:10:00-04:00</updated><author><name>Alex Clark</name></author><id>tag:blog.aclark.net,2015-04-26:2015/04/26/plock-rocks/</id><summary type="html">&lt;img alt="Plock Meme" class="align-center" src="/images/plock-meme.png" /&gt;
+&lt;p&gt;&lt;em&gt;Plock is a Plone installer for the pip-loving crowd. Plone is the ultimate open source enterprise CMS.&lt;/em&gt;&lt;/p&gt;
+&lt;div class="section" id="understanding-plock"&gt;
+&lt;h2&gt;Understanding Plock&lt;/h2&gt;
+&lt;p&gt;To understand Plock you must understand a few things:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;The complexity of the Plone stack &lt;a class="footnote-reference" href="#id15" id="id1"&gt;[1]&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;My desire to simplify, clarify and reduce-to-bare-elements everything I touch.&lt;/li&gt;
+&lt;li&gt;My willingness to mask complexity when eliminating it is not possible, despite the risk of contributing to it.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Pyramid author Chris McDonough &lt;a class="footnote-reference" href="#id16" id="id2"&gt;[2]&lt;/a&gt; once made a comment a long time ago to the effect: &amp;quot;Let's stop piling more crap on top of Plone&amp;quot; and that sentiment still resonates today. That's why even though I love small and useful tools like Plock, it pains me to know what Plock is doing &amp;quot;under the hood&amp;quot; &lt;a class="footnote-reference" href="#id20" id="id3"&gt;[7]&lt;/a&gt;. Nevertheless, I felt compelled to write it and make it work well because not having it is even more painful.&lt;/p&gt;
+&lt;p&gt;Before I tell you what Plock is &lt;a class="footnote-reference" href="#id21" id="id4"&gt;[8]&lt;/a&gt;, let me briefly describe what Plone is.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="what-is-plone-really"&gt;
+&lt;h2&gt;What is Plone, really?&lt;/h2&gt;
+&lt;p&gt;What is the complexity I mention above? Briefly, with as few loaded statements as possible:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p class="first"&gt;&lt;strong&gt;Zope2&lt;/strong&gt; &amp;quot;application server&amp;quot;. This is something you can &lt;tt class="docutils literal"&gt;pip install&lt;/tt&gt; but the results will not be usable &lt;a class="footnote-reference" href="#id17" id="id5"&gt;[3]&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p class="first"&gt;&lt;strong&gt;Zope2 add-ons&lt;/strong&gt; AKA &amp;quot;products&amp;quot;, most notably the Zope2 Content Management Framework (CMF). This is something you install on top of Zope2 (conceptually but not literally, &lt;tt class="docutils literal"&gt;pip install Products.CMFCore&lt;/tt&gt;) that provides typical content management features e.g. personalization, workflow, cataloging, etc.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p class="first"&gt;&lt;strong&gt;Zope3&lt;/strong&gt; technologies e.g. the Zope Component Architecture (ZCA). These are things that are included-or-integrated with Zope2 and Plone. &lt;a class="footnote-reference" href="#id18" id="id6"&gt;[4]&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p class="first"&gt;&lt;strong&gt;Buildout&lt;/strong&gt; technologies e.g. setuptools, console scripts, recipes, extensions, etc. You can't easily build Plone without them, so we may as well declare them as dependencies.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p class="first"&gt;&lt;strong&gt;Plone&lt;/strong&gt; technologies. Plone was originally known as a &amp;quot;skin for CMF&amp;quot; but has become much more than that.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;strong&gt;Archetypes&lt;/strong&gt; Legacy content type framework.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Dexterity&lt;/strong&gt; Modern content type framework based on modern Zope concepts e.g. &amp;quot;Reuse over reinvention&amp;quot;.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Diazo&lt;/strong&gt; Modern theming engine based on XSLT that &amp;quot;maps Plone content to generic website themes.&amp;quot;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;In total, if you &lt;tt class="docutils literal"&gt;pip install Plone&lt;/tt&gt; over 200 Python packages are installed &lt;a class="footnote-reference" href="#id19" id="id7"&gt;[5]&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="what-is-plock-really"&gt;
+&lt;h2&gt;What is Plock, really?&lt;/h2&gt;
+&lt;p&gt;OK now it's time to explain Plock. Plock is something:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;you &lt;strong&gt;install from PyPI&lt;/strong&gt; via &lt;tt class="docutils literal"&gt;pip install plock&lt;/tt&gt;. &amp;quot;Pip installs packages. Plock installs Plone.&amp;quot;&lt;/li&gt;
+&lt;li&gt;you use to &lt;strong&gt;install Plone&lt;/strong&gt; without having to know about tarballs or Buildout.&lt;/li&gt;
+&lt;li&gt;you use to &lt;strong&gt;install Plone add-ons&lt;/strong&gt; without having to know about Buildout.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;In one sentence: Plock runs Buildout so you don't have to, at least initially.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="first-steps-with-plock"&gt;
+&lt;h2&gt;First steps with Plock&lt;/h2&gt;
+&lt;div class="section" id="step-1"&gt;
+&lt;h3&gt;Step #1&lt;/h3&gt;
+&lt;p&gt;The first step with Plock &lt;a class="footnote-reference" href="#id22" id="id8"&gt;[9]&lt;/a&gt; is that light bulb moment when you say to yourself: &amp;quot;I've heard that Plone is the ultimate open source enterprise CMS and I'd love to try it!&amp;quot; But you aren't willing to download a compressed archive and run the installer nor are you willing to &lt;tt class="docutils literal"&gt;pip install zc.buildout&lt;/tt&gt; and figure the rest out for yourself. Enter Plock.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="step-2"&gt;
+&lt;h3&gt;Step #2&lt;/h3&gt;
+&lt;p&gt;The second step with Plock is knowing that it exists you can install it with: &lt;tt class="docutils literal"&gt;pip install plock&lt;/tt&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="step-3"&gt;
+&lt;h3&gt;Step #3&lt;/h3&gt;
+&lt;p&gt;The third step with Plock is using it to install Plone:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+$ plock plone
+Creating virtualenv... (plone)
+Installing buildout...
+Downloading installer (https://launchpad.net/plone/4.3/4.3.4/+download/Plone-4.3.4-r1-UnifiedInstaller.tgz)
+Unpacking installer...
+Unpacking cache...
+Installing eggs...
+Installing cmmi &amp;amp; dist...
+Configuring cache...
+Running buildout...
+Done, now run:
+  plone/bin/plone fg
+&lt;/pre&gt;
+&lt;p&gt;Now Plock's work is done; visit the following URL: &lt;a class="reference external" href="http:://localhost:8080"&gt;http:://localhost:8080&lt;/a&gt; and you should see:&lt;/p&gt;
+&lt;img alt="Plock Screen 1" class="align-center" src="/images/plock-screen-1.png" /&gt;
+&lt;p&gt;Create a Plone site:&lt;/p&gt;
+&lt;img alt="Plock Screen 2" class="align-center" src="/images/plock-screen-2.png" /&gt;
+&lt;p&gt;Start using Plone:&lt;/p&gt;
+&lt;img alt="Plock Screen 3" class="align-center" src="/images/plock-screen-3.png" /&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="next-steps-with-plock"&gt;
+&lt;h2&gt;Next steps with Plock&lt;/h2&gt;
+&lt;p&gt;Plock is more than just a way to install the latest stable version of Plone quickly and easily. It's also a way to find and install Plone add-ons quickly and easily, and a way to install almost any version of Plone including the upcoming Plone 5 release.&lt;/p&gt;
+&lt;div class="section" id="installing-add-ons"&gt;
+&lt;h3&gt;Installing Add-ons&lt;/h3&gt;
+&lt;div class="section" id="id9"&gt;
+&lt;h4&gt;Step #1&lt;/h4&gt;
+&lt;p&gt;List all Plone-related packages on PyPI:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+$ plock -l
+1) 73.unlockItems                           - A small tool for unlocking web_dav locked item in a plone portal.
+2) actionbar.panel                          - Provides a (old) facebook style action panel at the bottom of your  Plone site
+3) adi.init                                 - Deletes Plone's default contents
+4) adi.samplecontent                        - Deletes Plone's default content and adds some sample content
+5) adi.slickstyle                           - A slick style for Plone portals, easily extendable for your own styles.
+6) affinitic.simplecookiecuttr              - Basic integration of jquery.cookiecuttr.js for Plone 3
+7) anthill.querytool                        - GUI for AdvancedQuery with some extensions - searching the easy way for Plone
+8) anthill.skinner                          - Skinning for plone made easy
+9) anz.dashboard                            - Plone netvibes like dashboard implementation
+10) anz.ijabbar                              - Integrate iJab(an open source XMPP web chat client recommended by xmpp.org) to your plone site.
+…
+1,352) zopeskel.diazotheme                      - Paster templates for Plone Diazo theme package
+1,353) zopeskel.niteoweb                        - Paster templates for standard NiteoWeb Plone projects
+1,354) zopyx.ecardsng                           - An ECard implementation for Plone
+1,355) zopyx.existdb                            - Plone-ExistDB integration
+1,356) zopyx.ipsumplone                         - Lorem ipsum text and image demo content for Plone
+1,357) zopyx.multieventcalendar                 - A multi-event calendar for Plone 3.X
+1,358) zopyx.plone.cassandra                    - Show all assigned local roles within a subtree for any Plone 4 site
+1,359) zopyx.plone.migration                    - Export/import scripts for migration Plone 2+3 to Plone 4
+1,360) zopyx.smartprintng.plone                 - Produce &amp;amp; Publisher server integration with Plone
+1,361) zopyx.together                           - Plone integration with together.js
+&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div class="section" id="id10"&gt;
+&lt;h4&gt;Step #2&lt;/h4&gt;
+&lt;div class="note"&gt;
+&lt;p class="first admonition-title"&gt;Note&lt;/p&gt;
+&lt;p class="last"&gt;Plock currently only supports the initial creation of &lt;tt class="docutils literal"&gt;buildout.cfg&lt;/tt&gt;, so if you have already run &lt;tt class="docutils literal"&gt;plock&lt;/tt&gt; once and you want to install add-ons you'll have to use &lt;tt class="docutils literal"&gt;&lt;span class="pre"&gt;-f&lt;/span&gt;&lt;/tt&gt; to overwrite &lt;tt class="docutils literal"&gt;buildout.cfg&lt;/tt&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;Pick a few interesting things and install them:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+$ plock plone -i &amp;quot;Products.PloneFormGen collective.plonetruegallery eea.facetednavigation&amp;quot;
+Creating virtualenv... (plone)
+Installing buildout...
+Downloading installer (https://launchpad.net/plone/4.3/4.3.4/+download/Plone-4.3.4-r1-UnifiedInstaller.tgz)
+Unpacking installer...
+Unpacking cache...
+Installing eggs...
+Installing cmmi &amp;amp; dist...
+Configuring cache...
+Installing addons...
+- https://pypi.python.org/pypi/Products.PloneFormGen
+- https://pypi.python.org/pypi/collective.plonetruegallery
+- https://pypi.python.org/pypi/eea.facetednavigation
+Running buildout...
+Done, now run:
+  plone/bin/plone fg
+&lt;/pre&gt;
+&lt;p&gt;Now you should see your add-ons available in Plone:&lt;/p&gt;
+&lt;img alt="Plock Screen 6" src="/images/plock-screen-6.png" /&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="upgrading-plone"&gt;
+&lt;h3&gt;Upgrading Plone&lt;/h3&gt;
+&lt;div class="section" id="id11"&gt;
+&lt;h4&gt;Step #1&lt;/h4&gt;
+&lt;p&gt;Realize Plock has created a &lt;tt class="docutils literal"&gt;buildout.cfg&lt;/tt&gt; file you can edit with a text editor.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="id12"&gt;
+&lt;h4&gt;Step #2&lt;/h4&gt;
+&lt;p&gt;Also realize Plock hosts &lt;a class="reference external" href="https://github.com/plock/pins"&gt;Buildout configuration files called Pins&lt;/a&gt; you can &lt;tt class="docutils literal"&gt;extend&lt;/tt&gt; from your local &lt;tt class="docutils literal"&gt;buildout.cfg&lt;/tt&gt; file &lt;a class="footnote-reference" href="#id23" id="id13"&gt;[10]&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="id14"&gt;
+&lt;h4&gt;Step #3&lt;/h4&gt;
+&lt;p&gt;Edit your &lt;tt class="docutils literal"&gt;buildout.cfg&lt;/tt&gt; file. Change the first &lt;tt class="docutils literal"&gt;extends&lt;/tt&gt; URL from:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+[buildout]
+extends =
+    https://raw.github.com/plock/pins/master/plone-4-3
+#    https://raw.github.com/plock/pins/master/dev
+&lt;/pre&gt;
+&lt;p&gt;To:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+[buildout]
+extends =
+    https://raw.github.com/plock/pins/master/plone-5-0
+#    https://raw.github.com/plock/pins/master/dev
+&lt;/pre&gt;
+&lt;p&gt;Run Buildout and start Plone:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+$ bin/buildout
+$ bin/plone fg
+&lt;/pre&gt;
+&lt;p&gt;Enjoy the Plone 5 running man:&lt;/p&gt;
+&lt;img alt="Plock Screen 5" class="align-center" src="/images/plock-screen-5.png" /&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="tl-dr"&gt;
+&lt;h2&gt;TL;DR&lt;/h2&gt;
+&lt;p&gt;Cut and paste this into a terminal:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+pip install plock; plock plone; plone/bin/plone fg
+&lt;/pre&gt;
+&lt;p&gt;Now open &lt;a class="reference external" href="http://localhost:8080"&gt;http://localhost:8080&lt;/a&gt; and happy Ploning.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Plock 0.3.0 is out! Install with&lt;/em&gt; &lt;tt class="docutils literal"&gt;pip install plock&lt;/tt&gt; &lt;em&gt;and report issues here:&lt;/em&gt; &lt;a class="reference external" href="https://github.com/plock/plock/issues"&gt;https://github.com/plock/plock/issues&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="footnotes"&gt;
+&lt;h2&gt;Footnotes&lt;/h2&gt;
+&lt;table class="docutils footnote" frame="void" id="id15" rules="none"&gt;
+&lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
+&lt;tbody valign="top"&gt;
+&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#id1"&gt;[1]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Whether or not dealing with that complexity is &amp;quot;worth it&amp;quot; I will not address here. Suffice it to say people still use and care about Plone and with Plone 5 coming &amp;quot;real soon now&amp;quot; there is some excitement building.&lt;/td&gt;&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;table class="docutils footnote" frame="void" id="id16" rules="none"&gt;
+&lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
+&lt;tbody valign="top"&gt;
+&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#id2"&gt;[2]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;He probably made it many times, and rightfully so.&lt;/td&gt;&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;table class="docutils footnote" frame="void" id="id17" rules="none"&gt;
+&lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
+&lt;tbody valign="top"&gt;
+&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#id5"&gt;[3]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;You can create an &amp;quot;instance&amp;quot; after &lt;tt class="docutils literal"&gt;pip install zope2&lt;/tt&gt; with &lt;tt class="docutils literal"&gt;bin/mkzopeinstance&lt;/tt&gt; but &lt;tt class="docutils literal"&gt;$INSTANCE/bin/runzope&lt;/tt&gt; fails with &lt;tt class="docutils literal"&gt;ImportError: cannot import name _error_start&lt;/tt&gt; probably due to mismanaged package versions. Maybe we can fix this with version specs included in a dummy package's &lt;tt class="docutils literal"&gt;setup.py&lt;/tt&gt;?&lt;/td&gt;&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;table class="docutils footnote" frame="void" id="id18" rules="none"&gt;
+&lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
+&lt;tbody valign="top"&gt;
+&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#id6"&gt;[4]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;The integration is &lt;em&gt;not&lt;/em&gt; seemless, an undisputed fact as far as I know.&lt;/td&gt;&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;table class="docutils footnote" frame="void" id="id19" rules="none"&gt;
+&lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
+&lt;tbody valign="top"&gt;
+&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#id7"&gt;[5]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;235&lt;/td&gt;&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;table class="docutils footnote" frame="void" id="id20" rules="none"&gt;
+&lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
+&lt;tbody valign="top"&gt;
+&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#id3"&gt;[7]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Creating and executing a &lt;tt class="docutils literal"&gt;buildout.cfg&lt;/tt&gt; file for the end user. Buildout configuration files are written in INI-style text. Ideally the end user sees this file and says &amp;quot;Ah, now I understand how this works.&amp;quot;&lt;/td&gt;&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;table class="docutils footnote" frame="void" id="id21" rules="none"&gt;
+&lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
+&lt;tbody valign="top"&gt;
+&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#id4"&gt;[8]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;I've also &lt;a class="reference external" href="http://blog.aclark.net/2013/07/19/introducing-plock/"&gt;covered&lt;/a&gt; &lt;a class="reference external" href="http://blog.aclark.net/2013/07/29/whats-new-as-of-plock-0-1-2/"&gt;Plock&lt;/a&gt; &lt;a class="reference external" href="http://blog.aclark.net/2013/12/29/introducing-plock-again/"&gt;before&lt;/a&gt; &lt;a class="reference external" href="http://blog.aclark.net/2014/03/20/introducing-plock-pins/"&gt;here&lt;/a&gt;.&lt;/td&gt;&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;table class="docutils footnote" frame="void" id="id22" rules="none"&gt;
+&lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
+&lt;tbody valign="top"&gt;
+&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#id8"&gt;[9]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;As someone familiar with Python and a UNIX shell already, because that is the market I like to serve.&lt;/td&gt;&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;table class="docutils footnote" frame="void" id="id23" rules="none"&gt;
+&lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
+&lt;tbody valign="top"&gt;
+&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#id13"&gt;[10]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Yes, there is a security and/or reliability issue with doing this; you are clearly trading security and reliability for convenience.&lt;/td&gt;&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;br /&gt;
+&lt;script data-gratipay-username="aclark4life" src="//grtp.co/v1.js"&gt;&lt;/script&gt;&lt;/div&gt;
+</summary><category term="Plone"></category><category term="Python"></category></entry><entry><title>Pillow 2015 Report</title><link href="http://blog.aclark.net/2015/04/05/pillow-2015-report/" rel="alternate"></link><updated>2015-04-05T18:50:50-04:00</updated><author><name>Alex Clark</name></author><id>tag:blog.aclark.net,2015-04-05:2015/04/05/pillow-2015-report/</id><summary type="html">&lt;img alt="Most interesting man" src="/images/pillow-2015-report.png" /&gt;
 &lt;p&gt;&lt;em&gt;Pillow is the friendly PIL fork by Alex Clark and Contributors. PIL is the Python Imaging Library by Fredrik Lundh and Contributors.&lt;/em&gt;&lt;/p&gt;
 &lt;div class="section" id="the-state-of-the-pillow"&gt;
 &lt;h2&gt;The state of the Pillow&lt;/h2&gt;
@@ -908,63 +1155,4 @@ app.Plone.hasObject(                                            app.Plone.zope_q
 &lt;/pre&gt;
 &lt;p&gt;(&lt;em&gt;You should probably&lt;/em&gt; &lt;a class="reference external" href="http://aclark.net"&gt;hire me&lt;/a&gt; &lt;em&gt;or&lt;/em&gt; &lt;a class="reference external" href="http://twitter.com/aclark4life"&gt;follow me on Twitter&lt;/a&gt; &lt;em&gt;or both&lt;/em&gt;.)&lt;/p&gt;
 &lt;/div&gt;
-</summary><category term="Plone"></category><category term="Python"></category></entry><entry><title>Matplotlib Plotting Cookbook Review</title><link href="http://blog.aclark.net/2014/05/19/matplotlib-plotting-cookbook-review/" rel="alternate"></link><updated>2014-05-19T14:00:00-04:00</updated><author><name>Alex Clark</name></author><id>tag:blog.aclark.net,2014-05-19:2014/05/19/matplotlib-plotting-cookbook-review/</id><summary type="html">&lt;p&gt;&lt;em&gt;I was given a copy of&lt;/em&gt; &lt;a class="reference external" href="http://www.packtpub.com/matplotlib-plotting-cookbook/book"&gt;Matplotlib Plotting Cookbook by Alexandre Devert&lt;/a&gt; &lt;em&gt;and asked to review it. Thanks PACKT!&lt;/em&gt; &lt;em&gt;Here is my review.&lt;/em&gt;&lt;/p&gt;
-&lt;div class="section" id="preface"&gt;
-&lt;h2&gt;Preface&lt;/h2&gt;
-&lt;p&gt;But first, I'll mention I've worked on two projects recently that involved rendering matplotlib graphs directly to the browser i.e. via content-type: image/png. This is fun! It's particularly enjoyable when you are trying to avoid performing the task &amp;quot;the right way&amp;quot;, which is arguably outputting JSON to some JavaScript graphing library e.g. &lt;a class="reference external" href="http://www.highcharts.com/"&gt;Highcharts&lt;/a&gt;. The dependencies are heavy i.e. pip install numpy, etc. but not &lt;em&gt;that&lt;/em&gt; heavy and once they are installed, &lt;strong&gt;your web application can output graphs rivaling those produced by JavaScript, all written in Python&lt;/strong&gt; &lt;a class="footnote-reference" href="#id2" id="id1"&gt;[1]&lt;/a&gt;. Highly recommended!&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="section" id="chapter-1"&gt;
-&lt;h2&gt;Chapter 1&lt;/h2&gt;
-&lt;p&gt;I think the code examples in Chapter 1 alone are worth the price of admission. Here is a video of me walking through the Chapter 1 code examples:&lt;/p&gt;
-&lt;iframe width="420" height="315" src="//www.youtube.com/embed/YOFHkszsdR8" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;&lt;p&gt;You'll notice the typical fare here: bar, line and pie graphs along with some more complex boxplot, histogram, horizontal bar, scatter and triangle graphs, all in various colors. For reference, here are the excerpted commands called to produce these graphs:&lt;/p&gt;
-&lt;script src="https://gist.github.com/aclark4life/0f9e61f2d62a67c31346.js"&gt;&lt;/script&gt;&lt;/div&gt;
-&lt;div class="section" id="chapter-2"&gt;
-&lt;h2&gt;Chapter 2&lt;/h2&gt;
-&lt;p&gt;Chapter 2 is all about customization e.g. via matplotlibrc. Here is a video of me walking through the Chapter 2 code examples:&lt;/p&gt;
-&lt;iframe width="420" height="315" src="//www.youtube.com/embed/BzGv1soDaRU" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;&lt;p&gt;For reference, here is the sample matplotlibrc included with the matplotlib distribution (lib/python2.7/site-packages/matplotlib/mpl-data/matplotlibrc):&lt;/p&gt;
-&lt;script src="https://gist.github.com/aclark4life/71c1edf815bd61aae8a9.js"&gt;&lt;/script&gt;&lt;p&gt;As you can see, there are a lot of knobs you can turn here.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="section" id="chapter-3"&gt;
-&lt;h2&gt;Chapter 3&lt;/h2&gt;
-&lt;p&gt;Chapter 3 is all about &amp;quot;annotations&amp;quot;. Here is a video of me walking through the Chapter 3 code examples:&lt;/p&gt;
-&lt;iframe width="420" height="315" src="//www.youtube.com/embed/994vecwODaI" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;&lt;p&gt;&amp;quot;Annotations&amp;quot; includes related topics such as adding shapes and controlling tick spacing and labeling.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="section" id="chapter-4"&gt;
-&lt;h2&gt;Chapter 4&lt;/h2&gt;
-&lt;p&gt;Chapter 4 is all about &amp;quot;working with figures&amp;quot;. Here is a video of me walking through the Chapter 4 code examples:&lt;/p&gt;
-&lt;iframe width="420" height="315" src="//www.youtube.com/embed/Q6PFBSxkOc4" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;&lt;p&gt;&amp;quot;Working with figures&amp;quot; includes obvious topics like &lt;tt class="docutils literal"&gt;subplot&lt;/tt&gt; and less obvious topics like setting the aspect ratio.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="section" id="chapter-5"&gt;
-&lt;h2&gt;Chapter 5&lt;/h2&gt;
-&lt;p&gt;Chapter 5 is all about &amp;quot;working with file output&amp;quot;. For reference, here are some of the images produced by the examples in this chapter (I wrote &lt;tt class="docutils literal"&gt;jpg&lt;/tt&gt; files instead of &lt;tt class="docutils literal"&gt;png&lt;/tt&gt; files due to a problem with my libpng: &lt;a class="reference external" href="https://www.google.com/#q=RuntimeError%3A+Could+not+create+write+struct&amp;amp;safe=off"&gt;RuntimeError: Could not create write struct&lt;/a&gt;.)&lt;/p&gt;
-&lt;img alt="alternate text" src="http://blog.aclark.net/images/sinc1.jpg" /&gt;
-&lt;img alt="alternate text" src="http://blog.aclark.net/images/sinc3.jpg" /&gt;
-&lt;p&gt;Also covered in this chapter is &lt;a class="reference external" href="http://blog.aclark.net/images/sinc.pdf"&gt;pdf output&lt;/a&gt;.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="section" id="chapter-6"&gt;
-&lt;h2&gt;Chapter 6&lt;/h2&gt;
-&lt;p&gt;Chapter 6 is all about &amp;quot;working with maps&amp;quot;.&lt;/p&gt;
-&lt;iframe width="420" height="315" src="//www.youtube.com/embed/gKnR7IfNSsI" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;&lt;p&gt;This chapter also introduces the &lt;a class="reference external" href="http://matplotlib.org/1.3.1/users/image_tutorial.html"&gt;imshow command&lt;/a&gt;.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="section" id="chapter-7"&gt;
-&lt;h2&gt;Chapter 7&lt;/h2&gt;
-&lt;p&gt;Chapter 7 is all about &amp;quot;working with 3D figures&amp;quot;.&lt;/p&gt;
-&lt;iframe width="420" height="315" src="//www.youtube.com/embed/7YFGHG62L5U" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;&lt;p&gt;For reference, here are the excerpted commands called to produce these graphs:&lt;/p&gt;
-&lt;script src="https://gist.github.com/aclark4life/6f7f3fd18ec4c7795028.js"&gt;&lt;/script&gt;&lt;/div&gt;
-&lt;div class="section" id="chapter-8"&gt;
-&lt;h2&gt;Chapter 8&lt;/h2&gt;
-&lt;p&gt;Chapter 8 is all about working with the &amp;quot;user interface&amp;quot; interactively.&lt;/p&gt;
-&lt;iframe width="420" height="315" src="//www.youtube.com/embed/k6984I_YGo4" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;&lt;p&gt;Additionally, all of the popular graphical windowing environments are discussed: Tkinter, wxWidgets, GTK, Pyglet (three out of four of which I was able to install; GTK 2 vs GTK 3 &lt;a class="reference external" href="https://www.google.com/#q=from+gi.repository+import+Gtk&amp;amp;safe=off"&gt;confused me and I ran out of time debugging it&lt;/a&gt;.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="section" id="conclusion"&gt;
-&lt;h2&gt;Conclusion&lt;/h2&gt;
-&lt;p&gt;Overall I enjoyed this book and would &lt;a class="reference external" href="http://www.packtpub.com/matplotlib-plotting-cookbook/book"&gt;recommend buying it&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;(&lt;em&gt;You should probably&lt;/em&gt; &lt;a class="reference external" href="http://aclark.net"&gt;hire me&lt;/a&gt; &lt;em&gt;or&lt;/em&gt; &lt;a class="reference external" href="http://twitter.com/aclark4life"&gt;follow me on Twitter&lt;/a&gt; &lt;em&gt;or both&lt;/em&gt;. &lt;em&gt;And speaking of PACKT, you should definitely&lt;/em&gt; &lt;a class="reference external" href="http://blog.aclark.net/2011/05/10/top-10-reasons-plone-33-site-admin-book-is-still-for-you/"&gt;buy my book too&lt;/a&gt;.)&lt;/p&gt;
-&lt;table class="docutils footnote" frame="void" id="id2" rules="none"&gt;
-&lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
-&lt;tbody valign="top"&gt;
-&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#id1"&gt;[1]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Yes, I'm familiar with &lt;a class="reference external" href="http://bokeh.pydata.org/"&gt;Bokeh&lt;/a&gt;.&lt;/td&gt;&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;/div&gt;
-</summary><category term="Django"></category><category term="Mozilla"></category><category term="Plone"></category><category term="Python"></category></entry></feed>
+</summary><category term="Plone"></category><category term="Python"></category></entry></feed>

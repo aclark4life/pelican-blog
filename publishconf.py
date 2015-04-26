@@ -29,7 +29,7 @@ SOCIAL = (
     ('twitter-square', 'https://twitter.com/aclark4life'),
     ('user', 'https://about.me/alex.clark'),
 )
-TAGLINE = u'Django, Pillow, Plone, Pyramid and more!'
+TAGLINE = u'Django, Pillow, Plock, Plone, Pyramid and more!'
 TAG_FEED_ATOM = 'feeds/%s.atom.xml'
 TAG_FEED_RSS = None
 THEME = '/Users/alexclark/Developer/aclark/pure-single/'

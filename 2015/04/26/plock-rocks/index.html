@@ -1,0 +1,406 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Alex Clark - Python Web Developer & Musician, Django, Pillow, Plock, Plone, Pyramid and more!">
+
+        <link rel="alternate"  href="http://blog.aclark.net/feeds/all.atom.xml" type="application/atom+xml" title="Alex Clark - Python Web Developer & Musician Full Atom Feed"/>
+
+        <title>Plock Rocks // Alex Clark - Python Web Developer & Musician // Django, Pillow, Plock, Plone, Pyramid and more!</title>
+
+    <link href="https://github.com/pythonpackages/pythonpackages/blob/master/favicon.ico?raw=true" rel="icon">
+
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.3.0/pure-min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="http://blog.aclark.net/theme/css/pure.css">
+    <link rel="stylesheet" href="http://blog.aclark.net/theme/css/pygments.css">
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/fitvids/1.0.1/jquery.fitvids.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".content").fitVids();
+        });
+    </script>
+
+    <script type="text/javascript" src="http://blog.aclark.net/tipuesearch/tipuesearch_set.js"></script>
+    <script type="text/javascript" src="http://blog.aclark.net/tipuesearch/tipuesearch_content.js"></script>
+    <link rel="stylesheet" type="text/css" href="http://blog.aclark.net/tipuesearch/tipuesearch.css">
+    <script type="text/javascript" src="http://blog.aclark.net/tipuesearch/tipuesearch.js"></script>
+
+</head>
+
+<body>
+    <div class="pure-g-r" id="layout">
+        <div class="sidebar pure-u">
+            <div class="cover-img" style="background-image: url('http://aclark.net/static/background.jpg')">
+                <div class="cover-body">
+                    <header class="header">
+                        <hgroup>
+                            <img class="avatar" src="http://www.gravatar.com/avatar/6170000a01c67c6ba1e2d4bd87701bae.png">
+                            <h1 class="brand-main"><a href="http://blog.aclark.net">Alex Clark - Python Web Developer & Musician</a></h1>
+                            <p class="tagline">Django, Pillow, Plock, Plone, Pyramid and more!</p>
+                                <p class="social">
+                                    <a href="http://aclark.net">
+                                        <i class="fa fa-home fa-3x"></i>
+                                    </a>
+                                    <a href="https://github.com/aclark4life">
+                                        <i class="fa fa-github fa-3x"></i>
+                                    </a>
+                                    <a href="https://www.gittip.com/aclark4life">
+                                        <i class="fa fa-gittip fa-3x"></i>
+                                    </a>
+                                    <a href="http://band.aclark.net">
+                                        <i class="fa fa-music fa-3x"></i>
+                                    </a>
+                                    <a href="https://twitter.com/aclark4life">
+                                        <i class="fa fa-twitter-square fa-3x"></i>
+                                    </a>
+                                    <a href="https://about.me/alex.clark">
+                                        <i class="fa fa-user fa-3x"></i>
+                                    </a>
+                                </p>
+                        </hgroup>
+                    </header>
+                </div>
+            </div>
+        </div>
+        <div id="search" style="letter-spacing: 1px">
+            <form action="http://blog.aclark.net">
+                <input type="text" name="q" id="tipue_search_input" autocomplete="off" required>
+            </form>
+            <div id="tipue_search_content" style="padding-left: 55px"></div>
+        </div>
+    <div class="pure-u">
+        <div class="content">
+            <section class="post">
+                <header class="post-header">
+                    <h1>Plock Rocks</h1>
+                        <p class="post-meta">
+                            // under                                 <a class="post-category" href="http://blog.aclark.net/tag/plone.html">Plone</a>
+                                <a class="post-category" href="http://blog.aclark.net/tag/python.html">Python</a>
+                        </p>
+                </header>
+            </section>
+            <img alt="Plock Meme" class="align-center" src="/images/plock-meme.png" />
+<p><em>Plock is a Plone installer for the pip-loving crowd. Plone is the ultimate open source enterprise CMS.</em></p>
+<div class="section" id="understanding-plock">
+<h2>Understanding Plock</h2>
+<p>To understand Plock you must understand a few things:</p>
+<ul class="simple">
+<li>The complexity of the Plone stack <a class="footnote-reference" href="#id15" id="id1">[1]</a>.</li>
+<li>My desire to simplify, clarify and reduce-to-bare-elements everything I touch.</li>
+<li>My willingness to mask complexity when eliminating it is not possible, despite the risk of contributing to it.</li>
+</ul>
+<p>Pyramid author Chris McDonough <a class="footnote-reference" href="#id16" id="id2">[2]</a> once made a comment a long time ago to the effect: &quot;Let's stop piling more crap on top of Plone&quot; and that sentiment still resonates today. That's why even though I love small and useful tools like Plock, it pains me to know what Plock is doing &quot;under the hood&quot; <a class="footnote-reference" href="#id20" id="id3">[7]</a>. Nevertheless, I felt compelled to write it and make it work well because not having it is even more painful.</p>
+<p>Before I tell you what Plock is <a class="footnote-reference" href="#id21" id="id4">[8]</a>, let me briefly describe what Plone is.</p>
+</div>
+<div class="section" id="what-is-plone-really">
+<h2>What is Plone, really?</h2>
+<p>What is the complexity I mention above? Briefly, with as few loaded statements as possible:</p>
+<ul>
+<li><p class="first"><strong>Zope2</strong> &quot;application server&quot;. This is something you can <tt class="docutils literal">pip install</tt> but the results will not be usable <a class="footnote-reference" href="#id17" id="id5">[3]</a>.</p>
+</li>
+<li><p class="first"><strong>Zope2 add-ons</strong> AKA &quot;products&quot;, most notably the Zope2 Content Management Framework (CMF). This is something you install on top of Zope2 (conceptually but not literally, <tt class="docutils literal">pip install Products.CMFCore</tt>) that provides typical content management features e.g. personalization, workflow, cataloging, etc.</p>
+</li>
+<li><p class="first"><strong>Zope3</strong> technologies e.g. the Zope Component Architecture (ZCA). These are things that are included-or-integrated with Zope2 and Plone. <a class="footnote-reference" href="#id18" id="id6">[4]</a></p>
+</li>
+<li><p class="first"><strong>Buildout</strong> technologies e.g. setuptools, console scripts, recipes, extensions, etc. You can't easily build Plone without them, so we may as well declare them as dependencies.</p>
+</li>
+<li><p class="first"><strong>Plone</strong> technologies. Plone was originally known as a &quot;skin for CMF&quot; but has become much more than that.</p>
+<blockquote>
+<ul class="simple">
+<li><strong>Archetypes</strong> Legacy content type framework.</li>
+<li><strong>Dexterity</strong> Modern content type framework based on modern Zope concepts e.g. &quot;Reuse over reinvention&quot;.</li>
+<li><strong>Diazo</strong> Modern theming engine based on XSLT that &quot;maps Plone content to generic website themes.&quot;</li>
+</ul>
+</blockquote>
+</li>
+</ul>
+<p>In total, if you <tt class="docutils literal">pip install Plone</tt> over 200 Python packages are installed <a class="footnote-reference" href="#id19" id="id7">[5]</a>.</p>
+</div>
+<div class="section" id="what-is-plock-really">
+<h2>What is Plock, really?</h2>
+<p>OK now it's time to explain Plock. Plock is something:</p>
+<ul class="simple">
+<li>you <strong>install from PyPI</strong> via <tt class="docutils literal">pip install plock</tt>. &quot;Pip installs packages. Plock installs Plone.&quot;</li>
+<li>you use to <strong>install Plone</strong> without having to know about tarballs or Buildout.</li>
+<li>you use to <strong>install Plone add-ons</strong> without having to know about Buildout.</li>
+</ul>
+<p>In one sentence: Plock runs Buildout so you don't have to, at least initially.</p>
+</div>
+<div class="section" id="first-steps-with-plock">
+<h2>First steps with Plock</h2>
+<div class="section" id="step-1">
+<h3>Step #1</h3>
+<p>The first step with Plock <a class="footnote-reference" href="#id22" id="id8">[9]</a> is that light bulb moment when you say to yourself: &quot;I've heard that Plone is the ultimate open source enterprise CMS and I'd love to try it!&quot; But you aren't willing to download a compressed archive and run the installer nor are you willing to <tt class="docutils literal">pip install zc.buildout</tt> and figure the rest out for yourself. Enter Plock.</p>
+</div>
+<div class="section" id="step-2">
+<h3>Step #2</h3>
+<p>The second step with Plock is knowing that it exists you can install it with: <tt class="docutils literal">pip install plock</tt>.</p>
+</div>
+<div class="section" id="step-3">
+<h3>Step #3</h3>
+<p>The third step with Plock is using it to install Plone:</p>
+<pre class="literal-block">
+$ plock plone
+Creating virtualenv... (plone)
+Installing buildout...
+Downloading installer (https://launchpad.net/plone/4.3/4.3.4/+download/Plone-4.3.4-r1-UnifiedInstaller.tgz)
+Unpacking installer...
+Unpacking cache...
+Installing eggs...
+Installing cmmi &amp; dist...
+Configuring cache...
+Running buildout...
+Done, now run:
+  plone/bin/plone fg
+</pre>
+<p>Now Plock's work is done; visit the following URL: <a class="reference external" href="http:://localhost:8080">http:://localhost:8080</a> and you should see:</p>
+<img alt="Plock Screen 1" class="align-center" src="/images/plock-screen-1.png" />
+<p>Create a Plone site:</p>
+<img alt="Plock Screen 2" class="align-center" src="/images/plock-screen-2.png" />
+<p>Start using Plone:</p>
+<img alt="Plock Screen 3" class="align-center" src="/images/plock-screen-3.png" />
+</div>
+</div>
+<div class="section" id="next-steps-with-plock">
+<h2>Next steps with Plock</h2>
+<p>Plock is more than just a way to install the latest stable version of Plone quickly and easily. It's also a way to find and install Plone add-ons quickly and easily, and a way to install almost any version of Plone including the upcoming Plone 5 release.</p>
+<div class="section" id="installing-add-ons">
+<h3>Installing Add-ons</h3>
+<div class="section" id="id9">
+<h4>Step #1</h4>
+<p>List all Plone-related packages on PyPI:</p>
+<pre class="literal-block">
+$ plock -l
+1) 73.unlockItems                           - A small tool for unlocking web_dav locked item in a plone portal.
+2) actionbar.panel                          - Provides a (old) facebook style action panel at the bottom of your  Plone site
+3) adi.init                                 - Deletes Plone's default contents
+4) adi.samplecontent                        - Deletes Plone's default content and adds some sample content
+5) adi.slickstyle                           - A slick style for Plone portals, easily extendable for your own styles.
+6) affinitic.simplecookiecuttr              - Basic integration of jquery.cookiecuttr.js for Plone 3
+7) anthill.querytool                        - GUI for AdvancedQuery with some extensions - searching the easy way for Plone
+8) anthill.skinner                          - Skinning for plone made easy
+9) anz.dashboard                            - Plone netvibes like dashboard implementation
+10) anz.ijabbar                              - Integrate iJab(an open source XMPP web chat client recommended by xmpp.org) to your plone site.
+…
+1,352) zopeskel.diazotheme                      - Paster templates for Plone Diazo theme package
+1,353) zopeskel.niteoweb                        - Paster templates for standard NiteoWeb Plone projects
+1,354) zopyx.ecardsng                           - An ECard implementation for Plone
+1,355) zopyx.existdb                            - Plone-ExistDB integration
+1,356) zopyx.ipsumplone                         - Lorem ipsum text and image demo content for Plone
+1,357) zopyx.multieventcalendar                 - A multi-event calendar for Plone 3.X
+1,358) zopyx.plone.cassandra                    - Show all assigned local roles within a subtree for any Plone 4 site
+1,359) zopyx.plone.migration                    - Export/import scripts for migration Plone 2+3 to Plone 4
+1,360) zopyx.smartprintng.plone                 - Produce &amp; Publisher server integration with Plone
+1,361) zopyx.together                           - Plone integration with together.js
+</pre>
+</div>
+<div class="section" id="id10">
+<h4>Step #2</h4>
+<div class="note">
+<p class="first admonition-title">Note</p>
+<p class="last">Plock currently only supports the initial creation of <tt class="docutils literal">buildout.cfg</tt>, so if you have already run <tt class="docutils literal">plock</tt> once and you want to install add-ons you'll have to use <tt class="docutils literal"><span class="pre">-f</span></tt> to overwrite <tt class="docutils literal">buildout.cfg</tt>.</p>
+</div>
+<p>Pick a few interesting things and install them:</p>
+<pre class="literal-block">
+$ plock plone -i &quot;Products.PloneFormGen collective.plonetruegallery eea.facetednavigation&quot;
+Creating virtualenv... (plone)
+Installing buildout...
+Downloading installer (https://launchpad.net/plone/4.3/4.3.4/+download/Plone-4.3.4-r1-UnifiedInstaller.tgz)
+Unpacking installer...
+Unpacking cache...
+Installing eggs...
+Installing cmmi &amp; dist...
+Configuring cache...
+Installing addons...
+- https://pypi.python.org/pypi/Products.PloneFormGen
+- https://pypi.python.org/pypi/collective.plonetruegallery
+- https://pypi.python.org/pypi/eea.facetednavigation
+Running buildout...
+Done, now run:
+  plone/bin/plone fg
+</pre>
+<p>Now you should see your add-ons available in Plone:</p>
+<img alt="Plock Screen 6" src="/images/plock-screen-6.png" />
+</div>
+</div>
+<div class="section" id="upgrading-plone">
+<h3>Upgrading Plone</h3>
+<div class="section" id="id11">
+<h4>Step #1</h4>
+<p>Realize Plock has created a <tt class="docutils literal">buildout.cfg</tt> file you can edit with a text editor.</p>
+</div>
+<div class="section" id="id12">
+<h4>Step #2</h4>
+<p>Also realize Plock hosts <a class="reference external" href="https://github.com/plock/pins">Buildout configuration files called Pins</a> you can <tt class="docutils literal">extend</tt> from your local <tt class="docutils literal">buildout.cfg</tt> file <a class="footnote-reference" href="#id23" id="id13">[10]</a>.</p>
+</div>
+<div class="section" id="id14">
+<h4>Step #3</h4>
+<p>Edit your <tt class="docutils literal">buildout.cfg</tt> file. Change the first <tt class="docutils literal">extends</tt> URL from:</p>
+<pre class="literal-block">
+[buildout]
+extends =
+    https://raw.github.com/plock/pins/master/plone-4-3
+#    https://raw.github.com/plock/pins/master/dev
+</pre>
+<p>To:</p>
+<pre class="literal-block">
+[buildout]
+extends =
+    https://raw.github.com/plock/pins/master/plone-5-0
+#    https://raw.github.com/plock/pins/master/dev
+</pre>
+<p>Run Buildout and start Plone:</p>
+<pre class="literal-block">
+$ bin/buildout
+$ bin/plone fg
+</pre>
+<p>Enjoy the Plone 5 running man:</p>
+<img alt="Plock Screen 5" class="align-center" src="/images/plock-screen-5.png" />
+</div>
+</div>
+</div>
+<div class="section" id="tl-dr">
+<h2>TL;DR</h2>
+<p>Cut and paste this into a terminal:</p>
+<pre class="literal-block">
+pip install plock; plock plone; plone/bin/plone fg
+</pre>
+<p>Now open <a class="reference external" href="http://localhost:8080">http://localhost:8080</a> and happy Ploning.</p>
+<p><em>Plock 0.3.0 is out! Install with</em> <tt class="docutils literal">pip install plock</tt> <em>and report issues here:</em> <a class="reference external" href="https://github.com/plock/plock/issues">https://github.com/plock/plock/issues</a>.</p>
+</div>
+<div class="section" id="footnotes">
+<h2>Footnotes</h2>
+<table class="docutils footnote" frame="void" id="id15" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id1">[1]</a></td><td>Whether or not dealing with that complexity is &quot;worth it&quot; I will not address here. Suffice it to say people still use and care about Plone and with Plone 5 coming &quot;real soon now&quot; there is some excitement building.</td></tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="id16" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id2">[2]</a></td><td>He probably made it many times, and rightfully so.</td></tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="id17" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id5">[3]</a></td><td>You can create an &quot;instance&quot; after <tt class="docutils literal">pip install zope2</tt> with <tt class="docutils literal">bin/mkzopeinstance</tt> but <tt class="docutils literal">$INSTANCE/bin/runzope</tt> fails with <tt class="docutils literal">ImportError: cannot import name _error_start</tt> probably due to mismanaged package versions. Maybe we can fix this with version specs included in a dummy package's <tt class="docutils literal">setup.py</tt>?</td></tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="id18" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id6">[4]</a></td><td>The integration is <em>not</em> seemless, an undisputed fact as far as I know.</td></tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="id19" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id7">[5]</a></td><td>235</td></tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="id20" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id3">[7]</a></td><td>Creating and executing a <tt class="docutils literal">buildout.cfg</tt> file for the end user. Buildout configuration files are written in INI-style text. Ideally the end user sees this file and says &quot;Ah, now I understand how this works.&quot;</td></tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="id21" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id4">[8]</a></td><td>I've also <a class="reference external" href="http://blog.aclark.net/2013/07/19/introducing-plock/">covered</a> <a class="reference external" href="http://blog.aclark.net/2013/07/29/whats-new-as-of-plock-0-1-2/">Plock</a> <a class="reference external" href="http://blog.aclark.net/2013/12/29/introducing-plock-again/">before</a> <a class="reference external" href="http://blog.aclark.net/2014/03/20/introducing-plock-pins/">here</a>.</td></tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="id22" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id8">[9]</a></td><td>As someone familiar with Python and a UNIX shell already, because that is the market I like to serve.</td></tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="id23" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id13">[10]</a></td><td>Yes, there is a security and/or reliability issue with doing this; you are clearly trading security and reliability for convenience.</td></tr>
+</tbody>
+</table>
+<br />
+<script data-gratipay-username="aclark4life" src="//grtp.co/v1.js"></script></div>
+
+            <a href="#" class="go-top">Go Top</a>
+    <div class="comments">
+        <div id="disqus_thread"></div>
+        <script type="text/javascript">
+            /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+            var disqus_shortname = "aclark-blog"; // required: replace example with your forum shortname
+
+            /* * * DON'T EDIT BELOW THIS LINE * * */
+            (function() {
+                var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </div>
+<footer class="footer">
+    <p>&copy; Alex Clark &ndash;
+        Built with <a href="https://github.com/PurePelicanTheme/pure-single">Pure Theme</a>
+        for <a href="http://blog.getpelican.com/">Pelican</a>
+    </p>
+</footer>        </div>
+    </div>
+    </div>
+    <script>
+        var $top = $('.go-top');
+
+        // Show or hide the sticky footer button
+        $(window).scroll(function() {
+            if ($(this).scrollTop() > 200) {
+                $top.fadeIn(200);
+            } else {
+                $top.fadeOut(200);
+            }
+        });
+
+        // Animate the scroll to top
+        $top.click(function(event) {
+            event.preventDefault();
+            $('html, body').animate({scrollTop: 0}, 300);
+        })
+
+        // Makes sure that the href="#" attached to the <a> elements
+        // don't scroll you back up the page.
+        $('body').on('click', 'a[href="#"]', function(event) {
+            event.preventDefault();
+        });
+    </script>
+    <script type="text/javascript">
+        var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+        document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+        try {
+            var pageTracker = _gat._getTracker("UA-34988446-1");
+            pageTracker._trackPageview();
+            } catch(err) {}
+    </script>
+
+
+    <script>
+    $(document).ready(function() {
+         $('#tipue_search_input').tipuesearch({
+              'show': 6,
+              'mode': 'json',
+              'contentLocation': 'tipuesearch_content.json'
+         });
+    });
+    </script>
+
+</body>
+</html>
