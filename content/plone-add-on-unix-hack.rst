@@ -18,7 +18,7 @@ I don't particularly like the overhead associated with namespace packages in Pyt
 Code generators
 ~~~~~~~~~~~~~~~
 
-I don't particularly like code/template generators either. But I appreciate their value and occassionally use them. That said, I'd rather have none than a bad one or worse, more than one. 
+I don't particularly like code/template generators either. But I appreciate their value and occassionally use them. That said, I'd rather have none-than-a-bad-one or worse, more-than-one. 
 
 .. raw:: html
 
