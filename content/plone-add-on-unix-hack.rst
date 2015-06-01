@@ -12,4 +12,4 @@ This time, in the form of an embedded Gist!
 
     <script src="https://gist.github.com/aclark4life/ffcea3a79b6339591c24.js"></script>
 
-Check out 
+Check out the results here: https://github.com/aclark4life/Plone-Add-On-Development-For-Command-Line-Savvy-Developers
