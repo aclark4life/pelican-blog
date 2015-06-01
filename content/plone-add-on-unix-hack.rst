@@ -1,7 +1,7 @@
 Plone Add-On Development for "Unix Hackers"
 ===========================================
 
-:date: Sun May 31 10:12:03 EDT 2015
+:date: Mon Jun  1 19:30:27 EDT 2015
 :tags: Plone, Python
 
 With Plone 5 heating up, it's time for me to go "all in" on Plone again. To that end, here's a new tutorial for "Unix Hackers"; i.e. **command-line savvy developers who may be totally unfamiliar with Python but want to learn Plone**.
