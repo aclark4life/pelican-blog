@@ -1,5 +1,5 @@
-Plone Add-On Development for "Unix Hackers"
-===========================================
+Plone Add-On Development For Command-Line Savvy Developers
+==========================================================
 
 :date: Mon Jun  1 19:30:27 EDT 2015
 :tags: Plone, Python
