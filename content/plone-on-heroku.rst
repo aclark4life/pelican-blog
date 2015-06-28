@@ -28,7 +28,7 @@ The **Plock buildpack is highly experimental, still in development and possibly 
 - Installs setuptools in user site
 - Installs pip in user site
 - Installs Buildout in user site
-- Installs Plone in user site
+- Installs Plone in cache
 - Copies cache to build directory
 - Installs a portion of "user Plone" (the Heroku app's buildout.cfg) in the build directory (not the cache)
 - Relies on the app itself to install the remainder (the Heroku app's heroku.cfg). **Most importantly, the app runs Buildout which finishes quickly thanks to the cache & configures the port which is only available to the app (not the buildpack.)**
