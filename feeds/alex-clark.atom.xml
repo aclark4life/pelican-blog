@@ -40,6 +40,7 @@ extends = buildout.cfg
 http-address = ${env:PORT}
 &lt;/pre&gt;
 &lt;pre class="literal-block"&gt;
+# Procfile
 web: buildout -c heroku.cfg; plone console
 &lt;/pre&gt;
 &lt;/div&gt;

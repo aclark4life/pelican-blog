@@ -55,6 +55,7 @@ Here's `an example <https://github.com/ACLARKNET/plone-demo>`_:
 
 ::
 
+    # Procfile
     web: buildout -c heroku.cfg; plone console
 
 Opinionated
