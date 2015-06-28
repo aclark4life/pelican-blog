@@ -17,7 +17,7 @@
 &lt;li&gt;Installs setuptools in user site&lt;/li&gt;
 &lt;li&gt;Installs pip in user site&lt;/li&gt;
 &lt;li&gt;Installs Buildout in user site&lt;/li&gt;
-&lt;li&gt;Installs Plone in user site&lt;/li&gt;
+&lt;li&gt;Installs Plone in cache&lt;/li&gt;
 &lt;li&gt;Copies cache to build directory&lt;/li&gt;
 &lt;li&gt;Installs a portion of &amp;quot;user Plone&amp;quot; (the Heroku app's buildout.cfg) in the build directory (not the cache)&lt;/li&gt;
 &lt;li&gt;Relies on the app itself to install the remainder (the Heroku app's heroku.cfg). &lt;strong&gt;Most importantly, the app runs Buildout which finishes quickly thanks to the cache &amp;amp; configures the port which is only available to the app (not the buildpack.)&lt;/strong&gt;&lt;/li&gt;
