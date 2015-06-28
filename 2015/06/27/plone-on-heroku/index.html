@@ -104,7 +104,7 @@
 <li>Installs Plone in cache</li>
 <li>Copies cache to build directory</li>
 <li>Installs a portion of &quot;user Plone&quot; (the Heroku app's buildout.cfg) in the build directory (not the cache)</li>
-<li>Relies on the app itself to install the remainder (the Heroku app's heroku.cfg). <strong>Most importantly, the app runs Buildout which finishes quickly thanks to the cache &amp; configures the port which is only available to the app (not the buildpack.)</strong></li>
+<li>Relies on the app to install the remainder (the Heroku app's heroku.cfg). <strong>Most importantly the app runs Buildout which finishes quickly thanks to the cache &amp; configures the port which is only available to the app (not the buildpack.)</strong></li>
 </ul>
 <p>Here's <a class="reference external" href="https://github.com/ACLARKNET/plone-demo">an example</a>:</p>
 <pre class="literal-block">
