@@ -17,7 +17,7 @@ But something nagging would not let go: I still **didn't fully understand how th
 Plock Buildpack
 ---------------
 
-There's a lot of the same things going on in both the `Plone Buildpack <https://github.com/plone/heroku-buildpack-plone>`_ and the `Plock Buildpack <https://github.com/plock/buildpack>`_, with some exceptions.
+There's a lot of the same things going on in both the `Plone Buildpack <https://github.com/plone/heroku-buildpack-plone>`_ and the `Plock Buildpack <https://github.com/plock/buildpack/blob/master/bin/compile>`_, with some exceptions.
 
 Experimental
 ~~~~~~~~~~~~

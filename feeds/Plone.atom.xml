@@ -8,7 +8,7 @@
 &lt;p&gt;But something nagging would not let go: I still &lt;strong&gt;didn't fully understand how the buildpack worked&lt;/strong&gt;. Today I'm happy to say: that nag is gone and I now fully understand how Heroku buildpacks work… thanks to…&amp;nbsp;wait for it… a &lt;a class="reference external" href="https://github.com/plock/buildpack"&gt;buildpack for Plock&lt;/a&gt;.&lt;/p&gt;
 &lt;div class="section" id="plock-buildpack"&gt;
 &lt;h2&gt;Plock Buildpack&lt;/h2&gt;
-&lt;p&gt;There's a lot of the same things going on in both the &lt;a class="reference external" href="https://github.com/plone/heroku-buildpack-plone"&gt;Plone Buildpack&lt;/a&gt; and the &lt;a class="reference external" href="https://github.com/plock/buildpack"&gt;Plock Buildpack&lt;/a&gt;, with some exceptions.&lt;/p&gt;
+&lt;p&gt;There's a lot of the same things going on in both the &lt;a class="reference external" href="https://github.com/plone/heroku-buildpack-plone"&gt;Plone Buildpack&lt;/a&gt; and the &lt;a class="reference external" href="https://github.com/plock/buildpack/blob/master/bin/compile"&gt;Plock Buildpack&lt;/a&gt;, with some exceptions.&lt;/p&gt;
 &lt;div class="section" id="experimental"&gt;
 &lt;h3&gt;Experimental&lt;/h3&gt;
 &lt;p&gt;The &lt;strong&gt;Plock buildpack is highly experimental, still in development and possibly innovative&lt;/strong&gt;. Here's what it currently does:&lt;/p&gt;
