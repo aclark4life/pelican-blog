@@ -1,5 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Alex Clark - Python Web Developer &amp; Musician</title><link href="http://blog.aclark.net/" rel="alternate"></link><link href="http://blog.aclark.net/feeds/all.atom.xml" rel="self"></link><id>http://blog.aclark.net/</id><updated>2015-06-01T19:30:27-04:00</updated><entry><title>Plone Add-On Development For Command-Line Savvy Developers</title><link href="http://blog.aclark.net/2015/06/01/plone-add-on-development-for-command-line-savvy-developers/" rel="alternate"></link><updated>2015-06-01T19:30:27-04:00</updated><author><name>Alex Clark</name></author><id>tag:blog.aclark.net,2015-06-01:2015/06/01/plone-add-on-development-for-command-line-savvy-developers/</id><summary type="html">&lt;p&gt;With Plone 5 heating up, it's time for me to go &amp;quot;all in&amp;quot; on Plone again. To that end, here's a new tutorial for &amp;quot;Unix Hackers&amp;quot;; i.e. &lt;strong&gt;command-line savvy developers who may be totally unfamiliar with Python but want to learn Plone&lt;/strong&gt;.&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Alex Clark - Python Web Developer &amp; Musician</title><link href="http://blog.aclark.net/" rel="alternate"></link><link href="http://blog.aclark.net/feeds/all.atom.xml" rel="self"></link><id>http://blog.aclark.net/</id><updated>2015-06-27T19:09:24-04:00</updated><entry><title>Plone on Heroku</title><link href="http://blog.aclark.net/2015/06/27/plone-on-heroku/" rel="alternate"></link><updated>2015-06-27T19:09:24-04:00</updated><author><name>Alex Clark</name></author><id>tag:blog.aclark.net,2015-06-27:2015/06/27/plone-on-heroku/</id><summary type="html">&lt;p&gt;&lt;em&gt;Dear Plone, welcome to 2015&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Picture it. The year 2014. I was incredibly moved and inspired by this blog entry:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://www.niteoweb.com/blog/dear-plone-welcome-to-2014"&gt;http://www.niteoweb.com/blog/dear-plone-welcome-to-2014&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Someone had finally done it. (&lt;a class="reference external" href="https://github.com/zupo"&gt;zupo&lt;/a&gt; in this case, kudos!) Someone had finally beat me to implementing the dream of &lt;tt class="docutils literal"&gt;git push heroku plone&lt;/tt&gt;. And I could not have been happier.&lt;/p&gt;
+&lt;p&gt;But something nagging would not let go: I still &lt;strong&gt;didn't fully understand how the buildpack worked&lt;/strong&gt;. Today I'm happy to say: that nag is gone and I now fully understand how Heroku buildpacks work… thanks to…&amp;nbsp;wait for it… a &lt;a class="reference external" href="https://github.com/plock/buildpack"&gt;buildpack for Plock&lt;/a&gt;.&lt;/p&gt;
+&lt;div class="section" id="plock-buildpack"&gt;
+&lt;h2&gt;Plock Buildpack&lt;/h2&gt;
+&lt;p&gt;There's a lot of the same things going on in both the &lt;a class="reference external" href="https://github.com/plone/heroku-buildpack-plone"&gt;Plone Buildpack&lt;/a&gt; and the &lt;a class="reference external" href="https://github.com/plock/buildpack"&gt;Plock Buildpack&lt;/a&gt;, with some exceptions.&lt;/p&gt;
+&lt;div class="section" id="experimental"&gt;
+&lt;h3&gt;Experimental&lt;/h3&gt;
+&lt;p&gt;The &lt;strong&gt;Plock buildpack is highly experimental, still in development and possibly innovative&lt;/strong&gt;. Here's what it currently does:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;Configures Python user site directory in Heroku cache&lt;/li&gt;
+&lt;li&gt;Installs setuptools in user site&lt;/li&gt;
+&lt;li&gt;Installs pip in user site&lt;/li&gt;
+&lt;li&gt;Installs Buildout in user site&lt;/li&gt;
+&lt;li&gt;Installs Plone in user site&lt;/li&gt;
+&lt;li&gt;Copies cache to build directory&lt;/li&gt;
+&lt;li&gt;Installs a portion of &amp;quot;user Plone&amp;quot; (the Heroku app's buildout.cfg) in the build directory (not the cache)&lt;/li&gt;
+&lt;li&gt;Relies on the app itself to install the remainder (the Heroku app's heroku.cfg). &lt;strong&gt;Most importantly, the app runs Buildout which finishes quickly thanks to the cache &amp;amp; configures the port which is only available to the app (not the buildpack.)&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Here's &lt;a class="reference external" href="https://github.com/ACLARKNET/plone-demo"&gt;an example&lt;/a&gt;:&lt;/p&gt;
+&lt;dl class="docutils"&gt;
+&lt;dt&gt;::&lt;/dt&gt;
+&lt;dd&gt;&lt;p class="first"&gt;# buildout.cfg
+[buildout]
+extends = &lt;a class="reference external" href="https://raw.github.com/plock/pins/master/plone-4-3"&gt;https://raw.github.com/plock/pins/master/plone-4-3&lt;/a&gt;&lt;/p&gt;
+&lt;p class="last"&gt;[user]
+packages = collective.loremipsum&lt;/p&gt;
+&lt;/dd&gt;
+&lt;/dl&gt;
+&lt;dl class="docutils"&gt;
+&lt;dt&gt;::&lt;/dt&gt;
+&lt;dd&gt;&lt;p class="first"&gt;# heroku.cfg
+[buildout]
+extends = buildout.cfg&lt;/p&gt;
+&lt;p class="last"&gt;[plone]
+http-address = ${env:PORT}&lt;/p&gt;
+&lt;/dd&gt;
+&lt;/dl&gt;
+&lt;dl class="docutils"&gt;
+&lt;dt&gt;::&lt;/dt&gt;
+&lt;dd&gt;web: buildout -c heroku.cfg; plone console&lt;/dd&gt;
+&lt;/dl&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="opinionated"&gt;
+&lt;h2&gt;Opinionated&lt;/h2&gt;
+&lt;p&gt;The Plock Buildpack is built on Plock, an &amp;quot;opinionated&amp;quot; installer for Plone.&lt;/p&gt;
+&lt;/div&gt;
+</summary><category term="Plone"></category><category term="Python"></category></entry><entry><title>Plone Add-On Development For Command-Line Savvy Developers</title><link href="http://blog.aclark.net/2015/06/01/plone-add-on-development-for-command-line-savvy-developers/" rel="alternate"></link><updated>2015-06-01T19:30:27-04:00</updated><author><name>Alex Clark</name></author><id>tag:blog.aclark.net,2015-06-01:2015/06/01/plone-add-on-development-for-command-line-savvy-developers/</id><summary type="html">&lt;p&gt;With Plone 5 heating up, it's time for me to go &amp;quot;all in&amp;quot; on Plone again. To that end, here's a new tutorial for &amp;quot;Unix Hackers&amp;quot;; i.e. &lt;strong&gt;command-line savvy developers who may be totally unfamiliar with Python but want to learn Plone&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;This time, in the form of an embedded Gist!&lt;/p&gt;
 &lt;script src="https://gist.github.com/aclark4life/ffcea3a79b6339591c24.js"&gt;&lt;/script&gt;&lt;p&gt;Check out the results here: &lt;a class="reference external" href="https://github.com/aclark4life/Plone-Add-On-Development-For-Command-Line-Savvy-Developers"&gt;https://github.com/aclark4life/Plone-Add-On-Development-For-Command-Line-Savvy-Developers&lt;/a&gt;&lt;/p&gt;
 </summary><category term="Plone"></category><category term="Python"></category></entry><entry><title>Plock Rocks</title><link href="http://blog.aclark.net/2015/04/26/plock-rocks/" rel="alternate"></link><updated>2015-04-26T18:10:00-04:00</updated><author><name>Alex Clark</name></author><id>tag:blog.aclark.net,2015-04-26:2015/04/26/plock-rocks/</id><summary type="html">&lt;img alt="Plock Meme" class="align-center" src="/images/plock-meme.png" /&gt;
@@ -586,83 +638,4 @@ psycopg2
 &lt;/ul&gt;
 &lt;p&gt;Enjoy Pillow 2.5.0 &amp;amp; please report issues here: &lt;a class="reference external" href="https://github.com/python-imaging/Pillow/issues"&gt;https://github.com/python-imaging/Pillow/issues&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
-</summary><category term="Django"></category><category term="Mozilla"></category><category term="Plone"></category><category term="Python"></category></entry><entry><title>Plone 5 Alpha 2 is here!</title><link href="http://blog.aclark.net/2014/06/18/plone-5-alpha-2-is-here/" rel="alternate"></link><updated>2014-06-18T08:00:00-04:00</updated><author><name>Alex Clark</name></author><id>tag:blog.aclark.net,2014-06-18:2014/06/18/plone-5-alpha-2-is-here/</id><summary type="html">&lt;p&gt;&lt;em&gt;This post is long overdue since Plone 5 alpha 2 was released on 2014-04-20! It is also too short. I may do a followup blog entry to review more features, depending on how well this one is received. I also want to talk more about Plock.&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;When Plone 4 alpha 1 was released, I was so excited I immediately &lt;a class="reference external" href="http://blog.aclark.net/2012/10/03/plone-4-3-alpha-1-in-production/"&gt;ran it in production&lt;/a&gt;. Now-a-days I use &lt;a class="reference external" href="http://blog.aclark.net/2013/04/22/new-pyramid-site/"&gt;Pyramid for aclark.net&lt;/a&gt; but I still get excited about new Plone releases.&lt;/p&gt;
-&lt;p&gt;As such, I finally got around to testing the latest Plone 5 alpha with &lt;a class="reference external" href="http://blog.aclark.net/2014/03/20/introducing-plock-pins/"&gt;my deployment stack&lt;/a&gt; and the results were very impressive, so I thought I'd share.&lt;/p&gt;
-&lt;div class="section" id="hosted-configuration"&gt;
-&lt;h2&gt;Hosted configuration&lt;/h2&gt;
-&lt;p&gt;Because of the &amp;quot;muscle memory&amp;quot; I've built up over the years doing this, I always install Plone in development and production via my &lt;a class="reference external" href="https://github.com/plock/pins"&gt;hosted configuration files&lt;/a&gt;. If you are not a developer you may instead prefer the &lt;a class="reference external" href="http://plone.org/products/plone/releases/5.0"&gt;Unified Installer, VirtualBox/Vagrant installer or OS X Lion/Mountain Lion/Mavericks Binary Installer&lt;/a&gt; otherwise follow along &lt;a class="footnote-reference" href="#id2" id="id1"&gt;[1]&lt;/a&gt;:&lt;/p&gt;
-&lt;pre class="literal-block"&gt;
-$ pip install tmp virtualenv
-$ cd `tmp`
-$ virtualenv .
-$ bin/pip install zc.buildout
-$ bin/buildout init
-&lt;/pre&gt;
-&lt;p&gt;Edit &lt;tt class="docutils literal"&gt;buildout.cfg&lt;/tt&gt; to contain:&lt;/p&gt;
-&lt;pre class="literal-block"&gt;
-[buildout]
-extends = https://raw.github.com/plock/pins/master/plone-5-0
-&lt;/pre&gt;
-&lt;p&gt;Run Buildout and start Plone:&lt;/p&gt;
-&lt;pre class="literal-block"&gt;
-$ bin/buildout
-$ bin/plone fg
-&lt;/pre&gt;
-&lt;/div&gt;
-&lt;div class="section" id="create-plone-site"&gt;
-&lt;h2&gt;Create Plone Site&lt;/h2&gt;
-&lt;p&gt;The first thing you will notice is the improved &amp;quot;Create a Plone Site&amp;quot; page which now includes a timezone configuration option:&lt;/p&gt;
-&lt;img alt="Plone 5" src="/images/plone-5-screen-0.png" /&gt;
-&lt;/div&gt;
-&lt;div class="section" id="barceloneta-theme"&gt;
-&lt;h2&gt;Barceloneta Theme&lt;/h2&gt;
-&lt;p&gt;I selected the &lt;tt class="docutils literal"&gt;US/Eastern&lt;/tt&gt; timezone and clicked &lt;tt class="docutils literal"&gt;Create Plone Site&lt;/tt&gt;, shortly after which I was greeted with a beautiful new Plone 5 site in all its open source glory. Immediately you will notice a new theme and toolbar:&lt;/p&gt;
-&lt;img alt="Plone 5" src="/images/plone-5-screen-1.png" /&gt;
-&lt;/div&gt;
-&lt;div class="section" id="plone-toolbar"&gt;
-&lt;h2&gt;Plone Toolbar&lt;/h2&gt;
-&lt;p&gt;Here is a quick tour of the new toolbar.&lt;/p&gt;
-&lt;img alt="Plone 5" src="/images/plone-5-screen-1.png" /&gt;
-&lt;div class="section" id="folder-contents"&gt;
-&lt;h3&gt;Folder contents&lt;/h3&gt;
-&lt;img alt="Plone 5" src="/images/plone-5-screen-2.png" /&gt;
-&lt;/div&gt;
-&lt;div class="section" id="edit-button"&gt;
-&lt;h3&gt;Edit button&lt;/h3&gt;
-&lt;img alt="Plone 5" src="/images/plone-5-screen-3.png" /&gt;
-&lt;/div&gt;
-&lt;div class="section" id="sharing-settings"&gt;
-&lt;h3&gt;Sharing settings&lt;/h3&gt;
-&lt;img alt="Plone 5" src="/images/plone-5-screen-4.png" /&gt;
-&lt;/div&gt;
-&lt;div class="section" id="workflow-settings"&gt;
-&lt;h3&gt;Workflow settings&lt;/h3&gt;
-&lt;img alt="Plone 5" src="/images/plone-5-screen-5.png" /&gt;
-&lt;/div&gt;
-&lt;div class="section" id="add-content"&gt;
-&lt;h3&gt;Add content&lt;/h3&gt;
-&lt;img alt="Plone 5" src="/images/plone-5-screen-6.png" /&gt;
-&lt;/div&gt;
-&lt;div class="section" id="layout-settings"&gt;
-&lt;h3&gt;Layout settings&lt;/h3&gt;
-&lt;img alt="Plone 5" src="/images/plone-5-screen-7.png" /&gt;
-&lt;/div&gt;
-&lt;div class="section" id="user-menu"&gt;
-&lt;h3&gt;User menu&lt;/h3&gt;
-&lt;img alt="Plone 5" src="/images/plone-5-screen-8.png" /&gt;
-&lt;p&gt;Love it! Of all these, only the eye icon didn't function as expected. Not sure what it's supposed to do but I assume it's not done yet. Additionally, I wish the small Plone logo in the toolbar navigated &amp;quot;home&amp;quot; like the portal logo. Or maybe it will close the toolbar? Oh, the possibilities!&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="section" id="thanks"&gt;
-&lt;h2&gt;Thanks&lt;/h2&gt;
-&lt;p&gt;Many thanks to everyone who has worked hard to make Plone 5 a reality.&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;You should probably&lt;/em&gt; &lt;a class="reference external" href="http://aclark.net"&gt;hire me&lt;/a&gt; &lt;em&gt;or&lt;/em&gt; &lt;a class="reference external" href="http://twitter.com/aclark4life"&gt;follow me on Twitter&lt;/a&gt; &lt;em&gt;or both&lt;/em&gt;.&lt;/p&gt;
-&lt;table class="docutils footnote" frame="void" id="id2" rules="none"&gt;
-&lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
-&lt;tbody valign="top"&gt;
-&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#id1"&gt;[1]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;And please try &lt;a class="reference external" href="http://plock.github.io"&gt;Plock&lt;/a&gt; which automates all of these steps e.g. &lt;tt class="docutils literal"&gt;pip install plock; plock .;bin/plone fg&lt;/tt&gt; Once Plone (4) is installed, update the extends parameter in &lt;tt class="docutils literal"&gt;buildout.cfg&lt;/tt&gt; to &lt;tt class="docutils literal"&gt;&lt;span class="pre"&gt;https://raw.github.com/plock/pins/master/plone-5-0&lt;/span&gt;&lt;/tt&gt; and rerun Buildout.&lt;/td&gt;&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;/div&gt;
-</summary><category term="Plone"></category><category term="Python"></category></entry></feed>
+</summary><category term="Django"></category><category term="Mozilla"></category><category term="Plone"></category><category term="Python"></category></entry></feed>
