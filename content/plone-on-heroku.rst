@@ -6,7 +6,7 @@ Plone on Heroku
 
 *Dear Plone, welcome to 2015*
 
-Picture it. The year 2014. I was incredibly moved and inspired by this blog entry: 
+Picture it. The year was 2014. I was incredibly moved and inspired by this blog entry: 
 
 - http://www.niteoweb.com/blog/dear-plone-welcome-to-2014
 
@@ -59,6 +59,6 @@ Here's `an example <https://github.com/ACLARKNET/plone-demo>`_:
     web: buildout -c heroku.cfg; plone console
 
 Opinionated
------------
+~~~~~~~~~~~
 
 The Plock Buildpack is built on Plock, an "opinionated" installer for Plone. It may eventually use `Plock <https://pypi.python.org/pypi/plock/0.4.0>`_ itself, but currently only uses `Plock Pins <https://github.com/plock/pins>`_.
