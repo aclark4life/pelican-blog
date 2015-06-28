@@ -23,24 +23,22 @@
 &lt;li&gt;Relies on the app itself to install the remainder (the Heroku app's heroku.cfg). &lt;strong&gt;Most importantly, the app runs Buildout which finishes quickly thanks to the cache &amp;amp; configures the port which is only available to the app (not the buildpack.)&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Here's &lt;a class="reference external" href="https://github.com/ACLARKNET/plone-demo"&gt;an example&lt;/a&gt;:&lt;/p&gt;
-&lt;dl class="docutils"&gt;
-&lt;dt&gt;::&lt;/dt&gt;
-&lt;dd&gt;&lt;p class="first"&gt;# buildout.cfg
+&lt;pre class="literal-block"&gt;
+# buildout.cfg
 [buildout]
-extends = &lt;a class="reference external" href="https://raw.github.com/plock/pins/master/plone-4-3"&gt;https://raw.github.com/plock/pins/master/plone-4-3&lt;/a&gt;&lt;/p&gt;
-&lt;p class="last"&gt;[user]
-packages = collective.loremipsum&lt;/p&gt;
-&lt;/dd&gt;
-&lt;/dl&gt;
-&lt;dl class="docutils"&gt;
-&lt;dt&gt;::&lt;/dt&gt;
-&lt;dd&gt;&lt;p class="first"&gt;# heroku.cfg
+extends = https://raw.github.com/plock/pins/master/plone-4-3
+
+[user]
+packages = collective.loremipsum
+&lt;/pre&gt;
+&lt;pre class="literal-block"&gt;
+# heroku.cfg
 [buildout]
-extends = buildout.cfg&lt;/p&gt;
-&lt;p class="last"&gt;[plone]
-http-address = ${env:PORT}&lt;/p&gt;
-&lt;/dd&gt;
-&lt;/dl&gt;
+extends = buildout.cfg
+
+[plone]
+http-address = ${env:PORT}
+&lt;/pre&gt;
 &lt;dl class="docutils"&gt;
 &lt;dt&gt;::&lt;/dt&gt;
 &lt;dd&gt;web: buildout -c heroku.cfg; plone console&lt;/dd&gt;
@@ -49,7 +47,7 @@ http-address = ${env:PORT}&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="opinionated"&gt;
 &lt;h2&gt;Opinionated&lt;/h2&gt;
-&lt;p&gt;The Plock Buildpack is built on Plock, an &amp;quot;opinionated&amp;quot; installer for Plone.&lt;/p&gt;
+&lt;p&gt;The Plock Buildpack is built on Plock, an &amp;quot;opinionated&amp;quot; installer for Plone. It may eventually use &lt;a class="reference external" href="https://pypi.python.org/pypi/plock/0.4.0"&gt;Plock&lt;/a&gt; itself, but currently only uses &lt;a class="reference external" href="https://github.com/plock/pins"&gt;Plock Pins&lt;/a&gt;.&lt;/p&gt;
 &lt;/div&gt;
 </description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Alex Clark</dc:creator><pubDate>Sat, 27 Jun 2015 19:09:24 -0400</pubDate><guid>tag:blog.aclark.net,2015-06-27:2015/06/27/plone-on-heroku/</guid><category>Plone</category><category>Python</category></item><item><title>Plone Add-On Development For Command-Line Savvy Developers</title><link>http://blog.aclark.net/2015/06/01/plone-add-on-development-for-command-line-savvy-developers/</link><description>&lt;p&gt;With Plone 5 heating up, it's time for me to go &amp;quot;all in&amp;quot; on Plone again. To that end, here's a new tutorial for &amp;quot;Unix Hackers&amp;quot;; i.e. &lt;strong&gt;command-line savvy developers who may be totally unfamiliar with Python but want to learn Plone&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;This time, in the form of an embedded Gist!&lt;/p&gt;
