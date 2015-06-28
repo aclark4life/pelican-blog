@@ -12,7 +12,7 @@ Picture it. The year 2014. I was incredibly moved and inspired by this blog entr
 
 Someone had finally done it. (`zupo <https://github.com/zupo>`_ in this case, kudos!) Someone had finally beat me to implementing the dream of ``git push heroku plone``. And I could not have been happier.
 
-But something nagging would not let go: I still **didn't fully understand how the buildpack worked**. Today I'm happy to say: that nag is gone and I now fully understand how Heroku buildpacks work… thanks to… wait for it… a `buildpack for Plock <https://github.com/plock/buildpack>`_.
+But something nagging would not let go: I still **didn't fully understand how the buildpack worked**. Today I'm happy to say: that nag is gone and I now fully understand how Heroku buildpacks work… thanks to… wait for it… a `Buildpack for Plock <https://github.com/plock/buildpack/blob/master/bin/compile>`_.
 
 Plock Buildpack
 ---------------
