@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Alex Clark - Python Web Developer &amp; Musician</title><link>http://blog.aclark.net/</link><description></description><atom:link href="http://blog.aclark.net/feeds/alex-clark.rss.xml" rel="self"></atom:link><lastBuildDate>Sat, 27 Jun 2015 19:09:24 -0400</lastBuildDate><item><title>Plone on Heroku</title><link>http://blog.aclark.net/2015/06/27/plone-on-heroku/</link><description>&lt;p&gt;&lt;em&gt;Dear Plone, welcome to 2015&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;Picture it. The year 2014. I was incredibly moved and inspired by this blog entry:&lt;/p&gt;
+&lt;p&gt;Picture it. The year was 2014. I was incredibly moved and inspired by this blog entry:&lt;/p&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;&lt;a class="reference external" href="http://www.niteoweb.com/blog/dear-plone-welcome-to-2014"&gt;http://www.niteoweb.com/blog/dear-plone-welcome-to-2014&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -44,10 +44,10 @@ http-address = ${env:PORT}
 web: buildout -c heroku.cfg; plone console
 &lt;/pre&gt;
 &lt;/div&gt;
-&lt;/div&gt;
 &lt;div class="section" id="opinionated"&gt;
-&lt;h2&gt;Opinionated&lt;/h2&gt;
+&lt;h3&gt;Opinionated&lt;/h3&gt;
 &lt;p&gt;The Plock Buildpack is built on Plock, an &amp;quot;opinionated&amp;quot; installer for Plone. It may eventually use &lt;a class="reference external" href="https://pypi.python.org/pypi/plock/0.4.0"&gt;Plock&lt;/a&gt; itself, but currently only uses &lt;a class="reference external" href="https://github.com/plock/pins"&gt;Plock Pins&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
 &lt;/div&gt;
 </description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Alex Clark</dc:creator><pubDate>Sat, 27 Jun 2015 19:09:24 -0400</pubDate><guid>tag:blog.aclark.net,2015-06-27:2015/06/27/plone-on-heroku/</guid><category>Plone</category><category>Python</category></item><item><title>Plone Add-On Development For Command-Line Savvy Developers</title><link>http://blog.aclark.net/2015/06/01/plone-add-on-development-for-command-line-savvy-developers/</link><description>&lt;p&gt;With Plone 5 heating up, it's time for me to go &amp;quot;all in&amp;quot; on Plone again. To that end, here's a new tutorial for &amp;quot;Unix Hackers&amp;quot;; i.e. &lt;strong&gt;command-line savvy developers who may be totally unfamiliar with Python but want to learn Plone&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;This time, in the form of an embedded Gist!&lt;/p&gt;
