@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Alex Clark - Python Web Developer &amp; Musician</title><link>http://blog.aclark.net/</link><description></description><atom:link href="http://blog.aclark.net/feeds/alex-clark.rss.xml" rel="self"></atom:link><lastBuildDate>Sun, 28 Jun 2015 20:01:47 -0400</lastBuildDate><item><title>Pillow 2.9.0 Is Almost Out</title><link>http://blog.aclark.net/2015/06/28/pillow-290-is-almost-out/</link><description>&lt;p&gt;&lt;em&gt;Pillow 2.9.0 will be released on July 1, 2015.&lt;/em&gt;&lt;/p&gt;
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Alex Clark - Python Web Developer &amp; Musician</title><link>http://blog.aclark.net/</link><description></description><atom:link href="http://blog.aclark.net/feeds/alex-clark.rss.xml" rel="self"></atom:link><lastBuildDate>Sun, 28 Jun 2015 20:01:47 -0400</lastBuildDate><item><title>Pillow 2-9-0 Is Almost Out</title><link>http://blog.aclark.net/2015/06/28/pillow-2-9-0-is-almost-out/</link><description>&lt;p&gt;&lt;em&gt;Pillow 2.9.0 will be released on July 1, 2015.&lt;/em&gt;&lt;/p&gt;
 &lt;div class="section" id="pre-release"&gt;
 &lt;h2&gt;Pre-release&lt;/h2&gt;
 &lt;p&gt;Please help the &lt;a class="reference external" href="https://github.com/python-pillow/Pillow/graphs/contributors"&gt;Pillow Fighters&lt;/a&gt;  prepare for the Pillow &lt;tt class="docutils literal"&gt;2.9.0&lt;/tt&gt; release by downloading and testing this pre-release:&lt;/p&gt;
@@ -15,7 +15,7 @@
 &lt;/ul&gt;
 &lt;p&gt;Thank you!&lt;/p&gt;
 &lt;/div&gt;
-</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Alex Clark</dc:creator><pubDate>Sun, 28 Jun 2015 20:01:47 -0400</pubDate><guid>tag:blog.aclark.net,2015-06-28:2015/06/28/pillow-290-is-almost-out/</guid><category>Mozilla</category><category>Plone</category><category>Python</category></item><item><title>Plone on Heroku</title><link>http://blog.aclark.net/2015/06/27/plone-on-heroku/</link><description>&lt;p&gt;&lt;em&gt;Dear Plone, welcome to 2015&lt;/em&gt;&lt;/p&gt;
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Alex Clark</dc:creator><pubDate>Sun, 28 Jun 2015 20:01:47 -0400</pubDate><guid>tag:blog.aclark.net,2015-06-28:2015/06/28/pillow-2-9-0-is-almost-out/</guid><category>Mozilla</category><category>Plone</category><category>Python</category></item><item><title>Plone on Heroku</title><link>http://blog.aclark.net/2015/06/27/plone-on-heroku/</link><description>&lt;p&gt;&lt;em&gt;Dear Plone, welcome to 2015&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;Picture it. The year was 2014. I was incredibly moved and inspired by this blog entry:&lt;/p&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;&lt;a class="reference external" href="http://www.niteoweb.com/blog/dear-plone-welcome-to-2014"&gt;http://www.niteoweb.com/blog/dear-plone-welcome-to-2014&lt;/a&gt;&lt;/li&gt;
