@@ -1,5 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Alex Clark - Python Web Developer &amp; Musician</title><link href="http://blog.aclark.net/" rel="alternate"></link><link href="http://blog.aclark.net/feeds/all.atom.xml" rel="self"></link><id>http://blog.aclark.net/</id><updated>2015-06-27T19:09:24-04:00</updated><entry><title>Plone on Heroku</title><link href="http://blog.aclark.net/2015/06/27/plone-on-heroku/" rel="alternate"></link><updated>2015-06-27T19:09:24-04:00</updated><author><name>Alex Clark</name></author><id>tag:blog.aclark.net,2015-06-27:2015/06/27/plone-on-heroku/</id><summary type="html">&lt;p&gt;&lt;em&gt;Dear Plone, welcome to 2015&lt;/em&gt;&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Alex Clark - Python Web Developer &amp; Musician</title><link href="http://blog.aclark.net/" rel="alternate"></link><link href="http://blog.aclark.net/feeds/all.atom.xml" rel="self"></link><id>http://blog.aclark.net/</id><updated>2015-06-28T20:01:47-04:00</updated><entry><title>Pillow 2.9.0 Is Almost Out</title><link href="http://blog.aclark.net/2015/06/28/pillow-290-is-almost-out/" rel="alternate"></link><updated>2015-06-28T20:01:47-04:00</updated><author><name>Alex Clark</name></author><id>tag:blog.aclark.net,2015-06-28:2015/06/28/pillow-290-is-almost-out/</id><summary type="html">&lt;p&gt;&lt;em&gt;Pillow 2.9.0 will be released on July 1, 2015.&lt;/em&gt;&lt;/p&gt;
+&lt;div class="section" id="pre-release"&gt;
+&lt;h2&gt;Pre-release&lt;/h2&gt;
+&lt;p&gt;Please help the &lt;a class="reference external" href="https://github.com/python-pillow/Pillow/graphs/contributors"&gt;Pillow Fighters&lt;/a&gt;  prepare for the Pillow &lt;tt class="docutils literal"&gt;2.9.0&lt;/tt&gt; release by downloading and testing this pre-release:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://github.com/python-pillow/Pillow/archive/2.9.0.dev0.zip"&gt;https://github.com/python-pillow/Pillow/archive/2.9.0.dev0.zip&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="section" id="report-issues"&gt;
+&lt;h2&gt;Report issues&lt;/h2&gt;
+&lt;p&gt;As you might expect, we'd like to avoid the creation of a &lt;tt class="docutils literal"&gt;2.9.1&lt;/tt&gt; release within 24-48 hours of &lt;tt class="docutils literal"&gt;2.9.0&lt;/tt&gt; due to any unforeseen circumstance. If you suspect such an issue to exist in &lt;tt class="docutils literal"&gt;2.9.0.dev0&lt;/tt&gt;, please let us know:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://github.com/python-pillow/Pillow/issues"&gt;https://github.com/python-pillow/Pillow/issues&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Thank you!&lt;/p&gt;
+&lt;/div&gt;
+</summary><category term="Mozilla"></category><category term="Plone"></category><category term="Python"></category></entry><entry><title>Plone on Heroku</title><link href="http://blog.aclark.net/2015/06/27/plone-on-heroku/" rel="alternate"></link><updated>2015-06-27T19:09:24-04:00</updated><author><name>Alex Clark</name></author><id>tag:blog.aclark.net,2015-06-27:2015/06/27/plone-on-heroku/</id><summary type="html">&lt;p&gt;&lt;em&gt;Dear Plone, welcome to 2015&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;Picture it. The year was 2014. I was incredibly moved and inspired by this blog entry:&lt;/p&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;&lt;a class="reference external" href="http://www.niteoweb.com/blog/dear-plone-welcome-to-2014"&gt;http://www.niteoweb.com/blog/dear-plone-welcome-to-2014&lt;/a&gt;&lt;/li&gt;
@@ -534,106 +550,4 @@ psycopg2
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;p&gt;P.S. New theme! Thanks &lt;a class="reference external" href="http://purepelican.com/"&gt;Pure Pelican Theme&lt;/a&gt;.&lt;/p&gt;
-</summary><category term="Mozilla"></category><category term="Plone"></category><category term="Python"></category></entry><entry><title>Pillow 2-5-0 is out!</title><link href="http://blog.aclark.net/2014/07/05/pillow-2-5-0-is-out/" rel="alternate"></link><updated>2014-07-05T11:15:00-04:00</updated><author><name>Alex Clark</name></author><id>tag:blog.aclark.net,2014-07-05:2014/07/05/pillow-2-5-0-is-out/</id><summary type="html">&lt;p&gt;&lt;strong&gt;Pillow is the &amp;quot;friendly&amp;quot; PIL fork by Alex Clark and Contributors. PIL is the Python Imaging Library by Fredrik Lundh and Contributors&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Since Pillow 2.0 the Pillow Team has adopted a quarterly release cycle; as such, Pillow 2.5.0 is out! Here's what's new in this release:&lt;/p&gt;
-&lt;div class="section" id="id1"&gt;
-&lt;h2&gt;2.5.0 (2014-07-01)&lt;/h2&gt;
-&lt;ul class="simple"&gt;
-&lt;li&gt;Imagedraw rewrite
-[terseus, wiredfool]&lt;/li&gt;
-&lt;li&gt;Add support for multithreaded test execution
-[wiredfool]&lt;/li&gt;
-&lt;li&gt;Prevent shell injection #748
-[mbrown1413, wiredfool]&lt;/li&gt;
-&lt;li&gt;Support for Resolution in BMP files #734
-[gcq]&lt;/li&gt;
-&lt;li&gt;Fix error in setup.py for Python 3
-[matthew-brett]&lt;/li&gt;
-&lt;li&gt;Pyroma fix and add Python 3.4 to setup metadata #742
-[wirefool]&lt;/li&gt;
-&lt;li&gt;Top level flake8 fixes #741
-[aclark]&lt;/li&gt;
-&lt;li&gt;Remove obsolete Animated Raster Graphics (ARG) support
-[hugovk]&lt;/li&gt;
-&lt;li&gt;Fix test_imagedraw failures #727
-[cgohlke]&lt;/li&gt;
-&lt;li&gt;Fix AttributeError: class Image has no attribute 'DEBUG' #726
-[cgohlke]&lt;/li&gt;
-&lt;li&gt;Fix msvc warning: 'inline' : macro redefinition #725
-[cgohlke]&lt;/li&gt;
-&lt;li&gt;Cleanup #654
-[dvska, hugovk, wiredfool]&lt;/li&gt;
-&lt;li&gt;16-bit monochrome support for JPEG2000
-[videan42]&lt;/li&gt;
-&lt;li&gt;Fixed ImagePalette.save
-[brightpisces]&lt;/li&gt;
-&lt;li&gt;Support JPEG qtables
-[csinchok]&lt;/li&gt;
-&lt;li&gt;Add binary morphology addon
-[dov, wiredfool]&lt;/li&gt;
-&lt;li&gt;Decompression bomb protection
-[hugovk]&lt;/li&gt;
-&lt;li&gt;Put images in a single directory
-[hugovk]&lt;/li&gt;
-&lt;li&gt;Support OpenJpeg 2.1
-[al45tair]&lt;/li&gt;
-&lt;li&gt;Remove unistd.h #include for all platforms
-[wiredfool]&lt;/li&gt;
-&lt;li&gt;Use unittest for tests
-[hugovk]&lt;/li&gt;
-&lt;li&gt;ImageCms fixes
-[hugovk]&lt;/li&gt;
-&lt;li&gt;Added more ImageDraw tests
-[hugovk]&lt;/li&gt;
-&lt;li&gt;Added tests for Spider files
-[hugovk]&lt;/li&gt;
-&lt;li&gt;Use libtiff to write any compressed tiff files
-[wiredfool]&lt;/li&gt;
-&lt;li&gt;Support for pickling Image objects
-[hugovk]&lt;/li&gt;
-&lt;li&gt;Fixed resolution handling for EPS thumbnails
-[eliempje]&lt;/li&gt;
-&lt;li&gt;Fixed rendering of some binary EPS files (Issue #302)
-[eliempje]&lt;/li&gt;
-&lt;li&gt;Rename variables not to use built-in function names
-[hugovk]&lt;/li&gt;
-&lt;li&gt;Ignore junk JPEG markers
-[hugovk]&lt;/li&gt;
-&lt;li&gt;Change default interpolation for Image.thumbnail to Image.ANTIALIAS
-[hugovk]&lt;/li&gt;
-&lt;li&gt;Add tests and fixes for saving PDFs
-[hugovk]&lt;/li&gt;
-&lt;li&gt;Remove transparency resource after P-&amp;gt;RGBA conversion
-[hugovk]&lt;/li&gt;
-&lt;li&gt;Clean up preprocessor cruft for Windows
-[CounterPillow]&lt;/li&gt;
-&lt;li&gt;Adjust Homebrew freetype detection logic
-[jacknagel]&lt;/li&gt;
-&lt;li&gt;Added Image.close, context manager support.
-[wiredfool]&lt;/li&gt;
-&lt;li&gt;Added support for 16 bit PGM files.
-[wiredfool]&lt;/li&gt;
-&lt;li&gt;Updated OleFileIO to version 0.30 from upstream
-[hugovk]&lt;/li&gt;
-&lt;li&gt;Added support for additional TIFF floating point format
-[Hijackal]&lt;/li&gt;
-&lt;li&gt;Have the tempfile use a suffix with a dot
-[wiredfool]&lt;/li&gt;
-&lt;li&gt;Fix variable name used for transparency manipulations
-[nijel]&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;div class="section" id="acknowledgements"&gt;
-&lt;h2&gt;Acknowledgements&lt;/h2&gt;
-&lt;p&gt;With every release, there are notable contributions I must acknowledge:&lt;/p&gt;
-&lt;ul class="simple"&gt;
-&lt;li&gt;Thanks to Stephen Johnson for contributing &lt;a class="reference external" href="http://pillow.readthedocs.org"&gt;http://pillow.readthedocs.org&lt;/a&gt;, we continue to rely on &amp;amp; extend this resource.&lt;/li&gt;
-&lt;li&gt;Thanks to Christopher Gohlke for producing Windows Egg, Exe, and Wheel distributions.&lt;/li&gt;
-&lt;li&gt;Thanks to Matthew Brett for producing OS X Wheels (for the first time ever!)&lt;/li&gt;
-&lt;li&gt;Thanks to Eric Soroos for his contributions and serving as &amp;quot;Pillow Man #2&amp;quot; (2nd in command).&lt;/li&gt;
-&lt;li&gt;Welcome to Hugo VK who has joined the Pillow Team &amp;amp; contributed significantly to this release.&lt;/li&gt;
-&lt;li&gt;Thanks to all the remaining unnamed contributors! We appreciate every commit.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Enjoy Pillow 2.5.0 &amp;amp; please report issues here: &lt;a class="reference external" href="https://github.com/python-imaging/Pillow/issues"&gt;https://github.com/python-imaging/Pillow/issues&lt;/a&gt;&lt;/p&gt;
-&lt;/div&gt;
-</summary><category term="Django"></category><category term="Mozilla"></category><category term="Plone"></category><category term="Python"></category></entry></feed>
+</summary><category term="Mozilla"></category><category term="Plone"></category><category term="Python"></category></entry></feed>
