@@ -1,4 +1,4 @@
-Pillow 2.9.0 Is Almost Out
+Pillow 2-9-0 Is Almost Out
 ==========================
 
 :date: Sun Jun 28 20:01:47 EDT 2015
