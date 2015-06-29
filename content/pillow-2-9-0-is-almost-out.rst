@@ -16,7 +16,7 @@ Please help the `Pillow Fighters <https://github.com/python-pillow/Pillow/graphs
 Report issues
 -------------
 
-As you might expect, we'd like to avoid the creation of a ``2.9.1`` release within 24-48 hours of ``2.9.0`` due to any unforeseen circumstance. If you suspect such an issue to exist in ``2.9.0.dev0``, please let us know:
+As you might expect, we'd like to avoid the creation of a ``2.9.1`` release within 24-48 hours of ``2.9.0`` due to any unforeseen circumstances. If you suspect such an issue to exist in ``2.9.0.dev0``, please let us know:
 
 - https://github.com/python-pillow/Pillow/issues
 
