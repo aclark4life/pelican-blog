@@ -4,12 +4,12 @@
 &lt;h2&gt;Pre-release&lt;/h2&gt;
 &lt;p&gt;Please help the &lt;a class="reference external" href="https://github.com/python-pillow/Pillow/graphs/contributors"&gt;Pillow Fighters&lt;/a&gt;  prepare for the Pillow &lt;tt class="docutils literal"&gt;2.9.0&lt;/tt&gt; release by downloading and testing this pre-release:&lt;/p&gt;
 &lt;ul class="simple"&gt;
-&lt;li&gt;&lt;a class="reference external" href="https://github.com/python-pillow/Pillow/archive/2.9.0.dev1.zip"&gt;https://github.com/python-pillow/Pillow/archive/2.9.0.dev1.zip&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://github.com/python-pillow/Pillow/archive/2.9.0.dev2.zip"&gt;https://github.com/python-pillow/Pillow/archive/2.9.0.dev2.zip&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;div class="section" id="report-issues"&gt;
 &lt;h2&gt;Report issues&lt;/h2&gt;
-&lt;p&gt;As you might expect, we'd like to avoid the creation of a &lt;tt class="docutils literal"&gt;2.9.1&lt;/tt&gt; release within 24-48 hours of &lt;tt class="docutils literal"&gt;2.9.0&lt;/tt&gt; due to any unforeseen circumstances. If you suspect such an issue to exist in &lt;tt class="docutils literal"&gt;2.9.0.dev1&lt;/tt&gt;, please let us know:&lt;/p&gt;
+&lt;p&gt;As you might expect, we'd like to avoid the creation of a &lt;tt class="docutils literal"&gt;2.9.1&lt;/tt&gt; release within 24-48 hours of &lt;tt class="docutils literal"&gt;2.9.0&lt;/tt&gt; due to any unforeseen circumstances. If you suspect such an issue to exist in &lt;tt class="docutils literal"&gt;2.9.0.dev2&lt;/tt&gt;, please let us know:&lt;/p&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;&lt;a class="reference external" href="https://github.com/python-pillow/Pillow/issues"&gt;https://github.com/python-pillow/Pillow/issues&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
