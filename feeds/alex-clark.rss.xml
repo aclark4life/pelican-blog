@@ -1,5 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Alex Clark - Python Web Developer &amp; Musician</title><link>http://blog.aclark.net/</link><description></description><atom:link href="http://blog.aclark.net/feeds/alex-clark.rss.xml" rel="self"></atom:link><lastBuildDate>Sun, 28 Jun 2015 20:01:47 -0400</lastBuildDate><item><title>Pillow 2-9-0 Is Almost Out</title><link>http://blog.aclark.net/2015/06/28/pillow-2-9-0-is-almost-out/</link><description>&lt;p&gt;&lt;em&gt;Pillow 2.9.0 will be released on July 1, 2015.&lt;/em&gt;&lt;/p&gt;
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Alex Clark - Python Web Developer &amp; Musician</title><link>http://blog.aclark.net/</link><description></description><atom:link href="http://blog.aclark.net/feeds/alex-clark.rss.xml" rel="self"></atom:link><lastBuildDate>Sat, 03 Oct 2015 21:51:26 -0400</lastBuildDate><item><title>Pillow 3-0-0 is out</title><link>http://blog.aclark.net/2015/10/03/pillow-3-0-0-is-out/</link><description>&lt;p&gt;The &lt;a class="reference external" href="https://github.com/python-pillow/Pillow/graphs/contributors"&gt;Pillow Team&lt;/a&gt;  is excited to announce the release of Pillow 3.0.0. While &amp;quot;3 is just a number after 2&amp;quot;, there are some &lt;strong&gt;significant changes in this release all users should be aware of&lt;/strong&gt;:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://pillow.readthedocs.org/en/3.0.x/releasenotes/3.0.0.html#libjpeg-and-zlib-are-required-by-default"&gt;LibJpeg and Zlib are Required by Default&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://pillow.readthedocs.org/en/3.0.x/releasenotes/3.0.0.html#deprecated-methods"&gt;Deprecated Methods&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I'm particularly happy to see libjpeg &amp;amp; zlib required; this will avoid many-a-broken-installation in the future. &lt;strong&gt;PIL is of little practical value when installed without JPEG support&lt;/strong&gt;, yet this has been the default for over 20 years. No more! Thanks to wiredfool for &lt;a class="reference external" href="https://github.com/python-pillow/Pillow/issues/1412"&gt;spearheading this change&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;For more goodness, please see the release notes &amp;amp; changelog:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://pillow.readthedocs.org/en/3.0.x/releasenotes/3.0.0.html"&gt;http://pillow.readthedocs.org/en/3.0.x/releasenotes/3.0.0.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://github.com/python-pillow/Pillow/blob/3.0.x/CHANGES.rst#300-2015-10-01"&gt;https://github.com/python-pillow/Pillow/blob/3.0.x/CHANGES.rst#300-2015-10-01&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Lastly, we're approaching 10 million downloads:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+$ vanity -q pillow
+Pillow has been downloaded 9,906,841 times!
+&lt;/pre&gt;
+&lt;p&gt;An exciting milestone!&lt;/p&gt;
+&lt;p&gt;Thanks to all the developers &amp;amp; users of PIL &amp;amp; Pillow. Enjoy the 3.0.0 release, and as always &lt;a class="reference external" href="https://github.com/python-pillow/Pillow/issues"&gt;report'em if you got'em and we'll fix'em&lt;/a&gt;.&lt;/p&gt;
+&lt;a href="https://gratipay.com/aclark4life/"&gt;
+  &lt;img alt="Support via Gratipay" src="https://cdn.rawgit.com/gratipay/gratipay-badge/2.3.0/dist/gratipay.png"/&gt;
+&lt;/a&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Alex Clark</dc:creator><pubDate>Sat, 03 Oct 2015 21:51:26 -0400</pubDate><guid>tag:blog.aclark.net,2015-10-03:2015/10/03/pillow-3-0-0-is-out/</guid><category>Plone</category><category>Python</category></item><item><title>Pillow 2-9-0 Is Almost Out</title><link>http://blog.aclark.net/2015/06/28/pillow-2-9-0-is-almost-out/</link><description>&lt;p&gt;&lt;em&gt;Pillow 2.9.0 will be released on July 1, 2015.&lt;/em&gt;&lt;/p&gt;
 &lt;div class="section" id="pre-release"&gt;
 &lt;h2&gt;Pre-release&lt;/h2&gt;
 &lt;p&gt;Please help the &lt;a class="reference external" href="https://github.com/python-pillow/Pillow/graphs/contributors"&gt;Pillow Fighters&lt;/a&gt;  prepare for the Pillow &lt;tt class="docutils literal"&gt;2.9.0&lt;/tt&gt; release by downloading and testing this pre-release:&lt;/p&gt;
@@ -535,19 +555,4 @@ psycopg2
 &lt;p&gt;For those who haven't heard, PACKT is having a $5 &amp;quot;bonanza&amp;quot;. &lt;a class="reference external" href="https://www.packtpub.com/packt5dollar/?utm_source=rochelld&amp;amp;utm_medium=referral&amp;amp;utm_campaign=5D2014"&gt;Pick up some $5 Python books&lt;/a&gt; while you can! E.g.:&lt;/p&gt;
 &lt;img alt="Popular Python titles" src="/images/packt-pop.png" /&gt;
 &lt;p&gt;Sale ends tomorrow, &lt;a class="reference external" href="https://www.packtpub.com/packt5dollar/?utm_source=rochelld&amp;amp;utm_medium=referral&amp;amp;utm_campaign=5D2014"&gt;check it out&lt;/a&gt;!&lt;/p&gt;
-</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Alex Clark</dc:creator><pubDate>Mon, 05 Jan 2015 14:56:26 -0500</pubDate><guid>tag:blog.aclark.net,2015-01-05:2015/01/05/packt-is-having-a-sale/</guid><category>Plone</category><category>Python</category></item><item><title>Pillow Runs Itself!</title><link>http://blog.aclark.net/2014/10/02/pillow-runs-itself/</link><description>&lt;p&gt;&lt;strong&gt;As of Pillow 2.6.0, the Pillow project almost completely runs itself!&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Of course when I say &amp;quot;runs itself&amp;quot; I mean &amp;quot;runs without me&amp;quot;, which is what &lt;strong&gt;every open source project lead hopes for&lt;/strong&gt;. For the first time ever, I was able to:&lt;/p&gt;
-&lt;ul class="simple"&gt;
-&lt;li&gt;Turn off GitHub Watching until two weeks before the release.&lt;/li&gt;
-&lt;li&gt;Not run &lt;cite&gt;setup.py upload&lt;/cite&gt; or &lt;cite&gt;twine upload&lt;/cite&gt; myself.&lt;/li&gt;
-&lt;li&gt;Watch in awe as Pillow Men #s 2 &amp;amp; 3 did all the work. [1]&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Kudos to these gentlemen for making my life easier and for continuing to provide the Python community with a featureful, modern &amp;amp; secure Python Imaging Library. Additionally &lt;strong&gt;thanks to all the contributors from all over the world&lt;/strong&gt; who continue to develop and improve Pillow. I used to keep a list, but now there are &lt;a class="reference external" href="https://github.com/python-pillow/Pillow/graphs/contributors"&gt;too many to keep track of&lt;/a&gt;. Oh and lastly, &lt;a class="reference external" href="https://twitter.com/wiredfool/status/517382632267841536"&gt;2.6.0 is out&lt;/a&gt;! Enjoy the release &amp;amp; please &lt;a class="reference external" href="https://github.com/python-pillow/Pillow/issues"&gt;report issues here&lt;/a&gt;.&lt;/p&gt;
-&lt;table class="docutils footnote" frame="void" id="id1" rules="none"&gt;
-&lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
-&lt;tbody valign="top"&gt;
-&lt;tr&gt;&lt;td class="label"&gt;[1]&lt;/td&gt;&lt;td&gt;&lt;a class="reference external" href="https://twitter.com/wiredfool"&gt;Eric Soroos&lt;/a&gt; &amp;amp; &lt;a class="reference external" href="https://twitter.com/hugovk"&gt;Hugo&lt;/a&gt; respectively. Additional thanks to Christoph Gohlke for &lt;a class="reference external" href="https://pypi.python.org/pypi/Pillow/2.6.0#downloads"&gt;Windows Eggs, Exes, Wheels&lt;/a&gt;, Matthew Brett for &lt;a class="reference external" href="https://github.com/python-pillow/Pillow/issues/766"&gt;OS X Wheels&lt;/a&gt;, and Steve Johnson for &lt;a class="reference external" href="https://github.com/python-pillow/Pillow/issues/769"&gt;Sphinx Documentation&lt;/a&gt;.&lt;/td&gt;&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;p&gt;P.S. New theme! Thanks &lt;a class="reference external" href="http://purepelican.com/"&gt;Pure Pelican Theme&lt;/a&gt;.&lt;/p&gt;
-</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Alex Clark</dc:creator><pubDate>Thu, 02 Oct 2014 14:30:00 -0400</pubDate><guid>tag:blog.aclark.net,2014-10-02:2014/10/02/pillow-runs-itself/</guid><category>Mozilla</category><category>Plone</category><category>Python</category></item></channel></rss>
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Alex Clark</dc:creator><pubDate>Mon, 05 Jan 2015 14:56:26 -0500</pubDate><guid>tag:blog.aclark.net,2015-01-05:2015/01/05/packt-is-having-a-sale/</guid><category>Plone</category><category>Python</category></item></channel></rss>
