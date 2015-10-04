@@ -24,7 +24,7 @@ SITEURL = 'http://blog.aclark.net'
 SOCIAL = (
     ('home', 'http://aclark.net'),
     ('github', 'https://github.com/aclark4life'),
-    ('gittip', 'https://www.gittip.com/aclark4life'),
+    ('gittip', 'https://gratipay.com/~aclark4life/'),
     ('music', 'http://band.aclark.net'),
     ('twitter-square', 'https://twitter.com/aclark4life'),
     ('user', 'https://about.me/alex.clark'),
