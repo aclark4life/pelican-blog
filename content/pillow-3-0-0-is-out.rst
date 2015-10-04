@@ -4,6 +4,8 @@ Pillow 3-0-0 is out
 :date: Sat Oct  3 21:51:26 EDT 2015
 :tags: Plone, Python
 
+*Pillow is the friendly PIL fork by Alex Clark and Contributors. PIL is the Python Imaging Library by Fredrik Lundh and Contributors.*
+
 The `Pillow Team <https://github.com/python-pillow/Pillow/graphs/contributors>`_  is excited to announce the release of Pillow 3.0.0. While "3 is just a number after 2", there are some **significant changes in this release all users should be aware of**: 
 
 - `LibJpeg and Zlib are Required by Default <http://pillow.readthedocs.org/en/3.0.x/releasenotes/3.0.0.html#libjpeg-and-zlib-are-required-by-default>`_
