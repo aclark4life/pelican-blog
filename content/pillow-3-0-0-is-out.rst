@@ -32,6 +32,6 @@ Thanks to all the developers & users of PIL & Pillow. Enjoy the 3.0.0 release, a
 
 .. raw:: html
 
-    <a href="https://gratipay.com/aclark4life/">
+    <a href="https://gratipay.com/pillow/">
       <img alt="Support via Gratipay" src="https://cdn.rawgit.com/gratipay/gratipay-badge/2.3.0/dist/gratipay.png"/>
     </a>
