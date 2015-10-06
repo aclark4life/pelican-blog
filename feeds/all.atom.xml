@@ -24,12 +24,13 @@
 &lt;ul&gt;
 &lt;li&gt;&lt;p class="first"&gt;Security &amp;amp; Privacy → Allow apps downloaded from &lt;strong&gt;Anywhere&lt;/strong&gt;&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p class="first"&gt;Drag /opt to &lt;strong&gt;Finder Favorites&lt;/strong&gt; for easy access to Homebrew Casks, then:&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;dl class="first docutils"&gt;
+&lt;dt&gt;Drag &lt;strong&gt;/opt&lt;/strong&gt; to &lt;strong&gt;Finder Favorites&lt;/strong&gt; for easy access to Homebrew Casks, then:&lt;/dt&gt;
+&lt;dd&gt;&lt;ul class="first last simple"&gt;
 &lt;li&gt;Users &amp;amp; Groups → Login items → &lt;strong&gt;Jumpcut&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/blockquote&gt;
+&lt;/dd&gt;
+&lt;/dl&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;p class="first"&gt;Keyboard → Shortcuts → Mission Control → &lt;strong&gt;Move left a space → ⌘ ←&lt;/strong&gt;&lt;/p&gt;
 &lt;/li&gt;

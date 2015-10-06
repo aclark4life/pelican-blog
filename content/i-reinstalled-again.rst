@@ -46,8 +46,7 @@ Misc
 Next, I perform various additional steps manually *either* because I've not figured out how to automate them *or* the automation prospects are not attractive:
 
 - Security & Privacy → Allow apps downloaded from **Anywhere**
-- Drag /opt to **Finder Favorites** for easy access to Homebrew Casks, then:
-
+- Drag **/opt** to **Finder Favorites** for easy access to Homebrew Casks, then:
     - Users & Groups → Login items → **Jumpcut**
 
 - Keyboard → Shortcuts → Mission Control → **Move left a space → ⌘ ←**
