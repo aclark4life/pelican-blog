@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom"><title>Alex Clark - Python Web Developer &amp; Musician</title><link href="http://blog.aclark.net/" rel="alternate"></link><link href="http://blog.aclark.net/feeds/python.atom.xml" rel="self"></link><id>http://blog.aclark.net/</id><updated>2015-10-05T20:05:52-04:00</updated><entry><title>I Reinstalled Again</title><link href="http://blog.aclark.net/2015/10/05/i-reinstalled-again/" rel="alternate"></link><updated>2015-10-05T20:05:52-04:00</updated><author><name>Alex Clark</name></author><id>tag:blog.aclark.net,2015-10-05:2015/10/05/i-reinstalled-again/</id><summary type="html">&lt;p&gt;&lt;em&gt;A while back&lt;/em&gt; &lt;a class="reference external" href="http://blog.aclark.net/2010/10/15/i-reinstalled-recently/"&gt;I wrote about reinstalling OS X&lt;/a&gt;. &lt;em&gt;This is another one of those posts.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;I like to reinstall OS X, a lot. So much so, you'd think I'd find some way to automate the process. There must be something &lt;em&gt;soothing&lt;/em&gt; about it, though, because I keep doing it.&lt;/p&gt;
-&lt;p&gt;I'm writing this post now because since my last post, I've begun storing a snippets on &lt;a class="reference external" href="https://gist.github.com/aclark4life/starred"&gt;gist.github.com&lt;/a&gt; to help automate the process. This way, I get &amp;quot;the best of both worlds&amp;quot;: automation of the tedious parts &amp;amp; interaction with the fun parts.&lt;/p&gt;
+&lt;p&gt;I'm writing this post now because since my last post, I've begun storing a snippets on &lt;a class="reference external" href="https://gist.github.com/aclark4life/starred"&gt;gist.github.com&lt;/a&gt; to help automate the process. This way, I get &amp;quot;the best of both worlds&amp;quot;:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;Automation of the tedious parts &amp;amp;&lt;/li&gt;
+&lt;li&gt;Interaction with the fun parts.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
 &lt;p&gt;Specifically, with El Capitan I've settled on these 4 snippets:&lt;/p&gt;
 &lt;div class="section" id="preferences"&gt;
 &lt;h2&gt;Preferences&lt;/h2&gt;

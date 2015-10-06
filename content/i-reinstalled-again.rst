@@ -8,7 +8,10 @@ I Reinstalled Again
 
 I like to reinstall OS X, a lot. So much so, you'd think I'd find some way to automate the process. There must be something *soothing* about it, though, because I keep doing it.
 
-I'm writing this post now because since my last post, I've begun storing a snippets on `gist.github.com <https://gist.github.com/aclark4life/starred>`_ to help automate the process. This way, I get "the best of both worlds": automation of the tedious parts & interaction with the fun parts.
+I'm writing this post now because since my last post, I've begun storing a snippets on `gist.github.com <https://gist.github.com/aclark4life/starred>`_ to help automate the process. This way, I get "the best of both worlds":
+
+    - Automation of the tedious parts &
+    - Interaction with the fun parts.
 
 Specifically, with El Capitan I've settled on these 4 snippets:
 
