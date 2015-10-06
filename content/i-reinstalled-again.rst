@@ -47,8 +47,7 @@ Next, I perform various additional steps manually *either* because I've not figu
 
 - Security & Privacy → Allow apps downloaded from **Anywhere**
 - Drag **/opt** to **Finder Favorites** for easy access to Homebrew Casks, then:
-    - Users & Groups → Login items → **Jumpcut**
-
+  - Users & Groups → Login items → **Jumpcut**
 - Keyboard → Shortcuts → Mission Control → **Move left a space → ⌘ ←**
 - Keyboard → Shortcuts → Mission Control → **Move right a space → ⌘ →**
 

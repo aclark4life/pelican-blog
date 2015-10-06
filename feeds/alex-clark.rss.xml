@@ -21,21 +21,12 @@
 &lt;div class="section" id="misc"&gt;
 &lt;h2&gt;Misc&lt;/h2&gt;
 &lt;script src="https://gist.github.com/aclark4life/594fb26860fece756a2d.js"&gt;&lt;/script&gt;&lt;p&gt;Next, I perform various additional steps manually &lt;em&gt;either&lt;/em&gt; because I've not figured out how to automate them &lt;em&gt;or&lt;/em&gt; the automation prospects are not attractive:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;p class="first"&gt;Security &amp;amp; Privacy → Allow apps downloaded from &lt;strong&gt;Anywhere&lt;/strong&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;dl class="first docutils"&gt;
-&lt;dt&gt;Drag &lt;strong&gt;/opt&lt;/strong&gt; to &lt;strong&gt;Finder Favorites&lt;/strong&gt; for easy access to Homebrew Casks, then:&lt;/dt&gt;
-&lt;dd&gt;&lt;ul class="first last simple"&gt;
-&lt;li&gt;Users &amp;amp; Groups → Login items → &lt;strong&gt;Jumpcut&lt;/strong&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/dd&gt;
-&lt;/dl&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p class="first"&gt;Keyboard → Shortcuts → Mission Control → &lt;strong&gt;Move left a space → ⌘ ←&lt;/strong&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p class="first"&gt;Keyboard → Shortcuts → Mission Control → &lt;strong&gt;Move right a space → ⌘ →&lt;/strong&gt;&lt;/p&gt;
-&lt;/li&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;Security &amp;amp; Privacy → Allow apps downloaded from &lt;strong&gt;Anywhere&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Drag &lt;strong&gt;/opt&lt;/strong&gt; to &lt;strong&gt;Finder Favorites&lt;/strong&gt; for easy access to Homebrew Casks, then:
+- Users &amp;amp; Groups → Login items → &lt;strong&gt;Jumpcut&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Keyboard → Shortcuts → Mission Control → &lt;strong&gt;Move left a space → ⌘ ←&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Keyboard → Shortcuts → Mission Control → &lt;strong&gt;Move right a space → ⌘ →&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Still, I'd trade all these steps for full automation if I could find an approach that's not more tedious than cut &amp;amp; pasting the above.&lt;/p&gt;
 &lt;p&gt;Lastly, I hope this helps someone. Please add a comment below if you have a better approach.&lt;/p&gt;
