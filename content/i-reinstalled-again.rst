@@ -43,7 +43,7 @@ Misc
 Next, I perform various additional steps manually *either* because I've not figured out how to automate them *or* the automation prospects are not attractive:
 
 - Security & Privacy -> Allow apps downloaded from **Anywhere**
-- Drag /opt to **Finder Favorites** for easy access to Homebrew Casks
+- Drag /opt to **Finder Favorites** for easy access to Homebrew Casks, then:
 - Users & Groups -> Login items -> **Jumpcut**
 
 Still, I'd trade all these steps for full automation if I could find an approach that's not more tedious than cut & pasting the above.
