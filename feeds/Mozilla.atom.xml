@@ -1,5 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Alex Clark - Python Web Developer &amp; Musician</title><link href="http://blog.aclark.net/" rel="alternate"></link><link href="http://blog.aclark.net/feeds/mozilla.atom.xml" rel="self"></link><id>http://blog.aclark.net/</id><updated>2015-06-28T20:01:47-04:00</updated><entry><title>Pillow 2-9-0 Is Almost Out</title><link href="http://blog.aclark.net/2015/06/28/pillow-2-9-0-is-almost-out/" rel="alternate"></link><updated>2015-06-28T20:01:47-04:00</updated><author><name>Alex Clark</name></author><id>tag:blog.aclark.net,2015-06-28:2015/06/28/pillow-2-9-0-is-almost-out/</id><summary type="html">&lt;p&gt;&lt;em&gt;Pillow 2.9.0 will be released on July 1, 2015.&lt;/em&gt;&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Alex Clark - Python Web Developer &amp; Musician</title><link href="http://blog.aclark.net/" rel="alternate"></link><link href="http://blog.aclark.net/feeds/mozilla.atom.xml" rel="self"></link><id>http://blog.aclark.net/</id><updated>2015-10-05T20:05:52-04:00</updated><entry><title>I Reinstalled Again</title><link href="http://blog.aclark.net/2015/10/05/i-reinstalled-again/" rel="alternate"></link><updated>2015-10-05T20:05:52-04:00</updated><author><name>Alex Clark</name></author><id>tag:blog.aclark.net,2015-10-05:2015/10/05/i-reinstalled-again/</id><summary type="html">&lt;p&gt;&lt;em&gt;A while back&lt;/em&gt; &lt;a class="reference external" href="http://blog.aclark.net/2010/10/15/i-reinstalled-recently/"&gt;I wrote about reinstalling OS X&lt;/a&gt;. &lt;em&gt;This is another one of those posts.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;I like to reinstall OS X, a lot. So much so, you'd think I'd find some way to automate the process. There must be something &lt;em&gt;soothing&lt;/em&gt; about it, though, because I keep doing it.&lt;/p&gt;
+&lt;p&gt;I'm writing this post now because since my last post, I've begun storing a snippets on &lt;a class="reference external" href="https://gist.github.com/aclark4life/starred"&gt;gist.github.com&lt;/a&gt; to help automate the process. This way, I get &amp;quot;the best of both worlds&amp;quot;: automation of the tedious parts &amp;amp; interaction with the fun parts.&lt;/p&gt;
+&lt;p&gt;Specifically, with El Capitan I've settled on these 4 snippets:&lt;/p&gt;
+&lt;div class="section" id="preferences"&gt;
+&lt;h2&gt;Preferences&lt;/h2&gt;
+&lt;script src="https://gist.github.com/aclark4life/3efb00b88dcacc9e0c2c.js"&gt;&lt;/script&gt;&lt;/div&gt;
+&lt;div class="section" id="homebrew"&gt;
+&lt;h2&gt;Homebrew&lt;/h2&gt;
+&lt;script src="https://gist.github.com/aclark4life/11f3505fa87681581fa1.js"&gt;&lt;/script&gt;&lt;/div&gt;
+&lt;div class="section" id="python"&gt;
+&lt;h2&gt;Python&lt;/h2&gt;
+&lt;script src="https://gist.github.com/aclark4life/69cb7c9363d79db9b3dd.js"&gt;&lt;/script&gt;&lt;/div&gt;
+&lt;div class="section" id="misc"&gt;
+&lt;h2&gt;Misc&lt;/h2&gt;
+&lt;script src="https://gist.github.com/aclark4life/594fb26860fece756a2d.js"&gt;&lt;/script&gt;&lt;p&gt;Next, I perform various additional steps manually &lt;em&gt;either&lt;/em&gt; because I've not figured out how to automate them &lt;em&gt;or&lt;/em&gt; the automation prospects are not attractive:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;Security &amp;amp; Privacy -&amp;gt; Allow apps downloaded from &lt;strong&gt;Anywhere&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Drag /opt to &lt;strong&gt;Finder Favorites&lt;/strong&gt; for easy access to Homebrew Casks&lt;/li&gt;
+&lt;li&gt;Users &amp;amp; Groups -&amp;gt; Login items -&amp;gt; &lt;strong&gt;Jumpcut&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Still, I'd trade all these steps for full automation if I could find an approach that's not more tedious than cut &amp;amp; pasting the above.&lt;/p&gt;
+&lt;p&gt;Lastly, I hope this helps someone. Please add a comment below if you have a better approach.&lt;/p&gt;
+&lt;/div&gt;
+</summary><category term="Mozilla"></category><category term="Plone"></category><category term="Python"></category></entry><entry><title>Pillow 2-9-0 Is Almost Out</title><link href="http://blog.aclark.net/2015/06/28/pillow-2-9-0-is-almost-out/" rel="alternate"></link><updated>2015-06-28T20:01:47-04:00</updated><author><name>Alex Clark</name></author><id>tag:blog.aclark.net,2015-06-28:2015/06/28/pillow-2-9-0-is-almost-out/</id><summary type="html">&lt;p&gt;&lt;em&gt;Pillow 2.9.0 will be released on July 1, 2015.&lt;/em&gt;&lt;/p&gt;
 &lt;div class="section" id="pre-release"&gt;
 &lt;h2&gt;Pre-release&lt;/h2&gt;
 &lt;p&gt;Please help the &lt;a class="reference external" href="https://github.com/python-pillow/Pillow/graphs/contributors"&gt;Pillow Fighters&lt;/a&gt;  prepare for the Pillow &lt;tt class="docutils literal"&gt;2.9.0&lt;/tt&gt; release by downloading and testing this pre-release:&lt;/p&gt;
@@ -887,27 +911,4 @@ export PATH=~/Developer/binfiles:/usr/local/share/npm/bin:$PATH
 &lt;script data-gittip-username="aclark4life"
 src="https://www.gittip.com/assets/widgets/0002.js"&gt;
 &lt;/script&gt;&lt;/div&gt;
-</summary><category term="Django"></category><category term="Mozilla"></category><category term="Plone"></category><category term="Python"></category></entry><entry><title>Python 3 Porting</title><link href="http://blog.aclark.net/2013/01/10/python-3-porting/" rel="alternate"></link><updated>2013-01-10T19:15:00-05:00</updated><author><name>Alex Clark</name></author><id>tag:blog.aclark.net,2013-01-10:2013/01/10/python-3-porting/</id><summary type="html">&lt;p&gt;&lt;em&gt;The 3 in 2013 is for Python 3&lt;/em&gt;&lt;/p&gt;
-&lt;img alt="alternate text" src="https://raw.github.com/ACLARKNET/blog/gh-pages/images/python-3-port.jpg" /&gt;
-&lt;p&gt;I tend to like projects that everyone else &lt;strong&gt;hates&lt;/strong&gt;, e.g.:&lt;/p&gt;
-&lt;ul class="simple"&gt;
-&lt;li&gt;Removing persistent Python objects associated with missing classes in ZODB.&lt;/li&gt;
-&lt;li&gt;Making new releases for old software that is still useful but unmaintained.&lt;/li&gt;
-&lt;li&gt;Running flake8 on 10s or 100s of source files and hand-fixing the results.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Part of this has to do with &lt;strong&gt;repetition&lt;/strong&gt;. I know how to do these things, and I like doing them. Over and over. If someone says, &amp;quot;my Data.fs file is broken&amp;quot; I get excited. Anyway, I hope you get the idea.&lt;/p&gt;
-&lt;div class="section" id="i-am-your-man"&gt;
-&lt;h2&gt;I am your man&lt;/h2&gt;
-&lt;p&gt;Which brings me to the subject of this post: &lt;strong&gt;Python 3 Porting&lt;/strong&gt;. I've been helping out porting the Python Imaging Library to Python 3 (via the Pillow fork, where I am the release manager). And it strikes me as the type of thing I'd be very interested in doing professionally. So, if you or your company are in need of a &amp;quot;workhorse&amp;quot; to plow through old code and update it, &lt;a class="reference external" href="http://aclark.net/team/alex-clark"&gt;I am your man&lt;/a&gt;. Please do &lt;a class="reference external" href="mailto:info&amp;#64;aclark.net"&gt;get in touch&lt;/a&gt;.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="section" id="what-s-in-it-for-you"&gt;
-&lt;h2&gt;What's in it for you&lt;/h2&gt;
-&lt;p&gt;Now I know what you are thinking: &lt;strong&gt;porting Python 2 software to Python 3 is a lot of work for little gain&lt;/strong&gt;. Maybe. Maybe not. I'm not going to try to convince you otherwise, however I will tell you this:&lt;/p&gt;
-&lt;ul class="simple"&gt;
-&lt;li&gt;For me, 2013 is &amp;quot;the year of Python 3&amp;quot;. I've now promised to deliver and maintain a &lt;strong&gt;Python 3 compatible PIL by PyCon 2013&lt;/strong&gt;. I now care about Python 3 (this was not true before).&lt;/li&gt;
-&lt;li&gt;The Python 3 Wall of Shame is now the &lt;a class="reference external" href="https://python3wos.appspot.com/"&gt;Python 3 Wall of Superpowers&lt;/a&gt;. We are over the hump.&lt;/li&gt;
-&lt;li&gt;Many popular Python web frameworks support or are about to support Python 3 e.g. CherryPy, Django, Pyramid.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;So, there is no time like the present to &lt;strong&gt;take a serious look at Python 3&lt;/strong&gt;.&lt;/p&gt;
-&lt;/div&gt;
 </summary><category term="Django"></category><category term="Mozilla"></category><category term="Plone"></category><category term="Python"></category></entry></feed>
