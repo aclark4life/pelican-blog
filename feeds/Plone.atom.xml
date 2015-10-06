@@ -16,7 +16,7 @@
 &lt;h2&gt;Misc&lt;/h2&gt;
 &lt;script src="https://gist.github.com/aclark4life/594fb26860fece756a2d.js"&gt;&lt;/script&gt;&lt;p&gt;Next, I perform various additional steps manually &lt;em&gt;either&lt;/em&gt; because I've not figured out how to automate them &lt;em&gt;or&lt;/em&gt; the automation prospects are not attractive:&lt;/p&gt;
 &lt;ul class="simple"&gt;
-&lt;li&gt;Security &amp;amp; Privacy →-&amp;gt; Allow apps downloaded from &lt;strong&gt;Anywhere&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Security &amp;amp; Privacy → Allow apps downloaded from &lt;strong&gt;Anywhere&lt;/strong&gt;&lt;/li&gt;
 &lt;li&gt;Drag /opt to &lt;strong&gt;Finder Favorites&lt;/strong&gt; for easy access to Homebrew Casks, then:&lt;/li&gt;
 &lt;li&gt;Users &amp;amp; Groups → Login items → &lt;strong&gt;Jumpcut&lt;/strong&gt;&lt;/li&gt;
 &lt;li&gt;Keyboard → Shortcuts → Mission Control → Move left a space → ⌘ ←&lt;/li&gt;
