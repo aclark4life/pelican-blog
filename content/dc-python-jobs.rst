@@ -32,7 +32,7 @@ I've always found it awkward to explain the procedure, but have managed to last 
 Instructions
 ------------
 
-**All are welcome to post to the DC Python Job Board, but please follow these rules**. 
+**Please follow these rules to post to the DC Python Job Board**. 
 
 1. Join the DC Python Meetup: http://www.meetup.com/DCPython/join/.
 
