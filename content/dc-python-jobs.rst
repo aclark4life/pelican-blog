@@ -29,10 +29,10 @@ The #1 function of the board (and biggest consumer of my time spent answering em
 
 I've always found it awkward to explain the procedure, but have managed to last several years without documenting it. No more!
 
-Job Board Instructions
-----------------------
+Instructions
+------------
 
-**All are welcome to post but please follow these rules**. 
+**All are welcome to post to the DC Python Job Board, but please follow these rules**. 
 
 1. Join the DC Python Meetup: http://www.meetup.com/DCPython/join/.
 
