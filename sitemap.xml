@@ -5,29 +5,36 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>http://blog.aclark.net/</loc>
-<lastmod>2015-10-06T09:09:46-00:00</lastmod>
+<lastmod>2015-10-07T17:01:19-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>http://blog.aclark.net/archives.html</loc>
-<lastmod>2015-10-06T09:09:46-00:00</lastmod>
+<lastmod>2015-10-07T17:01:19-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>http://blog.aclark.net/tags.html</loc>
-<lastmod>2015-10-06T09:09:46-00:00</lastmod>
+<lastmod>2015-10-07T17:01:19-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>http://blog.aclark.net/categories.html</loc>
-<lastmod>2015-10-06T09:09:46-00:00</lastmod>
+<lastmod>2015-10-07T17:01:19-00:00</lastmod>
 <changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>http://blog.aclark.net/2015/10/07/dc-python-jobs/</loc>
+<lastmod>2015-10-07T16:55:36-04:00</lastmod>
+<changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
@@ -1090,14 +1097,14 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>http://blog.aclark.net/category/blog.html</loc>
-<lastmod>2015-10-05T20:05:52-04:56</lastmod>
+<lastmod>2015-10-07T16:55:36-04:56</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>http://blog.aclark.net/tag/python.html</loc>
-<lastmod>2015-10-05T20:05:52-04:56</lastmod>
+<lastmod>2015-10-07T16:55:36-04:56</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -1132,7 +1139,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>http://blog.aclark.net/author/alex-clark.html</loc>
-<lastmod>2015-10-05T20:05:52-04:56</lastmod>
+<lastmod>2015-10-07T16:55:36-04:56</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>

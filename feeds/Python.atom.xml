@@ -1,5 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Alex Clark - Python Web Developer &amp; Musician</title><link href="http://blog.aclark.net/" rel="alternate"></link><link href="http://blog.aclark.net/feeds/python.atom.xml" rel="self"></link><id>http://blog.aclark.net/</id><updated>2015-10-05T20:05:52-04:00</updated><entry><title>I Reinstalled Again</title><link href="http://blog.aclark.net/2015/10/05/i-reinstalled-again/" rel="alternate"></link><updated>2015-10-05T20:05:52-04:00</updated><author><name>Alex Clark</name></author><id>tag:blog.aclark.net,2015-10-05:2015/10/05/i-reinstalled-again/</id><summary type="html">&lt;p&gt;&lt;em&gt;A while back&lt;/em&gt; &lt;a class="reference external" href="http://blog.aclark.net/2010/10/15/i-reinstalled-recently/"&gt;I wrote about reinstalling OS X&lt;/a&gt;. &lt;em&gt;This is another one of those posts.&lt;/em&gt;&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Alex Clark - Python Web Developer &amp; Musician</title><link href="http://blog.aclark.net/" rel="alternate"></link><link href="http://blog.aclark.net/feeds/python.atom.xml" rel="self"></link><id>http://blog.aclark.net/</id><updated>2015-10-07T16:55:36-04:00</updated><entry><title>DC Python Jobs</title><link href="http://blog.aclark.net/2015/10/07/dc-python-jobs/" rel="alternate"></link><updated>2015-10-07T16:55:36-04:00</updated><author><name>Alex Clark</name></author><id>tag:blog.aclark.net,2015-10-07:2015/10/07/dc-python-jobs/</id><summary type="html">&lt;p&gt;&lt;em&gt;This information may eventually live within the DC Python corpus, but for now I prefer to post-it-now-move-it-later.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;DC Python, for those not familiar, is:&lt;/p&gt;
+&lt;ol class="arabic simple"&gt;
+&lt;li&gt;A thriving community full of awesome Python programmers in Washington, DC, USA (DC, MD, VA).&lt;/li&gt;
+&lt;li&gt;The name of a Meetup group with over 3,000 members.&lt;/li&gt;
+&lt;li&gt;The name used to refer to our 501(c)(3) organization whose legal name is &amp;quot;ZPUGDC, Inc&amp;quot;.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;As the President &amp;amp; Executive Director of DC Python (see: #3), I try to be as helpful as possible with all aspects of Python activity in DC (along with many volunteers). &lt;strong&gt;That includes helping Python programmers find jobs and employers find Python programmers.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Ideally we'd have a professional job board, but that would require a lot of effort from a lot of volunteers. In the meantime, ever since it was suggested by Gloria W from the NYC Python Meetup, we've been using Meetup's message boards to perform a similar function.&lt;/p&gt;
+&lt;p&gt;This has worked surprisingly well however there &lt;em&gt;are&lt;/em&gt; some issues. In this post, I will explain how to use DC Python's &amp;quot;Job Board&amp;quot; according to guidelines established by our community.&lt;/p&gt;
+&lt;p&gt;The &lt;a class="reference external" href="http://www.meetup.com/DCPython/messages/boards/"&gt;DC Python Job Board&lt;/a&gt; includes:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://www.meetup.com/DCPython/messages/boards/forum/13783032"&gt;A board for Python programmers seeking work&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://www.meetup.com/DCPython/messages/boards/forum/617991"&gt;A board for employers seeking Python programmers&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://www.meetup.com/DCPython/messages/boards/forum/13783122"&gt;A board for organizations &amp;amp; venues willing (or even excited) to host our meetups&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The #1 function of the board (and biggest consumer of my time spent answering emails) is to serve employers seeking Python programmers. &amp;quot;Employers&amp;quot; &lt;em&gt;can&lt;/em&gt; and often &lt;em&gt;does&lt;/em&gt; include professional recruiters.&lt;/p&gt;
+&lt;p&gt;I've always found it awkward to explain the procedure, but have managed to last several years without documenting it. No more!&lt;/p&gt;
+&lt;div class="section" id="job-board-instructions"&gt;
+&lt;h2&gt;Job Board Instructions&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;All are welcome to post but please follow these rules&lt;/strong&gt;.&lt;/p&gt;
+&lt;ol class="arabic simple"&gt;
+&lt;li&gt;Join the DC Python Meetup: &lt;a class="reference external" href="http://www.meetup.com/DCPython/join/"&gt;http://www.meetup.com/DCPython/join/&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Create a job posting: &lt;a class="reference external" href="http://www.meetup.com/DCPython/messages/boards/forum/617991"&gt;http://www.meetup.com/DCPython/messages/boards/forum/617991&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Send a link to your post to the DC Python mailing list: &lt;a class="reference external" href="mailto:DCPython-list&amp;#64;meetup.com"&gt;DCPython-list&amp;#64;meetup.com&lt;/a&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;strong&gt;Include [JOB] in the subject line, some brief introductory text, the link to your post and nothing else e.g.&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;pre class="literal-block"&gt;
+Wed Oct  7 16:45:52 EDT 2015
+From: aclark&amp;#64;aclark.net
+To: DCPython-list&amp;#64;meetup.com
+Subject: [JOB] ACLARK.NET, LLC seeking Python Web Developer
+
+Hi DC Python,
+
+My name is Alex Clark and I am the President of ACLARK.NET, LLC: the most awesome Python shop in Washington, DC, USA. I am interested in hiring a Python web developer to fill an awesome position working directly for me:
+
+    - http://www.meetup.com/DCPython/messages/boards/thread/41146492
+
+I hope to hear from you soon!
+
+Alex
+&lt;/pre&gt;
+&lt;div class="warning"&gt;
+&lt;p class="first admonition-title"&gt;Warning&lt;/p&gt;
+&lt;p class="last"&gt;Please send mail to the list with the &lt;strong&gt;same email address&lt;/strong&gt; you used to join Meetup, else your &lt;strong&gt;email will be silently ignored by Meetup&lt;/strong&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;Good luck!&lt;/p&gt;
+&lt;/div&gt;
+</summary><category term="python"></category></entry><entry><title>I Reinstalled Again</title><link href="http://blog.aclark.net/2015/10/05/i-reinstalled-again/" rel="alternate"></link><updated>2015-10-05T20:05:52-04:00</updated><author><name>Alex Clark</name></author><id>tag:blog.aclark.net,2015-10-05:2015/10/05/i-reinstalled-again/</id><summary type="html">&lt;p&gt;&lt;em&gt;A while back&lt;/em&gt; &lt;a class="reference external" href="http://blog.aclark.net/2010/10/15/i-reinstalled-recently/"&gt;I wrote about reinstalling OS X&lt;/a&gt;. &lt;em&gt;This is another one of those posts.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;I like to reinstall OS X, a lot. So much so, you'd think I'd find some way to automate the process. There must be something &lt;em&gt;soothing&lt;/em&gt; about it, though, because I keep doing it.&lt;/p&gt;
 &lt;p&gt;I'm writing this post now because since my last post, I've begun storing a snippets on &lt;a class="reference external" href="https://gist.github.com/aclark4life/starred"&gt;gist.github.com&lt;/a&gt; to help automate the process. This way, I get &amp;quot;the best of both worlds&amp;quot;:&lt;/p&gt;
 &lt;blockquote&gt;
@@ -463,126 +516,4 @@ pip install plock; plock plone; plone/bin/plone fg
 My boss is such a jerk. If you could just give me a working example of how to do my job, that would be awesome! Lolz.
 &lt;/pre&gt;
 &lt;p&gt;So please, /r/Python, let's &lt;strong&gt;start asking more meaningful questions&lt;/strong&gt;. And if there is anything I can do to help, please let me know.&lt;/p&gt;
-</summary><category term="Python"></category></entry><entry><title>New Django Website</title><link href="http://blog.aclark.net/2015/01/11/new-django-website/" rel="alternate"></link><updated>2015-01-11T18:44:48-05:00</updated><author><name>Alex Clark</name></author><id>tag:blog.aclark.net,2015-01-11:2015/01/11/new-django-website/</id><summary type="html">&lt;p&gt;&lt;em&gt;After a series of Django gigs in 2014, I had the urge to redevelop our company website in Django; I am very happy with the results. This overview is roughly in order of development from start to finish. And since I am a &amp;quot;packaging guy&amp;quot;, I will take this opportunity to comment on miscellaneous packaging issues too&lt;/em&gt;.&lt;/p&gt;
-&lt;img alt="Website front page" src="/images/aclarknet-django.png" /&gt;
-&lt;div class="section" id="same-theme-different-backend"&gt;
-&lt;h2&gt;Same theme, different backend&lt;/h2&gt;
-&lt;p&gt;The Pyramid version of aclark.net was almost two years old and needed an overhaul. Django appeared attractive because:&lt;/p&gt;
-&lt;ul class="simple"&gt;
-&lt;li&gt;I know Django, but I don't know enough Django. Like with Pyramid and Plone before, I learned a lot of Django while developing this site over the last few weeks.&lt;/li&gt;
-&lt;li&gt;There was no &amp;quot;content&amp;quot; with the previous (Pyramid) site. The idea of putting my &amp;quot;content&amp;quot; in Django models was appealing to me.&lt;/li&gt;
-&lt;li&gt;The new &lt;a class="reference external" href="https://djangoproject.com"&gt;Django project&lt;/a&gt; website is awesome! An awesome website makes me want to build another awesome website with an awesome web framework. Awesome.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;div class="section" id="i-hate-code-generators"&gt;
-&lt;h2&gt;I hate code generators&lt;/h2&gt;
-&lt;p&gt;I typically hate using code generators, full stop. But somehow Django's &lt;tt class="docutils literal"&gt;startproject&lt;/tt&gt; and &lt;tt class="docutils literal"&gt;startapp&lt;/tt&gt; don't make me want to vomit. So I used them in an organic &lt;a class="footnote-reference" href="#id7" id="id1"&gt;[1]&lt;/a&gt; way, to make some &lt;a class="reference external" href="https://github.com/ACLARKNET/aclarknet-django/tree/master/aclarknet/aclarknet/aclarknet"&gt;obnoxiously long package names&lt;/a&gt;, and I &lt;em&gt;miraculously&lt;/em&gt; don't hate the results! This can only mean:&lt;/p&gt;
-&lt;ul class="simple"&gt;
-&lt;li&gt;I am more tolerant of boilerplate code when learning a new framework, and/or:&lt;/li&gt;
-&lt;li&gt;The process of creating the boilerplate code and the resulting boilerplate are so elegant/minimalistic that my insatiable desire for elegance/minimalism is at least partially satisified.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;div class="section" id="no-postgres-no-problem"&gt;
-&lt;h2&gt;No Postgres? No problem&lt;/h2&gt;
-&lt;p&gt;The idea of having to develop locally with Postgresql (or some other &amp;quot;real&amp;quot; database) feels &amp;quot;heavy&amp;quot; to me. With sqlite, I don't have to worry about database setup until I'm ready to worry about database setup &lt;a class="footnote-reference" href="#id8" id="id2"&gt;[2]&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;I even pushed to Heroku with the sqlite database checked in, until I was ready to deploy Postgres. And I still use sqlite locally.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="section" id="bootstrap-all-the-things"&gt;
-&lt;h2&gt;Bootstrap all the things&lt;/h2&gt;
-&lt;p&gt;Sure Bootstrap is ubiquitious now, but it remains attractive nonetheless. One of the first tasks I performed was add &lt;tt class="docutils literal"&gt;&lt;span class="pre"&gt;django-admin-bootstrapped&lt;/span&gt;&lt;/tt&gt; to my &lt;tt class="docutils literal"&gt;INSTALLED_APPS&lt;/tt&gt; &lt;a class="footnote-reference" href="#id9" id="id3"&gt;[3]&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;And because it's 2015, I Bower-installed Bootstrap and Fontawesome for my theme development.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="section" id="make-like-a-tree-and-file"&gt;
-&lt;h2&gt;Make like a tree and file&lt;/h2&gt;
-&lt;p&gt;Lately I've gotten into the habit of using good-ol' Make to automate various tasks &lt;a class="footnote-reference" href="#id10" id="id4"&gt;[4]&lt;/a&gt;. This project was no exception:&lt;/p&gt;
-&lt;pre class="literal-block"&gt;
-dump:
-    curl -o latest.dump `heroku pgbackups:url`
-push:
-    git push
-    git push heroku master
-sync:
-    heroku run python aclarknet/manage.py syncdb
-publish:
-    git commit -a -m &amp;quot;Update&amp;quot;
-&lt;/pre&gt;
-&lt;/div&gt;
-&lt;div class="section" id="add-ons-apps-eggs-distributions-packages-products-wheels"&gt;
-&lt;h2&gt;Add-ons, Apps, Eggs, Distributions, Packages, Products, Wheels&lt;/h2&gt;
-&lt;p&gt;I am &lt;em&gt;literally&lt;/em&gt; annoyed by the &lt;em&gt;figurative&lt;/em&gt; abomination that is Python packaging terminology. The proliferation of terms is understandable though because of the many layers of &lt;em&gt;technology&lt;/em&gt;, each with its own &lt;em&gt;terminology&lt;/em&gt;, that may or may not overlap:&lt;/p&gt;
-&lt;ul class="simple"&gt;
-&lt;li&gt;The Python language&lt;/li&gt;
-&lt;li&gt;Various packaging frameworks&lt;/li&gt;
-&lt;li&gt;Software written in Python&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;And all of that was just so I could tell you I pip-installed the following:&lt;/p&gt;
-&lt;pre class="literal-block"&gt;
-Django
-Pillow
-django-admin-bootstrapped
-django-cumulus
-dj-database-url
-dj-static
-gunicorn
-psycopg2
--e aclarknet
-&lt;/pre&gt;
-&lt;/div&gt;
-&lt;div class="section" id="buildout-conda-easy-install-pip"&gt;
-&lt;h2&gt;Buildout, Conda, easy_install, pip&lt;/h2&gt;
-&lt;p&gt;On a related subject, why do I have a &lt;a class="reference external" href="https://github.com/ACLARKNET/aclarknet-django/blob/master/aclarknet/setup.py"&gt;setup.py&lt;/a&gt;? I get the feeling that Django projects in the wild sometimes have one and sometimes don't. And the Django documentation &lt;a class="reference external" href="https://docs.djangoproject.com/search/?q=setup+py&amp;amp;release=11"&gt;has only a few mentions of setup.py&lt;/a&gt;. So why do I have one?&lt;/p&gt;
-&lt;p&gt;In short, because I want my code in &lt;tt class="docutils literal"&gt;sys.path&lt;/tt&gt;. I have another feeling that when Django projects/apps/etc don't have setup.py files, they are somehow manipulating sys.path manually to include themselves. There is &lt;a class="reference external" href="https://docs.djangoproject.com/search/?q=sys+path&amp;amp;release=11"&gt;slightly more mentioning of sys.path&lt;/a&gt; in Django's documentation, at least.&lt;/p&gt;
-&lt;p&gt;Anyway, I use setup.py because I'm familiar with setuptools.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="section" id="contact-form"&gt;
-&lt;h2&gt;Contact Form&lt;/h2&gt;
-&lt;p&gt;Enough packaging rants, back to the rest of the Django story.&lt;/p&gt;
-&lt;p&gt;Every business website needs a contact form, right? And contact forms are tedious and boring to create, right? Yes and yes. That's why I thought using &lt;tt class="docutils literal"&gt;&lt;span class="pre"&gt;django-contact-form&lt;/span&gt;&lt;/tt&gt; would be a good idea. Unfortunately I ran into an issue I couldn't easily work around, so I gave up and &lt;a class="reference external" href="https://github.com/ACLARKNET/aclarknet-django/blob/master/aclarknet/aclarknet/aclarknet/views.py#L32"&gt;made my own&lt;/a&gt; &lt;a class="footnote-reference" href="#id11" id="id5"&gt;[5]&lt;/a&gt;.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="section" id="orm-i-really-on-my-own"&gt;
-&lt;h2&gt;ORM I really on my own?&lt;/h2&gt;
-&lt;a class="reference external image-reference" href="https://twitter.com/aclark4life/status/552626214008274944"&gt;&lt;img alt="Tweet" src="/images/aclark-tweet.png" /&gt;&lt;/a&gt;
-&lt;p&gt;That's right. After adding an &lt;tt class="docutils literal"&gt;ImageField&lt;/tt&gt; I expected the image to be stored in the database and not the file system, and I'm not ashamed. Since that was not the case, I ended up using &lt;tt class="docutils literal"&gt;&lt;span class="pre"&gt;django-cumulus&lt;/span&gt;&lt;/tt&gt; &lt;a class="footnote-reference" href="#id12" id="id6"&gt;[6]&lt;/a&gt;.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="section" id="overall"&gt;
-&lt;h2&gt;Overall&lt;/h2&gt;
-&lt;p&gt;Overall, this was a great experience. As such, I'm now considering another &lt;a class="reference external" href="http://pythonpackages.com"&gt;pythonpackages.com&lt;/a&gt; reboot with Django; to further exercise my Django chops and fullfill the packaging-automation-vision I've had since late 2011.&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Please let me know your reaction to my experiences in the comments.&lt;/em&gt;&lt;/p&gt;
-&lt;table class="docutils footnote" frame="void" id="id7" rules="none"&gt;
-&lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
-&lt;tbody valign="top"&gt;
-&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#id1"&gt;[1]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;tt class="docutils literal"&gt;&lt;span class="pre"&gt;django-admin&lt;/span&gt; startproject aclarknet; cd aclarknet/aclarknet; &lt;span class="pre"&gt;django-admin&lt;/span&gt; startapp aclarknet&lt;/tt&gt;&lt;/td&gt;&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;table class="docutils footnote" frame="void" id="id8" rules="none"&gt;
-&lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
-&lt;tbody valign="top"&gt;
-&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#id2"&gt;[2]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Granted, the perceived heaviness is much worse than the &lt;em&gt;actual&lt;/em&gt; burden of &amp;quot;real&amp;quot; database setup which is admittedly fairly trivial: &lt;tt class="docutils literal"&gt;brew install postgres&lt;/tt&gt;.&lt;/td&gt;&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;table class="docutils footnote" frame="void" id="id9" rules="none"&gt;
-&lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
-&lt;tbody valign="top"&gt;
-&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#id3"&gt;[3]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;The Django admin without Bootstrap reminds me of the ZMI without Bootstrap, which &lt;a class="reference external" href="https://pypi.python.org/pypi/zope2_bootstrap"&gt;I also don't like&lt;/a&gt;.&lt;/td&gt;&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;table class="docutils footnote" frame="void" id="id10" rules="none"&gt;
-&lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
-&lt;tbody valign="top"&gt;
-&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#id4"&gt;[4]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Embarrassingly, I create the tabs with &lt;tt class="docutils literal"&gt;s/&amp;nbsp;&amp;nbsp;&amp;nbsp; /\t/&lt;/tt&gt; because my tabstop is set to 4 spaces. Maybe I should be change my tabstop setting each time?&lt;/td&gt;&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;table class="docutils footnote" frame="void" id="id11" rules="none"&gt;
-&lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
-&lt;tbody valign="top"&gt;
-&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#id5"&gt;[5]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Something to do with Sendgrid integration, certainly not django-contact-form's fault!&lt;/td&gt;&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;table class="docutils footnote" frame="void" id="id12" rules="none"&gt;
-&lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
-&lt;tbody valign="top"&gt;
-&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#id6"&gt;[6]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Which is another story. First I tried &lt;tt class="docutils literal"&gt;&lt;span class="pre"&gt;django-storages&lt;/span&gt;&lt;/tt&gt; only to discover Rackspace Cloud Files support moved to cumulus (or started in cumulus and moved back?) Then &lt;tt class="docutils literal"&gt;&lt;span class="pre"&gt;django-cumulus&lt;/span&gt;&lt;/tt&gt; &lt;em&gt;almost&lt;/em&gt; worked but not quite. Rackspace Cloud Files returned a URL but upload failed. So I manually uploaded all the files to Rackspace Cloud Files as a workaround.&lt;/td&gt;&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;/div&gt;
-</summary><category term="Plone"></category><category term="Python"></category></entry></feed>
+</summary><category term="Python"></category></entry></feed>
