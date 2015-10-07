@@ -27,7 +27,7 @@ The `DC Python Job Board <http://www.meetup.com/DCPython/messages/boards/>`_ inc
 
 The #1 function of the board (and biggest consumer of my time spent answering emails) is to serve employers seeking Python programmers. "Employers" *can* and often *does* include professional recruiters.
 
-I've always found it awkward to explain the procedure, but have managed to last several years without documenting it. No more!
+I've always found it awkward to explain the procedure, but have gone several years without documenting it. No more!
 
 Instructions
 ------------
