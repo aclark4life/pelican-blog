@@ -10,7 +10,7 @@ DC Python, for those not familiar, is:
 
 1. A thriving community full of awesome Python programmers in Washington, DC, USA (DC, MD, VA).
 #. The name of a Meetup group with over 3,000 members.
-#. The name used to refer to our 501(c)(3) organization whose legal name is "ZPUGDC, Inc".
+#. A name commonly used to refer to our 501(c)(3) organization whose legal name is "ZPUGDC, Inc".
 
 As the President & Executive Director of DC Python (see: #3), I try to be as helpful as possible with all aspects of Python activity in DC (along with many volunteers). **That includes helping Python programmers find jobs and employers find Python programmers.**
 
