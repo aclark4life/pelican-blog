@@ -60,7 +60,7 @@ Instructions
 
     Alex
 
-**Please do not include the full text of the post in your email to the list.**
+**Please do not include the full text of the listing in your email to the list.**
 
 .. Warning::
 
