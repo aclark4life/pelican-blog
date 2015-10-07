@@ -60,6 +60,8 @@ Instructions
 
     Alex
 
+**Please do not include the full text of the job listing.**
+
 .. Warning::
 
     Please send mail to the list with the **same email address** you used to join Meetup, else your **email will be silently ignored by Meetup**.
