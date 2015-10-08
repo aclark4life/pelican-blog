@@ -40,7 +40,7 @@ Instructions
 
 #. Send a link to your post to the DC Python mailing list: `DCPython-list@meetup.com <mailto:DCPython-list@meetup.com>`_.
 
-  - **Include [JOB] in the subject line, some brief introductory text, a link to your post & nothing else e.g.**
+  - **Include [JOB] in the subject line, some brief introductory text, a link to your post & nothing else. E.g.**
 
 :: 
 
