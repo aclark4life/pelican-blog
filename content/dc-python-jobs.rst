@@ -60,7 +60,10 @@ Instructions
 
     Alex
 
-**Please do not include the full text of the listing in your email to the list.**
+**In your email to the list please do not include:**
+
+- **The full text of the job listing**
+- **Links to external job postings**
 
 .. Warning::
 
