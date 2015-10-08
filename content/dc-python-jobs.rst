@@ -65,8 +65,6 @@ Instructions
 - **The full text of the job listing**
 - **Links to external job postings**
 
-.. Warning::
-
-    Please send mail to the list with the **same email address** you used to join Meetup, else your **email will be silently ignored by Meetup**.
+Also please send mail to the list with the **same email address** you used to join Meetup, else your **email will be silently ignored by Meetup**.
 
 Good luck!
