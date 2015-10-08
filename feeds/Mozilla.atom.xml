@@ -29,6 +29,8 @@
 &lt;/li&gt;
 &lt;li&gt;Keyboard → Shortcuts → Mission Control → &lt;strong&gt;Move left a space → ⌘ ←&lt;/strong&gt;&lt;/li&gt;
 &lt;li&gt;Keyboard → Shortcuts → Mission Control → &lt;strong&gt;Move right a space → ⌘ →&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Dock → Terminal → &lt;strong&gt;Keep in Dock&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Dock → Firefox → &lt;strong&gt;Keep in Dock&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Still, I'd trade all these steps for full automation if I could find an approach that's not more tedious than cut &amp;amp; pasting the above.&lt;/p&gt;
 &lt;p&gt;Lastly, I hope this helps someone. Please add a comment below if you have a better approach.&lt;/p&gt;

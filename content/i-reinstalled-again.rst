@@ -52,6 +52,8 @@ Next, I perform various additional steps manually *either* because I've not figu
 
 - Keyboard → Shortcuts → Mission Control → **Move left a space → ⌘ ←**
 - Keyboard → Shortcuts → Mission Control → **Move right a space → ⌘ →**
+- Dock → Terminal → **Keep in Dock**
+- Dock → Firefox → **Keep in Dock**
 
 Still, I'd trade all these steps for full automation if I could find an approach that's not more tedious than cut & pasting the above.
 
