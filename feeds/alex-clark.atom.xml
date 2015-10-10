@@ -1,5 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Alex Clark - Python Web Developer &amp; Musician</title><link href="http://blog.aclark.net/" rel="alternate"></link><link href="http://blog.aclark.net/feeds/alex-clark.atom.xml" rel="self"></link><id>http://blog.aclark.net/</id><updated>2015-10-07T16:55:36-04:00</updated><entry><title>DC Python Jobs</title><link href="http://blog.aclark.net/2015/10/07/dc-python-jobs/" rel="alternate"></link><updated>2015-10-07T16:55:36-04:00</updated><author><name>Alex Clark</name></author><id>tag:blog.aclark.net,2015-10-07:2015/10/07/dc-python-jobs/</id><summary type="html">&lt;p&gt;&lt;em&gt;This information may eventually live within the DC Python corpus, but for now I prefer to post-it-now-move-it-later.&lt;/em&gt;&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Alex Clark - Python Web Developer &amp; Musician</title><link href="http://blog.aclark.net/" rel="alternate"></link><link href="http://blog.aclark.net/feeds/alex-clark.atom.xml" rel="self"></link><id>http://blog.aclark.net/</id><updated>2015-10-10T07:57:05-04:00</updated><entry><title>Plock 0-5-0 is out</title><link href="http://blog.aclark.net/2015/10/10/plock-0-5-0-is-out/" rel="alternate"></link><updated>2015-10-10T07:57:05-04:00</updated><author><name>Alex Clark</name></author><id>tag:blog.aclark.net,2015-10-10:2015/10/10/plock-0-5-0-is-out/</id><summary type="html">&lt;p&gt;&lt;em&gt;Pip installs Plock. Plock installs Plone.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;The Plock installer for Plone has been &lt;strong&gt;updated to support Plone 5&lt;/strong&gt;. To try Plone 5, just cut &amp;amp; paste:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+pip install plock
+mkdir plone
+plock plone
+plone/bin/plone fg
+&lt;/pre&gt;
+&lt;p&gt;Then open &lt;a class="reference external" href="http://localhost:8080"&gt;localhost&lt;/a&gt;:&lt;/p&gt;
+&lt;!-- image:: http://blog.aclark.net/images/plock-0-5-0.png
+ :alt: Welcome to Plone --&gt;
+&lt;img alt="Welcome to Plone" src="https://raw.githubusercontent.com/aclark4life/blog/032fab0e5ee4839420055ec16fffee1c25ea386c/images/plock-0-5-0.png" /&gt;
+&lt;p&gt;Report issues &lt;a class="reference external" href="https://github.com/plock/plock/issues"&gt;here&lt;/a&gt;.&lt;/p&gt;
+</summary><category term="plone"></category><category term="python"></category></entry><entry><title>DC Python Jobs</title><link href="http://blog.aclark.net/2015/10/07/dc-python-jobs/" rel="alternate"></link><updated>2015-10-07T16:55:36-04:00</updated><author><name>Alex Clark</name></author><id>tag:blog.aclark.net,2015-10-07:2015/10/07/dc-python-jobs/</id><summary type="html">&lt;p&gt;&lt;em&gt;This information may eventually live within the DC Python corpus, but for now I prefer to post-it-now-move-it-later.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;DC Python, for those not familiar, is:&lt;/p&gt;
 &lt;ol class="arabic simple"&gt;
 &lt;li&gt;A thriving community full of awesome Python programmers in Washington, DC, USA (DC, MD, VA).&lt;/li&gt;
@@ -502,22 +515,4 @@ pip install plock; plock plone; plone/bin/plone fg
 &lt;script data-gratipay-username="aclark4life" src="//grtp.co/v1.js"&gt;&lt;/script&gt;&lt;/div&gt;
 </summary><category term="Plone"></category><category term="Python"></category></entry><entry><title>Don't sudo pip install</title><link href="http://blog.aclark.net/2015/02/28/dont-sudo-pip-install/" rel="alternate"></link><updated>2015-02-28T18:09:39-05:00</updated><author><name>Alex Clark</name></author><id>tag:blog.aclark.net,2015-02-28:2015/02/28/dont-sudo-pip-install/</id><summary type="html">&lt;p&gt;How many times have you seen this?&lt;/p&gt;
 &lt;img alt="Reddit thread" src="/images/dont-sudo-pip-install.png" /&gt;
-</summary><category term="Plone"></category><category term="Python"></category></entry><entry><title>Please do my homework</title><link href="http://blog.aclark.net/2015/02/10/please-do-my-homework/" rel="alternate"></link><updated>2015-02-10T22:19:44-05:00</updated><author><name>Alex Clark</name></author><id>tag:blog.aclark.net,2015-02-10:2015/02/10/please-do-my-homework/</id><summary type="html">&lt;p&gt;Reminiscent of &lt;a class="reference external" href="http://blog.aclark.net/2012/05/23/a-simple-printer-of-nested-lists/"&gt;this phenomenon&lt;/a&gt;, I'm slowly being driven insane by Redditors asking &lt;a class="reference external" href="http://www.reddit.com/r/Python"&gt;/r/Python&lt;/a&gt; to do their homework for them. E.g.&lt;/p&gt;
-&lt;img alt="Question #1" src="/images/homework1.png" /&gt;
-&lt;p&gt;In principle, and putting aside &lt;a class="reference external" href="http://www.reddit.com/r/learnpython"&gt;/r/learnpython&lt;/a&gt;, I have no problem with Redditors asking questions on /r/Python that are better suited to /r/learnpython. E.g.&lt;/p&gt;
-&lt;img alt="Question #2" src="/images/homework2.png" /&gt;
-&lt;p&gt;But there is something about the current proliferation of homework questions on /r/Python that I find offensive.&lt;/p&gt;
-&lt;img alt="Question #3" src="/images/homework3.png" /&gt;
-&lt;p&gt;Perhaps it is due to:&lt;/p&gt;
-&lt;p&gt;1.) Less meaningful content. I read &lt;a class="reference external" href="http://www.reddit.com/r/Python"&gt;/r/Python&lt;/a&gt; for Hacker News-like stories about Python. The more poorly written homework questions, the less meaningful content.&lt;/p&gt;
-&lt;img alt="Question #4" src="/images/homework4.png" /&gt;
-&lt;p&gt;2.) No prior meaningful attempt to resolve the issue. E.g. &amp;quot;Ive tried looking online, but to no avail [sic].&amp;quot; What did you try? How did that attempt fail?&lt;/p&gt;
-&lt;img alt="Question #5" src="/images/homework5.png" /&gt;
-&lt;p&gt;So now I feel compelled to try and discourage such posts and &lt;strong&gt;encourage more meaningful posts&lt;/strong&gt;. If you learn nothing else in school, you should &lt;strong&gt;learn how to learn&lt;/strong&gt;. It's not the answer to the question that matters, it's &lt;strong&gt;how you get there&lt;/strong&gt;. No other aspect of you answering a question or completing an assignment is as important as you &lt;strong&gt;thinking for yourself about how to do it&lt;/strong&gt;. This is almost the entire point of higher education: to learn &lt;strong&gt;how to function in the real world&lt;/strong&gt;.&lt;/p&gt;
-&lt;img alt="Question #6" src="/images/homework6.png" /&gt;
-&lt;p&gt;In the real world, you cannot say to your friends and/or coworkers:&lt;/p&gt;
-&lt;pre class="literal-block"&gt;
-My boss is such a jerk. If you could just give me a working example of how to do my job, that would be awesome! Lolz.
-&lt;/pre&gt;
-&lt;p&gt;So please, /r/Python, let's &lt;strong&gt;start asking more meaningful questions&lt;/strong&gt;. And if there is anything I can do to help, please let me know.&lt;/p&gt;
-</summary><category term="Python"></category></entry></feed>
+</summary><category term="Plone"></category><category term="Python"></category></entry></feed>
